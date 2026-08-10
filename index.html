@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="英語を前から意味として受け取るための、毎日10分のチャンクリーディング練習。">
+  <title>Daily English Chunks</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <button class="brand" id="homeBtn" type="button" aria-label="ホームへ戻る">
+        <span class="brand-mark">/</span>
+        <span>Daily English Chunks</span>
+      </button>
+      <nav class="header-actions" aria-label="メインメニュー">
+        <button class="ghost-button" id="archiveBtn" type="button">Lessons</button>
+      </nav>
+    </header>
+
+    <div id="stepProgress" class="step-progress" hidden>
+      <div class="step-progress-bar" id="stepProgressBar"></div>
+    </div>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <span>Read → Think → Reveal → Speak.</span>
+      <a href="https://github.com/silovar-uk/dailyenglishchunks" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </footer>
+  </div>
+
+  <script src="./lessons.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

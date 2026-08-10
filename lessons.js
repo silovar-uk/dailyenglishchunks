@@ -1,7 +1,6 @@
 window.LESSONS = [
   {
     id: 1,
-    date: "2026-08-07",
     title: "A Small Change of Plans",
     scene: "You planned to go straight home after work, but a coworker invited you to dinner.",
     sceneJa: "仕事のあと、まっすぐ帰る予定だった。でも同僚に夕食へ誘われる。",
@@ -41,7 +40,6 @@ window.LESSONS = [
   },
   {
     id: 2,
-    date: "2026-08-08",
     title: "Fixing a Small Mistake",
     scene: "You realize you sent an old file to a coworker and quickly try to fix it.",
     sceneJa: "古い資料を送ってしまったことに気づき、急いで修正する。",
@@ -82,7 +80,6 @@ window.LESSONS = [
   },
   {
     id: 3,
-    date: "2026-08-09",
     title: "Asking for More Time",
     scene: "You find suspicious numbers in a report and decide accuracy matters more than finishing quickly.",
     sceneJa: "レポートの数字に違和感を見つけ、急ぐより正確さを優先する。",
@@ -124,7 +121,6 @@ window.LESSONS = [
   },
   {
     id: 4,
-    date: "2026-08-10",
     title: "Giving and Receiving Feedback",
     scene: "You show your manager a proposal you worked hard on and receive several suggestions for changes.",
     sceneJa: "時間をかけた提案書を上司に見せ、いくつか修正を提案される。",

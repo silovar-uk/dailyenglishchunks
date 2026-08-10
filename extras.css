@@ -16,6 +16,25 @@
   margin-right: 5px;
 }
 
+.sequence-item {
+  flex-basis: 86px;
+}
+
+.sequence-item-number,
+.sequence-number,
+.lesson-number-button,
+.lesson-row-day {
+  font-variant-numeric: tabular-nums;
+}
+
+.lesson-row-day {
+  line-height: 1.45;
+}
+
+.done-mark {
+  margin-left: 6px;
+}
+
 @media (max-width: 640px) {
   .header-random-button {
     width: 44px;
@@ -35,5 +54,17 @@
 
   .home-random-button {
     margin-left: 0;
+  }
+
+  .sequence-item {
+    flex-basis: 82px;
+  }
+
+  .sequence-item-number {
+    font-size: .82rem;
+  }
+
+  .lesson-number-button {
+    letter-spacing: .03em;
   }
 }

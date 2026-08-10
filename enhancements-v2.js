@@ -90,28 +90,6 @@
     desired.forEach(node => container.appendChild(node));
   }
 
-  function normalizeChunkUI() {
-    const editor = document.querySelector('.chunk-editor');
-    if (editor) {
-      [...editor.querySelectorAll('.chunk-sentence')].forEach((sentence, sentenceIndex) => {
-        [...sentence.querySelectorAll('.gap-button')].forEach((button, gapIndex) => {
-          button.dataset.sentence = String(sentenceIndex);
-          button.dataset.gap = String(gapIndex);
-          const slash = button.querySelector('span');
-          if (slash && slash.textContent !== '/') slash.textContent = '/';
-        });
-      });
-    }
-
-    document.querySelectorAll('.chunk-editor, #chunkCompare').forEach(root => {
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-      while (walker.nextNode()) {
-        const node = walker.currentNode;
-        if (node.nodeValue?.includes('NaN')) node.nodeValue = node.nodeValue.replace(/\bNaN\b/g, '');
-      }
-    });
-  }
-
   function enhanceHome() {
     const home = document.querySelector('.home');
     if (!home) return;
@@ -245,7 +223,6 @@
   }
 
   function enhance() {
-    normalizeChunkUI();
     enhanceHome();
     enhanceArchive();
     enhanceLessonDetail();
@@ -262,20 +239,6 @@
     if (target.closest('[data-chunk-reveal], #toggleJa')) {
       suppressAutoScroll = true;
       setTimeout(() => { suppressAutoScroll = false; }, 0);
-    }
-
-    const gap = target.closest('.gap-button');
-    if (gap) {
-      const sentence = gap.closest('.chunk-sentence');
-      const editor = gap.closest('.chunk-editor');
-      if (sentence && editor) {
-        const sentenceIndex = [...editor.querySelectorAll('.chunk-sentence')].indexOf(sentence);
-        const gapIndex = [...sentence.querySelectorAll('.gap-button')].indexOf(gap);
-        if (sentenceIndex >= 0 && gapIndex >= 0) {
-          gap.dataset.sentence = String(sentenceIndex);
-          gap.dataset.gap = String(gapIndex);
-        }
-      }
     }
   }, true);
 

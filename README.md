@@ -37,10 +37,11 @@ The step rail, dates, lesson cards, sentence rows, chunk cards, quiz rows, and s
 - 2026/08/08 — Fixing a Small Mistake
 - 2026/08/09 — Asking for More Time
 - 2026/08/10 — Giving and Receiving Feedback
+- 2026/08/11 — Changing the System Around the Problem
 
 ## Implementation
 
-Static HTML / CSS / JavaScript with no build step. Lesson content lives in `lessons.js`; current creation-date metadata is attached in `bootstrap.js`; progress is saved locally with `localStorage`.
+Static HTML / CSS / JavaScript with no build step. Core lesson content lives in `lessons.js`; date-specific additions can be loaded as small lesson files before `bootstrap.js`. Progress is saved locally with `localStorage`.
 
 New lessons should include a `createdAt` value in `YYYY-MM-DD` format (or add it to the metadata layer) so date-based ordering remains deterministic.
 

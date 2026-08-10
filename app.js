@@ -192,7 +192,10 @@
     if (!currentLesson) return renderHome();
 
     const savedStep = Math.min(lessonState(currentLesson.id).lastStep || 0, STEPS.length - 2);
-    stepIndex = startStep === null ? savedStep : Math.max(0, Math.min(Number(startStep), STEPS.length - 1));
+    const requestedStep = startStep === null ? savedStep : Number(startStep);
+    stepIndex = Number.isFinite(requestedStep)
+      ? Math.max(0, Math.min(Math.trunc(requestedStep), STEPS.length - 1))
+      : 0;
     chunkSelections = {};
     quizSelections = {};
     showJapanese = false;
@@ -465,8 +468,20 @@
     }));
 
     document.querySelectorAll('.gap-button').forEach(button => button.addEventListener('click', () => {
-      const sentenceIndex = Number(button.dataset.sentence);
-      const gapIndex = Number(button.dataset.gap);
+      const sentence = button.closest('.chunk-sentence');
+      const editor = button.closest('.chunk-editor');
+      if (!sentence || !editor) {
+        console.error('Chunk coordinate lookup failed: missing container', button);
+        return;
+      }
+
+      const sentenceIndex = [...editor.querySelectorAll('.chunk-sentence')].indexOf(sentence);
+      const gapIndex = [...sentence.querySelectorAll('.gap-button')].indexOf(button);
+      if (!Number.isInteger(sentenceIndex) || sentenceIndex < 0 || !Number.isInteger(gapIndex) || gapIndex < 0) {
+        console.error('Chunk coordinate lookup failed', { sentenceIndex, gapIndex, button });
+        return;
+      }
+
       if (!chunkSelections[sentenceIndex]) chunkSelections[sentenceIndex] = new Set();
       chunkSelections[sentenceIndex].has(gapIndex)
         ? chunkSelections[sentenceIndex].delete(gapIndex)

@@ -4,6 +4,9 @@
   const homeBtn = document.getElementById('homeBtn');
   const randomBtn = document.getElementById('randomBtn');
   let lastRandomId = null;
+  let quizLessonId = null;
+  let checkWasVisible = false;
+  const quizOrders = new Map();
 
   const nativeScrollTo = window.scrollTo.bind(window);
   let suppressAutoScroll = false;
@@ -88,6 +91,58 @@
     });
     if (nodes.every((node, index) => node === desired[index])) return;
     desired.forEach(node => container.appendChild(node));
+  }
+
+  function shuffled(values) {
+    const result = [...values];
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+    }
+    return result;
+  }
+
+  function enhanceQuizShuffle() {
+    const quizList = document.querySelector('.quiz-list');
+    if (!quizList) {
+      checkWasVisible = false;
+      quizLessonId = null;
+      quizOrders.clear();
+      return;
+    }
+
+    const lessonId = currentLessonId();
+    const enteringCheck = !checkWasVisible || quizLessonId !== lessonId;
+    if (enteringCheck) {
+      quizOrders.clear();
+      quizLessonId = lessonId;
+    }
+    checkWasVisible = true;
+
+    quizList.querySelectorAll('.quiz-card').forEach((card, questionIndex) => {
+      const options = card.querySelector('.quiz-options');
+      if (!options) return;
+
+      const buttons = [...options.querySelectorAll('.quiz-option')];
+      if (buttons.length < 2) return;
+
+      if (!quizOrders.has(questionIndex)) {
+        const originalOptionIds = buttons
+          .map(button => Number(button.dataset.option))
+          .filter(Number.isInteger);
+        quizOrders.set(questionIndex, shuffled(originalOptionIds));
+      }
+
+      const order = quizOrders.get(questionIndex);
+      order.forEach(originalOptionIndex => {
+        const button = buttons.find(item => Number(item.dataset.option) === originalOptionIndex);
+        if (button) options.appendChild(button);
+      });
+
+      [...options.querySelectorAll('.quiz-option')].forEach((button, visualIndex) => {
+        setText(button.querySelector('.option-key'), String.fromCharCode(65 + visualIndex));
+      });
+    });
   }
 
   function enhanceHome() {
@@ -223,6 +278,7 @@
   }
 
   function enhance() {
+    enhanceQuizShuffle();
     enhanceHome();
     enhanceArchive();
     enhanceLessonDetail();

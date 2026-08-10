@@ -2,7 +2,7 @@
 
 A compact chunk-reading practice site for learning to read English in meaningful groups instead of translating word by word.
 
-Lessons are intentionally **sequential, not date-based**: `DAY 001`, `DAY 002`, `DAY 003`…
+Lessons are identified in the UI by their **creation date**. The newest lesson is prioritized on the home screen and lesson library.
 
 ## Core flow
 
@@ -13,26 +13,36 @@ Lessons are intentionally **sequential, not date-based**: `DAY 001`, `DAY 002`, 
 5. Check — answer three retrieval questions
 6. Speak — read aloud three times: meaning, rhythm, emotion
 
-The step rail, lesson numbers, sequence cards, sentence rows, chunk cards, quiz rows, and speaking area are all interactive so practice does not depend on finding a small button.
+The step rail, dates, lesson cards, sentence rows, chunk cards, quiz rows, and speaking area are interactive so practice does not depend on finding a small button.
 
 ## Lesson navigation
 
-- Lessons use pure sequential IDs such as `DAY 001`, `DAY 002`, and `DAY 003`.
-- The lesson library is displayed newest-first: highest lesson number to lowest.
+- Lessons display their creation date, such as `2026/08/10`.
+- The newest lesson is the primary lesson on the home screen.
+- The lesson library is sorted by creation date, newest first.
 - Tag-filtered results keep the same newest-first ordering.
 - Random Lesson is available from the global header, home screen, and lesson library.
 - Consecutive random selections avoid repeating the current or immediately previous random lesson when possible.
 
+## Interaction notes
+
+- Chunk boundary controls are normalized from their actual DOM position before each click to prevent invalid numeric indices.
+- Invalid `NaN` text in the chunk practice UI is removed defensively.
+- Revealing Japanese in Understand keeps the current scroll position instead of jumping back to the top.
+- Existing `localStorage` progress is sanitized on startup so malformed numeric values do not break navigation.
+
 ## Current lessons
 
-- Day 001 — A Small Change of Plans
-- Day 002 — Fixing a Small Mistake
-- Day 003 — Asking for More Time
-- Day 004 — Giving and Receiving Feedback
+- 2026/08/07 — A Small Change of Plans
+- 2026/08/08 — Fixing a Small Mistake
+- 2026/08/09 — Asking for More Time
+- 2026/08/10 — Giving and Receiving Feedback
 
 ## Implementation
 
-Static HTML / CSS / JavaScript with no build step. Lesson content lives in `lessons.js`; progress is saved locally with `localStorage`.
+Static HTML / CSS / JavaScript with no build step. Lesson content lives in `lessons.js`; current creation-date metadata is attached in `bootstrap.js`; progress is saved locally with `localStorage`.
+
+New lessons should include a `createdAt` value in `YYYY-MM-DD` format (or add it to the metadata layer) so date-based ordering remains deterministic.
 
 The favicon uses the `/` symbol as the visual identity for a chunk boundary.
 

@@ -15,6 +15,14 @@ Lessons are intentionally **sequential, not date-based**: `DAY 001`, `DAY 002`, 
 
 The step rail, lesson numbers, sequence cards, sentence rows, chunk cards, quiz rows, and speaking area are all interactive so practice does not depend on finding a small button.
 
+## Lesson navigation
+
+- Lessons use pure sequential IDs such as `DAY 001`, `DAY 002`, and `DAY 003`.
+- The lesson library is displayed newest-first: highest lesson number to lowest.
+- Tag-filtered results keep the same newest-first ordering.
+- Random Lesson is available from the global header, home screen, and lesson library.
+- Consecutive random selections avoid repeating the current or immediately previous random lesson when possible.
+
 ## Current lessons
 
 - Day 001 — A Small Change of Plans

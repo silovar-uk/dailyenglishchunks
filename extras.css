@@ -1,0 +1,39 @@
+.header-random-button::before {
+  content: "↝";
+  margin-right: 6px;
+}
+
+.home-random-button {
+  margin-left: auto;
+}
+
+.random-filter-chip {
+  border-style: dashed;
+  font-weight: 750;
+}
+
+.random-filter-chip span {
+  margin-right: 5px;
+}
+
+@media (max-width: 640px) {
+  .header-random-button {
+    width: 44px;
+    min-width: 44px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .header-random-button::before {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .home-kicker-row {
+    flex-wrap: wrap;
+  }
+
+  .home-random-button {
+    margin-left: 0;
+  }
+}

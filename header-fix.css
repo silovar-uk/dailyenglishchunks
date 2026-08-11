@@ -1,0 +1,102 @@
+/* Header refinement — keep brand primary, controls quiet */
+
+.site-header {
+  min-height: 72px;
+}
+
+.header-actions {
+  align-items: center;
+}
+
+.header-random-button {
+  font-size: 0;
+  width: 42px;
+  min-width: 42px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.header-random-button::before {
+  content: "↝";
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    width: calc(100% - 32px);
+    height: 72px;
+    min-height: 72px;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .brand-mark {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 1.08rem;
+  }
+
+  .brand > span:last-child {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: -.025em;
+  }
+
+  .header-actions {
+    flex: 0 0 auto;
+    gap: 7px;
+  }
+
+  .header-actions .ghost-button {
+    min-height: 42px;
+    height: 42px;
+    border-color: var(--line);
+    background: rgba(255,255,255,.18);
+  }
+
+  .header-random-button {
+    width: 42px;
+    min-width: 42px;
+    padding: 0;
+  }
+
+  #archiveBtn {
+    padding: 0 15px;
+    font-size: .86rem;
+    font-weight: 650;
+  }
+}
+
+@media (max-width: 390px) {
+  .site-header {
+    width: calc(100% - 24px);
+    gap: 9px;
+  }
+
+  .brand-mark {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand > span:last-child {
+    font-size: .92rem;
+  }
+
+  #archiveBtn {
+    padding: 0 12px;
+    font-size: .82rem;
+  }
+}

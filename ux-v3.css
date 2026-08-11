@@ -1,0 +1,482 @@
+/* UX v3 — focus on the passage, not the interface */
+
+body.is-practicing .site-header,
+body.is-practicing .site-footer {
+  display: none;
+}
+
+body.is-practicing main {
+  width: min(100% - 28px, 860px);
+}
+
+body.is-practicing .step-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 80;
+  height: 3px;
+}
+
+.home-intro {
+  transition: padding .2s ease;
+}
+
+.home.is-returning .home-intro h1 {
+  font-size: clamp(2.25rem, 6vw, 4rem);
+}
+
+.home.is-returning .home-intro .lead {
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+
+.home-shortcuts {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.latest-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--accent);
+}
+
+.experience-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.experience-strip > div {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.26);
+}
+
+.experience-strip strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.experience-strip span {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: .7rem;
+  letter-spacing: .03em;
+}
+
+.focus-lesson {
+  padding-top: 0;
+}
+
+.focus-bar {
+  position: sticky;
+  top: 3px;
+  z-index: 60;
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 60px;
+  margin: 0 -10px 26px;
+  padding: 8px 10px;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(217,212,202,.7);
+}
+
+.focus-exit,
+.focus-date,
+.focus-step {
+  border: 1px solid transparent;
+  background: transparent;
+  min-height: 42px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: .15s ease;
+}
+
+.focus-exit {
+  width: 42px;
+  padding: 0;
+  font-size: 1.35rem;
+  color: var(--muted);
+}
+
+.focus-date {
+  justify-self: start;
+  padding: 0 8px;
+  font-size: .8rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.focus-step {
+  padding: 0 13px;
+  border-color: var(--line);
+  background: rgba(255,255,255,.34);
+  color: var(--ink);
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.focus-exit:hover,
+.focus-date:hover,
+.focus-step:hover {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.compact-step-menu {
+  position: sticky;
+  top: 64px;
+  z-index: 55;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  margin: -20px 0 24px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.compact-step-item {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: .74rem;
+  font-weight: 750;
+}
+
+.compact-step-item span {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  font-size: .65rem;
+}
+
+.compact-step-item.is-past {
+  color: var(--accent);
+  border-color: rgba(45,93,80,.2);
+  background: rgba(223,234,230,.35);
+}
+
+.compact-step-item.is-active {
+  color: #fff;
+  border-color: var(--ink);
+  background: var(--ink);
+}
+
+.lesson-head-compact {
+  margin-bottom: 30px;
+}
+
+.lesson-head-compact .lesson-title {
+  font-size: clamp(1.95rem, 6vw, 3.4rem);
+}
+
+.step-heading {
+  margin-bottom: 25px;
+}
+
+.step-heading .step-label {
+  margin-bottom: 9px;
+}
+
+.step-heading .step-intro {
+  margin-bottom: 0;
+}
+
+.focus-actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 45;
+  margin: 28px -14px -2px;
+  padding: 18px 14px max(16px, env(safe-area-inset-bottom));
+  background: linear-gradient(to top, var(--bg) 72%, rgba(246,243,236,0));
+}
+
+.focus-actions .primary-button {
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.focus-actions .primary-button.is-ready {
+  box-shadow: 0 8px 24px rgba(32,32,30,.13);
+  transform: translateY(-1px);
+}
+
+.hint-box:empty,
+#chunkCompare:empty {
+  display: none;
+}
+
+.hint-box {
+  margin-top: 15px;
+  padding: 14px 16px;
+  border-radius: 13px;
+  background: var(--warm-soft);
+  color: #654334;
+  font-size: .88rem;
+  line-height: 1.7;
+}
+
+.hint-box p {
+  margin: 0;
+}
+
+.gap-button.is-hint-boundary:not(.is-active) {
+  background: rgba(140,77,49,.08);
+}
+
+.gap-button.is-hint-boundary:not(.is-active)::after {
+  background: rgba(140,77,49,.35);
+}
+
+.diff-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.diff-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+.diff-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.diff-legend i {
+  font-style: normal;
+  font-family: Georgia, serif;
+  font-weight: 800;
+}
+
+.legend-match { color: var(--accent); }
+.legend-yours { color: var(--warm); text-decoration: line-through; }
+.legend-model { color: #75589b; }
+
+.diff-sentence {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: #fff;
+  font-family: Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 2.15;
+}
+
+.diff-gap,
+.diff-space {
+  display: inline-grid;
+  min-width: 21px;
+  margin: 0 2px;
+  place-items: center;
+}
+
+.diff-gap {
+  font-family: Georgia, serif;
+  font-weight: 800;
+}
+
+.diff-gap.is-match { color: var(--accent); }
+.diff-gap.is-yours {
+  color: var(--warm);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+.diff-gap.is-model { color: #75589b; }
+
+.final-reading {
+  padding: clamp(6px, 3vw, 24px) 0 20px;
+}
+
+.final-title {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 7vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: -.035em;
+}
+
+.final-intro {
+  max-width: 600px;
+  margin: 15px 0 34px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.naked-passage {
+  padding: clamp(10px, 2vw, 24px) 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 4.3vw, 2.05rem);
+  line-height: 1.85;
+  letter-spacing: -.012em;
+}
+
+.naked-passage p {
+  margin: 0 0 24px;
+}
+
+.final-emotion,
+.complete-emotions {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.final-emotion strong,
+.complete-emotions strong {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 750;
+}
+
+.complete-panel > h2 {
+  max-width: 650px;
+  margin: 12px auto 20px;
+  font-family: Georgia, serif;
+  font-size: clamp(1.7rem, 5vw, 2.7rem);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.complete-emotions {
+  justify-content: center;
+  margin: 22px 0;
+}
+
+.complete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.archive .lesson-row-day {
+  min-width: 98px;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  body.is-practicing main {
+    width: min(100% - 20px, 860px);
+  }
+
+  .home-shortcuts {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .experience-strip {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+
+  .experience-strip > div {
+    padding: 11px 9px;
+  }
+
+  .experience-strip strong {
+    font-size: 1.05rem;
+  }
+
+  .experience-strip span {
+    font-size: .61rem;
+  }
+
+  .focus-bar {
+    grid-template-columns: 40px 1fr auto;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .focus-date {
+    padding-left: 3px;
+    font-size: .73rem;
+  }
+
+  .focus-step {
+    padding: 0 10px;
+    font-size: .7rem;
+  }
+
+  .compact-step-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lesson-head-compact {
+    margin-bottom: 25px;
+  }
+
+  .focus-actions {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .chunk-tool-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .naked-passage {
+    font-size: clamp(1.35rem, 6vw, 1.7rem);
+  }
+
+  .archive .lesson-row-day {
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .focus-actions .primary-button.is-ready,
+  .latest-card::before {
+    transition: none;
+  }
+}

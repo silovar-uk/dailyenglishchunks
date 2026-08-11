@@ -2,34 +2,36 @@
 
 A compact chunk-reading practice site for learning to read English in meaningful groups instead of translating word by word.
 
-Lessons are identified in the UI by their **creation date**. The newest lesson is prioritized on the home screen and lesson library.
+Lessons are identified by their **creation date**, and the newest lesson is always prioritized.
 
-## Core flow
+## UX principle
+
+**Keep the place. Change the state.**
+
+Practice interactions should not pull attention away from the passage. Reveal, quiz, slash, and read-state interactions update in place instead of rebuilding the screen or jumping the learner back to the top.
+
+## Learning flow
 
 1. Imagine — build the scene and emotion first
-2. Read — tap each sentence as you read it
-3. Chunk — add your own phrase boundaries with wide click / tap targets
-4. Understand — tap individual chunks to reveal Japanese only when needed
-5. Check — answer three retrieval questions
-6. Speak — read aloud three times: meaning, rhythm, emotion
+2. Read — tap each sentence after reading it
+3. Chunk — add your own phrase boundaries
+4. Understand — reveal Japanese only where needed
+5. Check — retrieve meaning, intention, and chunking
+6. Speak — read three times: meaning, rhythm, emotion
+7. Final read — remove slashes, translation, and guidance and read the passage normally
 
-The step rail, dates, lesson cards, sentence rows, chunk cards, quiz rows, and speaking area are interactive so practice does not depend on finding a small button.
+## UX v3
 
-## Lesson navigation
-
-- Lessons display their creation date, such as `2026/08/10`.
-- The newest lesson is the primary lesson on the home screen.
-- The lesson library is sorted by creation date, newest first.
-- Tag-filtered results keep the same newest-first ordering.
-- Random Lesson is available from the global header, home screen, and lesson library.
-- Consecutive random selections avoid repeating the current or immediately previous random lesson when possible.
-
-## Interaction notes
-
-- Chunk boundary controls are normalized from their actual DOM position before each click to prevent invalid numeric indices.
-- Invalid `NaN` text in the chunk practice UI is removed defensively.
-- Revealing Japanese in Understand keeps the current scroll position instead of jumping back to the top.
-- Existing `localStorage` progress is sanitized on startup so malformed numeric values do not break navigation.
+- **Focus mode:** global navigation disappears during practice; only exit, creation date, and the current step remain.
+- **Progressive disclosure:** the six-step list is collapsed into a compact `3 / 6 · Chunk` control and expands only when requested.
+- **Latest first:** the newest creation date is the one-tap primary action on the home screen and the library is newest-first.
+- **Stable Understand:** revealing translations does not move the scroll position.
+- **Inline quiz feedback:** answers and explanations appear in place without rerendering the whole lesson.
+- **Diff-first Chunk comparison:** the model is not repeated separately; only boundary differences are highlighted inline.
+- **Three-level hints:** hints progress from a reading principle, to one model boundary, to the full diff.
+- **Naked Reading:** every lesson ends with one final pass without slashes or translation.
+- **Smart Random:** random selection slightly favors unfinished, Hard, and help-heavy lessons while avoiding immediate repeats when possible.
+- **Experience counters:** the home screen tracks sentences read and chunks revealed instead of emphasizing streak pressure.
 
 ## Current lessons
 
@@ -41,15 +43,13 @@ The step rail, dates, lesson cards, sentence rows, chunk cards, quiz rows, and s
 
 ## Implementation
 
-Static HTML / CSS / JavaScript with no build step. Core lesson content lives in `lessons.js`; date-specific additions can be loaded as small lesson files before `bootstrap.js`. Progress is saved locally with `localStorage`.
+Static HTML / CSS / JavaScript with no build step. Core lesson content lives in `lessons.js`; date-specific additions can be loaded as small `lesson-YYYY-MM-DD.js` files before `bootstrap.js`. Progress and experience counters are stored locally with `localStorage`.
 
-New lessons should include a `createdAt` value in `YYYY-MM-DD` format (or add it to the metadata layer) so date-based ordering remains deterministic.
+New lessons should include a `createdAt` value in `YYYY-MM-DD` format.
 
-The favicon uses the `/` symbol as the visual identity for a chunk boundary.
+A lightweight GitHub Actions workflow runs `node --check` against the application and lesson JavaScript on every push so daily additions fail visibly if syntax breaks.
 
 ## Local preview
-
-Serve the directory with any static file server, for example:
 
 ```bash
 python -m http.server 8000

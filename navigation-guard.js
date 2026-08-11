@@ -1,6 +1,7 @@
 (() => {
   const app = document.getElementById('app');
   const progress = document.getElementById('stepProgress');
+  const homeBtn = document.getElementById('homeBtn');
   if (!app) return;
 
   function resetPracticeUI() {
@@ -30,7 +31,14 @@
     const target = event.target instanceof Element ? event.target : null;
     if (!target) return;
 
-    if (target.closest('#focusHome, #lessonPicker')) {
+    if (target.closest('#lessonPicker')) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      homeBtn?.click();
+      return;
+    }
+
+    if (target.closest('#focusHome')) {
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           if (isOverviewVisible()) resetPracticeUI();

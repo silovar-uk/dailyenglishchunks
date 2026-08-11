@@ -101,14 +101,20 @@
       }
 
       const order = quizOrders.get(questionIndex);
-      order.forEach(optionId => {
-        const button = buttons.find(item => Number(item.dataset.option) === optionId);
-        if (button) options.appendChild(button);
-      });
+      const currentOrder = buttons.map(button => Number(button.dataset.option));
+      const needsReorder = order.some((optionId, index) => currentOrder[index] !== optionId);
+
+      if (needsReorder) {
+        order.forEach(optionId => {
+          const button = buttons.find(item => Number(item.dataset.option) === optionId);
+          if (button) options.appendChild(button);
+        });
+      }
 
       [...options.querySelectorAll('.quiz-option')].forEach((button, visualIndex) => {
         const key = button.querySelector('.option-key');
-        if (key) key.textContent = String.fromCharCode(65 + visualIndex);
+        const nextKey = String.fromCharCode(65 + visualIndex);
+        if (key && key.textContent !== nextKey) key.textContent = nextKey;
       });
     });
   }
@@ -132,8 +138,11 @@
       list.insertAdjacentElement('beforebegin', progress);
     }
 
-    progress.querySelector('.ui-check-progress-bar').style.width = `${percentage}%`;
-    progress.querySelector('.ui-check-progress-count').textContent = `${answered} / ${total} checked`;
+    const bar = progress.querySelector('.ui-check-progress-bar');
+    const count = progress.querySelector('.ui-check-progress-count');
+    const width = `${percentage}%`;
+    if (bar && bar.style.width !== width) bar.style.width = width;
+    if (count) count.textContent = `${answered} / ${total} checked`;
 
     const status = document.querySelector('.ui-step-status');
     if (status) {

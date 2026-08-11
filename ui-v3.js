@@ -8,8 +8,11 @@
     chunk: { status: '意味のまとまりを自分で決める', next: '意味を確かめる' },
     understand: { status: '前から意味を積み上げる', next: '理解をチェックする' },
     check: { status: '思い出してから確認する', next: '声に出して仕上げる' },
-    speak: { status: '意味 → リズム → 気持ち', next: '今日の練習を完了' }
+    speak: { status: '意味 → リズム → 気持ち', next: '補助なしで最後に読む' }
   };
+
+  let checkSessionKey = null;
+  const quizOrders = new Map();
 
   function currentStep() {
     const label = document.querySelector('.step-label')?.textContent || '';
@@ -17,12 +20,25 @@
     return Object.keys(STEP_LABELS).find(key => normalized.includes(key)) || null;
   }
 
+  function currentLessonKey() {
+    return `${document.querySelector('.focus-date')?.textContent || ''}|${document.title}`;
+  }
+
+  function shuffled(values) {
+    const result = [...values];
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+    }
+    return result;
+  }
+
   function setLessonStep(step) {
     const lesson = document.querySelector('.lesson');
     if (!lesson || !step) return;
     lesson.dataset.uiStep = step;
 
-    document.querySelectorAll('.step-chip').forEach(button => {
+    document.querySelectorAll('.compact-step-item').forEach(button => {
       button.removeAttribute('aria-current');
       if (button.classList.contains('is-active')) button.setAttribute('aria-current', 'step');
     });
@@ -58,14 +74,50 @@
     if (toolRow && !document.querySelector('.ui-chunk-legend')) {
       const legend = document.createElement('div');
       legend.className = 'ui-chunk-legend';
-      legend.innerHTML = '<span><i></i>自分の区切り</span><span><i></i>モデルの区切り</span>';
+      legend.innerHTML = '<span><i></i>自分の区切り</span><span><i></i>モデルとの差を確認</span>';
       toolRow.insertAdjacentElement('afterend', legend);
     }
+  }
+
+  function applyQuizOrder() {
+    const list = document.querySelector('.quiz-list');
+    if (!list) return;
+
+    const lessonKey = currentLessonKey();
+    if (checkSessionKey !== lessonKey) {
+      checkSessionKey = lessonKey;
+      quizOrders.clear();
+    }
+
+    list.querySelectorAll('.quiz-card').forEach((card, questionIndex) => {
+      const options = card.querySelector('.quiz-options');
+      if (!options) return;
+      const buttons = [...options.querySelectorAll('.quiz-option')];
+      if (buttons.length < 2) return;
+
+      if (!quizOrders.has(questionIndex)) {
+        const ids = buttons.map(button => Number(button.dataset.option)).filter(Number.isInteger);
+        quizOrders.set(questionIndex, shuffled(ids));
+      }
+
+      const order = quizOrders.get(questionIndex);
+      order.forEach(optionId => {
+        const button = buttons.find(item => Number(item.dataset.option) === optionId);
+        if (button) options.appendChild(button);
+      });
+
+      [...options.querySelectorAll('.quiz-option')].forEach((button, visualIndex) => {
+        const key = button.querySelector('.option-key');
+        if (key) key.textContent = String.fromCharCode(65 + visualIndex);
+      });
+    });
   }
 
   function enhanceCheck() {
     const list = document.querySelector('.quiz-list');
     if (!list) return;
+
+    applyQuizOrder();
 
     const cards = [...list.querySelectorAll('.quiz-card')];
     const answered = cards.filter(card => card.querySelector('.quiz-option.is-selected')).length;
@@ -94,7 +146,7 @@
       if (!complete) {
         complete = document.createElement('div');
         complete.className = 'ui-check-complete';
-        complete.textContent = '✓ 3方向から確認できた。次は、意味を保ったまま声に出す。';
+        complete.textContent = '✓ 意味・気持ち・チャンクを確認できた。次は、意味を保ったまま声に出す。';
         list.insertAdjacentElement('afterend', complete);
       }
     } else {
@@ -123,7 +175,11 @@
 
   function enhance() {
     const step = currentStep();
-    if (!step) return;
+    if (!step) {
+      checkSessionKey = null;
+      quizOrders.clear();
+      return;
+    }
 
     setLessonStep(step);
     enhanceContextStatus(step);
@@ -145,7 +201,7 @@
     if (!document.querySelector('.lesson')) return;
     requestAnimationFrame(enhance);
   });
-  observer.observe(app, { childList: true, subtree: false });
+  observer.observe(app, { childList: true, subtree: true });
 
   enhance();
 })();

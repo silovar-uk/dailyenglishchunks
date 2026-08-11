@@ -1,0 +1,323 @@
+/* UI v3: focused learning flow */
+
+.lesson[data-ui-step] .practice-card {
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+/* Step roadmap */
+.step-rail {
+  position: relative;
+  gap: 0;
+  padding: 3px 0 8px;
+}
+.step-chip {
+  position: relative;
+  min-width: 92px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 7px 12px 7px 34px;
+  color: var(--muted);
+  text-align: left;
+}
+.step-chip::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--line-strong);
+  background: var(--bg);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.step-chip::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: -3px;
+  top: 50%;
+  height: 1px;
+  background: var(--line);
+  z-index: 1;
+}
+.step-chip:last-child::after { display: none; }
+.step-chip > span {
+  display: block;
+  font-size: .62rem;
+  letter-spacing: .12em;
+  color: var(--muted);
+  margin-bottom: 1px;
+}
+.step-chip.is-past { color: var(--accent); }
+.step-chip.is-past::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  left: 11px;
+  border: 0;
+  background: var(--accent);
+  color: #fff;
+  font-size: .58rem;
+  font-weight: 900;
+}
+.step-chip.is-past::after { background: rgba(45,93,80,.35); }
+.step-chip.is-active {
+  color: var(--ink);
+  font-weight: 850;
+}
+.step-chip.is-active::before {
+  width: 15px;
+  height: 15px;
+  left: 11px;
+  border: 4px solid var(--accent);
+  background: var(--surface-strong);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+/* Step identity */
+.lesson[data-ui-step="imagine"] .practice-card { background: linear-gradient(160deg, var(--surface), rgba(242,230,223,.45)); }
+.lesson[data-ui-step="read"] .read-passage { background: var(--surface-strong); box-shadow: 0 14px 40px rgba(48,43,34,.06); }
+.lesson[data-ui-step="chunk"] .practice-card { border-color: rgba(140,77,49,.28); box-shadow: 0 18px 48px rgba(140,77,49,.07); }
+.lesson[data-ui-step="check"] .practice-card { background: rgba(255,255,255,.48); }
+.lesson[data-ui-step="speak"] .practice-card { border-color: rgba(45,93,80,.24); }
+
+/* Context status strips */
+.ui-step-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 14px;
+  padding: 10px 13px;
+  border-radius: 13px;
+  background: rgba(255,255,255,.48);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .78rem;
+}
+.ui-step-status strong { color: var(--ink); font-size: .8rem; }
+.ui-step-status.is-complete {
+  background: var(--accent-soft);
+  border-color: transparent;
+  color: var(--accent);
+}
+.ui-step-status.is-complete strong { color: var(--accent); }
+
+/* Chunk = signature interaction */
+.lesson[data-ui-step="chunk"] .chunk-editor {
+  display: grid;
+  gap: 9px;
+}
+.lesson[data-ui-step="chunk"] .chunk-sentence {
+  position: relative;
+  background: rgba(255,255,255,.62);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+.lesson[data-ui-step="chunk"] .gap-button {
+  color: var(--warm);
+}
+.lesson[data-ui-step="chunk"] .gap-button::after {
+  background: rgba(140,77,49,.16);
+  height: 16px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.lesson[data-ui-step="chunk"] .gap-button:hover::after { background: rgba(140,77,49,.48); }
+.lesson[data-ui-step="chunk"] .gap-button.is-active {
+  background: var(--warm-soft);
+  box-shadow: inset 0 0 0 1px rgba(140,77,49,.12);
+}
+.lesson[data-ui-step="chunk"] .gap-button.is-active span {
+  display: inline-block;
+  animation: uiSlashIn .16s ease-out;
+}
+@keyframes uiSlashIn {
+  from { transform: scale(.55) translateY(2px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+.ui-chunk-legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: .76rem;
+}
+.ui-chunk-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ui-chunk-legend i {
+  width: 12px;
+  height: 2px;
+  background: var(--warm);
+  border-radius: 999px;
+}
+.ui-chunk-legend span:last-child i { background: var(--accent); }
+#chunkCompare:not(:empty) {
+  margin-top: 20px;
+  padding-top: 4px;
+}
+.compare-item {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 15px;
+  background: rgba(255,255,255,.52);
+}
+.compare-item + .compare-item { margin-top: 10px; }
+
+/* Quiz feedback */
+.ui-check-progress {
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ui-check-progress-track {
+  flex: 1;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.ui-check-progress-bar {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  border-radius: inherit;
+  transition: width .2s ease;
+}
+.ui-check-progress-count {
+  color: var(--muted);
+  font-size: .75rem;
+  min-width: 76px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.quiz-option { position: relative; }
+.quiz-option.is-correct::after,
+.quiz-option.is-wrong::after {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: .76rem;
+}
+.quiz-option.is-correct { padding-right: 48px; }
+.quiz-option.is-wrong { padding-right: 48px; }
+.quiz-option.is-correct::after { content: "✓"; background: var(--accent); color: #fff; }
+.quiz-option.is-wrong::after { content: "×"; background: #b66f6f; color: #fff; }
+.quiz-explanation {
+  margin-top: 13px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: rgba(45,93,80,.07);
+  color: var(--ink);
+}
+.quiz-explanation::before {
+  content: "WHY  ";
+  color: var(--accent);
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+.ui-check-complete {
+  margin: 18px 0 0;
+  padding: 15px 17px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+/* Speak as 3-round session */
+.speak-count { position: relative; }
+.speak-round { position: relative; opacity: .58; }
+.speak-round.ui-is-next {
+  opacity: 1;
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(45,93,80,.11);
+  transform: translateY(-2px);
+}
+.speak-round.ui-is-next::before {
+  content: "NEXT";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: .55rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+.speak-round.is-done { opacity: .78; transform: none; }
+.speak-round.is-done::after {
+  content: "DONE";
+  display: block;
+  margin-top: 7px;
+  color: var(--accent);
+  font-size: .55rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.lesson[data-ui-step="speak"] #nextStep:not(.ui-ready) { opacity: .48; }
+.lesson[data-ui-step="speak"] #nextStep.ui-ready {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(45,93,80,.18);
+}
+
+/* Contextual CTA */
+#nextStep { min-width: 190px; }
+
+@media (max-width: 640px) {
+  .step-rail { gap: 2px; }
+  .step-chip {
+    min-width: 46px;
+    width: 46px;
+    padding: 24px 3px 2px;
+    font-size: 0;
+    text-align: center;
+  }
+  .step-chip > span {
+    font-size: .66rem;
+    margin: 0;
+  }
+  .step-chip::before,
+  .step-chip.is-active::before,
+  .step-chip.is-past::before {
+    left: 50%;
+    top: 7px;
+    transform: translateX(-50%);
+  }
+  .step-chip::after {
+    left: calc(50% + 8px);
+    right: calc(-50% + 8px);
+    top: 14px;
+  }
+  .lesson[data-ui-step="chunk"] .chunk-sentence { padding: 13px; }
+  .ui-step-status { align-items: flex-start; }
+  .ui-check-progress-count { min-width: 62px; }
+  .speak-count { grid-template-columns: 1fr; }
+  .speak-round { text-align: left; padding: 15px 18px; }
+  .speak-round strong, .speak-round span, .speak-round small { display: inline; }
+  .speak-round strong { margin-right: 10px; }
+  .speak-round small { margin-left: 8px; }
+  #nextStep { min-width: 0; flex: 1; }
+  .step-actions .secondary-button { flex: 0 0 auto; }
+}

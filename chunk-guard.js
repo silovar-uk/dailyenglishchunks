@@ -1,19 +1,19 @@
 (() => {
-  const DEBUG_KEY = 'dailyEnglishChunks.debug.chunkNaN.v1';
-  const MAX_DEBUG_RECORDS = 20;
+  const DEBUG_KEY = 'dailyEnglishChunks.debug.chunkNaN.v2';
+  const MAX_DEBUG_RECORDS = 30;
   let repairing = false;
 
   function saveDiagnostic(kind, node, extra = {}) {
     try {
       const current = JSON.parse(localStorage.getItem(DEBUG_KEY) || '[]');
       const records = Array.isArray(current) ? current : [];
-      const parent = node?.parentElement || node;
+      const element = node instanceof Element ? node : node?.parentElement;
       records.push({
         at: new Date().toISOString(),
         kind,
-        path: parent instanceof Element ? cssPath(parent) : '',
-        text: parent?.textContent || '',
-        html: parent instanceof Element ? parent.outerHTML.slice(0, 1600) : '',
+        path: element ? cssPath(element) : '',
+        text: element?.textContent || node?.nodeValue || '',
+        html: element?.outerHTML?.slice(0, 1800) || '',
         step: document.querySelector('.step-label')?.textContent || '',
         lesson: document.querySelector('.focus-date')?.textContent || document.title,
         ...extra
@@ -40,19 +40,70 @@
     return parts.join(' > ');
   }
 
-  function normalizeChunkCoordinates(root = document) {
+  function ensureSlashStructure(button) {
+    const children = [...button.childNodes];
+    const span = button.querySelector(':scope > span');
+    const valid = children.length === 1 && span && span.textContent === '/';
+    if (valid) return;
+
+    saveDiagnostic('gap-structure-rebuilt', button, {
+      beforeText: button.textContent,
+      beforeHtml: button.innerHTML
+    });
+
+    const slash = document.createElement('span');
+    slash.textContent = '/';
+    button.replaceChildren(slash);
+  }
+
+  function normalizeChunkDOM(root = document) {
     root.querySelectorAll?.('.chunk-editor').forEach(editor => {
       [...editor.querySelectorAll('.chunk-sentence')].forEach((sentence, sentenceIndex) => {
-        sentence.dataset.sentenceIndex = String(sentenceIndex);
+        const sentenceValue = String(sentenceIndex);
+        if (sentence.dataset.sentenceIndex !== sentenceValue) sentence.dataset.sentenceIndex = sentenceValue;
+
         [...sentence.querySelectorAll('.gap-button')].forEach((button, gapIndex) => {
-          button.dataset.sentence = String(sentenceIndex);
-          button.dataset.gap = String(gapIndex);
-          const slash = button.querySelector('span');
-          if (slash && slash.textContent !== '/') {
-            saveDiagnostic('slash-corrupted', slash, { before: slash.textContent });
-            slash.textContent = '/';
-          }
+          const gapValue = String(gapIndex);
+          if (button.dataset.sentence !== sentenceValue) button.dataset.sentence = sentenceValue;
+          if (button.dataset.gap !== gapValue) button.dataset.gap = gapValue;
+
+          const expectedLabel = `${gapIndex + 1}語目の後で区切る`;
+          if (button.getAttribute('aria-label') !== expectedLabel) button.setAttribute('aria-label', expectedLabel);
+
+          ensureSlashStructure(button);
+
+          [...button.attributes].forEach(attribute => {
+            if (/\bNaN\b/.test(attribute.value)) {
+              saveDiagnostic('nan-attribute', button, { name: attribute.name, value: attribute.value });
+              if (attribute.name === 'data-sentence') button.dataset.sentence = sentenceValue;
+              else if (attribute.name === 'data-gap') button.dataset.gap = gapValue;
+              else if (attribute.name === 'aria-label') button.setAttribute('aria-label', expectedLabel);
+              else button.removeAttribute(attribute.name);
+            }
+          });
         });
+      });
+    });
+  }
+
+  function sanitizeChunkText(root = document) {
+    const targets = root.querySelectorAll?.('.chunk-editor, #chunkCompare, #hintBox') || [];
+    targets.forEach(target => {
+      const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT);
+      const broken = [];
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (/\bNaN\b/i.test(node.nodeValue || '')) broken.push(node);
+      }
+
+      broken.forEach(node => {
+        const gap = node.parentElement?.closest('.gap-button');
+        saveDiagnostic('visible-nan', node, { raw: node.nodeValue });
+        if (gap) {
+          ensureSlashStructure(gap);
+          return;
+        }
+        node.nodeValue = (node.nodeValue || '').replace(/\bNaN\b/gi, '');
       });
     });
   }
@@ -62,64 +113,27 @@
     const editor = button.closest('.chunk-editor');
     if (!sentence || !editor) {
       saveDiagnostic('missing-chunk-container', button);
-      return false;
+      return;
     }
 
     const sentenceIndex = [...editor.querySelectorAll('.chunk-sentence')].indexOf(sentence);
     const gapIndex = [...sentence.querySelectorAll('.gap-button')].indexOf(button);
-
-    if (!Number.isInteger(sentenceIndex) || sentenceIndex < 0 || !Number.isInteger(gapIndex) || gapIndex < 0) {
+    if (sentenceIndex < 0 || gapIndex < 0) {
       saveDiagnostic('invalid-dom-coordinate', button, { sentenceIndex, gapIndex });
-      console.error('[chunk-guard] Invalid DOM coordinate', { sentenceIndex, gapIndex, button });
-      return false;
+      return;
     }
 
-    const oldSentence = button.dataset.sentence;
-    const oldGap = button.dataset.gap;
     button.dataset.sentence = String(sentenceIndex);
     button.dataset.gap = String(gapIndex);
-
-    if (oldSentence !== button.dataset.sentence || oldGap !== button.dataset.gap) {
-      saveDiagnostic('coordinate-repaired', button, {
-        beforeSentence: oldSentence,
-        beforeGap: oldGap,
-        sentenceIndex,
-        gapIndex
-      });
-    }
-    return true;
+    ensureSlashStructure(button);
   }
 
-  function sanitizeVisibleNaN(root = document) {
-    const targets = root.querySelectorAll?.('.chunk-editor, #chunkCompare') || [];
-    targets.forEach(target => {
-      const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT);
-      const broken = [];
-      while (walker.nextNode()) {
-        const node = walker.currentNode;
-        if (/\bNaN\b/.test(node.nodeValue || '')) broken.push(node);
-      }
-
-      broken.forEach(node => {
-        saveDiagnostic('visible-nan', node, { raw: node.nodeValue });
-        const gap = node.parentElement?.closest('.gap-button');
-        if (gap) {
-          const slash = gap.querySelector('span');
-          if (slash) slash.textContent = '/';
-          if (node !== slash?.firstChild) node.nodeValue = (node.nodeValue || '').replace(/\bNaN\b/g, '');
-          return;
-        }
-        node.nodeValue = (node.nodeValue || '').replace(/\bNaN\b/g, '');
-      });
-    });
-  }
-
-  function validateChunkDOM(root = document) {
+  function validate(root = document) {
     if (repairing) return;
     repairing = true;
     try {
-      normalizeChunkCoordinates(root);
-      sanitizeVisibleNaN(root);
+      normalizeChunkDOM(root);
+      sanitizeChunkText(root);
     } finally {
       repairing = false;
     }
@@ -130,20 +144,24 @@
     const button = target?.closest('.gap-button');
     if (!button) return;
     repairClickedGap(button);
-    sanitizeVisibleNaN(button.closest('.chunk-editor') || document);
   }, true);
 
   const app = document.getElementById('app');
   if (app) {
-    const observer = new MutationObserver(() => {
-      requestAnimationFrame(() => validateChunkDOM(app));
+    const observer = new MutationObserver(() => requestAnimationFrame(() => validate(app)));
+    observer.observe(app, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+      attributes: true,
+      attributeFilter: ['data-sentence', 'data-gap', 'aria-label']
     });
-    observer.observe(app, { childList: true, subtree: true, characterData: true });
   }
 
   window.addEventListener('error', event => {
-    if (!document.querySelector('.chunk-editor')) return;
-    saveDiagnostic('window-error-on-chunk', document.querySelector('.chunk-editor'), {
+    const editor = document.querySelector('.chunk-editor');
+    if (!editor) return;
+    saveDiagnostic('window-error-on-chunk', editor, {
       message: event.message,
       source: event.filename,
       line: event.lineno,
@@ -151,5 +169,5 @@
     });
   });
 
-  validateChunkDOM();
+  validate();
 })();

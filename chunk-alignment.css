@@ -1,0 +1,72 @@
+/* Chunk slash alignment
+   Keep a generous tap target while centering the visible slash with the text line. */
+
+.chunk-editor .gap-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 1.32em;
+  min-height: 30px;
+  margin: 0 1px;
+  padding: 0;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.chunk-editor .gap-button > span {
+  display: block;
+  line-height: 1;
+  font-size: 1.12em;
+  transform: translateY(-0.06em);
+  transform-origin: center;
+}
+
+.chunk-editor .gap-button::after {
+  top: 50%;
+  bottom: auto;
+  height: 0.78em;
+  transform: translate(-50%, -50%);
+}
+
+.chunk-editor .gap-button.is-active > span {
+  animation: chunkSlashAlignedIn .16s ease-out;
+}
+
+@keyframes chunkSlashAlignedIn {
+  from {
+    transform: translateY(-0.06em) scale(.58);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-0.06em) scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .chunk-editor .gap-button {
+    width: 22px;
+    min-height: 29px;
+  }
+
+  .chunk-editor .gap-button > span {
+    font-size: 1.08em;
+    transform: translateY(-0.08em);
+  }
+
+  .chunk-editor .gap-button.is-active > span {
+    animation-name: chunkSlashAlignedInMobile;
+  }
+
+  @keyframes chunkSlashAlignedInMobile {
+    from {
+      transform: translateY(-0.08em) scale(.58);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(-0.08em) scale(1);
+      opacity: 1;
+    }
+  }
+}

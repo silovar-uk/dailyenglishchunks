@@ -15,10 +15,32 @@ jobs:
           node-version: 22
       - name: Check JavaScript syntax
         run: |
-          node --check app.js
-          node --check bootstrap.js
-          node --check lessons.js
-          for file in lesson-*.js; do
+          for file in *.js; do
             [ -e "$file" ] || continue
             node --check "$file"
           done
+      - name: Validate lesson JSON
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const index = JSON.parse(fs.readFileSync('data/lessons-index.json', 'utf8'));
+          if (!Array.isArray(index) || !index.length) throw new Error('lessons-index.json must be a non-empty array');
+
+          const ids = new Set();
+          for (const meta of index) {
+            if (!Number.isInteger(Number(meta.id))) throw new Error('Every index item needs an integer id');
+            if (ids.has(Number(meta.id))) throw new Error(`Duplicate lesson id: ${meta.id}`);
+            ids.add(Number(meta.id));
+            if (!meta.createdAt || !meta.title || !Array.isArray(meta.tags)) throw new Error(`Incomplete lesson metadata: ${meta.id}`);
+          }
+
+          for (const meta of index.filter(item => item.dataPath)) {
+            const file = meta.dataPath.replace(/^\.\//, '');
+            const lesson = JSON.parse(fs.readFileSync(file, 'utf8'));
+            if (Number(lesson.schemaVersion) !== 1) throw new Error(`Unsupported schemaVersion in ${file}`);
+            if (Number(lesson.id) !== Number(meta.id)) throw new Error(`Lesson id mismatch in ${file}`);
+            if (!Array.isArray(lesson.sentences) || !lesson.sentences.length) throw new Error(`Missing sentences in ${file}`);
+            if (!Array.isArray(lesson.questions)) throw new Error(`Missing questions in ${file}`);
+          }
+          NODE

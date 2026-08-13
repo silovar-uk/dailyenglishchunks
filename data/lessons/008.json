@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": 8,
+  "createdAt": "2026-08-13",
+  "title": "Suggesting an Alternative",
+  "scene": "A coworker suggests a plan, but you see a possible problem. You want to acknowledge the idea, raise a concern, and suggest a safer alternative.",
+  "sceneJa": "同僚の案を否定せず、理解を示してから懸念を伝え、代案とそのメリットを提案する。",
+  "emotions": ["understanding", "concerned", "constructive", "reassuring"],
+  "difficulty": 3,
+  "minutes": 10,
+  "tags": ["work", "suggestion", "what-if", "that-clause", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I see", "ja": "分かります" },
+        { "en": "why you want to announce it this week,", "ja": "なぜ今週発表したいのかは" },
+        { "en": "but I’m a little concerned", "ja": "ただ、少し気になっています" },
+        { "en": "that we won’t have enough time", "ja": "十分な時間が取れないのではないかと" },
+        { "en": "to prepare.", "ja": "準備するための" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "What if", "ja": "〜するのはどうでしょう" },
+        { "en": "we wait until Monday", "ja": "月曜まで待って" },
+        { "en": "and use the extra few days", "ja": "その数日を使って" },
+        { "en": "to check everything?", "ja": "全体を確認するために" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "That would give us more time", "ja": "そうすれば、もっと時間が取れます" },
+        { "en": "to fix any problems", "ja": "問題を修正するための" },
+        { "en": "that come up.", "ja": "発生した場合に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I think", "ja": "私としては〜と思います" },
+        { "en": "we’d still be able to keep", "ja": "それでも維持できる" },
+        { "en": "the overall schedule", "ja": "全体のスケジュールを" },
+        { "en": "on track.", "ja": "予定どおりに" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I’m a little concerned / that we won’t have enough time",
+        "I’m a little / concerned that we / won’t have enough time",
+        "I’m / a little concerned that / we won’t have enough time"
+      ],
+      "answer": 0,
+      "explanation": "‘I’m a little concerned’ is the main stance, and the that-clause explains what the concern is about."
+    },
+    {
+      "type": "intention",
+      "question": "What is the speaker doing with ‘What if we wait until Monday?’",
+      "options": [
+        "Suggesting an alternative",
+        "Giving a direct order",
+        "Asking what happened on Monday"
+      ],
+      "answer": 0,
+      "explanation": "‘What if we ... ?’ is a soft, practical way to put an alternative on the table without sounding forceful."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘keep the overall schedule on track’ mean?",
+      "options": [
+        "Keep the overall schedule progressing as planned",
+        "Write down the schedule in detail",
+        "Delay the whole schedule"
+      ],
+      "answer": 0,
+      "explanation": "‘Keep ... on track’ means keep something progressing according to plan."
+    }
+  ],
+  "speak": "Read it as one conversation, not four separate sentences. Start by sounding understanding, shift gently into concern after ‘but,’ make ‘What if ... ?’ sound constructive rather than forceful, and finish reassuringly on ‘keep the overall schedule on track.’",
+  "review": "Follow the intention flow: understanding → concern → alternative → benefit → reassurance. Chunks can show where the speaker’s intention changes, not only where grammar changes."
+}

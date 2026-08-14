@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": 9,
+  "createdAt": "2026-08-14",
+  "title": "Raising a Concern Politely",
+  "scene": "You agree with the general direction, but you notice one risk before the team moves ahead. You want to raise it without sounding negative or stopping the momentum.",
+  "sceneJa": "大きな方向性には賛成。ただ、そのまま進める前に一つ気になる点がある。流れを止めず、否定的に聞こえない形で懸念を差し込む。",
+  "emotions": ["agreeing", "careful", "constructive", "reassuring"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "concern", "rather-than", "without", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I’m happy with the direction we’re taking,", "ja": "今進んでいる方向性には賛成です" },
+        { "en": "but there’s one thing", "ja": "ただ、一つあります" },
+        { "en": "I think we should consider", "ja": "考えておいた方がいいと思うことが" },
+        { "en": "before we move forward.", "ja": "このまま進める前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "If we announce the change now,", "ja": "もし今この変更を発表すると" },
+        { "en": "some customers may not have enough time", "ja": "一部のお客さまには十分な時間がないかもしれません" },
+        { "en": "to understand", "ja": "理解するための" },
+        { "en": "how it affects them.", "ja": "それが自分たちにどう影響するのかを" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "It might be worth", "ja": "〜する価値があるかもしれません" },
+        { "en": "giving them a little more information first,", "ja": "まずもう少し情報を伝えておく" },
+        { "en": "rather than explaining everything", "ja": "すべてを説明するよりも" },
+        { "en": "after questions start coming in.", "ja": "質問が来始めてから" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "That way,", "ja": "そうすれば" },
+        { "en": "we can keep the launch on schedule", "ja": "ローンチを予定どおり進められます" },
+        { "en": "without creating unnecessary confusion.", "ja": "不必要な混乱を生まずに" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is the most natural?",
+      "options": [
+        "there’s one thing / I think we should consider / before we move forward",
+        "there’s / one thing I think / we should consider before / we move forward",
+        "there’s one / thing I think we / should consider before we move forward"
+      ],
+      "answer": 0,
+      "explanation": "‘There’s one thing’ forms a clear unit first, ‘I think we should consider’ explains what it is, and ‘before we move forward’ adds the timing."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘rather than’ do here?",
+      "options": [
+        "It compares two choices",
+        "It explains a reason",
+        "It shows time"
+      ],
+      "answer": 0,
+      "explanation": "‘Rather than’ contrasts giving more information first with explaining everything only after questions arrive."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘without creating unnecessary confusion’ mean?",
+      "options": [
+        "Without causing unnecessary confusion",
+        "After the confusion is over",
+        "Without explaining the confusion"
+      ],
+      "answer": 0,
+      "explanation": "‘Without + -ing’ means doing something while avoiding another result: here, keeping the launch on schedule without causing extra confusion."
+    }
+  ],
+  "speak": "Read it as a constructive concern, not a complaint. Start with genuine agreement, shift gently after ‘but,’ make ‘rather than’ sound like a comparison between two options, and finish reassuringly on ‘without creating unnecessary confusion.’",
+  "review": "Follow the intention flow: agreement → concern → risk → alternative → contrast → benefit. Notice how ‘but’, ‘rather than’, and ‘That way’ connect ideas as you read from left to right."
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": 10,
+  "createdAt": "2026-08-15",
+  "title": "Buying Time Before You Answer",
+  "scene": "Someone asks for your opinion in a meeting, but you do not want to answer too quickly. You want to share your current view while making time to check the facts before giving a firm recommendation.",
+  "sceneJa": "会議で突然意見を求められた。すぐに断定せず、現時点の考えを示しつつ、数字を確認してから明確な提案を返したい。",
+  "emotions": ["thoughtful", "careful", "constructive", "reliable"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "decision-making", "whether", "rather-than", "before", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "My first reaction is", "ja": "最初に感じたこととしては" },
+        { "en": "that the idea could work,", "ja": "その案はうまくいきそうです" },
+        { "en": "but I’d like to look at the numbers", "ja": "ただ、数字を確認したいです" },
+        { "en": "before giving you a definite answer.", "ja": "はっきりした回答をする前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Based on what we know so far,", "ja": "現時点で分かっていることに基づくと" },
+        { "en": "the biggest question is", "ja": "一番の問題は" },
+        { "en": "whether we can get enough people involved", "ja": "十分な人数に参加してもらえるかどうか" },
+        { "en": "in time.", "ja": "間に合うように" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I’d rather check that first", "ja": "まずそこを確認したいです" },
+        { "en": "than make an assumption", "ja": "勝手に推測するより" },
+        { "en": "and have to change the plan later.", "ja": "あとで計画を変更することになるより" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "If you give me until tomorrow morning,", "ja": "明日の朝まで時間をいただければ" },
+        { "en": "I can come back", "ja": "改めてお伝えできます" },
+        { "en": "with a clearer recommendation.", "ja": "もっと明確な提案を" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "the biggest question is / whether we can get enough people involved",
+        "the biggest / question is whether / we can get enough people involved",
+        "the biggest question / is whether we / can get enough people involved"
+      ],
+      "answer": 0,
+      "explanation": "‘The biggest question is’ sets up the issue, and the whether-clause then gives the content of that question."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘My first reaction is ...’ communicate here?",
+      "options": [
+        "This is the final decision",
+        "This is the speaker’s current first impression",
+        "The speaker disagrees with the other person"
+      ],
+      "answer": 1,
+      "explanation": "It gives a current view while leaving room to check more information before making a final decision."
+    },
+    {
+      "type": "meaning",
+      "question": "What relationship does ‘I’d rather A than B’ express?",
+      "options": [
+        "Do B after A",
+        "Explain why A causes B",
+        "Prefer A to B"
+      ],
+      "answer": 2,
+      "explanation": "‘I’d rather A than B’ expresses a preference: the speaker chooses checking first over making an assumption."
+    }
+  ],
+  "speak": "Don’t sound uncertain; sound thoughtful. Read ‘could work’ with a slightly positive tone, shift gently at ‘but,’ and finish the last sentence like a clear promise about when you will return with a recommendation.",
+  "review": "Previous flow: agreement → concern → risk → alternative → contrast → benefit. Today, extend that skill into decision-making: initial view → reservation → key question → preferred action → deadline → recommendation. Use words such as ‘but’, ‘whether’, ‘rather than’, and ‘if’ to predict what kind of information comes next."
+}

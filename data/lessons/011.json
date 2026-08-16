@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": 11,
+  "createdAt": "2026-08-16",
+  "title": "Disagreeing Without Shutting the Idea Down",
+  "scene": "A coworker suggests an idea. You see the logic, but you think there is a better way. You want to disagree without shutting the idea down.",
+  "sceneJa": "同僚の提案に筋は通っている。ただ、そのまま賛成するより別のやり方を考えたい。相手の考えを残したまま方向を変える。",
+  "emotions": ["understanding", "careful", "collaborative", "constructive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "disagreement", "instead-of", "without", "once", "conversation"],
+  "sentences": [
+    {"chunks":[
+      {"en":"I can see the logic","ja":"その考え方の筋は分かります"},
+      {"en":"behind that approach,","ja":"そのアプローチの背景にある"},
+      {"en":"especially if our main goal is","ja":"特に、もし一番の目的が"},
+      {"en":"to move quickly.","ja":"早く進めることなら"}
+    ]},
+    {"chunks":[
+      {"en":"My concern is","ja":"私が気になっているのは"},
+      {"en":"that we might solve the immediate problem","ja":"目の前の問題は解決できても"},
+      {"en":"without addressing","ja":"〜に対処しないまま"},
+      {"en":"what caused it in the first place.","ja":"そもそも何がそれを引き起こしたのか"}
+    ]},
+    {"chunks":[
+      {"en":"Instead of choosing","ja":"選ぶのではなく"},
+      {"en":"between speed and a more complete solution,","ja":"スピードか、より完全な解決策かを"},
+      {"en":"could we find a way","ja":"方法を考えられないでしょうか"},
+      {"en":"to do both?","ja":"両方を実現する"}
+    ]},
+    {"chunks":[
+      {"en":"We could make a small change now","ja":"今は小さな変更をして"},
+      {"en":"and then review the bigger issue","ja":"そのあと、より大きな問題を見直す"},
+      {"en":"once we have more information.","ja":"もっと情報がそろった段階で"}
+    ]}
+  ],
+  "questions": [
+    {"type":"chunk","question":"Which boundary is most natural?","options":["My concern / is that we might / solve the immediate problem","My concern is / that we might solve the immediate problem","My / concern is that / we might solve the immediate problem"],"answer":1,"explanation":"‘My concern is’ sets up the concern, and the that-clause gives its content."},
+    {"type":"meaning","question":"What does ‘Instead of choosing between A and B’ mean?","options":["Do A and B in order","Rather than choosing either A or B","Explain the difference between A and B"],"answer":1,"explanation":"‘Instead of’ reframes the choice: the speaker suggests looking beyond the A-or-B choice."},
+    {"type":"meaning","question":"What does ‘once we have more information’ mean here?","options":["Check the information only once","After losing the information","When more information becomes available"],"answer":2,"explanation":"Here ‘once’ means ‘when/after something has happened,’ not ‘one time.’"}
+  ],
+  "speak": "Sound collaborative, not defensive. Read ‘I can see the logic’ as genuine understanding. On ‘could we find a way to do both?’ let your voice rise slightly so it sounds like an invitation to think together, not a rejection.",
+  "review": "Previous lesson: initial view → reservation → key question → preferred action → deadline → recommendation. Today: understand their logic → identify the risk → change the question → combine the options. Good disagreement often starts with understanding, not opposition."
+}

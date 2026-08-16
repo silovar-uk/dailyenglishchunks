@@ -1,96 +1,13 @@
 [
-  {
-    "id": 1,
-    "createdAt": "2026-08-07",
-    "title": "A Small Change of Plans",
-    "sceneJa": "仕事のあと、まっすぐ帰る予定だった。でも同僚に夕食へ誘われる。",
-    "difficulty": 1,
-    "minutes": 8,
-    "tags": ["daily-life", "to-infinitive"]
-  },
-  {
-    "id": 2,
-    "createdAt": "2026-08-08",
-    "title": "Fixing a Small Mistake",
-    "sceneJa": "古い資料を送ってしまったことに気づき、急いで修正する。",
-    "difficulty": 1,
-    "minutes": 9,
-    "tags": ["work", "that-clause"]
-  },
-  {
-    "id": 3,
-    "createdAt": "2026-08-09",
-    "title": "Asking for More Time",
-    "sceneJa": "レポートの数字に違和感を見つけ、急ぐより正確さを優先する。",
-    "difficulty": 2,
-    "minutes": 10,
-    "tags": ["work", "when", "because", "that-clause"]
-  },
-  {
-    "id": 4,
-    "createdAt": "2026-08-10",
-    "title": "Giving and Receiving Feedback",
-    "sceneJa": "時間をかけた提案書を上司に見せ、いくつか修正を提案される。",
-    "difficulty": 2,
-    "minutes": 10,
-    "tags": ["work", "feedback", "that-clause", "make+A+adjective"]
-  },
-  {
-    "id": 5,
-    "createdAt": "2026-08-11",
-    "title": "Changing the System Around the Problem",
-    "sceneJa": "まったく違う問題に向き合った一日のあと、ただ頑張るより周囲の仕組みを変えると、多くの問題が楽になることに気づく。",
-    "difficulty": 3,
-    "minutes": 11,
-    "tags": ["reflection", "problem-solving", "when", "not-only-but-also"]
-  },
-  {
-    "id": 6,
-    "createdAt": "2026-08-11",
-    "title": "Giving a Clear Project Update",
-    "sceneJa": "仕事の小さな遅れについて、必要以上に深刻に見せず、状況・理由・見通しを落ち着いて伝える。",
-    "difficulty": 3,
-    "minutes": 10,
-    "tags": ["work", "because", "to-infinitive", "project-update"]
-  },
-  {
-    "id": 7,
-    "createdAt": "2026-08-12",
-    "title": "Asking for Clarification",
-    "sceneJa": "会議中、大筋は理解できているものの一部だけ曖昧。責めるのではなく、自分の理解を示してから認識をそろえる。",
-    "difficulty": 3,
-    "minutes": 10,
-    "tags": ["work", "clarification", "that-clause", "before", "conversation"],
-    "dataPath": "./data/lessons/007.json"
-  },
-  {
-    "id": 8,
-    "createdAt": "2026-08-13",
-    "title": "Suggesting an Alternative",
-    "sceneJa": "同僚の案を否定せず、理解を示してから懸念を伝え、代案とそのメリットを提案する。",
-    "difficulty": 3,
-    "minutes": 10,
-    "tags": ["work", "suggestion", "what-if", "that-clause", "conversation"],
-    "dataPath": "./data/lessons/008.json"
-  },
-  {
-    "id": 9,
-    "createdAt": "2026-08-14",
-    "title": "Raising a Concern Politely",
-    "sceneJa": "大きな方向性には賛成。ただ、そのまま進める前に一つ気になる点がある。流れを止めず、否定的に聞こえない形で懸念を差し込む。",
-    "difficulty": 4,
-    "minutes": 10,
-    "tags": ["work", "concern", "rather-than", "without", "conversation"],
-    "dataPath": "./data/lessons/009.json"
-  },
-  {
-    "id": 10,
-    "createdAt": "2026-08-15",
-    "title": "Buying Time Before You Answer",
-    "sceneJa": "会議で突然意見を求められた。すぐに断定せず、現時点の考えを示しつつ、数字を確認してから明確な提案を返したい。",
-    "difficulty": 4,
-    "minutes": 10,
-    "tags": ["work", "decision-making", "whether", "rather-than", "before", "conversation"],
-    "dataPath": "./data/lessons/010.json"
-  }
+  {"id":1,"createdAt":"2026-08-07","title":"A Small Change of Plans","sceneJa":"仕事のあと、まっすぐ帰る予定だった。でも同僚に夕食へ誘われる。","difficulty":1,"minutes":8,"tags":["daily-life","to-infinitive"]},
+  {"id":2,"createdAt":"2026-08-08","title":"Fixing a Small Mistake","sceneJa":"古い資料を送ってしまったことに気づき、急いで修正する。","difficulty":1,"minutes":9,"tags":["work","that-clause"]},
+  {"id":3,"createdAt":"2026-08-09","title":"Asking for More Time","sceneJa":"レポートの数字に違和感を見つけ、急ぐより正確さを優先する。","difficulty":2,"minutes":10,"tags":["work","when","because","that-clause"]},
+  {"id":4,"createdAt":"2026-08-10","title":"Giving and Receiving Feedback","sceneJa":"時間をかけた提案書を上司に見せ、いくつか修正を提案される。","difficulty":2,"minutes":10,"tags":["work","feedback","that-clause","make+A+adjective"]},
+  {"id":5,"createdAt":"2026-08-11","title":"Changing the System Around the Problem","sceneJa":"まったく違う問題に向き合った一日のあと、ただ頑張るより周囲の仕組みを変えると、多くの問題が楽になることに気づく。","difficulty":3,"minutes":11,"tags":["reflection","problem-solving","when","not-only-but-also"]},
+  {"id":6,"createdAt":"2026-08-11","title":"Giving a Clear Project Update","sceneJa":"仕事の小さな遅れについて、必要以上に深刻に見せず、状況・理由・見通しを落ち着いて伝える。","difficulty":3,"minutes":10,"tags":["work","because","to-infinitive","project-update"]},
+  {"id":7,"createdAt":"2026-08-12","title":"Asking for Clarification","sceneJa":"会議中、大筋は理解できているものの一部だけ曖昧。責めるのではなく、自分の理解を示してから認識をそろえる。","difficulty":3,"minutes":10,"tags":["work","clarification","that-clause","before","conversation"],"dataPath":"./data/lessons/007.json"},
+  {"id":8,"createdAt":"2026-08-13","title":"Suggesting an Alternative","sceneJa":"同僚の案を否定せず、理解を示してから懸念を伝え、代案とそのメリットを提案する。","difficulty":3,"minutes":10,"tags":["work","suggestion","what-if","that-clause","conversation"],"dataPath":"./data/lessons/008.json"},
+  {"id":9,"createdAt":"2026-08-14","title":"Raising a Concern Politely","sceneJa":"大きな方向性には賛成。ただ、そのまま進める前に一つ気になる点がある。流れを止めず、否定的に聞こえない形で懸念を差し込む。","difficulty":4,"minutes":10,"tags":["work","concern","rather-than","without","conversation"],"dataPath":"./data/lessons/009.json"},
+  {"id":10,"createdAt":"2026-08-15","title":"Buying Time Before You Answer","sceneJa":"会議で突然意見を求められた。すぐに断定せず、現時点の考えを示しつつ、数字を確認してから明確な提案を返したい。","difficulty":4,"minutes":10,"tags":["work","decision-making","whether","rather-than","before","conversation"],"dataPath":"./data/lessons/010.json"},
+  {"id":11,"createdAt":"2026-08-16","title":"Disagreeing Without Shutting the Idea Down","sceneJa":"同僚の提案に筋は通っている。ただ、そのまま賛成するより別のやり方を考えたい。相手の考えを残したまま方向を変える。","difficulty":4,"minutes":10,"tags":["work","disagreement","instead-of","without","once","conversation"],"dataPath":"./data/lessons/011.json"}
 ]

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": 16,
+  "createdAt": "2026-08-19",
+  "title": "When You Don’t Have the Full Picture Yet",
+  "scene": "A coworker asks why the numbers changed. You have a possible explanation, but not enough evidence to say for sure. You want to separate observation from assumption and explain what you will check next.",
+  "sceneJa": "数字が変わった理由を聞かれた。原因の仮説はあるが、まだ断定できるほどの情報はない。分かっている範囲と、次に確認することを分けて伝える。",
+  "emotions": ["careful", "curious", "analytical", "constructive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "analysis", "necessarily", "whether", "before", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "From what I can see,", "ja": "今見えている範囲では" },
+        { "en": "the drop seems to have started", "ja": "減少は始まったようです" },
+        { "en": "after we changed the way", "ja": "やり方を変えたあとに" },
+        { "en": "the campaign was promoted.", "ja": "キャンペーンを告知する" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "That doesn’t necessarily mean", "ja": "だからといって必ずしも〜という意味ではありません" },
+        { "en": "the change caused it,", "ja": "その変更が原因だった" },
+        { "en": "though,", "ja": "とはいえ" },
+        { "en": "because several other things happened", "ja": "他にもいくつかのことが起きたので" },
+        { "en": "around the same time.", "ja": "ほぼ同じ時期に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I’d like to compare the numbers", "ja": "数字を比較したいです" },
+        { "en": "with last month", "ja": "先月と" },
+        { "en": "before drawing any conclusions.", "ja": "何らかの結論を出す前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Once we know", "ja": "分かれば" },
+        { "en": "whether the same pattern appears there,", "ja": "同じパターンがそこにも現れているかどうか" },
+        { "en": "we’ll have a better idea", "ja": "もっとよく分かるようになります" },
+        { "en": "of what’s actually happening.", "ja": "実際に何が起きているのか" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "That doesn’t necessarily mean / the change caused it",
+        "That doesn’t / necessarily mean the change / caused it",
+        "That / doesn’t necessarily / mean the change caused it"
+      ],
+      "answer": 0,
+      "explanation": "‘That doesn’t necessarily mean’ works as one thought unit, and the following clause gives what is not necessarily true."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘doesn’t necessarily mean’ communicate?",
+      "options": [
+        "It is definitely wrong",
+        "It is not always or automatically true",
+        "The speaker completely agrees"
+      ],
+      "answer": 1,
+      "explanation": "It weakens the conclusion: the timing suggests a possibility, but it does not prove causation."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker compare the numbers with last month?",
+      "options": [
+        "To confirm the cause immediately",
+        "To hide this month’s numbers",
+        "To test the hypothesis before reaching a conclusion"
+      ],
+      "answer": 2,
+      "explanation": "The speaker wants another comparison point before deciding what caused the change."
+    }
+  ],
+  "speak": "Sound curious rather than defensive. Pause slightly after ‘From what I can see,’ use a gentle braking tone on ‘That doesn’t necessarily mean,’ and finish the last sentence with confidence that more evidence will make the situation clearer.",
+  "review": "Previous flow: accept → current work → trade-off → reason → priority. Today’s flow: observation → possible explanation → caution → check → stronger conclusion. The key habit is not to stop at ‘I don’t know,’ but to say what you know, what you do not know yet, and what you will check next."
+}

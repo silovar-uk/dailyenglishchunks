@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": 17,
+  "createdAt": "2026-08-20",
+  "title": "A Quiet Evening",
+  "scene": "You plan a quiet evening at home with a film, but a mysterious tapping sound keeps interrupting you. The investigation turns out to be less impressive than expected.",
+  "sceneJa": "家で映画を観ながら静かな夜を過ごすつもりだったが、謎のコツコツ音が気になって捜査を始める。結末は、期待したほど知的ではない。",
+  "emotions": ["relaxed", "curious", "suspicious", "self-deprecating"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "home", "film", "had-been-meaning-to", "apart-from", "i-suppose", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I decided to have a quiet evening at home", "ja": "家で静かな夜を過ごすことにしました" },
+        { "en": "because I’d been out almost every night that week.", "ja": "その週はほぼ毎晩出かけていたので" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I bought something nice for dinner,", "ja": "夕食にちょっといいものを買い" },
+        { "en": "put my phone on silent,", "ja": "スマホをサイレントにして" },
+        { "en": "and chose a film", "ja": "映画を一本選びました" },
+        { "en": "I’d been meaning to watch for months.", "ja": "何か月も観ようと思っていた" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "About ten minutes into the film,", "ja": "映画が始まって10分ほどすると" },
+        { "en": "I heard a strange tapping noise", "ja": "妙なコツコツという音が聞こえてきました" },
+        { "en": "coming from the kitchen.", "ja": "キッチンのほうから" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I ignored it at first,", "ja": "最初は無視しました" },
+        { "en": "mainly because investigating strange noises", "ja": "主な理由は、妙な物音を調べることが" },
+        { "en": "is how people get into trouble in films.", "ja": "映画では人が面倒なことに巻き込まれる典型だからです" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Then it happened again,", "ja": "するとまた音がして" },
+        { "en": "slightly louder this time,", "ja": "今度は少し大きかったので" },
+        { "en": "so I paused the film", "ja": "映画を止めて" },
+        { "en": "and went to have a look.", "ja": "見に行くことにしました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "There was nothing there,", "ja": "そこには何もありませんでした" },
+        { "en": "apart from a plastic bag", "ja": "ビニール袋を除けば" },
+        { "en": "moving gently near the window.", "ja": "窓の近くでゆっくり動いている" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I closed the window,", "ja": "窓を閉め" },
+        { "en": "returned to the sofa,", "ja": "ソファに戻り" },
+        { "en": "and felt quietly pleased", "ja": "ひそかに満足しました" },
+        { "en": "with my excellent detective work.", "ja": "自分の見事な捜査能力に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Five minutes later,", "ja": "5分後" },
+        { "en": "the tapping started again.", "ja": "またコツコツという音が始まりました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "This time,", "ja": "今度こそ" },
+        { "en": "I discovered that the noise", "ja": "その音が" },
+        { "en": "was coming from the film itself.", "ja": "映画そのものから聞こえていたと分かりました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I’d spent fifteen minutes", "ja": "15分かけて" },
+        { "en": "investigating my own television.", "ja": "自分のテレビを捜査していたわけです" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Still,", "ja": "まあ" },
+        { "en": "I suppose it was a quiet evening.", "ja": "静かな夜ではあったのでしょう" },
+        { "en": "I certainly wasn’t disturbed", "ja": "少なくとも邪魔されることはありませんでした" },
+        { "en": "by anything intelligent.", "ja": "知性のある何かには" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I chose a film / I’d been meaning to watch for months",
+        "I chose / a film I’d been / meaning to watch for months",
+        "I chose a / film I’d been meaning / to watch for months"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the action and object, while the following relative clause describes the film."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I’d been meaning to watch’ suggest?",
+      "options": [
+        "The speaker had wanted to watch it for some time but had not done so yet",
+        "The speaker had already watched it several times",
+        "The speaker had decided never to watch it"
+      ],
+      "answer": 0,
+      "explanation": "‘I’d been meaning to ...’ is commonly used for something you intended to do for a while but kept putting off."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final line funny?",
+      "options": [
+        "The speaker thinks the television is alive",
+        "The speaker calmly includes himself among the unintelligent things involved in the evening",
+        "The mysterious noise was actually dangerous"
+      ],
+      "answer": 1,
+      "explanation": "The dry humour comes from the speaker insulting himself indirectly and delivering it as if it were a reassuring conclusion."
+    }
+  ],
+  "speak": "Start in a relaxed, conversational tone. Let the tapping sound create mild curiosity rather than real fear. Pause before ‘This time’ and keep the discovery understated. Deliver the final line very calmly; the joke works because the speaker does not sound as though he is trying to be funny.",
+  "review": "Today’s flow: peaceful plan → strange interruption → cautious investigation → false confidence → embarrassing discovery → dry self-deprecation. Key expressions: ‘I’d been meaning to ...’ for a long-delayed intention, ‘apart from ...’ for an exception, and ‘I suppose ...’ for a softened, sometimes ironic conclusion."
+}

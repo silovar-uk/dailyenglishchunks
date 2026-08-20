@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": 19,
+  "createdAt": "2026-08-20",
+  "title": "Explaining a Delay Without Making Excuses",
+  "scene": "A task is taking longer than expected. You need to explain the delay clearly, show what you are doing about it, and give a realistic deadline without sounding defensive.",
+  "sceneJa": "予定より作業が遅れている。言い訳にせず、理由・現状・影響・期限まで整理して伝える。",
+  "emotions": ["responsible", "calm", "careful", "reassuring"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "delay", "rather-than", "expect", "by-deadline", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "The update is taking", "ja": "更新作業にはかかっています" },
+        { "en": "a little longer than I expected", "ja": "予想していたより少し長く" },
+        { "en": "because I found", "ja": "なぜなら見つけたからです" },
+        { "en": "a few inconsistencies in the data.", "ja": "データにいくつかの不整合を" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Rather than sending something", "ja": "何かを送るよりも" },
+        { "en": "I’m not confident in,", "ja": "自信を持てないものを" },
+        { "en": "I’m checking those numbers again", "ja": "その数字をもう一度確認しています" },
+        { "en": "before I finish the report.", "ja": "レポートを完成させる前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Most of the work", "ja": "作業の大部分は" },
+        { "en": "is already done,", "ja": "すでに終わっています" },
+        { "en": "so I don’t expect this", "ja": "なので、これは〜とは考えていません" },
+        { "en": "to affect the overall schedule.", "ja": "全体のスケジュールに影響する" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I should be able to send you", "ja": "お送りできる見込みです" },
+        { "en": "the final version", "ja": "最終版を" },
+        { "en": "by tomorrow morning.", "ja": "明日の朝までに" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "The update is taking / a little longer than I expected",
+        "The update / is taking a little / longer than I expected",
+        "The update is / taking a little longer / than I expected"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk introduces the situation, and the second gives the comparison: it is taking a little longer than expected."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘Rather than sending something I’m not confident in’ mean?",
+      "options": [
+        "Send it first and check it later",
+        "Choose another action instead of sending something uncertain",
+        "Send it because the speaker is confident"
+      ],
+      "answer": 1,
+      "explanation": "‘Rather than A’ sets up the action the speaker chooses not to take, followed by the preferred alternative."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘by tomorrow morning’ mean?",
+      "options": [
+        "No later than tomorrow morning",
+        "Starting tomorrow morning",
+        "Continuously until tomorrow morning"
+      ],
+      "answer": 0,
+      "explanation": "‘By’ marks a deadline: the final version should be sent no later than tomorrow morning."
+    }
+  ],
+  "speak": "Sound responsible rather than apologetic. State the delay calmly, explain the reason without becoming defensive, add reassurance at ‘Most of the work is already done,’ and make ‘by tomorrow morning’ clear and definite so the listener hears the deadline.",
+  "review": "Previous flow: observation → possible explanation → caution → check → stronger conclusion. Today’s flow: delay → reason → choice → current status → impact → deadline. Good updates reduce uncertainty by answering what happened, why, what you are doing, whether it affects the wider plan, and when it will be ready."
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 18,
+  "createdAt": "2026-08-21",
+  "title": "The Five-Minute Workout",
+  "scene": "You decide to squeeze in a five-minute workout before breakfast because it sounds almost too easy to fail. The instructor, your body, and finally your watch each have slightly different opinions about how well that plan is going.",
+  "sceneJa": "朝食前に5分だけ運動することにする。簡単そうに見えたが、インストラクター、自分の体、そして最後には腕時計まで、それぞれ違う評価を下してくる。",
+  "emotions": ["optimistic", "strained", "proud", "resigned", "amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "exercise", "perfectly-manageable", "begin-to-question", "decide-not-to-argue", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I decided to exercise before breakfast", "ja": "朝食前に運動することにしました" },
+        { "en": "after reading that even a short workout", "ja": "短時間の運動でも" },
+        { "en": "was better than doing nothing.", "ja": "何もしないよりはいいと読んだので" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Five minutes sounded perfectly manageable,", "ja": "5分なら十分やれそうに聞こえました" },
+        { "en": "which is an attractive phrase", "ja": "それは実に魅力的な言葉です" },
+        { "en": "when you are still lying in bed.", "ja": "まだベッドに寝ているときには" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I put on some sports clothes,", "ja": "運動着に着替え" },
+        { "en": "moved the coffee table,", "ja": "コーヒーテーブルを動かし" },
+        { "en": "and found a workout video", "ja": "運動動画を見つけました" },
+        { "en": "described as ‘gentle but effective.’", "ja": "『やさしいけれど効果的』と説明された" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "The instructor smiled warmly", "ja": "インストラクターはにこやかに笑い" },
+        { "en": "and asked me to start", "ja": "まず始めるように言いました" },
+        { "en": "with a few simple squats.", "ja": "簡単なスクワットを数回するところから" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "About ninety seconds later,", "ja": "約90秒後" },
+        { "en": "I began to question", "ja": "私は疑問を持ち始めました" },
+        { "en": "what sort of childhood", "ja": "いったいどんな幼少期を" },
+        { "en": "had led her to describe this as gentle.", "ja": "過ごしたらこれを『やさしい』と表現するのかと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Halfway through,", "ja": "半分まで来たところで" },
+        { "en": "she cheerfully announced", "ja": "彼女は明るく告げました" },
+        { "en": "that we were now properly warmed up.", "ja": "これでしっかりウォームアップできたと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "This was useful information,", "ja": "それは有益な情報でした" },
+        { "en": "because I had assumed", "ja": "なぜなら私は" },
+        { "en": "I was nearly dead.", "ja": "もうほぼ死にかけていると思っていたので" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Still,", "ja": "それでも" },
+        { "en": "I finished the whole five minutes", "ja": "5分間すべてやり切り" },
+        { "en": "and lay on the floor", "ja": "床に寝転がり" },
+        { "en": "feeling surprisingly proud of myself.", "ja": "意外なほど達成感を覚えました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "My watch congratulated me", "ja": "すると腕時計が私を祝福しました" },
+        { "en": "on completing four minutes", "ja": "4分間を達成したことを" },
+        { "en": "of physical activity.", "ja": "身体活動として" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Apparently,", "ja": "どうやら" },
+        { "en": "even my watch thought", "ja": "腕時計ですら思ったようです" },
+        { "en": "the first minute didn’t really count.", "ja": "最初の1分は大した運動ではなかったと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I decided not to argue.", "ja": "反論しないことにしました" },
+        { "en": "It had clearly done", "ja": "どう見ても腕時計のほうが" },
+        { "en": "more careful research than I had.", "ja": "私よりきちんと調べていたので" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Five minutes sounded perfectly manageable / which is an attractive phrase / when you are still lying in bed",
+        "Five minutes / sounded perfectly / manageable which is an attractive phrase",
+        "Five minutes sounded / perfectly manageable which / is an attractive phrase when"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the speaker’s judgment, the next comments on that judgment, and the final chunk adds the situation in which it sounds attractive."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I began to question’ mean here?",
+      "options": [
+        "I started to doubt whether the description was reasonable",
+        "I began asking the instructor personal questions",
+        "I stopped doing the workout immediately"
+      ],
+      "answer": 0,
+      "explanation": "The speaker starts doubting the instructor’s use of the word ‘gentle’ because the workout feels much harder than expected."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is ‘I decided not to argue’ funny here?",
+      "options": [
+        "The watch can actually debate with the speaker",
+        "The speaker treats the watch’s disappointing judgment as if it were an authority worth arguing with",
+        "The instructor asked the speaker to remain silent"
+      ],
+      "answer": 1,
+      "explanation": "The humour comes from calmly accepting the watch’s judgment and pretending it has done better research than the speaker."
+    }
+  ],
+  "speak": "Begin with mild optimism and keep the tone conversational. Let the disbelief grow slightly at ‘gentle but effective’ and ‘properly warmed up.’ Deliver ‘I was nearly dead’ without exaggerating it. Slow down for the final two lines and sound almost respectfully defeated by the watch; the dry humour works best when the punchline is understated.",
+  "review": "Today’s flow: sensible plan → confident start → unexpectedly hard reality → small victory → external judgment → dry surrender. Key expressions: ‘perfectly manageable’ for something that seems easy enough, ‘begin to question’ for growing doubt, and ‘decide not to argue’ as a dry way to accept reality."
+}

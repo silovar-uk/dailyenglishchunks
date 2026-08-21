@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": 21,
+  "createdAt": "2026-08-22",
+  "title": "The Suspiciously Cheap Coffee",
+  "scene": "You stop at a small café on your way home and notice that the coffee is surprisingly cheap. You confidently order the largest size, then slowly discover why the staff checked whether you were sure.",
+  "sceneJa": "帰宅途中に安すぎるコーヒーを見つけて、大きいサイズを軽い気持ちで頼む。結果として、価格以上のものをしっかり受け取ることになる。",
+  "emotions": ["tired", "confident", "surprised", "overcaffeinated", "resigned"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "coffee", "without-giving-it-much-thought", "began-to-understand", "excellent-value", "dry-humour"],
+  "sentences": [
+    {"chunks": [{"en": "I stopped at a small café", "ja": "小さなカフェに立ち寄りました"}, {"en": "on my way home", "ja": "帰宅途中に"}, {"en": "because I was beginning to lose the argument", "ja": "言い争いに負け始めていたからです"}, {"en": "with my own eyelids.", "ja": "自分のまぶたとの"}]},
+    {"chunks": [{"en": "The coffee was surprisingly cheap,", "ja": "コーヒーは驚くほど安く"}, {"en": "so I ordered the largest one", "ja": "そこで一番大きいサイズを頼みました"}, {"en": "without giving it much thought.", "ja": "あまり深く考えずに"}]},
+    {"chunks": [{"en": "The man behind the counter", "ja": "カウンターの男性は"}, {"en": "looked at me for a moment", "ja": "一瞬こちらを見て"}, {"en": "and asked,", "ja": "こう聞きました"}, {"en": "‘Are you sure?’", "ja": "『本当に？』"}]},
+    {"chunks": [{"en": "I assumed he was impressed", "ja": "私は彼が感心しているのだと思いました"}, {"en": "by my commitment to caffeine,", "ja": "私のカフェインへの覚悟に"}, {"en": "so I said yes", "ja": "だから『はい』と答えました"}, {"en": "with unnecessary confidence.", "ja": "必要以上の自信を込めて"}]},
+    {"chunks": [{"en": "He nodded", "ja": "彼はうなずきました"}, {"en": "in the way people do", "ja": "人がよくする感じで"}, {"en": "when they have given you a chance", "ja": "一度チャンスを与えたあとに"}, {"en": "and you have chosen not to take it.", "ja": "相手がそれを使わなかったときの"}]},
+    {"chunks": [{"en": "A few minutes later,", "ja": "数分後"}, {"en": "he placed something on the counter", "ja": "彼は何かをカウンターに置きました"}, {"en": "roughly the size of a flowerpot.", "ja": "だいたい植木鉢くらいの大きさの"}]},
+    {"chunks": [{"en": "I carried it to a table", "ja": "私はそれをテーブルまで運びました"}, {"en": "using both hands", "ja": "両手を使って"}, {"en": "and began to understand", "ja": "そして分かり始めました"}, {"en": "why nobody else had ordered one.", "ja": "なぜ他の誰もそれを頼んでいなかったのか"}]},
+    {"chunks": [{"en": "After twenty minutes,", "ja": "20分後"}, {"en": "I had drunk less than half", "ja": "まだ半分も飲んでおらず"}, {"en": "and could already hear colours.", "ja": "すでに色が聞こえるような気がしていました"}]},
+    {"chunks": [{"en": "I considered leaving the rest,", "ja": "残りを置いていこうかとも考えましたが"}, {"en": "but that felt financially irresponsible.", "ja": "それは金銭的に無責任な気がしました"}]},
+    {"chunks": [{"en": "So I finished it", "ja": "そこで全部飲み切り"}, {"en": "and walked home", "ja": "家まで歩きました"}, {"en": "at a pace normally associated", "ja": "普通なら結びつけられるような速度で"}, {"en": "with people escaping small explosions.", "ja": "小規模な爆発から逃げる人たちに"}]},
+    {"chunks": [{"en": "The coffee had been excellent value.", "ja": "そのコーヒーは実にお得でした"}, {"en": "I got a drink, some exercise,", "ja": "飲み物と運動が手に入り"}, {"en": "and absolutely no need", "ja": "そしてまったく必要なくなりました"}, {"en": "to sleep that night.", "ja": "その夜に眠ることが"}]}
+  ],
+  "questions": [
+    {"type": "chunk", "question": "Which boundary is most natural?", "options": ["The coffee was surprisingly cheap, / so I ordered the largest one", "The coffee / was surprisingly / cheap so I ordered", "The coffee was surprisingly cheap so / I ordered / the largest one"], "answer": 0, "explanation": "The first chunk gives the situation, and the second chunk gives the resulting action."},
+    {"type": "meaning", "question": "What does ‘without giving it much thought’ mean here?", "options": ["After a long and careful decision", "Without thinking about it very much", "Because someone else recommended it"], "answer": 1, "explanation": "It means the speaker made the decision quickly and casually, without much consideration."},
+    {"type": "meaning", "question": "Why is the final line funny?", "options": ["The coffee helped the speaker sleep better", "The speaker praises the value of something that completely ruined the chance of sleeping", "The café gave the coffee away for free"], "answer": 1, "explanation": "The humour comes from treating the unpleasant side effect as if it were part of a good bargain."}
+  ],
+  "speak": "Start tired and matter-of-fact. Let a little misplaced confidence appear at ‘Are you sure?’ and ‘with unnecessary confidence.’ Keep the last sentence calm and almost sincere; the dry humour works best when it is delivered seriously.",
+  "review": "Today’s flow: tired decision → warning ignored → gradual realization → stubborn completion → dry punchline. Notice how the humour comes from calm narration and slightly absurd self-justification."
+}

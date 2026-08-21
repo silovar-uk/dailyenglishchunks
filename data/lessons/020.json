@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": 20,
+  "createdAt": "2026-08-21",
+  "title": "Asking Someone to Flag Problems Early",
+  "scene": "You are starting a project with several people involved. Small problems are manageable, but only if you hear about them early. You want to encourage early communication without sounding demanding.",
+  "sceneJa": "複数人で進める仕事のスタート時。問題が大きくなる前に、小さな懸念でも早めに共有してほしいことを、責める感じなく伝える。",
+  "emotions": ["open", "supportive", "practical", "collaborative"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "communication", "as-soon-as", "rather-than", "turn-out", "while", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "If anything comes up", "ja": "もし何か起きたら" },
+        { "en": "that might affect the schedule,", "ja": "スケジュールに影響するかもしれないことが" },
+        { "en": "please let me know", "ja": "私に知らせてください" },
+        { "en": "as soon as you notice it.", "ja": "それに気づいたらすぐに" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "It doesn’t have to be", "ja": "〜である必要はありません" },
+        { "en": "a serious problem;", "ja": "深刻な問題" },
+        { "en": "even a small concern is useful", "ja": "小さな懸念でも役に立ちます" },
+        { "en": "if we know about it early.", "ja": "早い段階で分かれば" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I’d rather spend a few minutes", "ja": "むしろ数分使いたい" },
+        { "en": "discussing something", "ja": "何かについて話すことに" },
+        { "en": "that turns out to be fine", "ja": "結果的には問題なかったもの" },
+        { "en": "than discover a bigger issue", "ja": "より大きな問題を発見するより" },
+        { "en": "when we no longer have much room to adjust.", "ja": "もう調整する余地があまりない段階で" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "That way,", "ja": "そうすれば" },
+        { "en": "we can deal with problems", "ja": "問題に対処できます" },
+        { "en": "while they’re still easy to solve.", "ja": "まだ解決しやすいうちに" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "please let me know / as soon as you notice it",
+        "please / let me know as / soon as you notice it",
+        "please let / me know as soon / as you notice it"
+      ],
+      "answer": 0,
+      "explanation": "‘Please let me know’ is one request, and ‘as soon as you notice it’ tells us when to do it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘turns out to be fine’ mean?",
+      "options": [
+        "It is known to be fine from the beginning",
+        "It is discovered later to be fine",
+        "The problem is ignored"
+      ],
+      "answer": 1,
+      "explanation": "‘Turn out to be’ describes the result that becomes clear after checking or after time passes."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker want small concerns reported early?",
+      "options": [
+        "To blame people for small mistakes",
+        "To increase the number of reports",
+        "To deal with problems while there is still room to adjust"
+      ],
+      "answer": 2,
+      "explanation": "Early signals make it easier to solve or adjust before a small concern becomes a bigger issue."
+    }
+  ],
+  "speak": "Sound open rather than demanding. Keep ‘please let me know / as soon as you notice it’ warm and inviting. In the third sentence, make the contrast between ‘I’d rather’ and ‘than’ audible. Finish ‘while they’re still easy to solve’ calmly, as the practical reason for early communication.",
+  "review": "Previous flow: delay → reason → choice → current status → impact → deadline. Today’s flow: possible problem → early signal → lower the threshold → compare two choices → benefit. Yesterday used ‘rather than A, B’; today uses ‘I’d rather A than B’. Focus on the choice between A and B rather than memorizing a Japanese translation."
+}

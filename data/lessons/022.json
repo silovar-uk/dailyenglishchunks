@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": 22,
+  "createdAt": "2026-08-22",
+  "title": "Saying ‘I’m Not Sure Yet’ Productively",
+  "scene": "Someone asks whether a new idea will work. You see some promise in it, but you want to test it before committing. You want to explain what is still uncertain, what makes sense so far, and what evidence would help you decide.",
+  "sceneJa": "新しい案について『これ、いけそう？』と聞かれた。見込みはあるが、まだ断定せず、小さく試して比較してから判断したい。",
+  "emotions": ["thoughtful", "careful", "open-minded", "constructive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "uncertainty", "whether", "in-theory", "smaller-scale", "comparison", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I’m not sure yet", "ja": "まだ確信がありません" },
+        { "en": "whether this approach will work", "ja": "この方法がうまくいくかどうか" },
+        { "en": "as well as we hope.", "ja": "私たちが期待しているほど" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "The idea makes sense", "ja": "そのアイデアには筋が通っています" },
+        { "en": "in theory,", "ja": "理屈の上では" },
+        { "en": "but I’d like to see", "ja": "でも確認したいです" },
+        { "en": "how people actually respond", "ja": "実際に人々がどう反応するかを" },
+        { "en": "before we commit to it fully.", "ja": "本格的にそれに踏み切る前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "We could try it", "ja": "試してみることもできます" },
+        { "en": "on a smaller scale first", "ja": "まず、もっと小さい規模で" },
+        { "en": "and compare the results", "ja": "そして結果を比較する" },
+        { "en": "with what we’re doing now.", "ja": "今やっていることと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "If the difference is clear enough,", "ja": "もし違いが十分にはっきりしていれば" },
+        { "en": "we’ll have a much stronger reason", "ja": "もっと強い根拠を持てます" },
+        { "en": "to make the change.", "ja": "変更するための" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I’m not sure yet / whether this approach will work",
+        "I’m not / sure yet whether / this approach will work",
+        "I’m not sure / yet whether this / approach will work"
+      ],
+      "answer": 0,
+      "explanation": "‘I’m not sure yet’ works as one thought unit, and the whether-clause then gives what the speaker is uncertain about."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘in theory’ suggest here?",
+      "options": [
+        "It has already been proven to work in practice",
+        "It makes sense logically, but the real result is still uncertain",
+        "The speaker is studying academic theory"
+      ],
+      "answer": 1,
+      "explanation": "‘In theory’ means the idea seems reasonable on paper, while leaving open the question of how it will work in practice."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker suggest trying it ‘on a smaller scale’?",
+      "options": [
+        "To gather real evidence before a full commitment",
+        "To reject the idea without saying so",
+        "To reduce the amount of work permanently"
+      ],
+      "answer": 0,
+      "explanation": "A small test lets the speaker compare real results before deciding whether to make a larger change."
+    }
+  ],
+  "speak": "Sound thoughtful rather than hesitant. Give ‘yet’ a little weight so it sounds temporary, not final. Let ‘We could try it on a smaller scale first’ sound more positive and practical, then finish the last sentence with calm confidence about making a decision based on evidence.",
+  "review": "Previous flow: possible problem → early signal → lower the threshold → compare two choices → benefit. Today’s flow: uncertainty → possibility → test → comparison → decision. The key habit is to avoid pretending to know too early: say what is uncertain, what already makes sense, what you can test, and what evidence would justify the next step."
+}

@@ -178,7 +178,7 @@
     const status = document.querySelector('.ui-step-status');
     if (status) {
       status.classList.toggle('is-complete', doneCount === rounds.length);
-      status.innerHTML = `<span>SPEAK</span><strong>${doneCount === rounds.length ? `${rounds.length} / ${rounds.length} · 完了` : `${doneCount} / ${rounds.length}`}</strong>`;
+      status.innerHTML = `<span>SPEAK</span><strong>${doneCount === 0 ? '3回読む' : `${doneCount}回完了`}</strong>`;
     }
 
     const nextButton = document.getElementById('nextStep');

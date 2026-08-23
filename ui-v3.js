@@ -142,7 +142,7 @@
     const count = progress.querySelector('.ui-check-progress-count');
     const width = `${percentage}%`;
     if (bar && bar.style.width !== width) bar.style.width = width;
-    if (count) count.textContent = `${answered} / ${total} checked`;
+    if (count) count.textContent = `${answered} / ${total}`;
 
     const status = document.querySelector('.ui-step-status');
     if (status) {
@@ -168,14 +168,17 @@
     if (!rounds.length) return;
 
     const doneCount = rounds.filter(button => button.classList.contains('is-done')).length;
-    rounds.forEach(button => button.classList.remove('ui-is-next'));
+    rounds.forEach(button => {
+      button.classList.remove('ui-is-next');
+      button.setAttribute('aria-pressed', button.classList.contains('is-done') ? 'true' : 'false');
+    });
     const next = rounds.find(button => !button.classList.contains('is-done'));
     if (next) next.classList.add('ui-is-next');
 
     const status = document.querySelector('.ui-step-status');
     if (status) {
       status.classList.toggle('is-complete', doneCount === rounds.length);
-      status.innerHTML = `<span>SPEAK</span><strong>${doneCount === rounds.length ? '3回完了' : `${doneCount} / ${rounds.length} rounds`}</strong>`;
+      status.innerHTML = `<span>SPEAK</span><strong>${doneCount === rounds.length ? `${rounds.length} / ${rounds.length} · 完了` : `${doneCount} / ${rounds.length}`}</strong>`;
     }
 
     const nextButton = document.getElementById('nextStep');

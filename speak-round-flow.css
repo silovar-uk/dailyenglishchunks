@@ -1,0 +1,33 @@
+.speak-reading-focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 10px 13px;
+  border: 1px solid rgba(45,93,80,.24);
+  border-radius: 13px;
+  background: rgba(45,93,80,.07);
+  scroll-margin-top: 82px;
+}
+
+.speak-reading-focus span {
+  color: var(--accent);
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.speak-reading-focus strong {
+  color: var(--ink);
+  font-size: .82rem;
+}
+
+@media (max-width: 640px) {
+  .speak-reading-focus {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+    scroll-margin-top: 76px;
+  }
+}

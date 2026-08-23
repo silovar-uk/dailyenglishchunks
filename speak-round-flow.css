@@ -9,6 +9,7 @@
   border-radius: 13px;
   background: rgba(45,93,80,.07);
   scroll-margin-top: 82px;
+  transition: background-color .22s ease, border-color .22s ease, box-shadow .22s ease;
 }
 
 .speak-reading-focus span {
@@ -23,11 +24,23 @@
   font-size: .82rem;
 }
 
+.speak-reading-focus.is-arrived {
+  border-color: rgba(45,93,80,.52);
+  background: rgba(45,93,80,.12);
+  box-shadow: 0 8px 24px rgba(45,93,80,.08);
+}
+
 @media (max-width: 640px) {
   .speak-reading-focus {
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
     scroll-margin-top: 76px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .speak-reading-focus {
+    transition: none;
   }
 }

@@ -51,10 +51,75 @@
   filter: brightness(.965);
 }
 
-/* Status rows should change content, not height. */
+/* Keep the lesson identity present, but let the active exercise lead. */
+body.is-practicing .lesson-head-compact {
+  margin-bottom: 18px;
+}
+
+body.is-practicing .lesson-head-compact .lesson-title {
+  margin-bottom: 6px;
+  font-size: clamp(1.6rem, 5vw, 2.55rem);
+  line-height: 1.12;
+}
+
+body.is-practicing .lesson-meta {
+  gap: 6px;
+  font-size: .76rem;
+}
+
+/* Step context should explain the task without becoming another card. */
+body.is-practicing .step-heading {
+  margin-bottom: 16px;
+}
+
+body.is-practicing .step-heading .step-label {
+  margin-bottom: 6px;
+}
+
+body.is-practicing .step-heading .step-title {
+  margin-bottom: 7px;
+  font-size: clamp(1.32rem, 3.8vw, 1.85rem);
+  line-height: 1.22;
+}
+
+body.is-practicing .step-heading .step-intro {
+  line-height: 1.65;
+}
+
+/* Status changes should be visible but quiet: context, not a competing surface. */
 .ui-step-status {
-  min-height: 44px;
+  min-height: 0;
+  margin: 10px 0 0;
+  padding: 7px 0 0;
+  border: 0;
+  border-top: 1px solid rgba(217, 212, 202, .82);
+  border-radius: 0;
+  background: transparent;
+  font-size: .72rem;
   font-variant-numeric: tabular-nums;
+}
+
+.ui-step-status strong {
+  font-size: .76rem;
+}
+
+.ui-step-status.is-complete {
+  border-top-color: rgba(45, 93, 80, .28);
+  background: transparent;
+}
+
+/* Read/Speak already contain their own interaction surfaces. Remove the outer card. */
+.lesson[data-ui-step="read"] > .read-passage,
+.lesson[data-ui-step="speak"] > .practice-card {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.lesson[data-ui-step="read"] > .read-passage {
+  overflow: visible;
 }
 
 .speak-reading-focus {
@@ -85,6 +150,7 @@
   /* iPhone-first touch targets. Visuals can stay small; hit areas should not. */
   .focus-bar {
     grid-template-columns: 44px 1fr auto;
+    margin-bottom: 18px;
   }
 
   .focus-exit,
@@ -109,6 +175,33 @@
   .header-random-button {
     width: 44px;
     min-width: 44px;
+  }
+
+  body.is-practicing .lesson-head-compact {
+    margin-bottom: 14px;
+  }
+
+  body.is-practicing .lesson-head-compact .lesson-title {
+    font-size: clamp(1.45rem, 6.2vw, 2rem);
+    line-height: 1.14;
+  }
+
+  body.is-practicing .step-heading {
+    margin-bottom: 14px;
+  }
+
+  body.is-practicing .step-heading .step-title {
+    font-size: clamp(1.25rem, 5.3vw, 1.55rem);
+  }
+
+  body.is-practicing .step-heading .step-intro {
+    font-size: .94rem;
+    line-height: 1.6;
+  }
+
+  .ui-step-status {
+    margin-top: 8px;
+    padding-top: 6px;
   }
 
   .speak-reading-focus {

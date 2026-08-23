@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": 24,
+  "createdAt": "2026-08-23",
+  "title": "Changing Your Mind After Seeing the Data",
+  "scene": "You supported one idea at first, but new data has changed your view. You need to explain the change without pretending your earlier opinion never existed.",
+  "sceneJa": "最初はある案を支持していたが、新しいデータを見て考えが変わった。以前の意見を隠さず、なぜ判断を更新したのかを説明する。",
+  "emotions": ["open-minded", "analytical", "calm", "decisive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "decision-making", "in-favor-of", "having-looked-at", "would-have", "rather-than", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I was initially in favor of", "ja": "私は当初、〜に賛成でした" },
+        { "en": "rolling out the new system", "ja": "新しいシステムを導入することに" },
+        { "en": "to everyone at once.", "ja": "全員へ一度に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Having looked at the results", "ja": "結果を見てみると" },
+        { "en": "from the trial,", "ja": "試験導入の" },
+        { "en": "though,", "ja": "ただ" },
+        { "en": "I’m starting to think", "ja": "〜と考え始めています" },
+        { "en": "a gradual rollout", "ja": "段階的な導入のほうが" },
+        { "en": "would make more sense.", "ja": "より合理的だろうと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "The overall response was positive,", "ja": "全体的な反応は良かったです" },
+        { "en": "but a few problems appeared", "ja": "ただ、いくつか問題が出ました" },
+        { "en": "that we probably wouldn’t have noticed", "ja": "おそらく私たちが気づかなかったであろう" },
+        { "en": "without testing it first.", "ja": "最初に試していなければ" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I’d rather fix those issues now", "ja": "私はむしろ、その問題を今直したい" },
+        { "en": "than deal with them", "ja": "それらに対処するより" },
+        { "en": "after thousands of people", "ja": "何千人もの人が" },
+        { "en": "have started using it.", "ja": "使い始めたあとに" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I’m starting to think / a gradual rollout / would make more sense",
+        "I’m starting / to think a gradual / rollout would make more sense",
+        "I’m / starting to think a / gradual rollout would"
+      ],
+      "answer": 0,
+      "explanation": "‘I’m starting to think’ sets up the revised opinion, ‘a gradual rollout’ is the subject of that opinion, and ‘would make more sense’ completes it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I was initially in favor of’ tell us?",
+      "options": [
+        "The speaker still completely supports it",
+        "The speaker supported it at first",
+        "The speaker opposed it from the beginning"
+      ],
+      "answer": 1,
+      "explanation": "‘Initially’ points to the speaker’s earlier view, which has since changed after seeing new evidence."
+    },
+    {
+      "type": "meaning",
+      "question": "Why has the speaker changed their mind?",
+      "options": [
+        "The trial revealed problems worth fixing before a full rollout",
+        "The new system completely failed",
+        "The speaker simply lost interest in the system"
+      ],
+      "answer": 0,
+      "explanation": "The overall response was positive, but the trial revealed issues that support a more gradual rollout."
+    }
+  ],
+  "speak": "Sound comfortable changing your mind. Read ‘I was initially in favor of’ as a calm statement of your earlier view. Pause slightly after ‘Having looked at the results, though’ to mark the update in thinking. Finish ‘I’d rather fix those issues now’ with confidence, as a decision based on new evidence rather than embarrassment about the old view.",
+  "review": "Previous flow: uncertainty → possibility → test → comparison → decision. Today continues from the test: original view → new evidence → revised view → reason → preferred action. A good decision is not one you never change; it is one you update when the evidence changes."
+}

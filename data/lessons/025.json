@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": 25,
+  "createdAt": "2026-08-24",
+  "title": "Where Did I Put My Comb?",
+  "scene": "You are getting ready to leave home in the morning. You look for your comb, tidy your hair, check the time, and make sure you have what you need before heading out.",
+  "sceneJa": "朝、家を出る前の身支度。櫛を探し、髪を整え、時間を確認して、忘れ物がないか頭の中で確かめる。",
+  "emotions": ["sleepy", "focused", "slightly-rushed", "relieved"],
+  "difficulty": 2,
+  "minutes": 9,
+  "tags": ["daily-life", "inner-monologue", "morning", "comb", "where-did-i-put", "before", "there-it-is"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "Right,", "ja": "よし" },
+        { "en": "I should get ready", "ja": "そろそろ準備しないと" },
+        { "en": "before I lose track of time.", "ja": "時間が分からなくなる前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Where did I put", "ja": "どこに置いたっけ" },
+        { "en": "my comb?", "ja": "櫛を" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I thought it was", "ja": "〜にあると思ったけど" },
+        { "en": "next to the sink.", "ja": "洗面台の横に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Oh, there it is,", "ja": "あ、あった" },
+        { "en": "under the towel.", "ja": "タオルの下に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I need to comb my hair", "ja": "髪をとかさないと" },
+        { "en": "before I leave.", "ja": "出かける前に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I’ve still got", "ja": "まだ〜ある" },
+        { "en": "a few minutes,", "ja": "数分" },
+        { "en": "so I’m fine.", "ja": "だから大丈夫" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Keys, phone, wallet...", "ja": "鍵、スマホ、財布……" },
+        { "en": "that should do it.", "ja": "これでよし" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary sounds most natural for the thought about the comb?",
+      "options": [
+        "Where did I put / my comb?",
+        "Where did / I put my / comb?",
+        "Where / did I put / my / comb?"
+      ],
+      "answer": 0,
+      "explanation": "‘Where did I put ...?’ works as a reusable thought pattern. The object, here ‘my comb’, naturally follows it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘There it is’ mean in this scene?",
+      "options": [
+        "The speaker has found the comb",
+        "The speaker is leaving the house",
+        "The speaker needs a new comb"
+      ],
+      "answer": 0,
+      "explanation": "‘There it is’ is a natural thing to think or say when you suddenly spot something you were looking for."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker say ‘I’ve still got a few minutes’ instead of just ‘I have a few minutes’?",
+      "options": [
+        "To focus on the time that remains before leaving",
+        "To say that the clock is broken",
+        "To explain that the speaker arrived late"
+      ],
+      "answer": 0,
+      "explanation": "‘I’ve still got ...’ highlights that some time remains, which fits a quick mental check while getting ready."
+    },
+    {
+      "type": "meaning",
+      "question": "What is the purpose of ‘That should do it’ at the end?",
+      "options": [
+        "It means the preparation seems complete",
+        "It means the speaker wants to start again",
+        "It means something has gone badly wrong"
+      ],
+      "answer": 0,
+      "explanation": "‘That should do it’ is a useful everyday chunk for deciding that what you have done is probably enough."
+    }
+  ],
+  "speak": "Use a quiet inner voice, not a presentation voice. Round 1: focus on the meaning of each thought. Round 2: keep the chunks together — ‘Where did I put / my comb?’, ‘I need to comb my hair / before I leave.’ Round 3: add the small emotional shifts: sleepy at first, searching, relieved at ‘There it is’, then calm at ‘I’m fine.’",
+  "review": "Think from the scene, not from Japanese. See the sink and think ‘next to the sink’; notice the missing comb and think ‘Where did I put ...?’; find it and think ‘There it is.’ Reuse the same frames later with keys, a charger, headphones, or anything else around you."
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": 23,
+  "createdAt": "2026-08-23",
+  "title": "The Very Helpful Self-Checkout",
+  "scene": "You stop at a supermarket just before closing to buy a few things. The self-checkout is supposed to be quicker, but the machine becomes suspicious of your bananas and eventually requires human intervention.",
+  "sceneJa": "閉店直前のスーパーで3品だけ買うためセルフレジを使う。すぐ終わるはずが、機械がバナナを怪しみ始め、最終的には人間の助けが必要になる。",
+  "emotions": ["confident", "confused", "embarrassed", "resigned", "amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "shopping", "self-checkout", "remain-unconvinced", "without-saying-a-word", "call-it-a-draw", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I went to the supermarket", "ja": "スーパーへ行きました" },
+        { "en": "just before closing", "ja": "閉店直前に" },
+        { "en": "because I had forgotten to buy milk.", "ja": "牛乳を買い忘れていたからです" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I only had three things,", "ja": "3品しかなかったので" },
+        { "en": "so I chose the self-checkout", "ja": "セルフレジを選び" },
+        { "en": "and expected to be out", "ja": "店を出られると思っていました" },
+        { "en": "in less than a minute.", "ja": "1分もしないうちに" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "The machine scanned the milk perfectly,", "ja": "機械は牛乳を完璧に読み取り" },
+        { "en": "accepted the bread,", "ja": "パンも受け入れ" },
+        { "en": "and then became deeply suspicious", "ja": "そのあと急にかなり疑い深くなりました" },
+        { "en": "of my bananas.", "ja": "私のバナナについて" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Unexpected item in the bagging area,", "ja": "「袋詰めエリアに予期しない商品があります」と" },
+        { "en": "it announced", "ja": "機械は宣言しました" },
+        { "en": "to several people", "ja": "周囲の何人かに向けて" },
+        { "en": "who had not asked for an update.", "ja": "別に状況報告を求めていない人たちに" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I removed the bananas,", "ja": "バナナをどけ" },
+        { "en": "put them back,", "ja": "戻し" },
+        { "en": "removed them again,", "ja": "またどけて" },
+        { "en": "and tried to look like someone", "ja": "そして人のような顔をしてみました" },
+        { "en": "who regularly understood technology.", "ja": "普段からテクノロジーを理解している" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "The machine remained unconvinced.", "ja": "機械はそれでも納得しませんでした" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Eventually,", "ja": "やがて" },
+        { "en": "a member of staff came over,", "ja": "店員さんが来て" },
+        { "en": "pressed one button,", "ja": "ボタンをひとつ押し" },
+        { "en": "and solved the problem", "ja": "問題を解決しました" },
+        { "en": "without saying a word.", "ja": "何も言わずに" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I thanked her", "ja": "私は彼女にお礼を言いました" },
+        { "en": "with the particular enthusiasm", "ja": "特有の熱意を込めて" },
+        { "en": "of a man who had just been defeated", "ja": "たった今敗北した男の" },
+        { "en": "by some fruit and a screen.", "ja": "果物と画面に" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "As I picked up my shopping,", "ja": "買ったものを持ち上げると" },
+        { "en": "the machine said,", "ja": "機械が言いました" },
+        { "en": "Thank you for using the self-checkout.", "ja": "「セルフレジをご利用いただき、ありがとうございました」と" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "That seemed generous.", "ja": "ずいぶん寛大な表現でした" },
+        { "en": "Very little of what had just happened", "ja": "今起きたことの中で" },
+        { "en": "could reasonably be described as self.", "ja": "「セルフ」と呼べそうな部分はほとんどなかったので" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Still,", "ja": "とはいえ" },
+        { "en": "I got my milk.", "ja": "牛乳は買えました" },
+        { "en": "Technology and I", "ja": "テクノロジーと私は" },
+        { "en": "have agreed to call it a draw.", "ja": "今回を引き分けということにしました" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I only had three things, / so I chose the self-checkout",
+        "I only / had three things so / I chose the self-checkout",
+        "I only had / three things so I / chose the self-checkout"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the reason, and the so-clause gives the decision that followed."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘remained unconvinced’ mean here?",
+      "options": [
+        "The machine still did not accept the situation",
+        "The machine switched itself off",
+        "The machine finally agreed"
+      ],
+      "answer": 0,
+      "explanation": "‘Remain unconvinced’ means to continue not believing or accepting something, even after an attempt to persuade or fix it."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker call it a draw?",
+      "options": [
+        "The machine gave the speaker a discount",
+        "The speaker pretends the result was even, although the technology clearly caused trouble",
+        "The staff member asked them to play a game"
+      ],
+      "answer": 1,
+      "explanation": "The dry humour comes from generously calling the experience a draw after the speaker was clearly defeated by the machine."
+    }
+  ],
+  "speak": "Start casually and confidently. Let the frustration build without becoming dramatic. Pause slightly after ‘The machine remained unconvinced.’ Deliver the final two sentences calmly, as though calling the experience a draw is a perfectly reasonable conclusion.",
+  "review": "Today’s flow: quick errand → confidence → machine trouble → repeated failed attempts → human rescue → dry reframe. Focus on how understatement and calm delivery make the final joke work."
+}

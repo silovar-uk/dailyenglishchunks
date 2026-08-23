@@ -1,0 +1,148 @@
+/* Micro polish — remove friction without adding visual noise */
+
+/* Consistent, visible keyboard focus without changing layout. */
+:where(button, a, input, select, textarea, [role="button"]):focus-visible {
+  outline: 2px solid rgba(45, 93, 80, .68);
+  outline-offset: 3px;
+}
+
+/* Fast press feedback: no bounce, no scale, no waiting. */
+:where(
+  .ghost-button,
+  .secondary-button,
+  .primary-button,
+  .quiet-button,
+  .text-button,
+  .focus-exit,
+  .focus-date,
+  .focus-step,
+  .compact-step-item,
+  .filter-chip,
+  .sequence-item,
+  .lesson-row,
+  .quiz-option,
+  .chunk-card,
+  .speak-round,
+  .lesson-number-button,
+  .lesson-switch-button
+) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(
+  .ghost-button,
+  .secondary-button,
+  .primary-button,
+  .quiet-button,
+  .text-button,
+  .focus-exit,
+  .focus-date,
+  .focus-step,
+  .compact-step-item,
+  .filter-chip,
+  .sequence-item,
+  .lesson-row,
+  .quiz-option,
+  .chunk-card,
+  .speak-round,
+  .lesson-number-button,
+  .lesson-switch-button
+):active:not(:disabled) {
+  filter: brightness(.965);
+}
+
+/* Status rows should change content, not height. */
+.ui-step-status {
+  min-height: 44px;
+  font-variant-numeric: tabular-nums;
+}
+
+.speak-reading-focus {
+  min-height: 48px;
+}
+
+/* Speak: keep hierarchy quiet. The passage focus owns the instruction. */
+.speak-round.ui-is-next {
+  transform: none;
+  box-shadow: inset 0 0 0 1px rgba(45,93,80,.08);
+}
+
+.speak-round.ui-is-next::before,
+.speak-round.is-done::after {
+  display: none;
+  content: none;
+}
+
+.speak-round.is-done {
+  opacity: .88;
+}
+
+.lesson[data-ui-step="speak"] #nextStep.ui-ready {
+  box-shadow: 0 4px 14px rgba(45,93,80,.14);
+}
+
+@media (max-width: 640px) {
+  /* iPhone-first touch targets. Visuals can stay small; hit areas should not. */
+  .focus-bar {
+    grid-template-columns: 44px 1fr auto;
+  }
+
+  .focus-exit,
+  .focus-date,
+  .focus-step,
+  .header-actions .ghost-button,
+  .header-random-button,
+  .quiet-button,
+  .text-button,
+  .lesson-number-button,
+  .lesson-switch-button,
+  .filter-chip,
+  .step-chip,
+  .difficulty-row button {
+    min-height: 44px;
+  }
+
+  .focus-exit {
+    width: 44px;
+  }
+
+  .header-random-button {
+    width: 44px;
+    min-width: 44px;
+  }
+
+  .speak-reading-focus {
+    min-height: 64px;
+  }
+
+  /* Keep the round number/check slot stable when its content changes. */
+  .speak-round strong {
+    display: inline-block;
+    min-width: 1.4em;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(
+    .ghost-button,
+    .secondary-button,
+    .primary-button,
+    .quiet-button,
+    .text-button,
+    .focus-exit,
+    .focus-date,
+    .focus-step,
+    .compact-step-item,
+    .filter-chip,
+    .sequence-item,
+    .lesson-row,
+    .quiz-option,
+    .chunk-card,
+    .speak-round,
+    .lesson-number-button,
+    .lesson-switch-button
+  ) {
+    transition: none !important;
+  }
+}

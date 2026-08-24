@@ -76,6 +76,8 @@
     const meta = ROUND_FOCUS[index];
     if (!meta) return;
     button.setAttribute('aria-label', `${meta.label}: ${meta.action}`);
+    if (button.dataset.guidedRound === String(index)) return;
+    button.dataset.guidedRound = String(index);
     button.innerHTML = `<strong>${index + 1} / 3</strong><span>${meta.action}</span><small>${meta.label}</small>`;
   }
 

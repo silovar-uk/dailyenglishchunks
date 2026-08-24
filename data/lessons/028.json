@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 28,
+  "createdAt": "2026-08-25",
+  "title": "The Seat I Definitely Chose",
+  "scene": "You get on a train after the morning rush and find several empty seats. You choose one near the door, then realize the air conditioning is blowing directly at you. Moving would be easy, but doing so would mean admitting your first choice was bad.",
+  "sceneJa": "朝のラッシュ後の電車で空席を選ぶ。エアコンの風が顔に直撃していると気づくが、今さら席を移ると自分の判断ミスを認めることになる気がして、そのまま耐え続ける。",
+  "emotions": ["comfortable", "slightly-annoyed", "stubborn", "self-aware", "amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "train", "decision", "try-to-convince-myself", "would-mean-admitting", "remain-exactly-where-I-was", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I got on the train", "ja": "電車に乗りました" },
+        { "en": "just after the morning rush,", "ja": "朝のラッシュが終わった直後に" },
+        { "en": "and for once,", "ja": "そして珍しく" },
+        { "en": "there were several empty seats.", "ja": "空席がいくつもありました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I chose a seat near the door", "ja": "ドアの近くの席を選びました" },
+        { "en": "because I was only travelling", "ja": "数駅しか乗らないので" },
+        { "en": "a few stops.", "ja": "ほんの数駅だけ" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "As soon as I sat down,", "ja": "座った瞬間" },
+        { "en": "I noticed that the air conditioning", "ja": "エアコンの風が" },
+        { "en": "was blowing directly onto my face.", "ja": "顔に直接当たっていることに気づきました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "There was another empty seat", "ja": "別の空席もありました" },
+        { "en": "a little further along,", "ja": "少し離れたところに" },
+        { "en": "but moving immediately", "ja": "ただ、すぐに移動するのは" },
+        { "en": "felt strangely dramatic.", "ja": "妙に大げさな気がしました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "So I stayed where I was", "ja": "そこでそのまま座り" },
+        { "en": "and tried to convince myself", "ja": "自分に言い聞かせました" },
+        { "en": "that the cold air was actually refreshing.", "ja": "冷たい風はむしろ爽快なのだと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Two stops later,", "ja": "2駅後には" },
+        { "en": "I was sitting with my arms folded", "ja": "腕を組んで座り" },
+        { "en": "and my shoulders somewhere near my ears.", "ja": "肩は耳の近くまで上がっていました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "The other seat was still empty,", "ja": "別の席はまだ空いていて" },
+        { "en": "which somehow made the situation worse.", "ja": "それがなぜか状況をさらに悪く感じさせました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "Moving now would mean admitting", "ja": "今さら移動すれば認めることになります" },
+        { "en": "that I had spent ten minutes", "ja": "10分間を過ごしていたと" },
+        { "en": "being uncomfortable for absolutely no reason.", "ja": "まったく理由もなく不快な思いをして" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "So naturally,", "ja": "なので当然" },
+        { "en": "I remained exactly where I was", "ja": "まったく同じ場所に座り続け" },
+        { "en": "until my stop.", "ja": "降りる駅まで" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "When the doors opened,", "ja": "ドアが開くと" },
+        { "en": "I stood up quickly", "ja": "すぐに立ち上がり" },
+        { "en": "and walked onto the platform", "ja": "ホームへ出て" },
+        { "en": "feeling oddly victorious.", "ja": "なぜか少し勝ち誇った気分になりました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I had successfully defended", "ja": "私は見事に守り抜きました" },
+        { "en": "a decision I no longer agreed with.", "ja": "もはや自分でも賛成していない判断を" },
+        { "en": "It was good practice", "ja": "いい練習でした" },
+        { "en": "for absolutely nothing.", "ja": "何の役にも立たない" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I tried to convince myself / that the cold air was actually refreshing",
+        "I tried / to convince myself that / the cold air was actually refreshing",
+        "I tried to / convince myself / that the cold air was actually / refreshing"
+      ],
+      "answer": 0,
+      "explanation": "‘I tried to convince myself’ is one thought unit, and the that-clause gives the idea the speaker was trying to believe."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘would mean admitting’ express here?",
+      "options": [
+        "Moving seats would force the speaker to accept that the original choice was bad",
+        "The speaker needs permission before moving",
+        "The speaker has forgotten where the other seat is"
+      ],
+      "answer": 0,
+      "explanation": "The speaker treats changing seats as evidence that the first decision was wrong, even though moving would clearly make things more comfortable."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final line funny?",
+      "options": [
+        "The speaker learned an important train skill",
+        "The speaker stubbornly defended a decision they no longer believed in, gaining nothing from it",
+        "The air conditioning stopped working"
+      ],
+      "answer": 1,
+      "explanation": "The dry humour comes from describing pointless stubbornness as ‘good practice’ while immediately admitting it was useful for absolutely nothing."
+    }
+  ],
+  "speak": "Start relaxed and matter-of-fact. Add mild discomfort at ‘the air conditioning was blowing directly onto my face,’ but do not sound dramatic. Read ‘moving now would mean admitting’ as if the logic feels completely reasonable to the speaker. Deliver the final two sentences calmly and seriously; the humour works best when the speaker does not acknowledge how silly the situation is.",
+  "review": "Today’s flow: easy choice → small discomfort → chance to correct it → self-justification → stubborn commitment → pointless victory. Notice how the story turns an ordinary train-seat decision into a small example of defending a choice after you have stopped believing in it."
+}

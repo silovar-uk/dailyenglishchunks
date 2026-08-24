@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": 26,
+  "createdAt": "2026-08-24",
+  "title": "The Umbrella Strategy",
+  "scene": "You check the weather forecast before leaving home and decide that a thirty per cent chance of rain is low enough to leave your umbrella behind. When it rains anyway, you slowly realise the forecast was not the problem; your interpretation was.",
+  "sceneJa": "降水確率30％を見て傘を置いて出る。雨が降り始めてから、予報が間違っていたのではなく、自分が都合よく解釈していただけだと気づく。",
+  "emotions": ["confident", "rationalising", "annoyed", "resigned", "amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "weather", "forecast", "low-enough-to", "given-that", "technically", "dry-humour"],
+  "sentences": [
+    {"chunks": [{"en": "I checked the weather forecast", "ja": "天気予報を確認しました"}, {"en": "before leaving home,", "ja": "家を出る前に"}, {"en": "and it said there was", "ja": "すると〜と出ていました"}, {"en": "a thirty per cent chance of rain.", "ja": "降水確率30％だと"}]},
+    {"chunks": [{"en": "Thirty per cent sounded low enough", "ja": "30％なら十分低そうに聞こえて"}, {"en": "to leave my umbrella behind,", "ja": "傘を置いていくには"}, {"en": "especially because carrying one", "ja": "特に傘を持ち歩くことは"}, {"en": "always feels slightly pessimistic.", "ja": "いつも少し悲観的に感じるので"}]},
+    {"chunks": [{"en": "At lunchtime,", "ja": "昼になると"}, {"en": "the sky turned grey,", "ja": "空が曇ってきました"}, {"en": "but I decided to trust", "ja": "それでも信じることにしました"}, {"en": "the statistical process.", "ja": "統計的なプロセスを"}]},
+    {"chunks": [{"en": "Five minutes later,", "ja": "5分後"}, {"en": "it started raining", "ja": "雨が降り始めました"}, {"en": "with impressive confidence.", "ja": "見事なまでの自信を持って"}]},
+    {"chunks": [{"en": "I stood under a shop awning", "ja": "私は店のひさしの下に立ちました"}, {"en": "with three other people", "ja": "ほかの3人と一緒に"}, {"en": "who had apparently made", "ja": "どうやら彼らもしていたようです"}, {"en": "similar mathematical decisions.", "ja": "同じような数学的判断を"}]},
+    {"chunks": [{"en": "One of them checked his phone", "ja": "そのうちの一人がスマホを確認し"}, {"en": "and announced that the chance of rain", "ja": "降水確率が〜だと知らせました"}, {"en": "was now ninety per cent.", "ja": "今や90％になっていると"}]},
+    {"chunks": [{"en": "This was accurate,", "ja": "それは正確でした"}, {"en": "but not especially useful,", "ja": "ただ、それほど役には立ちませんでした"}, {"en": "given that we were already watching it happen.", "ja": "すでに目の前で雨が降っていることを考えると"}]},
+    {"chunks": [{"en": "After ten minutes,", "ja": "10分後"}, {"en": "I gave up waiting", "ja": "待つのを諦め"}, {"en": "and ran to the station", "ja": "駅まで走りました"}, {"en": "using my bag as an extremely poor umbrella.", "ja": "バッグを非常に性能の悪い傘として使いながら"}]},
+    {"chunks": [{"en": "By the time I arrived,", "ja": "着くころには"}, {"en": "my shirt was wet,", "ja": "シャツも濡れ"}, {"en": "my shoes were wet,", "ja": "靴も濡れ"}, {"en": "and the contents of my bag had developed their own weather system.", "ja": "バッグの中には独自の気象システムまで発達していました"}]},
+    {"chunks": [{"en": "The forecast had never actually said", "ja": "天気予報は実際には一度も言っていませんでした"}, {"en": "that it wouldn’t rain.", "ja": "雨が降らないとは"}, {"en": "I had simply translated ‘thirty per cent’", "ja": "私はただ『30％』を翻訳していただけでした"}, {"en": "into ‘not my problem.’", "ja": "『自分には関係ない』と"}]},
+    {"chunks": [{"en": "So technically,", "ja": "だから厳密に言えば"}, {"en": "the forecast was correct.", "ja": "天気予報は正しかったのです"}, {"en": "This was comforting,", "ja": "それは少し安心できました"}, {"en": "because at least one of us had understood the forecast.", "ja": "少なくとも私たちのうち片方は予報を理解していたので"}]}
+  ],
+  "questions": [
+    {"type": "chunk", "question": "Which boundary is most natural?", "options": ["Thirty per cent sounded low enough / to leave my umbrella behind", "Thirty per cent / sounded low / enough to leave my umbrella", "Thirty / per cent sounded / low enough to leave"], "answer": 0, "explanation": "‘Sounded low enough’ forms the judgment, and the to-infinitive explains what it seemed low enough to do."},
+    {"type": "meaning", "question": "What does ‘given that’ mean here?", "options": ["Considering the fact that", "Before the fact that", "In spite of the fact that"], "answer": 0, "explanation": "‘Given that’ introduces a fact that makes the previous statement easier to understand or evaluate."},
+    {"type": "meaning", "question": "Why is the final line funny?", "options": ["The speaker thinks the forecast and the rain were both wrong", "The speaker admits that the forecast understood the situation better than he did", "The speaker believes thirty per cent means it cannot rain"], "answer": 1, "explanation": "The speaker dryly treats the forecast as if it were the other person in the conversation, admitting that only one of them understood what thirty per cent really meant."}
+  ],
+  "speak": "Start calm and slightly self-satisfied, as if the umbrella decision is perfectly rational. Keep ‘with impressive confidence’ dry rather than dramatic. Pause before ‘So technically,’ and deliver the last sentence almost as a sincere consolation; the joke works because the speaker quietly admits defeat.",
+  "review": "Today’s flow: forecast → confident interpretation → evidence changes → inconvenience → reinterpretation → dry admission. Notice the difference between what information actually says and what we want it to mean."
+}

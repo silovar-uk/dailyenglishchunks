@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": 27,
+  "createdAt": "2026-08-24",
+  "title": "Pushing Back on an Unrealistic Deadline",
+  "scene": "Someone asks you to finish a task sooner than you think is realistic. You want to avoid a flat refusal, explain the trade-off clearly, and offer workable options.",
+  "sceneJa": "予定よりかなり早い締切を求められた。単に『無理です』と断るのではなく、その期限なら何を犠牲にする必要があるかを示し、代案まで伝える。",
+  "emotions": ["understanding", "careful", "constructive", "decisive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "deadline", "scope", "although", "otherwise", "cut-corners", "trade-off", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I understand", "ja": "分かります"},
+        {"en": "why you’d like to have this ready", "ja": "なぜこれを完成させたいのか"},
+        {"en": "by Friday,", "ja": "金曜日までに"},
+        {"en": "but I’m concerned", "ja": "ただ、懸念しています"},
+        {"en": "that rushing it would leave us", "ja": "急いで進めると、私たちに残されるのではないかと"},
+        {"en": "too little time", "ja": "あまりにも少ない時間しか"},
+        {"en": "to check the details properly.", "ja": "細部をきちんと確認するための"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "We could still meet that deadline", "ja": "その締切に間に合わせることはできます"},
+        {"en": "if we reduced the scope,", "ja": "範囲を縮小すれば"},
+        {"en": "although that would mean", "ja": "ただし、それは〜を意味します"},
+        {"en": "leaving out some of the analysis", "ja": "分析の一部を省くことを"},
+        {"en": "we originally planned.", "ja": "当初予定していた"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Otherwise,", "ja": "そうでなければ"},
+        {"en": "I’d suggest giving ourselves", "ja": "私たちに確保することを提案します"},
+        {"en": "one more working day", "ja": "もう1営業日"},
+        {"en": "so we can finish everything", "ja": "そうすれば全部終えられます"},
+        {"en": "without cutting corners.", "ja": "手を抜かずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I think either option could work;", "ja": "どちらの選択肢でも可能だと思います"},
+        {"en": "it just depends on", "ja": "あとは〜次第です"},
+        {"en": "what matters more", "ja": "何がより重要なのか"},
+        {"en": "for this particular project.", "ja": "このプロジェクトにとって"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "We could still meet that deadline / if we reduced the scope",
+        "We could / still meet that / deadline if we reduced the scope",
+        "We could still / meet that deadline if / we reduced the scope"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk states what is possible, and the if-clause then gives the condition required to make it possible."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘cutting corners’ mean here?",
+      "options": [
+        "Making the workspace smaller",
+        "Skipping necessary steps and lowering quality",
+        "Measuring the work time precisely"
+      ],
+      "answer": 1,
+      "explanation": "‘Cut corners’ means saving time or effort by leaving out steps that should normally be done."
+    },
+    {
+      "type": "meaning",
+      "question": "What is the speaker really asking the other person to decide?",
+      "options": [
+        "Who should do the work",
+        "Whether the deadline or the full scope matters more",
+        "Whether the project should be cancelled"
+      ],
+      "answer": 1,
+      "explanation": "The speaker reframes the issue as a trade-off: keep Friday by reducing scope, or keep the full scope by allowing one more working day."
+    }
+  ],
+  "speak": "Sound constructive rather than resistant. Begin ‘I understand why...’ as genuine recognition of the other person’s goal, slow slightly at ‘but I’m concerned,’ then sound practical and solution-focused when presenting the two options. Finish ‘it just depends on what matters more’ calmly, as if handing the decision criterion back to the other person.",
+  "review": "Previous flow: original view → new evidence → revised view → reason → preferred action. Today’s flow: understand → concern → condition → trade-off → alternative → decision criterion. When everything cannot be optimized at once, make the trade-off visible instead of reducing the conversation to yes or no."
+}

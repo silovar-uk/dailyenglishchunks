@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": 29,
+  "createdAt": "2026-08-25",
+  "title": "When ‘Urgent’ Doesn’t Mean ‘Important’",
+  "scene": "Several tasks arrive at the same time, and they all seem urgent. Instead of reacting to the loudest request, you compare what would actually happen if each task had to wait and choose based on impact.",
+  "sceneJa": "いくつもの仕事が同時に飛んできて、全部が急ぎに見える。いちばん強く急かされているものに反応するのではなく、後回しにした場合の影響を比べて優先順位を決める。",
+  "emotions": ["busy", "analytical", "deliberate", "calm"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "priorities", "urgent-vs-important", "necessarily", "while", "impact", "decision-making", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "When several requests came in at once,", "ja": "いくつもの依頼が一度に入ってきたとき" },
+        { "en": "my first instinct was", "ja": "最初に直感的に思ったのは" },
+        { "en": "to deal with whichever one", "ja": "どれであれ、それに対応することでした" },
+        { "en": "looked most urgent.", "ja": "一番急ぎに見えるものに" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "But after checking", "ja": "でも確認してみると" },
+        { "en": "what would actually happen", "ja": "実際に何が起きるのか" },
+        { "en": "if each task had to wait,", "ja": "それぞれの仕事を待たせた場合" },
+        { "en": "I realized", "ja": "気づきました" },
+        { "en": "that the loudest request", "ja": "一番強く急かされている依頼が" },
+        { "en": "wasn’t necessarily the most important one.", "ja": "必ずしも一番重要ではないと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "One task could easily wait", "ja": "ある仕事は問題なく待たせられます" },
+        { "en": "until tomorrow,", "ja": "明日まで" },
+        { "en": "while another would delay three other people", "ja": "一方、別の仕事は3人を遅らせることになります" },
+        { "en": "if I left it unfinished.", "ja": "私がそれを終わらせないままにしたら" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "So instead of asking", "ja": "そこで、〜と考える代わりに" },
+        { "en": "what needed the fastest response,", "ja": "何に一番早く返事すべきか" },
+        { "en": "I started asking", "ja": "私は考えるようになりました" },
+        { "en": "what would have the biggest impact", "ja": "何が一番大きな影響を持つのか" },
+        { "en": "if I did nothing.", "ja": "もし何もしなかったら" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I realized / that the loudest request / wasn’t necessarily the most important one",
+        "I realized that / the loudest / request wasn’t necessarily / the most important one",
+        "I / realized that the loudest request wasn’t / necessarily the most important one"
+      ],
+      "answer": 0,
+      "explanation": "‘I realized’ sets up the discovery, and the that-clause gives the content of what the speaker realized."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘while’ mean in this passage?",
+      "options": [
+        "During the time that",
+        "On the other hand / in contrast",
+        "Immediately after"
+      ],
+      "answer": 1,
+      "explanation": "Here ‘while’ contrasts two tasks: one can wait, whereas the other would delay three people."
+    },
+    {
+      "type": "meaning",
+      "question": "How does the speaker finally decide what to prioritize?",
+      "options": [
+        "Choose the task from the person asking most loudly",
+        "Choose whichever task looks fastest to finish",
+        "Consider which task would have the biggest impact if left undone"
+      ],
+      "answer": 2,
+      "explanation": "The speaker shifts from visible urgency to consequences, asking what would happen if nothing were done."
+    }
+  ],
+  "speak": "Start slightly rushed, as if several requests have just arrived at once. Slow down at ‘But after checking what would actually happen’ and become more deliberate. Finish ‘what would have the biggest impact if I did nothing’ calmly, as if the speaker has moved from reacting to choosing.",
+  "review": "Previous flow: deadline → condition → trade-off → alternative → decision. Today’s flow: reaction → consequence → comparison → priority. The key shift is from asking ‘What looks most urgent?’ to asking ‘What happens if I do nothing?’"
+}

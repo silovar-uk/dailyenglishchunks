@@ -28,6 +28,20 @@
   const MAX_DURATION_MS = 680;
   let activeReset = null;
   let arrivalTimer = null;
+  let syncFrame = null;
+
+  function setText(node, value) {
+    if (!node) return;
+    const next = String(value);
+    if (node.textContent === next) return;
+
+    if (node.childNodes.length === 1 && node.firstChild?.nodeType === Node.TEXT_NODE) {
+      node.firstChild.data = next;
+      return;
+    }
+
+    node.textContent = next;
+  }
 
   function speakRounds() {
     return [...document.querySelectorAll('.speak-round')];
@@ -75,7 +89,8 @@
   function decorateRoundButton(button, index) {
     const meta = ROUND_FOCUS[index];
     if (!meta) return;
-    button.setAttribute('aria-label', `${meta.label}: ${meta.action}`);
+    const ariaLabel = `${meta.label}: ${meta.action}`;
+    if (button.getAttribute('aria-label') !== ariaLabel) button.setAttribute('aria-label', ariaLabel);
     if (button.dataset.guidedRound === String(index)) return;
     button.dataset.guidedRound = String(index);
     button.innerHTML = `<strong>${index + 1} / 3</strong><span>${meta.action}</span><small>${meta.label}</small>`;
@@ -111,8 +126,8 @@
     if (!heading || !document.querySelector('.speak-passage')) return;
     const title = heading.querySelector('.step-title');
     const intro = heading.querySelector('.step-intro');
-    if (title) title.textContent = 'Build the voice from the intention.';
-    if (intro) intro.textContent = 'Direction → Emotion → Rhythm。意図から声を組み立てて、最後は補助なしで読む。';
+    setText(title, 'Build the voice from the intention.');
+    setText(intro, 'Direction → Emotion → Rhythm。意図から声を組み立てて、最後は補助なしで読む。');
   }
 
   function syncGuidedFlow() {
@@ -130,7 +145,7 @@
     stack.querySelectorAll('[data-guidance-round]').forEach(item => {
       const index = Number(item.dataset.guidanceRound);
       const copy = item.querySelector('.speak-guidance-copy');
-      if (copy && copy.textContent !== copies[index]) copy.textContent = copies[index];
+      setText(copy, copies[index]);
 
       const visible = focus.complete || index <= focus.index;
       item.hidden = !visible;
@@ -157,6 +172,14 @@
     } else {
       complete?.remove();
     }
+  }
+
+  function scheduleSync() {
+    if (syncFrame !== null) return;
+    syncFrame = requestAnimationFrame(() => {
+      syncFrame = null;
+      syncGuidedFlow();
+    });
   }
 
   function prefersReducedMotion() {
@@ -269,7 +292,7 @@
 
   const observer = new MutationObserver(() => {
     if (!document.querySelector('.speak-passage')) return;
-    requestAnimationFrame(syncGuidedFlow);
+    scheduleSync();
   });
 
   observer.observe(app, { childList: true, subtree: true });

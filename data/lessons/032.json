@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": 32,
+  "createdAt": "2026-08-27",
+  "title": "The Expensive Tomato",
+  "scene": "You stop at a supermarket on the way home for a few dinner ingredients. One particularly nice tomato turns out to cost far more than expected, and pride makes the decision surprisingly difficult to reverse.",
+  "sceneJa": "帰宅途中に夕食の材料を少しだけ買うためスーパーへ寄る。立派なトマトを1個選んだところ、想像以上に高価だったが、今さら戻すのも妙に負けた気がして、そのまま買うことになる。",
+  "emotions": ["casual", "surprised", "awkward", "committed", "dryly-resigned"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "shopping", "food", "couldnt-possibly", "consider-doing", "every-last", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        { "en": "I stopped at a supermarket", "ja": "スーパーへ寄りました" },
+        { "en": "on my way home", "ja": "帰宅途中に" },
+        { "en": "because I only needed", "ja": "ほんの少し必要だったからです" },
+        { "en": "a few things for dinner.", "ja": "夕食用のものが" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I picked up some pasta,", "ja": "パスタを手に取り" },
+        { "en": "a bag of salad,", "ja": "サラダを1袋取り" },
+        { "en": "and one particularly good-looking tomato", "ja": "それからひときわ立派なトマトを1個取りました" },
+        { "en": "from a display near the entrance.", "ja": "入口近くの売り場から" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "There was no price label beside it,", "ja": "その横には値札がありませんでしたが" },
+        { "en": "but I assumed", "ja": "私は思いました" },
+        { "en": "a single tomato couldn't possibly", "ja": "トマト1個のために、どう考えても" },
+        { "en": "require serious financial planning.", "ja": "本格的な資金計画が必要になることはないだろうと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "At the self-checkout,", "ja": "セルフレジで" },
+        { "en": "I scanned everything", "ja": "すべての商品をスキャンし" },
+        { "en": "and noticed that my total", "ja": "合計金額が" },
+        { "en": "was surprisingly high.", "ja": "思いのほか高いことに気づきました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I checked the screen", "ja": "画面を確認すると" },
+        { "en": "and discovered that the tomato", "ja": "そのトマトが" },
+        { "en": "cost nearly as much", "ja": "ほぼ同じくらいの値段だと分かりました" },
+        { "en": "as the pasta and salad combined.", "ja": "パスタとサラダを合わせた金額と" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "For a moment,", "ja": "一瞬" },
+        { "en": "I considered calling a member of staff", "ja": "店員を呼ぼうかと考えました" },
+        { "en": "and asking them to remove it.", "ja": "そしてそのトマトを取り消してもらおうかと" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "But the tomato was already sitting", "ja": "しかし、そのトマトはすでに収まっていました" },
+        { "en": "quite confidently in my bag,", "ja": "かなり堂々と私の袋の中に" },
+        { "en": "and returning it somehow felt", "ja": "そして、それを戻すのはなぜか" },
+        { "en": "like admitting defeat in public.", "ja": "人前で敗北を認めるような気がしました" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "So I paid for everything", "ja": "そこで私はすべて支払い" },
+        { "en": "and carried my unexpectedly premium vegetable", "ja": "思いがけず高級品となった野菜を運びました" },
+        { "en": "home with considerable care.", "ja": "かなり慎重に家まで" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "At dinner,", "ja": "夕食時" },
+        { "en": "I sliced it neatly", "ja": "それをきれいに切り" },
+        { "en": "and took the first bite", "ja": "最初の一口を食べました" },
+        { "en": "with fairly unreasonable expectations.", "ja": "かなり理不尽なほど期待を膨らませて" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "It tasted exactly like a tomato.", "ja": "味は完全にトマトでした" },
+        { "en": "A very competent tomato, certainly,", "ja": "確かに、とても優秀なトマトではありましたが" },
+        { "en": "but still unmistakably", "ja": "それでも間違いなく" },
+        { "en": "a tomato.", "ja": "トマトでした" }
+      ]
+    },
+    {
+      "chunks": [
+        { "en": "I ate every last piece.", "ja": "最後の一切れまで食べました" },
+        { "en": "At that price,", "ja": "あの値段を考えれば" },
+        { "en": "leaving any behind", "ja": "何か残すことは" },
+        { "en": "would have been poor financial management.", "ja": "財務管理上よろしくなかったでしょう" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "a single tomato couldn't possibly / require serious financial planning",
+        "a single tomato / couldn't possibly require / serious financial planning",
+        "a single / tomato couldn't possibly require serious / financial planning"
+      ],
+      "answer": 0,
+      "explanation": "‘A single tomato couldn't possibly’ sets up the speaker’s strong expectation, and ‘require serious financial planning’ completes what seems impossible."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I considered calling a member of staff’ mean here?",
+      "options": [
+        "The speaker definitely called a member of staff",
+        "The speaker thought about calling a member of staff but did not necessarily do it",
+        "The speaker had already asked a member of staff for help"
+      ],
+      "answer": 1,
+      "explanation": "‘Consider doing’ means to think about an option. It does not mean the action actually happened."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the final sentence work as dry humour?",
+      "options": [
+        "The tomato was actually an investment product",
+        "The speaker treats finishing an overpriced tomato as if it were a serious financial-management decision",
+        "The supermarket gave the speaker financial advice"
+      ],
+      "answer": 1,
+      "explanation": "The humour comes from describing a tiny everyday choice in unnecessarily formal financial language."
+    }
+  ],
+  "speak": "Begin casually, as if this is an ordinary supermarket stop. Let the surprise appear only slightly at ‘was surprisingly high’ and keep the awkwardness understated at ‘like admitting defeat in public.’ Deliver ‘It tasted exactly like a tomato’ very plainly. The final line should sound almost professionally serious, which makes the joke work.",
+  "review": "Today’s flow: ordinary purchase → hidden price → awkward realization → pride prevents reversal → inflated expectations → dry financial conclusion. Useful frames: ‘couldn’t possibly ...’ for strong expectations, ‘consider doing ...’ for options you may not take, and ‘every last ...’ for emphasizing that nothing was left."
+}

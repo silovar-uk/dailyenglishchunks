@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": 31,
+  "createdAt": "2026-08-26",
+  "title": "Knowing When ‘Good Enough’ Is Enough",
+  "scene": "You have been polishing a presentation for longer than planned. You can still improve it, but you need to decide whether those small improvements are worth the extra time.",
+  "sceneJa": "資料を何度も修正していて、まだ改善できる点は残っている。ただ、『改善できる』ことと『さらに時間を使う価値がある』ことを分けて考え、やめどきを決める。",
+  "emotions": ["absorbed", "reflective", "practical", "decisive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "good-enough", "whether", "other-than", "enough-to", "justify", "rather-than", "decision-making", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I’d already revised the presentation", "ja": "私はすでにプレゼン資料を修正していました"},
+        {"en": "several times,", "ja": "何度も"},
+        {"en": "but I kept finding", "ja": "でも見つけ続けていました"},
+        {"en": "small things", "ja": "小さなところを"},
+        {"en": "I could improve.", "ja": "改善できる"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Eventually,", "ja": "最終的に"},
+        {"en": "I asked myself", "ja": "自分に問いかけました"},
+        {"en": "whether anyone other than me", "ja": "自分以外の誰かが"},
+        {"en": "would actually notice those changes.", "ja": "その変更に実際に気づくだろうか、と"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Some of them", "ja": "そのうちいくつかは"},
+        {"en": "would make the slides slightly better,", "ja": "スライドを少し良くするでしょう"},
+        {"en": "but probably not enough", "ja": "でも、おそらく十分ではありません"},
+        {"en": "to justify another hour of work.", "ja": "さらに1時間作業するだけの価値があるほどには"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So I decided to stop", "ja": "そこで、やめることにしました"},
+        {"en": "when the presentation was clear and useful,", "ja": "プレゼン資料が分かりやすく、役に立つ状態になったところで"},
+        {"en": "rather than when", "ja": "〜になったところではなく"},
+        {"en": "there was absolutely nothing left to improve.", "ja": "改善できるところが完全になくなった"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I asked myself / whether anyone other than me / would actually notice those changes",
+        "I asked / myself whether anyone / other than me would / actually notice those changes",
+        "I asked myself whether / anyone other / than me would actually notice"
+      ],
+      "answer": 0,
+      "explanation": "‘I asked myself’ is one thought unit, and the whether-clause gives the question the speaker asked internally."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘not enough to justify another hour of work’ mean?",
+      "options": [
+        "The speaker cannot work for another hour",
+        "The improvements exist, but they are not valuable enough to make another hour worthwhile",
+        "Another hour would make the presentation perfect"
+      ],
+      "answer": 1,
+      "explanation": "‘Enough to justify’ asks whether the benefit is large enough to make the extra cost—in this case, another hour—worthwhile."
+    },
+    {
+      "type": "meaning",
+      "question": "When does the speaker finally decide to stop?",
+      "options": [
+        "When there is absolutely nothing left to improve",
+        "When someone else tells them to stop",
+        "When the presentation is clear and useful"
+      ],
+      "answer": 2,
+      "explanation": "The speaker changes the stopping condition from perfection to usefulness: clear and useful is enough."
+    }
+  ],
+  "speak": "Start slightly absorbed, as if you are still noticing tiny improvements. Pause at ‘Eventually, / I asked myself’ to mark the change in perspective. Read ‘not enough / to justify another hour of work’ thoughtfully, then make the final sentence sound calm and decisive rather than disappointed.",
+  "review": "Previous normal lesson flow: reaction → consequence → comparison → priority. There, the key question changed from ‘What looks urgent?’ to ‘What happens if I do nothing?’ Today the question changes again: from ‘Can I make this better?’ to ‘Is the improvement worth the time?’ Better is often possible; worthwhile is a different test."
+}

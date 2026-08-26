@@ -12,7 +12,36 @@
   };
 
   let checkSessionKey = null;
+  let enhanceFrame = null;
   const quizOrders = new Map();
+
+  function setText(node, value) {
+    if (!node) return;
+    const next = String(value);
+    if (node.textContent === next) return;
+
+    if (node.childNodes.length === 1 && node.firstChild?.nodeType === Node.TEXT_NODE) {
+      node.firstChild.data = next;
+      return;
+    }
+
+    node.textContent = next;
+  }
+
+  function setStatus(status, label, copy, complete = false) {
+    if (!status) return;
+    status.classList.toggle('is-complete', complete);
+
+    let labelNode = status.querySelector('span');
+    let copyNode = status.querySelector('strong');
+    if (!labelNode || !copyNode) {
+      status.innerHTML = `<span>${label}</span><strong>${copy}</strong>`;
+      return;
+    }
+
+    setText(labelNode, label);
+    setText(copyNode, copy);
+  }
 
   function currentStep() {
     const label = document.querySelector('.step-label')?.textContent || '';
@@ -36,11 +65,13 @@
   function setLessonStep(step) {
     const lesson = document.querySelector('.lesson');
     if (!lesson || !step) return;
-    lesson.dataset.uiStep = step;
+    if (lesson.dataset.uiStep !== step) lesson.dataset.uiStep = step;
 
     document.querySelectorAll('.compact-step-item').forEach(button => {
-      button.removeAttribute('aria-current');
-      if (button.classList.contains('is-active')) button.setAttribute('aria-current', 'step');
+      const active = button.classList.contains('is-active');
+      const current = button.getAttribute('aria-current') === 'step';
+      if (active && !current) button.setAttribute('aria-current', 'step');
+      if (!active && current) button.removeAttribute('aria-current');
     });
   }
 
@@ -57,7 +88,7 @@
   function enhanceNextButton(step) {
     const button = document.getElementById('nextStep');
     if (!button || !step) return;
-    button.textContent = `${STEP_LABELS[step].next} →`;
+    setText(button, `${STEP_LABELS[step].next} →`);
   }
 
   function enhanceChunk() {
@@ -66,9 +97,7 @@
 
     const activeCount = editor.querySelectorAll('.gap-button.is-active').length;
     const status = document.querySelector('.ui-step-status');
-    if (status) {
-      status.innerHTML = `<span>CHUNKS</span><strong>${activeCount ? `${activeCount}か所に区切り` : '区切りたい場所をタップ'}</strong>`;
-    }
+    setStatus(status, 'CHUNKS', activeCount ? `${activeCount}か所に区切り` : '区切りたい場所をタップ');
 
     const toolRow = document.querySelector('.chunk-tool-row');
     if (toolRow && !document.querySelector('.ui-chunk-legend')) {
@@ -106,7 +135,7 @@
 
       if (needsReorder) {
         order.forEach(optionId => {
-          const button = buttons.find(item => Number(item.dataset.option) === optionId);
+          const button = buttons.find(item => Number(button.dataset.option) === optionId);
           if (button) options.appendChild(button);
         });
       }
@@ -114,7 +143,7 @@
       [...options.querySelectorAll('.quiz-option')].forEach((button, visualIndex) => {
         const key = button.querySelector('.option-key');
         const nextKey = String.fromCharCode(65 + visualIndex);
-        if (key && key.textContent !== nextKey) key.textContent = nextKey;
+        setText(key, nextKey);
       });
     });
   }
@@ -142,16 +171,14 @@
     const count = progress.querySelector('.ui-check-progress-count');
     const width = `${percentage}%`;
     if (bar && bar.style.width !== width) bar.style.width = width;
-    if (count) count.textContent = `${answered} / ${total}`;
+    setText(count, `${answered} / ${total}`);
 
+    const completeNow = total > 0 && answered === total;
     const status = document.querySelector('.ui-step-status');
-    if (status) {
-      status.classList.toggle('is-complete', total > 0 && answered === total);
-      status.innerHTML = `<span>CHECK</span><strong>${answered === total && total ? '全部確認できた' : `あと${Math.max(0, total - answered)}問`}</strong>`;
-    }
+    setStatus(status, 'CHECK', completeNow ? '全部確認できた' : `あと${Math.max(0, total - answered)}問`, completeNow);
 
     let complete = document.querySelector('.ui-check-complete');
-    if (answered === total && total > 0) {
+    if (completeNow) {
       if (!complete) {
         complete = document.createElement('div');
         complete.className = 'ui-check-complete';
@@ -170,19 +197,18 @@
     const doneCount = rounds.filter(button => button.classList.contains('is-done')).length;
     rounds.forEach(button => {
       button.classList.remove('ui-is-next');
-      button.setAttribute('aria-pressed', button.classList.contains('is-done') ? 'true' : 'false');
+      const pressed = button.classList.contains('is-done') ? 'true' : 'false';
+      if (button.getAttribute('aria-pressed') !== pressed) button.setAttribute('aria-pressed', pressed);
     });
     const next = rounds.find(button => !button.classList.contains('is-done'));
     if (next) next.classList.add('ui-is-next');
 
+    const complete = doneCount === rounds.length;
     const status = document.querySelector('.ui-step-status');
-    if (status) {
-      status.classList.toggle('is-complete', doneCount === rounds.length);
-      status.innerHTML = `<span>SPEAK</span><strong>${doneCount === 0 ? '3回読む' : `${doneCount}回完了`}</strong>`;
-    }
+    setStatus(status, 'SPEAK', doneCount === 0 ? '3回読む' : `${doneCount}回完了`, complete);
 
     const nextButton = document.getElementById('nextStep');
-    if (nextButton) nextButton.classList.toggle('ui-ready', doneCount === rounds.length);
+    if (nextButton) nextButton.classList.toggle('ui-ready', complete);
   }
 
   function enhance() {
@@ -202,8 +228,16 @@
     if (step === 'speak') enhanceSpeak();
   }
 
+  function scheduleEnhance() {
+    if (enhanceFrame !== null) return;
+    enhanceFrame = requestAnimationFrame(() => {
+      enhanceFrame = null;
+      enhance();
+    });
+  }
+
   function afterEvent() {
-    requestAnimationFrame(() => requestAnimationFrame(enhance));
+    requestAnimationFrame(scheduleEnhance);
   }
 
   document.addEventListener('click', afterEvent);
@@ -211,7 +245,7 @@
 
   const observer = new MutationObserver(() => {
     if (!document.querySelector('.lesson')) return;
-    requestAnimationFrame(enhance);
+    scheduleEnhance();
   });
   observer.observe(app, { childList: true, subtree: true });
 

@@ -1,0 +1,70 @@
+/* Learning friction polish — fewer choices, clearer return paths. */
+
+.sequence-item {
+  position: relative;
+  flex-basis: 132px;
+  min-height: 68px;
+  place-items: initial;
+  align-content: center;
+  gap: 3px;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.sequence-item-number {
+  padding-right: 42px;
+  font-size: .74rem;
+  color: currentColor;
+  opacity: .72;
+}
+
+.sequence-item-title {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .86rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.015em;
+}
+
+.sequence-item-state {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-height: 0;
+  font-size: .55rem;
+}
+
+/* The visible slash stays quiet; the actual touch target gets more forgiving. */
+.lesson[data-ui-step="chunk"] .gap-button {
+  min-height: 44px;
+}
+
+@media (max-width: 640px) {
+  .sequence-rail {
+    gap: 7px;
+    margin-right: -14px;
+    padding-right: 14px;
+    scrollbar-width: none;
+  }
+
+  .sequence-rail::-webkit-scrollbar { display: none; }
+
+  .sequence-item {
+    flex-basis: 124px;
+    min-height: 66px;
+    padding: 9px 11px;
+  }
+
+  .sequence-item-title { font-size: .82rem; }
+
+  .lesson[data-ui-step="chunk"] .gap-button {
+    width: 32px;
+    height: 44px;
+    margin: 0;
+  }
+}

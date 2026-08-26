@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": 30,
+  "createdAt": "2026-08-26",
+  "title": "The Surprisingly Competitive Walk",
+  "scene": "A friend suggests a relaxed walk after dinner. You both agree not to care about speed, but a casual comment from a fitness watch quietly turns the walk into an unofficial competition.",
+  "sceneJa": "夕食後、友人と気軽に散歩する。速さは気にしないはずだったが、腕時計のひと言をきっかけに、いつの間にか散歩が非公式の競争になっていく。",
+  "emotions": ["relaxed", "competitive", "amused", "slightly-exhausted"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "walking", "friends", "roughly-the-next", "match-someones-pace", "maintain-the-fiction", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "A friend asked me to go for a walk", "ja": "友人に散歩へ誘われました"},
+        {"en": "after dinner,", "ja": "夕食後に"},
+        {"en": "mainly because we had both spent", "ja": "主な理由は、二人とも過ごしていたからです"},
+        {"en": "far too much of the day sitting down.", "ja": "その日の大半をあまりにも座って"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "We agreed to keep it relaxed", "ja": "のんびり行こうと決めました"},
+        {"en": "and walk for about half an hour", "ja": "30分くらい歩いて"},
+        {"en": "without worrying about distance or speed.", "ja": "距離や速さを気にせずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "About five minutes in,", "ja": "5分ほど歩いたところで"},
+        {"en": "he mentioned casually", "ja": "彼が何気なく言いました"},
+        {"en": "that his watch said", "ja": "腕時計によると"},
+        {"en": "we were walking quite slowly.", "ja": "私たちはかなりゆっくり歩いていると"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I said I didn’t care,", "ja": "私は気にしないと言いました"},
+        {"en": "which was completely true", "ja": "それは完全に本心でした"},
+        {"en": "for roughly the next thirty seconds.", "ja": "その後およそ30秒間は"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then he walked slightly faster,", "ja": "すると彼が少し速く歩き始め"},
+        {"en": "so I matched his pace", "ja": "私は彼のペースに合わせました"},
+        {"en": "without mentioning it.", "ja": "何も言わずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "A few minutes later,", "ja": "数分後"},
+        {"en": "we were both walking briskly", "ja": "二人ともかなり速足になっていました"},
+        {"en": "while continuing a very calm conversation", "ja": "とても穏やかな会話を続けながら"},
+        {"en": "about how nice it was to relax.", "ja": "こうやってのんびりするのはいいなと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "When we reached a long hill,", "ja": "長い坂道に差しかかると"},
+        {"en": "neither of us suggested slowing down,", "ja": "どちらもペースを落とそうとは言わず"},
+        {"en": "which would apparently have been", "ja": "どうやらそれは〜になるところだったようです"},
+        {"en": "a serious diplomatic failure.", "ja": "重大な外交上の失敗に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "By the top,", "ja": "坂を登り切るころには"},
+        {"en": "we were breathing too heavily", "ja": "かなり息が上がっていて"},
+        {"en": "to maintain the fiction", "ja": "その建前を維持できないほどでした"},
+        {"en": "that this was still a casual walk.", "ja": "これがまだ気軽な散歩だという"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Back at my building,", "ja": "家に戻ると"},
+        {"en": "my friend checked his watch", "ja": "友人は腕時計を確認し"},
+        {"en": "and looked extremely pleased", "ja": "かなり満足そうな顔をしました"},
+        {"en": "with our average pace.", "ja": "私たちの平均ペースを見て"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Neither of us mentioned", "ja": "どちらも触れませんでした"},
+        {"en": "that we had somehow turned relaxation", "ja": "なぜかリラックスを変えてしまったことに"},
+        {"en": "into an event with unofficial results.", "ja": "非公式記録の出る競技へ"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "We said we should do it again next week.", "ja": "来週もまたやろうと言いました"},
+        {"en": "Presumably,", "ja": "たぶん"},
+        {"en": "once we’ve both had time", "ja": "二人とも時間を取れたら"},
+        {"en": "to recover from all that relaxing.", "ja": "この激しいリラックスから回復するための"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Then he walked slightly faster, / so I matched his pace",
+        "Then he / walked slightly faster so / I matched his pace",
+        "Then he walked / slightly faster so I / matched his pace"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the change in his speed, and the second gives the speaker’s response."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘match his pace’ mean here?",
+      "options": [
+        "Walk at the same speed as him",
+        "Walk in the opposite direction",
+        "Ask him to slow down"
+      ],
+      "answer": 0,
+      "explanation": "To match someone’s pace means to adjust your speed so that it is the same as theirs."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final line funny?",
+      "options": [
+        "They never actually went for a walk",
+        "A supposedly relaxing walk became tiring enough to require recovery",
+        "The friend forgot to check his watch"
+      ],
+      "answer": 1,
+      "explanation": "The humour comes from calling the walk relaxing even after they accidentally turned it into a competition."
+    }
+  ],
+  "speak": "Start relaxed and conversational. Let the competitiveness creep in quietly after ‘we were walking quite slowly.’ Keep ‘which was completely true / for roughly the next thirty seconds’ understated. Deliver the final line calmly, as if needing to recover from relaxing were perfectly reasonable.",
+  "review": "Today’s flow: relaxed plan → harmless comment → silent competition → escalation → mutual denial → dry punchline. Notice how the humour comes from both people pretending the walk is still relaxing while behaving as if there is a result to defend."
+}

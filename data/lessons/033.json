@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": 33,
+  "createdAt": "2026-08-27",
+  "title": "Knowing What You Can Decide Yourself",
+  "scene": "You notice a small issue while working on a project. Instead of asking your manager about every detail, you decide which choices are safe to make yourself and which ones deserve a quick check first.",
+  "sceneJa": "仕事中に小さな問題を見つけた。何でも上司に確認するのではなく、自分で決めてよいことと、先に確認すべきことを分けて考える。",
+  "emotions": ["thoughtful", "practical", "confident", "responsible"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "decision-making", "used-to", "whenever", "while", "easy-to-reverse", "low-risk", "go-ahead", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I used to check with my manager", "ja": "以前は上司に確認していました"},
+        {"en": "whenever I had to make", "ja": "何かを決めなければならないたびに"},
+        {"en": "even a small decision.", "ja": "たとえ小さな判断でも"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Over time, though,", "ja": "でも、時間が経つにつれて"},
+        {"en": "I realized", "ja": "気づきました"},
+        {"en": "that some choices were easy to reverse,", "ja": "簡単に元に戻せる判断もあれば"},
+        {"en": "while others could affect", "ja": "一方で、影響する判断もあると"},
+        {"en": "the whole project.", "ja": "プロジェクト全体に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Now,", "ja": "今では"},
+        {"en": "if a decision is low-risk", "ja": "その判断のリスクが低く"},
+        {"en": "and easy to change later,", "ja": "あとで簡単に変更できるなら"},
+        {"en": "I usually make it myself", "ja": "普段は自分で判断して"},
+        {"en": "and keep moving.", "ja": "そのまま進めます"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If it could create", "ja": "もしそれが引き起こす可能性があるなら"},
+        {"en": "a bigger problem,", "ja": "より大きな問題を"},
+        {"en": "I ask", "ja": "確認します"},
+        {"en": "before going ahead.", "ja": "進める前に"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "if a decision is low-risk / and easy to change later",
+        "if a / decision is low-risk and / easy to change later",
+        "if a decision / is low / risk and easy to change later"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives one condition, and the second adds another condition that belongs with it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘easy to reverse’ mean here?",
+      "options": [
+        "A decision can be undone or changed without much difficulty",
+        "The order of the decision can be reversed",
+        "The decision should be made quickly"
+      ],
+      "answer": 0,
+      "explanation": "‘Easy to reverse’ means the consequences are not locked in; you can change the decision later without causing much damage."
+    },
+    {
+      "type": "meaning",
+      "question": "When does the speaker ask their manager?",
+      "options": [
+        "For every decision",
+        "When the decision could create a bigger problem",
+        "Whenever making the decision feels annoying"
+      ],
+      "answer": 1,
+      "explanation": "The speaker acts independently on low-risk, reversible choices and checks first when the impact could be larger."
+    }
+  ],
+  "speak": "Start reflectively at ‘I used to check with my manager,’ then become more assured as the rule becomes clear. Read ‘if a decision is low-risk / and easy to change later’ as two calm checks. Finish ‘I ask / before going ahead’ briefly and firmly, as a clear boundary rather than hesitation.",
+  "review": "Previous flow: keep improving → question the value → compare benefit and cost → choose a stopping point. Today’s flow: old habit → distinction → rule → exception. The useful decision test is not simply ‘Should I ask?’ but ‘How risky is this, and how easy would it be to reverse later?’"
+}

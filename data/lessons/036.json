@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": 36,
+  "createdAt": "2026-08-29",
+  "title": "Clarifying What “Done” Actually Means",
+  "scene": "Two people are working toward the same deadline, but they may have different ideas about what finished means. Before starting the work, you want to align on the expected outcome and the scope.",
+  "sceneJa": "同じ締切に向かって仕事しているが、『完成』の認識がズレていそう。作業を始める前に、成功条件・完了条件をそろえておきたい。",
+  "emotions": ["careful", "aligned", "practical", "clear"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "alignment", "definition-of-done", "my-understanding-is", "otherwise", "rather-than", "outcomes", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "Before I start working on this,", "ja": "これに取りかかる前に"},
+        {"en": "I’d like to make sure", "ja": "確認しておきたいです"},
+        {"en": "we have the same idea", "ja": "私たちが同じ認識を持っていることを"},
+        {"en": "of what ‘done’ looks like.", "ja": "『完了』がどんな状態なのかについて"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "My understanding is", "ja": "私の理解では"},
+        {"en": "that we need a short summary", "ja": "短い要約が必要で"},
+        {"en": "and the final numbers,", "ja": "最終的な数字も必要ですが"},
+        {"en": "but not a detailed analysis", "ja": "詳細な分析までは必要ない"},
+        {"en": "at this stage.", "ja": "現段階では"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If that’s right,", "ja": "その理解で合っていれば"},
+        {"en": "I can have everything ready", "ja": "すべて準備できます"},
+        {"en": "by Thursday;", "ja": "木曜日までに"},
+        {"en": "otherwise,", "ja": "そうでなければ"},
+        {"en": "we may need to adjust the timeline.", "ja": "スケジュールを調整する必要があります"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I’d rather clarify that now", "ja": "むしろ今それを明確にしておきたいです"},
+        {"en": "than discover later", "ja": "あとになって気づくより"},
+        {"en": "that we were working toward", "ja": "私たちが目指していたことに"},
+        {"en": "different outcomes.", "ja": "違う完成形を"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I’d like to make sure / we have the same idea / of what ‘done’ looks like",
+        "I’d like / to make sure we / have the same idea of / what ‘done’ looks like",
+        "I’d like to make / sure we have / the same idea of what / ‘done’ looks like"
+      ],
+      "answer": 0,
+      "explanation": "‘I’d like to make sure’ is one thought unit, followed by what the speaker wants to confirm and then the specific idea being aligned on."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘otherwise’ mean here?",
+      "options": [
+        "If that understanding is correct",
+        "If that understanding is not correct",
+        "When Thursday arrives"
+      ],
+      "answer": 1,
+      "explanation": "‘Otherwise’ means that if the previous condition is not true, a different consequence follows."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker clarify what ‘done’ means?",
+      "options": [
+        "To have the other person choose the working method",
+        "To avoid doing detailed analysis at all costs",
+        "To prevent rework caused by aiming for different outcomes"
+      ],
+      "answer": 2,
+      "explanation": "The speaker wants to align on the expected outcome before starting so both people are working toward the same finish line."
+    }
+  ],
+  "speak": "Sound aligned rather than uncertain. Read ‘My understanding is’ calmly, as if you are offering a clear interpretation for confirmation. Contrast ‘If that’s right’ with ‘otherwise’ slightly. Finish ‘I’d rather clarify that now than discover later’ as a practical reason for checking early, not as a complaint.",
+  "review": "Previous flow: investigate → narrow down → identify uncertainty → ask narrowly → continue yourself. Today moves one step earlier: align → state your understanding → set a condition → connect it to the deadline → prevent rework. Before asking how to do the work, clarify what ‘done’ actually means."
+}

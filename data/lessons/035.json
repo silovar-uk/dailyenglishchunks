@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": 35,
+  "createdAt": "2026-08-29",
+  "title": "The Completely Optional Dessert",
+  "scene": "You and a friend finish dinner feeling comfortably full. You both agree that dessert is unnecessary, then gradually turn sharing one dessert into a surprisingly delicate exercise in politeness.",
+  "sceneJa": "友人と夕食を食べ終え、二人とも十分お腹いっぱい。それでもデザートを1つだけシェアすることになり、最後のひとかけらを巡って妙に丁寧な譲り合いが始まる。",
+  "emotions": ["satisfied", "curious", "playful", "self-conscious", "amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "friends", "restaurant", "purely-out-of", "keep-a-close-eye-on", "preferable-to", "dry-humour"],
+  "sentences": [
+    {"chunks":[
+      {"en":"A friend and I went out for dinner","ja":"友人と二人で夕食を食べに行きました"},
+      {"en":"at a small restaurant","ja":"小さなレストランへ"},
+      {"en":"neither of us had tried before.","ja":"どちらも行ったことのない"}
+    ]},
+    {"chunks":[
+      {"en":"The food was excellent,","ja":"料理はとてもおいしかったのですが"},
+      {"en":"but by the end of the main course,","ja":"メインを食べ終えるころには"},
+      {"en":"we were both comfortably full.","ja":"二人とも十分にお腹いっぱいでした"}
+    ]},
+    {"chunks":[
+      {"en":"When the waiter brought the dessert menu,","ja":"店員がデザートメニューを持ってくると"},
+      {"en":"my friend looked at me and said,","ja":"友人が私を見て言いました"},
+      {"en":"We don’t need anything else, do we?","ja":"『もう何もいらないよな？』と"}
+    ]},
+    {"chunks":[
+      {"en":"Definitely not, I said,","ja":"『絶対いらない』と私は答えました"},
+      {"en":"while opening the menu","ja":"メニューを開きながら"},
+      {"en":"purely out of academic interest.","ja":"純粋に学術的な興味から"}
+    ]},
+    {"chunks":[
+      {"en":"Unfortunately,","ja":"困ったことに"},
+      {"en":"one of the desserts sounded unusually good,","ja":"ひとつだけ妙においしそうなデザートがあり"},
+      {"en":"so we agreed to order one","ja":"1個だけ頼むことにして"},
+      {"en":"and share it.","ja":"シェアすることにしました"}
+    ]},
+    {"chunks":[
+      {"en":"When it arrived,","ja":"デザートが届くと"},
+      {"en":"my friend politely pushed the plate towards me","ja":"友人は丁寧に皿をこちらへ寄せ"},
+      {"en":"and told me to have the first bite.","ja":"『最初に食べていいよ』と言いました"}
+    ]},
+    {"chunks":[
+      {"en":"I took a small spoonful","ja":"私は小さくひと口食べ"},
+      {"en":"and pushed it back,","ja":"皿を戻し"},
+      {"en":"feeling that we had established","ja":"確立できたように感じました"},
+      {"en":"a very civilised system.","ja":"とても文明的な仕組みを"}
+    ]},
+    {"chunks":[
+      {"en":"A minute later,","ja":"1分後には"},
+      {"en":"we were both keeping a surprisingly close eye","ja":"二人とも驚くほど注意深く見ていました"},
+      {"en":"on how much the other person","ja":"相手がどれくらい"},
+      {"en":"was putting on each spoon.","ja":"一口ごとにスプーンへ取っているかを"}
+    ]},
+    {"chunks":[
+      {"en":"Neither of us said anything,","ja":"どちらも何も言いませんでしたが"},
+      {"en":"but the portions became gradually smaller","ja":"一口の量はだんだん小さくなり"},
+      {"en":"as the dessert disappeared.","ja":"デザートが減っていくにつれて"}
+    ]},
+    {"chunks":[
+      {"en":"Eventually,","ja":"やがて"},
+      {"en":"one final piece remained","ja":"最後のひとかけらだけが残り"},
+      {"en":"in the middle of the plate,","ja":"皿の中央に"},
+      {"en":"surrounded by an impressive amount of diplomacy.","ja":"その周囲には見事なほどの外交努力が漂っていました"}
+    ]},
+    {"chunks":[
+      {"en":"My friend told me I could have it,","ja":"友人が『食べていいよ』と言ったので"},
+      {"en":"so naturally I refused.","ja":"当然私は断りました"},
+      {"en":"We left it there","ja":"結局それを残したまま"},
+      {"en":"and paid the bill.","ja":"会計を済ませました"}
+    ]},
+    {"chunks":[
+      {"en":"Apparently,","ja":"どうやら"},
+      {"en":"wasting a perfectly good dessert","ja":"おいしいデザートを無駄にする方が"},
+      {"en":"was preferable to discovering","ja":"〜が判明するよりはマシだったようです"},
+      {"en":"which of us was less polite.","ja":"どちらの方が礼儀知らずなのか"}
+    ]}
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "we were both keeping a surprisingly close eye / on how much the other person / was putting on each spoon",
+        "we were both / keeping a surprisingly / close eye on how much / the other person was putting",
+        "we were / both keeping a surprisingly close / eye on how much the other person was"
+      ],
+      "answer": 0,
+      "explanation": "‘Keep a close eye on ...’ works as one phrase, followed by the thing being watched and then the action being observed."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘purely out of academic interest’ imply here?",
+      "options": [
+        "The speaker genuinely needs to study the menu for research",
+        "The speaker jokingly pretends curiosity is the only reason for opening the dessert menu",
+        "The speaker is checking whether the menu contains academic vocabulary"
+      ],
+      "answer": 1,
+      "explanation": "The phrase is deliberately over-formal. The speaker is really tempted by dessert and uses ‘academic interest’ as a dry excuse."
+    },
+    {
+      "type": "meaning",
+      "question": "Why do they leave the final piece uneaten?",
+      "options": [
+        "Neither of them likes the dessert anymore",
+        "They are both too polite to take the last piece after offering it to the other person",
+        "The waiter asks them not to finish it"
+      ],
+      "answer": 1,
+      "explanation": "The humour comes from politeness becoming so strong that wasting the dessert feels easier than revealing who wants the last bite more."
+    }
+  ],
+  "speak": "Start relaxed and satisfied. Let the curiosity creep in at ‘purely out of academic interest.’ Keep the middle section calm and observant rather than competitive. Pause slightly before the final sentence and deliver ‘was preferable to discovering which of us was less polite’ with quiet, matter-of-fact seriousness.",
+  "review": "Today’s flow: comfortably full → unnecessary menu → one small exception → polite sharing → silent competition → diplomatic stalemate. Useful chunks: ‘purely out of ...’ for motives, ‘keep a close eye on ...’ for careful attention, and ‘be preferable to ...’ for calmly comparing two imperfect options."
+}

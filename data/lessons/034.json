@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": 34,
+  "createdAt": "2026-08-28",
+  "title": "Asking for Help Without Handing Over the Problem",
+  "scene": "You’ve tried to solve a problem yourself, but you’re stuck. You want someone’s input without making them responsible for the whole task.",
+  "sceneJa": "自分である程度考えたが、そこで詰まった。問題を丸ごと相手に渡すのではなく、必要な一点だけ助けてもらい、その先は自分で進めたい。",
+  "emotions": ["prepared", "slightly-stuck", "focused", "collaborative", "confident"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "asking-for-help", "look-into", "narrow-down", "rather-than", "get-your-view", "take-it-from-there", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I’ve looked into the issue", "ja": "その問題について調べました"},
+        {"en": "and narrowed it down", "ja": "そして絞り込みました"},
+        {"en": "to two possible causes.", "ja": "可能性のある2つの原因まで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I could keep testing them myself,", "ja": "自分でそのまま検証を続けることもできます"},
+        {"en": "but I’m not sure", "ja": "ただ、よく分かりません"},
+        {"en": "which one would be more useful", "ja": "どちらのほうが有益なのか"},
+        {"en": "to check first.", "ja": "先に確認するには"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Rather than asking you", "ja": "あなたにお願いするのではなく"},
+        {"en": "to solve the whole problem,", "ja": "問題全体を解決してもらうことを"},
+        {"en": "could I get your view", "ja": "意見をもらえますか"},
+        {"en": "on which direction", "ja": "どちらの方向が"},
+        {"en": "makes more sense?", "ja": "より筋が通っているかについて"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Once I know that,", "ja": "それが分かれば"},
+        {"en": "I should be able", "ja": "できるはずです"},
+        {"en": "to take it from there.", "ja": "そこから先は自分で進めることが"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I’ve looked into the issue / and narrowed it down / to two possible causes",
+        "I’ve looked / into the issue and narrowed / it down to two possible causes",
+        "I’ve looked into / the issue and / narrowed it down to two possible causes"
+      ],
+      "answer": 0,
+      "explanation": "‘I’ve looked into the issue’ gives the investigation, ‘and narrowed it down’ gives the next action, and ‘to two possible causes’ gives the result of that narrowing."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘narrowed it down’ mean here?",
+      "options": [
+        "Rewrite the problem in smaller words",
+        "Reduce the possibilities to a smaller number",
+        "Solve the problem completely"
+      ],
+      "answer": 1,
+      "explanation": "‘Narrow something down’ means to reduce a larger set of possibilities to a smaller, more manageable set."
+    },
+    {
+      "type": "meaning",
+      "question": "What kind of help does the speaker want?",
+      "options": [
+        "They want the other person to solve the whole problem",
+        "They want an opinion on which direction to investigate first",
+        "They want the other person to take over the testing"
+      ],
+      "answer": 1,
+      "explanation": "The speaker has already investigated the issue and only wants targeted input so they can continue the work themselves."
+    }
+  ],
+  "speak": "Sound prepared rather than helpless. Read ‘I’ve looked into the issue / and narrowed it down’ with confidence, become slightly more cautious at ‘but I’m not sure,’ and finish ‘I should be able / to take it from there’ clearly and decisively.",
+  "review": "Previous flow: reversible decision → decide yourself; high-impact decision → ask first. Today adds a narrower rule for asking: explain what you have already figured out, identify exactly where you are stuck, ask for one specific input, then take responsibility for the next step yourself. Useful chunks: ‘look into,’ ‘narrow it down,’ and ‘take it from there.’"
+}

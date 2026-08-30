@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": 38,
+  "createdAt": "2026-08-30",
+  "title": "Giving an Update Before You Have the Final Answer",
+  "scene": "You are still waiting for one piece of information, but other people need to know where things stand. You share what is already known, isolate what is still uncertain, and make clear whether anyone needs to act now.",
+  "sceneJa": "まだ最終回答は出ていないが、関係者を待たせっぱなしにもしたくない。確定している範囲を先に共有し、未確定部分と次の動きを分けて伝える。",
+  "emotions": ["calm", "proactive", "reassuring", "clear"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "progress-update", "leave-you-wondering", "on-track", "depending-on", "as-soon-as", "uncertainty", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I’m still waiting for confirmation", "ja": "まだ確認を待っています"},
+        {"en": "on the final cost,", "ja": "最終的な費用について"},
+        {"en": "but I wanted to give you an update", "ja": "ただ、先に状況を共有しておきたくて"},
+        {"en": "rather than leave you wondering.", "ja": "あなたを状況が分からないままにするより"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Everything else is on track,", "ja": "それ以外はすべて予定どおり進んでいて"},
+        {"en": "and we should be ready to start", "ja": "開始できる状態になるはずです"},
+        {"en": "next Monday", "ja": "来週月曜日に"},
+        {"en": "as planned.", "ja": "予定どおり"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The only thing that could change", "ja": "変わる可能性がある唯一のものは"},
+        {"en": "is the budget,", "ja": "予算です"},
+        {"en": "depending on the final quote.", "ja": "最終見積もり次第で"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I’ll send you the confirmed figure", "ja": "確定した金額を送ります"},
+        {"en": "as soon as I have it,", "ja": "分かり次第すぐに"},
+        {"en": "but for now,", "ja": "ただ、現時点では"},
+        {"en": "there’s nothing you need to do.", "ja": "あなたにしてもらうことはありません"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I wanted to give you an update / rather than leave you wondering",
+        "I wanted / to give you an / update rather than / leave you wondering",
+        "I wanted to give / you an update rather / than leave you / wondering"
+      ],
+      "answer": 0,
+      "explanation": "‘I wanted to give you an update’ is one complete intention, and ‘rather than leave you wondering’ contrasts it with the alternative."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘on track’ mean here?",
+      "options": [
+        "Moving by train",
+        "Progressing as planned",
+        "Paused for the moment"
+      ],
+      "answer": 1,
+      "explanation": "‘On track’ means the work is progressing according to plan or schedule."
+    },
+    {
+      "type": "meaning",
+      "question": "What is still uncertain?",
+      "options": [
+        "The whole project",
+        "Whether the project can start next Monday",
+        "The budget, depending on the final quote"
+      ],
+      "answer": 2,
+      "explanation": "The speaker says everything else is on track and isolates the budget as the only part that could still change."
+    }
+  ],
+  "speak": "Sound reassuring even though one detail is still uncertain. Read ‘I’m still waiting for confirmation’ calmly, then give ‘Everything else is on track’ a little more confidence. Slow down slightly at ‘there’s nothing you need to do’ so the listener hears the practical takeaway clearly.",
+  "review": "Previous flow: align on what ‘done’ means before starting. Today continues after work has begun: uncertainty → proactive update → what is stable → what may change → next action. A useful update does not require every answer; it requires a clear boundary between what is known and what is not."
+}

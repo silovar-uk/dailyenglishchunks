@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": 37,
+  "createdAt": "2026-08-30",
+  "title": "The Seat I Was Saving",
+  "scene": "You save a train seat for a friend who is supposed to get on at the next station. When your friend misses the train, you have to quietly return the seat to public use while the person you turned away is still standing nearby.",
+  "sceneJa": "電車で次の駅から乗る友人のために席を取っておく。ところが友人は乗り遅れ、さっき席を断った相手がまだ近くにいる中で、何事もなかったように席を空けることになる。",
+  "emotions": ["confident", "helpful", "awkward", "self-conscious", "resigned"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "train", "friends", "with-the-confidence-of", "go-ahead-without", "as-though", "awkwardness", "dry-humour"],
+  "sentences": [
+    {"chunks": [{"en": "I got on a fairly crowded train", "ja": "そこそこ混んだ電車に乗り"}, {"en": "and was lucky enough to find", "ja": "運よく見つけました"}, {"en": "an empty seat by the window.", "ja": "窓際の空席を"}]},
+    {"chunks": [{"en": "My friend was getting on", "ja": "友人は乗ってくる予定でした"}, {"en": "at the next station,", "ja": "次の駅から"}, {"en": "so I put my small bag beside me", "ja": "そこで隣に小さなバッグを置き"}, {"en": "to save the seat for him.", "ja": "彼のために席を取っておきました"}]},
+    {"chunks": [{"en": "At the next stop,", "ja": "次の駅で"}, {"en": "several people got on,", "ja": "何人かが乗ってきて"}, {"en": "and one man looked directly", "ja": "一人の男性がまっすぐ見ました"}, {"en": "at the empty seat.", "ja": "空いている席を"}]},
+    {"chunks": [{"en": "I moved my bag slightly", "ja": "私はバッグを少し動かし"}, {"en": "and said, ‘Sorry, my friend is getting on here,’", "ja": "『すみません、ここで友人が乗ってくるんです』と言いました"}, {"en": "with the confidence of someone", "ja": "まるで〜な人のような自信をもって"}, {"en": "who had reliable information.", "ja": "確かな情報を持っている"}]},
+    {"chunks": [{"en": "The doors closed,", "ja": "ドアが閉まりました"}, {"en": "but my friend did not appear,", "ja": "しかし友人は現れず"}, {"en": "so I checked my phone", "ja": "そこでスマホを確認すると"}, {"en": "and found a new message from him.", "ja": "彼から新しいメッセージが届いていました"}]},
+    {"chunks": [{"en": "He had missed the train", "ja": "彼は電車に乗り遅れていて"}, {"en": "and told me to go ahead", "ja": "先に行ってほしいと言いました"}, {"en": "without him.", "ja": "彼を待たずに"}]},
+    {"chunks": [{"en": "I immediately moved my bag", "ja": "私はすぐにバッグをどかし"}, {"en": "and tried to look as though", "ja": "〜であるかのように見せようとしました"}, {"en": "the seat had always been available", "ja": "その席がずっと空いていた"}, {"en": "to the general public.", "ja": "一般の人に対して"}]},
+    {"chunks": [{"en": "Unfortunately,", "ja": "残念ながら"}, {"en": "the man from earlier was still standing nearby", "ja": "さっきの男性はまだ近くに立っていて"}, {"en": "and had clearly followed", "ja": "明らかに見届けていました"}, {"en": "the entire administrative process.", "ja": "この一連の運用手続きをすべて"}]},
+    {"chunks": [{"en": "I gave him a small apologetic smile", "ja": "私は小さく申し訳なさそうに笑い"}, {"en": "and pointed towards the seat,", "ja": "席を指し示しました"}, {"en": "which he accepted", "ja": "すると彼はそれを受け入れ"}, {"en": "without any visible emotion.", "ja": "特に表情を変えずに"}]},
+    {"chunks": [{"en": "For the rest of the journey,", "ja": "その後の移動中"}, {"en": "I looked out of the window", "ja": "私は窓の外を眺めました"}, {"en": "with unusual concentration.", "ja": "いつになく集中して"}]},
+    {"chunks": [{"en": "There wasn't much to see,", "ja": "特に見るものはありませんでした"}, {"en": "but by then", "ja": "でもその時点では"}, {"en": "scenery had become considerably easier", "ja": "景色のほうがずっと扱いやすくなっていました"}, {"en": "than eye contact.", "ja": "アイコンタクトよりも"}]}
+  ],
+  "questions": [
+    {"type": "chunk", "question": "Which boundary is most natural?", "options": ["I tried to look as though / the seat had always been available / to the general public", "I tried / to look as / though the seat had always / been available", "I tried to look / as though the seat / had always been / available to the general public"], "answer": 0, "explanation": "‘I tried to look as though’ introduces the appearance the speaker wanted to create, followed by the imagined situation and then who the seat was available to."},
+    {"type": "meaning", "question": "What does ‘go ahead without him’ mean here?", "options": ["Leave the train and wait for him", "Continue the journey without waiting for him", "Save another seat for him"], "answer": 1, "explanation": "‘Go ahead without someone’ means to continue rather than wait for that person."},
+    {"type": "meaning", "question": "Why is the final line funny?", "options": ["The speaker genuinely prefers scenery to people", "The speaker is so embarrassed that looking outside feels easier than making eye contact", "The man has asked the speaker to look outside"], "answer": 1, "explanation": "The speaker describes ordinary embarrassment in an unusually calm, practical way: scenery has become the easier option."}
+  ],
+  "speak": "Start confident and helpful. Give ‘with the confidence of someone / who had reliable information’ a lightly self-aware tone. Let the awkwardness build after the message arrives, but keep the delivery restrained. Pause before the final sentence and read it as a calm observation rather than a punchline.",
+  "review": "Today’s flow: helpful plan → public commitment → plan fails → awkward reversal → quiet avoidance. Useful chunks include ‘with the confidence of someone who ...’, ‘go ahead without ...’, and ‘as though ... had always been ...’."
+}

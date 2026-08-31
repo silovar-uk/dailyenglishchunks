@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": 40,
+  "createdAt": "2026-08-31",
+  "title": "Changing the Plan Without Losing the Goal",
+  "scene": "The original plan no longer fits the current situation, but the goal itself has not changed. Instead of treating a change of method as failure, you separate the goal from the approach and adjust the plan based on what you know now.",
+  "sceneJa": "当初のやり方では進めにくくなったが、達成したいゴール自体は変わっていない。目的と手段を切り分け、今分かっていることに合わせて計画だけを更新する。",
+  "emotions": ["reflective", "practical", "flexible", "decisive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "planning", "adaptation", "make-sense", "stick-to", "whether", "give-up-on", "start-over", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "The original plan made sense", "ja": "当初の計画には筋が通っていました"},
+        {"en": "when we agreed on it,", "ja": "私たちがそれに合意した時点では"},
+        {"en": "but the situation has changed", "ja": "でも状況は変わりました"},
+        {"en": "since then.", "ja": "それ以降"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Rather than sticking to it", "ja": "その計画に固執するより"},
+        {"en": "simply because we’ve already started,", "ja": "すでに始めたという理由だけで"},
+        {"en": "I think we should look at", "ja": "検討したほうがいいと思います"},
+        {"en": "whether there’s a better way", "ja": "もっと良いやり方があるかどうか"},
+        {"en": "to reach the same goal.", "ja": "同じゴールに到達するための"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Changing the approach", "ja": "やり方を変えることは"},
+        {"en": "doesn’t mean", "ja": "〜という意味ではありません"},
+        {"en": "we’re giving up on the idea;", "ja": "そのアイデアを諦める"},
+        {"en": "it means", "ja": "むしろ〜ということです"},
+        {"en": "we’re responding", "ja": "私たちが対応している"},
+        {"en": "to what we know now.", "ja": "今分かっていることに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If we can agree on that,", "ja": "そこについて認識を合わせられれば"},
+        {"en": "we can adjust the plan", "ja": "計画を調整できます"},
+        {"en": "without starting over completely.", "ja": "完全に最初からやり直すことなく"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Rather than sticking to it / simply because we’ve already started",
+        "Rather than / sticking to it simply / because we’ve already / started",
+        "Rather than sticking / to it simply because / we’ve already started"
+      ],
+      "answer": 0,
+      "explanation": "‘Rather than sticking to it’ gives the alternative being rejected, while ‘simply because we’ve already started’ gives the reason the speaker does not want to rely on."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘stick to the plan’ mean?",
+      "options": [
+        "Write the plan down",
+        "Continue with the plan without changing it",
+        "Abandon the plan completely"
+      ],
+      "answer": 1,
+      "explanation": "To ‘stick to’ a plan means to continue following it rather than changing direction."
+    },
+    {
+      "type": "meaning",
+      "question": "What does the speaker want to preserve?",
+      "options": [
+        "The original method",
+        "The time already spent",
+        "The final goal"
+      ],
+      "answer": 2,
+      "explanation": "The speaker is willing to change the approach, but wants to keep working toward the same goal."
+    }
+  ],
+  "speak": "Sound flexible rather than defensive. Start ‘The original plan made sense’ by acknowledging that the earlier decision was reasonable. Contrast that with ‘but the situation has changed since then.’ Give extra emphasis to ‘Changing the approach doesn’t mean we’re giving up on the idea’ so the difference between method and goal is clear.",
+  "review": "Previous flow: uncertainty → proactive update → what is stable → what may change → next action. Today’s flow: past logic → changed situation → reconsider the method → protect the goal → adjust. The key idea is to separate the goal from the method: changing the plan does not necessarily mean changing what you are trying to achieve."
+}

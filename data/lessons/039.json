@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": 39,
+  "createdAt": "2026-08-31",
+  "title": "The Surprisingly Serious Warm-Up",
+  "scene": "You arrive early for a casual football game and do a surprisingly thorough warm-up. When your friends arrive, nobody has brought a ball, so the group decides to go for a run instead.",
+  "sceneJa": "気軽なサッカーの集まりに少し早く着き、一人でかなり真面目にウォーミングアップをする。ところが友人たちが到着すると誰もボールを持っておらず、代わりに全員で走ることになる。",
+  "emotions": ["responsible", "confident", "confused", "quietly-regretful", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "sports", "football", "friends", "by-the-time", "assume-someone-else-will", "provided", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I arrived at a small football pitch", "ja": "小さなサッカーコートに着きました"},
+        {"en": "a little earlier than everyone else,", "ja": "みんなより少し早く"},
+        {"en": "so I decided to warm up", "ja": "そこでウォーミングアップをすることにしました"},
+        {"en": "on my own.", "ja": "一人で"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I started with a gentle jog", "ja": "軽いジョギングから始めました"},
+        {"en": "around the pitch", "ja": "コートの周りを"},
+        {"en": "and felt unusually responsible", "ja": "そして妙に意識が高い気分になりました"},
+        {"en": "for someone playing purely for fun.", "ja": "完全に遊びでサッカーをする人間にしては"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then I did some stretches,", "ja": "それからストレッチをして"},
+        {"en": "a few short sprints,", "ja": "短いダッシュを何本か行い"},
+        {"en": "and several movements", "ja": "いくつかの動きもしました"},
+        {"en": "I vaguely remembered from proper training sessions.", "ja": "ちゃんとした練習で見た記憶がうっすらある"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "By the time my friends arrived,", "ja": "友人たちが到着するころには"},
+        {"en": "I was already slightly out of breath", "ja": "すでに少し息が上がっていました"},
+        {"en": "but pleased with how seriously", "ja": "それでも真面目に準備したことには満足していて"},
+        {"en": "I had prepared.", "ja": "自分が準備したことに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Unfortunately,", "ja": "ところが"},
+        {"en": "nobody had brought a ball,", "ja": "誰もボールを持ってきていませんでした"},
+        {"en": "because each of us had assumed", "ja": "なぜなら全員が思い込んでいたからです"},
+        {"en": "somebody else would bring one.", "ja": "誰かほかの人が持ってくるだろうと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "We spent the next ten minutes", "ja": "その後10分ほど過ごしました"},
+        {"en": "checking bags and car boots", "ja": "バッグや車のトランクを確認しながら"},
+        {"en": "with steadily decreasing optimism.", "ja": "徐々に希望を失いながら"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Eventually, one friend suggested", "ja": "やがて友人の一人が提案しました"},
+        {"en": "that we simply go for a run instead,", "ja": "代わりにただ走ればいいのではないかと"},
+        {"en": "since we were already there", "ja": "せっかくそこにいて"},
+        {"en": "and wearing sports clothes.", "ja": "スポーツウェアも着ているのだから"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Everyone agreed", "ja": "みんな賛成しました"},
+        {"en": "with the relaxed enthusiasm", "ja": "気楽な熱意をもって"},
+        {"en": "of people who had not already", "ja": "まだすでに終えてはいない人たちらしい"},
+        {"en": "completed an unnecessary warm-up.", "ja": "不要なウォーミングアップを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I considered explaining", "ja": "説明しようかと考えました"},
+        {"en": "that I had already done several sprints,", "ja": "自分はすでに何本かダッシュしたことを"},
+        {"en": "but decided that this information", "ja": "しかし、その情報は"},
+        {"en": "would not improve the atmosphere.", "ja": "場の空気を良くしないだろうと判断しました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So we went for a run,", "ja": "そこでみんなで走り始め"},
+        {"en": "and I spent the first kilometre", "ja": "最初の1キロを過ごしました"},
+        {"en": "quietly reconsidering", "ja": "静かに考え直しながら"},
+        {"en": "the benefits of being prepared.", "ja": "準備がいいことのメリットを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Apparently,", "ja": "どうやら"},
+        {"en": "preparation is extremely useful", "ja": "準備というものは非常に役に立つようです"},
+        {"en": "provided everyone is preparing", "ja": "全員が準備しているなら"},
+        {"en": "for the same activity.", "ja": "同じ活動のために"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "By the time my friends arrived / I was already slightly out of breath / but pleased with how seriously I had prepared",
+        "By the time / my friends arrived I was / already slightly out of breath but / pleased with how seriously I had prepared",
+        "By the time my / friends arrived I was already / slightly out of breath / but pleased with how seriously I had prepared"
+      ],
+      "answer": 0,
+      "explanation": "‘By the time my friends arrived’ sets the time frame, ‘I was already slightly out of breath’ gives the result, and the final chunk adds the speaker’s reaction."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘each of us had assumed somebody else would bring one’ mean?",
+      "options": [
+        "Everyone had agreed that one specific person would bring the ball",
+        "Each person expected another person to bring the ball, so nobody did",
+        "Nobody knew that a ball was needed"
+      ],
+      "answer": 1,
+      "explanation": "Everyone independently relied on someone else to take responsibility, which is why the group ended up without a ball."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "It claims preparation is always unnecessary",
+        "It turns a simple mistake into a calm general rule about preparation",
+        "It suggests running is better than football"
+      ],
+      "answer": 1,
+      "explanation": "The dry humour comes from treating a very ordinary coordination failure as if it revealed a formal principle about when preparation is useful."
+    }
+  ],
+  "speak": "Start light and slightly proud, as if the warm-up feels sensible. At ‘Unfortunately,’ shift into mild confusion without becoming dramatic. Read ‘with steadily decreasing optimism’ very calmly. Give ‘would not improve the atmosphere’ a small pause before the final clause. Deliver the last sentence like a perfectly reasonable conclusion to a minor logistical failure.",
+  "review": "Flow: early arrival → responsible preparation → preparation becomes excessive → missing ball reveals a coordination failure → backup plan creates extra effort → dry generalisation. Useful chunks: ‘by the time ...’, ‘assume someone else will ...’, and ‘provided ...’. Notice how the ending does not complain; it calmly converts the mistake into a conditional rule."
+}

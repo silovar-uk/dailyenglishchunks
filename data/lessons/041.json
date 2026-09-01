@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": 41,
+  "createdAt": "2026-09-01",
+  "title": "The Book I Was Definitely Going to Read",
+  "scene": "You visit a bookshop with nothing particular in mind, resist buying a novel you genuinely want to read, then somehow leave with two discounted books you had never heard of before.",
+  "sceneJa": "特に買う本を決めず本屋へ行き、以前から気になっていた小説を自制して棚へ戻す。ところが帰り際に割引本へ寄り道し、結局それまで知らなかった本を2冊買って帰る。",
+  "emotions": ["curious", "self-controlled", "tempted", "quietly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "books", "shopping", "partly-because", "what-i-intended-to-be", "resist-doing", "self-control", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I went to a bookshop", "ja": "本屋へ行きました"},
+        {"en": "after lunch", "ja": "昼食後に"},
+        {"en": "with no particular book", "ja": "特に買いたい本も"},
+        {"en": "in mind.", "ja": "決めずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Near the entrance,", "ja": "入口近くで"},
+        {"en": "I found a novel", "ja": "小説を見つけました"},
+        {"en": "that I had almost bought", "ja": "買いかけたことのある"},
+        {"en": "several times before.", "ja": "以前にも何度か"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I picked it up", "ja": "それを手に取り"},
+        {"en": "and read the back cover,", "ja": "裏表紙を読みました"},
+        {"en": "as if the story might have changed", "ja": "まるで物語が変わっているかもしれないかのように"},
+        {"en": "since my last visit.", "ja": "前回来たときから"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "This time,", "ja": "今回は"},
+        {"en": "I decided I should finally buy it,", "ja": "ついに買うべきだと決めました"},
+        {"en": "partly because I genuinely wanted to read it", "ja": "一つには本当に読みたかったからで"},
+        {"en": "and partly because this had gone on long enough.", "ja": "もう一つには、この検討が十分長く続いていたからです"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then I remembered", "ja": "そこで思い出しました"},
+        {"en": "that I already had several unread books", "ja": "すでに何冊もの未読本があることを"},
+        {"en": "waiting rather patiently", "ja": "かなり辛抱強く待っている"},
+        {"en": "at home.", "ja": "家に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "For a few minutes,", "ja": "数分間"},
+        {"en": "I stood there comparing", "ja": "その場で比べていました"},
+        {"en": "the excitement of buying a new book", "ja": "新しい本を買うワクワク感と"},
+        {"en": "with the moral weight of the existing ones.", "ja": "すでに持っている本たちの道徳的な重圧を"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Eventually,", "ja": "結局"},
+        {"en": "I put the novel back", "ja": "その小説を棚へ戻し"},
+        {"en": "and felt unexpectedly pleased", "ja": "思いのほか満足しました"},
+        {"en": "with my self-control.", "ja": "自制できたことに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "On the way out,", "ja": "店を出る途中"},
+        {"en": "I noticed a table of discounted books", "ja": "割引本の並んだ台に気づき"},
+        {"en": "and stopped for what I intended", "ja": "立ち止まりました、私としては"},
+        {"en": "to be a very brief look.", "ja": "ほんの少し見るだけのつもりで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Ten minutes later,", "ja": "10分後"},
+        {"en": "I left the shop", "ja": "店を出ました"},
+        {"en": "carrying two books", "ja": "2冊の本を抱えて"},
+        {"en": "I had never heard of before.", "ja": "それまで聞いたこともなかった"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So the good news was", "ja": "つまり良かった点としては"},
+        {"en": "that I had successfully resisted", "ja": "見事に我慢できたことです"},
+        {"en": "buying the book", "ja": "その本を買うのを"},
+        {"en": "I had actually planned to read.", "ja": "実際に読むつもりだった"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "My unread pile had grown,", "ja": "未読本の山は増えましたが"},
+        {"en": "but at least", "ja": "少なくとも"},
+        {"en": "it now contained", "ja": "そこには今"},
+        {"en": "a little more variety.", "ja": "少し多様性が増しました"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "partly because I genuinely wanted to read it / and partly because this had gone on long enough",
+        "partly because I genuinely / wanted to read it and partly / because this had gone on long enough",
+        "partly because / I genuinely wanted / to read it and partly because this / had gone on long enough"
+      ],
+      "answer": 0,
+      "explanation": "The two 'partly because' clauses form parallel reasons, so each reason works naturally as one thought unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘what I intended to be a very brief look’ imply?",
+      "options": [
+        "The speaker planned to look only briefly, but it lasted longer",
+        "The speaker had no intention of looking at the books",
+        "The speaker wanted to leave the shop immediately"
+      ],
+      "answer": 0,
+      "explanation": "‘Intended to be’ describes the original plan, while the next sentence shows that the brief look became ten minutes and two purchases."
+    },
+    {
+      "type": "meaning",
+      "question": "What is ironic about the ending?",
+      "options": [
+        "The speaker bought the novel they had wanted for a long time",
+        "The speaker resisted the book they wanted, then bought two unfamiliar books instead",
+        "The speaker decided not to buy any books at all"
+      ],
+      "answer": 1,
+      "explanation": "The self-control succeeds only in a very narrow sense: the planned purchase is avoided, but the unread pile still grows."
+    }
+  ],
+  "speak": "Start casually, as if this is an ordinary visit with no plan. Give ‘partly because ... and partly because ...’ an even, balanced rhythm. Sound quietly pleased at ‘with my self-control,’ then let the irony build without exaggerating it. Finish ‘a little more variety’ in a calm, matter-of-fact tone.",
+  "review": "Today’s flow is temptation → self-control → a new temptation → technically successful failure. Useful chunks are ‘partly because ... and partly because ...,’ ‘what I intended to be ...,’ and ‘resist doing ...’. The humour comes from defining success narrowly enough that buying two extra books can still count as restraint."
+}

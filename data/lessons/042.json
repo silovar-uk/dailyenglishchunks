@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 42,
+  "createdAt": "2026-09-02",
+  "title": "The Very Careful Coffee",
+  "scene": "You buy a takeaway coffee on the way to the station and handle it with exaggerated care. After getting it safely onto the train, one small movement turns all that caution into a slightly public embarrassment.",
+  "sceneJa": "駅へ向かう途中でテイクアウトのコーヒーを買い、かなり慎重に運ぶ。無事に電車まで持ち込めたと思った矢先、ちょっとした動きでカップを蹴飛ばし、妙に注目を集めることになる。",
+  "emotions": ["careful", "self-satisfied", "embarrassed", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "coffee", "train", "just-to-be-safe", "congratulate-yourself-on", "as-much-as-i-could-manage", "embarrassment", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I bought a takeaway coffee", "ja": "テイクアウトのコーヒーを買いました"},
+        {"en": "on my way to the station", "ja": "駅へ向かう途中で"},
+        {"en": "and made sure", "ja": "そして確認しました"},
+        {"en": "the lid was firmly attached.", "ja": "ふたがしっかり閉まっていることを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The cup was quite full,", "ja": "カップにはかなりいっぱい入っていたので"},
+        {"en": "so I carried it carefully", "ja": "慎重に持ちました"},
+        {"en": "with both hands", "ja": "両手で"},
+        {"en": "whenever I crossed the road.", "ja": "道路を渡るたびに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "At the station,", "ja": "駅では"},
+        {"en": "I even avoided the crowded escalator", "ja": "混んでいるエスカレーターまで避けて"},
+        {"en": "and took the stairs instead,", "ja": "代わりに階段を使いました"},
+        {"en": "just to be safe.", "ja": "念のため"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "By the time I reached the platform,", "ja": "ホームに着くころには"},
+        {"en": "I was rather pleased", "ja": "かなり満足していました"},
+        {"en": "that not a single drop", "ja": "一滴も"},
+        {"en": "had been spilled.", "ja": "こぼしていなかったことに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then my train arrived,", "ja": "そこへ電車が来て"},
+        {"en": "and I found a seat", "ja": "席を見つけました"},
+        {"en": "with enough space beside me", "ja": "隣に十分なスペースがある"},
+        {"en": "to put down my bag.", "ja": "バッグを置けるくらいの"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I sat down slowly,", "ja": "ゆっくり座り"},
+        {"en": "placed the coffee between my feet,", "ja": "コーヒーを足元に置き"},
+        {"en": "and congratulated myself", "ja": "自分をひそかに褒めました"},
+        {"en": "on handling the situation so well.", "ja": "ここまでうまく対処できたことについて"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "A few minutes later,", "ja": "数分後"},
+        {"en": "I reached into my bag for my headphones", "ja": "イヤホンを取ろうとバッグに手を伸ばし"},
+        {"en": "and accidentally kicked the cup", "ja": "うっかりカップを蹴ってしまいました"},
+        {"en": "under the seat opposite me.", "ja": "向かいの席の下まで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Fortunately,", "ja": "幸い"},
+        {"en": "the lid stayed on,", "ja": "ふたは外れませんでした"},
+        {"en": "although the cup rolled far enough", "ja": "ただ、カップは十分遠くまで転がり"},
+        {"en": "to attract several people's attention.", "ja": "何人かの注目を集めました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I retrieved it", "ja": "私はそれを回収しました"},
+        {"en": "with as much dignity as I could manage", "ja": "できる限り威厳を保ちながら"},
+        {"en": "and returned to my seat", "ja": "そして席へ戻りました"},
+        {"en": "without making eye contact with anyone.", "ja": "誰とも目を合わせずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The coffee was completely fine,", "ja": "コーヒーはまったく無事でした"},
+        {"en": "which was reassuring,", "ja": "それは安心でした"},
+        {"en": "because apparently", "ja": "なぜなら、どうやら"},
+        {"en": "I was the main thing that needed a lid.", "ja": "ふたが必要だったのは主に私のほうだったらしいからです"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I even avoided the crowded escalator / and took the stairs instead / just to be safe",
+        "I even avoided / the crowded escalator and / took the stairs instead just / to be safe",
+        "I even / avoided the crowded / escalator and took / the stairs instead just to be safe"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the avoided option, the second gives the alternative action, and the final chunk gives the reason for being extra cautious."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘just to be safe’ mean here?",
+      "options": [
+        "To avoid even a small unnecessary risk",
+        "To make the journey faster",
+        "To follow a station rule"
+      ],
+      "answer": 0,
+      "explanation": "‘Just to be safe’ means taking an extra precaution even when it may not be strictly necessary."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the ending ironic?",
+      "options": [
+        "The coffee spills even though the lid is secure",
+        "The coffee survives, but the speaker’s careful behaviour still ends in embarrassment",
+        "The speaker forgets to drink the coffee"
+      ],
+      "answer": 1,
+      "explanation": "The speaker spent the whole trip protecting the coffee, yet the coffee is fine while the speaker is the one who loses composure."
+    }
+  ],
+  "speak": "Start carefully and matter-of-factly. Let a little satisfaction enter at ‘I was rather pleased’ and ‘congratulated myself,’ then shift quickly at ‘accidentally kicked the cup.’ Read ‘with as much dignity as I could manage’ with restrained embarrassment, and keep the final line dry rather than jokey.",
+  "review": "Story flow: caution → growing confidence → small accident → public embarrassment → dry reversal. Useful chunks: ‘just to be safe,’ ‘congratulate yourself on,’ and ‘with as much ... as I could manage.’ The humour works because the object being protected stays perfectly fine while the careful person becomes the actual problem."
+}

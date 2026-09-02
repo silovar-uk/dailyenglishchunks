@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": 43,
+  "createdAt": "2026-09-03",
+  "title": "The Shortcut",
+  "scene": "You are walking to meet a friend when your phone suggests a faster route. The shortcut leads you through unfamiliar streets, a confused map, and finally a closed path, leaving you later than if you had stayed on the main road.",
+  "sceneJa": "友人との待ち合わせに向かう途中、スマホが7分短縮できる近道を提案する。知らない住宅街や方向感覚のズレ、通行止めに振り回され、結局は大通りへ戻って予定より遅れて到着する。",
+  "emotions": ["hopeful", "slightly-lost", "awkward", "resigned", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "walking", "navigation", "be-supposed-to", "make-up-for-lost-time", "right-up-until", "late", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I was walking to meet a friend", "ja": "友人との待ち合わせに向かって歩いていると"},
+        {"en": "when my phone suggested", "ja": "スマホが提案してきた"},
+        {"en": "a route I had never taken before.", "ja": "今まで通ったことのないルートを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It was supposed to save me seven minutes,", "ja": "7分短縮できるはずで"},
+        {"en": "which seemed worth trying", "ja": "試す価値はありそうだった"},
+        {"en": "since I was already running slightly late.", "ja": "すでに少し遅れ気味だったので"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The route took me off the main road", "ja": "そのルートは大通りを外れ"},
+        {"en": "and through a quiet residential area", "ja": "静かな住宅街へ私を連れていき"},
+        {"en": "where every street looked", "ja": "そこではどの道も"},
+        {"en": "reassuringly similar.", "ja": "安心するほど似て見えた"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "After a few turns,", "ja": "何度か曲がるうちに"},
+        {"en": "the blue dot on the map", "ja": "地図上の青い点が"},
+        {"en": "appeared to stop moving", "ja": "動かなくなったように見えた"},
+        {"en": "in the same direction as me.", "ja": "私と同じ方向へ"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I turned around twice", "ja": "私はその場で2回ほど向きを変えた"},
+        {"en": "to help my phone work out", "ja": "スマホに判断してもらうために"},
+        {"en": "which way I was facing,", "ja": "自分がどちらを向いているかを"},
+        {"en": "which also helped a nearby resident notice me.", "ja": "ついでに近くの住民にも私の存在を認識してもらえた"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Eventually,", "ja": "ようやく"},
+        {"en": "I found the correct street", "ja": "正しい道を見つけ"},
+        {"en": "and walked faster", "ja": "歩く速度を上げた"},
+        {"en": "to make up for lost time.", "ja": "失った時間を取り戻すために"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then the route led me", "ja": "するとルートは私を導いた"},
+        {"en": "to a narrow set of stairs", "ja": "細い階段へ"},
+        {"en": "with a sign saying", "ja": "そこには看板があり"},
+        {"en": "the path was temporarily closed.", "ja": "道が一時的に通行止めだと書かれていた"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I stood there for a moment", "ja": "私はしばらくそこに立ち"},
+        {"en": "looking at the map,", "ja": "地図を見ていた"},
+        {"en": "as though one of us", "ja": "まるでどちらかが"},
+        {"en": "might reconsider the situation.", "ja": "状況を考え直すかもしれないかのように"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "In the end,", "ja": "結局"},
+        {"en": "I went back to the main road", "ja": "大通りまで戻り"},
+        {"en": "and arrived twelve minutes later", "ja": "12分遅れて到着した"},
+        {"en": "than originally planned.", "ja": "当初の予定より"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "My friend asked why I was late,", "ja": "友人に遅れた理由を聞かれ"},
+        {"en": "and I told him", "ja": "私は彼に答えた"},
+        {"en": "I had been saving time.", "ja": "時間を節約していたのだと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Technically,", "ja": "厳密に言えば"},
+        {"en": "the shortcut had worked perfectly", "ja": "その近道は完璧に機能していた"},
+        {"en": "right up until", "ja": "まさにその時までは"},
+        {"en": "I tried to use it.", "ja": "私が実際に使おうとするまでは"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "It was supposed to save me seven minutes / which seemed worth trying / since I was already running slightly late",
+        "It was supposed / to save me seven / minutes which seemed / worth trying since I was already running slightly late",
+        "It was / supposed to save me / seven minutes which seemed worth / trying since I was already running slightly late"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the expected result, the second evaluates it, and the third explains why the speaker was willing to try it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘make up for lost time’ mean here?",
+      "options": [
+        "Pretend the delay never happened",
+        "Move faster to recover time lost earlier",
+        "Take a break because you are already late"
+      ],
+      "answer": 1,
+      "explanation": "‘Make up for lost time’ means trying to recover time that has already been lost, usually by moving or working faster."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the last sentence funny?",
+      "options": [
+        "Because the shortcut was only useful in theory, before the speaker actually tried to take it",
+        "Because the friend had secretly changed the route",
+        "Because the speaker arrived seven minutes early"
+      ],
+      "answer": 0,
+      "explanation": "The joke is that the shortcut appears perfect only until reality tests it. The speaker describes failure in an overly technical, calm way."
+    }
+  ],
+  "speak": "Start with mild optimism. Let the rhythm become slightly more hesitant through the residential streets and the confused map. Read ‘I had been saving time’ very matter-of-factly, then deliver the final sentence calmly and dryly, with a small pause after ‘Technically.’",
+  "review": "Yesterday’s lesson was about being overly careful with a coffee and then causing the problem yourself. Today shifts from physical awkwardness to decision-making: a sensible-looking shortcut creates the delay it was meant to avoid. Useful chunks are ‘be supposed to,’ ‘make up for lost time,’ and ‘right up until.’"
+}

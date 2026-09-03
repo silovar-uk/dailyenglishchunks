@@ -27,23 +27,29 @@
   }
 
   function enhanceHome() {
-    const intro = document.querySelector('.home-intro');
-    if (!intro || intro.querySelector('.semantic-home-demo')) return;
+    const home = document.querySelector('.home');
+    const latest = home?.querySelector('.latest-card');
+    if (!home || !latest) return;
 
-    const demo = document.createElement('aside');
-    demo.className = 'semantic-home-demo';
-    demo.setAttribute('aria-label', 'Meaning chunk example');
-    demo.innerHTML = `
-      <span class="semantic-home-demo-label">One thought, then the next</span>
-      <div class="semantic-home-demo-line" aria-hidden="true">
-        <span class="semantic-unit">Read meaning</span>
-        <span class="semantic-slash">/</span>
-        <span class="semantic-unit">not words.</span>
-      </div>
-      <p class="semantic-home-demo-caption">文を切るのではなく、意味が切り替わる場所を感じる。</p>`;
-    intro.appendChild(demo);
+    const intro = home.querySelector('.home-intro');
+    if (intro && !home.querySelector('.home-principle-row')) {
+      const principle = document.createElement('div');
+      principle.className = 'home-principle-row';
+      principle.innerHTML = '<p class="home-principle">Read meaning, not words.</p>';
+      intro.replaceWith(principle);
+    }
 
-    requestAnimationFrame(() => requestAnimationFrame(() => demo.classList.add('is-split')));
+    const state = latest.querySelector('.next-state');
+    if (state) {
+      const current = state.textContent.trim().toUpperCase();
+      if (current === 'LATEST') state.textContent = 'START';
+      if (current === 'CONTINUE') state.textContent = 'CONTINUE';
+      if (current === 'REPLAY') state.textContent = 'REPLAY';
+    }
+
+    home.querySelectorAll('.sequence-item.is-active .sequence-item-state').forEach(node => {
+      if (node.textContent.trim().toUpperCase() === 'LATEST') node.textContent = '';
+    });
   }
 
   function buildBridgeLine(sentence) {

@@ -38,6 +38,7 @@
   }
 
   function currentStep() {
+    if (document.querySelector('.final-reading, .complete-panel')) return null;
     const label = document.querySelector('.step-label')?.textContent || '';
     const normalized = label.toLowerCase();
     return Object.keys(STEP_LABELS).find(key => normalized.includes(key)) || null;

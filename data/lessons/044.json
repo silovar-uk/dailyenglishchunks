@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": 44,
+  "createdAt": "2026-09-03",
+  "title": "Asking for a Little More Time",
+  "scene": "You need a little more time to finish a piece of work, but you do not want to sound vague or unreliable. You explain what you are checking, give a clear new deadline, and commit to sending the finished version once everything is confirmed.",
+  "sceneJa": "仕事で少しだけ時間が必要になった場面。単に『遅れます』と伝えるのではなく、確認している理由、新しい見込み、最後の約束まで整理して伝える。",
+  "emotions": ["careful", "responsible", "calm", "reliable"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "delay", "id-rather-not", "give-me-until", "should-be-able-to", "make-sure", "as-soon-as", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I’m still checking a few details,", "ja": "まだいくつか細かい点を確認しています"},
+        {"en": "so I’d rather not send you", "ja": "なので、できれば送りたくありません"},
+        {"en": "something incomplete.", "ja": "不完全なものを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If you can give me", "ja": "もし時間をもらえるなら"},
+        {"en": "until tomorrow morning,", "ja": "明日の朝まで"},
+        {"en": "I should be able to send you", "ja": "お送りできるはずです"},
+        {"en": "a much clearer version.", "ja": "もっと分かりやすい版を"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I don’t expect", "ja": "〜とは考えていません"},
+        {"en": "the overall direction to change,", "ja": "全体の方向性が変わる"},
+        {"en": "but I want to make sure", "ja": "ただ、きちんと確認したいです"},
+        {"en": "the numbers are accurate.", "ja": "数字が正確であることを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I’ll send it over", "ja": "それを送ります"},
+        {"en": "as soon as everything is confirmed.", "ja": "すべて確認でき次第"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunk boundary sounds most natural?",
+      "options": [
+        "I should be able to send you / a much clearer version.",
+        "I should / be able to send / you a much / clearer version.",
+        "I should be / able to / send you a much clearer / version."
+      ],
+      "answer": 0,
+      "explanation": "‘I should be able to send you’ works as one prediction about what the speaker expects to be possible, while ‘a much clearer version’ is the object being sent."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I’d rather not send you something incomplete’ mean here?",
+      "options": [
+        "The speaker does not want to send anything.",
+        "The speaker prefers not to send the work before it is properly finished.",
+        "The speaker does not want to send the final version either."
+      ],
+      "answer": 1,
+      "explanation": "‘I’d rather not’ expresses a preference. The speaker is not refusing to send the work; they want to avoid sending it in an incomplete state."
+    },
+    {
+      "type": "meaning",
+      "question": "How certain is ‘I should be able to send it tomorrow’ here?",
+      "options": [
+        "It is an absolute guarantee.",
+        "It is a reasonable expectation based on the current situation.",
+        "It means the speaker probably cannot send it."
+      ],
+      "answer": 1,
+      "explanation": "‘Should be able to’ gives a fairly confident expectation without making the statement as absolute as a guarantee."
+    }
+  ],
+  "speak": "Sound responsible rather than apologetic. Begin ‘I’m still checking a few details’ carefully, then make ‘until tomorrow morning’ clear so the new timing is easy to hear. Finish ‘I’ll send it over as soon as everything is confirmed’ with a firmer tone so it sounds like a commitment.",
+  "review": "Review from the previous work-focused session: separate the goal from the method. ‘Rather than sticking to it simply because we’ve already started’ showed how to reconsider the approach without abandoning the goal. Today, use the same structured thinking in a delay update: reason → request → expectation → commitment. Useful chunks are ‘I’d rather not…’, ‘give me until…’, ‘I should be able to…’, and ‘as soon as…’."
+}

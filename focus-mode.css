@@ -1,0 +1,134 @@
+/* Focus Mode — lesson navigation stays, site chrome leaves. */
+
+body.is-practicing .step-progress {
+  display: none;
+}
+
+body.is-practicing .focus-bar {
+  top: 0;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  min-height: 56px;
+  margin: 0 -8px 18px;
+  padding: 6px 8px;
+  border-bottom-color: rgba(217, 212, 202, .58);
+  background: color-mix(in srgb, var(--bg) 96%, transparent);
+}
+
+body.is-practicing .focus-exit {
+  width: 44px;
+  min-height: 44px;
+}
+
+body.is-practicing .focus-date {
+  display: grid;
+  min-width: 0;
+  justify-self: stretch;
+  justify-content: start;
+  gap: 1px;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+body.is-practicing .focus-date-day {
+  display: block;
+  color: var(--muted);
+  font-size: .62rem;
+  font-weight: 850;
+  line-height: 1.15;
+  letter-spacing: .055em;
+  font-variant-numeric: tabular-nums;
+}
+
+body.is-practicing .focus-date-title {
+  display: block;
+  min-width: 0;
+  max-width: min(44vw, 360px);
+  overflow: hidden;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.012em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.is-practicing .focus-step {
+  min-height: 44px;
+  padding: 0 10px;
+  border-color: transparent;
+  background: transparent;
+  font-size: .72rem;
+  white-space: nowrap;
+}
+
+body.is-practicing .focus-step:hover,
+body.is-practicing .focus-step:focus-visible {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, .38);
+}
+
+/* The large lesson identity is useful on entry, not on every step. */
+body.is-practicing .lesson-head-compact {
+  display: none;
+}
+
+body.is-practicing .lesson[data-focus-step="imagine"] .lesson-head-compact {
+  display: block;
+  margin-bottom: 22px;
+}
+
+body.is-practicing .lesson[data-focus-step="imagine"] .lesson-head-compact .lesson-title {
+  margin-bottom: 0;
+  font-size: clamp(1.55rem, 4.7vw, 2.4rem);
+  line-height: 1.12;
+}
+
+body.is-practicing .lesson[data-focus-step="imagine"] .lesson-meta {
+  display: none;
+}
+
+body.is-practicing .compact-step-menu {
+  top: 58px;
+}
+
+@media (max-width: 640px) {
+  body.is-practicing .focus-bar {
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    min-height: 52px;
+    margin: 0 -4px 12px;
+    padding: 4px;
+  }
+
+  body.is-practicing .focus-date {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  body.is-practicing .focus-date-day {
+    font-size: .58rem;
+  }
+
+  body.is-practicing .focus-date-title {
+    max-width: 40vw;
+    font-size: .74rem;
+  }
+
+  body.is-practicing .focus-step {
+    padding: 0 7px;
+    font-size: .66rem;
+  }
+
+  body.is-practicing .lesson[data-focus-step="imagine"] .lesson-head-compact {
+    margin-bottom: 18px;
+  }
+
+  body.is-practicing .lesson[data-focus-step="imagine"] .lesson-head-compact .lesson-title {
+    font-size: clamp(1.4rem, 6vw, 1.9rem);
+  }
+
+  body.is-practicing .compact-step-menu {
+    top: 54px;
+  }
+}

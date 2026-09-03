@@ -3,12 +3,21 @@
   if (!app) return;
 
   const STEP_LABELS = {
-    imagine: { status: '場面をつくる', next: '英文を読んでみる' },
-    read: { status: 'まず一度、止まらず読む', next: '自分で区切ってみる' },
-    chunk: { status: '意味のまとまりを自分で決める', next: '意味を確かめる' },
-    understand: { status: '前から意味を積み上げる', next: '理解をチェックする' },
-    check: { status: '思い出してから確認する', next: '声に出して仕上げる' },
-    speak: { status: '意味 → リズム → 気持ち', next: '補助なしで最後に読む' }
+    imagine: { next: 'Read' },
+    read: { next: 'Chunk' },
+    chunk: { next: 'Understand' },
+    understand: { next: 'Check' },
+    check: { next: 'Speak' },
+    speak: { next: 'Final read' }
+  };
+
+  const STEP_COPY = {
+    imagine: { title: 'Build the scene.', intro: '場面が浮かんだらタップ。' },
+    read: { title: 'Read once.', intro: '訳さず、出来事だけ追う。' },
+    chunk: { title: 'Find the boundaries.', intro: '意味が切り替わる場所をタップ。' },
+    understand: { title: 'Build meaning.', intro: '必要なチャンクだけ日本語で確認。' },
+    check: { title: 'Recall first.', intro: '本文に戻らず、思い出して答える。' },
+    speak: { title: 'Read it aloud.', intro: '意味 → リズム → 気持ち。' }
   };
 
   let checkSessionKey = null;
@@ -26,21 +35,6 @@
     }
 
     node.textContent = next;
-  }
-
-  function setStatus(status, label, copy, complete = false) {
-    if (!status) return;
-    status.classList.toggle('is-complete', complete);
-
-    let labelNode = status.querySelector('span');
-    let copyNode = status.querySelector('strong');
-    if (!labelNode || !copyNode) {
-      status.innerHTML = `<span>${label}</span><strong>${copy}</strong>`;
-      return;
-    }
-
-    setText(labelNode, label);
-    setText(copyNode, copy);
   }
 
   function currentStep() {
@@ -75,37 +69,33 @@
     });
   }
 
-  function enhanceContextStatus(step) {
-    const intro = document.querySelector('.step-intro');
-    if (!intro || !step || document.querySelector('.ui-step-status')) return;
+  function simplifyLessonHeader() {
+    const metaDetail = document.querySelector('.lesson-meta .meta-dot');
+    if (metaDetail) metaDetail.hidden = true;
+  }
 
-    const status = document.createElement('div');
-    status.className = 'ui-step-status';
-    status.innerHTML = `<span>NOW</span><strong>${STEP_LABELS[step].status}</strong>`;
-    intro.insertAdjacentElement('afterend', status);
+  function simplifyStepHeading(step) {
+    const heading = document.querySelector('.step-heading');
+    if (!heading || !step) return;
+
+    const copy = STEP_COPY[step];
+    const label = heading.querySelector('.step-label');
+    const title = heading.querySelector('.step-title');
+    const intro = heading.querySelector('.step-intro');
+
+    if (label) label.hidden = true;
+    if (copy?.title) setText(title, copy.title);
+    if (copy?.intro) setText(intro, copy.intro);
+  }
+
+  function removeLegacyStatus() {
+    document.querySelectorAll('.ui-step-status').forEach(node => node.remove());
   }
 
   function enhanceNextButton(step) {
     const button = document.getElementById('nextStep');
     if (!button || !step) return;
     setText(button, `${STEP_LABELS[step].next} →`);
-  }
-
-  function enhanceChunk() {
-    const editor = document.querySelector('.chunk-editor');
-    if (!editor) return;
-
-    const activeCount = editor.querySelectorAll('.gap-button.is-active').length;
-    const status = document.querySelector('.ui-step-status');
-    setStatus(status, 'CHUNKS', activeCount ? `${activeCount}か所に区切り` : '区切りたい場所をタップ');
-
-    const toolRow = document.querySelector('.chunk-tool-row');
-    if (toolRow && !document.querySelector('.ui-chunk-legend')) {
-      const legend = document.createElement('div');
-      legend.className = 'ui-chunk-legend';
-      legend.innerHTML = '<span><i></i>自分の区切り</span><span><i></i>モデルとの差を確認</span>';
-      toolRow.insertAdjacentElement('afterend', legend);
-    }
   }
 
   function applyQuizOrder() {
@@ -135,7 +125,7 @@
 
       if (needsReorder) {
         order.forEach(optionId => {
-          const button = buttons.find(item => Number(button.dataset.option) === optionId);
+          const button = buttons.find(item => Number(item.dataset.option) === optionId);
           if (button) options.appendChild(button);
         });
       }
@@ -173,16 +163,13 @@
     if (bar && bar.style.width !== width) bar.style.width = width;
     setText(count, `${answered} / ${total}`);
 
-    const completeNow = total > 0 && answered === total;
-    const status = document.querySelector('.ui-step-status');
-    setStatus(status, 'CHECK', completeNow ? '全部確認できた' : `あと${Math.max(0, total - answered)}問`, completeNow);
-
     let complete = document.querySelector('.ui-check-complete');
+    const completeNow = total > 0 && answered === total;
     if (completeNow) {
       if (!complete) {
         complete = document.createElement('div');
         complete.className = 'ui-check-complete';
-        complete.textContent = '✓ 意味・気持ち・チャンクを確認できた。次は、意味を保ったまま声に出す。';
+        complete.textContent = '✓ 確認完了。次は声に出す。';
         list.insertAdjacentElement('afterend', complete);
       }
     } else {
@@ -200,15 +187,12 @@
       const pressed = button.classList.contains('is-done') ? 'true' : 'false';
       if (button.getAttribute('aria-pressed') !== pressed) button.setAttribute('aria-pressed', pressed);
     });
+
     const next = rounds.find(button => !button.classList.contains('is-done'));
     if (next) next.classList.add('ui-is-next');
 
-    const complete = doneCount === rounds.length;
-    const status = document.querySelector('.ui-step-status');
-    setStatus(status, 'SPEAK', doneCount === 0 ? '3回読む' : `${doneCount}回完了`, complete);
-
     const nextButton = document.getElementById('nextStep');
-    if (nextButton) nextButton.classList.toggle('ui-ready', complete);
+    if (nextButton) nextButton.classList.toggle('ui-ready', doneCount === rounds.length);
   }
 
   function enhance() {
@@ -220,10 +204,11 @@
     }
 
     setLessonStep(step);
-    enhanceContextStatus(step);
+    simplifyLessonHeader();
+    simplifyStepHeading(step);
+    removeLegacyStatus();
     enhanceNextButton(step);
 
-    if (step === 'chunk') enhanceChunk();
     if (step === 'check') enhanceCheck();
     if (step === 'speak') enhanceSpeak();
   }

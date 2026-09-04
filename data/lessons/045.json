@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": 45,
+  "createdAt": "2026-09-04",
+  "title": "The Queue I Had Already Invested In",
+  "scene": "You stop at a supermarket on the way home and carefully compare three checkout queues. The queue you choose immediately stops moving, but after waiting for a while, changing queues begins to feel strangely like admitting defeat.",
+  "sceneJa": "帰宅途中にスーパーへ寄り、3つのレジ列を慎重に比較する。選んだ列だけすぐ止まるが、少し待ったことで今さら列を変えるのも妙に負けた気がして、そのまま残り続ける。",
+  "emotions": ["careful", "confident", "impatient", "committed", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "shopping", "queue", "decision-making", "based-on-the-available-evidence", "by-then", "feel-committed-to", "persistence", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I stopped at a supermarket", "ja": "スーパーに立ち寄りました"},
+        {"en": "on my way home", "ja": "帰宅途中に"},
+        {"en": "to pick up a few things", "ja": "いくつか買うために"},
+        {"en": "for dinner.", "ja": "夕食用のものを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "At the checkouts,", "ja": "レジに着くと"},
+        {"en": "there were three queues,", "ja": "列が3つあり"},
+        {"en": "so I spent a moment", "ja": "そこで少し時間をかけて"},
+        {"en": "comparing them properly.", "ja": "きちんと比較しました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The first was the shortest,", "ja": "1つ目は一番短かったのですが"},
+        {"en": "but one customer had a trolley", "ja": "一人の客がカートを持っていて"},
+        {"en": "loaded with enough shopping", "ja": "十分すぎるほど買い物が積まれていました"},
+        {"en": "to survive a minor emergency.", "ja": "ちょっとした非常事態を乗り切れそうなくらい"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The second was moving well,", "ja": "2つ目は順調に進んでいましたが"},
+        {"en": "although someone near the front", "ja": "前のほうにいる人が"},
+        {"en": "was holding several discount vouchers", "ja": "割引券を何枚も持っていて"},
+        {"en": "and looking determined.", "ja": "かなり本気の様子でした"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I chose the third queue", "ja": "私は3つ目の列を選びました"},
+        {"en": "because it seemed", "ja": "それが思えたからです"},
+        {"en": "the safest option", "ja": "最も無難な選択肢に"},
+        {"en": "based on the available evidence.", "ja": "その場で分かる情報に基づけば"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Almost immediately,", "ja": "するとほぼ直後に"},
+        {"en": "the first queue began moving quickly,", "ja": "1つ目の列がどんどん進み始め"},
+        {"en": "while mine", "ja": "一方で私の列は"},
+        {"en": "stopped completely.", "ja": "完全に止まりました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The customer ahead of me", "ja": "私の前の客が"},
+        {"en": "was trying to return an item", "ja": "商品を返品しようとしていて"},
+        {"en": "without a receipt,", "ja": "レシートなしで"},
+        {"en": "and the cashier called for help.", "ja": "店員が応援を呼びました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I thought about changing queues,", "ja": "列を変えることも考えましたが"},
+        {"en": "but by then", "ja": "そのころには"},
+        {"en": "I had already invested enough time", "ja": "すでに十分な時間を使っていて"},
+        {"en": "to feel committed to mine.", "ja": "自分の列に妙な責任感まで感じていました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Five minutes later,", "ja": "5分後"},
+        {"en": "both of the other queues", "ja": "ほかの2つの列はどちらも"},
+        {"en": "had passed me", "ja": "私を追い越していました"},
+        {"en": "with impressive efficiency.", "ja": "見事な効率の良さで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "When it was finally my turn,", "ja": "ようやく自分の番が来たとき"},
+        {"en": "paying for dinner felt less like shopping", "ja": "夕食の会計というより"},
+        {"en": "and more like completing", "ja": "完了させる感じがしました"},
+        {"en": "a small administrative process.", "ja": "小さな事務手続きを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I left with dinner,", "ja": "私は夕食の材料と"},
+        {"en": "a receipt,", "ja": "レシートと"},
+        {"en": "and slightly more evidence", "ja": "少し増えた証拠を持って店を出ました"},
+        {"en": "that persistence and good judgement are not the same thing.", "ja": "粘り強さと良い判断は同じものではないという"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I chose the third queue / because it seemed the safest option / based on the available evidence",
+        "I chose / the third queue because / it seemed the safest / option based on the available evidence",
+        "I chose the / third queue because it seemed / the safest option based / on the available evidence"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the decision, the second gives the judgement, and the final chunk gives the basis for that judgement."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘by then’ mean here?",
+      "options": [
+        "At that point after some time had already passed",
+        "Before the speaker chose a queue",
+        "At exactly the same moment the speaker entered the shop"
+      ],
+      "answer": 0,
+      "explanation": "‘By then’ refers to the situation as it had developed up to that point. The speaker has already waited long enough to feel attached to the choice."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "It treats an ordinary supermarket wait as evidence in a serious judgement about the speaker’s decision-making",
+        "It means the speaker plans to stop shopping completely",
+        "It suggests the receipt was more important than the food"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour comes from turning a small, stubborn supermarket decision into calm evidence that persistence can continue even after good judgement has already left the situation."
+    }
+  ],
+  "speak": "Start casually, then sound mildly analytical through the three queue options. Give ‘based on the available evidence’ a calm, almost professional tone. At ‘but by then,’ slow slightly so the attachment to the bad choice becomes clear. Keep ‘with impressive efficiency’ restrained, and deliver the final sentence as a quiet conclusion rather than a joke.",
+  "review": "Story flow: careful comparison → apparently sensible choice → immediate problem → reluctance to switch → stubborn waiting → dry self-assessment. Useful chunks are ‘based on the available evidence,’ ‘by then,’ and ‘feel committed to ...’. The key contrast is between making a reasonable decision with limited information and continuing to defend that decision after the situation has changed."
+}

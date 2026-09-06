@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": 46,
+  "createdAt": "2026-09-05",
+  "title": "Keeping Everyone on the Same Page",
+  "scene": "A plan has changed slightly, and you want to make sure everyone understands what has changed and what has stayed the same. You share the latest version, ask people to replace the old one, and invite them to flag anything unexpected.",
+  "sceneJa": "予定が少し変わったあと、関係者の認識ズレを防ぐ場面。変わった点と変わっていない点を整理し、最新版への差し替えと最終確認をお願いする。",
+  "emotions": ["clear", "calm", "organized", "considerate"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "alignment", "on-the-same-page", "still", "latest-version", "no-confusion", "what-you-were-expecting", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "Just to make sure", "ja": "念のため確認するために"},
+        {"en": "we’re all on the same page,", "ja": "全員の認識がそろっていることを"},
+        {"en": "the meeting will still start at ten,", "ja": "会議は予定どおり10時に始まります"},
+        {"en": "but we’ve moved the presentation", "ja": "ただ、プレゼンを移しました"},
+        {"en": "to the second half.", "ja": "後半に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I’ve updated the schedule", "ja": "スケジュールを更新しました"},
+        {"en": "and shared the latest version", "ja": "そして最新版を共有しました"},
+        {"en": "with everyone.", "ja": "全員に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If you’ve already downloaded the old one,", "ja": "もしすでに古いものをダウンロードしていたら"},
+        {"en": "please replace it", "ja": "差し替えてください"},
+        {"en": "so there’s no confusion tomorrow.", "ja": "明日混乱が起きないように"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Let me know", "ja": "教えてください"},
+        {"en": "if anything looks different", "ja": "何か違って見えるものがあれば"},
+        {"en": "from what you were expecting.", "ja": "あなたが想定していたものと比べて"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Just to make sure / we’re all on the same page",
+        "Just / to make sure we’re / all on the / same page",
+        "Just to / make sure we’re all / on the same / page"
+      ],
+      "answer": 0,
+      "explanation": "‘Just to make sure’ gives the purpose of the comment, while ‘we’re all on the same page’ gives what the speaker wants to confirm."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘still’ mean in ‘the meeting will still start at ten’?",
+      "options": [
+        "The meeting start time has also changed.",
+        "Other details have changed, but the ten o’clock start has not.",
+        "The meeting has not started yet."
+      ],
+      "answer": 1,
+      "explanation": "Here, ‘still’ highlights continuity: despite another change, the meeting start time remains the same."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘on the same page’ mean here?",
+      "options": [
+        "Looking at the same physical page",
+        "Being in the same room",
+        "Having the same understanding of the situation"
+      ],
+      "answer": 2,
+      "explanation": "‘On the same page’ is a common expression meaning that people share the same understanding or expectations."
+    }
+  ],
+  "speak": "Make the contrast between what stayed the same and what changed easy to hear. Give a little emphasis to ‘same’ in ‘on the same page’ and to ‘still’ in ‘the meeting will still start at ten.’ Then make ‘but we’ve moved the presentation’ slightly more distinct. Keep the final ‘Let me know ...’ open and inviting rather than strict.",
+  "review": "Previous session flow: support → concern → alternative → benefit. ‘My only concern is that ...’ let you raise one issue without rejecting the whole idea. Today uses the same principle of framing before detail: alignment → change → action → check. Useful chunks are ‘on the same page,’ ‘the latest version,’ and ‘so there’s no confusion.’"
+}

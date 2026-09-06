@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": 48,
+  "createdAt": "2026-09-06",
+  "title": "Buying Time Without Sounding Unprepared",
+  "scene": "Someone asks for an answer in a meeting, but you want to check a few details before committing. You show that you already have a rough view, explain what you need to verify, give a clear reply deadline, and promise to update them if anything changes.",
+  "sceneJa": "会議中に意見を求められたが、その場で曖昧に断定するより、少し確認してから責任を持って返したい場面。現時点の考え、確認理由、回答期限、フォローまで整理して伝える。",
+  "emotions": ["thoughtful", "careful", "responsible", "calm"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "meeting", "rough-idea", "definite-answer", "make-sure", "get-back-to-you", "in-the-meantime", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I have a rough idea,", "ja": "だいたいの考えはあります"},
+        {"en": "but I’d like to check", "ja": "ただ、確認したいです"},
+        {"en": "a couple of things", "ja": "いくつかのことを"},
+        {"en": "before giving you a definite answer.", "ja": "はっきりした回答をする前に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Let me look at the numbers again", "ja": "もう一度数字を確認させてください"},
+        {"en": "and make sure", "ja": "そして確認します"},
+        {"en": "I’m not missing anything.", "ja": "何か見落としていないことを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I should be able to get back to you", "ja": "お返事できるはずです"},
+        {"en": "by the end of the day.", "ja": "今日中に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If anything changes", "ja": "もし何か変わったら"},
+        {"en": "in the meantime,", "ja": "それまでの間に"},
+        {"en": "I’ll let you know.", "ja": "お知らせします"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I’d like to check / a couple of things / before giving you a definite answer.",
+        "I’d / like to check a / couple of things before / giving you a definite answer.",
+        "I’d like / to check a couple / of things before giving / you a definite answer."
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps each thought unit intact: the intention to check, the things being checked, and the timing before a definite answer."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘get back to you’ mean here?",
+      "options": [
+        "Physically return to where the other person is",
+        "Reply or follow up later",
+        "Withdraw the answer"
+      ],
+      "answer": 1,
+      "explanation": "‘Get back to you’ means to respond later after checking or considering something."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘a rough idea’ suggest?",
+      "options": [
+        "The speaker has a general view, but the details are not final",
+        "The speaker has no idea at all",
+        "The decision is already final"
+      ],
+      "answer": 0,
+      "explanation": "A ‘rough idea’ is an initial or general view that has not been fully worked out yet."
+    }
+  ],
+  "speak": "Sound thoughtful rather than uncertain. Say ‘I have a rough idea’ in a steady tone, slow slightly on ‘I’d like to check a couple of things,’ and make ‘by the end of the day’ clear and firm. The final ‘I’ll let you know’ should sound like a practical commitment, not an apology.",
+  "review": "Previous session: alignment → change → action → check. ‘Just to make sure we’re all on the same page’ helped prevent confusion after a plan changed. Today uses the same principle with uncertainty: current view → check → deadline → follow-up. Useful chunks are ‘I have a rough idea,’ ‘get back to you,’ and ‘in the meantime.’"
+}

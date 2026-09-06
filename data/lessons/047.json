@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": 47,
+  "createdAt": "2026-09-05",
+  "title": "The Match I Wasn't Going to Take Seriously",
+  "scene": "A friend invites you to play a few casual games of table tennis after dinner. You insist you are only there for fun, but one slightly over-celebrated point gradually turns the evening into a very unofficial competition.",
+  "sceneJa": "友人と夕食後に軽く卓球をする。最初は本気でやるつもりはなかったが、友人の少し大げさな喜び方をきっかけに、いつの間にかスコアや勝負形式にこだわり始める。",
+  "emotions": ["relaxed", "competitive", "defensive", "self-aware", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "sports", "table-tennis", "friends", "slightly-more-than-necessary", "best-of-three", "statistically-premature", "reliable-sample", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "A friend invited me", "ja": "友人に誘われて"},
+        {"en": "to play a few casual games of table tennis", "ja": "卓球を何試合か軽くやることになりました"},
+        {"en": "after dinner.", "ja": "夕食後に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I hadn't played in years,", "ja": "何年もやっていなかったので"},
+        {"en": "so I told him", "ja": "友人に伝えました"},
+        {"en": "I was only there", "ja": "自分はそこにいるだけだと"},
+        {"en": "to have a bit of fun.", "ja": "ちょっと楽しむために"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "He agreed,", "ja": "友人も同意し"},
+        {"en": "and for the first few points", "ja": "最初の数ポイントは"},
+        {"en": "we both played", "ja": "二人ともプレーしました"},
+        {"en": "without keeping score.", "ja": "スコアをつけずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then he hit a shot", "ja": "すると友人がショットを打ち"},
+        {"en": "that caught the edge of the table", "ja": "それが台の端に当たり"},
+        {"en": "and celebrated", "ja": "彼は喜びました"},
+        {"en": "slightly more than necessary.", "ja": "必要以上にほんの少しだけ"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I said it was a good shot,", "ja": "私は『いいショットだった』と言いました"},
+        {"en": "which was true,", "ja": "それは本当でした"},
+        {"en": "and suggested we start keeping score,", "ja": "そしてスコアをつけようと提案しました"},
+        {"en": "which was unrelated.", "ja": "もちろん、その2つに関係はありません"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "A few minutes later,", "ja": "数分後には"},
+        {"en": "I was concentrating properly,", "ja": "私はしっかり集中し"},
+        {"en": "adjusting where I stood", "ja": "立ち位置を調整しながら"},
+        {"en": "and watching his serve more carefully.", "ja": "彼のサーブをより注意深く見るようになっていました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "When I lost the first game,", "ja": "最初のゲームに負けると"},
+        {"en": "I suggested playing best of three,", "ja": "3本勝負にしようと提案しました"},
+        {"en": "mainly because stopping there", "ja": "主な理由は、そこで終わるのは"},
+        {"en": "seemed statistically premature.", "ja": "統計的に時期尚早に思えたからです"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I won the second game,", "ja": "2ゲーム目には勝ち"},
+        {"en": "which naturally meant", "ja": "当然のことながら、それは意味しました"},
+        {"en": "that a deciding game", "ja": "決着戦が"},
+        {"en": "was now absolutely necessary.", "ja": "今や絶対に必要だということを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I eventually lost that one too,", "ja": "結局その試合にも負け"},
+        {"en": "and briefly considered", "ja": "一瞬考えました"},
+        {"en": "whether best of five", "ja": "5本勝負なら"},
+        {"en": "might provide a more reliable sample.", "ja": "より信頼できるサンプルになるのではないかと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Instead,", "ja": "代わりに"},
+        {"en": "I put down the bat", "ja": "ラケットを置き"},
+        {"en": "and reminded myself", "ja": "自分に言い聞かせました"},
+        {"en": "that I wasn't taking any of this seriously.", "ja": "そもそもこれを本気でやっていなかったのだと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It was good", "ja": "良かったです"},
+        {"en": "to finish on a mature note,", "ja": "最後は大人らしく終われて"},
+        {"en": "particularly once the sports centre", "ja": "特にスポーツセンターが"},
+        {"en": "announced that it was closing.", "ja": "閉館を知らせてくれた後だったので"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "When I lost the first game / I suggested playing best of three / mainly because stopping there / seemed statistically premature",
+        "When I lost / the first game I suggested / playing best of three mainly / because stopping there seemed statistically premature",
+        "When I / lost the first game I / suggested playing best / of three mainly because stopping there seemed statistically premature"
+      ],
+      "answer": 0,
+      "explanation": "The sentence naturally separates into the trigger, the speaker's response, and the deliberately over-serious justification for continuing."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘slightly more than necessary’ suggest here?",
+      "options": [
+        "The friend celebrated a little more enthusiastically than the situation called for",
+        "The friend did not celebrate at all",
+        "The friend apologised for winning the point"
+      ],
+      "answer": 0,
+      "explanation": "The phrase gently criticises the amount of celebration without making it sound dramatic. That understated tone helps trigger the speaker's competitiveness."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is ‘a more reliable sample’ funny in this story?",
+      "options": [
+        "The speaker treats losing a casual game as if it were a statistical research problem",
+        "The speaker is actually collecting scientific data",
+        "The sports centre requires five games before recording a result"
+      ],
+      "answer": 0,
+      "explanation": "The speaker uses analytical language to disguise a simple desire to keep playing until the result feels more acceptable."
+    }
+  ],
+  "speak": "Start relaxed and conversational. Keep ‘slightly more than necessary’ dry and understated. Let the seriousness build gradually through ‘best of three’ and ‘statistically premature’ without sounding angry. Read ‘a more reliable sample’ as if it were a perfectly reasonable analytical concern. Finish the final sentence calmly, allowing the closing announcement to reveal that maturity was partly enforced by circumstances.",
+  "review": "Flow: casual invitation → tiny competitive trigger → scorekeeping → increasingly serious justification → reluctant self-awareness → externally enforced maturity. Useful chunks: ‘slightly more than necessary’, ‘best of three’, and ‘a more reliable sample’. The humour comes from using objective, analytical language to rationalise a very ordinary unwillingness to accept defeat."
+}

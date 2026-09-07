@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": 50,
+  "createdAt": "2026-09-07",
+  "title": "The Umbrella That Wasn't Mine",
+  "scene": "It starts raining while you are having lunch at a café. You notice a plain black umbrella by the door, briefly convince yourself it might be yours, then discover from one small detail — and one silent look — that it definitely is not.",
+  "sceneJa": "カフェで昼食中に雨が降り始める。入口にある黒い傘を一瞬自分のものだと思い込み持ち出すが、木製の持ち手で違うと気づく。返しに戻ると、本当の持ち主らしい男性と無言で目が合う。",
+  "emotions": ["uncertain", "briefly-relieved", "embarrassed", "resigned", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "cafe", "rain", "umbrella", "after-all", "had-never-owned", "neither-of-us", "awkwardness", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "It started raining", "ja": "雨が降り始めました"},
+        {"en": "while I was having lunch", "ja": "昼食を食べている間に"},
+        {"en": "at a small café near the station.", "ja": "駅の近くの小さなカフェで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I hadn't brought an umbrella,", "ja": "傘を持ってきていなかったので"},
+        {"en": "so I was preparing myself", "ja": "覚悟をしていました"},
+        {"en": "for a rather wet walk home.", "ja": "かなり濡れて帰ることを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then I noticed", "ja": "すると気づきました"},
+        {"en": "a plain black umbrella", "ja": "黒い無地の傘に"},
+        {"en": "standing by the door,", "ja": "入口のそばに立ててある"},
+        {"en": "exactly where I usually leave mine.", "ja": "いつも自分が傘を置くのとまったく同じ場所に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "For a few seconds,", "ja": "数秒間"},
+        {"en": "I genuinely wondered", "ja": "本気で考えました"},
+        {"en": "whether I had brought one after all", "ja": "やっぱり傘を持ってきていたのではないかと"},
+        {"en": "and simply forgotten about it.", "ja": "そして単にそのことを忘れていただけではないかと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I picked it up,", "ja": "私はその傘を手に取り"},
+        {"en": "opened it outside,", "ja": "外で開いてみると"},
+        {"en": "and was pleasantly surprised", "ja": "少し嬉しくなりました"},
+        {"en": "by how large it was.", "ja": "その大きさに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "After walking about fifty metres,", "ja": "50メートルほど歩いたところで"},
+        {"en": "I noticed a small wooden handle", "ja": "小さな木製の持ち手に気づき"},
+        {"en": "and realised", "ja": "気づきました"},
+        {"en": "I had never owned an umbrella like that.", "ja": "そんな傘を持ったことは一度もなかったと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I immediately went back", "ja": "私はすぐに戻り"},
+        {"en": "and returned it to the café,", "ja": "傘をカフェへ返しました"},
+        {"en": "hoping its actual owner", "ja": "本当の持ち主が"},
+        {"en": "hadn't noticed anything.", "ja": "何も気づいていないことを願いながら"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "As I put it back,", "ja": "傘を元に戻すと"},
+        {"en": "a man at the table nearest the door", "ja": "入口に一番近い席の男性が"},
+        {"en": "looked at the umbrella,", "ja": "傘を見て"},
+        {"en": "then looked at me.", "ja": "それから私を見ました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Neither of us said anything,", "ja": "どちらも何も言いませんでした"},
+        {"en": "which somehow felt", "ja": "それがなぜか感じられました"},
+        {"en": "more specific than an accusation.", "ja": "直接責められるよりも具体的に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I walked home in the rain", "ja": "私は雨の中を歩いて帰りました"},
+        {"en": "feeling slightly foolish,", "ja": "少し間抜けな気分で"},
+        {"en": "but at least", "ja": "ただ少なくとも"},
+        {"en": "with a very clear understanding of whose umbrella it wasn't.", "ja": "あの傘が少なくとも誰のものではないかについては、非常によく理解しながら"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "whether I had brought one after all / and simply forgotten about it",
+        "whether I had / brought one after / all and simply / forgotten about it",
+        "whether / I had brought one / after all and simply forgotten / about it"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk contains the reconsidered possibility — maybe the speaker did bring an umbrella after all — and the second adds the possible explanation for not remembering it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘after all’ mean in ‘whether I had brought one after all’?",
+      "options": [
+        "The speaker is reconsidering an earlier belief and wondering if the opposite might be true",
+        "The speaker is saying the umbrella was the last object in the café",
+        "The speaker has finally decided to buy an umbrella"
+      ],
+      "answer": 0,
+      "explanation": "Here, ‘after all’ signals a change or reconsideration: the speaker had believed they brought no umbrella, but briefly wonders whether they actually did."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is ‘Neither of us said anything’ awkward rather than reassuring?",
+      "options": [
+        "Because the silence strongly suggests that both people understand what has just happened",
+        "Because neither person can speak English",
+        "Because the man has not noticed the umbrella"
+      ],
+      "answer": 0,
+      "explanation": "The silence communicates more than a direct accusation would: the man appears to recognise the umbrella, and the speaker knows that he knows."
+    }
+  ],
+  "speak": "Start calmly, with mild resignation about the rain. Give ‘whether I had brought one after all’ a slightly hopeful lift. At ‘I had never owned an umbrella like that,’ let the certainty arrive quietly rather than dramatically. Pause after ‘looked at the umbrella,’ then again after ‘then looked at me.’ Keep the final sentence completely matter-of-fact; the humour comes from treating embarrassment as useful information.",
+  "review": "Flow: rain problem → convenient possibility → self-persuasion → small physical clue → immediate retreat → silent social confirmation → dry reframing. Useful chunks are ‘after all,’ ‘I had never owned ... like that,’ and ‘Neither of us ...’. Unlike recent lessons where the speaker rationalises continuing, this one turns on a quick correction followed by an awkwardly precise social moment."
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": 49,
+  "createdAt": "2026-09-07",
+  "title": "I May Have Overcommitted",
+  "scene": "You agreed to take on several tasks, then realised doing all of them at once could lower the quality of the work. Rather than simply saying you are busy, you acknowledge the problem, explain the trade-off, ask to prioritise two items, and show that you will continue with the rest afterward.",
+  "sceneJa": "いくつかの仕事を引き受けたあと、このまま全部を同時に進めると質が落ちるかもしれないと気づいた場面。単に『忙しい』と言うのではなく、抱え込みすぎたことを認め、優先順位を相談し、残りも順番に進めることを伝える。",
+  "emotions": ["responsible", "calm", "self-aware", "practical"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "priorities", "overcommitted", "take-on", "need-my-attention", "out-of-the-way", "move-on", "trade-off", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I may have overcommitted a little", "ja": "少し引き受けすぎたかもしれません"},
+        {"en": "when I agreed", "ja": "引き受けると決めたときに"},
+        {"en": "to take all of this on.", "ja": "これを全部"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I can still get everything done,", "ja": "全部終わらせること自体はできます"},
+        {"en": "but probably not", "ja": "ただ、おそらく〜ではありません"},
+        {"en": "to the standard I’d like", "ja": "自分が望む水準では"},
+        {"en": "if I try to do it all at once.", "ja": "全部を一度にやろうとすれば"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Could we decide", "ja": "一緒に決められますか"},
+        {"en": "which two things", "ja": "どの2つが"},
+        {"en": "need my attention first?", "ja": "最初に私の対応を必要としているか"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Once those are out of the way,", "ja": "それらが片付いたら"},
+        {"en": "I can move on", "ja": "次へ進めます"},
+        {"en": "to the rest.", "ja": "残りのものへ"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Once those are out of the way, / I can move on / to the rest.",
+        "Once those / are out of / the way I / can move on to the rest.",
+        "Once / those are out / of the way I can / move on to the rest."
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the condition, the action, and the destination as clear meaning units."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘overcommitted’ mean here?",
+      "options": [
+        "Promised very strongly to do one thing",
+        "Took on more work than can comfortably be handled",
+        "Refused to take on the work"
+      ],
+      "answer": 1,
+      "explanation": "To overcommit means to accept more work, responsibility, or obligations than your available time or capacity comfortably allows."
+    },
+    {
+      "type": "meaning",
+      "question": "What is the speaker actually worried about?",
+      "options": [
+        "Whether the work can be finished at all",
+        "Whether everything can be done well if tackled simultaneously",
+        "Whether the two tasks are necessary"
+      ],
+      "answer": 1,
+      "explanation": "The speaker says everything can still be completed, but the quality may suffer if all tasks are tackled at once."
+    }
+  ],
+  "speak": "Sound responsible rather than overwhelmed. Say ‘I may have overcommitted a little’ as a calm acknowledgement, then give ‘I can still get everything done’ slightly more confidence. Make ‘which two things need my attention first?’ sound collaborative rather than desperate. Finish ‘Once those are out of the way’ with a practical, forward-moving tone.",
+  "review": "Previous session: current view → check → deadline → follow-up. ‘I have a rough idea,’ ‘get back to you,’ and ‘in the meantime’ helped create space before committing to an answer. Today applies the same principle to workload: admit → explain the trade-off → prioritise → continue. Useful chunks are ‘take something on,’ ‘need my attention,’ and ‘once that’s out of the way.’"
+}

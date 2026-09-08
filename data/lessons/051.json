@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": 51,
+  "createdAt": "2026-09-08",
+  "title": "What Actually Needs to Be Done Today?",
+  "scene": "Several tasks feel urgent, but they do not all need to be finished today. You pause, check the actual deadlines, separate what really needs immediate attention from what can wait, and the day becomes more manageable.",
+  "sceneJa": "仕事が重なって、全部が『今日やらなければならない』ように見えている場面。実際の締切を確認し、本当にすぐ対応が必要なものと明日に回せるものを切り分ける。",
+  "emotions": ["busy", "reflective", "practical", "relieved"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "priorities", "deadlines", "as-if", "immediate-attention", "without-causing-problems", "manageable", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I was treating everything on my list", "ja": "リストにあるすべてを扱っていました"},
+        {"en": "as if it had to be finished today.", "ja": "まるで今日中に終わらせなければならないかのように"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "But when I looked", "ja": "でも、確認してみると"},
+        {"en": "at the actual deadlines,", "ja": "実際の締切を"},
+        {"en": "only two things", "ja": "2つだけが"},
+        {"en": "really needed immediate attention.", "ja": "本当にすぐ対応する必要がありました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The rest could wait until tomorrow", "ja": "残りは明日まで待てました"},
+        {"en": "without causing any problems.", "ja": "何の問題も起こさずに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Once I realised that,", "ja": "それに気づくと"},
+        {"en": "the day felt", "ja": "一日が感じられました"},
+        {"en": "much more manageable.", "ja": "ずっと対処しやすく"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "The rest could wait until tomorrow / without causing any problems.",
+        "The rest could / wait until / tomorrow without causing / any problems.",
+        "The rest / could wait until tomorrow without / causing any / problems."
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the main idea and the ‘without + -ing’ condition as separate, natural meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘as if it had to be finished today’ suggest?",
+      "options": [
+        "Today was definitely the official deadline",
+        "The speaker was treating it as urgent without first checking whether it really was",
+        "The work had already been finished today"
+      ],
+      "answer": 1,
+      "explanation": "‘As if’ shows that this was the speaker’s assumption or way of treating the tasks, not necessarily the actual deadline."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘manageable’ mean here?",
+      "options": [
+        "More enjoyable",
+        "Completely finished",
+        "Possible to handle or deal with"
+      ],
+      "answer": 2,
+      "explanation": "‘Manageable’ means the workload still exists, but it now feels possible to handle."
+    }
+  ],
+  "speak": "Make the change in perspective audible. Start ‘I was treating everything on my list’ with a slightly pressured tone. Stress ‘only two things’ to mark the reality check. Relax your voice on ‘much more manageable’ so the relief comes through without sounding dramatic.",
+  "review": "Previous session: admit → explain the trade-off → prioritise → continue. ‘I may have overcommitted a little’ and ‘need my attention’ helped reset priorities after taking on too much. Today goes one step further: assumption → reality check → reprioritise → relief. Useful chunks are ‘as if it had to be ...’, ‘need immediate attention’, and ‘much more manageable’."
+}

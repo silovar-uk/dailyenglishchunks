@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 54,
+  "createdAt": "2026-09-09",
+  "title": "The Stain That Needed More Attention",
+  "scene": "You are about to leave home when you notice a tiny mark on your shirt. A quick attempt to clean it turns into soap, water, a hair dryer, and a completely different shirt.",
+  "sceneJa": "家を出る直前、シャツの袖に小さな汚れを見つける。30秒で済ませるつもりの応急処置が、水、石けん、ドライヤーへと広がり、最後は別のシャツに着替えることになる。",
+  "emotions": ["mildly-annoyed", "determined", "increasingly-concerned", "resigned", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "clothes", "small-mistake", "once-i-noticed", "expecting-it-to", "make-things-worse", "at-least", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I was about to leave home", "ja": "家を出ようとしていたとき"},
+        {"en": "when I noticed", "ja": "気づきました"},
+        {"en": "a small mark", "ja": "小さな汚れに"},
+        {"en": "on the sleeve of my shirt.", "ja": "シャツの袖にある"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It was barely visible,", "ja": "ほとんど見えない程度でしたが"},
+        {"en": "but once I had noticed it,", "ja": "いったん気づいてしまうと"},
+        {"en": "it became surprisingly difficult", "ja": "妙に難しくなりました"},
+        {"en": "to ignore.", "ja": "無視するのが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I rubbed it gently", "ja": "やさしくこすりました"},
+        {"en": "with a damp cloth,", "ja": "湿らせた布で"},
+        {"en": "expecting the whole thing", "ja": "全部で済むと思って"},
+        {"en": "to take about thirty seconds.", "ja": "30秒くらいで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The mark became lighter,", "ja": "汚れは薄くなりましたが"},
+        {"en": "although the wet patch around it", "ja": "その周りの濡れた部分は"},
+        {"en": "was now much easier", "ja": "はるかに簡単になりました"},
+        {"en": "to see.", "ja": "見つけるのが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I added a little soap", "ja": "少し石けんを足しました"},
+        {"en": "to improve the situation,", "ja": "状況を改善するために"},
+        {"en": "which mainly improved", "ja": "結果として主に改善されたのは"},
+        {"en": "the size of the problem.", "ja": "問題の大きさでした"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "At that point,", "ja": "その時点で"},
+        {"en": "the sleeve contained", "ja": "袖には存在していました"},
+        {"en": "several slightly different shades of white,", "ja": "微妙に違う何種類かの白が"},
+        {"en": "none of them especially convincing.", "ja": "どれも特に説得力のない"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I rinsed the sleeve", "ja": "袖をすすぎ"},
+        {"en": "and used a hair dryer", "ja": "ドライヤーを使いました"},
+        {"en": "while watching the time", "ja": "時間を確認しながら"},
+        {"en": "become steadily less convenient.", "ja": "着実に都合が悪くなっていくのを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Ten minutes later,", "ja": "10分後"},
+        {"en": "the stain had almost disappeared,", "ja": "汚れはほぼ消えていましたが"},
+        {"en": "but the sleeve was still damp", "ja": "袖はまだ湿っていて"},
+        {"en": "and I was now late.", "ja": "私はすでに遅れていました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I changed into another shirt", "ja": "別のシャツに着替えました"},
+        {"en": "and left the first one", "ja": "最初のシャツは置いていきました"},
+        {"en": "hanging rather proudly", "ja": "どこか誇らしげに干されたまま"},
+        {"en": "in the bathroom.", "ja": "浴室に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The stain was gone,", "ja": "汚れは消えました"},
+        {"en": "and I was late,", "ja": "そして私は遅れました"},
+        {"en": "so at least", "ja": "だから少なくとも"},
+        {"en": "something had been successfully dealt with.", "ja": "何か一つは無事に対処できたことになります"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "once I had noticed it / it became surprisingly difficult / to ignore",
+        "once I / had noticed it it became / surprisingly difficult to / ignore",
+        "once I had / noticed it it / became surprisingly / difficult to ignore"
+      ],
+      "answer": 0,
+      "explanation": "‘Once I had noticed it’ sets the condition, ‘it became surprisingly difficult’ gives the result, and ‘to ignore’ completes what became difficult."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘expecting the whole thing to take about thirty seconds’ mean?",
+      "options": [
+        "The speaker thought the cleaning would be quick",
+        "The speaker planned to wait thirty seconds before cleaning",
+        "The speaker knew the cleaning would take much longer"
+      ],
+      "answer": 0,
+      "explanation": "The speaker expected a very small task, which makes the later escalation funnier."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence dryly funny?",
+      "options": [
+        "The speaker treats removing the stain as a success even though the attempt made them late",
+        "The speaker discovers that the stain was never real",
+        "The speaker decides to wear the wet shirt anyway"
+      ],
+      "answer": 0,
+      "explanation": "The speaker calmly counts the stain as a successful result while ignoring the larger problem created by dealing with it."
+    }
+  ],
+  "speak": "Start casually, as if the mark is genuinely minor. Let the frustration build only slightly through the wet patch and soap. Read ‘which mainly improved the size of the problem’ very calmly. Slow down at ‘the stain had almost disappeared, but...’ and deliver the final sentence as a reasonable summary rather than a joke.",
+  "review": "Today shifts away from recent work, navigation, and train stories into a small domestic problem. The flow is tiny flaw → quick fix → expanding intervention → technically successful outcome. Useful chunks are ‘once I had noticed it’, ‘expecting ... to take ...’, and ‘at least ...’. The humour comes from solving the original problem while creating a more important one."
+}

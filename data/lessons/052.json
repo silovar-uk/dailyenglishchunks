@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": 52,
+  "createdAt": "2026-09-08",
+  "title": "The Seat With a Better View",
+  "scene": "You find a perfectly decent seat on a train, then move to a window seat that looks slightly better. Only after sitting down do you realise it is priority seating, and your original seat is already gone.",
+  "sceneJa": "電車で十分悪くない席に座っていたが、反対側に少し条件のよい窓際席が空く。移動してから優先席だと気づき、元の席に戻ろうとするものの、すでに別の人が座っている。",
+  "emotions": ["comfortable", "tempted", "self-conscious", "awkward", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "train", "decision-making", "as-soon-as", "had-already-taken", "by-then", "priority-seating", "awkwardness", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I got on the train", "ja": "電車に乗りました"},
+        {"en": "just before it became crowded", "ja": "混み始める少し前に"},
+        {"en": "and found a perfectly decent seat", "ja": "十分悪くない席を見つけました"},
+        {"en": "near the door.", "ja": "ドアの近くに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "A few stops later,", "ja": "数駅進むと"},
+        {"en": "a window seat became free", "ja": "窓際の席が空きました"},
+        {"en": "on the other side of the carriage.", "ja": "車両の反対側で"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I wasn't uncomfortable where I was,", "ja": "今の席に不満はありませんでしたが"},
+        {"en": "but the new seat had a better view", "ja": "新しい席のほうが景色がよく"},
+        {"en": "and slightly more space", "ja": "少し広い空間もありました"},
+        {"en": "around it.", "ja": "その周りに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I waited for a moment", "ja": "少し待ちました"},
+        {"en": "so I wouldn't look too eager,", "ja": "あまり必死に見えないように"},
+        {"en": "then stood up", "ja": "それから立ち上がり"},
+        {"en": "and moved across.", "ja": "反対側へ移動しました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "As soon as I sat down,", "ja": "座った瞬間"},
+        {"en": "I noticed a small sign above me", "ja": "頭上の小さな表示に気づき"},
+        {"en": "showing that the area", "ja": "そのエリアが"},
+        {"en": "was designated as priority seating.", "ja": "優先席に指定されていることを知りました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "There was plenty of space elsewhere,", "ja": "ほかにも十分空席があり"},
+        {"en": "so nobody seemed to mind,", "ja": "誰も気にしてはいないようでしたが"},
+        {"en": "but I decided", "ja": "私は思いました"},
+        {"en": "my original seat had suddenly become quite attractive.", "ja": "元の席が急にかなり魅力的になったと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Unfortunately,", "ja": "残念ながら"},
+        {"en": "someone had already taken it", "ja": "すでに別の人がそこに座っていて"},
+        {"en": "and was sitting there", "ja": "その人はそこに座っていました"},
+        {"en": "with the calm confidence of a person who hadn't moved unnecessarily.", "ja": "無駄に移動などしなかった人らしい落ち着いた自信とともに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I considered moving again,", "ja": "もう一度移動することも考えましたが"},
+        {"en": "but changing seats twice in under a minute", "ja": "1分以内に2回席を変えるのは"},
+        {"en": "felt like the beginning", "ja": "始まりのように感じられました"},
+        {"en": "of a small personal crisis.", "ja": "小さな個人的危機の"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So I stayed where I was", "ja": "そこでそのまま座り"},
+        {"en": "and spent the next few stops", "ja": "次の数駅を過ごしました"},
+        {"en": "trying to look like", "ja": "〜のように見せようとしながら"},
+        {"en": "I had chosen the seat for a very specific reason.", "ja": "何か明確な理由があってその席を選んだ人の"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The view was indeed better,", "ja": "確かに景色はよかったのですが"},
+        {"en": "although by then", "ja": "そのころには"},
+        {"en": "I was mainly looking", "ja": "私は主に見ていました"},
+        {"en": "at the floor.", "ja": "床を"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "As soon as I sat down / I noticed a small sign above me / showing that the area was designated as priority seating",
+        "As soon / as I sat down I noticed / a small sign above / me showing that the area was designated as priority seating",
+        "As soon as I / sat down I noticed a small / sign above me showing / that the area was designated as priority seating"
+      ],
+      "answer": 0,
+      "explanation": "‘As soon as I sat down’ sets the timing, the next chunk gives the immediate discovery, and the final chunk explains what the sign showed."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘someone had already taken it’ mean here?",
+      "options": [
+        "Someone had physically removed the seat",
+        "Someone had already occupied the speaker's original seat",
+        "Someone had reserved the seat earlier that day"
+      ],
+      "answer": 1,
+      "explanation": "Here, ‘take a seat’ means occupy or claim it. The past perfect shows that this had happened before the speaker considered moving back."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "The better view becomes irrelevant because the speaker is too self-conscious to enjoy it",
+        "The train suddenly goes underground",
+        "The speaker decides that the floor has the best view"
+      ],
+      "answer": 0,
+      "explanation": "The speaker moved specifically for the better view, but the awkwardness created by that decision means they end up looking at the floor instead."
+    }
+  ],
+  "speak": "Start casually and comfortably. Give ‘so I wouldn't look too eager’ a slightly self-aware tone. At ‘As soon as I sat down,’ let the rhythm tighten to show the immediate realisation. Read ‘with the calm confidence of a person who hadn't moved unnecessarily’ slowly and dryly. Finish the last sentence quietly, with no dramatic punchline.",
+  "review": "Flow: comfortable seat → tempting upgrade → immediate social awkwardness → original option disappears → staying put becomes a face-saving decision → the original benefit is no longer enjoyed. Useful chunks: ‘as soon as ...’, ‘someone had already taken it’, and ‘by then’. The humour comes from a tiny optimisation creating a larger self-conscious problem."
+}

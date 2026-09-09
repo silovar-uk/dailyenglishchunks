@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": 53,
+  "createdAt": "2026-09-09",
+  "title": "Before I Jump Into Something Else",
+  "scene": "A new request arrives while you are already working on something important. You acknowledge the message, protect your current focus, leave room for a genuinely urgent exception, and give a realistic time for when you can start the new task.",
+  "sceneJa": "大事な仕事を進めている途中で別件が届いた場面。新しい依頼を無視せず受け取ったことを伝えつつ、今の集中を守り、本当に緊急なら優先順位を調整し、そうでなければ現実的な着手時刻を示す。",
+  "emotions": ["focused", "calm", "responsible", "flexible"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "priorities", "focus", "take-a-proper-look", "halfway-through", "unless", "adjust-priorities", "get-to-it", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I've seen your message,", "ja": "メッセージは確認しました"},
+        {"en": "and I'll take a proper look at it", "ja": "そして、きちんと確認します"},
+        {"en": "once I've finished", "ja": "終えたら"},
+        {"en": "what I'm working on now.", "ja": "今取り組んでいるものを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I don't want to switch tasks", "ja": "仕事を切り替えたくありません"},
+        {"en": "halfway through", "ja": "途中で"},
+        {"en": "unless there's a good reason to.", "ja": "そうする十分な理由がない限り"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If it's more urgent", "ja": "もしそれがもっと緊急なら"},
+        {"en": "than it looks,", "ja": "見た感じよりも"},
+        {"en": "let me know", "ja": "教えてください"},
+        {"en": "and I can adjust my priorities.", "ja": "そうすれば優先順位を調整できます"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Otherwise,", "ja": "そうでなければ"},
+        {"en": "I should be able to get to it", "ja": "それに取りかかれると思います"},
+        {"en": "later this afternoon.", "ja": "今日の午後遅めに"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I don't want to switch tasks / halfway through / unless there's a good reason to.",
+        "I don't want / to switch tasks halfway / through unless there's / a good reason to.",
+        "I don't / want to switch / tasks halfway through unless / there's a good reason to."
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the main action, the timing phrase, and the exception condition as clear thought units."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘get to it’ mean here?",
+      "options": [
+        "Arrive at the physical location",
+        "Start working on the task",
+        "Refuse the task"
+      ],
+      "answer": 1,
+      "explanation": "In this work context, ‘get to it’ means to reach the task in your workload and start dealing with it."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker say ‘If it's more urgent than it looks’?",
+      "options": [
+        "To guarantee the new request will always be delayed",
+        "To avoid assuming urgency while still allowing priorities to change if necessary",
+        "To stop the current task immediately"
+      ],
+      "answer": 1,
+      "explanation": "The speaker protects current focus but leaves room to reprioritise if the request is genuinely more urgent than it first appears."
+    }
+  ],
+  "speak": "Sound focused rather than annoyed. Say ‘I've seen your message’ lightly to acknowledge the request, give ‘what I'm working on now’ a little emphasis, and keep ‘If it's more urgent than it looks, let me know’ open and flexible. Finish ‘later this afternoon’ clearly so the timing sounds realistic and dependable.",
+  "review": "Previous session: assumption → reality check → reprioritise → relief. ‘Need immediate attention’ helped separate truly urgent work from tasks that could wait. Today applies the same idea to interruptions: acknowledge → protect focus → allow an exception → give a timeline. Useful chunks are ‘take a proper look at it,’ ‘unless there's a good reason to,’ and ‘adjust my priorities.’"
+}

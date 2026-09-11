@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 56,
+  "createdAt": "2026-09-11",
+  "title": "The Pastry I Didn't Order",
+  "scene": "You stop at a bakery to buy one simple thing for breakfast. The staff member mishears your order, and instead of correcting the mistake immediately, you hesitate just long enough for politeness to become commitment.",
+  "sceneJa": "翌朝の朝食を買うためパン屋へ寄り、欲しいものを一つだけ注文する。店員に聞き間違えられるが、訂正するタイミングを逃し、妙な遠慮からそのまま別のパンを買うことになる。",
+  "emotions": ["decisive", "hesitant", "awkward", "resigned", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "bakery", "shopping", "misunderstanding", "before-i-could", "rather-than-make-a-fuss", "turn-out-to-be", "politeness", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I stopped at a bakery", "ja": "パン屋に寄りました"},
+        {"en": "on my way home", "ja": "帰宅途中に"},
+        {"en": "to buy something simple", "ja": "簡単なものを買うために"},
+        {"en": "for breakfast the next morning.", "ja": "翌朝の朝食用に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I had already decided", "ja": "すでに決めていました"},
+        {"en": "on a plain croissant,", "ja": "普通のクロワッサンに"},
+        {"en": "which felt unusually efficient", "ja": "それは珍しく効率的に感じられました"},
+        {"en": "for me.", "ja": "自分にしては"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "When I ordered,", "ja": "注文すると"},
+        {"en": "the staff member repeated something back", "ja": "店員が何かを復唱しました"},
+        {"en": "that sounded slightly different", "ja": "少し違って聞こえるものを"},
+        {"en": "from what I had said.", "ja": "自分が言ったものとは"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I was about to correct him,", "ja": "訂正しようとしたのですが"},
+        {"en": "but before I could,", "ja": "そうする前に"},
+        {"en": "he had already picked up", "ja": "彼はもう手に取っていました"},
+        {"en": "an almond croissant.", "ja": "アーモンドクロワッサンを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "For some reason,", "ja": "なぜか"},
+        {"en": "watching him put it into a bag", "ja": "彼がそれを袋に入れるのを見ると"},
+        {"en": "made the misunderstanding", "ja": "その聞き間違いが"},
+        {"en": "feel much more official.", "ja": "ずっと正式なものに感じられました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I considered saying something,", "ja": "何か言おうかと考えましたが"},
+        {"en": "then decided", "ja": "その後決めました"},
+        {"en": "that eating the wrong pastry", "ja": "違うパンを食べるほうが"},
+        {"en": "was easier than making a fuss.", "ja": "わざわざ訂正するより楽だと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I paid for it", "ja": "それを会計し"},
+        {"en": "and left the shop", "ja": "店を出ました"},
+        {"en": "with the quiet satisfaction", "ja": "静かな満足感とともに"},
+        {"en": "of someone who had avoided a conflict that never existed.", "ja": "そもそも存在しなかった対立を回避した人のような"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The next morning,", "ja": "翌朝"},
+        {"en": "I discovered", "ja": "気づきました"},
+        {"en": "that the almond croissant", "ja": "そのアーモンドクロワッサンが"},
+        {"en": "was actually very good.", "ja": "実際かなりおいしいことに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "That should have made the whole thing", "ja": "それでこの一件は"},
+        {"en": "feel like a lucky accident,", "ja": "幸運な偶然に思えるはずでしたが"},
+        {"en": "although I was slightly disappointed", "ja": "少し残念でもありました"},
+        {"en": "to lose such a clear example of poor judgement.", "ja": "判断ミスの明確な例を失ったことが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Apparently,", "ja": "どうやら"},
+        {"en": "even my mistakes", "ja": "自分のミスでさえ"},
+        {"en": "are becoming less reliable", "ja": "以前ほど当てにならなくなっているようです"},
+        {"en": "than they used to be.", "ja": "昔に比べて"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I was about to correct him / but before I could / he had already picked up an almond croissant",
+        "I was about / to correct him but / before I could he had / already picked up an almond croissant",
+        "I was about to / correct him but before / I could he had already / picked up an almond croissant"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk shows the intended action, the second interrupts it, and the third gives what had already happened before the speaker could act."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘rather than making a fuss’ imply here?",
+      "options": [
+        "The speaker wanted to complain loudly",
+        "The speaker preferred accepting the small mistake to creating unnecessary awkwardness",
+        "The staff member refused to change the order"
+      ],
+      "answer": 1,
+      "explanation": "‘Make a fuss’ means creating more attention or trouble than the speaker feels the situation deserves."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the ending dryly funny?",
+      "options": [
+        "The pastry turns out to be terrible",
+        "The speaker is mildly disappointed that the mistake produced a good result, because it ruins a neat story about bad judgement",
+        "The staff member gives the speaker a refund"
+      ],
+      "answer": 1,
+      "explanation": "The humour comes from treating a pleasant surprise as inconvenient because it makes the speaker's self-criticism less tidy."
+    }
+  ],
+  "speak": "Start matter-of-factly and slightly pleased at having made a quick decision. Add a small hesitation around ‘sounded slightly different’ and ‘before I could.’ Keep ‘easier than making a fuss’ calm rather than apologetic. Let the final two sentences stay dry and reflective, as if the unreliable mistake is a minor administrative problem.",
+  "review": "Flow: simple plan → small misunderstanding → missed correction window → politeness becomes commitment → the wrong choice turns out well → the speaker is almost inconvenienced by the positive result. Useful chunks: ‘before I could ...’, ‘rather than make a fuss’, and ‘turn out to be ...’. Unlike the earlier queue lesson, the tension here comes from social hesitation rather than sunk-cost thinking."
+}

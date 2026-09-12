@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": 60,
+  "createdAt": "2026-09-13",
+  "title": "The Run That Stopped for Coffee",
+  "scene": "You set out early in the morning planning to run five kilometres. A short warm-up walk becomes longer than expected, a newly noticed coffee shop provides a perfectly reasonable excuse to stop, and the run quietly turns into active recovery instead.",
+  "sceneJa": "朝早く5キロ走るつもりで外に出る。10分だけのウォームアップの散歩が少しずつ長くなり、途中で見つけたコーヒーショップに立ち寄った結果、ランニングはいつの間にか『アクティブリカバリー』へと変わっていく。",
+  "emotions": ["motivated", "relaxed", "tempted", "self-justifying", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "running", "coffee", "since-i-was-already-there", "by-the-time", "saw-no-reason-to", "self-justification", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I went for a run", "ja": "ランニングに出かけた"},
+        {"en": "early in the morning", "ja": "朝早く"},
+        {"en": "with the modest goal", "ja": "控えめな目標を持って"},
+        {"en": "of doing five kilometres.", "ja": "5キロ走るという"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Before starting properly,", "ja": "本格的に走り始める前に"},
+        {"en": "I decided to walk for ten minutes", "ja": "10分ほど歩くことにした"},
+        {"en": "to loosen up my legs", "ja": "脚をほぐすために"},
+        {"en": "and wake myself up.", "ja": "それから目を覚ますために"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The weather was surprisingly pleasant,", "ja": "思ったより気持ちのいい天気だったので"},
+        {"en": "so I kept walking", "ja": "そのまま歩き続けた"},
+        {"en": "a little farther than planned.", "ja": "予定より少し遠くまで"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then I found a coffee shop", "ja": "するとコーヒーショップを見つけた"},
+        {"en": "I had never noticed before", "ja": "今まで気づかなかった"},
+        {"en": "and stopped to have a look", "ja": "立ち止まって見ることにした"},
+        {"en": "at the menu outside.", "ja": "外のメニューを"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Since I was already there,", "ja": "せっかくそこまで来たので"},
+        {"en": "getting a coffee seemed reasonable,", "ja": "コーヒーを買うのも妥当に思えた"},
+        {"en": "especially as I had technically", "ja": "特に厳密に言えば"},
+        {"en": "been exercising for twenty minutes.", "ja": "すでに20分は運動していたのだから"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I sat outside", "ja": "外の席に座った"},
+        {"en": "intending to stay for five minutes,", "ja": "5分だけいるつもりで"},
+        {"en": "but the chair was comfortable", "ja": "しかし椅子は快適で"},
+        {"en": "and nobody appeared to need it.", "ja": "誰かが必要としている様子もなかった"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "By the time I finished my coffee,", "ja": "コーヒーを飲み終えるころには"},
+        {"en": "nearly forty minutes had passed,", "ja": "40分近く経っていて"},
+        {"en": "and starting a five-kilometre run", "ja": "そこから5キロ走り始めることが"},
+        {"en": "suddenly felt rather ambitious.", "ja": "急にかなり野心的に思えてきた"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I briefly considered running home,", "ja": "一瞬、家まで走ろうかとも考えたが"},
+        {"en": "but I was wearing clean trainers", "ja": "スニーカーはまだきれいだったし"},
+        {"en": "and saw no reason", "ja": "理由も見当たらなかった"},
+        {"en": "to make things unnecessarily difficult.", "ja": "わざわざ物事を難しくする"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So I walked back", "ja": "そこで歩いて帰り"},
+        {"en": "at a respectable pace", "ja": "そこそこ立派なペースで"},
+        {"en": "and decided to count the whole thing", "ja": "この一連の行動を数えることにした"},
+        {"en": "as active recovery.", "ja": "アクティブリカバリーとして"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Five kilometres would have been better exercise,", "ja": "5キロ走ったほうが運動にはよかったが"},
+        {"en": "but considerably worse", "ja": "かなり悪い選択だった"},
+        {"en": "for the coffee.", "ja": "コーヒーにとっては"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Since I was already there / getting a coffee seemed reasonable / especially as I had technically been exercising for twenty minutes",
+        "Since I was / already there getting a coffee / seemed reasonable especially as / I had technically been exercising for twenty minutes",
+        "Since I was already / there getting a coffee seemed / reasonable especially / as I had technically been exercising for twenty minutes"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk gives the situation, the second gives the decision, and the third supplies the speaker's justification."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I saw no reason to ...’ mean here?",
+      "options": [
+        "I could not find a good reason to do it",
+        "I was physically unable to do it",
+        "Someone had told me not to do it"
+      ],
+      "answer": 0,
+      "explanation": "‘I saw no reason to ...’ means the speaker did not think there was a convincing reason to take that action."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "It treats protecting the coffee as if it were a valid reason not to complete the planned run",
+        "It suggests coffee is healthier than running",
+        "It reveals the speaker actually ran more than five kilometres"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour comes from calmly judging the abandoned run from the coffee's point of view, as if that were a serious factor in the decision."
+    }
+  ],
+  "speak": "Begin with mild determination. Keep the pace relaxed through the walk and the discovery of the coffee shop. Read ‘Since I was already there’ as a perfectly sensible justification. Slow slightly at ‘By the time I finished my coffee’ as the original plan quietly disappears. Deliver the final sentence calmly, with no comic emphasis.",
+  "review": "Flow: modest running plan → sensible warm-up → pleasant detour → coffee stop → increasingly reasonable self-justification → the run becomes active recovery → dry final reframe. Useful chunks: ‘since I was already there,’ ‘by the time ...,’ and ‘I saw no reason to ...’."
+}

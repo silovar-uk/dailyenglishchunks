@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": 57,
+  "createdAt": "2026-09-12",
+  "title": "The Call I Almost Didn't Answer",
+  "scene": "While making dinner, you answer a call from an unknown number. It turns out to be a wrong number, the conversation ends politely, and only afterwards do you notice that dinner has started burning.",
+  "sceneJa": "夕食を作っている途中、知らない番号からの電話に出る。間違い電話だと分かり、丁寧に会話を終えたあとで、親切に対応している間に夕食が焦げ始めていたことに気づく。",
+  "emotions": ["curious", "uncertain", "polite", "distracted", "dryly-resigned"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "phone-call", "wrong-number", "for-some-reason", "while-i-was", "renewed-appreciation", "small-mistake", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "My phone rang", "ja": "電話が鳴った"},
+        {"en": "while I was making dinner,", "ja": "夕食を作っている間に"},
+        {"en": "and the number on the screen", "ja": "そして画面に表示された番号には"},
+        {"en": "wasn't one I recognised.", "ja": "見覚えがなかった"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I usually ignore unknown numbers,", "ja": "普段なら知らない番号には出ないが"},
+        {"en": "but for some reason", "ja": "なぜか"},
+        {"en": "I decided to answer", "ja": "出てみることにした"},
+        {"en": "this one.", "ja": "今回は"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The caller asked for someone", "ja": "相手はある人を尋ねてきた"},
+        {"en": "whose name sounded vaguely familiar,", "ja": "その名前はどこか聞き覚えがあるように聞こえ"},
+        {"en": "so I wondered", "ja": "そのため私は思った"},
+        {"en": "whether I had misheard him.", "ja": "自分が聞き間違えたのではないかと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I asked him to repeat it,", "ja": "もう一度言ってもらうと"},
+        {"en": "and he said exactly the same name", "ja": "相手はまったく同じ名前を言った"},
+        {"en": "slightly more slowly.", "ja": "少しだけゆっくりと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I explained that he had the wrong number,", "ja": "間違い電話だと伝えると"},
+        {"en": "and there was a brief silence", "ja": "短い沈黙があり"},
+        {"en": "as we both considered", "ja": "お互い考えていた"},
+        {"en": "how little else there was to discuss.", "ja": "これ以上ほとんど話すことがないと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "He apologised,", "ja": "相手が謝り"},
+        {"en": "I said it was no problem,", "ja": "私は問題ないと答え"},
+        {"en": "and we politely wished each other", "ja": "そして互いに丁寧に言い合った"},
+        {"en": "a good evening.", "ja": "よい夜を、と"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "After hanging up,", "ja": "電話を切ったあと"},
+        {"en": "I realised my dinner", "ja": "夕食が"},
+        {"en": "had started burning", "ja": "焦げ始めていたことに気づいた"},
+        {"en": "while I was being unusually helpful.", "ja": "珍しく親切に対応している間に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I turned off the heat", "ja": "火を止め"},
+        {"en": "and stood there for a moment,", "ja": "しばらくその場に立ち"},
+        {"en": "looking at what remained", "ja": "残っているものを眺めた"},
+        {"en": "of my original plan.", "ja": "当初の計画の"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The stranger had found out", "ja": "見知らぬ相手は知ることができた"},
+        {"en": "that he had the wrong number,", "ja": "自分が間違った番号にかけたことを"},
+        {"en": "which was presumably", "ja": "それはおそらく"},
+        {"en": "everything he needed from the call.", "ja": "彼がその電話から必要としていた情報のすべてだった"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I, meanwhile,", "ja": "一方の私は"},
+        {"en": "had gained a burnt dinner", "ja": "焦げた夕食と"},
+        {"en": "and a renewed appreciation", "ja": "新たな評価を手に入れた"},
+        {"en": "for not answering the phone.", "ja": "電話に出ないという習慣への"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I usually ignore unknown numbers / but for some reason / I decided to answer this one",
+        "I usually / ignore unknown numbers but / for some reason I decided / to answer this one",
+        "I usually ignore / unknown numbers but for / some reason / I decided to answer this one"
+      ],
+      "answer": 0,
+      "explanation": "The first chunk states the usual habit, the second introduces the unexplained exception, and the third gives the decision made this time."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘for some reason’ mean here?",
+      "options": [
+        "For a reason the speaker cannot clearly explain",
+        "Because the caller had phoned before",
+        "Because the speaker knew the number"
+      ],
+      "answer": 0,
+      "explanation": "‘For some reason’ is used when something happens or you do something without being able to explain the exact reason clearly."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "Because answering the phone was polite but indirectly caused the speaker to value ignoring calls more",
+        "Because the stranger offered to replace the dinner",
+        "Because the speaker had wanted to burn the dinner"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour comes from treating a small inconvenience as evidence that the speaker's less-helpful habit may actually have had some merit."
+    }
+  ],
+  "speak": "Read the opening calmly and conversationally. Add a little hesitation around ‘whether I had misheard him.’ Keep the wrong-number exchange polite and understated. Slow slightly at ‘After hanging up,’ then deliver the final sentence with a dry, matter-of-fact tone rather than trying to make it sound like a joke.",
+  "review": "Today moves away from work, shopping, and travel into an ordinary phone-call mishap. Useful chunks are ‘for some reason,’ ‘while I was ...,’ and ‘a renewed appreciation for ...’. The ending uses dry humour by turning a minor failure into a surprisingly formal lesson about not answering the phone."
+}

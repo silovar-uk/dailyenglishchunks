@@ -11,3 +11,16 @@ window.LESSONS.push({
   lazy: true,
   dataPath: "./data/lessons/056.json"
 });
+
+window.LESSONS.push({
+  schemaVersion: 1,
+  id: 58,
+  createdAt: "2026-09-11",
+  title: "Let’s Fix the Cause, Not Just the Symptom",
+  sceneJa: "同じ小さな問題が仕事で何度も再発している場面。その都度応急処置をするのではなく、原因を特定して再発を防ぎたいと考えている。",
+  difficulty: 4,
+  minutes: 10,
+  tags: ["work", "problem-solving", "root-cause", "quick-fix", "keep-coming-back", "in-the-first-place", "prevent-from", "recurrence", "conversation"],
+  lazy: true,
+  dataPath: "./data/lessons/058.json"
+});

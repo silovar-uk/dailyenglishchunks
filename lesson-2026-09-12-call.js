@@ -11,3 +11,16 @@ window.LESSONS.push({
   lazy: true,
   dataPath: "./data/lessons/057.json"
 });
+
+window.LESSONS.push({
+  schemaVersion: 1,
+  id: 59,
+  createdAt: "2026-09-12",
+  title: "I Thought I Had More Time",
+  sceneJa: "慌てないようにいつもより早く家を出たのに、駅で電車の大幅な遅延を知る場面。別ルートも考えるが、乗り換えの手間と比較して、その場で待つ方が得策だと判断する。",
+  difficulty: 4,
+  minutes: 10,
+  tags: ["daily-life", "train", "delay", "be-in-a-rush", "find-out", "would-have-involved", "better-off", "decision-making"],
+  lazy: true,
+  dataPath: "./data/lessons/059.json"
+});

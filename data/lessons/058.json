@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": 58,
+  "createdAt": "2026-09-11",
+  "title": "Let’s Fix the Cause, Not Just the Symptom",
+  "scene": "The same small problem keeps coming back at work. Instead of applying another quick fix, you want to understand the cause and prevent the issue from happening again.",
+  "sceneJa": "同じ小さな問題が仕事で何度も再発している場面。その都度応急処置をするのではなく、原因を特定して再発を防ぎたいと考えている。",
+  "emotions": ["thoughtful", "concerned", "methodical", "constructive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "problem-solving", "root-cause", "quick-fix", "keep-coming-back", "in-the-first-place", "prevent-from", "recurrence", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "We could fix this one issue now", "ja": "この問題だけなら今直せます"},
+        {"en": "and move on,", "ja": "そして次へ進めます"},
+        {"en": "but I’m concerned", "ja": "ただ、気になっているのは"},
+        {"en": "that the same problem", "ja": "同じ問題が"},
+        {"en": "will keep coming back.", "ja": "何度も再発することです"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Before we make another quick fix,", "ja": "また応急的に直す前に"},
+        {"en": "I’d like to understand", "ja": "理解したいです"},
+        {"en": "what’s causing it", "ja": "何がそれを引き起こしているのか"},
+        {"en": "in the first place.", "ja": "そもそも"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It might take a little longer today,", "ja": "今日は少し余計に時間がかかるかもしれません"},
+        {"en": "but it could save us", "ja": "でも、それによって避けられるかもしれません"},
+        {"en": "from having to deal with", "ja": "対応しなければならなくなることを"},
+        {"en": "the same thing again next week.", "ja": "来週また同じことに"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If we can identify the root cause,", "ja": "根本原因を特定できれば"},
+        {"en": "we can probably prevent it", "ja": "おそらく防げます"},
+        {"en": "from happening again.", "ja": "それが再び起きることを"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "It might take a little longer today / but it could save us / from having to deal with / the same thing again next week",
+        "It might take / a little longer today but / it could save / us from having to deal with the same thing again next week",
+        "It might / take a little / longer today but it could / save us from having to deal"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the contrast, the verb phrase ‘save us’, and the complement ‘from having to deal with ...’ in natural meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘in the first place’ mean here?",
+      "options": [
+        "In the first location",
+        "To begin with / originally",
+        "As the top priority"
+      ],
+      "answer": 1,
+      "explanation": "‘In the first place’ means ‘to begin with’ or ‘originally’. Here it asks what is causing the problem at its source."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker want to identify the root cause?",
+      "options": [
+        "To make today’s task longer",
+        "To write a more detailed report",
+        "To prevent the same problem from happening again"
+      ],
+      "answer": 2,
+      "explanation": "The speaker wants to move beyond repeated quick fixes and stop the issue from recurring."
+    }
+  ],
+  "speak": "Sound thoughtful rather than frustrated. Start ‘We could fix this one issue now’ lightly, slow down at ‘will keep coming back’, and give a little emphasis to ‘the root cause’ and ‘prevent it from happening again’. The tone should suggest a practical long-term solution, not criticism.",
+  "review": "Previous session: check the wider impact before agreeing to a small change. Useful chunks were ‘what else it might affect’, ‘trace it through’, and ‘If the impact is limited, ...’. Today goes one step further: instead of asking only what a change affects, ask why the problem is happening in the first place. The flow is quick fix → recurring problem → root cause → prevention."
+}

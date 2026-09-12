@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": 59,
+  "createdAt": "2026-09-12",
+  "title": "I Thought I Had More Time",
+  "scene": "You leave home earlier than usual to avoid rushing, but when you reach the station you discover a significant train delay. You briefly consider another route, then decide that waiting is still the better option.",
+  "sceneJa": "慌てないようにいつもより早く家を出たのに、駅で電車の大幅な遅延を知る場面。別ルートも考えるが、乗り換えの手間と比較して、その場で待つ方が得策だと判断する。",
+  "emotions": ["prepared", "surprised", "uncertain", "practical", "calm"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["daily-life", "train", "delay", "be-in-a-rush", "find-out", "would-have-involved", "better-off", "decision-making"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I left home", "ja": "家を出ました"},
+        {"en": "earlier than usual", "ja": "いつもより早く"},
+        {"en": "because I didn’t want to be in a rush.", "ja": "慌てたくなかったので"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "When I got to the station,", "ja": "駅に着くと"},
+        {"en": "however,", "ja": "ところが"},
+        {"en": "I found out", "ja": "分かりました"},
+        {"en": "that my train had been delayed", "ja": "電車が遅れていることが"},
+        {"en": "by nearly twenty minutes.", "ja": "20分近く"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "For a moment,", "ja": "一瞬"},
+        {"en": "I considered taking a different route,", "ja": "別ルートで行くことも考えました"},
+        {"en": "but that would have involved", "ja": "でも、それだと必要になっていました"},
+        {"en": "changing trains twice.", "ja": "2回乗り換えることが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "In the end,", "ja": "結局"},
+        {"en": "I decided", "ja": "私は判断しました"},
+        {"en": "I was better off", "ja": "〜した方がましだと"},
+        {"en": "waiting where I was.", "ja": "その場で待っている"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I decided / I was better off / waiting where I was",
+        "I decided I / was better / off waiting where / I was",
+        "I / decided I was / better off waiting / where I was"
+      ],
+      "answer": 0,
+      "explanation": "‘I decided’, ‘I was better off’, and ‘waiting where I was’ each form clear meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘would have involved changing trains twice’ mean?",
+      "options": [
+        "The speaker had already changed trains twice",
+        "The alternative route would have required two train changes",
+        "The speaker needed to wait for two trains"
+      ],
+      "answer": 1,
+      "explanation": "‘Would have involved’ describes what the alternative option would have required."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I was better off waiting’ suggest?",
+      "options": [
+        "Waiting was more enjoyable",
+        "Waiting was the more sensible option compared with the alternatives",
+        "The speaker was not allowed to leave"
+      ],
+      "answer": 1,
+      "explanation": "‘Be better off -ing’ means that doing something is the wiser or more advantageous choice."
+    }
+  ],
+  "speak": "Read the opening with a relaxed, prepared tone. Pause slightly after ‘however’ to mark the unexpected delay. Let ‘For a moment’ sound thoughtful, then deliver ‘I was better off waiting where I was’ calmly, with ‘better off’ as one natural chunk.",
+  "review": "Previous session: move beyond quick fixes by asking why a problem is happening in the first place. Useful chunks were ‘keep coming back’, ‘in the first place’, and ‘prevent it from happening again’. Today shifts to comparing options after an unexpected delay. Useful chunks are ‘be in a rush’, ‘would have involved ...’, and ‘be better off -ing’."
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": 61,
+  "createdAt": "2026-09-13",
+  "title": "I’d Rather Know Now",
+  "scene": "You have made a good start on a piece of work, but before going much further you want to confirm that the overall direction is right. You invite early feedback so changes can still be made without too much extra work.",
+  "sceneJa": "ある程度作業を進めたところで、これ以上大きく進める前に方向性が合っているか確認したい場面。完成後の大きな手戻りを避けるため、早めにフィードバックを求める。",
+  "emotions": ["positive", "open", "careful", "practical", "confident"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "feedback", "direction", "head-in-the-right-direction", "rather-than", "early-enough", "move-ahead", "confidence", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I’ve made a good start,", "ja": "順調にスタートできています"},
+        {"en": "but I’d like to make sure", "ja": "ただ、確認しておきたいです"},
+        {"en": "I’m heading in the right direction", "ja": "正しい方向へ進んでいることを"},
+        {"en": "before I go much further.", "ja": "これ以上大きく進める前に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If you have any concerns", "ja": "もし何か懸念があるなら"},
+        {"en": "about the overall approach,", "ja": "全体的な進め方について"},
+        {"en": "I’d rather hear them now", "ja": "今聞いておきたいです"},
+        {"en": "than after everything is finished.", "ja": "全部完成してからよりも"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It’s still early enough", "ja": "まだ十分早い段階なので"},
+        {"en": "to make changes", "ja": "変更しても"},
+        {"en": "without causing too much extra work.", "ja": "あまり大きな追加作業を発生させずに済みます"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Once we agree on the direction,", "ja": "方向性について合意できれば"},
+        {"en": "I can move ahead", "ja": "先へ進めます"},
+        {"en": "with more confidence.", "ja": "もっと自信を持って"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I’d rather hear them now / than after everything is finished",
+        "I’d rather / hear them now than / after everything / is finished",
+        "I’d / rather hear / them now than after / everything is finished"
+      ],
+      "answer": 0,
+      "explanation": "‘I’d rather hear them now’ forms the preferred option, and ‘than after everything is finished’ gives the alternative being compared."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘before I go much further’ mean here?",
+      "options": [
+        "Before travelling farther away",
+        "Before progressing much further with the work",
+        "After the work is complete"
+      ],
+      "answer": 1,
+      "explanation": "Here ‘go much further’ means continuing the work substantially, not physical movement."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker want feedback now?",
+      "options": [
+        "Because changes can still be made with relatively little rework",
+        "Because the work is already finished",
+        "Because the speaker does not want to make any decisions"
+      ],
+      "answer": 0,
+      "explanation": "The speaker wants to catch a possible mismatch while it is still cheap and easy to correct."
+    }
+  ],
+  "speak": "Sound open to feedback rather than nervous. Start ‘I’ve made a good start’ positively, slow slightly at ‘heading in the right direction’, give a little emphasis to ‘hear them now’, and finish ‘move ahead with more confidence’ with a settled, forward-looking tone.",
+  "review": "Previous session: compare alternatives after an unexpected delay. Useful chunks were ‘be in a rush’, ‘would have involved ...’, and ‘be better off -ing’. Today shifts from choosing between options to checking direction before committing more work. Useful chunks are ‘head in the right direction’, ‘I’d rather hear it now than later’, and ‘Once we agree on the direction, ...’."
+}

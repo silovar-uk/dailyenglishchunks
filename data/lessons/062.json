@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": 62,
+  "createdAt": "2026-09-14",
+  "title": "The Gift I Became Too Careful About",
+  "scene": "You go to buy a small birthday present for a friend and quickly find something suitable. Instead of buying it, you overthink what the gift might imply, compare several alternatives, and eventually return to the first option with less confidence than before.",
+  "sceneJa": "友人へのちょっとした誕生日プレゼントを買いに行き、最初の5分でよさそうなものを見つける。ところが『実用的すぎるか』『個人的すぎるか』と考え始め、候補を行き来した末、結局最初の品を以前より自信のない状態で買う。",
+  "emotions": ["confident", "thoughtful", "uncertain", "overcautious", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "gift", "shopping", "decision-making", "which-should-have-made", "no-longer", "go-back-to", "overthinking", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I needed to buy a small birthday present", "ja": "ちょっとした誕生日プレゼントを買う必要がありました"},
+        {"en": "for a friend,", "ja": "友人のために"},
+        {"en": "and I had a fairly clear idea", "ja": "そして、かなりはっきりした考えがありました"},
+        {"en": "of what to get.", "ja": "何を買うかについて"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I found something suitable", "ja": "ちょうどよさそうなものを見つけました"},
+        {"en": "within the first five minutes,", "ja": "最初の5分以内に"},
+        {"en": "which should have made", "ja": "それなら本来"},
+        {"en": "the whole trip very easy.", "ja": "買い物全体はとても簡単に済むはずでした"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Before paying, though,", "ja": "ただ、会計する前に"},
+        {"en": "I wondered whether it was", "ja": "それが〜ではないかと考えました"},
+        {"en": "slightly too practical", "ja": "少し実用的すぎる"},
+        {"en": "for a birthday present.", "ja": "誕生日プレゼントとして"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So I looked around", "ja": "そこで店内を見て回りました"},
+        {"en": "for something a bit more personal,", "ja": "もう少し個人的な感じのものを求めて"},
+        {"en": "then worried that anything too personal", "ja": "すると今度は、個人的すぎるものは"},
+        {"en": "might seem oddly serious.", "ja": "妙に重く見えるかもしれないと心配になりました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I picked up three different things", "ja": "3つの違うものを手に取り"},
+        {"en": "and put each one back", "ja": "それぞれ棚に戻しました"},
+        {"en": "after imagining a problem", "ja": "問題点を想像したあとで"},
+        {"en": "the other two didn't have.", "ja": "ほかの2つにはないような"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "After half an hour,", "ja": "30分もすると"},
+        {"en": "I was no longer choosing between presents;", "ja": "私はもはやプレゼントを選んでいるのではなく"},
+        {"en": "I was conducting", "ja": "実施していました"},
+        {"en": "a surprisingly thorough risk assessment.", "ja": "驚くほど念入りなリスク評価を"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Eventually, I went back", "ja": "結局、私は戻りました"},
+        {"en": "to the first thing I had found", "ja": "最初に見つけたもののところへ"},
+        {"en": "and bought it", "ja": "そしてそれを買いました"},
+        {"en": "with considerably less confidence than before.", "ja": "最初よりかなり自信を失った状態で"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "When I gave it to my friend,", "ja": "友人にそれを渡すと"},
+        {"en": "he smiled and said,", "ja": "彼は笑って言いました"},
+        {"en": "“Oh, nice. Thanks.”", "ja": "『あ、いいね。ありがとう』と"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "That was the entire reaction,", "ja": "反応はそれで全部でした"},
+        {"en": "which was probably appropriate", "ja": "それはたぶん妥当でした"},
+        {"en": "for a present that had required", "ja": "それだけの時間を要したプレゼントとしては"},
+        {"en": "thirty-five minutes of strategic planning.", "ja": "35分もの戦略立案を"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Next year,", "ja": "来年は"},
+        {"en": "I may try the more advanced technique", "ja": "より高度な技術を試してみるかもしれません"},
+        {"en": "of buying the thing I like", "ja": "気に入ったものを買って"},
+        {"en": "and then leaving the shop.", "ja": "そのまま店を出るという"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I was no longer choosing between presents / I was conducting / a surprisingly thorough risk assessment",
+        "I was no longer / choosing between / presents I was conducting a / surprisingly thorough risk assessment",
+        "I was / no longer choosing between presents I / was conducting a surprisingly / thorough risk assessment"
+      ],
+      "answer": 0,
+      "explanation": "The first option keeps the contrast between the original activity and what it has turned into, then treats 'conducting a surprisingly thorough risk assessment' as one clear idea."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘which should have made the whole trip very easy’ suggest?",
+      "options": [
+        "Finding a suitable gift quickly should have meant there was little left to decide",
+        "The shop was difficult to get to",
+        "The speaker wanted to spend more time shopping"
+      ],
+      "answer": 0,
+      "explanation": "The phrase sets up an expectation: the task ought to have been simple, but the speaker makes it complicated by overthinking."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "Because leaving a shop is presented as if it were an advanced skill",
+        "Because the friend returned the gift",
+        "Because the speaker forgot to pay"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour comes from describing a very ordinary act—buying something and leaving—as an advanced technique after unnecessary overthinking."
+    }
+  ],
+  "speak": "Start with calm confidence. Let the pace become slightly more thoughtful through the practical-versus-personal dilemma. Read ‘a surprisingly thorough risk assessment’ with mock seriousness. Keep the friend's reaction short and ordinary, then deliver the final sentence very calmly, as if buying something and leaving really were an advanced method.",
+  "review": "Recent daily-life lessons have covered a wrong-number phone call and a run derailed by coffee. Today shifts to gift shopping and overthinking. The flow is quick success → unnecessary doubt → escalating comparison → return to the first option → dry lesson. Useful chunks are ‘which should have made ...’, ‘I was no longer ...; I was ...’, and ‘go back to ...’."
+}

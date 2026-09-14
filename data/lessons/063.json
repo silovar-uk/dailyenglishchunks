@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": 63,
+  "createdAt": "2026-09-14",
+  "title": "I Don’t Want to Rush the Decision",
+  "scene": "Someone wants an answer today, but one important piece of information is still missing. You want to keep the process moving without committing too early, so you wait for the final numbers and make the decision once you can review everything properly.",
+  "sceneJa": "今日中に判断したい一方で、まだ重要な情報がひとつ足りない場面。全体を止めるのではなく、最終的な数字を待ち、十分に確認してから判断したいと伝える。",
+  "emotions": ["careful", "practical", "responsible", "calm", "decisive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "decision-making", "clarify", "commit-to", "final-numbers", "enough-time", "rush-into", "careful-decision", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I know", "ja": "分かっています"},
+        {"en": "we’re hoping to make a decision today,", "ja": "今日中に判断したいということは"},
+        {"en": "but there’s still one thing", "ja": "ただ、まだひとつあります"},
+        {"en": "I’d like to clarify first.", "ja": "先に確認しておきたいことが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I don’t think", "ja": "〜とは思いません"},
+        {"en": "we need to delay the whole process,", "ja": "プロセス全体を遅らせる必要がある"},
+        {"en": "but I’d rather not commit to anything", "ja": "ただ、まだ何かを確定するのは避けたいです"},
+        {"en": "until we have the final numbers.", "ja": "最終的な数字がそろうまでは"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If we can get them", "ja": "もしそれらを入手できれば"},
+        {"en": "by this afternoon,", "ja": "今日の午後までに"},
+        {"en": "we should still have enough time", "ja": "それでも十分な時間があるはずです"},
+        {"en": "to review everything properly.", "ja": "全体をきちんと確認するための"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "That way,", "ja": "そうすれば"},
+        {"en": "we can make the decision", "ja": "判断できます"},
+        {"en": "without rushing into it.", "ja": "慌てて飛びつくことなく"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I’d rather not commit to anything / until we have the final numbers",
+        "I’d rather / not commit to / anything until we / have the final numbers",
+        "I’d / rather not commit / to anything until / we have the final numbers"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps ‘I’d rather not commit to anything’ as one natural preference phrase and separates the time condition that follows."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘commit to anything’ mean here?",
+      "options": [
+        "To formally decide or promise something",
+        "To contact someone",
+        "To stop the work"
+      ],
+      "answer": 0,
+      "explanation": "Here ‘commit to’ means making a firm decision or promise before all the information is available."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘without rushing into it’ suggest?",
+      "options": [
+        "Avoiding the decision completely",
+        "Making the decision without enough thought or checking",
+        "Refusing to decide today under any circumstances"
+      ],
+      "answer": 1,
+      "explanation": "‘Rush into’ means doing something too quickly, before thinking it through properly."
+    }
+  ],
+  "speak": "Sound careful but still ready to move. Acknowledge the deadline naturally in ‘we’re hoping to make a decision today’, slow slightly at ‘I’d rather not commit to anything’, and finish ‘without rushing into it’ calmly as a practical conclusion, not a refusal.",
+  "review": "Previous session: check the direction before progressing too far. Useful chunks were ‘head in the right direction’, ‘I’d rather hear it now than later’, and ‘Once we agree on the direction, ...’. Today keeps that early-check mindset but applies it to a decision: clarify what matters, avoid committing too early, and make the decision without rushing into it."
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": 64,
+  "createdAt": "2026-09-15",
+  "title": "The Seat I Politely Refused",
+  "scene": "On a crowded train, you and an older passenger repeatedly offer each other the same empty seat. After insisting that he take it, the seat becomes free again two stops later, only for you to step aside for someone else out of habit.",
+  "sceneJa": "混んだ電車で空いた席をめぐり、年配の男性と互いに譲り合う。最終的に相手に座ってもらうが、2駅後に席が再び空き、今度は別の乗客にも反射的に譲ってしまう。",
+  "emotions": ["considerate", "awkward", "determined", "amused", "resigned"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "train", "politeness", "go-ahead", "less-like-more-like", "out-of-habit", "social-awkwardness", "dry-humour"],
+  "sentences": [
+    {"chunks": [
+      {"en": "I got on a crowded train", "ja": "混んでいる電車に乗りました"},
+      {"en": "after lunch", "ja": "昼食後に"},
+      {"en": "and found myself standing", "ja": "気づけば立っていて"},
+      {"en": "near the door.", "ja": "ドアの近くに"}
+    ]},
+    {"chunks": [
+      {"en": "At the next station,", "ja": "次の駅で"},
+      {"en": "a seat became available,", "ja": "席がひとつ空きました"},
+      {"en": "but an older man was standing", "ja": "ただ、年配の男性が立っていて"},
+      {"en": "slightly closer to it than I was.", "ja": "私より少しその席に近いところに"}
+    ]},
+    {"chunks": [
+      {"en": "I stepped back", "ja": "私は一歩下がりました"},
+      {"en": "to let him take it,", "ja": "彼に座ってもらおうと"},
+      {"en": "and he immediately stepped back", "ja": "すると彼もすぐ一歩下がり"},
+      {"en": "to let me take it.", "ja": "私に座らせようとしました"}
+    ]},
+    {"chunks": [
+      {"en": "We both smiled", "ja": "二人とも笑って"},
+      {"en": "and made the same small gesture", "ja": "同じ小さな仕草をしました"},
+      {"en": "towards the empty seat.", "ja": "空いている席に向かって"}
+    ]},
+    {"chunks": [
+      {"en": "I said, ‘Please, go ahead,’", "ja": "私は『どうぞ、お先に』と言い"},
+      {"en": "and he replied, ‘No, no, you first,’", "ja": "彼は『いやいや、お先に』と返しました"},
+      {"en": "with enough confidence", "ja": "十分な自信を込めて"},
+      {"en": "to make this surprisingly difficult.", "ja": "この状況を妙に難しくするほどの"}
+    ]},
+    {"chunks": [
+      {"en": "By this point,", "ja": "この時点では"},
+      {"en": "sitting down myself", "ja": "自分が座ることは"},
+      {"en": "would have felt less like accepting a seat", "ja": "席を譲ってもらうというより"},
+      {"en": "and more like losing a negotiation.", "ja": "交渉に負けることのように感じられました"}
+    ]},
+    {"chunks": [
+      {"en": "So I insisted once more,", "ja": "そこで私はもう一度譲り"},
+      {"en": "he thanked me,", "ja": "彼は礼を言い"},
+      {"en": "and finally sat down", "ja": "ようやく座りました"},
+      {"en": "with a slightly puzzled expression.", "ja": "少し不思議そうな表情で"}
+    ]},
+    {"chunks": [
+      {"en": "Two stations later,", "ja": "2駅後"},
+      {"en": "he got off the train,", "ja": "彼は電車を降り"},
+      {"en": "leaving the seat empty", "ja": "席は空いたままになりました"},
+      {"en": "directly in front of me.", "ja": "私の目の前で"}
+    ]},
+    {"chunks": [
+      {"en": "I was about to sit down", "ja": "私は座ろうとしたところ"},
+      {"en": "when another passenger moved towards it,", "ja": "別の乗客がその席へ向かってきたので"},
+      {"en": "so I stepped aside", "ja": "私は道を譲りました"},
+      {"en": "out of what was now apparently habit.", "ja": "どうやらもう習慣になっていたらしく"}
+    ]},
+    {"chunks": [
+      {"en": "I remained standing", "ja": "私は立ったままでした"},
+      {"en": "for the rest of the journey,", "ja": "目的地までずっと"},
+      {"en": "which at least proved", "ja": "少なくとも、それで証明できました"},
+      {"en": "that I had been extremely polite.", "ja": "自分が非常に礼儀正しかったことを"}
+    ]}
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "sitting down myself / would have felt less like accepting a seat / and more like losing a negotiation",
+        "sitting / down myself would / have felt less like / accepting a seat and more like losing a negotiation",
+        "sitting down / myself would have felt / less like accepting / a seat and more like losing a negotiation"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the subject, the ‘less like ...’ comparison, and the ‘more like ...’ contrast in natural meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘go ahead’ mean here?",
+      "options": [
+        "Please do it before me",
+        "Please move farther down the train",
+        "Please explain what happened"
+      ],
+      "answer": 0,
+      "explanation": "‘Go ahead’ is a natural way to invite someone to act first, such as taking a seat, entering a door, or ordering."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "Because the speaker treats standing for the whole journey as evidence of excellent manners",
+        "Because the older man had reserved the seat",
+        "Because nobody else wanted to sit down"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour comes from reframing an inconvenient outcome as proof that the speaker was impressively polite."
+    }
+  ],
+  "speak": "Start in a normal, observant tone. Let the mutual seat-offering sound lightly awkward rather than dramatic. Give a small pause after ‘By this point’ and keep ‘losing a negotiation’ dry. Read the final sentence calmly, as though remaining standing were a perfectly satisfactory result.",
+  "review": "Previous session: overthinking a birthday gift turned a simple purchase into a risk assessment. Today shifts from private overthinking to social politeness: a tiny courtesy becomes a miniature negotiation. Useful chunks are ‘go ahead’, ‘less like A and more like B’, and ‘out of habit’."
+}

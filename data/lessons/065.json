@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": 65,
+  "createdAt": "2026-09-15",
+  "title": "Let’s Not Solve the Wrong Problem",
+  "scene": "A teammate suggests a reasonable quick solution, but you are not yet sure the real problem has been identified. Before deciding what to change, you want to observe where people are actually getting stuck and check whether the issue is the system itself or how it is being used.",
+  "sceneJa": "チームメンバーから妥当そうな解決案が出たものの、まだ本当の問題を特定できているか確信がない場面。何を変えるか決める前に、実際にどこで人がつまずいているのかを確認し、システム自体の問題なのか使い方の問題なのかを見極める。",
+  "emotions": ["curious", "careful", "constructive", "analytical", "open"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "problem-definition", "reasonable-solution", "identify-the-real-problem", "worth-looking-at", "get-stuck", "less-to-do-with", "if-thats-the-case", "conversation"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "That sounds like a reasonable solution,", "ja": "それは妥当な解決策に思えます"},
+        {"en": "but I’m not sure", "ja": "ただ、確信がありません"},
+        {"en": "we’ve identified the real problem yet.", "ja": "まだ本当の問題を特定できているかどうか"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Before we decide what to change,", "ja": "何を変えるか決める前に"},
+        {"en": "it might be worth looking at", "ja": "見てみる価値がありそうです"},
+        {"en": "where people are actually getting stuck.", "ja": "実際にどこで人がつまずいているのか"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "We may find", "ja": "分かるかもしれません"},
+        {"en": "that the issue has less to do with the system itself", "ja": "問題はシステム自体よりも"},
+        {"en": "and more to do with", "ja": "むしろ〜との関係が大きいと"},
+        {"en": "how we’re using it.", "ja": "私たちがそれをどう使っているか"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If that’s the case,", "ja": "もしそうなら"},
+        {"en": "a small change in the process", "ja": "プロセスの小さな変更だけで"},
+        {"en": "might be enough.", "ja": "十分かもしれません"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "it might be worth looking at / where people are actually getting stuck",
+        "it might / be worth looking / at where people are / actually getting stuck",
+        "it / might be worth / looking at where / people are actually getting stuck"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps ‘it might be worth looking at’ as one natural suggestion phrase and separates the object clause that follows."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘less to do with A and more to do with B’ mean?",
+      "options": [
+        "Neither A nor B is relevant",
+        "The issue is more closely related to B than to A",
+        "A should be reduced and B should be increased"
+      ],
+      "answer": 1,
+      "explanation": "The phrase reframes the cause by saying B is more relevant than A."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker want to see where people are getting stuck?",
+      "options": [
+        "To identify who made a mistake",
+        "To make the solution larger",
+        "To confirm what problem actually needs to be solved"
+      ],
+      "answer": 2,
+      "explanation": "The speaker wants evidence about the real problem before choosing a solution."
+    }
+  ],
+  "speak": "Sound curious rather than argumentative. Accept the idea naturally in ‘That sounds like a reasonable solution’, pause slightly before ‘but I’m not sure’, and make the contrast clear in ‘less to do with the system itself’ and ‘more to do with how we’re using it’. Finish ‘If that’s the case’ as a calm reframing, not a correction.",
+  "review": "Previous session: do not commit before the information that matters is available. Useful chunks were ‘I’d like to clarify one thing first’, ‘I’d rather not commit to anything yet’, and ‘without rushing into it’. Today applies the same caution one step earlier: do not rush the problem definition either. Useful chunks are ‘It might be worth looking at ...’, ‘less to do with A and more to do with B’, and ‘If that’s the case, ...’."
+}

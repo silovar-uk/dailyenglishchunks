@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": 66,
+  "createdAt": "2026-09-16",
+  "title": "The Parcel I Was Definitely Home For",
+  "scene": "You stay home all morning for a parcel with a three-hour delivery window. After avoiding anything that might make you miss the intercom, you step into the kitchen for less than a minute and discover that the delivery attempt happened at exactly that moment.",
+  "sceneJa": "9時から12時の宅配を受け取るため午前中ずっと家にいる。インターホンを聞き逃さないよう細心の注意を払っていたのに、ほんの一瞬キッチンへ行った間に配達が来てしまう。",
+  "emotions": ["prepared", "patient", "alert", "disbelieving", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "delivery", "parcel", "so-as-not-to", "the-moment", "just-in-case", "timing", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I was expecting a parcel", "ja": "荷物が届く予定でした"},
+        {"en": "between nine and twelve,", "ja": "9時から12時の間に"},
+        {"en": "so I arranged my morning", "ja": "そこで午前中の予定を組みました"},
+        {"en": "around staying at home.", "ja": "家にいることを前提に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I kept my phone nearby", "ja": "スマホを近くに置き"},
+        {"en": "and turned the intercom volume up", "ja": "インターホンの音量を上げました"},
+        {"en": "so as not to miss", "ja": "聞き逃さないように"},
+        {"en": "the delivery driver.", "ja": "配達員を"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I even avoided taking a shower", "ja": "シャワーを浴びることさえ避けました"},
+        {"en": "or putting on headphones,", "ja": "ヘッドホンをつけることも"},
+        {"en": "just in case", "ja": "念のため"},
+        {"en": "the bell rang.", "ja": "呼び鈴が鳴った場合に備えて"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "At about quarter to twelve,", "ja": "12時15分前ごろ"},
+        {"en": "the tracking page said", "ja": "追跡ページには表示されました"},
+        {"en": "the parcel was out for delivery,", "ja": "荷物が配達中だと"},
+        {"en": "so I became unusually attentive to every sound outside.", "ja": "そこで外の物音すべてに妙に敏感になりました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "A few minutes later,", "ja": "数分後"},
+        {"en": "I went to the kitchen", "ja": "キッチンへ行きました"},
+        {"en": "for a glass of water.", "ja": "水を一杯取るために"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The moment I came back,", "ja": "戻ってきたその瞬間"},
+        {"en": "my phone showed a notification", "ja": "スマホに通知が出ていました"},
+        {"en": "saying that delivery", "ja": "配達が"},
+        {"en": "had been attempted.", "ja": "試みられたという"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I checked the front door", "ja": "玄関を確認すると"},
+        {"en": "and found a missed-delivery card", "ja": "不在票がありました"},
+        {"en": "with 11:47 written on it.", "ja": "11時47分と書かれた"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I looked at the card,", "ja": "不在票を見て"},
+        {"en": "then at the clock,", "ja": "それから時計を見て"},
+        {"en": "as if either of them", "ja": "まるでどちらかが"},
+        {"en": "might reconsider what had happened.", "ja": "起きたことを考え直してくれるかのように"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I rescheduled the parcel", "ja": "荷物を再配達にして"},
+        {"en": "for the same three-hour window", "ja": "同じ3時間の時間帯で"},
+        {"en": "the next morning.", "ja": "翌朝に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It was reassuring to learn", "ja": "ある意味では安心しました"},
+        {"en": "that a three-hour delivery window", "ja": "3時間の配達時間帯でも"},
+        {"en": "could still depend", "ja": "結局は左右されるのだと分かって"},
+        {"en": "on one particular thirty-second interval.", "ja": "特定の30秒間に"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "I turned the intercom volume up / so as not to miss / the delivery driver",
+        "I turned / the intercom volume up so / as not to / miss the delivery driver",
+        "I turned the intercom / volume up so as / not to miss the / delivery driver"
+      ],
+      "answer": 0,
+      "explanation": "‘Turn the intercom volume up’ is one action, and ‘so as not to miss ...’ clearly expresses its purpose."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘just in case the bell rang’ mean?",
+      "options": [
+        "Because the bell had already rung",
+        "As a precaution in case the bell might ring",
+        "Because the speaker wanted the bell to ring"
+      ],
+      "answer": 1,
+      "explanation": "‘Just in case’ introduces a precaution taken because something might happen."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence dryly funny?",
+      "options": [
+        "It treats an absurdly precise missed moment as reassuring information",
+        "It says delivery windows are always exactly thirty seconds long",
+        "It suggests the speaker was happy to miss the parcel"
+      ],
+      "answer": 0,
+      "explanation": "The humour comes from calmly praising the precision of a system that required the speaker to be available for one tiny moment inside a three-hour window."
+    }
+  ],
+  "speak": "Start practical and prepared. Let ‘just in case’ sound slightly cautious rather than dramatic. Pause after ‘The moment I came back’ so the missed delivery lands clearly. Read ‘as if either of them might reconsider what had happened’ with quiet disbelief. Deliver the final sentence in an almost approving tone; the understatement makes the irony work.",
+  "review": "Flow: delivery window → careful preparation → increasing vigilance → thirty-second absence → missed delivery → calm bureaucratic irony. Useful chunks: ‘so as not to ...’, ‘just in case ...’, and ‘the moment ...’. Notice that the ending does not complain directly; it describes the absurd timing as if it were reassuring evidence of precision."
+}

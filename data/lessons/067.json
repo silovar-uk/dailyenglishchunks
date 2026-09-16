@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": 67,
+  "createdAt": "2026-09-16",
+  "title": "Are We Fixing the Exception or the Rule?",
+  "scene": "A problem happened once, and someone suggests changing the whole process. You want to check whether it is an isolated case or part of a recurring pattern before deciding whether a broader change is justified.",
+  "sceneJa": "一件のトラブルをきっかけに、プロセス全体を変える案が出た場面。単発の例外なのか、繰り返し起きるパターンなのかを確認してから、広い変更が妥当か判断したい。",
+  "emotions": ["analytical", "careful", "practical", "open", "evidence-based"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "decision-making", "exception", "pattern", "isolated-case", "justify-changing", "better-off", "rather-than", "make-sense"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I agree", "ja": "同意します"},
+        {"en": "that something went wrong,", "ja": "何か問題が起きたことには"},
+        {"en": "but I’m not sure", "ja": "ただ、確信はありません"},
+        {"en": "one case is enough", "ja": "一件だけで十分なのか"},
+        {"en": "to justify changing the whole process.", "ja": "プロセス全体を変える根拠として"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Before we redesign anything,", "ja": "何かを設計し直す前に"},
+        {"en": "I’d like to see", "ja": "確認したいです"},
+        {"en": "whether the same problem has come up", "ja": "同じ問題が起きているかどうか"},
+        {"en": "in other situations.", "ja": "ほかの状況でも"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "If this is an isolated case,", "ja": "もしこれが単発のケースなら"},
+        {"en": "we may be better off", "ja": "〜した方がよいかもしれません"},
+        {"en": "dealing with it separately", "ja": "個別に対応する"},
+        {"en": "rather than adding another rule for everyone.", "ja": "全員向けのルールをまた追加するより"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "On the other hand,", "ja": "一方で"},
+        {"en": "if there’s a pattern,", "ja": "もし一定のパターンがあるなら"},
+        {"en": "then a broader change", "ja": "より広い変更にも"},
+        {"en": "would make sense.", "ja": "妥当性があります"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "one case is enough / to justify changing the whole process",
+        "one case / is enough to / justify changing / the whole process",
+        "one / case is enough to justify / changing the / whole process"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps ‘one case is enough’ together and separates the purpose/result phrase ‘to justify changing the whole process’."
+    },
+    {
+      "type": "meaning",
+      "question": "What is an ‘isolated case’?",
+      "options": [
+        "A problem that keeps happening",
+        "A one-off case that is separate from a wider pattern",
+        "A problem whose cause is unknown"
+      ],
+      "answer": 1,
+      "explanation": "An isolated case is a single occurrence that does not appear to represent a broader recurring pattern."
+    },
+    {
+      "type": "meaning",
+      "question": "When does the speaker think a broader change makes sense?",
+      "options": [
+        "Whenever one problem occurs",
+        "Whenever someone proposes a change",
+        "When the same problem forms a recurring pattern"
+      ],
+      "answer": 2,
+      "explanation": "The speaker wants broader evidence—a pattern—before changing the process for everyone."
+    }
+  ],
+  "speak": "Sound analytical rather than defensive. Acknowledge the problem clearly in ‘something went wrong’, slow slightly at ‘one case is enough’, contrast ‘dealing with it separately’ with ‘another rule for everyone’, and finish ‘if there’s a pattern ... would make sense’ with an open, evidence-based tone.",
+  "review": "Previous session: check whether you are solving the right problem before choosing a solution. Useful chunks were ‘It might be worth looking at ...’, ‘less to do with A and more to do with B’, and ‘If that’s the case, ...’. Today adds one more check: even if the problem is real, is it an isolated case or part of a pattern? Useful chunks are ‘enough to justify -ing’, ‘an isolated case’, and ‘if there’s a pattern’."
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 68,
+  "createdAt": "2026-09-17",
+  "title": "The Recipe I Improved Too Early",
+  "scene": "You try a highly rated recipe, decide to improve the sauce before reading the next step, and then discover the recipe was about to add exactly the same ingredients. You follow the rest of the instructions anyway and end up with a meal that is far more intense than intended.",
+  "sceneJa": "高評価のレシピを見つけて料理を始めるが、次の手順を読む前にソースへ独自のアレンジを加える。すると、その直後の工程にまったく同じ材料が書かれており、結果として想定以上に味の濃い料理が完成する。",
+  "emotions": ["curious", "confident", "surprised", "committed", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["daily-life", "cooking", "recipe", "instead-of", "take-as-evidence", "by-then", "overconfidence", "small-mistake", "dry-humour"],
+  "sentences": [
+    {
+      "chunks": [
+        {"en": "I decided to cook something new", "ja": "何か新しい料理を作ることにしました"},
+        {"en": "for dinner", "ja": "夕食に"},
+        {"en": "and found a recipe", "ja": "そしてレシピを見つけました"},
+        {"en": "with hundreds of good reviews.", "ja": "何百件も高評価がついている"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The instructions looked simple enough,", "ja": "手順は十分簡単そうで"},
+        {"en": "and for once,", "ja": "そして珍しく"},
+        {"en": "I actually had", "ja": "実際にそろっていました"},
+        {"en": "nearly all the ingredients.", "ja": "材料がほとんど"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Halfway through preparing everything,", "ja": "準備の途中で"},
+        {"en": "I tasted the sauce", "ja": "ソースを味見して"},
+        {"en": "and thought it needed", "ja": "必要だと思いました"},
+        {"en": "a little more depth.", "ja": "もう少し深みが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Instead of trusting the recipe,", "ja": "レシピを信じる代わりに"},
+        {"en": "I added some garlic,", "ja": "ニンニクを加え"},
+        {"en": "a little soy sauce,", "ja": "少し醤油も加え"},
+        {"en": "and something spicy from the back of the fridge.", "ja": "冷蔵庫の奥にあった辛い何かも入れました"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "The sauce immediately tasted more interesting,", "ja": "ソースはすぐに味わい深くなり"},
+        {"en": "which I took", "ja": "私はそれを受け取りました"},
+        {"en": "as evidence that I knew", "ja": "自分には分かっている証拠として"},
+        {"en": "what I was doing.", "ja": "何をしているのかが"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Then I reached the next step", "ja": "ところが次の手順へ進むと"},
+        {"en": "and discovered that the recipe", "ja": "レシピには書かれていると分かりました"},
+        {"en": "was about to add", "ja": "これから加えるところだったと"},
+        {"en": "garlic, soy sauce, and chilli.", "ja": "ニンニク、醤油、唐辛子を"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "I considered reducing the amounts,", "ja": "量を減らすことも考えました"},
+        {"en": "but by then", "ja": "でもそのころには"},
+        {"en": "I had become strangely committed", "ja": "妙にこだわるようになっていました"},
+        {"en": "to my version of events.", "ja": "自分版の展開に"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "So I followed the remaining instructions exactly", "ja": "そこで残りの手順には正確に従い"},
+        {"en": "and produced a meal", "ja": "料理を完成させました"},
+        {"en": "with enough flavour", "ja": "十分すぎるほど味のある"},
+        {"en": "to survive a minor emergency.", "ja": "小規模な非常事態にも耐えられそうな"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "It wasn't bad,", "ja": "まずくはありませんでした"},
+        {"en": "but every bite seemed", "ja": "ただ、一口ごとに感じられました"},
+        {"en": "extremely determined", "ja": "非常に強い意志を持っているように"},
+        {"en": "to make its presence known.", "ja": "自分の存在を主張しようと"}
+      ]
+    },
+    {
+      "chunks": [
+        {"en": "Next time,", "ja": "次回は"},
+        {"en": "I may try the radical technique", "ja": "かなり革新的な手法を試すかもしれません"},
+        {"en": "of finishing the recipe", "ja": "まずレシピを最後まで作るという"},
+        {"en": "before improving it.", "ja": "アレンジする前に"}
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which boundary is most natural?",
+      "options": [
+        "Instead of trusting the recipe / I added some garlic / a little soy sauce / and something spicy from the back of the fridge",
+        "Instead of / trusting the recipe I / added some garlic a little / soy sauce and something spicy from the back of the fridge",
+        "Instead / of trusting / the recipe I added / some garlic a little soy sauce"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the contrast phrase ‘Instead of trusting the recipe’ together and then groups the ingredients naturally."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘which I took as evidence that I knew what I was doing’ mean?",
+      "options": [
+        "The speaker treated the better taste as proof that the improvisation was correct",
+        "The speaker found written evidence in the recipe",
+        "The speaker decided to stop cooking"
+      ],
+      "answer": 0,
+      "explanation": "‘Take A as evidence that ...’ means interpreting A as proof that something is true. Here the speaker becomes overconfident because the sauce initially tastes better."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "It says recipes should never be changed",
+        "It presents simply following the full recipe first as if it were a radical new cooking method",
+        "It suggests the meal was impossible to eat"
+      ],
+      "answer": 1,
+      "explanation": "The dry humour comes from describing the very ordinary idea of finishing the recipe before modifying it as a ‘radical technique’."
+    }
+  ],
+  "speak": "Start with mild optimism and confidence. Let ‘Instead of trusting the recipe’ sound like a small decision rather than a dramatic mistake. Give ‘which I took as evidence’ a slightly self-satisfied rhythm, then pause at ‘Then I reached the next step’ to mark the reversal. Read the final sentence very calmly, as if following a recipe before changing it really were an advanced technique.",
+  "review": "Flow: trusted recipe → early improvisation → false confidence → discovery that the recipe planned the same additions → commitment to the mistake → overly intense meal → dry lesson. Useful chunks: ‘Instead of -ing’, ‘take A as evidence that ...’, and ‘by then’. Notice how the ending does not complain about the food; it treats basic restraint as a sophisticated future strategy."
+}

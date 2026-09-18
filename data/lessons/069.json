@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": 69,
+  "createdAt": "2026-09-18",
+  "title": "We Don’t Need to Fix Everything at Once",
+  "scene": "You’ve found several problems, but trying to fix all of them now would slow the project down. You want to prioritize the biggest issue, test one change, and use the result to decide what to tackle next.",
+  "sceneJa": "改善点がいくつか見つかった場面。全部を同時に直すのではなく、まず一番大きな支障を起こしている問題に集中し、その変更の効果を見てから次に取り組むことを決めたい。",
+  "emotions": [
+    "practical",
+    "selective",
+    "calm",
+    "focused"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "prioritization",
+    "address-an-issue",
+    "noticeable-difference",
+    "tackle",
+    "decision-making",
+    "focus"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We’ve identified a few things",
+          "ja": "いくつかの点が見つかっています"
+        },
+        {
+          "en": "that could be improved,",
+          "ja": "改善できそうな"
+        },
+        {
+          "en": "but I don’t think",
+          "ja": "ただ、〜とは思いません"
+        },
+        {
+          "en": "they all need to be addressed",
+          "ja": "そのすべてに対応する必要がある"
+        },
+        {
+          "en": "at the same time.",
+          "ja": "同時に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It might make more sense",
+          "ja": "〜する方が理にかなっているかもしれません"
+        },
+        {
+          "en": "to focus on the issue",
+          "ja": "問題に集中する"
+        },
+        {
+          "en": "that is causing the most trouble",
+          "ja": "一番大きな支障を起こしている"
+        },
+        {
+          "en": "and keep the others on our list",
+          "ja": "ほかはリストに残しておく"
+        },
+        {
+          "en": "for later.",
+          "ja": "後のために"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That way,",
+          "ja": "そうすれば"
+        },
+        {
+          "en": "we can see",
+          "ja": "確認できます"
+        },
+        {
+          "en": "whether the first change makes a noticeable difference",
+          "ja": "最初の変更ではっきりした違いが出るかどうか"
+        },
+        {
+          "en": "before putting more time into the rest.",
+          "ja": "残りにさらに時間を使う前に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If it does,",
+          "ja": "もし効果があれば"
+        },
+        {
+          "en": "we’ll have a better idea",
+          "ja": "もっとよく分かるようになります"
+        },
+        {
+          "en": "of what to tackle next.",
+          "ja": "次に何へ取り組むべきか"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "they all need to be addressed / at the same time",
+        "they all / need to be / addressed at / the same time",
+        "they / all need / to be addressed at the / same time"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the core idea ‘they all need to be addressed’ together, then separates the time phrase ‘at the same time’."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘keep the others on our list for later’ mean?",
+      "options": [
+        "Ignore the other problems",
+        "Keep the other problems visible so they can be handled later",
+        "Fix every problem today"
+      ],
+      "answer": 1,
+      "explanation": "It means ‘not now’, not ‘never’: the other issues stay on the list for later attention."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker want to make one change first?",
+      "options": [
+        "To see whether it works before deciding the next priority",
+        "Because the other problems are unimportant",
+        "Because only one change is allowed"
+      ],
+      "answer": 0,
+      "explanation": "The speaker wants evidence from the first change before investing more time in the remaining issues."
+    }
+  ],
+  "speak": "Sound selective, not dismissive. Acknowledge the problems clearly, stress ‘focus on the issue that is causing the most trouble’, and give ‘makes a noticeable difference’ a little emphasis. Finish ‘what to tackle next’ with a forward-looking tone.",
+  "review": "Previous session: before changing the whole process, check whether one problem is an isolated case or part of a pattern. Useful chunks were ‘enough to justify -ing’, ‘an isolated case’, and ‘if there’s a pattern’. Today moves one step forward: even if a problem is real, does it need to be fixed now? Useful chunks are ‘address an issue’, ‘make a noticeable difference’, and ‘what to tackle next’."
+}

@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": 70,
+  "createdAt": "2026-09-18",
+  "title": "The Match I Prepared to Lose",
+  "scene": "You play table tennis with a friend who usually beats you. When you start unexpectedly well, you become suspicious of your own success, overthink the match, lose focus, then recover by returning to one point at a time.",
+  "sceneJa": "これまでほとんど勝てなかった友人と卓球をする。予想外に好調なスタートを切ったことで、むしろ自分の勝ち方を疑い始めて集中を崩すが、理由探しをやめて1ポイントずつプレーすることで立て直す。",
+  "emotions": [
+    "cautious",
+    "surprised",
+    "suspicious",
+    "self-conscious",
+    "relieved",
+    "dryly-amused"
+  ],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": [
+    "daily-life",
+    "sports",
+    "table-tennis",
+    "friends",
+    "rather-than",
+    "one-at-a-time",
+    "overthinking",
+    "expectations",
+    "dry-humour"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I played table tennis with a friend",
+          "ja": "友人と卓球をしました"
+        },
+        {
+          "en": "who had beaten me",
+          "ja": "その友人には負けていました"
+        },
+        {
+          "en": "almost every time",
+          "ja": "ほとんど毎回"
+        },
+        {
+          "en": "we had played before.",
+          "ja": "これまで一緒にやったときは"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On the way there,",
+          "ja": "向かう途中で"
+        },
+        {
+          "en": "I had already decided",
+          "ja": "すでに決めていました"
+        },
+        {
+          "en": "that my main goal",
+          "ja": "自分の主な目標は"
+        },
+        {
+          "en": "was simply to make the match competitive.",
+          "ja": "ただ試合らしい試合にすることだと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "So when I won",
+          "ja": "だから私が取ったときも"
+        },
+        {
+          "en": "the first few points,",
+          "ja": "最初の数ポイントを"
+        },
+        {
+          "en": "I assumed he was still warming up",
+          "ja": "彼はまだウォームアップ中なのだと思い"
+        },
+        {
+          "en": "and tried not to get excited.",
+          "ja": "浮かれないようにしました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then I won the first game,",
+          "ja": "ところが第1ゲームまで取ると"
+        },
+        {
+          "en": "which made me suspicious",
+          "ja": "私は疑わしくなりました"
+        },
+        {
+          "en": "rather than confident.",
+          "ja": "自信がつくというより"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I started watching him more carefully,",
+          "ja": "私は彼をより注意深く見るようになり"
+        },
+        {
+          "en": "looking for some explanation",
+          "ja": "何か説明を探しながら"
+        },
+        {
+          "en": "for why things were going",
+          "ja": "なぜ物事が進んでいるのか"
+        },
+        {
+          "en": "unexpectedly well.",
+          "ja": "予想外にうまく"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "While I was doing that,",
+          "ja": "そんなことをしている間に"
+        },
+        {
+          "en": "I stopped paying attention",
+          "ja": "私は意識を向けなくなりました"
+        },
+        {
+          "en": "to the simple things",
+          "ja": "単純なことに"
+        },
+        {
+          "en": "that had actually been working.",
+          "ja": "実際にはうまく機能していた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He won the next game comfortably,",
+          "ja": "彼は次のゲームをあっさり取り"
+        },
+        {
+          "en": "and suddenly the world",
+          "ja": "すると突然、世界が"
+        },
+        {
+          "en": "made sense again.",
+          "ja": "また筋の通ったものに見えました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I relaxed,",
+          "ja": "私は力を抜き"
+        },
+        {
+          "en": "stopped trying to explain the score,",
+          "ja": "スコアの理由を説明しようとするのをやめ"
+        },
+        {
+          "en": "and went back to playing",
+          "ja": "プレーすることに戻りました"
+        },
+        {
+          "en": "one point at a time.",
+          "ja": "1ポイントずつ"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I eventually won the match,",
+          "ja": "結局、私は試合に勝ちました"
+        },
+        {
+          "en": "which was satisfying",
+          "ja": "それはうれしいことでしたが"
+        },
+        {
+          "en": "but slightly inconvenient",
+          "ja": "少し都合が悪くもありました"
+        },
+        {
+          "en": "for the story I had prepared in my head.",
+          "ja": "頭の中で用意していた筋書きにとっては"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Apparently,",
+          "ja": "どうやら"
+        },
+        {
+          "en": "expecting to lose",
+          "ja": "負けると思っていることと"
+        },
+        {
+          "en": "is not the same thing",
+          "ja": "同じことではないようです"
+        },
+        {
+          "en": "as being particularly good at predicting the future.",
+          "ja": "未来予測が特に得意であることとは"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "Then I won the first game / which made me suspicious / rather than confident",
+        "Then I / won the first / game which made / me suspicious rather than confident",
+        "Then / I won the first game which / made me / suspicious rather than confident"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the event, its result, and the contrast in clear meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘rather than confident’ mean here?",
+      "options": [
+        "The speaker felt confident and suspicious at the same time",
+        "The speaker became suspicious instead of becoming confident",
+        "The speaker stopped caring about the match"
+      ],
+      "answer": 1,
+      "explanation": "‘Rather than’ contrasts the expected reaction with the actual one: success makes the speaker doubtful instead of confident."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "It treats the speaker’s expectation of losing as if it were a serious forecasting method",
+        "It suggests table tennis results can never be predicted",
+        "It says the friend deliberately lost the match"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour comes from calmly reframing a negative expectation as a failed attempt at predicting the future."
+    }
+  ],
+  "speak": "Start with quiet realism rather than defeatism. Let ‘rather than confident’ carry a small note of surprise. Read ‘suddenly the world made sense again’ very calmly, as if losing one game restored normal order. Slow slightly at ‘one point at a time’, then deliver the last sentence as a dry correction to your own assumptions.",
+  "review": "Flow: expected defeat → unexpected success → overthinking → loss of focus → return to basics → surprising win → dry correction of the original assumption. Useful chunks: ‘rather than ...’, ‘one ... at a time’, and ‘the story I had prepared in my head’. The humour comes from treating pessimism as if it had been a forecasting model."
+}

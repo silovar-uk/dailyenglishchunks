@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": 71,
+  "createdAt": "2026-09-19",
+  "title": "The T-shirt I Nearly Didn’t Buy",
+  "scene": "You go into a clothing shop for one plain T-shirt, overthink the colour, get pulled into a two-for-one-style discount decision, and then discover at home that you already own two very similar shirts.",
+  "sceneJa": "無地のTシャツを1枚だけ買うつもりで服屋に入る。色を考えすぎたうえ、2枚買うと安くなると言われてさらに悩み、帰宅すると似たTシャツをすでに2枚持っていたことに気づく。",
+  "emotions": [
+    "practical",
+    "uncertain",
+    "analytical",
+    "satisfied",
+    "dryly-amused"
+  ],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": [
+    "daily-life",
+    "shopping",
+    "clothes",
+    "keep-things-simple",
+    "at-the-beginning",
+    "by-the-end-of",
+    "overthinking",
+    "discount",
+    "dry-humour"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I went into a clothing shop",
+          "ja": "服屋に入りました"
+        },
+        {
+          "en": "because I needed a plain T-shirt,",
+          "ja": "無地のTシャツが必要だったので"
+        },
+        {
+          "en": "which sounded like",
+          "ja": "それは〜のように思えました"
+        },
+        {
+          "en": "a fairly simple mission.",
+          "ja": "かなり簡単なミッション"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I found one almost immediately,",
+          "ja": "ほぼすぐに1枚見つけました"
+        },
+        {
+          "en": "but there were three colours",
+          "ja": "ただ3色あり"
+        },
+        {
+          "en": "that all looked equally sensible",
+          "ja": "どれも同じくらい無難に見えました"
+        },
+        {
+          "en": "under the shop lights.",
+          "ja": "店の照明の下では"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I picked up the navy one,",
+          "ja": "ネイビーを手に取り"
+        },
+        {
+          "en": "put it back,",
+          "ja": "いったん戻し"
+        },
+        {
+          "en": "compared it with the grey one,",
+          "ja": "グレーと比べ"
+        },
+        {
+          "en": "and then picked up the navy one again.",
+          "ja": "そしてまたネイビーを手に取りました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "After a few minutes,",
+          "ja": "数分すると"
+        },
+        {
+          "en": "I started imagining",
+          "ja": "想像し始めました"
+        },
+        {
+          "en": "which colour would work better",
+          "ja": "どちらの色の方が合うか"
+        },
+        {
+          "en": "with clothes I rarely wear.",
+          "ja": "ほとんど着ない服に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That seemed unnecessarily ambitious,",
+          "ja": "それはさすがに考えすぎに思えたので"
+        },
+        {
+          "en": "so I decided to keep things simple",
+          "ja": "シンプルに考えることにして"
+        },
+        {
+          "en": "and buy the navy one",
+          "ja": "ネイビーを買うことにしました"
+        },
+        {
+          "en": "I had chosen at the beginning.",
+          "ja": "最初に選んでいた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "At the till,",
+          "ja": "レジで"
+        },
+        {
+          "en": "the cashier casually mentioned",
+          "ja": "店員が何気なく言いました"
+        },
+        {
+          "en": "that the same T-shirt was on sale",
+          "ja": "同じTシャツがセールになると"
+        },
+        {
+          "en": "if I bought two.",
+          "ja": "2枚買えば"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I went back to the shelf",
+          "ja": "棚へ戻り"
+        },
+        {
+          "en": "and spent another five minutes",
+          "ja": "さらに5分使いました"
+        },
+        {
+          "en": "deciding what colour",
+          "ja": "何色にするかを決めるのに"
+        },
+        {
+          "en": "the second unnecessary T-shirt should be.",
+          "ja": "必要のなかった2枚目のTシャツを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Eventually,",
+          "ja": "結局"
+        },
+        {
+          "en": "I bought the navy one and the grey one,",
+          "ja": "ネイビーとグレーを買い"
+        },
+        {
+          "en": "feeling oddly satisfied",
+          "ja": "妙に満足しながら"
+        },
+        {
+          "en": "with my careful decision-making.",
+          "ja": "自分の慎重な意思決定に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When I got home,",
+          "ja": "家に帰ると"
+        },
+        {
+          "en": "I opened my wardrobe",
+          "ja": "クローゼットを開け"
+        },
+        {
+          "en": "and found two very similar T-shirts",
+          "ja": "よく似たTシャツを2枚見つけました"
+        },
+        {
+          "en": "already sitting there.",
+          "ja": "すでにそこにあるのを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the end of the day,",
+          "ja": "その日が終わるころには"
+        },
+        {
+          "en": "I had four T-shirts",
+          "ja": "Tシャツが4枚になり"
+        },
+        {
+          "en": "and, rather less usefully,",
+          "ja": "そして、それほど役には立ちませんが"
+        },
+        {
+          "en": "complete confidence in my consistency.",
+          "ja": "自分の好みの一貫性には完全な自信が持てました"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "so I decided to keep things simple / and buy the navy one / I had chosen at the beginning",
+        "so I decided / to keep things / simple and buy / the navy one I had chosen at the beginning",
+        "so I / decided to keep / things simple and / buy the navy one"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the decision phrase, the action, and the description of the original choice in natural meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘keep things simple’ mean here?",
+      "options": [
+        "Avoid making the decision more complicated than necessary",
+        "Choose the cheapest item",
+        "Ask the cashier to decide"
+      ],
+      "answer": 0,
+      "explanation": "‘Keep things simple’ means avoiding unnecessary complexity. The irony is that the speaker soon makes the shopping trip complicated again."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "The speaker treats owning four similar shirts as proof of consistent taste rather than poor planning",
+        "The speaker is unhappy with all four shirts",
+        "The shop gave the speaker four shirts by mistake"
+      ],
+      "answer": 0,
+      "explanation": "The dry humour reframes a mildly pointless purchase as reassuring evidence that the speaker’s preferences are at least consistent."
+    }
+  ],
+  "speak": "Start matter-of-factly, as if buying a plain T-shirt should be easy. Let the indecision build gently rather than dramatically. Give ‘the second unnecessary T-shirt’ a small pause before ‘should be’. Read the final sentence calmly, with slight emphasis on ‘rather less usefully’ and ‘complete confidence in my consistency’.",
+  "review": "Flow: simple shopping goal → unnecessary colour analysis → return to the first choice → discount creates a second decision → confident purchase → wardrobe reveals repetition → dry reframing as consistency. Useful chunks: ‘keep things simple’, ‘at the beginning’, and ‘by the end of the day’. The ending avoids a dramatic failure and instead turns repetition into a strangely positive personal finding."
+}

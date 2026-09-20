@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "id": 73,
+  "createdAt": "2026-09-20",
+  "title": "The Book I Was Saving for Later",
+  "scene": "You buy a book and keep waiting for the perfect time to read it. When you finally start, a review you saw on your phone changes how you read the book, until you realise you are evaluating the review rather than simply reading.",
+  "sceneJa": "買った本を『ちゃんと楽しめる完璧なタイミング』まで取っておく。ようやく読み始める直前にスマホで否定的なレビューを見てしまい、本そのものよりレビューが正しいかを確認する読み方になっていることに気づく。",
+  "emotions": [
+    "patient",
+    "hesitant",
+    "distracted",
+    "self-aware",
+    "calm",
+    "dryly-amused"
+  ],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": [
+    "daily-life",
+    "books",
+    "reading",
+    "make-much-difference",
+    "not-so-much-as",
+    "in-the-end",
+    "overthinking",
+    "reviews",
+    "attention",
+    "dry-humour"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I bought a new book last month",
+          "ja": "先月、新しい本を買いました"
+        },
+        {
+          "en": "and decided not to start it immediately",
+          "ja": "そして、すぐには読み始めないことにしました"
+        },
+        {
+          "en": "because I wanted to read it",
+          "ja": "その本を読みたかったからです"
+        },
+        {
+          "en": "when I had enough time to enjoy it properly.",
+          "ja": "ちゃんと楽しめる十分な時間があるときに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For the next few weeks,",
+          "ja": "それから数週間"
+        },
+        {
+          "en": "I kept seeing it on my desk",
+          "ja": "机の上のその本を見るたびに"
+        },
+        {
+          "en": "and thinking that tonight",
+          "ja": "今夜は"
+        },
+        {
+          "en": "was probably not the right night.",
+          "ja": "たぶん読むのにふさわしい夜ではないと思い続けました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Sometimes I was too tired,",
+          "ja": "疲れすぎている日もあり"
+        },
+        {
+          "en": "sometimes I had other things to do,",
+          "ja": "ほかにやることがある日もあり"
+        },
+        {
+          "en": "and sometimes I simply felt",
+          "ja": "そして単にそう感じる日もありました"
+        },
+        {
+          "en": "that I should wait for a quieter evening.",
+          "ja": "もっと落ち着いた夜を待つべきだと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Yesterday,",
+          "ja": "昨日"
+        },
+        {
+          "en": "I finally had nothing planned,",
+          "ja": "ついに何の予定もなく"
+        },
+        {
+          "en": "so I made some tea",
+          "ja": "そこでお茶を入れ"
+        },
+        {
+          "en": "and picked up the book.",
+          "ja": "本を手に取りました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Before opening it,",
+          "ja": "本を開く前に"
+        },
+        {
+          "en": "I checked my phone for a minute",
+          "ja": "ほんの少しスマホを確認し"
+        },
+        {
+          "en": "and saw a review",
+          "ja": "レビューを目にしました"
+        },
+        {
+          "en": "saying the ending was disappointing.",
+          "ja": "結末が期待外れだったと書かれた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I knew one person's opinion",
+          "ja": "一人の意見など"
+        },
+        {
+          "en": "shouldn't make much difference,",
+          "ja": "大して影響しないはずだと分かっていましたが"
+        },
+        {
+          "en": "but it was surprisingly difficult",
+          "ja": "意外と難しかったです"
+        },
+        {
+          "en": "to forget that sentence.",
+          "ja": "その一文を忘れるのは"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I read the first chapter anyway,",
+          "ja": "それでも第1章を読みましたが"
+        },
+        {
+          "en": "but part of my attention",
+          "ja": "意識の一部は"
+        },
+        {
+          "en": "was already looking for signs",
+          "ja": "すでに兆候を探していました"
+        },
+        {
+          "en": "that the reviewer might be right.",
+          "ja": "そのレビューが正しいかもしれないという"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "After about twenty pages,",
+          "ja": "20ページほど読んだところで"
+        },
+        {
+          "en": "I realised I was no longer reading the book",
+          "ja": "自分はもう本を読んでいるのではなく"
+        },
+        {
+          "en": "so much as checking",
+          "ja": "むしろ確認しているのだと気づきました"
+        },
+        {
+          "en": "whether a stranger had reviewed it correctly.",
+          "ja": "知らない人のレビューが正しかったかどうかを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "So I put my phone in another room",
+          "ja": "そこでスマホを別の部屋に置き"
+        },
+        {
+          "en": "and started the chapter again,",
+          "ja": "第1章を最初から読み直しました"
+        },
+        {
+          "en": "which felt slightly excessive",
+          "ja": "少々やりすぎな気もしましたが"
+        },
+        {
+          "en": "but worked surprisingly well.",
+          "ja": "驚くほどうまくいきました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I had spent a month",
+          "ja": "私は1か月も使っていました"
+        },
+        {
+          "en": "waiting for the perfect time to read it.",
+          "ja": "その本を読む完璧な時間を待つことに"
+        },
+        {
+          "en": "In the end,",
+          "ja": "結局のところ"
+        },
+        {
+          "en": "the book mainly needed me to stop preparing to read it.",
+          "ja": "その本に必要だったのは、私が読む準備をやめることでした"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I realised I was no longer reading the book / so much as checking / whether a stranger had reviewed it correctly",
+        "I realised / I was no longer / reading the book so much / as checking whether a stranger had reviewed it correctly",
+        "I realised I was / no longer reading / the book so / much as checking"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the realisation, the contrast phrase, and the clause explaining what the speaker was actually doing in clear meaning groups."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘shouldn’t make much difference’ mean here?",
+      "options": [
+        "The review should not have much influence on the speaker",
+        "The review should change the ending of the book",
+        "The reviewer should rewrite the review"
+      ],
+      "answer": 0,
+      "explanation": "‘Make much difference’ means have a significant effect. The speaker knows one review should not strongly affect the reading experience."
+    },
+    {
+      "type": "meaning",
+      "question": "What does the speaker realise after about twenty pages?",
+      "options": [
+        "They are enjoying the book more than expected",
+        "They are paying more attention to testing the review than to reading the book itself",
+        "They have already read the book before"
+      ],
+      "answer": 1,
+      "explanation": "The review has changed the speaker’s attention: instead of simply reading, they are looking for evidence that the reviewer was right."
+    }
+  ],
+  "speak": "Start reflective and unhurried. Keep the repeated ‘sometimes ... sometimes ...’ rhythm light and natural. Slow slightly at ‘shouldn’t make much difference’, then make the contrast clear in ‘no longer reading the book / so much as checking’. Read the final sentence calmly, as a small realisation rather than a grand lesson.",
+  "review": "Flow: saving the book for the perfect moment → delaying for weeks → finally starting → review contaminates attention → recognising the new reading goal → removing the phone → dry realisation that preparation itself had become the obstacle. Useful chunks: ‘make much difference’, ‘not so much A as B’, and ‘In the end, ...’."
+}

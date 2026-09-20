@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 72,
+  "createdAt": "2026-09-20",
+  "title": "Let’s Separate What We Know from What We’re Assuming",
+  "scene": "Your team is discussing why something went wrong, but some explanations are still guesses. You want to separate confirmed facts from assumptions and use evidence to narrow down the possibilities.",
+  "sceneJa": "チームで問題の原因を話し合っているが、いくつかの説明はまだ推測の段階。分かっている事実と仮説を分け、証拠を使って可能性を絞り込みたい場面。",
+  "emotions": [
+    "curious",
+    "analytical",
+    "calm",
+    "evidence-based"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "problem-solving",
+    "assumptions",
+    "evidence",
+    "rule-out",
+    "narrow-down",
+    "critical-thinking"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We have a few possible explanations",
+          "ja": "いくつか考えられる説明があります"
+        },
+        {
+          "en": "for why this happened,",
+          "ja": "なぜこれが起きたのかについて"
+        },
+        {
+          "en": "but I think we should separate",
+          "ja": "ただ、分けた方がよいと思います"
+        },
+        {
+          "en": "what we know",
+          "ja": "分かっていることを"
+        },
+        {
+          "en": "from what we’re assuming.",
+          "ja": "推測していることから"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We know",
+          "ja": "分かっています"
+        },
+        {
+          "en": "when the problem started",
+          "ja": "いつ問題が始まったか"
+        },
+        {
+          "en": "and which users were affected,",
+          "ja": "そして、どのユーザーに影響があったか"
+        },
+        {
+          "en": "but we still don’t know",
+          "ja": "ただ、まだ分かっていません"
+        },
+        {
+          "en": "what caused it.",
+          "ja": "何が原因だったのか"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Rather than choosing",
+          "ja": "選ぶのではなく"
+        },
+        {
+          "en": "the most convincing explanation right away,",
+          "ja": "一番もっともらしい説明をすぐに"
+        },
+        {
+          "en": "let’s check",
+          "ja": "確認しましょう"
+        },
+        {
+          "en": "what evidence would support",
+          "ja": "どんな証拠なら裏付けになるのか"
+        },
+        {
+          "en": "or rule out each possibility.",
+          "ja": "または、それぞれの可能性を除外できるのか"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That should help us",
+          "ja": "そうすれば〜しやすくなるはずです"
+        },
+        {
+          "en": "narrow things down",
+          "ja": "候補を絞り込む"
+        },
+        {
+          "en": "without becoming too attached",
+          "ja": "入れ込みすぎることなく"
+        },
+        {
+          "en": "to one theory.",
+          "ja": "一つの仮説に"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "separate / what we know / from what we’re assuming",
+        "separate what / we know from / what we’re / assuming",
+        "separate what we know from what / we’re assuming"
+      ],
+      "answer": 0,
+      "explanation": "The first version clearly preserves the contrast between ‘what we know’ and ‘what we’re assuming’."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘rule out a possibility’ mean?",
+      "options": [
+        "Make it the leading possibility",
+        "Exclude it as a possibility",
+        "Explain it in more detail"
+      ],
+      "answer": 1,
+      "explanation": "To rule something out means to eliminate it from consideration because the evidence does not support it."
+    },
+    {
+      "type": "meaning",
+      "question": "Why doesn’t the speaker want to choose the most convincing explanation immediately?",
+      "options": [
+        "Because explanations are unnecessary",
+        "Because they want to test each possibility against evidence first",
+        "Because they do not need to identify the cause"
+      ],
+      "answer": 1,
+      "explanation": "The speaker wants evidence to support or eliminate possibilities before becoming attached to one explanation."
+    }
+  ],
+  "speak": "Sound curious, not suspicious. Make the contrast in ‘what we know / from what we’re assuming’ clear. Stress the pair ‘support / or rule out’, then slow slightly at ‘without becoming too attached / to one theory’.",
+  "review": "Previous work-focused session: decide in advance what kind of evidence would justify changing your mind. Useful chunks were ‘what would make us reconsider it’, ‘be willing to adjust the plan’, and ‘strong enough to change our minds’. Today goes one step earlier: before asking what evidence would change your mind, ask what evidence you actually have."
+}

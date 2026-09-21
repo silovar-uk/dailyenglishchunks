@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": 75,
+  "createdAt": "2026-09-22",
+  "title": "The Bench I Was Too Polite to Leave",
+  "scene": "You sit on a park bench with time to spare before meeting a friend. An elderly man starts chatting, and you keep waiting for a natural break in the conversation because leaving feels rude, only to discover he is perfectly comfortable when you finally say you have to go.",
+  "sceneJa": "友人との待ち合わせまで時間があり、公園のベンチで休んでいると高齢の男性に話しかけられる。帰るタイミングを逃し続けるが、いざ『行かなければ』と伝えると、相手はまったく気にしていなかった。",
+  "emotions": [
+    "relaxed",
+    "polite",
+    "slightly-trapped",
+    "self-conscious",
+    "relieved",
+    "dryly-amused"
+  ],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": [
+    "daily-life",
+    "park",
+    "conversation",
+    "social-pressure",
+    "time-to-spare",
+    "natural-break",
+    "comfortable-with",
+    "politeness",
+    "dry-humour"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I stopped at a small park",
+          "ja": "小さな公園に立ち寄りました"
+        },
+        {
+          "en": "on my way home",
+          "ja": "帰宅途中に"
+        },
+        {
+          "en": "because I had about twenty minutes to spare",
+          "ja": "20分ほど時間に余裕があったので"
+        },
+        {
+          "en": "before meeting a friend.",
+          "ja": "友人と会う前に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I found an empty bench",
+          "ja": "空いているベンチを見つけ"
+        },
+        {
+          "en": "under a large tree,",
+          "ja": "大きな木の下で"
+        },
+        {
+          "en": "sat down with a coffee,",
+          "ja": "コーヒーを持って座り"
+        },
+        {
+          "en": "and immediately felt rather pleased with the arrangement.",
+          "ja": "すぐに、なかなか良い選択だったと思いました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "A few minutes later,",
+          "ja": "数分後"
+        },
+        {
+          "en": "an elderly man sat beside me",
+          "ja": "高齢の男性が隣に座り"
+        },
+        {
+          "en": "and asked whether",
+          "ja": "そして尋ねました"
+        },
+        {
+          "en": "I came to the park often.",
+          "ja": "この公園によく来るのかと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I said not really,",
+          "ja": "『それほどでも』と答え"
+        },
+        {
+          "en": "expecting that to be",
+          "ja": "それが〜になると思っていました"
+        },
+        {
+          "en": "the beginning and end",
+          "ja": "始まりであり終わりに"
+        },
+        {
+          "en": "of our conversation.",
+          "ja": "私たちの会話の"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Instead, he told me",
+          "ja": "ところが彼は話してくれました"
+        },
+        {
+          "en": "about the pond, the local cats,",
+          "ja": "池や近所の猫について"
+        },
+        {
+          "en": "three different cafés nearby,",
+          "ja": "近くにある3軒のカフェについて"
+        },
+        {
+          "en": "and a surprisingly complicated dispute about some pigeons.",
+          "ja": "そして鳩をめぐる意外に複雑な揉め事について"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "After about fifteen minutes,",
+          "ja": "15分ほど経ったところで"
+        },
+        {
+          "en": "I realised I needed to leave,",
+          "ja": "そろそろ出なければならないと気づきました"
+        },
+        {
+          "en": "but he had just reached",
+          "ja": "しかし彼はちょうど差しかかっていました"
+        },
+        {
+          "en": "what seemed to be an important part of the pigeon story.",
+          "ja": "鳩の話の重要そうな部分に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I kept waiting",
+          "ja": "私は待ち続けました"
+        },
+        {
+          "en": "for a natural break in the conversation,",
+          "ja": "会話が自然に切れる瞬間を"
+        },
+        {
+          "en": "but every possible ending",
+          "ja": "でも終わりそうになるたびに"
+        },
+        {
+          "en": "appeared to contain another pigeon.",
+          "ja": "新しい鳩が登場するようでした"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Eventually,",
+          "ja": "結局"
+        },
+        {
+          "en": "I apologised and said I had to go,",
+          "ja": "謝って、もう行かなければならないと言うと"
+        },
+        {
+          "en": "and he simply smiled",
+          "ja": "彼はただ笑って"
+        },
+        {
+          "en": "and said, \"Of course. Have a good evening.\"",
+          "ja": "『もちろん。良い夜を』と言いました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I had spent ten extra minutes",
+          "ja": "私は10分余計に使っていました"
+        },
+        {
+          "en": "worrying that leaving would seem rude,",
+          "ja": "途中で帰ったら失礼に見えるのではと心配することに"
+        },
+        {
+          "en": "while he appeared completely comfortable",
+          "ja": "一方で彼はまったく気にしていないようでした"
+        },
+        {
+          "en": "with the idea that conversations sometimes end.",
+          "ja": "会話はいずれ終わるということを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It was a useful reminder",
+          "ja": "それは有益な気づきでした"
+        },
+        {
+          "en": "that some social pressure",
+          "ja": "社会的なプレッシャーの一部は"
+        },
+        {
+          "en": "is generously provided",
+          "ja": "親切にも提供されているのだと"
+        },
+        {
+          "en": "by ourselves.",
+          "ja": "自分自身によって"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I kept waiting / for a natural break in the conversation / but every possible ending / appeared to contain another pigeon",
+        "I kept / waiting for a natural / break in the conversation but / every possible ending appeared to contain another pigeon",
+        "I kept waiting for / a natural break / in the conversation but every / possible ending"
+      ],
+      "answer": 0,
+      "explanation": "The first version separates the ongoing action, the thing the speaker is waiting for, and the humorous contrast that follows."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘have time to spare’ mean?",
+      "options": [
+        "Have some extra time available",
+        "Be exactly on time with no extra time",
+        "Have forgotten what time it is"
+      ],
+      "answer": 0,
+      "explanation": "‘Have time to spare’ means having extra time beyond what you need."
+    },
+    {
+      "type": "meaning",
+      "question": "What does the speaker realise at the end?",
+      "options": [
+        "The man was offended when the speaker left",
+        "The pressure to stay had mostly come from the speaker's own assumptions",
+        "The pigeon story was more important than the meeting"
+      ],
+      "answer": 1,
+      "explanation": "The man accepts the goodbye easily, showing that much of the awkwardness existed in the speaker’s own expectations."
+    }
+  ],
+  "speak": "Start relaxed and conversational. Let the pigeon story build with mild amusement rather than irritation. Slow slightly at ‘a natural break in the conversation’. Read ‘every possible ending appeared to contain another pigeon’ very straight. In the final two sentences, sound reflective and lightly self-aware, not preachy.",
+  "review": "Flow: spare time → friendly conversation → difficulty finding an exit → self-imposed politeness pressure → easy goodbye → dry realisation. Useful chunks: ‘have time to spare’, ‘a natural break in the conversation’, and ‘appear comfortable with ...’. The humour comes from discovering that the social rule causing the pressure may have existed mostly in the speaker’s own head."
+}

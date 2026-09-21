@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "id": 74,
+  "createdAt": "2026-09-21",
+  "title": "The Audio Guide I Believed for Too Long",
+  "scene": "At a small art museum, you enter the wrong number on an audio guide while standing in front of an abstract painting. Instead of assuming the guide is wrong, you spend several minutes trying to find an eighteenth-century merchant and his dog in the painting before noticing the mistake.",
+  "sceneJa": "小さな美術館で抽象画の前に立ち、音声ガイドの番号を間違えて入力する。ガイドが間違っているとは考えず、絵の中に18世紀の商人や犬を数分間探し続けた末、ようやく番号違いに気づく。",
+  "emotions": [
+    "curious",
+    "earnest",
+    "confused",
+    "committed",
+    "self-aware",
+    "dryly-amused"
+  ],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": [
+    "daily-life",
+    "museum",
+    "art",
+    "audio-guide",
+    "make-sense-of",
+    "take-at-face-value",
+    "turn-out-to",
+    "misunderstanding",
+    "attention",
+    "dry-humour"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I went to a small art museum",
+          "ja": "小さな美術館へ行きました"
+        },
+        {
+          "en": "on Sunday afternoon",
+          "ja": "日曜の午後に"
+        },
+        {
+          "en": "and borrowed an audio guide",
+          "ja": "そして音声ガイドを借りました"
+        },
+        {
+          "en": "so I could understand a little more than I usually do.",
+          "ja": "いつもより少しは理解できるように"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "In the second gallery,",
+          "ja": "2つ目の展示室で"
+        },
+        {
+          "en": "I stopped in front of a large abstract painting",
+          "ja": "大きな抽象画の前で立ち止まり"
+        },
+        {
+          "en": "and entered the number",
+          "ja": "番号を入力しました"
+        },
+        {
+          "en": "printed beside it.",
+          "ja": "その横に書かれていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The guide began describing",
+          "ja": "ガイドは説明し始めました"
+        },
+        {
+          "en": "an eighteenth-century merchant",
+          "ja": "18世紀の商人について"
+        },
+        {
+          "en": "wearing a dark blue coat",
+          "ja": "濃い青のコートを着た"
+        },
+        {
+          "en": "and standing beside a window.",
+          "ja": "窓のそばに立っている"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "This did not immediately match",
+          "ja": "それはすぐには一致しませんでした"
+        },
+        {
+          "en": "the collection of red and yellow shapes",
+          "ja": "赤や黄色の形が並ぶ作品とは"
+        },
+        {
+          "en": "in front of me,",
+          "ja": "目の前にある"
+        },
+        {
+          "en": "but I assumed I was missing something.",
+          "ja": "でも自分が何かを見落としているのだと思いました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I looked more carefully",
+          "ja": "私はもっと注意深く見て"
+        },
+        {
+          "en": "and tried to make sense of",
+          "ja": "意味を見つけようとしました"
+        },
+        {
+          "en": "which part might represent",
+          "ja": "どの部分が表しているのか"
+        },
+        {
+          "en": "the merchant's coat.",
+          "ja": "商人のコートを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then the guide mentioned",
+          "ja": "するとガイドは言及しました"
+        },
+        {
+          "en": "a small hunting dog",
+          "ja": "小さな猟犬に"
+        },
+        {
+          "en": "near the man's feet,",
+          "ja": "男性の足元にいる"
+        },
+        {
+          "en": "which made the exercise considerably harder.",
+          "ja": "それでこの作業はかなり難しくなりました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For another minute,",
+          "ja": "さらに1分ほど"
+        },
+        {
+          "en": "I took the commentary at face value",
+          "ja": "私は解説をそのまま信じ"
+        },
+        {
+          "en": "and searched the painting",
+          "ja": "絵の中を探しました"
+        },
+        {
+          "en": "for a particularly abstract dog.",
+          "ja": "かなり抽象的な犬を"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Eventually,",
+          "ja": "やがて"
+        },
+        {
+          "en": "I noticed that I had entered 18",
+          "ja": "18番を入力していたことに気づき"
+        },
+        {
+          "en": "instead of 81,",
+          "ja": "81番ではなく"
+        },
+        {
+          "en": "which explained almost everything.",
+          "ja": "それでほぼすべての説明がつきました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The correct recording said",
+          "ja": "正しい音声ガイドは言いました"
+        },
+        {
+          "en": "that the painting invited viewers",
+          "ja": "この絵は鑑賞者に促していると"
+        },
+        {
+          "en": "to form their own interpretations.",
+          "ja": "自分なりの解釈を作ることを"
+        },
+        {
+          "en": "I felt unusually well prepared for that.",
+          "ja": "その点については、私は妙に準備万端だと感じました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I had spent several minutes",
+          "ja": "私は数分間を費やしていました"
+        },
+        {
+          "en": "finding a businessman and a dog",
+          "ja": "商人と犬を見つけることに"
+        },
+        {
+          "en": "in a painting that contained neither,",
+          "ja": "そのどちらも描かれていない絵の中で"
+        },
+        {
+          "en": "so imagination was clearly not the problem.",
+          "ja": "つまり想像力だけは問題ではなかったようです"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I took the commentary at face value / and searched the painting / for a particularly abstract dog",
+        "I took / the commentary at / face value and searched / the painting for a particularly abstract dog",
+        "I took the commentary / at face / value and searched the painting / for a particularly abstract dog"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps the fixed phrase ‘take something at face value’ together and then separates the action that follows."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘take the commentary at face value’ mean here?",
+      "options": [
+        "Accept the commentary as correct without questioning it",
+        "Ignore the commentary completely",
+        "Translate the commentary into simpler English"
+      ],
+      "answer": 0,
+      "explanation": "To take something at face value means to accept it as it appears, without checking whether it is actually correct."
+    },
+    {
+      "type": "meaning",
+      "question": "Why is the final sentence funny?",
+      "options": [
+        "The speaker proves they lacked imagination",
+        "The speaker had already demonstrated plenty of imagination by finding things that were not in the painting",
+        "The museum asked visitors to invent new paintings"
+      ],
+      "answer": 1,
+      "explanation": "The dry humour comes from reframing a misunderstanding as evidence that the speaker’s imagination was working perfectly well."
+    }
+  ],
+  "speak": "Start curious and relaxed. Let the mismatch become noticeable without sounding dramatic. Give ‘I assumed I was missing something’ a sincere, slightly puzzled tone. Read ‘a particularly abstract dog’ very straight. In the final two sentences, stay calm and matter-of-fact so the humour comes from the contrast rather than from performing the joke.",
+  "review": "Flow: museum visit → wrong audio-guide number → mismatch → trusting the explanation → increasingly elaborate interpretation → discovering the input error → dry reframing of the mistake as evidence of imagination. Useful chunks: ‘make sense of’, ‘take something at face value’, and ‘turn out to / explain’. The key shift is from trying harder to interpret the object to questioning the information source."
+}

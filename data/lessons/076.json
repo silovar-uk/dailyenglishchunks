@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": 76,
+  "createdAt": "2026-09-23",
+  "title": "The Jacket I Didn’t Need",
+  "scene": "The forecast says it will get much colder in the evening, so you carry a light jacket all day. You keep waiting for the weather to justify the extra baggage, only to wear the jacket for about four minutes.",
+  "sceneJa": "夕方に寒くなるという予報を信じて上着を持ち歩く。気温が下がるのを待ち続け、ようやく着たものの、結局ほとんど使わないまま一日が終わる。",
+  "emotions": [
+    "prepared",
+    "patient",
+    "slightly-annoyed",
+    "quietly-pleased",
+    "self-aware",
+    "dryly-amused"
+  ],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": [
+    "daily-life",
+    "weather",
+    "jacket",
+    "forecast",
+    "consider-doing",
+    "prove-someone-right",
+    "by-the-time",
+    "preparation",
+    "dry-humour"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "The weather forecast said",
+          "ja": "天気予報では"
+        },
+        {
+          "en": "it would get much colder in the evening,",
+          "ja": "夕方からかなり寒くなると言っていたので"
+        },
+        {
+          "en": "so I took a light jacket",
+          "ja": "薄手の上着を持って"
+        },
+        {
+          "en": "when I went out.",
+          "ja": "出かけました"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By lunchtime,",
+          "ja": "昼になっても"
+        },
+        {
+          "en": "it was still warm enough",
+          "ja": "まだ十分暖かく"
+        },
+        {
+          "en": "that I had to carry the jacket",
+          "ja": "上着を持ち歩くことになりました"
+        },
+        {
+          "en": "over my arm.",
+          "ja": "腕にかけて"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I considered leaving it",
+          "ja": "それを置いていこうかとも考えました"
+        },
+        {
+          "en": "in a locker at the station,",
+          "ja": "駅のロッカーに"
+        },
+        {
+          "en": "but the forecast seemed quite confident",
+          "ja": "でも予報はかなり自信ありげでした"
+        },
+        {
+          "en": "about the temperature dropping later.",
+          "ja": "このあと気温が下がることに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "So I carried it",
+          "ja": "そこで私は上着を持ち続けました"
+        },
+        {
+          "en": "through a café, two shops,",
+          "ja": "カフェと2軒の店を通り"
+        },
+        {
+          "en": "and a rather crowded train,",
+          "ja": "かなり混んだ電車にも乗り"
+        },
+        {
+          "en": "waiting for the weather to prove me right.",
+          "ja": "天気が自分の判断を正しかったことにしてくれるのを待ちながら"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "In the early evening,",
+          "ja": "夕方になって"
+        },
+        {
+          "en": "the temperature finally started to fall,",
+          "ja": "ようやく気温が下がり始め"
+        },
+        {
+          "en": "and I felt quietly pleased",
+          "ja": "私はひそかに満足しました"
+        },
+        {
+          "en": "with my preparation.",
+          "ja": "自分の準備に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I put the jacket on",
+          "ja": "上着を着ると"
+        },
+        {
+          "en": "and immediately noticed",
+          "ja": "すぐに気づきました"
+        },
+        {
+          "en": "that the café was much warmer",
+          "ja": "カフェの中はずっと暖かいと"
+        },
+        {
+          "en": "than it had been outside.",
+          "ja": "外よりも"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When I left the café,",
+          "ja": "カフェを出ると"
+        },
+        {
+          "en": "I took it off again",
+          "ja": "また上着を脱ぎました"
+        },
+        {
+          "en": "because I had to hurry for the train",
+          "ja": "電車に急がなければならず"
+        },
+        {
+          "en": "and was getting too warm.",
+          "ja": "暑くなってきたので"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I reached home,",
+          "ja": "家に着くころには"
+        },
+        {
+          "en": "I had carried it for nearly six hours",
+          "ja": "上着を6時間近く持ち歩き"
+        },
+        {
+          "en": "and worn it",
+          "ja": "着ていたのは"
+        },
+        {
+          "en": "for approximately four minutes.",
+          "ja": "約4分でした"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Still,",
+          "ja": "とはいえ"
+        },
+        {
+          "en": "the forecast had technically been correct,",
+          "ja": "天気予報は厳密には正しかったので"
+        },
+        {
+          "en": "which was reassuring",
+          "ja": "それは安心できる結果でした"
+        },
+        {
+          "en": "for everyone except the person carrying the jacket.",
+          "ja": "上着を持ち歩いていた本人以外にとっては"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I hung it by the door",
+          "ja": "私は上着を玄関に掛けました"
+        },
+        {
+          "en": "ready for tomorrow,",
+          "ja": "明日に備えて"
+        },
+        {
+          "en": "because apparently",
+          "ja": "どうやら"
+        },
+        {
+          "en": "we had both learned nothing.",
+          "ja": "私も上着も何ひとつ学んでいなかったらしいので"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "I considered leaving it / in a locker at the station / but the forecast seemed quite confident / about the temperature dropping later",
+        "I considered / leaving it in a / locker at the station but / the forecast seemed quite confident",
+        "I considered leaving / it in a locker / at the station but the / forecast seemed"
+      ],
+      "answer": 0,
+      "explanation": "The first version follows the meaning units: the considered action, the location, and the contrast about the forecast."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘prove me right’ mean here?",
+      "options": [
+        "Show that my judgment was correct",
+        "Correct my English",
+        "Win an argument with me"
+      ],
+      "answer": 0,
+      "explanation": "‘Prove someone right’ means that later evidence shows their judgment or prediction was correct."
+    },
+    {
+      "type": "meaning",
+      "question": "What is the joke in the final sentence?",
+      "options": [
+        "The jacket was damaged",
+        "The speaker plans to repeat the same behaviour despite the day's lesson",
+        "The forecast for tomorrow is definitely wrong"
+      ],
+      "answer": 1,
+      "explanation": "The speaker recognises the absurdity but still prepares to do exactly the same thing again."
+    }
+  ],
+  "speak": "Start practical and matter-of-fact. Build mild frustration as the jacket becomes extra baggage. Give ‘approximately four minutes’ a dry, precise delivery. Keep the last sentence calm and understated.",
+  "review": "Flow: forecast → carrying the jacket → waiting for vindication → brief use → numerical anticlimax → repeat the same behaviour. Useful chunks: ‘consider doing ...’, ‘prove someone right’, and ‘by the time ...’. The humour comes from treating a tiny inconvenience with excessive patience and then learning absolutely nothing from it."
+}

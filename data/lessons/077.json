@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": 77,
+  "createdAt": "2026-09-23",
+  "title": "Let’s Agree on What Success Looks Like",
+  "scene": "You are about to try something new, but you want to decide how you will judge the result before you start.",
+  "sceneJa": "新しい取り組みを小さく試す前に、結果を見てから評価基準を動かさないよう、何をもって成功とするかをあらかじめ決めておく場面。",
+  "emotions": [
+    "practical",
+    "neutral",
+    "analytical",
+    "calm"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "testing",
+    "success-criteria",
+    "evidence",
+    "in-advance",
+    "decision-making"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "Before we run the test,",
+          "ja": "テストを実施する前に"
+        },
+        {
+          "en": "let’s agree",
+          "ja": "合意しておきましょう"
+        },
+        {
+          "en": "on what success would actually look like.",
+          "ja": "実際にどんな状態なら成功と言えるのかについて"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We don’t need",
+          "ja": "必要ありません"
+        },
+        {
+          "en": "a perfect target,",
+          "ja": "完璧な目標値は"
+        },
+        {
+          "en": "but we should decide",
+          "ja": "ただ、決めておくべきです"
+        },
+        {
+          "en": "which changes would be meaningful enough",
+          "ja": "どの程度の変化なら十分に意味があるのか"
+        },
+        {
+          "en": "to continue.",
+          "ja": "続けるために"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Otherwise,",
+          "ja": "そうでなければ"
+        },
+        {
+          "en": "we might end up interpreting",
+          "ja": "結局、解釈することになりかねません"
+        },
+        {
+          "en": "the same result differently",
+          "ja": "同じ結果を違うように"
+        },
+        {
+          "en": "depending on what we hoped would happen.",
+          "ja": "何が起きてほしかったかによって"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Having a rough standard in advance",
+          "ja": "あらかじめ大まかな基準を持っておくことが"
+        },
+        {
+          "en": "should make",
+          "ja": "〜してくれるはずです"
+        },
+        {
+          "en": "the final decision",
+          "ja": "最終判断を"
+        },
+        {
+          "en": "much easier.",
+          "ja": "ずっと簡単に"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "let’s agree / on what success would actually look like",
+        "let’s / agree on what / success would / actually look like",
+        "let’s agree on / what success / would actually / look like"
+      ],
+      "answer": 0,
+      "explanation": "‘agree on’ introduces the thing the group will agree about, and the following clause works naturally as one meaning unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘end up interpreting’ mean here?",
+      "options": [
+        "Stop interpreting it",
+        "Eventually find yourself interpreting it",
+        "Interpret it correctly from the start"
+      ],
+      "answer": 1,
+      "explanation": "‘End up -ing’ means that something eventually happens or becomes the result, often without being the original intention."
+    },
+    {
+      "type": "meaning",
+      "question": "Why does the speaker want a standard in advance?",
+      "options": [
+        "To guarantee the test succeeds",
+        "To avoid changing the interpretation after seeing the result",
+        "To make the target as difficult as possible"
+      ],
+      "answer": 1,
+      "explanation": "Setting a rough standard beforehand reduces the temptation to judge the same result differently depending on what you hoped would happen."
+    }
+  ],
+  "speak": "Sound practical and neutral. Give slight emphasis to ‘success’ in ‘what success would actually look like’ and to ‘meaningful enough’. In the third sentence, keep the meaning flowing through ‘depending on what we hoped would happen’.",
+  "review": "Previous session: make the next step easy to undo, test with a limited group, and think about both branches: ‘If it works, X; if it doesn’t, Y.’ Today adds the next piece: before running that test, decide roughly what result would count as success."
+}

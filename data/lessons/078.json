@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": 78,
+  "createdAt": "2026-09-26",
+  "title": "The Match I Was Definitely Winning",
+  "scene": "You play table tennis with a friend and start unusually well. Early success makes you more ambitious, the simple game disappears, and you end up explaining how well things might have gone if you had continued playing normally.",
+  "sceneJa": "友人との卓球で最初の3ポイントを取り、前回より上達した気になる。しかし難しいショットを狙い始めて崩れ、最後には『最初の40秒だけうまい』という妙な戦術だけが残る。",
+  "emotions": ["confident", "ambitious", "frustrated", "defensive", "self-aware", "dryly-amused"],
+  "difficulty": 4,
+  "minutes": 15,
+  "tags": ["sports", "table-tennis", "friend", "keep-things-simple", "not-so-much-as", "point-out", "overconfidence", "dry-humour"],
+  "sentences": [
+    {"chunks":[{"en":"I played table tennis with a friend","ja":"友人と卓球をしました"},{"en":"after dinner,","ja":"夕食後に"},{"en":"and won the first three points","ja":"そして最初の3ポイントを取りました"},{"en":"without much trouble.","ja":"あまり苦労せずに"}]},
+    {"chunks":[{"en":"He had beaten me quite easily","ja":"彼にはかなり簡単に負けていました"},{"en":"the last time we played,","ja":"前回一緒にプレーしたときに"},{"en":"so this felt like","ja":"だから今回は〜のように感じました"},{"en":"a significant development.","ja":"大きな進歩に"}]},
+    {"chunks":[{"en":"I started returning the ball","ja":"私はボールを打ち返し始めました"},{"en":"a little more aggressively,","ja":"少し強気に"},{"en":"and even tried a few shots","ja":"さらに何本かのショットまで試しました"},{"en":"I normally avoid.","ja":"普段なら避けるような"}]},
+    {"chunks":[{"en":"Then I missed one,","ja":"すると1本ミスし"},{"en":"followed by another,","ja":"続けてもう1本ミスして"},{"en":"and suddenly the score","ja":"急にスコアが"},{"en":"was much less interesting.","ja":"あまり面白くなくなりました"}]},
+    {"chunks":[{"en":"I told myself","ja":"自分に言い聞かせました"},{"en":"to keep things simple,","ja":"シンプルにやろうと"},{"en":"which lasted for about two points","ja":"その方針は約2ポイント続きました"},{"en":"before I attempted another ambitious shot.","ja":"また難しいショットを狙うまで"}]},
+    {"chunks":[{"en":"By the middle of the game,","ja":"試合の中盤には"},{"en":"I was no longer trying to win points","ja":"もうポイントを取ろうとしているというより"},{"en":"so much as trying to recreate","ja":"むしろ再現しようとしていました"},{"en":"how I had played at the beginning.","ja":"序盤の自分のプレーを"}]},
+    {"chunks":[{"en":"My friend, meanwhile,","ja":"一方、友人は"},{"en":"had made almost no visible adjustment","ja":"見たところほとんど何も変えておらず"},{"en":"apart from continuing","ja":"ただ続けていただけでした"},{"en":"to return the ball.","ja":"ボールを返すことを"}]},
+    {"chunks":[{"en":"He eventually won the game,","ja":"結局そのゲームは友人が勝ち"},{"en":"and I spent the next minute","ja":"私はその後1分ほど使いました"},{"en":"explaining how different it might have been","ja":"どれほど違っていたかもしれないと説明するのに"},{"en":"if I had kept playing normally.","ja":"普通にプレーし続けていたら"}]},
+    {"chunks":[{"en":"He nodded","ja":"友人はうなずき"},{"en":"and pointed out","ja":"そして指摘しました"},{"en":"that continuing to play normally","ja":"普通にプレーし続けることも"},{"en":"was generally considered part of the game.","ja":"一般的には試合の一部だと考えられていると"}]},
+    {"chunks":[{"en":"I had apparently discovered","ja":"どうやら私は発見したようでした"},{"en":"a highly advanced strategy:","ja":"高度な戦術を"},{"en":"being better at table tennis","ja":"卓球がうまくなるという"},{"en":"for the first forty seconds.","ja":"最初の40秒だけ"}]}
+  ],
+  "questions": [
+    {"type":"chunk","question":"Which chunking is most natural?","options":["I told myself / to keep things simple / which lasted for about two points / before I attempted another ambitious shot","I told / myself to keep / things simple which / lasted for about two points","I told myself to / keep things / simple which lasted / for about two points"],"answer":0,"explanation":"The first version separates the self-instruction, the useful phrase ‘keep things simple’, and the contrast showing how quickly the plan failed."},
+    {"type":"meaning","question":"What does ‘keep things simple’ mean here?","options":["Avoid unnecessary complexity and play a straightforward game","Stop playing immediately","Use only easy vocabulary"],"answer":0,"explanation":"‘Keep things simple’ means avoiding unnecessary complexity and sticking to a straightforward approach."},
+    {"type":"meaning","question":"What is the joke in the final sentence?","options":["The speaker invented a real advanced technique","The speaker reframes a brief good start as if it were a strategy","The friend only played for forty seconds"],"answer":1,"explanation":"The speaker dryly describes a short period of good play as a ‘highly advanced strategy’, exposing the gap between early confidence and the final result."}
+  ],
+  "speak": "Start confident but casual. Let the confidence rise slightly in the third sentence, then flatten as the mistakes arrive. Read ‘much less interesting’ and ‘generally considered part of the game’ very straight. Keep the final sentence calm and precise rather than punchy.",
+  "review": "Flow: strong start → growing confidence → unnecessary ambition → loss of simple play → post-match explanation → dry reframing. Useful chunks: ‘keep things simple’, ‘not so much A as B’, and ‘point out that ...’. The humour comes from treating forty seconds of good table tennis as though it were a sophisticated strategy."
+}

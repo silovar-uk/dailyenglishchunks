@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": 79,
+  "createdAt": "2026-09-25",
+  "title": "What Evidence Would Change Our Mind?",
+  "scene": "Your team has a reasonable explanation, but you do not want to become too attached to it. You decide in advance what evidence would count against the explanation.",
+  "sceneJa": "チームとしてもっともらしい説明は持っているが、その説明を支持する証拠だけに注目しないよう、どんな結果が出たら考えを変えるのかをデータ収集前に決めておく場面。",
+  "emotions": ["curious", "analytical", "open-minded", "calm"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "evidence", "hypothesis", "change-our-minds", "count-against", "confirmation-bias", "critical-thinking"],
+  "sentences": [
+    {"chunks":[{"en":"We have some evidence","ja":"いくつか証拠があります"},{"en":"that supports our explanation,","ja":"私たちの説明を裏付ける"},{"en":"but we should also ask","ja":"ただ、同時に考えるべきです"},{"en":"what would make us change our minds.","ja":"何があれば考えを変えるのかを"}]},
+    {"chunks":[{"en":"If only the evidence","ja":"もし証拠だけが"},{"en":"that agrees with our idea","ja":"私たちの考えと一致する"},{"en":"gets our attention,","ja":"注意を引くようになると"},{"en":"we may miss","ja":"見落とすかもしれません"},{"en":"an important part of the picture.","ja":"全体像の重要な一部を"}]},
+    {"chunks":[{"en":"Let’s decide","ja":"決めておきましょう"},{"en":"what kind of result","ja":"どんな結果なら"},{"en":"would count against our explanation","ja":"私たちの説明に不利な証拠となるのか"},{"en":"before we collect more data.","ja":"さらにデータを集める前に"}]},
+    {"chunks":[{"en":"That way,","ja":"そうすれば"},{"en":"we’re testing the idea","ja":"その考えを検証していることになります"},{"en":"rather than simply looking for reasons","ja":"単に理由を探すのではなく"},{"en":"to believe it.","ja":"それを信じるための"}]}
+  ],
+  "questions": [
+    {"type":"chunk","question":"Which chunking is most natural?","options":["what would make us / change our minds","what would / make us change / our minds","what / would make / us change our / minds"],"answer":0,"explanation":"The first version keeps the cause frame and the action in clear meaning groups."},
+    {"type":"meaning","question":"What does ‘count against our explanation’ mean?","options":["Support the explanation","Count as evidence against the explanation","Count the number of explanations"],"answer":1,"explanation":"‘Count against’ means to be evidence or a consideration that weakens a claim or explanation."},
+    {"type":"meaning","question":"Why decide this before collecting more data?","options":["To reduce the chance of judging evidence only in a way that supports the existing idea","Because collecting data is unnecessary","Because the explanation is already known to be wrong"],"answer":0,"explanation":"Choosing the standard beforehand makes it easier to genuinely test the idea rather than only notice supporting evidence."}
+  ],
+  "speak": "Sound curious, not defensive. Contrast ‘supports our explanation’ with ‘change our minds’. In the final sentence, make the contrast between ‘testing the idea’ and ‘looking for reasons to believe it’ clearly audible.",
+  "review": "Previous session: ask what else you would expect to see if an explanation were correct, then compare that prediction with reality. Useful chunks were ‘what we would expect to see’, ‘whether the pattern matches’, and ‘rethink what we assumed’. Today turns the question around: if the explanation is wrong, what evidence would help us notice?"
+}

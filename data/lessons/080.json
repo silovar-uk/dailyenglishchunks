@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": 80,
+  "createdAt": "2026-09-26",
+  "title": "Are We Solving the Right Problem?",
+  "scene": "A team is discussing solutions, but someone notices that the original problem may not be clearly defined. They suggest tracing the issue backward before choosing a fix.",
+  "sceneJa": "チームで解決策を話し合っているが、目の前の現象が本当の問題なのかをいったん疑い、原因が最初に生じる地点までさかのぼって問題設定を見直す場面。",
+  "emotions": ["curious", "analytical", "calm", "constructive"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "problem-framing", "root-cause", "trace-back", "symptom", "in-the-first-place", "critical-thinking"],
+  "sentences": [
+    {"chunks":[{"en":"We’ve spent a lot of time","ja":"私たちはかなり時間を使ってきました"},{"en":"discussing how to fix this,","ja":"これをどう直すか話し合うことに"},{"en":"but I’m not sure","ja":"ただ、私には確信がありません"},{"en":"we’ve agreed on","ja":"私たちの認識が一致しているのか"},{"en":"what the actual problem is.","ja":"本当の問題が何なのかについて"}]},
+    {"chunks":[{"en":"What looks like a communication issue","ja":"コミュニケーションの問題に見えるものが"},{"en":"might simply be a symptom","ja":"単なる症状なのかもしれません"},{"en":"of something happening earlier","ja":"もっと前に起きている何かの"},{"en":"in the process.","ja":"プロセスの中で"}]},
+    {"chunks":[{"en":"Before we choose a solution,","ja":"解決策を選ぶ前に"},{"en":"it may be worth tracing the problem back","ja":"問題をさかのぼってみる価値があります"},{"en":"to the point","ja":"その地点まで"},{"en":"where things first start to go wrong.","ja":"最初に物事がおかしくなり始める"}]},
+    {"chunks":[{"en":"Otherwise,","ja":"そうでなければ"},{"en":"we could end up improving","ja":"結局、改善するだけになりかねません"},{"en":"one part of the process","ja":"プロセスの一部分を"},{"en":"without fixing","ja":"解決しないまま"},{"en":"what caused the issue in the first place.","ja":"そもそも問題を引き起こしたものを"}]}
+  ],
+  "questions": [
+    {"type":"chunk","question":"Which chunking is most natural?","options":["it may be worth tracing the problem back / to the point / where things first start to go wrong","it may / be worth tracing / the problem back to / the point where things","it may be worth / tracing the problem / back to the / point where things first"],"answer":0,"explanation":"The first version keeps the main action ‘tracing the problem back’ together, then separates the destination and the clause describing that point."},
+    {"type":"meaning","question":"What does ‘a symptom’ mean here?","options":["A visible sign of a deeper problem","A complete solution to the problem","An opinion inside the team"],"answer":0,"explanation":"Here, ‘symptom’ means something visible that may be caused by a deeper underlying problem."},
+    {"type":"meaning","question":"Why does the speaker want to trace the problem back?","options":["To find who made the first mistake","To understand where the underlying problem begins","To avoid changing the process"],"answer":1,"explanation":"The goal is to locate where things first begin to go wrong so the team does not only fix a surface symptom."}
+  ],
+  "speak": "Sound curious, not critical. Contrast ‘how to fix this’ with ‘what the actual problem is’. In the final sentence, slow slightly before ‘what caused the issue in the first place’ so the root-cause idea stands out.",
+  "review": "Previous session: ask what evidence would make you change your mind and decide what would count against your explanation before collecting more data. Useful chunks were ‘what would make us change our minds’, ‘count against our explanation’, and ‘rather than looking for reasons to believe it’. Today moves one step earlier: before testing an explanation, ask whether you are even explaining the right problem."
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": 81,
+  "createdAt": "2026-09-27",
+  "title": "What Has to Be True?",
+  "scene": "You have a possible solution. Instead of immediately asking whether it is a good idea, you examine what must be true for it to work.",
+  "sceneJa": "有望そうな解決策について、すぐ良し悪しを決めるのではなく、その案が想定どおり機能するために何が成り立っている必要があるかを分解し、前提を一つずつ検証する場面。",
+  "emotions": ["analytical", "curious", "practical", "calm"],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": ["work", "assumptions", "problem-solving", "what-has-to-be-true", "one-by-one", "turn-out-to-be", "hypothesis-testing"],
+  "sentences": [
+    {"chunks":[{"en":"The idea sounds promising,","ja":"その案は有望そうです"},{"en":"but several things have to be true","ja":"ただし、いくつかのことが成り立っている必要があります"},{"en":"for it to work as expected.","ja":"想定どおり機能するためには"}]},
+    {"chunks":[{"en":"Customers need to notice the new option,","ja":"顧客が新しい選択肢に気づき"},{"en":"understand why it is useful,","ja":"なぜ便利なのか理解し"},{"en":"and find it easy enough to try.","ja":"試してみるのが十分簡単だと感じる必要があります"}]},
+    {"chunks":[{"en":"Instead of debating the whole idea at once,","ja":"案全体について一度に議論する代わりに"},{"en":"we can test these assumptions","ja":"これらの前提を検証できます"},{"en":"one by one.","ja":"一つずつ"}]},
+    {"chunks":[{"en":"If one of the most important assumptions","ja":"もし重要な前提の一つが"},{"en":"turns out to be wrong,","ja":"間違っていると分かったら"},{"en":"we’ll know","ja":"分かります"},{"en":"where the plan needs to change.","ja":"計画のどこを変える必要があるのか"}]}
+  ],
+  "questions": [
+    {"type":"chunk","question":"Which chunk boundary is most natural?","options":["several things have to be true / for it to work as expected","several things / have to be / true for it / to work as expected","several / things have to be true for / it to work"],"answer":0,"explanation":"The first version keeps the condition ‘several things have to be true’ together, followed by the purpose/result condition ‘for it to work as expected’."},
+    {"type":"meaning","question":"What does ‘find it easy enough to try’ mean?","options":["Find a way to try it","Feel that trying it is easy enough","Look only for easy things"],"answer":1,"explanation":"Here ‘find’ means to experience or judge something in a certain way: customers feel that trying the option is easy enough."},
+    {"type":"meaning","question":"Why does the speaker suggest testing assumptions one by one?","options":["To identify which part of the idea may fail","To avoid testing the idea","To prove every assumption is correct"],"answer":0,"explanation":"Breaking the idea into assumptions makes it easier to identify exactly which condition fails and where the plan needs to change."}
+  ],
+  "speak": "Sound analytical, but not skeptical. Build the first sentence in three clear units: ‘The idea sounds promising’ / ‘but several things have to be true’ / ‘for it to work as expected’. In the third sentence, slow slightly on ‘one by one’ to emphasize testing assumptions separately.",
+  "review": "Previous session: ask whether you are solving the right problem before jumping to a solution. Useful chunks were ‘what the actual problem is’, ‘trace the problem back’, and ‘in the first place’. Today moves from problem definition to solution assumptions: ask what has to be true for the proposed solution to work, then test those assumptions one by one. Useful chunks: ‘have to be true’, ‘one by one’, and ‘turn out to be wrong’."
+}

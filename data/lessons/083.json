@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 83,
+  "createdAt": "2026-10-01",
+  "title": "What Would Make Us Stop?",
+  "scene": "You are about to start a project. Before investing more time, you decide what evidence would make you stop or change direction.",
+  "sceneJa": "プロジェクトへさらに時間を投入する前に、どんな結果なら中止・方向転換するかを先に決め、結果を見た後で基準を動かさないようにする場面。",
+  "emotions": [
+    "analytical",
+    "disciplined",
+    "open-minded",
+    "decisive"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "testing",
+    "threshold",
+    "decision-making",
+    "evidence",
+    "stopping-rule"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "Before we invest more time in the project,",
+          "ja": "プロジェクトにさらに時間を投入する前に"
+        },
+        {
+          "en": "we should agree on",
+          "ja": "合意しておくべきです"
+        },
+        {
+          "en": "what would make us stop.",
+          "ja": "何が起きたら中止するのかについて"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Otherwise,",
+          "ja": "そうでなければ"
+        },
+        {
+          "en": "we may keep changing our explanation",
+          "ja": "説明を変え続けてしまうかもしれません"
+        },
+        {
+          "en": "every time the evidence",
+          "ja": "証拠が〜するたびに"
+        },
+        {
+          "en": "goes against us.",
+          "ja": "私たちの考えに反する"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Setting a clear threshold in advance",
+          "ja": "明確な基準値をあらかじめ設定しておくことで"
+        },
+        {
+          "en": "makes it easier",
+          "ja": "より簡単になります"
+        },
+        {
+          "en": "to judge the result fairly.",
+          "ja": "結果を公平に判断することが"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If the test falls below that threshold,",
+          "ja": "もしテスト結果がその基準を下回ったら"
+        },
+        {
+          "en": "we should reconsider the plan",
+          "ja": "計画を再検討するべきです"
+        },
+        {
+          "en": "rather than defend it.",
+          "ja": "それを擁護するのではなく"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunk boundary is most natural?",
+      "options": [
+        "we should agree on / what would make us stop",
+        "we should / agree on what / would make us / stop",
+        "we should agree / on what would / make us stop"
+      ],
+      "answer": 0,
+      "explanation": "‘Agree on’ stays together, followed by the content of the agreement: ‘what would make us stop’."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘the evidence goes against us’ mean here?",
+      "options": [
+        "The evidence disappears.",
+        "The evidence conflicts with our view.",
+        "Someone hides the evidence."
+      ],
+      "answer": 1,
+      "explanation": "‘Go against’ means to conflict with or count against an idea, expectation, or position."
+    },
+    {
+      "type": "meaning",
+      "question": "Why set a threshold in advance?",
+      "options": [
+        "To make the test more complicated.",
+        "To guarantee a positive result.",
+        "To reduce the temptation to change the standard after seeing the result."
+      ],
+      "answer": 2,
+      "explanation": "A pre-set threshold helps keep the judgment consistent even when the result is disappointing."
+    }
+  ],
+  "speak": "Sound firm, but not pessimistic. Land clearly on ‘what would make us stop’. In the final sentence, contrast ‘reconsider the plan’ with ‘rather than defend it’.",
+  "review": "Previous session: ‘what we will do with the result’, ‘move on to testing’, and ‘what we do next’. Today adds an exit condition: decide in advance what result would make you stop or reconsider the plan."
+}

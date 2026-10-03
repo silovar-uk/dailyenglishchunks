@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": 84,
+  "createdAt": "2026-10-02",
+  "title": "What Would Change the Decision?",
+  "scene": "You have set a threshold before running a test. Now you ask a harder question: which information is actually worth collecting?",
+  "sceneJa": "追加分析を依頼する前に、その情報によって実際の意思決定が変わるかを問い、判断に関係する不確実性だけを減らす場面。",
+  "emotions": [
+    "analytical",
+    "focused",
+    "practical",
+    "selective"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "analysis",
+    "decision-making",
+    "uncertainty",
+    "evidence",
+    "value-of-information"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We could collect more data,",
+          "ja": "さらにデータを集めることはできます"
+        },
+        {
+          "en": "but not all of it",
+          "ja": "しかし、そのすべてが"
+        },
+        {
+          "en": "would change our decision.",
+          "ja": "私たちの判断を変えるわけではありません"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Before asking for another analysis,",
+          "ja": "追加の分析を依頼する前に"
+        },
+        {
+          "en": "we should ask",
+          "ja": "問うべきです"
+        },
+        {
+          "en": "what we would do differently",
+          "ja": "私たちが何を違って行うのか"
+        },
+        {
+          "en": "if the result came back high or low.",
+          "ja": "結果が高く出た場合と低く出た場合に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If our action would be the same either way,",
+          "ja": "どちらの結果でも取る行動が同じなら"
+        },
+        {
+          "en": "the extra information",
+          "ja": "その追加情報は"
+        },
+        {
+          "en": "may not be worth the time.",
+          "ja": "時間をかける価値がないかもしれません"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Good analysis",
+          "ja": "良い分析は"
+        },
+        {
+          "en": "reduces uncertainty",
+          "ja": "不確実性を減らします"
+        },
+        {
+          "en": "that actually matters",
+          "ja": "実際に重要となる"
+        },
+        {
+          "en": "to the decision.",
+          "ja": "その意思決定にとって"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "what we would do differently / if the result came back high or low",
+        "what we / would do differently if / the result came / back high or low",
+        "what we would / do differently if the result / came back / high or low"
+      ],
+      "answer": 0,
+      "explanation": "The first version keeps ‘what we would do differently’ as one complete idea and the if-clause as its condition."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘either way’ mean here?",
+      "options": [
+        "Whichever of the two results we get",
+        "Using two methods at the same time",
+        "Choosing the correct method"
+      ],
+      "answer": 0,
+      "explanation": "‘Either way’ means that the same statement applies whichever of two possibilities occurs."
+    },
+    {
+      "type": "meaning",
+      "question": "When might extra information NOT be worth collecting?",
+      "options": [
+        "When it is difficult to visualize.",
+        "When the decision would be the same regardless of the result.",
+        "When the result might be surprising."
+      ],
+      "answer": 1,
+      "explanation": "If no possible result would change the action, collecting more information may add cost without improving the decision."
+    }
+  ],
+  "speak": "Sound like you are challenging unnecessary analysis, not rejecting data itself. Stress ‘differently’ in ‘what would we do differently?’ and ‘matters’ in ‘uncertainty that actually matters to the decision’.",
+  "review": "Previous session: ‘what would make us stop’, ‘in advance’, and ‘rather than defend it’. Today adds a value-of-information filter: before collecting more data, ask whether any plausible result would actually change the decision."
+}

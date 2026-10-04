@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": 85,
+  "createdAt": "2026-10-04",
+  "title": "What Is Good Enough to Move Forward?",
+  "scene": "You have reduced the important uncertainty. Now you need to decide whether the evidence is strong enough to act.",
+  "sceneJa": "重要な不確実性をある程度減らしたあと、完璧な情報を待つのではなく、次の行動を支えるだけの根拠があるかを判断する場面。",
+  "emotions": [
+    "practical",
+    "measured",
+    "confident",
+    "analytical"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "decision-making",
+    "evidence",
+    "uncertainty",
+    "reversibility",
+    "risk"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We rarely have perfect information",
+          "ja": "完璧な情報がそろっていることは、めったにありません"
+        },
+        {
+          "en": "when we need to make a decision.",
+          "ja": "判断を下さなければならないときに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Instead of waiting for certainty,",
+          "ja": "確実になるまで待つのではなく"
+        },
+        {
+          "en": "we should ask",
+          "ja": "問うべきです"
+        },
+        {
+          "en": "whether the evidence is strong enough",
+          "ja": "根拠が十分に強いかどうか"
+        },
+        {
+          "en": "to support the next step.",
+          "ja": "次の段階へ進む判断を支えられるほどに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The answer depends on",
+          "ja": "その答えは〜によって変わります"
+        },
+        {
+          "en": "what is at stake",
+          "ja": "何が懸かっているのか"
+        },
+        {
+          "en": "and how difficult the decision would be",
+          "ja": "そして、その判断がどれほど難しいか"
+        },
+        {
+          "en": "to reverse.",
+          "ja": "元に戻すことが"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The more costly the mistake,",
+          "ja": "間違えた場合の代償が大きいほど"
+        },
+        {
+          "en": "the stronger the evidence",
+          "ja": "より強い根拠を"
+        },
+        {
+          "en": "we should require.",
+          "ja": "求めるべきです"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "whether the evidence is strong enough / to support the next step",
+        "whether the evidence / is strong / enough to support / the next step",
+        "whether / the evidence is strong enough to / support the next / step"
+      ],
+      "answer": 0,
+      "explanation": "‘Strong enough’ forms the judgment, and ‘to support the next step’ explains what it is strong enough to do."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘what is at stake’ mean here?",
+      "options": [
+        "What could be gained or lost because of the decision.",
+        "Who collected the data.",
+        "How long the meeting will take."
+      ],
+      "answer": 0,
+      "explanation": "‘At stake’ refers to what could be gained, lost, or put at risk by the decision."
+    },
+    {
+      "type": "meaning",
+      "question": "According to the passage, when should we require stronger evidence?",
+      "options": [
+        "When the information is interesting.",
+        "When a mistake would be costly or difficult to reverse.",
+        "Whenever more data is available."
+      ],
+      "answer": 1,
+      "explanation": "Higher-cost or less reversible decisions justify a higher standard of evidence."
+    }
+  ],
+  "speak": "Build toward the final sentence as if it were a decision rule. Stress ‘more costly’ and ‘stronger’ so the relationship is clear: ‘The more costly the mistake, the stronger the evidence we should require.’",
+  "review": "Previous session: ‘we do not need to resolve all of them now’, ‘relevant to the next step’, and ‘reduce enough of it’. Today asks the next question: once the relevant uncertainty has been reduced, is the evidence strong enough to act? The required strength depends on what is at stake and how reversible the decision is."
+}

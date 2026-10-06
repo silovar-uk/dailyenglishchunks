@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": 86,
+  "createdAt": "2026-10-06",
+  "title": "Can We Make This Decision Smaller?",
+  "scene": "A decision feels risky, so you ask whether you can reduce its size before making it.",
+  "sceneJa": "大きくて戻しにくい判断をそのまま決めるのではなく、小さな試行に分けて失敗時の損失を限定できないか考える場面。",
+  "emotions": [
+    "practical",
+    "experimental",
+    "calm",
+    "decisive"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "decision-making",
+    "reversibility",
+    "pilot",
+    "risk",
+    "experimentation"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "A decision may look irreversible",
+          "ja": "ある判断は、元に戻せないように見えるかもしれません"
+        },
+        {
+          "en": "simply because",
+          "ja": "単に〜という理由で"
+        },
+        {
+          "en": "we are trying to make too much of it",
+          "ja": "一度に多くのことを決めようとしている"
+        },
+        {
+          "en": "at once.",
+          "ja": "一気に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Instead of committing",
+          "ja": "最初から踏み切るのではなく"
+        },
+        {
+          "en": "to a full rollout,",
+          "ja": "全面展開に"
+        },
+        {
+          "en": "we might start with a smaller pilot",
+          "ja": "より小規模な試行から始めてもよいでしょう"
+        },
+        {
+          "en": "that limits the downside.",
+          "ja": "失敗した場合の損失を限定できるような"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "This allows us",
+          "ja": "そうすることで"
+        },
+        {
+          "en": "to learn from real behavior",
+          "ja": "実際の行動から学べます"
+        },
+        {
+          "en": "before making a larger commitment.",
+          "ja": "より大きな意思決定をする前に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Sometimes the best way to reduce risk",
+          "ja": "ときには、リスクを減らす最善の方法は"
+        },
+        {
+          "en": "is not to analyze more,",
+          "ja": "さらに分析することではなく"
+        },
+        {
+          "en": "but to make the next decision smaller.",
+          "ja": "次の判断を小さくすることです"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "Sometimes the best way to reduce risk / is not to analyze more / but to make the next decision smaller",
+        "Sometimes the best / way to reduce / risk is not / to analyze more but",
+        "Sometimes / the best way / to reduce risk is not to / analyze more but to make"
+      ],
+      "answer": 0,
+      "explanation": "The first version preserves the complete contrast: the best way to reduce risk / is not A / but B."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘limit the downside’ mean here?",
+      "options": [
+        "Make success more likely.",
+        "Reduce the damage if the idea fails.",
+        "Remove every possible risk."
+      ],
+      "answer": 1,
+      "explanation": "‘Downside’ means the possible negative consequence or loss. Limiting it means reducing the damage if the idea fails."
+    },
+    {
+      "type": "meaning",
+      "question": "Why might a small pilot be useful?",
+      "options": [
+        "It lets us learn before making a larger commitment.",
+        "It guarantees that the full rollout will succeed.",
+        "It eliminates the need for any further decision."
+      ],
+      "answer": 0,
+      "explanation": "A pilot creates real evidence while keeping the initial commitment and potential loss smaller."
+    }
+  ],
+  "speak": "Make the final contrast deliberate: ‘not to analyze more, but to make the next decision smaller.’ Stress ‘not’, ‘but’, and ‘smaller’. The point is not to reject analysis, but to show another way to reduce risk.",
+  "review": "Previous session: ‘easy to reverse’, ‘reverse course’, and ‘match the amount of analysis to the cost of being wrong’. Today takes the next step: if a decision is hard to reverse, ask whether you can reduce the size of the commitment through a smaller pilot before demanding more analysis."
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": 87,
+  "createdAt": "2026-10-08",
+  "title": "What Would Make Us Scale Up?",
+  "scene": "Your team has completed a small pilot. The results look promising, and some members want to expand it immediately.",
+  "sceneJa": "小規模な試行で期待できる結果が出たが、すぐに全面展開せず、再現性と追加投資の判断基準を確認する場面。",
+  "emotions": [
+    "cautious",
+    "analytical",
+    "constructive"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "pilot",
+    "evidence",
+    "repeatability",
+    "scale-up",
+    "decision-making"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "The pilot showed promising results,",
+          "ja": "小規模な実験では期待できる結果が出ました"
+        },
+        {
+          "en": "but we should be careful",
+          "ja": "しかし、慎重になる必要があります"
+        },
+        {
+          "en": "not to scale up too quickly.",
+          "ja": "急いで規模を拡大しないように"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Before expanding,",
+          "ja": "拡大する前に"
+        },
+        {
+          "en": "we need to check",
+          "ja": "確認する必要があります"
+        },
+        {
+          "en": "whether the results can be repeated",
+          "ja": "その結果を再現できるかどうか"
+        },
+        {
+          "en": "under different conditions.",
+          "ja": "異なる条件のもとでも"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We should also agree on",
+          "ja": "また、あらかじめ合意しておくべきです"
+        },
+        {
+          "en": "what level of performance",
+          "ja": "どの程度の成果水準なら"
+        },
+        {
+          "en": "would justify further investment.",
+          "ja": "追加投資の十分な根拠になるのかを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If the evidence meets those criteria,",
+          "ja": "根拠となるデータがその基準を満たしていれば"
+        },
+        {
+          "en": "we can move forward",
+          "ja": "次の段階へ進めます"
+        },
+        {
+          "en": "with greater confidence.",
+          "ja": "より確信を持って"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "we need to check / whether the results can be repeated / under different conditions",
+        "we need / to check whether / the results can / be repeated under",
+        "we / need to check whether the / results can be / repeated under different"
+      ],
+      "answer": 0,
+      "explanation": "Keep the question about repeatability together, followed by the conditions."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘justify further investment’ mean?",
+      "options": [
+        "Make the initial investment smaller.",
+        "Provide enough reason to invest more.",
+        "Explain why the pilot was delayed."
+      ],
+      "answer": 1,
+      "explanation": "Justify means provide a sufficient reason for an action."
+    },
+    {
+      "type": "meaning",
+      "question": "Why test under different conditions?",
+      "options": [
+        "To make the pilot more expensive.",
+        "To avoid performance targets.",
+        "To see whether the results are repeatable."
+      ],
+      "answer": 2,
+      "explanation": "Results should be repeatable beyond the initial pilot setting."
+    }
+  ],
+  "speak": "Read the final two sentences three times. Stress ‘what level of performance’ and ‘meets those criteria’. Sound careful, but not hesitant.",
+  "review": "Previous lesson: ‘only if it can teach us something’, ‘what result would justify expanding it’, ‘the smallest test that still gives us meaningful evidence’. Today moves from useful pilot evidence to repeatability and criteria for scaling up."
+}

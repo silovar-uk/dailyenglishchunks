@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": 88,
+  "createdAt": "2026-10-09",
+  "title": "When Should We Stop a Pilot?",
+  "scene": "Your team has been testing a new service for several weeks. The results are weaker than expected, but some members want to continue.",
+  "sceneJa": "新サービスの試行結果が目標に届かない中、過去の投資にとらわれず、追加検証によって有益な根拠が得られるかを判断する場面。",
+  "emotions": [
+    "thoughtful",
+    "objective",
+    "disciplined",
+    "decisive"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "pilot",
+    "sunk-cost",
+    "stopping-rule",
+    "decision-making",
+    "evidence"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "When a pilot fails to meet its targets,",
+          "ja": "試験的な取り組みが目標を達成できなかったとき"
+        },
+        {
+          "en": "the team may be tempted",
+          "ja": "チームはつい〜したくなるかもしれません"
+        },
+        {
+          "en": "to keep going.",
+          "ja": "そのまま続けることを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "However,",
+          "ja": "しかし"
+        },
+        {
+          "en": "the time and money already spent",
+          "ja": "すでに費やした時間とお金が"
+        },
+        {
+          "en": "should not determine",
+          "ja": "決めるべきではありません"
+        },
+        {
+          "en": "what we do next.",
+          "ja": "次に何をするかを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We need to ask",
+          "ja": "私たちは問う必要があります"
+        },
+        {
+          "en": "whether continuing the test",
+          "ja": "そのテストを継続することが"
+        },
+        {
+          "en": "is likely to produce",
+          "ja": "生み出す見込みがあるかどうかを"
+        },
+        {
+          "en": "useful new evidence.",
+          "ja": "有益な新しい根拠を"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If the answer is no,",
+          "ja": "もし答えが「いいえ」なら"
+        },
+        {
+          "en": "stopping the pilot",
+          "ja": "試験的な取り組みを中止することが"
+        },
+        {
+          "en": "may be the most reasonable decision.",
+          "ja": "最も合理的な判断かもしれません"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "the time and money already spent / should not determine / what we do next",
+        "the time / and money already / spent should / not determine what",
+        "the time and / money already spent should / not determine what we / do next"
+      ],
+      "answer": 0,
+      "explanation": "Keep the complete subject, its verb phrase, and the object clause as meaningful units."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘be tempted to keep going’ mean?",
+      "options": [
+        "Be required to continue.",
+        "Feel a strong desire to continue, even if it may not be wise.",
+        "Know that continuing will succeed."
+      ],
+      "answer": 1,
+      "explanation": "‘Be tempted to’ means to feel drawn toward an action that may not be wise."
+    },
+    {
+      "type": "meaning",
+      "question": "What should determine whether the team continues?",
+      "options": [
+        "How much money has already been spent.",
+        "How long the team has worked on the project.",
+        "Whether continuing is likely to produce useful new evidence."
+      ],
+      "answer": 2,
+      "explanation": "The decision should focus on the expected value of further learning, not sunk costs."
+    }
+  ],
+  "speak": "Read ‘The time and money already spent / should not determine / what we do next’ three times. First slowly, then stress ‘already spent’, and finally stress ‘what we do next’. Finish with ‘If the answer is no, / stopping the pilot / may be the most reasonable decision’ in a calm, objective tone.",
+  "review": "Previous lesson: ‘under different conditions’, ‘justify further investment’, and ‘meet the criteria’. Yesterday we asked what evidence would justify scaling up; today we ask what evidence would justify continuing, separating past investment from the future value of another test."
+}

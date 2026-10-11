@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": 89,
+  "createdAt": "2026-10-11",
+  "title": "Are We Solving the Right Problem?",
+  "scene": "Your team has developed a new tool, but customers are not using it as often as expected. You want to understand why before adding more features.",
+  "sceneJa": "新しいツールの利用頻度が想定より低いため、機能追加に走らず、顧客の業務や行動を観察して本当の問題を捉え直す場面。",
+  "emotions": [
+    "curious",
+    "observant",
+    "analytical",
+    "open-minded"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "tags": [
+    "work",
+    "problem-framing",
+    "customer-research",
+    "product",
+    "workflow",
+    "observation"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "When customers do not use a product as expected,",
+          "ja": "顧客が想定どおりに製品を使っていないとき"
+        },
+        {
+          "en": "adding more features",
+          "ja": "機能をさらに追加しても"
+        },
+        {
+          "en": "may not solve the problem.",
+          "ja": "問題は解決しないかもしれません"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We should first understand",
+          "ja": "まず理解すべきです"
+        },
+        {
+          "en": "what makes the product difficult or unnecessary",
+          "ja": "何がその製品を使いにくく、あるいは不要にしているのか"
+        },
+        {
+          "en": "for them to use.",
+          "ja": "顧客にとって"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Sometimes the real issue is not",
+          "ja": "ときには、本当の問題は〜ではありません"
+        },
+        {
+          "en": "what the product can do,",
+          "ja": "その製品に何ができるかではなく"
+        },
+        {
+          "en": "but how well it fits",
+          "ja": "どれだけうまく適合しているかです"
+        },
+        {
+          "en": "into the customer's daily routine.",
+          "ja": "顧客の日常的な業務や習慣に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By observing actual behavior,",
+          "ja": "実際の行動を観察することで"
+        },
+        {
+          "en": "we may discover a problem",
+          "ja": "私たちは問題を発見できるかもしれません"
+        },
+        {
+          "en": "that customers themselves",
+          "ja": "顧客自身が"
+        },
+        {
+          "en": "have not clearly expressed.",
+          "ja": "まだ明確に言葉にしていないような"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking is most natural?",
+      "options": [
+        "Sometimes the real issue is not / what the product can do / but how well it fits / into the customer's daily routine",
+        "Sometimes the real / issue is not what / the product can / do but how well",
+        "Sometimes / the real issue is / not what the / product can do but"
+      ],
+      "answer": 0,
+      "explanation": "The first version preserves the ‘not A, but B’ contrast and the phrase ‘fit into the customer's daily routine’."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘fit into the customer's daily routine’ mean?",
+      "options": [
+        "Become more expensive for the customer.",
+        "Work naturally within the customer's usual activities.",
+        "Replace every existing tool."
+      ],
+      "answer": 1,
+      "explanation": "‘Fit into’ means to integrate naturally with an existing routine or workflow."
+    },
+    {
+      "type": "meaning",
+      "question": "Why might observing actual behavior be useful?",
+      "options": [
+        "It can reveal problems customers have not clearly expressed.",
+        "It guarantees that customers will buy the product.",
+        "It removes the need to talk to customers."
+      ],
+      "answer": 0,
+      "explanation": "Observation can uncover friction or unmet needs that customers haven't put into words."
+    }
+  ],
+  "speak": "Read this sentence three times: ‘Sometimes the real issue is not / what the product can do, / but how well it fits / into the customer's daily routine.’ First read slowly for meaning, then stress ‘not’ and ‘but’, and finally contrast ‘what the product can do’ with ‘how well it fits’. Sound curious rather than dismissive.",
+  "review": "Previous session: ‘not necessarily mean’ (必ずしも〜を意味しない), ‘the problem lies in ...’ (問題は〜にある), and ‘the underlying need is still there’ (根本的なニーズが今も存在する). Then: Should we change our approach before giving up? Today: Are we solving the right problem? Observe → Understand → Define the problem → Choose an approach."
+}

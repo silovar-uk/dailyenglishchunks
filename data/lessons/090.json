@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": 90,
+  "createdAt": "2026-10-23",
+  "title": "The Goal He Didn't See",
+  "scene": "You and a friend go to watch your local football team. He leaves his seat to buy drinks, misses the winning goal, and decides his absence must have brought the team luck.",
+  "sceneJa": "友人と地元のサッカーチームの試合を観戦。飲み物を買いに席を離れた友人は決勝点を見逃すが、なぜか自分が離席したおかげで勝てたと思い始める。",
+  "emotions": [
+    "surprised",
+    "amused",
+    "playful",
+    "teasing"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "sports",
+    "football",
+    "friendship",
+    "dry-humour",
+    "stepped-away",
+    "only-to-find-out",
+    "by-the-time",
+    "pointed-out"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We went to watch our local football team,",
+          "ja": "地元のサッカーチームの試合を観に行った"
+        },
+        {
+          "en": "mostly because",
+          "ja": "主な理由は"
+        },
+        {
+          "en": "neither of us had other plans.",
+          "ja": "二人ともほかに予定がなかったからだ"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just as the game started to get interesting,",
+          "ja": "試合がちょうど面白くなってきたころ"
+        },
+        {
+          "en": "my friend stepped away",
+          "ja": "友人は席を離れた"
+        },
+        {
+          "en": "to get us something to drink.",
+          "ja": "僕らの飲み物を買いに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He came back a minute later,",
+          "ja": "友人は1分後に戻ってきたが"
+        },
+        {
+          "en": "only to find out",
+          "ja": "そこで初めて知ることになった"
+        },
+        {
+          "en": "he'd missed the winning goal.",
+          "ja": "決勝点を見逃したことを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I tried to explain what happened,",
+          "ja": "何が起きたか説明しようとしたけれど"
+        },
+        {
+          "en": "but he was more interested in",
+          "ja": "友人がもっと気にしていたのは"
+        },
+        {
+          "en": "whether his absence had helped.",
+          "ja": "自分が席を外したおかげだったのかどうか"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time the final whistle blew,",
+          "ja": "試合終了の笛が鳴るころには"
+        },
+        {
+          "en": "he'd convinced himself",
+          "ja": "友人はすっかり思い込んでいた"
+        },
+        {
+          "en": "that leaving his seat was the reason we'd won.",
+          "ja": "自分が席を離れたから勝てたのだと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He offered to do it again next week,",
+          "ja": "来週もまた席を離れようかと友人は申し出た"
+        },
+        {
+          "en": "and I pointed out",
+          "ja": "そこで僕は指摘した"
+        },
+        {
+          "en": "that watching football was becoming a strange hobby for him.",
+          "ja": "彼にとってサッカー観戦が妙な趣味になりつつあると"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking keeps the meaning together?",
+      "options": [
+        "He came back / a minute later only / to find out he'd / missed the winning goal",
+        "He came back a minute later / only to find out / he'd missed the winning goal",
+        "He came / back a minute / later only to / find out he'd missed"
+      ],
+      "answer": 1,
+      "explanation": "‘Only to find out’ is a useful unit meaning that the speaker discovered an unexpected result. Keep ‘he'd missed the winning goal’ together as what he discovered."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘only to find out’ suggest here?",
+      "options": [
+        "He returned because he already knew about the goal.",
+        "He discovered an unexpected, disappointing result after coming back.",
+        "He decided not to ask what happened."
+      ],
+      "answer": 1,
+      "explanation": "‘Only to find out’ introduces a surprising or disappointing discovery: he had missed the decisive moment."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker call football a strange hobby for his friend?",
+      "options": [
+        "Because his friend is planning to leave his seat instead of watching the match.",
+        "Because his friend has forgotten the rules of football.",
+        "Because his friend refuses to buy drinks."
+      ],
+      "answer": 0,
+      "explanation": "The speaker is teasing his friend: going to a match just to miss the important moments is a rather strange way to enjoy football."
+    }
+  ],
+  "speak": "Round 1: Read ‘He came back a minute later / only to find out / he'd missed the winning goal’ slowly, keeping each chunk together. Round 2: Stress ‘only’ and ‘winning goal’ to convey the surprise. Round 3: Read the whole story with playful, dry humour. Then speak for 30 seconds about a time you stepped away and missed something: What happened? How did you find out? What did you say?",
+  "review": "Reuse two phrases from earlier lessons in a new situation. Lesson 76: ‘By the time ...’ (〜するころには) — here, ‘By the time the final whistle blew ...’. Lesson 78: ‘pointed out’ (指摘した) — here, ‘I pointed out that ...’. New expressions: ‘stepped away’ (少し席を離れた), ‘only to find out’ (その結果、思いがけず〜と知る), and ‘convinced himself’ (自分でそう思い込んだ)."
+}

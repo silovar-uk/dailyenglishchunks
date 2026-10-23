@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": 91,
+  "createdAt": "2026-10-24",
+  "title": "The Hardest Part Was Putting My Shoes On",
+  "scene": "It's Saturday morning. The sky looks gloomy, and you're tempted to skip your walk. You promise yourself a very short outing, but it goes better than expected.",
+  "sceneJa": "土曜の朝。曇り空を見て散歩をやめようとするが、角まで行って帰ろうと決めて外に出る。歩き始めると案外気持ちよく、気づけば1時間近く経っていた。",
+  "emotions": [
+    "reluctant",
+    "curious",
+    "relieved",
+    "lightly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "daily-life",
+    "weekend",
+    "walking",
+    "self-talk",
+    "motivation",
+    "talk-yourself-out-of",
+    "once-you-get-going"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I almost talked myself out of going for a walk",
+          "ja": "散歩に行くのをやめようと自分を説得しかけた"
+        },
+        {
+          "en": "when I saw the gray sky.",
+          "ja": "曇り空を見たときに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I told myself",
+          "ja": "自分に言い聞かせた"
+        },
+        {
+          "en": "I'd only go as far as the corner",
+          "ja": "角まで行くだけにしようと"
+        },
+        {
+          "en": "and then head back.",
+          "ja": "それから引き返せばいいと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "But once I got going,",
+          "ja": "でも、いったん歩き始めると"
+        },
+        {
+          "en": "I didn't feel like turning around.",
+          "ja": "引き返す気にはならなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The streets were quieter than usual,",
+          "ja": "通りはいつもより静かで"
+        },
+        {
+          "en": "and the air felt surprisingly fresh.",
+          "ja": "空気も思いのほか爽やかだった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I got home,",
+          "ja": "家に帰るころには"
+        },
+        {
+          "en": "I'd been out for nearly an hour.",
+          "ja": "外に出てからもう1時間近く経っていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Apparently,",
+          "ja": "どうやら"
+        },
+        {
+          "en": "the hardest part had been",
+          "ja": "いちばん大変だったのは"
+        },
+        {
+          "en": "putting my shoes on.",
+          "ja": "靴を履くことだったらしい"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking sounds most natural when reading the sentence aloud?",
+      "options": [
+        "But once I got / going I didn't feel / like turning around",
+        "But once I got going / I didn't feel like turning around",
+        "But once / I got going I didn't / feel like turning around"
+      ],
+      "answer": 1,
+      "explanation": "Keep ‘once I got going’ together: it means ‘once I started doing it’. The second chunk describes how the speaker felt after starting."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘talked myself out of going for a walk’ mean?",
+      "options": [
+        "I persuaded myself not to go for a walk.",
+        "I explained my walking plans to a friend.",
+        "I encouraged myself to walk farther."
+      ],
+      "answer": 0,
+      "explanation": "‘Talk yourself out of doing something’ means persuade yourself not to do it. ‘Almost’ means the speaker nearly decided not to go."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say ‘the hardest part had been putting my shoes on’?",
+      "options": [
+        "The shoes were too small and hurt.",
+        "The walk was difficult because the streets were crowded.",
+        "Getting started felt harder than the walk itself."
+      ],
+      "answer": 2,
+      "explanation": "The line is a playful reflection: overcoming the reluctance to start was the real challenge, not the walk."
+    }
+  ],
+  "speak": "Imagine a small activity you almost skipped. Round 1: Read ‘I almost talked myself out of going for a walk / when I saw the gray sky’ slowly, pausing at the chunk boundary. Round 2: Say ‘But once I got going / I didn't feel like turning around’, stressing ‘once’ and ‘didn't’. Round 3: Read the full story with a change from reluctance to amusement. Then speak for 30 seconds: What did you almost skip? What made you start? How did you feel afterward? Use ‘I almost talked myself out of ...’ and ‘Once I got going, ...’.",
+  "review": "Reuse two expressions from earlier lessons in a new context. Lesson 78: ‘I told myself ...’ (自分に言い聞かせた) was used to regain focus during table tennis; today it helps the speaker start a walk. Lesson 90: ‘By the time ...’ (〜するころには) marked a change during a football match; today it marks how much time passed on a walk. New chunks: ‘talk myself out of ...’ (自分を説得して〜をやめる), ‘once I got going’ (いったん始めると), and ‘I didn't feel like ...’ (〜する気にならなかった)."
+}

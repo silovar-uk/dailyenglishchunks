@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": 92,
+  "createdAt": "2026-10-24",
+  "title": "Which Entrance Did You Mean?",
+  "scene": "You're meeting a friend at a weekend art market. The venue has two entrances, so a quick clarification saves you from waiting in different places.",
+  "sceneJa": "週末のアートマーケットで友人と待ち合わせ。会場には入口が二つあるのに、友人の連絡は「入口で待ってる」だけ。早合点せず確認し、位置情報を送ってすれ違いを防ぐ場面。",
+  "emotions": [
+    "curious",
+    "considerate",
+    "relieved",
+    "lightly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "friends",
+    "art-market",
+    "meeting-up",
+    "clarification",
+    "directions",
+    "just-to-make-sure",
+    "be-specific"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We agreed to meet at the weekend art market,",
+          "ja": "週末のアートマーケットで待ち合わせることにしたが"
+        },
+        {
+          "en": "but the venue map",
+          "ja": "会場の案内図には"
+        },
+        {
+          "en": "showed two entrances.",
+          "ja": "入口が二つ載っていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Aya texted, 'I'll wait by the entrance,'",
+          "ja": "アヤから「入口で待ってるね」と連絡が来て"
+        },
+        {
+          "en": "and I almost headed over",
+          "ja": "僕はもう少しでそのまま向かうところだった"
+        },
+        {
+          "en": "without asking which one.",
+          "ja": "どちらの入口か確かめずに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため確認しようと"
+        },
+        {
+          "en": "I replied, 'Do you mean the one by the station",
+          "ja": "「駅側の入口のこと？ と返信した"
+        },
+        {
+          "en": "or the one next to the park?'",
+          "ja": "それとも公園の隣の入口？」と"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She wrote back, 'The one by the park—",
+          "ja": "彼女は「公園側のほうだよ」と返して"
+        },
+        {
+          "en": "I should've been more specific.'",
+          "ja": "「もっとはっきり伝えるべきだったね」と付け加えた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I sent her a map pin",
+          "ja": "僕は地図上の位置情報を送った"
+        },
+        {
+          "en": "so we wouldn't end up",
+          "ja": "そうすれば〜ということにならずに済むように"
+        },
+        {
+          "en": "waiting in different places.",
+          "ja": "別々の場所で待ち続けることに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We found each other in minutes,",
+          "ja": "僕らは数分で無事に合流できた"
+        },
+        {
+          "en": "which was a nice change",
+          "ja": "それは珍しくうれしい変化だった"
+        },
+        {
+          "en": "from our usual guessing game.",
+          "ja": "いつもの『どこにいる？』と探り合う待ち合わせに比べれば"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking keeps the speaker's clarification together naturally?",
+      "options": [
+        "Just to / make sure I replied / Do you mean the one / by the station or / the one next to the park?",
+        "Just to make sure / I replied, 'Do you mean the one by the station / or the one next to the park?'",
+        "Just to make / sure I replied, Do / you mean the one by / the station or the one next / to the park?"
+      ],
+      "answer": 1,
+      "explanation": "‘Just to make sure’ is a natural introductory phrase. Keep the two alternative entrances together as a clear either-or question."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I should've been more specific’ mean here?",
+      "options": [
+        "I should have arrived at the market earlier.",
+        "I should have changed our meeting day.",
+        "I should have said exactly which entrance I meant."
+      ],
+      "answer": 2,
+      "explanation": "‘Should've’ means ‘should have’. Aya is acknowledging that ‘the entrance’ was too vague because there were two."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator send a map pin after Aya clarifies?",
+      "options": [
+        "To make the meeting point unmistakable and avoid waiting in different places.",
+        "To suggest moving the meeting to another day.",
+        "To show Aya a different art market."
+      ],
+      "answer": 0,
+      "explanation": "The pin confirms the precise location. The narrator is preventing a small but common misunderstanding."
+    }
+  ],
+  "speak": "Imagine meeting someone at a venue with more than one entrance. Round 1: Read ‘Just to make sure / I replied, “Do you mean the one by the station / or the one next to the park?”’ slowly, pausing at the slashes. Round 2: Stress ‘station’ and ‘park’ to make the choice clear; soften ‘Just to make sure’ so it sounds helpful rather than suspicious. Round 3: Read the six sentences as a short, lightly amused story. Then speak for 30 seconds: Where are you meeting? What is unclear? Ask ‘Just to make sure, do you mean ...?’ and explain how you'll confirm the spot. Final Read: Read all six sentences again without looking at the Japanese.",
+  "review": "Reuse expressions in a different situation. Lesson 91: ‘I almost ...’ (もう少しで〜するところだった) described nearly skipping a walk; here, ‘I almost headed over’ describes nearly going to an unclear meeting point. Lesson 80: ‘end up ...’ (結局〜することになる) described an unintended result in a work process; here, ‘end up waiting in different places’ is a social mix-up to avoid. New chunks: ‘Just to make sure’ (念のため), ‘Do you mean ...?’ (〜という意味？), and ‘I should've been more specific’ (もっと具体的に伝えるべきだった)."
+}

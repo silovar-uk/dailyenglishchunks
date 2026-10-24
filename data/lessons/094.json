@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": 94,
+  "createdAt": "2026-10-25",
+  "title": "The Coffee Was There All Along",
+  "scene": "On a sleepy Sunday morning, you want coffee but find an empty jar. You almost switch to tea, then remember the shopping bag you left by the door.",
+  "sceneJa": "日曜の朝。コーヒーを飲もうとしたら容器が空。紅茶に切り替えかけるが、玄関に置いたままの買い物袋を思い出す。小さな発見で、朝の気分が少し上向く。",
+  "emotions": [
+    "sleepy",
+    "puzzled",
+    "relieved",
+    "quietly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "daily-life",
+    "breakfast",
+    "coffee",
+    "self-talk",
+    "small-discovery",
+    "could-have-sworn",
+    "turns-out",
+    "might-as-well"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I could've sworn",
+          "ja": "確かに〜だったはずなのに"
+        },
+        {
+          "en": "I'd bought coffee yesterday,",
+          "ja": "昨日コーヒーを買ったと"
+        },
+        {
+          "en": "but the jar was empty.",
+          "ja": "容器は空だった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I almost made tea instead,",
+          "ja": "代わりに紅茶をいれるところだった"
+        },
+        {
+          "en": "because I didn't have time",
+          "ja": "時間がなかったから"
+        },
+        {
+          "en": "to stop at the store.",
+          "ja": "店に寄るだけの"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため"
+        },
+        {
+          "en": "I checked the shopping bag",
+          "ja": "買い物袋を確認した"
+        },
+        {
+          "en": "I'd left by the door.",
+          "ja": "玄関のそばに置きっぱなしにしていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It turns out",
+          "ja": "なんと、実は"
+        },
+        {
+          "en": "the new coffee was still in there,",
+          "ja": "買ったコーヒーはまだその袋に入っていて"
+        },
+        {
+          "en": "right next to my umbrella.",
+          "ja": "傘のすぐ隣にあった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I figured I might as well",
+          "ja": "せっかくだから〜しておこうと思った"
+        },
+        {
+          "en": "put it in the cupboard now",
+          "ja": "今のうちに戸棚にしまって"
+        },
+        {
+          "en": "before I forgot again.",
+          "ja": "また忘れてしまう前に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Ten minutes later,",
+          "ja": "10分後には"
+        },
+        {
+          "en": "I was drinking coffee",
+          "ja": "コーヒーを飲みながら"
+        },
+        {
+          "en": "and feeling oddly proud of myself.",
+          "ja": "なぜか少し得意な気分になっていた"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking keeps the expression ‘I could've sworn’ together naturally?",
+      "options": [
+        "I could've / sworn I'd / bought coffee / yesterday",
+        "I could've sworn / I'd bought coffee yesterday / but the jar was empty",
+        "I could've sworn I'd / bought coffee / yesterday but the / jar was empty"
+      ],
+      "answer": 1,
+      "explanation": "‘I could've sworn’ is a conversational way to say you were very sure of something, often when the situation seems to contradict your memory. Keep it together."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘I might as well put it in the cupboard now’ mean?",
+      "options": [
+        "I should throw the coffee away immediately.",
+        "I have no choice but to buy another bag.",
+        "Since the coffee is here, I may as well put it away now."
+      ],
+      "answer": 2,
+      "explanation": "‘Might as well’ suggests doing something because it makes sense in the circumstances, even if it wasn't the original plan."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator check the shopping bag?",
+      "options": [
+        "To see whether the coffee they bought is still inside.",
+        "To find a receipt to return the coffee.",
+        "To check whether the umbrella is broken."
+      ],
+      "answer": 0,
+      "explanation": "The narrator remembers buying coffee and checks the bag before giving up and making tea. ‘Just to make sure’ signals a quick confirmation."
+    }
+  ],
+  "speak": "Imagine you're getting breakfast ready and can't find something you thought you bought. Round 1: Read ‘I could've sworn / I'd bought coffee yesterday / but the jar was empty’ slowly, pausing at the chunk breaks. Round 2: Stress ‘sworn’ to express surprise, and say ‘It turns out’ with the lighter tone of a discovery. Round 3: Read all six sentences as one small story, shifting from sleepy frustration to amused relief. Speak for 30 seconds: Describe something you thought you'd lost or forgotten. Use ‘I could've sworn ...’, ‘It turns out ...’, and ‘I might as well ...’. Final Read: Read the story again without looking at the Japanese.",
+  "review": "Revisit Lesson 91: ‘I almost talked myself out of going for a walk’ (散歩をやめかけた) becomes ‘I almost made tea instead’ (代わりに紅茶をいれるところだった)—the same ‘I almost ...’ structure in a new situation. Revisit Lesson 92: ‘Just to make sure’ (念のため) clarified a meeting entrance; here it introduces checking a shopping bag. New chunks: ‘I could've sworn ...’ (確かに〜だったはず), ‘It turns out ...’ (実は〜だと分かった), ‘might as well ...’ (せっかくだから〜しておく)."
+}

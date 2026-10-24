@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": 93,
+  "createdAt": "2026-10-24",
+  "title": "A Little Too Early to Clap",
+  "scene": "At a small jazz show, you clap during a pause that turns out not to be the end of the song. Your friend tries to make you feel better, and you learn to wait for the room.",
+  "sceneJa": "小さなジャズライブ。曲が終わったと思って拍手したら、実は演奏の途中だった。周囲の視線に気まずくなり、友人の気遣いに救われながら、次は周りの拍手を待つことにする。",
+  "emotions": [
+    "uncertain",
+    "embarrassed",
+    "reassured",
+    "lightly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "music",
+    "jazz",
+    "live-show",
+    "social-awkwardness",
+    "timing",
+    "take-it-as-my-cue",
+    "play-it-off",
+    "for-what-its-worth"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At a small jazz show,",
+          "ja": "小さなジャズライブで"
+        },
+        {
+          "en": "I couldn't quite tell",
+          "ja": "僕にはどうにも分からなかった"
+        },
+        {
+          "en": "when the song was over.",
+          "ja": "曲がいつ終わったのか"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The pianist paused,",
+          "ja": "ピアニストが演奏を止めたので"
+        },
+        {
+          "en": "and I took it as my cue",
+          "ja": "僕はそれを合図だと思って"
+        },
+        {
+          "en": "to start clapping.",
+          "ja": "拍手を始めた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "A few people turned around,",
+          "ja": "何人かがこちらを振り向いたので"
+        },
+        {
+          "en": "so I tried to play it off",
+          "ja": "僕は何食わぬ顔で取り繕おうとした"
+        },
+        {
+          "en": "as enthusiastic support.",
+          "ja": "熱心な応援だったということにして"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend leaned over",
+          "ja": "友人が身を寄せて"
+        },
+        {
+          "en": "and whispered, 'For what it's worth,",
+          "ja": "小声で言った。「慰めになるか分からないけど"
+        },
+        {
+          "en": "I thought it was over too.'",
+          "ja": "僕も終わったと思ったよ」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "今度こそ間違えないように"
+        },
+        {
+          "en": "I waited for everyone else",
+          "ja": "ほかの人たちが拍手するのを待ってから"
+        },
+        {
+          "en": "before clapping again.",
+          "ja": "自分ももう一度拍手した"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the end of the night,",
+          "ja": "その夜が終わるころには"
+        },
+        {
+          "en": "I'd learned more about timing",
+          "ja": "タイミングについて学んだことのほうが多かった"
+        },
+        {
+          "en": "than I had about jazz.",
+          "ja": "ジャズそのものについてよりも"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking best keeps the expression ‘take it as my cue’ together?",
+      "options": [
+        "The pianist paused / and I took it as my cue / to start clapping.",
+        "The pianist / paused and I took it / as my / cue to start clapping.",
+        "The pianist paused and / I took it as / my cue to / start clapping."
+      ],
+      "answer": 0,
+      "explanation": "‘Take it as my cue’ means treating something as the signal to act. Keep that expression intact, then add the action."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘play it off as enthusiastic support’ mean in this story?",
+      "options": [
+        "Ask the pianist to start the song again.",
+        "Pretend the early applause was a deliberate show of support.",
+        "Explain that the audience was too quiet."
+      ],
+      "answer": 1,
+      "explanation": "‘Play it off as ...’ means trying to make an awkward or accidental action seem intentional or harmless."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend say ‘For what it's worth, I thought it was over too’?",
+      "options": [
+        "To blame the pianist for stopping.",
+        "To ask the narrator to clap louder.",
+        "To reassure the narrator that the mistake was understandable."
+      ],
+      "answer": 2,
+      "explanation": "‘For what it's worth’ gently offers a thought that may or may not help. Here it makes the narrator feel less embarrassed."
+    }
+  ],
+  "speak": "Imagine applauding too early at a live performance. Round 1: Read ‘The pianist paused / and I took it as my cue / to start clapping’ slowly, pausing only at the slashes. Round 2: Stress ‘cue’ and ‘clapping’; then read ‘For what it's worth, / I thought it was over too’ in a warm, quiet voice. Round 3: Read all six sentences with a lightly embarrassed, then amused tone. Speak for 30 seconds: Describe a time you misunderstood a signal. Use ‘I took it as my cue to ...’, ‘I tried to play it off as ...’, and ‘For what it's worth ...’. Final Read: Read the six sentences again without looking at the Japanese.",
+  "review": "Reuse: Lesson 92 ‘Just to make sure’ (念のため確認する) was used to confirm a meeting entrance; here it means waiting to be certain before clapping. Lesson 90 ‘By the time ...’ (〜するころには) described a change during a football match; today ‘By the end of the night ...’ sets a similar time frame in a music story. New chunks: ‘take it as my cue to ...’ (〜する合図だと受け取る), ‘play it off as ...’ (〜だったことにして取り繕う), and ‘for what it's worth’ (参考になるか分からないけど／慰めになるか分からないけど)."
+}

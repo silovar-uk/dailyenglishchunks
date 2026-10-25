@@ -663,18 +663,9 @@ body.is-practicing .step-actions {
     padding: 6px 0 11px;
   }
 
-  .next-card.latest-card { padding-top: 20px; }
-
-  .next-card.latest-card .next-card-body { align-items: start; }
-
   .next-card.latest-card .next-card-title {
-    font-size: clamp(2rem, 10vw, 3rem);
-    line-height: 1.02;
-  }
-
-  .next-card.latest-card .surface-arrow {
-    width: 48px;
-    height: 48px;
+    font-size: clamp(1.8rem, 8vw, 2.45rem);
+    line-height: 1.1;
   }
 
   body.is-practicing main {

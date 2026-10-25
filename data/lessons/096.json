@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": 96,
+  "createdAt": "2026-10-25",
+  "title": "The Cat Who Borrowed My Coat",
+  "scene": "On Sunday evening, you stop by your neighbor's apartment to feed her cat while she's away. The cat ignores dinner and falls asleep on your coat, leaving you with an unexpectedly awkward exit.",
+  "sceneJa": "日曜の夜、留守中の隣人に頼まれて猫の世話に立ち寄る。猫はごはんに見向きもせず、玄関に置いたコートの上で丸くなって眠ってしまう。起こすのがかわいそうで帰れなくなる、ちょっとおかしな話。",
+  "emotions": [
+    "reluctant",
+    "responsible",
+    "tender",
+    "quietly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "animals",
+    "cat",
+    "neighbor",
+    "small-kindness",
+    "dry-humour",
+    "look-after",
+    "curl-up",
+    "not-have-the-heart-to",
+    "not-up-for",
+    "almost"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I wasn't really up for going out",
+          "ja": "あまり外出する気分ではなかった"
+        },
+        {
+          "en": "on Sunday evening,",
+          "ja": "日曜の夜は"
+        },
+        {
+          "en": "but I'd promised to look after my neighbor's cat.",
+          "ja": "でも、隣人の猫の世話をすると約束していた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I filled her food bowl,",
+          "ja": "猫のごはん皿に餌を入れたけれど"
+        },
+        {
+          "en": "and she ignored it completely.",
+          "ja": "猫はまるで見向きもしなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Instead,",
+          "ja": "その代わりに"
+        },
+        {
+          "en": "she curled up",
+          "ja": "猫は丸くなって"
+        },
+        {
+          "en": "on the coat I'd left by the door.",
+          "ja": "玄関脇に置いた僕のコートの上でくつろぎ始めた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I almost moved it,",
+          "ja": "コートをどかしかけたけれど"
+        },
+        {
+          "en": "but I didn't have the heart to wake her.",
+          "ja": "猫を起こすのがかわいそうで、どうしてもできなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When my neighbor called to check in,",
+          "ja": "隣人が様子を確かめようと電話してきたとき"
+        },
+        {
+          "en": "she asked if everything was okay.",
+          "ja": "何か問題はないかと聞かれた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I said, 'The cat's fine,",
+          "ja": "僕は「猫は元気だよ」と答えて"
+        },
+        {
+          "en": "but I may need to borrow a coat",
+          "ja": "「でも、コートを借りることになるかも"
+        },
+        {
+          "en": "to get home.'",
+          "ja": "帰るためにね」と続けた"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking keeps the feeling in 'didn't have the heart to' together?",
+      "options": [
+        "I almost moved it / but I didn't have the heart to wake her.",
+        "I almost / moved it but I didn't have / the heart to wake her.",
+        "I almost moved / it but I didn't have the / heart to wake her."
+      ],
+      "answer": 0,
+      "explanation": "‘Didn't have the heart to ...’ expresses being unable to do something because it feels unkind. Keep the expression with ‘wake her’ as one meaningful unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘look after my neighbor's cat’ mean here?",
+      "options": [
+        "Watch the cat from a distance without helping.",
+        "Take care of the cat while its owner is away.",
+        "Search for a cat that has gone missing."
+      ],
+      "answer": 1,
+      "explanation": "‘Look after’ means to take care of someone or something. Here the narrator feeds and checks on the cat while the neighbor is away."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator say they may need to borrow a coat to get home?",
+      "options": [
+        "The weather has suddenly become much colder.",
+        "The neighbor asked to keep the narrator's coat.",
+        "The cat is sleeping on the narrator's coat, and the narrator is joking about not wanting to disturb her."
+      ],
+      "answer": 2,
+      "explanation": "The narrator doesn't want to wake the comfortable cat. The exaggerated suggestion of borrowing a coat is gentle, dry humor."
+    }
+  ],
+  "speak": "Imagine you're checking on a neighbor's pet and something unexpected happens. Round 1: Read ‘look after my neighbor's cat’, ‘she curled up’, and ‘I didn't have the heart to wake her’ as three complete units. Round 2: Put a gentle emphasis on ‘completely’ and ‘didn't have the heart’, then deliver the last line with a small, amused pause before ‘but’. Round 3: Read all six sentences aloud without translating word by word. Speak for 30 seconds: Describe a time you looked after a pet, helped someone, or couldn't bring yourself to interrupt something. Try ‘I almost ...’ and ‘I didn't have the heart to ...’. Final Read: Read the story once more, smoothly and without the Japanese.",
+  "review": "Reuse Lesson 95: ‘I wasn't really up for singing’ (あまり歌う気分ではなかった) becomes ‘I wasn't really up for going out’ (あまり外出する気分ではなかった), shifting from a social invitation to a small responsibility. Reuse Lesson 94: ‘I almost made tea instead’ (代わりに紅茶をいれるところだった) becomes ‘I almost moved it’ (それをどかしかけた), moving the same structure into a moment of hesitation. New: ‘look after’ (世話をする), ‘curl up’ (丸くなる), ‘didn't have the heart to ...’ (〜するのがかわいそうでできなかった). Usage checked against Cambridge Dictionary for ‘curl up’ and ‘not have the heart to do something’."
+}

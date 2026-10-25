@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": 97,
+  "createdAt": "2026-10-26",
+  "title": "The Elevator Was Taking Forever",
+  "scene": "It's Monday morning. You're running late, the elevator isn't coming, and you decide to take the stairs. You reach the bus stop just in time—only to find that the bus is late too.",
+  "sceneJa": "月曜の朝、少し遅れ気味なのにエレベーターがなかなか来ない。階段で急いでバス停へ向かい、ぎりぎり間に合ったと思ったら、肝心のバスも遅れていた。焦りが少し笑いに変わる通勤前の出来事。",
+  "emotions": [
+    "rushed",
+    "impatient",
+    "determined",
+    "wryly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "commute",
+    "daily-life",
+    "self-talk",
+    "time-pressure",
+    "elevator",
+    "running-behind",
+    "rather-than-wait-around",
+    "with-seconds-to-spare",
+    "for-a-moment",
+    "told-myself"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "On Monday morning,",
+          "ja": "月曜の朝"
+        },
+        {
+          "en": "I was running behind,",
+          "ja": "予定より少し遅れていて"
+        },
+        {
+          "en": "and the elevator was taking forever.",
+          "ja": "エレベーターがなかなか来なかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a moment,",
+          "ja": "一瞬"
+        },
+        {
+          "en": "I told myself that pressing the button again might help,",
+          "ja": "もう一度ボタンを押せば何か変わるかもと自分に言い聞かせた"
+        },
+        {
+          "en": "even though I knew better.",
+          "ja": "そんなはずはないと分かっていたのに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Rather than wait around,",
+          "ja": "そこで待ちぼうけするより"
+        },
+        {
+          "en": "I took the stairs",
+          "ja": "階段を使うことにして"
+        },
+        {
+          "en": "and picked up the pace.",
+          "ja": "足を速めた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Halfway down,",
+          "ja": "階段を半分ほど下りたところで"
+        },
+        {
+          "en": "I heard the elevator doors open",
+          "ja": "エレベーターの扉が開く音が聞こえた"
+        },
+        {
+          "en": "somewhere above me.",
+          "ja": "頭上のどこかから"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I reached the bus stop",
+          "ja": "バス停に着いたのは"
+        },
+        {
+          "en": "with seconds to spare,",
+          "ja": "ぎりぎりのタイミングで"
+        },
+        {
+          "en": "expecting the bus to arrive any moment.",
+          "ja": "今にもバスが来ると思っていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It showed up five minutes late,",
+          "ja": "ところがバスは5分遅れでやってきて"
+        },
+        {
+          "en": "giving me plenty of time",
+          "ja": "おかげで時間はたっぷりあった"
+        },
+        {
+          "en": "to catch my breath.",
+          "ja": "息を整えるには"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which version keeps the contrast phrase together naturally?",
+      "options": [
+        "Rather than / wait around I took / the stairs.",
+        "Rather than wait around / I took the stairs / and picked up the pace.",
+        "Rather / than wait / around I took the stairs."
+      ],
+      "answer": 1,
+      "explanation": "‘Rather than wait around’ means ‘instead of standing there waiting’. Keep ‘rather than’ with the action it contrasts; then pause before what the speaker actually did."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘with seconds to spare’ mean at the bus stop?",
+      "options": [
+        "The speaker had only a few seconds left before the expected arrival time.",
+        "The speaker had several hours to wait.",
+        "The speaker arrived after the bus had already left."
+      ],
+      "answer": 0,
+      "explanation": "‘With seconds to spare’ means making it just before a deadline or expected time, with almost no time left. The bus later turns out to be delayed."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the ending feel slightly funny?",
+      "options": [
+        "The narrator wanted to exercise on the stairs.",
+        "The elevator never worked again.",
+        "The narrator rushed to be on time, but the bus was late anyway."
+      ],
+      "answer": 2,
+      "explanation": "The effort to save a few seconds becomes unnecessary when the bus arrives five minutes late. The final line shifts from panic to quiet irony."
+    }
+  ],
+  "speak": "Imagine you are leaving home in a hurry. Round 1: Read each sentence in meaning groups, pausing after ‘I was running behind’ and ‘Rather than wait around’. Round 2: Stress ‘running behind’, ‘rather than’, and ‘seconds to spare’; speed up slightly during the stairs sentence, then slow down for the final line. Round 3: Read the full story aloud without translating. Speak for 30 seconds: Describe a time you were running behind and chose a quicker route or changed plans. Try ‘I was running behind ...’, ‘Rather than wait around, I ...’, and ‘with seconds to spare’. Final Read: Read all six sentences once more smoothly without looking at the Japanese.",
+  "review": "New chunks: ‘I was running behind’ (予定より遅れていた), ‘Rather than wait around’ (待ちぼうけするより), ‘with seconds to spare’ (ぎりぎり間に合って). Reuse Lesson 95: ‘He thought for a moment’ (少し考えた) becomes ‘For a moment, I told myself ...’ (一瞬、自分に言い聞かせた), moving a time phrase into an inner monologue. Reuse Lesson 91: ‘I told myself ...’ (自分に言い聞かせた) shifts from starting a walk to rationalizing pressing an elevator button. Read aloud: contrast the hurried middle with the relaxed, slightly ironic ending."
+}

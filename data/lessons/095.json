@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 95,
+  "createdAt": "2026-10-25",
+  "title": "Not Really Up for Karaoke",
+  "scene": "After lunch on Sunday, a friend suggests karaoke. You're tired and would rather talk somewhere quiet, so you suggest coffee without dismissing his idea. It turns out he wanted a slower afternoon too.",
+  "sceneJa": "日曜の昼食後。友人にカラオケへ誘われるが、今日は静かに過ごしたい。相手の気分を損なわないようコーヒーを提案すると、実は友人も同じ気持ちだった。",
+  "emotions": [
+    "tired",
+    "considerate",
+    "hesitant",
+    "relieved",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "friends",
+    "conversation",
+    "plans",
+    "polite-refusal",
+    "compromise",
+    "not-up-for",
+    "would-you-be-open-to",
+    "works-for-me",
+    "turned-out"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "After lunch,",
+          "ja": "昼食のあと"
+        },
+        {
+          "en": "Ken suggested karaoke,",
+          "ja": "ケンがカラオケに行こうと提案したけれど"
+        },
+        {
+          "en": "but I was still tired from the morning.",
+          "ja": "僕は午前中の疲れがまだ残っていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I didn't want to ruin his plans,",
+          "ja": "彼の予定に水を差したくはなかった"
+        },
+        {
+          "en": "but I wasn't really up for singing.",
+          "ja": "でも、歌う気分にはあまりなれなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "So I asked,",
+          "ja": "そこで、こう聞いてみた"
+        },
+        {
+          "en": "\"Would you be open to getting coffee instead?\"",
+          "ja": "「代わりにコーヒーでも飲みに行くのはどう？」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He thought for a moment,",
+          "ja": "彼は少し考えて"
+        },
+        {
+          "en": "then said,",
+          "ja": "それから言った"
+        },
+        {
+          "en": "\"Actually, that works for me.\"",
+          "ja": "「実は、それで全然いいよ」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It turned out",
+          "ja": "話してみると、実は"
+        },
+        {
+          "en": "he'd been hoping for",
+          "ja": "彼も望んでいたのだった"
+        },
+        {
+          "en": "a quieter afternoon too.",
+          "ja": "もっと静かな午後を"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We found a small café",
+          "ja": "僕らは小さなカフェを見つけて"
+        },
+        {
+          "en": "and talked for an hour",
+          "ja": "1時間ほどおしゃべりした"
+        },
+        {
+          "en": "without either of us having to sing a single note.",
+          "ja": "どちらも一音たりとも歌わずに済んだ"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which chunking keeps the conversational expression together?",
+      "options": [
+        "I wasn't really / up for singing / but I",
+        "I wasn't really up for singing / but I wanted to be polite",
+        "I wasn't / really up / for singing but"
+      ],
+      "answer": 1,
+      "explanation": "‘Be up for (doing) something’ means to feel willing or in the mood to do it. ‘I wasn't really up for singing’ is a natural unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does ‘Would you be open to getting coffee instead?’ mean here?",
+      "options": [
+        "Would you consider coffee as an alternative?",
+        "Do you want to open a coffee shop?",
+        "Have you already bought the coffee?"
+      ],
+      "answer": 0,
+      "explanation": "‘Would you be open to ...?’ gently asks whether someone would consider an option. ‘To’ is a preposition here, so it is followed by ‘getting’."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator suggest coffee rather than simply refuse karaoke?",
+      "options": [
+        "He wants to spend time with Ken while choosing a quieter activity.",
+        "He secretly wants Ken to go to karaoke alone.",
+        "He wants to cancel their friendship plans entirely."
+      ],
+      "answer": 0,
+      "explanation": "The speaker doesn't feel like singing but still wants to spend time together. The alternative protects the relationship while expressing a preference."
+    }
+  ],
+  "speak": "Imagine a friend suggests a noisy activity but you'd prefer something quieter. Round 1: Read ‘I wasn't really up for singing’ and ‘Would you be open to getting coffee instead?’ slowly, keeping each phrase together. Round 2: Say ‘Would you be open to ...?’ with a warm, rising tone; answer ‘Actually, that works for me’ with relaxed agreement. Round 3: Read the six-sentence story aloud, changing your tone from hesitant to relieved. Speak for 30 seconds: Politely decline one activity, offer an alternative, and respond to your friend's choice. Final Read: Read the entire story again without the Japanese translation.",
+  "review": "Lesson 94: ‘It turns out ...’ (実は〜だったと分かった) becomes ‘It turned out he'd been hoping for a quieter afternoon too’ (話してみると、彼も静かな午後を望んでいた) in a past-tense conversation story. Lesson 93: ‘for a moment’ (少しの間) reappears in ‘He thought for a moment’ (彼は少し考えた). New: ‘not really up for ...’ (〜する気分ではない), ‘Would you be open to ...?’ (〜を検討してくれる？), ‘That works for me’ (それで大丈夫). Naturalness checked against Cambridge Dictionary's ‘up for (doing) something’ definition and usage."
+}

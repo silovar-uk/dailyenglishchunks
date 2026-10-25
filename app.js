@@ -190,6 +190,8 @@
     const savedStep = latestState.completed ? 0 : Math.min(latestState.lastStep || 0, PRACTICE_STEPS.length - 1);
     const hasProgress = !latestState.completed && savedStep > 0;
 
+    const actionLabel = hasProgress ? '続きから再開' : latestState.completed ? 'もう一度学ぶ' : 'レッスンを始める';
+
     app.innerHTML = `
       <section class="home ${returning ? 'is-returning' : ''}">
         <div class="home-intro">
@@ -204,10 +206,11 @@
           <p class="lead">英語を前から、意味のまとまりとして受け取る。最新の練習から、そのまま始める。</p>
         </div>
 
-        <button class="next-card action-surface latest-card" id="startLatest" type="button">
+        <div class="featured-lesson-heading"><h1>最新のレッスン</h1></div>
+        <button class="next-card action-surface latest-card" id="startLatest" type="button" aria-label="${escapeHTML(latest.title)}：${actionLabel}">
           <span class="next-card-top">
             <span class="sequence-number">${formatDate(latest)}</span>
-            <span class="next-state">${hasProgress ? 'CONTINUE' : latestState.completed ? 'REPLAY' : 'LATEST'}</span>
+            <span class="next-state">${hasProgress ? '途中から' : latestState.completed ? '学習済み' : '最新'}</span>
           </span>
           <span class="next-card-body">
             <span class="next-card-copy">
@@ -215,9 +218,12 @@
               <span class="scene-copy">${escapeHTML(latest.sceneJa)}</span>
               <span class="lesson-facts"><span>${latest.minutes} min</span><span>Level ${latest.difficulty}</span><span>${latest.tags.slice(0, 2).map(escapeHTML).join(' · ')}</span></span>
             </span>
-            <span class="surface-arrow" aria-hidden="true">→</span>
           </span>
           ${hasProgress ? `<span class="resume-note">前回の続き：${PRACTICE_STEPS[savedStep].label}</span>` : ''}
+          <span class="latest-card-action" aria-hidden="true">
+            <span class="latest-card-action-label">${actionLabel}</span>
+            <span class="latest-card-action-arrow">→</span>
+          </span>
         </button>
 
         <div class="experience-strip" aria-label="Practice history">

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": 98,
+  "createdAt": "2026-10-26",
+  "title": "You Don't Have to Decide Right Now",
+  "scene": "You have a spare ticket for an outdoor film screening on Saturday. A friend would like to come but isn't sure of her plans. You offer a clear reply deadline while making it easy for her to decline.",
+  "sceneJa": "土曜日の屋外映画上映会のチケットが1枚余っている。友人は行きたいけれど予定がまだ分からない。返事の期限は伝えつつ、無理に決めさせず、断りやすい余地も残す会話。",
+  "emotions": [
+    "hopeful",
+    "considerate",
+    "uncertain",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "friends",
+    "film",
+    "invitation",
+    "soft-deadline",
+    "giving-options",
+    "no-pressure",
+    "decide-right-now",
+    "let-me-know-by",
+    "cant-make-it",
+    "that-works-for-me",
+    "it-turned-out"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I had a spare ticket",
+          "ja": "チケットが1枚余っていた"
+        },
+        {
+          "en": "for Saturday's outdoor film screening,",
+          "ja": "土曜日の屋外映画上映会の"
+        },
+        {
+          "en": "so I asked Emi if she wanted to come.",
+          "ja": "それでエミに一緒に行かないか聞いてみた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She said she'd love to,",
+          "ja": "ぜひ行きたいと言ってくれたけど"
+        },
+        {
+          "en": "but she wasn't sure",
+          "ja": "まだ分からなかった"
+        },
+        {
+          "en": "whether she'd be in town.",
+          "ja": "その日に街にいるかどうかが"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'You don't have to decide right now,' I said,",
+          "ja": "「今すぐ決めなくてもいいよ」と僕は言って"
+        },
+        {
+          "en": "'but could you let me know",
+          "ja": "「ただ、返事をもらえるかな"
+        },
+        {
+          "en": "by Thursday evening?'",
+          "ja": "木曜の夜までに？」と続けた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'If you can't make it,",
+          "ja": "「もし来られなくても"
+        },
+        {
+          "en": "no worries—I can ask someone else.'",
+          "ja": "気にしないで。ほかの人に声をかけられるから」と伝えた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'That works for me,' she said,",
+          "ja": "「それなら大丈夫」と彼女は言った"
+        },
+        {
+          "en": "relieved that she didn't have to answer",
+          "ja": "返事を急がなくてよいことにほっとして"
+        },
+        {
+          "en": "on the spot.",
+          "ja": "その場ですぐには"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It turned out she could come,",
+          "ja": "結局、彼女は来られることになって"
+        },
+        {
+          "en": "and she offered to bring",
+          "ja": "持ってきてくれると言ってくれた"
+        },
+        {
+          "en": "a blanket for both of us.",
+          "ja": "二人で使えるブランケットを"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which pause keeps the request 'let me know' together as one useful chunk?",
+      "options": [
+        "Could you let / me know by / Thursday evening?",
+        "Could you let me know / by Thursday evening?",
+        "Could / you let me / know by Thursday evening?"
+      ],
+      "answer": 1,
+      "explanation": "‘Let me know’ is a reusable expression meaning ‘tell me / give me an answer’. Pause naturally before the time limit: ‘by Thursday evening’."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'If you can't make it' mean in this conversation?",
+      "options": [
+        "If you cannot attend the film screening.",
+        "If you cannot make a film yourself.",
+        "If you cannot find the cinema on a map."
+      ],
+      "answer": 0,
+      "explanation": "‘Make it’ often means ‘be able to attend’ an event or meeting. ‘If you can't make it’ gives Emi an easy way to decline."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker add 'I can ask someone else'?",
+      "options": [
+        "To make Emi feel guilty for being uncertain.",
+        "To say the ticket is already sold.",
+        "To explain the backup plan and reduce pressure to say yes."
+      ],
+      "answer": 2,
+      "explanation": "A clear deadline plus an alternative plan respects both people's needs. ‘No worries’ sounds sincere because the speaker also explains what happens if Emi declines."
+    }
+  ],
+  "speak": "Imagine inviting a friend to a concert, film, or sports match when you need an answer by a certain day. Round 1: Read all six sentences in meaning groups, keeping ‘let me know’ and ‘can't make it’ together. Round 2: Say the quoted lines as a friendly invitation, not a demand; stress ‘right now’, ‘Thursday evening’, and ‘no worries’. Round 3: Read the story aloud at a natural pace. Speak for 30 seconds without reading: invite a friend, give them time, name a reply deadline, and make declining easy. Try ‘You don't have to decide right now’, ‘Could you let me know by ...?’, and ‘If you can't make it, no worries.’ Final Read: Read the six English sentences again smoothly without checking the Japanese.",
+  "review": "New chunks: ‘You don't have to decide right now’ (今すぐ決めなくてもいい), ‘Could you let me know by ...?’ (〜までに返事をもらえる？), ‘If you can't make it, no worries’ (来られなくても気にしないで). Reuse Lesson 95 ‘That works for me’ (それなら大丈夫): the friend accepts a reply deadline rather than a coffee alternative. Reuse Lesson 94 ‘It turns out ...’ (実は〜だと分かる) as past ‘It turned out she could come’ (結局、来られることが分かった). Pragmatics: ‘No worries’ is more credible when the speaker also explains an actual backup plan. ‘Make it’ here means attend, not manufacture."
+}

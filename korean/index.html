@@ -24,6 +24,7 @@ footer{border-top:1px solid var(--edge);padding:20px 0 35px;color:var(--muted);f
 <main id="app" tabindex="-1"></main>
 <footer>韓国語版プロトタイプ。読み上げには端末の韓国語合成音声を使用します。<br>参考：<a href="https://www.korean.go.kr/front_eng/roman/roman_01.do" target="_blank" rel="noopener">国立国語院</a>・<a href="https://nuri.iksi.or.kr/" target="_blank" rel="noopener">世宗学堂</a></footer>
 </div>
+<script src="./lessons/lesson-2026-10-26-evening-i-vowel.js?v=20261026-2000"></script>
 <script>
 (function(){
 "use strict";
@@ -32,7 +33,7 @@ var lessons=[
 {id:"01",kind:"v",label:"母音から",title:"아・어・오・우を読んでみる",description:"文字のしくみと最初の4つの母音。",min:6},
 {id:"02",kind:"c",label:"子音と母音",title:"나・마・가を組み立てる",description:"子音を足して自分で音節を作る。",min:7},
 {id:"03",kind:"d",label:"あいさつ",title:"안녕하세요を声に出す",description:"文字から、意味のある短い会話へ。",min:8}
-];
+].concat(window.KOREAN_EXTRA_LESSONS||[]);
 var vowels=[["ㅏ","a","日本語の「ア」に近い。口を縦に開ける。"],["ㅓ","eo","日本語にはない母音。唇を丸めず、口をゆるめて発音する。"],["ㅗ","o","唇を丸めて「オ」に近い音。ㅓとの違いに注意。"],["ㅜ","u","唇をしっかり丸める。「ウ」に近い音。"]];
 var consonants=[["ㄴ","n","舌先を上の歯ぐきにつける。"],["ㅁ","m","唇を閉じてから音を出す。"],["ㄱ","g","語頭の音は日本語の「ガ」と完全には同じでない。"],["ㅇ","（無音）","音節の最初にあるㅇは発音しない。"]];
 var phrases=[["안녕하세요?","annyeonghaseyo?","こんにちは。","丁寧なあいさつ。"],["네.","ne.","はい。","肯定・応答に使う。"],["감사합니다.","gamsahamnida.","ありがとうございます。","丁寧な感謝。つづりと発音には違いがある。"]];
@@ -48,7 +49,7 @@ function esc(x){return String(x).replace(/[&<>"']/g,function(s){return{"&":"&amp
 function syll(c,v){var cs="ㄱ ㄲ ㄴ ㄷ ㄸ ㄹ ㅁ ㅂ ㅃ ㅅ ㅆ ㅇ ㅈ ㅉ ㅊ ㅋ ㅌ ㅍ ㅎ".split(" ");var vs="ㅏ ㅐ ㅑ ㅒ ㅓ ㅔ ㅕ ㅖ ㅗ ㅘ ㅙ ㅚ ㅛ ㅜ ㅝ ㅞ ㅟ ㅠ ㅡ ㅢ ㅣ".split(" ");return String.fromCharCode(44032+(cs.indexOf(c)*21+vs.indexOf(v))*28)}
 function roman(c,v){return ({"ㅇ":"","ㄴ":"n","ㅁ":"m","ㄱ":"g"}[c]||"")+(vowels.find(function(x){return x[0]===v})||[])[1]}
 function speech(t){var status=document.getElementById("audio-status");if(!("speechSynthesis" in window)){if(status)status.textContent="このブラウザでは音声を利用できません。";return}try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang="ko-KR";u.rate=.8;var voice=speechSynthesis.getVoices().find(function(v){return v.lang.toLowerCase().indexOf("ko")===0});if(voice)u.voice=voice;u.onerror=function(){if(status)status.textContent="韓国語の音声が再生できませんでした。端末の言語設定をご確認ください。"};speechSynthesis.speak(u);if(status)status.textContent="ブラウザの合成音声で再生しています。"}catch(e){if(status)status.textContent="音声再生を利用できませんでした。"}}
-function home(){current=null;document.title="Korean Chunks — ハングルから";var next=lessons.find(function(x){return !done[x.id]})||lessons[0];var count=lessons.filter(function(x){return done[x.id]}).length;app.innerHTML='<div class="hero"><div><p class="eyebrow">KOREAN CHUNKS · STARTER</p><h1>韓国語を、<br>文字から読めるように。</h1><p class="lead">まずハングルの形、次に音の組み立て。少し読めるようになったら短い会話へ。ローマ字は補助として使い、最終的にはハングルだけで読めることを目指します。</p></div><div class="mark" aria-hidden="true">가</div></div><section><div class="sectiontop"><h2>まずはここから</h2><span class="small">'+count+'/3 修了</span></div><button class="feature" data-open="'+next.id+'" type="button"><span class="feature-top"><span class="small">LESSON '+next.id+' · '+next.label+'</span><span class="pill">'+(done[next.id]?"復習":"最初の一歩")+'</span></span><strong>'+esc(next.title)+'</strong><span class="desc">'+esc(next.description)+'</span><span class="small">◷ '+next.min+'分 · 🔊 音声とクイズつき</span><span class="cta"><span>'+(done[next.id]?"もう一度学ぶ":"このレッスンを始める")+'</span><span>→</span></span></button></section><section class="section"><div class="sectiontop"><h2>学習の道すじ</h2><span class="small">文字 → 音 → 会話</span></div><div class="items">'+lessons.map(function(x){return '<button type="button" class="item" data-open="'+x.id+'"><span class="num">'+(done[x.id]?"✓":x.id)+'</span><span><strong>'+esc(x.title)+'</strong><small>'+esc(x.description)+'</small></span><span>→</span></button>'}).join("")+'</div></section><div class="notice"><b>なぜカタカナをつけないの？</b><br>韓国語には、日本語にない母音や子音があります。カタカナだけで覚えると音の違いが見えなくなるため、最初はローマ字表記・音のコツ・読み上げを併用し、徐々に補助を減らしていきます。ローマ字も実際の音を完全には表しません。</div>';bind();window.scrollTo(0,0)}
+function home(){current=null;document.title="Korean Chunks — ハングルから";var next=lessons.find(function(x){return !done[x.id]})||lessons[0];var count=lessons.filter(function(x){return done[x.id]}).length;app.innerHTML='<div class="hero"><div><p class="eyebrow">KOREAN CHUNKS · STARTER</p><h1>韓国語を、<br>文字から読めるように。</h1><p class="lead">まずハングルの形、次に音の組み立て。少し読めるようになったら短い会話へ。ローマ字は補助として使い、最終的にはハングルだけで読めることを目指します。</p></div><div class="mark" aria-hidden="true">가</div></div><section><div class="sectiontop"><h2>まずはここから</h2><span class="small">'+count+'/'+lessons.length+' 修了</span></div><button class="feature" data-open="'+next.id+'" type="button"><span class="feature-top"><span class="small">LESSON '+next.id+' · '+next.label+'</span><span class="pill">'+(done[next.id]?"復習":"最初の一歩")+'</span></span><strong>'+esc(next.title)+'</strong><span class="desc">'+esc(next.description)+'</span><span class="small">◷ '+next.min+'分 · 🔊 音声とクイズつき</span><span class="cta"><span>'+(done[next.id]?"もう一度学ぶ":"このレッスンを始める")+'</span><span>→</span></span></button></section><section class="section"><div class="sectiontop"><h2>学習の道すじ</h2><span class="small">文字 → 音 → 会話</span></div><div class="items">'+lessons.map(function(x){return '<button type="button" class="item" data-open="'+x.id+'"><span class="num">'+(done[x.id]?"✓":x.id)+'</span><span><strong>'+esc(x.title)+'</strong><small>'+esc(x.description)+'</small></span><span>→</span></button>'}).join("")+'</div></section><div class="notice"><b>なぜカタカナをつけないの？</b><br>韓国語には、日本語にない母音や子音があります。カタカナだけで覚えると音の違いが見えなくなるため、最初はローマ字表記・音のコツ・読み上げを併用し、徐々に補助を減らしていきます。ローマ字も実際の音を完全には表しません。</div>';bind();window.scrollTo(0,0)}
 function open(id){current=lessons.find(function(x){return x.id===id});step=0;question=0;selected=null;guide=true;cv="ㅏ";cc="ㄴ";draw();window.scrollTo(0,0)}
 function piece(title,desc){return '<div class="eyebrow">'+title+'</div><h2 style="margin-top:9px">'+desc+'</h2>'}
 function tokens(arr,key){return '<div class="tokens">'+arr.map(function(x){return '<button type="button" class="token" data-'+key+'="'+x[0]+'"><strong>'+x[0]+'</strong><span>'+x[1]+'</span></button>'}).join("")+'</div>'}
@@ -60,8 +61,32 @@ if((l.kind==="v"||l.kind==="c")&&step===3){var words=l.kind==="v"?[["아","a"],[
 if(l.kind==="d"&&step===1){h=piece("READ · そのまま見て聴く","3つの短い表現")+'<div class="panel">'+phrases.map(function(x){return '<div class="phrase"><div class="ko">'+x[0]+'</div><div class="small">'+x[2]+'</div><button class="audio" type="button" data-audio="'+x[0]+'">🔊 発音を聴く</button></div>'}).join("")+'</div>'}
 if(l.kind==="d"&&step===2){h=piece("CHUNKS · 音のまとまり","音節で分けてみよう。")+'<div class="panel"><div class="ko">안 · 녕 · 하 · 세 · 요</div><div class="roman">annyeonghaseyo</div><p class="small">丁寧な「こんにちは」。文字は音節ごとに分けて読めても、実際の発音はつながります。</p><button class="audio" type="button" data-audio="안녕하세요">🔊 まとめて聴く</button></div><div class="panel"><strong>次に覚えること：パッチムと音の変化</strong><p class="small">「감사합니다」は、一字ずつのつづりだけでは自然な発音を再現できません。終声（パッチム）と音の変化は後の単元で学びます。</p></div>'}
 if(l.kind==="d"&&step===3){h=piece("SPEAK · 会話する","意味 → 音 → 気持ち")+'<div class="panel">'+[phrases[0],phrases[1],phrases[2]].map(function(x){return '<div class="phrase"><div class="ko">'+x[0]+'</div><div class="small">'+x[2]+'</div><button class="audio" type="button" data-audio="'+x[0]+'">🔊 聴く</button></div>'}).join("")+'</div><p class="small">まずゆっくり1回、流れを意識して1回、相手に話すつもりで1回声に出しましょう。</p>'}
-if(step===4){var q=questions[l.kind][question];h=piece("CHECK · 理解度", "3問で確認する")+'<p class="small">問題 '+(question+1)+' / 3</p><div class="panel"><h3>'+esc(q[0])+'</h3><div class="options">'+q[1].map(function(o,i){return '<button type="button" class="option '+(selected!==null?(i===q[2]?"correct":i===selected?"wrong":""):"")+'" data-option="'+i+'" '+(selected!==null?"disabled":"")+'>'+esc(o)+'</button>'}).join("")+'</div>'+(selected!==null?'<div class="feedback '+(selected===q[2]?"":"wrong")+'"><b>'+(selected===q[2]?"正解！":"もう一度確認")+'</b><br>'+esc(q[3])+'</div>':"")+'</div>'}
+if(step===4){var q=(l.kind==='x'?l.quiz:questions[l.kind])[question];h=piece("CHECK · 理解度", "3問で確認する")+'<p class="small">問題 '+(question+1)+' / 3</p><div class="panel"><h3>'+esc(q[0])+'</h3><div class="options">'+q[1].map(function(o,i){return '<button type="button" class="option '+(selected!==null?(i===q[2]?"correct":i===selected?"wrong":""):"")+'" data-option="'+i+'" '+(selected!==null?"disabled":"")+'>'+esc(o)+'</button>'}).join("")+'</div>'+(selected!==null?'<div class="feedback '+(selected===q[2]?"":"wrong")+'"><b>'+(selected===q[2]?"正解！":"もう一度確認")+'</b><br>'+esc(q[3])+'</div>':"")+'</div>'}
 if(last){done[l.id]=true;save();h='<div class="checkmark">✓</div>'+piece("COMPLETE · おつかれさま！","自分で読む一歩ができた。")+'<p>文字の数を増やすより、今日読んだものを明日も思い出せることが大事です。</p><div class="panel"><div class="ko">'+(l.kind==="v"?"아 · 어 · 오 · 우":l.kind==="c"?"나 · 마 · 가":"안녕하세요.")+'</div><p class="small">ローマ字を見ずに声に出してみよう。</p></div>'}
+
+/* Data-driven Korean mini-lessons, preserving the original 01–03 flow. */
+if(l.kind==="x"&&step===0){
+ h=piece("IMAGINE · 今日のゴール",esc(l.goal))+'<div class="panel"><p>'+esc(l.intro)+'</p><p class="small"><b>復習：</b>'+esc(l.review)+'</p></div>';
+}
+if(l.kind==="x"&&step===1){
+ h=piece("LETTER · 今日の新しい文字","新しい音は、まず1つだけ。")+'<p class="small">文字を見て口の形を確かめてから、音を聴こう。</p><div class="panel">'+l.letters.map(function(x){
+ return '<div class="phrase"><div class="ko">'+esc(x.char)+'</div><div class="roman">'+esc(x.roman)+'</div><p class="small">'+esc(x.tip)+'</p><button type="button" class="audio" data-audio="'+esc(x.audio)+'">🔊 この音を聴く</button></div>';
+ }).join("")+'</div><p class="small">ローマ字は最初の補助。韓国語の発音を完全には表せません。</p>';
+}
+if(l.kind==="x"&&step===2){
+ h=piece("BUILD · 組み立てる","読める文字をつないでみよう。")+'<p class="small">左側の文字を順番に読んでから、完成した音節・単語を聴こう。</p><div class="panel">'+l.builds.map(function(x){
+ return '<div class="phrase"><div class="builder"><span style="font-size:1.5rem">'+x.parts.map(esc).join(" + ")+'</span><span>→</span><output>'+esc(x.result)+'<small>'+esc(x.roman)+'</small></output></div><p class="small">'+esc(x.tip)+'</p><button type="button" class="audio" data-audio="'+esc(x.result)+'">🔊 音を聴く</button></div>';
+ }).join("")+'</div>';
+}
+if(l.kind==="x"&&step===3){
+ h=piece("READ · 自分で読んでみる","ローマ字を隠して読める？")+'<div class="row"><p class="small">先に自分で読み、タップして音を確かめよう。</p><button class="toggle" data-guide type="button">ローマ字を'+(guide?"隠す":"表示")+'</button></div><div class="panel"><div class="samples">'+l.reads.map(function(x){
+ return '<button type="button" class="sample" data-audio="'+esc(x.ko)+'"><strong>'+esc(x.ko)+'</strong><span>'+(guide?esc(x.roman):"自力で読む")+'</span><small>'+esc(x.ja)+'</small></button>';
+ }).join("")+'</div></div><p class="small"><b>声に出す：</b>'+esc(l.speak)+'</p>';
+}
+if(l.kind==="x"&&step===5){
+ h='<div class="checkmark">✓</div>'+piece("COMPLETE · 今日のまとめ","新しい1文字が、単語になった。")+'<div class="panel"><div class="ko">'+esc(l.final)+'</div><p class="small">'+esc(l.speak)+'</p><p class="small">'+esc(l.review)+'</p></div>';
+}
+
 var label=step===4?(selected===null?"答えを選んでください":question===2?"学習を完了":"次の問題へ"):step===5?"一覧へ戻る":"次に進む";
 app.innerHTML='<div class="lesson-head"><button class="back" type="button" data-home>← 一覧に戻る</button><span class="small">LESSON '+l.id+' · '+(step+1)+'/6</span></div><div class="progress"><div style="width:'+Math.round((step+1)/6*100)+'%"></div></div><p class="eyebrow">'+l.label+' · '+l.min+' MIN</p><h1>'+esc(l.title)+'</h1>'+h+'<p class="small" id="audio-status" role="status" aria-live="polite"></p><div class="nav">'+(step>0?'<button type="button" class="prev" data-prev>戻る</button>':"")+'<button type="button" class="next" data-next '+(step===4&&selected===null?"disabled":"")+'>'+label+'</button></div>';
 bind();window.scrollTo(0,0)}

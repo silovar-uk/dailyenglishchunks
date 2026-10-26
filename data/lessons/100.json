@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": 100,
+  "createdAt": "2026-10-27",
+  "title": "Breakfast Without the Scroll",
+  "scene": "On a weekday morning, you notice yourself automatically reaching for your phone during breakfast. You decide to eat without scrolling, even though you still have a train to catch.",
+  "sceneJa": "平日の朝、朝食を食べながら無意識にスマホを手に取ろうとしている自分に気づく。電車に乗るまでメッセージは後回しにして、短い朝食の時間をそのまま味わってみる。大事件もオチもない、静かな朝の話。",
+  "emotions": [
+    "distracted",
+    "self-aware",
+    "calm",
+    "content"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "daily-life",
+    "breakfast",
+    "phone-habit",
+    "inner-voice",
+    "noticing-habits",
+    "caught-myself",
+    "for-a-change",
+    "feel-the-need-to",
+    "i-told-myself",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I usually eat breakfast",
+          "ja": "普段は朝食を食べながら"
+        },
+        {
+          "en": "while scrolling through messages",
+          "ja": "メッセージをスクロールしていて"
+        },
+        {
+          "en": "without really tasting anything.",
+          "ja": "何を食べているかもろくに味わっていない"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "This morning,",
+          "ja": "今朝は"
+        },
+        {
+          "en": "I caught myself reaching for my phone",
+          "ja": "無意識にスマホへ手を伸ばしかけた自分に気づいた"
+        },
+        {
+          "en": "before I'd even taken a bite.",
+          "ja": "まだ一口も食べていないのに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I told myself",
+          "ja": "自分に言い聞かせた"
+        },
+        {
+          "en": "the messages could wait",
+          "ja": "メッセージの確認は後でいい"
+        },
+        {
+          "en": "until I got on the train.",
+          "ja": "電車に乗るまでは、と"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a change,",
+          "ja": "今日はいつもと違って"
+        },
+        {
+          "en": "I paid attention to my breakfast",
+          "ja": "朝食そのものに意識を向けた"
+        },
+        {
+          "en": "instead of the screen.",
+          "ja": "画面を見る代わりに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I still had to leave in ten minutes,",
+          "ja": "あと10分で出かけなければならなかったけれど"
+        },
+        {
+          "en": "but I didn't feel the need",
+          "ja": "必要だとは感じなかった"
+        },
+        {
+          "en": "to fill every second.",
+          "ja": "一秒一秒を何かで埋めることまでは"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I headed out,",
+          "ja": "家を出るころには"
+        },
+        {
+          "en": "nothing important had happened,",
+          "ja": "特に何かが起きたわけではなかった"
+        },
+        {
+          "en": "and that was the point.",
+          "ja": "でも、まさにそれがよかった"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps 'I caught myself reaching for my phone' together as one useful speaking unit?",
+      "options": [
+        "I caught myself reaching / for my phone before / I'd even taken a bite.",
+        "I caught myself reaching for my phone / before I'd even taken a bite.",
+        "I caught myself / reaching for my phone before I'd / even taken a bite."
+      ],
+      "answer": 1,
+      "explanation": "The full expression 'I caught myself reaching for my phone' means the speaker suddenly noticed an automatic action. 'Before I'd even taken a bite' adds the surprising timing."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'For a change' suggest in this story?",
+      "options": [
+        "The speaker has permanently given up using a phone.",
+        "The speaker does something differently from the usual habit, just this morning.",
+        "The speaker has changed breakfast ingredients."
+      ],
+      "answer": 1,
+      "explanation": "'For a change' marks a departure from the usual routine. It does not promise a permanent lifestyle change."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'and that was the point' at the end?",
+      "options": [
+        "They were disappointed that the morning was uneventful.",
+        "They had forgotten an important appointment.",
+        "They deliberately enjoyed a few minutes without needing anything exciting or productive to happen."
+      ],
+      "answer": 2,
+      "explanation": "The speaker is satisfied with an ordinary, quiet breakfast. The ending is reflective rather than a joke or a failure."
+    }
+  ],
+  "speak": "Imagine: You have ten minutes for breakfast and automatically reach for your phone. Read: read all six sentences once, picturing the kitchen. Chunk: pause after 'I caught myself reaching for my phone', 'For a change', and 'I didn't feel the need'. Understand: 'catch myself + -ing' is noticing an automatic habit, and 'for a change' marks something unusual compared with your routine. Check: answer the three questions. Speak: for 30 seconds, describe one small habit you noticed this morning and what you chose to do instead. Try 'I caught myself ...-ing', 'I told myself ... could wait', and 'For a change, I ...'. Final Read: read all six sentences without Japanese, keeping the last line quiet and unhurried.",
+  "review": "New: 'I caught myself ...-ing' (気づくと自分が〜していた), 'For a change' (いつもと違って), 'I didn't feel the need to ...' (〜する必要を感じなかった). Reuse Lesson 91 'I told myself ...' (自分に言い聞かせた) in a phone habit rather than a walk, and Lesson 99 'By the time ...' (〜するころには) for the end of a calm morning rather than a museum mix-up. Unlike several recent stories, this one does not end in a mistake or punch line. 'For a change' usage checked against Cambridge Dictionary: https://dictionary.cambridge.org/dictionary/english/for-a-change ."
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": 99,
+  "createdAt": "2026-10-26",
+  "title": "The Umbrella That Wasn't There",
+  "scene": "At a small art museum, you listen to an audio guide that keeps describing a red umbrella. The painting in front of you shows only a blue sea. After puzzling over it, you discover you selected the wrong track.",
+  "sceneJa": "小さな美術館で音声ガイドを聞いていると、赤い傘の説明が続く。しかし目の前の絵は青い海。自分の鑑賞眼を疑いかけたところで、再生番号を間違えたと気づく。最後のガイドの一言が、妙に自分への助言に聞こえる。",
+  "emotions": [
+    "curious",
+    "puzzled",
+    "self-conscious",
+    "quietly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "culture",
+    "art-museum",
+    "audio-guide",
+    "misunderstanding",
+    "self-deprecating-humour",
+    "halfway-through",
+    "all-i-could-see",
+    "make-sense-of",
+    "just-to-make-sure",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was halfway through the museum's audio guide",
+          "ja": "美術館の音声ガイドを半分ほど聞いたところで"
+        },
+        {
+          "en": "when I noticed",
+          "ja": "ふと気づいた"
+        },
+        {
+          "en": "the painting didn't match the description.",
+          "ja": "絵と説明が合っていないことに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The narrator kept mentioning a bright red umbrella,",
+          "ja": "ナレーターは鮮やかな赤い傘の話を繰り返していたのに"
+        },
+        {
+          "en": "but all I could see",
+          "ja": "自分に見えるのは"
+        },
+        {
+          "en": "was a calm blue sea.",
+          "ja": "穏やかな青い海だけだった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I couldn't make sense of it,",
+          "ja": "どうにも理解できず"
+        },
+        {
+          "en": "so I stood there for another minute,",
+          "ja": "さらに1分ほどその場に立ったまま"
+        },
+        {
+          "en": "wondering what I was missing.",
+          "ja": "何を見落としているのか考えていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため"
+        },
+        {
+          "en": "I checked the number beside the frame",
+          "ja": "額の横にある番号を確認すると"
+        },
+        {
+          "en": "and found I'd selected track sixteen instead of nineteen.",
+          "ja": "19番ではなく16番を選んでいたと分かった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I switched to the right track,",
+          "ja": "正しい音声に切り替えた頃には"
+        },
+        {
+          "en": "I'd spent five minutes",
+          "ja": "5分も費やしていた"
+        },
+        {
+          "en": "searching for an umbrella in the ocean.",
+          "ja": "海の中に傘を探すことに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The new recording began,",
+          "ja": "新しい音声はこう始まった"
+        },
+        {
+          "en": "'Notice how calm the water looks,'",
+          "ja": "「水面の穏やかさに注目してください」"
+        },
+        {
+          "en": "which sounded suspiciously like advice.",
+          "ja": "妙に自分への助言のように聞こえた"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which grouping keeps 'all I could see' as a meaningful unit?",
+      "options": [
+        "but all I / could see was / a calm blue sea.",
+        "but all I could see / was a calm blue sea.",
+        "but all / I could see was a / calm blue sea."
+      ],
+      "answer": 1,
+      "explanation": "'All I could see' means the only thing visible to the speaker. Keep the expression together, then add what they could see."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I couldn't make sense of it' mean here?",
+      "options": [
+        "The speaker couldn't understand why the description didn't fit.",
+        "The speaker couldn't hear the audio guide at all.",
+        "The speaker couldn't find the museum exit."
+      ],
+      "answer": 0,
+      "explanation": "'Make sense of something' means to understand it. The speaker cannot reconcile the umbrella description with the blue sea."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the final line sound like advice to the speaker?",
+      "options": [
+        "The guide knew the speaker had chosen the wrong track.",
+        "The guide was telling visitors to leave the museum.",
+        "After overthinking the mix-up, the speaker hears 'calm' as an amusing reminder to relax."
+      ],
+      "answer": 2,
+      "explanation": "The recording is describing the painting, not addressing the speaker. The joke comes from the speaker's self-conscious interpretation."
+    }
+  ],
+  "speak": "Imagine misunderstanding a museum label, sign, instruction, or announcement. Imagine: you are looking at a calm seascape while the guide describes a red umbrella. Read: read all six sentences aloud once. Chunk: pause after 'I was halfway through the museum's audio guide', 'all I could see', and 'Just to make sure'. Understand: 'make sense of' means understand, and 'all I could see' limits what was visible. Check: answer the three questions. Speak: for 30 seconds, describe a time a description did not match what you saw. Use 'I was halfway through ...', 'I couldn't make sense of it', and 'Just to make sure, I ...'. Read aloud again: slow down for the final sentence and deliver it with gentle self-deprecating humour. Final Read: read all six sentences smoothly without looking at the Japanese.",
+  "review": "New chunks: 'I was halfway through ...' (〜の途中まで進んだところだった), 'all I could see was ...' (見えるのは〜だけだった), 'I couldn't make sense of it' (どうにも理解できなかった). Reuse Lesson 92 'Just to make sure' (念のため) in a museum instead of a meeting-place clarification. Reuse Lesson 90 'By the time ...' (〜する頃には) to describe time wasted rather than a football match. Pragmatics: 'sounded suspiciously like advice' is playful, not a claim that the recording actually addressed the narrator."
+}

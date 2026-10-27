@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": 102,
+  "createdAt": "2026-10-27",
+  "title": "The Soup Grew on Me",
+  "scene": "On a chilly evening, a friend serves cold tomato soup with warm bread. You expected something hot and hesitate to say so, but she makes room for an honest reaction. After a few spoonfuls, the unfamiliar flavor starts to appeal to you.",
+  "sceneJa": "肌寒い夜、友人が温かいパンと冷たいトマトスープを出してくれた。温かい料理を想像していたので少し戸惑うが、友人は無理に褒めなくていいと言ってくれる。何口か食べるうちに、その味がだんだん好きになっていく。",
+  "emotions": [
+    "surprised",
+    "hesitant",
+    "reassured",
+    "curious",
+    "warm"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "food",
+    "friendship",
+    "tastes",
+    "social-nuance",
+    "soft-disappointment",
+    "make-a-fuss",
+    "what-i-had-in-mind",
+    "grow-on-me",
+    "you-dont-have-to",
+    "for-what-its-worth"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "On a chilly evening,",
+          "ja": "肌寒い夜に"
+        },
+        {
+          "en": "my friend served cold tomato soup",
+          "ja": "友人が冷たいトマトスープを出してくれた"
+        },
+        {
+          "en": "with warm bread.",
+          "ja": "温かいパンと一緒に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It wasn't quite what I had in mind,",
+          "ja": "思い描いていたものとは少し違ったけれど"
+        },
+        {
+          "en": "but I didn't want to make a fuss",
+          "ja": "大げさに騒ぎ立てたくはなかった"
+        },
+        {
+          "en": "after she'd cooked for us.",
+          "ja": "せっかく彼女が料理してくれたのだから"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She noticed my hesitation",
+          "ja": "彼女は僕がためらっているのに気づいて"
+        },
+        {
+          "en": "and said, 'You don't have to pretend",
+          "ja": "「無理に好きなふりをしなくても"
+        },
+        {
+          "en": "you love it.'",
+          "ja": "いいんだよ」と言った"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I tried another spoonful,",
+          "ja": "もうひと口食べてみると"
+        },
+        {
+          "en": "and the sharp, fresh taste",
+          "ja": "さっぱりとした酸味のある味が"
+        },
+        {
+          "en": "started to grow on me.",
+          "ja": "だんだん好きになってきた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'For what it's worth,",
+          "ja": "「参考までに言うと"
+        },
+        {
+          "en": "I think I like it more",
+          "ja": "こっちのほうが好きかも"
+        },
+        {
+          "en": "with the bread,' I admitted.",
+          "ja": "パンと一緒に食べるとね」と正直に伝えた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She passed me the last slice",
+          "ja": "彼女は最後のひと切れを渡してくれて"
+        },
+        {
+          "en": "and said she'd saved some soup",
+          "ja": "スープを少し取ってあると言った"
+        },
+        {
+          "en": "for tomorrow, if I wanted it.",
+          "ja": "僕がよければ明日の分に、と"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps both useful expressions intact and separates the reason?",
+      "options": [
+        "It wasn't quite / what I had in mind, but I / didn't want to make a fuss after she'd cooked for us.",
+        "It wasn't quite what I had in mind, / but I didn't want to make a fuss / after she'd cooked for us.",
+        "It wasn't quite what I had / in mind, but I didn't want / to make a fuss after she'd cooked for us."
+      ],
+      "answer": 1,
+      "explanation": "'It wasn't quite what I had in mind' gently describes unmet expectations; 'didn't want to make a fuss' expresses reluctance to complain. Keep each as a speaking unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'the taste started to grow on me' mean?",
+      "options": [
+        "The soup became hotter as time passed.",
+        "I gradually began to like the flavor.",
+        "I had liked the soup from the first spoonful."
+      ],
+      "answer": 1,
+      "explanation": "When something grows on you, you gradually like it more than you did at first. It doesn't mean the food itself grows."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend say 'You don't have to pretend you love it'?",
+      "options": [
+        "She is asking the guest to stop eating immediately.",
+        "She wants to prove her recipe is the best.",
+        "She is making it safe for the guest to be honest about an unfamiliar taste."
+      ],
+      "answer": 2,
+      "explanation": "The friend notices hesitation and removes social pressure. This is reassurance, not criticism."
+    }
+  ],
+  "speak": "Imagine: a friend serves you an unfamiliar dish. Read: picture the chilly evening and the warm bread. Chunk: keep 'It wasn't quite what I had in mind', 'I didn't want to make a fuss', and 'It started to grow on me' together as natural units. Understand: 'not quite what I had in mind' softens disappointment; 'make a fuss' means react or complain more than needed; 'grow on me' means gradually become more appealing. Check: answer all three questions. Speak (30 seconds): describe a food, song, or place you weren't sure about at first. Say what you expected, how you reacted politely, and whether it grew on you. Try 'It wasn't quite what I had in mind', 'I didn't want to make a fuss', and 'It grew on me'. Final Read: read all six sentences smoothly without Japanese, making the guest sound hesitant at first and genuinely warmer by the end.",
+  "review": "New: 'It wasn't quite what I had in mind' (想像していたものとは少し違った), 'I didn't want to make a fuss' (大げさに文句を言いたくなかった), 'It grew on me' (だんだん好きになった; in the story: 'started to grow on me'). Reuse Lesson 98 'You don't have to ...' to remove pressure about taste rather than a deadline, and Lesson 93 'For what it's worth' to offer a gentle personal opinion rather than comfort someone after a social mistake. Unlike recent museum, cat, and jazz stories, this episode explores changing tastes and making honesty comfortable. Dictionary checks: https://dictionary.cambridge.org/dictionary/english/grow-on and https://dictionary.cambridge.org/dictionary/english/fuss ."
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": 103,
+  "createdAt": "2026-10-28",
+  "title": "The Plant Could Wait",
+  "scene": "On a quiet weekday morning, you reach for the watering can out of habit. The soil is still damp, so you rethink your routine and let the plant enjoy the sunlight instead.",
+  "sceneJa": "平日の朝、いつもの癖で観葉植物に水をやろうとする。しかし土がまだ湿っていることに気づき、いったん考え直す。水やりをやめてカーテンを開けるだけにした、小さな朝の出来事。",
+  "emotions": [
+    "habitual",
+    "observant",
+    "thoughtful",
+    "lightly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "daily-life",
+    "home",
+    "plants",
+    "habits",
+    "inner-voice",
+    "noticing",
+    "about-to-when",
+    "on-second-thought",
+    "leave-alone",
+    "for-a-change",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was about to water the plant",
+          "ja": "植物に水をやろうとしていた"
+        },
+        {
+          "en": "on my windowsill",
+          "ja": "窓辺に置いてある"
+        },
+        {
+          "en": "when I noticed",
+          "ja": "そのとき気づいた"
+        },
+        {
+          "en": "the soil was still damp.",
+          "ja": "土がまだ湿っていることに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'd been watering it",
+          "ja": "ずっと水をやっていた"
+        },
+        {
+          "en": "every morning",
+          "ja": "毎朝"
+        },
+        {
+          "en": "without really checking.",
+          "ja": "ちゃんと確かめもせずに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On second thought,",
+          "ja": "考え直して"
+        },
+        {
+          "en": "I put the watering can back",
+          "ja": "じょうろを元に戻した"
+        },
+        {
+          "en": "under the sink.",
+          "ja": "流し台の下へ"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a change,",
+          "ja": "今日はいつもと違って"
+        },
+        {
+          "en": "I left the plant alone",
+          "ja": "植物には手を出さず"
+        },
+        {
+          "en": "and opened the curtains instead.",
+          "ja": "代わりにカーテンを開けた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I finished breakfast,",
+          "ja": "朝食を食べ終わるころには"
+        },
+        {
+          "en": "the leaves were catching",
+          "ja": "葉っぱに差し込んでいた"
+        },
+        {
+          "en": "the morning light.",
+          "ja": "朝の光が"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I almost congratulated myself",
+          "ja": "危うく自分を褒めそうになった"
+        },
+        {
+          "en": "for doing absolutely nothing.",
+          "ja": "何もしなかったというだけで"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the intention and the discovery as natural speaking units?",
+      "options": [
+        "I was / about to water the plant on / my windowsill when I / noticed the soil was still damp.",
+        "I was about to water the plant / on my windowsill / when I noticed / the soil was still damp.",
+        "I was about / to water the plant on my / windowsill when I noticed the / soil was still damp."
+      ],
+      "answer": 1,
+      "explanation": "Keep 'I was about to water ...' together for an action you were just going to do, and 'when I noticed ...' together for the discovery that interrupted it."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'On second thought' mean here?",
+      "options": [
+        "The speaker decides to water the plant twice.",
+        "After reconsidering, the speaker changes the plan.",
+        "The speaker is remembering something that happened yesterday."
+      ],
+      "answer": 1,
+      "explanation": "'On second thought' signals a change of mind after thinking again. The speaker puts the watering can away."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker leave the plant alone?",
+      "options": [
+        "The plant has been moved to another room.",
+        "The speaker forgot where the watering can was.",
+        "The soil is still damp, so watering it again seems unnecessary."
+      ],
+      "answer": 2,
+      "explanation": "The speaker notices the soil is still damp and chooses not to water automatically. The final sentence adds gentle self-mockery."
+    }
+  ],
+  "speak": "Imagine: it is morning and you are about to do something automatically. Read: picture the plant, damp soil, and morning light. Chunk: read 'I was about to ... when ...', 'On second thought', and 'leave ... alone' as complete thought units. Understand: 'be about to' means be on the point of doing something; 'on second thought' introduces a revised decision; 'leave ... alone' means stop touching or interfering with it. Check: answer the three questions. Speak (30 seconds): describe a habit you almost followed today. Say what you were about to do, what you noticed, and what you did instead. Use 'I was about to ... when ...' and 'On second thought ...'. Final Read: read all six sentences without Japanese; pause after 'On second thought' and sound amused in the final line.",
+  "review": "New chunks: 'I was about to ... when ...' (〜しようとしたそのとき〜), 'On second thought' (考え直して), and 'leave ... alone' (〜には手を出さずにおく). Reuse Lesson 100 'For a change' (いつもと違って) in a household chore instead of a phone habit; Lesson 91/90 'By the time ...' (〜するころには) to mark breakfast rather than a walk or match; and 'I almost ...' from Lesson 92/94 in a playful final thought. Unlike recent mornings about walking, coffee, commuting and screen habits, this scene practises revising a routine after noticing something. Usage checked: https://dictionary.cambridge.org/grammar/british-grammar/be-expressions-be-able-to-be-due-to and https://dictionary.cambridge.org/us/dictionary/english/second-thought ."
+}

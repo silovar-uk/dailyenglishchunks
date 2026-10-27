@@ -26,6 +26,7 @@ footer{border-top:1px solid var(--edge);padding:20px 0 35px;color:var(--muted);f
 </div>
 <script src="./lessons/lesson-2026-10-26-evening-i-vowel.js?v=20261026-2000"></script>
 <script src="./lessons/lesson-2026-10-27-morning-ya-baseball.js?v=20261027-0700"></script>
+<script src="./lessons/lesson-2026-10-27-midday-eo-o-contrast.js?v=20261027-1200"></script>
 <script>
 (function(){
 "use strict";
@@ -70,7 +71,7 @@ if(l.kind==="x"&&step===0){
  h=piece("IMAGINE · 今日のゴール",esc(l.goal))+'<div class="panel"><p>'+esc(l.intro)+'</p><p class="small"><b>復習：</b>'+esc(l.review)+'</p></div>';
 }
 if(l.kind==="x"&&step===1){
- h=piece("LETTER · 今日の新しい文字","新しい音は、まず1つだけ。")+'<p class="small">文字を見て口の形を確かめてから、音を聴こう。</p><div class="panel">'+l.letters.map(function(x){
+ h=piece(l.reviewOnly?"REVIEW · 文字と音の復習":"LETTER · 今日の新しい文字",l.reviewOnly?"新しい文字は増やさず、違いを確かめよう。":"新しい音は、まず1つだけ。")+'<p class="small">文字を見て口の形を確かめてから、音を聴こう。</p><div class="panel">'+l.letters.map(function(x){
  return '<div class="phrase"><div class="ko">'+esc(x.char)+'</div><div class="roman">'+esc(x.roman)+'</div><p class="small">'+esc(x.tip)+'</p><button type="button" class="audio" data-audio="'+esc(x.audio)+'">🔊 この音を聴く</button></div>';
  }).join("")+'</div><p class="small">ローマ字は最初の補助。韓国語の発音を完全には表せません。</p>';
 }

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": 101,
+  "createdAt": "2026-10-27",
+  "title": "Would You Mind If I Took It to the Beach?",
+  "scene": "A friend offers to lend you her film camera for a harbor walk. You ask whether you can take it to the beach afterward. She sets a boundary about sand, and you agree on a way to return it safely.",
+  "sceneJa": "友人が港の散歩用にフィルムカメラを貸してくれることになった。ついでに海辺へ持って行ってもよいか尋ねると、砂が心配だと言われる。気まずくならずに相手の希望を尊重し、返却方法を決める。",
+  "emotions": [
+    "grateful",
+    "curious",
+    "cautious",
+    "respectful",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "friends",
+    "film-camera",
+    "permission",
+    "setting-boundaries",
+    "respecting-preferences",
+    "would-you-mind-if",
+    "id-rather-you-didnt",
+    "fair-enough",
+    "that-works-for-me",
+    "just-to-make-sure"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "A friend offered to lend me",
+          "ja": "友人が貸してくれると言ってくれた"
+        },
+        {
+          "en": "her film camera",
+          "ja": "彼女のフィルムカメラを"
+        },
+        {
+          "en": "for a walk around the harbor.",
+          "ja": "港の周りを散歩するときに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Before I took it,",
+          "ja": "借りる前に"
+        },
+        {
+          "en": "I asked, 'Would you mind if I brought it",
+          "ja": "「それを持って行っても大丈夫かな」と尋ねた"
+        },
+        {
+          "en": "to the beach afterward?'",
+          "ja": "散歩のあと、海辺にも"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She said, 'I'd rather you didn't—",
+          "ja": "彼女は「できれば持って行かないでほしいな」と言った"
+        },
+        {
+          "en": "sand gets into everything,",
+          "ja": "砂ってどこにでも入り込むし"
+        },
+        {
+          "en": "especially old cameras.'",
+          "ja": "特に古いカメラにはね、と"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I said, 'Fair enough.",
+          "ja": "僕は「そりゃそうだね」と答えた"
+        },
+        {
+          "en": "I'll bring it back to your place",
+          "ja": "君の家に返しに行くよ"
+        },
+        {
+          "en": "before I go to the beach.'",
+          "ja": "海辺に行く前に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'That works for me,' she said,",
+          "ja": "「それなら大丈夫」と彼女は言い"
+        },
+        {
+          "en": "and thanked me",
+          "ja": "僕にお礼を言ってくれた"
+        },
+        {
+          "en": "for checking first.",
+          "ja": "先に確認したことに対して"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため"
+        },
+        {
+          "en": "I checked when she'd be home",
+          "ja": "何時ごろ家にいるか確かめた"
+        },
+        {
+          "en": "so I could hand it back in person.",
+          "ja": "直接手渡しで返せるように"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the polite permission request together as a useful speaking unit?",
+      "options": [
+        "Would you / mind if I brought / it to the beach afterward?",
+        "Would you mind if I brought it / to the beach afterward?",
+        "Would you mind / if I brought it to / the beach afterward?"
+      ],
+      "answer": 1,
+      "explanation": "'Would you mind if I brought it ...?' asks permission politely. The past form 'brought' refers to a possible future action here. Keep the request together before adding the destination."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I'd rather you didn't' mean in this situation?",
+      "options": [
+        "She would prefer that the camera not go to the beach.",
+        "She has decided not to lend the camera at all.",
+        "She wants to go to the beach instead of the harbor."
+      ],
+      "answer": 0,
+      "explanation": "The friend is setting a specific boundary: the camera should not be taken to the sandy beach. 'I'd rather you didn't' expresses a preference about someone else's action."
+    },
+    {
+      "type": "intent",
+      "question": "What is the speaker doing by saying 'Fair enough'?",
+      "options": [
+        "Acknowledging that the friend's concern is reasonable and accepting the limit.",
+        "Agreeing to take the camera to the beach secretly.",
+        "Telling the friend that her camera is too old to use."
+      ],
+      "answer": 0,
+      "explanation": "'Fair enough' accepts the reason without arguing. The speaker then offers a concrete return plan, showing respect for the lender's preference."
+    }
+  ],
+  "speak": "Imagine: a friend offers to lend you something valuable, but you want to use it in a different place. Read: read all six sentences, changing your tone for each speaker. Chunk: keep 'Would you mind if I brought it ...?', 'I'd rather you didn't', and 'Fair enough' together. Understand: 'Would you mind if I + past verb' politely asks permission; 'I'd rather you didn't' is a polite but clear preference, not a statement about the past. Check: answer the three questions. Speak: for 30 seconds, ask permission to use a borrowed item somewhere, respond to a reasonable boundary, and propose a practical alternative. Try 'Would you mind if I ...?', 'I'd rather you didn't', and 'Fair enough'. Final Read: read all six English sentences smoothly without Japanese, with a calm, respectful tone.",
+  "review": "New: 'Would you mind if I ...?' (〜しても差し支えない？), 'I'd rather you didn't' (できれば〜しないでほしい), 'Fair enough' (なるほど、それなら分かる). Reuse Lesson 95 'That works for me' (それなら大丈夫) to accept a camera return plan instead of a café suggestion; Lesson 92 'Just to make sure' (念のため) to check a safe handover instead of a meeting entrance. Different from recent invitations and mix-ups: this story teaches asking permission, respecting a boundary, and offering an alternative. Usage cross-checked: https://dictionary.cambridge.org/us/grammar/british-grammar/mind and https://dictionary.cambridge.org/grammar/british-grammar/would-rather-would-sooner ."
+}

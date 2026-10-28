@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": 105,
+  "createdAt": "2026-10-28",
+  "title": "The Trap I Walked Into",
+  "scene": "During a friendly shogi game, a player sees what looks like a free piece and takes it. Two moves later, he realizes he has fallen into a trap. He praises his friend, who admits the trap was a gamble.",
+  "sceneJa": "友人との将棋で、簡単に取れそうな駒を見つけた。相手のミスだと思って取るが、二手後に罠だったと気づく。相手の巧みさを認めると、本人も成功するかは分からなかったと笑う。",
+  "emotions": [
+    "confident",
+    "tempted",
+    "surprised",
+    "impressed",
+    "lightly amused"
+  ],
+  "difficulty": 4,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "shogi",
+    "board-game",
+    "friends",
+    "sportsmanship",
+    "conceding",
+    "trap",
+    "dry-humour",
+    "take-the-bait",
+    "walk-right-into",
+    "hand-it-to-you",
+    "could-have-sworn",
+    "for-what-its-worth"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "During a friendly shogi game,",
+          "ja": "友人との気軽な将棋で"
+        },
+        {
+          "en": "I thought I'd found",
+          "ja": "見つけたと思った"
+        },
+        {
+          "en": "a clear way to attack his king.",
+          "ja": "相手の王を攻める明快な手を"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He paused for a moment",
+          "ja": "彼は少し考えてから"
+        },
+        {
+          "en": "and left a piece",
+          "ja": "駒を一つ置いた"
+        },
+        {
+          "en": "where I could easily take it.",
+          "ja": "僕が簡単に取れる場所に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I could've sworn",
+          "ja": "間違いないと思った"
+        },
+        {
+          "en": "it was a mistake,",
+          "ja": "彼のミスだと"
+        },
+        {
+          "en": "so I took the bait.",
+          "ja": "それで、まんまと誘いに乗ってしまった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Two moves later,",
+          "ja": "二手後に"
+        },
+        {
+          "en": "I realized",
+          "ja": "気づいた"
+        },
+        {
+          "en": "I'd walked right into his trap.",
+          "ja": "相手の罠にまんまとはまったことに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I laughed and said,",
+          "ja": "僕は笑って言った"
+        },
+        {
+          "en": "'I have to hand it to you—",
+          "ja": "「これは君を認めざるを得ないよ"
+        },
+        {
+          "en": "that was clever.'",
+          "ja": "うまい手だった」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He smiled and said,",
+          "ja": "彼は笑って答えた"
+        },
+        {
+          "en": "'For what it's worth,",
+          "ja": "「一応言っておくと"
+        },
+        {
+          "en": "I wasn't sure you'd take it.'",
+          "ja": "君が取ってくれるか、自信はなかったんだ」"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the idiom together and follows natural speaking units?",
+      "options": [
+        "Two moves later / I realized / I'd walked right into his trap.",
+        "Two moves / later I realized I'd / walked right into / his trap.",
+        "Two / moves later I realized / I'd walked right / into his trap."
+      ],
+      "answer": 0,
+      "explanation": "'Walked right into his trap' is a complete idiomatic unit. Pause after the time phrase, then after 'I realized'."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I took the bait' mean in this shogi story?",
+      "options": [
+        "I picked up food from the table.",
+        "I deliberately ignored a tempting move.",
+        "I accepted a tempting move and fell for a trap."
+      ],
+      "answer": 2,
+      "explanation": "'Take the bait' means respond to a tempting offer or provocation. Here, the apparent free piece was a lure."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'I have to hand it to you'?",
+      "options": [
+        "He is asking for his piece back.",
+        "He is acknowledging his friend's skill, despite losing.",
+        "He is saying the game must end immediately."
+      ],
+      "answer": 1,
+      "explanation": "'Have to hand it to someone' expresses respect or admiration for what they did, even when you were the one who lost."
+    }
+  ],
+  "speak": "Imagine a friendly game or small competition where you fell for a trick. Imagine: see the apparently free piece. Read: follow the change from confidence to respect. Chunk: say 'I took the bait', 'I walked right into a trap', and 'I have to hand it to you' as whole units. Understand: the first two admit a mistake; the last praises someone else. Check: answer three questions. Speak (30 seconds): describe the tempting move, explain the trap, and praise your opponent using those three chunks. Final Read: read the six sentences without Japanese; sound confident at first, surprised at the trap, then genuinely impressed. Pause lightly before 'For what it's worth'.",
+  "review": "New: 'take the bait' (誘いに乗る・罠に引っかかる), 'walk right into a trap' (まんまと罠にはまる), 'I have to hand it to you' (君には感心する・腕前を認める). Reuse Lesson 94 'I could've sworn ...' (絶対に〜だと思った) for a mistaken shogi judgment rather than missing coffee; Lesson 93/102 'For what it's worth' (一応言っておくと) for a wry admission rather than a gentle opinion about a concert or soup. Also 'for a moment' from Lesson 95. The latest 14 lessons 91–104 covered routines, invitations, museums, food, and planning; this one teaches graciously acknowledging an opponent after a tactical mistake, not another scheduling or food misunderstanding. Sources: https://dictionary.cambridge.org/dictionary/english/take-the-bait ; https://dictionary.cambridge.org/dictionary/english/walk-right-into ; https://dictionary.cambridge.org/us/dictionary/english/have-got-to-hand-it-to"
+}

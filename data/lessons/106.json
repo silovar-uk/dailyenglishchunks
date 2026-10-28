@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": 106,
+  "createdAt": "2026-10-29",
+  "title": "The Tune I Couldn't Place",
+  "scene": "On a quiet morning, a melody keeps repeating in your head. You hum it over breakfast, trying to remember where it came from. As you tie your shoes, you finally recognize it as a cartoon theme from childhood, though its title remains elusive.",
+  "sceneJa": "朝から頭を離れないメロディー。朝食中も鼻歌で思い出そうとするが、どこで聴いた曲か分からない。靴ひもを結んでいるときに子どものころ見たアニメの主題歌だと気づく。ただし作品名は最後まで思い出せない。",
+  "emotions": [
+    "curious",
+    "puzzled",
+    "nostalgic",
+    "lightly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "daily-life",
+    "music",
+    "memory",
+    "inner-voice",
+    "nostalgia",
+    "stuck-in-my-head",
+    "couldnt-place-it",
+    "it-clicked",
+    "could-have-sworn",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I woke up",
+          "ja": "目を覚ましたら"
+        },
+        {
+          "en": "with a tune stuck in my head,",
+          "ja": "あるメロディーが頭から離れなくて"
+        },
+        {
+          "en": "but I couldn't place it.",
+          "ja": "どこで聴いた曲なのか思い出せなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I hummed the first few notes",
+          "ja": "出だしの数音を鼻歌で繰り返した"
+        },
+        {
+          "en": "while making breakfast,",
+          "ja": "朝食を作りながら"
+        },
+        {
+          "en": "hoping the rest would come back.",
+          "ja": "続きを思い出せるかと思って"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I could've sworn",
+          "ja": "間違いなくそうだと思っていた"
+        },
+        {
+          "en": "it was from a film,",
+          "ja": "映画の曲だと"
+        },
+        {
+          "en": "though I couldn't remember which one.",
+          "ja": "でも、どの映画かは思い出せなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then, while tying my shoes,",
+          "ja": "ところが、靴ひもを結んでいるときに"
+        },
+        {
+          "en": "it finally clicked:",
+          "ja": "ようやくピンときた"
+        },
+        {
+          "en": "it was the theme from a cartoon I watched as a kid.",
+          "ja": "子どものころ見ていたアニメの主題歌だったんだ"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I left the house,",
+          "ja": "家を出るころには"
+        },
+        {
+          "en": "I could remember",
+          "ja": "思い出せていた"
+        },
+        {
+          "en": "almost the whole melody.",
+          "ja": "メロディーのほとんどを"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I still couldn't remember the cartoon's name,",
+          "ja": "それでもアニメのタイトルだけは思い出せず"
+        },
+        {
+          "en": "which felt a little unfair.",
+          "ja": "なんだか少し悔しかった"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the expression 'stuck in my head' together as a natural speaking unit?",
+      "options": [
+        "I woke up / with a tune stuck in my head, / but I couldn't place it.",
+        "I woke / up with a tune stuck / in my head but / I couldn't place it.",
+        "I woke up with / a tune stuck in / my head but I / couldn't place it."
+      ],
+      "answer": 0,
+      "explanation": "'With a tune stuck in my head' describes the whole state; 'I couldn't place it' is another complete idea. Keep the expression together."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I couldn't place it' mean when talking about the tune?",
+      "options": [
+        "I couldn't find a place to play the tune.",
+        "I recognized the tune but couldn't remember where I'd heard it.",
+        "I couldn't sing the tune at the right pitch."
+      ],
+      "answer": 1,
+      "explanation": "'Can't place it' means something feels familiar, but you can't identify its source. Here the speaker doesn't know where the melody came from."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'it finally clicked'?",
+      "options": [
+        "The speaker heard a clicking sound from the shoes.",
+        "The speaker decided to stop listening to music.",
+        "The speaker suddenly realized the tune came from a childhood cartoon."
+      ],
+      "answer": 2,
+      "explanation": "'It clicked' means the answer suddenly became clear. The speaker recognizes the source of the melody, even if the cartoon's title is still missing."
+    }
+  ],
+  "speak": "Imagine: you wake up humming a familiar tune. Read: notice the shift from puzzlement to recognition. Chunk: practise 'stuck in my head', 'I couldn't place it', and 'it finally clicked' as complete units. Understand: 'place it' means identify where you know something from, not put it somewhere. Check: answer the three questions. Speak (30 seconds): describe a song, face, or smell that felt familiar; explain why you couldn't place it and what finally made it click. Final Read: read all six sentences without Japanese, with a thoughtful pause before 'it finally clicked'.",
+  "review": "New: 'stuck in my head' (頭から離れない), 'I couldn't place it' (どこで知ったものか思い出せない), 'it finally clicked' (ようやくピンときた). Reuse Lesson 105 'I could've sworn ...' (絶対に〜だと思った) for a mistaken guess about music instead of a shogi move; Lesson 100/103 'By the time ...' (〜するころには) for memory returning instead of a morning habit. Comparison of lessons 92–105: morning stories featured coffee, elevator, phone, plant; this is involuntary musical memory and recognizing a childhood tune, not a repeated routine correction. Pragmatics checked: Cambridge 'place' https://dictionary.cambridge.org/dictionary/learner-english/place ; Cambridge 'click' https://dictionary.cambridge.org/dictionary/learner-english/click ; example of 'stuck in your head' https://www.ihcway.com/1day/20150724104904.html"
+}

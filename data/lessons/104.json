@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": 104,
+  "createdAt": "2026-10-28",
+  "title": "The Bakery Before the Bookshop",
+  "scene": "Two friends planned to visit a bookshop before buying pastries. The bakery closes earlier, so Mia suggests reversing the order and explains why. They check the bookshop's hours and enjoy both places without rushing.",
+  "sceneJa": "友人と本屋を見てからパン屋に寄るつもりだったが、パン屋のほうが早く閉まる。ミアが順番を入れ替える提案をし、理由を伝える。営業時間を確認して、慌てずに両方を楽しむ。",
+  "emotions": [
+    "relaxed",
+    "practical",
+    "cooperative",
+    "reassured",
+    "content"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "friends",
+    "weekend",
+    "bookshop",
+    "bakery",
+    "planning",
+    "reordering-plans",
+    "explaining-reasons",
+    "what-if-we",
+    "that-way",
+    "can-always",
+    "fair-enough",
+    "just-to-make-sure"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We had planned to browse the bookshop",
+          "ja": "本屋を見て回る予定だった"
+        },
+        {
+          "en": "before getting pastries,",
+          "ja": "お菓子を買う前に"
+        },
+        {
+          "en": "but the bakery closed at four.",
+          "ja": "でもパン屋は4時に閉まる"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Mia asked,",
+          "ja": "ミアが提案した"
+        },
+        {
+          "en": "'What if we go to the bakery first",
+          "ja": "「先にパン屋に行くのはどう？"
+        },
+        {
+          "en": "and leave the books for later?'",
+          "ja": "本屋はあとにして」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'That way,",
+          "ja": "「そうすれば"
+        },
+        {
+          "en": "we won't have to rush",
+          "ja": "慌てなくて済むし"
+        },
+        {
+          "en": "just to get there before closing,' she said.",
+          "ja": "閉店前に着こうと急ぐ必要もないよ」と彼女は言った"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I said, 'Fair enough.",
+          "ja": "僕は「なるほど、確かにね」と答えた"
+        },
+        {
+          "en": "We can always take our time",
+          "ja": "ゆっくり時間をかけられるし"
+        },
+        {
+          "en": "at the bookshop afterward.'",
+          "ja": "本屋ではあとからね」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため"
+        },
+        {
+          "en": "I checked the bookshop's hours",
+          "ja": "本屋の営業時間を確認した"
+        },
+        {
+          "en": "on my phone.",
+          "ja": "スマホで"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It was open until six,",
+          "ja": "本屋は6時まで開いていたので"
+        },
+        {
+          "en": "so we bought two pastries",
+          "ja": "お菓子を2つ買い"
+        },
+        {
+          "en": "and wandered through the books",
+          "ja": "本を眺めながら歩いた"
+        },
+        {
+          "en": "without watching the clock.",
+          "ja": "時計を気にすることなく"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps Mia's suggestion as a natural speaking unit?",
+      "options": [
+        "What if / we go to the bakery / first and leave the books for later?",
+        "What if we go to the bakery first / and leave the books for later?",
+        "What / if we go to the bakery first and / leave the books for later?"
+      ],
+      "answer": 1,
+      "explanation": "'What if we go to the bakery first?' gently proposes a change. The second unit adds what to do later."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'We can always take our time at the bookshop afterward' mean?",
+      "options": [
+        "They must spend exactly one hour in the bookshop.",
+        "They have the option of browsing without rushing later.",
+        "They have to skip the bookshop entirely."
+      ],
+      "answer": 1,
+      "explanation": "'Can always' suggests an available option; 'take our time' means not hurry. It does not mean they always visit bookshops."
+    },
+    {
+      "type": "intent",
+      "question": "Why does Mia suggest going to the bakery first?",
+      "options": [
+        "She has lost interest in books.",
+        "The bakery closes earlier, and changing the order avoids a rush.",
+        "She wants to avoid buying pastries."
+      ],
+      "answer": 1,
+      "explanation": "Mia proposes a new order and gives a practical reason: the bakery closes earlier, while the bookshop stays open longer."
+    }
+  ],
+  "speak": "Imagine: you and a friend want to visit two places, but one closes sooner. Read: picture the bakery sign and bookshop shelves. Chunk: keep 'What if we ... first?', 'That way, ...', and 'We can always ...' together. Understand: 'What if we ...?' gently proposes a plan; 'That way' introduces the benefit; 'can always' offers a possible solution. Check: answer three questions. Speak (30 seconds): suggest switching the order of two errands. Say 'What if we ... first?', explain 'That way, ...', and offer a fallback with 'We can always ...'. Final Read: read all six sentences without Japanese, sounding practical rather than bossy; pause naturally after 'That way'.",
+  "review": "New: 'What if we ... first?' (先に〜するのはどう？), 'That way, ...' (そうすれば〜), 'We can always ...' (〜する手もある／いつでも〜できる). Reuse Lesson 101 'Fair enough' (なるほど、確かに) to accept a plan rather than a borrowing boundary; Lesson 92/101 'Just to make sure' (念のため) to check opening hours rather than a meeting entrance or handover. Compared with the previous 14 lessons (90–103), this focuses on sequencing errands and explaining the benefit, not declining an invitation, requesting permission, or fixing a misunderstanding. Usage: https://dictionary.cambridge.org/dictionary/english/what-if and https://dictionary.cambridge.org/dictionary/english/can-always ."
+}

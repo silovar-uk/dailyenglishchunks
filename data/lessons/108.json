@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": 108,
+  "createdAt": "2026-10-29",
+  "title": "The Runner I Cheered for",
+  "scene": "At a local five-kilometer race, a spectator mistakes a runner in a red cap for his friend Leo and cheers wildly. When Leo arrives a minute later, the mistake becomes a joke—and the stranger may have enjoyed the encouragement.",
+  "sceneJa": "地域の5キロレースで友人レオを応援。赤い帽子の走者をレオだと思い込み、大声で声援を送った。本人は1分後に登場。間違えた相手も喜んでいたらしく、友人と笑い合う。",
+  "emotions": [
+    "excited",
+    "mistaken",
+    "embarrassed",
+    "playful",
+    "warm"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "sports",
+    "running",
+    "spectator",
+    "friendship",
+    "mistaken-identity",
+    "humour",
+    "got-carried-away",
+    "in-my-defense",
+    "tell-apart",
+    "for-what-its-worth",
+    "made-his-day"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I went to cheer for Leo",
+          "ja": "レオを応援しに行った"
+        },
+        {
+          "en": "at a local five-kilometer race,",
+          "ja": "地域の5キロレースで"
+        },
+        {
+          "en": "where half the runners seemed to be wearing red caps.",
+          "ja": "走者の半分くらいが赤い帽子をかぶっているように見えた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When a runner in a red cap came around the corner,",
+          "ja": "赤い帽子の走者が角を曲がって現れたとき"
+        },
+        {
+          "en": "I got carried away",
+          "ja": "つい熱くなって"
+        },
+        {
+          "en": "and shouted Leo's name.",
+          "ja": "レオの名前を叫んだ"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "He waved back so enthusiastically",
+          "ja": "その走者があまりに元気よく手を振り返してくれたので"
+        },
+        {
+          "en": "that I cheered even louder.",
+          "ja": "僕はさらに大声で応援した"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "A minute later,",
+          "ja": "1分後"
+        },
+        {
+          "en": "the real Leo ran past",
+          "ja": "本物のレオが走ってきて"
+        },
+        {
+          "en": "and asked, 'Who were you cheering for?'",
+          "ja": "「さっき誰を応援してたの？」と聞いた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'In my defense,",
+          "ja": "「言い訳させてもらうと"
+        },
+        {
+          "en": "I couldn't tell you two apart from that distance,'",
+          "ja": "あの距離じゃ2人を見分けられなかったんだ」と"
+        },
+        {
+          "en": "I said, still holding my sign.",
+          "ja": "僕は応援ボードを持ったまま言った"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'For what it's worth,",
+          "ja": "「まあ、それはそれとして"
+        },
+        {
+          "en": "that guy looked thrilled,' Leo said,",
+          "ja": "あの人、すごく喜んでたよ」とレオは言い"
+        },
+        {
+          "en": "'so I think you made his day.'",
+          "ja": "「きっといい一日になったんじゃない？」と続けた"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which version keeps the natural meaning chunk intact?",
+      "options": [
+        "I got carried away / and shouted Leo's name.",
+        "I got / carried away and / shouted Leo's name.",
+        "I got carried / away and shouted / Leo's name."
+      ],
+      "answer": 0,
+      "explanation": "'I got carried away' is one natural unit meaning I became overly excited or involved. Pause after it before the next action."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'In my defense' mean in this story?",
+      "options": [
+        "The speaker is accusing Leo of cheating.",
+        "The speaker is playfully offering an excuse for the mistake.",
+        "The speaker is asking the runner to defend him."
+      ],
+      "answer": 1,
+      "explanation": "'In my defense' introduces a reason that might excuse your behavior. Here it is a lighthearted justification, not a legal defense."
+    },
+    {
+      "type": "intent",
+      "question": "Why does Leo say the stranger may have had his day made?",
+      "options": [
+        "He thinks the stranger won the race.",
+        "He wants the speaker to stop attending races.",
+        "He thinks the mistaken cheering made the stranger happy."
+      ],
+      "answer": 2,
+      "explanation": "Leo turns an embarrassing mistake into a kind interpretation: unexpected support may have cheered the stranger up."
+    }
+  ],
+  "speak": "Imagine: you cheer for a friend at a race and mistake another runner for them. Read: notice the excitement turning into gentle embarrassment. Chunk: say 'I got carried away', 'In my defense', and 'I couldn't tell them apart' as complete units. Understand: the first admits overexcitement, the second introduces a playful excuse, and the third explains a visual mistake. Check: answer all three questions. Speak (30 seconds): describe a time you mixed up two people or objects, explain how you got carried away, and offer a lighthearted excuse. Final Read: read all six sentences without Japanese, pausing after 'In my defense' and softening the final line.",
+  "review": "New: 'I got carried away'（つい夢中になった）, 'In my defense'（言い訳させてもらうと）, 'I couldn't tell them apart'（見分けられなかった）. Reuse Lesson 102/105 'For what it's worth'（それはそれとして／参考までに）to make a generous comment after a spectator's mistake. Compared with Lessons 94–107, this is a spectator's mistaken identity and playful self-defense, not a shogi trap, meal, invitation, or planning dispute. Reference: https://dictionary.cambridge.org/dictionary/english/get-carried-away ; https://dictionary.cambridge.org/dictionary/english/tell-apart ; https://dictionary.cambridge.org/dictionary/english/defense ."
+}

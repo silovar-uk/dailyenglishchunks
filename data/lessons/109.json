@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": 109,
+  "createdAt": "2026-10-30",
+  "title": "The Shirt That Was Still Damp",
+  "scene": "On a weekday morning, a favorite blue shirt has not dried overnight. Instead of waiting by the window, the speaker chooses a plain gray shirt and leaves on time.",
+  "sceneJa": "平日の朝、着るつもりだった青いシャツが一晩たっても乾いていない。窓辺で待つのをやめ、引き出しの灰色のシャツで間に合わせて予定どおり家を出る。",
+  "emotions": [
+    "expectant",
+    "mildly frustrated",
+    "self-aware",
+    "practical",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "daily-life",
+    "laundry",
+    "clothes",
+    "inner-voice",
+    "improvisation",
+    "counting-on",
+    "still-damp",
+    "make-do-with",
+    "on-second-thought",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was counting on",
+          "ja": "〜を当てにしていた"
+        },
+        {
+          "en": "my blue shirt being dry",
+          "ja": "青いシャツが乾いていることを"
+        },
+        {
+          "en": "by the time I got dressed.",
+          "ja": "着替える頃には"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "But when I lifted it off the drying rack,",
+          "ja": "でも物干しから取り上げると"
+        },
+        {
+          "en": "the sleeves were still a little damp.",
+          "ja": "袖はまだ少し湿っていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I held it up by the window",
+          "ja": "窓辺に掲げてみた"
+        },
+        {
+          "en": "for a minute,",
+          "ja": "1分ほど"
+        },
+        {
+          "en": "as if the morning light could finish the job.",
+          "ja": "朝の光が乾かしてくれるとでもいうように"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On second thought,",
+          "ja": "考え直してみると"
+        },
+        {
+          "en": "I had better things to do",
+          "ja": "ほかにやるべきことがあった"
+        },
+        {
+          "en": "than wait for a shirt.",
+          "ja": "シャツを待つよりも"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "So I made do with",
+          "ja": "そこで〜で間に合わせた"
+        },
+        {
+          "en": "the plain gray one",
+          "ja": "地味な灰色の一枚で"
+        },
+        {
+          "en": "at the back of my drawer.",
+          "ja": "引き出しの奥にあった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I left,",
+          "ja": "家を出る頃には"
+        },
+        {
+          "en": "I'd forgotten all about the blue shirt,",
+          "ja": "青いシャツのことなどすっかり忘れていて"
+        },
+        {
+          "en": "which was still hanging by the window.",
+          "ja": "それはまだ窓辺に掛かっていた"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the expression 'count on' together as a meaning unit?",
+      "options": [
+        "I was counting on / my blue shirt being dry / by the time I got dressed.",
+        "I was / counting / on my blue shirt being dry by the time I got dressed.",
+        "I was counting / on my blue / shirt being dry by the time I got dressed."
+      ],
+      "answer": 0,
+      "explanation": "'I was counting on' expresses reliance or expectation. Keep 'counting on' together before naming what you expected."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I made do with the plain gray one' mean?",
+      "options": [
+        "I sewed a new gray shirt.",
+        "I managed with the gray shirt although it wasn't my first choice.",
+        "I decided to wait until the blue shirt dried."
+      ],
+      "answer": 1,
+      "explanation": "'Make do with' means to manage using an available, less-preferred substitute."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'I had better things to do than wait for a shirt'?",
+      "options": [
+        "They need to buy more clothes immediately.",
+        "They are criticizing the person who did the laundry.",
+        "They realize waiting would waste time, so they choose another shirt."
+      ],
+      "answer": 2,
+      "explanation": "The speaker gently laughs at their own unnecessary waiting and moves on."
+    }
+  ],
+  "speak": "Imagine: your favorite item of clothing is not ready when you need it. Read: notice the small shift from frustration to practical amusement. Chunk: read 'I was counting on', 'still a little damp', and 'made do with' as units. Understand: expectation, an inconvenient condition, and a workable substitute. Check: answer all three questions. Speak (30 seconds): describe something you were counting on, what went wrong, and what you made do with instead. Final Read: reread all six sentences without Japanese; lightly stress 'still' and pause after 'On second thought'.",
+  "review": "New: 'I was counting on ...'（〜を当てにしていた）, 'still a little damp'（まだ少し湿っている）, 'make do with ...'（〜で間に合わせる）. Reuse Lesson 103 'On second thought'（考え直すと）and Lesson 100/103 'By the time ...'（〜する頃には）in a laundry problem rather than a plant or phone habit. The previous 14 lessons included music, race, food, shopping, and plans; this lesson focuses on a mundane material constraint and a low-stakes substitution. Usage: https://www.oxfordlearnersdictionaries.com/definition/english/count-on ; https://dictionary.cambridge.org/us/dictionary/english/make-do"
+}

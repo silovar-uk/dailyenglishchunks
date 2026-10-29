@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": 107,
+  "createdAt": "2026-10-29",
+  "title": "A Fairer Way to Split the Bill",
+  "scene": "Four friends share two pizzas at lunch but order different drinks. When the bill arrives, Maya gently questions an even split, suggests a fairer method, and they agree without making anyone uncomfortable.",
+  "sceneJa": "友人4人でピザを2枚分け合った昼食。飲み物は各自で違うものを注文した。会計を均等に割ろうとしたところ、マヤが控えめに確認し、食事と飲み物を分けて計算する方法を提案。気まずくならずに納得できる支払い方を決める。",
+  "emotions": [
+    "casual",
+    "uncertain",
+    "considerate",
+    "collaborative",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "friends",
+    "restaurant",
+    "bill",
+    "fairness",
+    "polite-clarification",
+    "missing-something",
+    "make-more-sense",
+    "work-it-out",
+    "fair-enough",
+    "that-works-for-me"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At lunch,",
+          "ja": "昼食のとき"
+        },
+        {
+          "en": "four of us had shared two pizzas,",
+          "ja": "4人でピザを2枚分け合ったけれど"
+        },
+        {
+          "en": "we'd ordered different drinks.",
+          "ja": "飲み物はそれぞれ違うものを頼んでいた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "As I started splitting the bill evenly,",
+          "ja": "僕が会計を均等に割ろうとすると"
+        },
+        {
+          "en": "Maya said, 'I might be missing something,",
+          "ja": "マヤが「私が何か見落としているかもしれないけど"
+        },
+        {
+          "en": "but doesn't this include the drinks?'",
+          "ja": "これって飲み物代も入ってるよね？」と言った"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'Would it make more sense to split the food four ways",
+          "ja": "「食事代は4人で均等に分けて"
+        },
+        {
+          "en": "and pay for our own drinks?'",
+          "ja": "飲み物は各自で払うほうがよくない？」と"
+        },
+        {
+          "en": "she asked.",
+          "ja": "彼女は提案した"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'Fair enough,' I said,",
+          "ja": "「確かにそうだね」と僕は言い"
+        },
+        {
+          "en": "looking at the receipt.",
+          "ja": "レシートを見ながら"
+        },
+        {
+          "en": "'I hadn't thought of that.'",
+          "ja": "「そこまで考えてなかったよ」と続けた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'Let's work it out,' I said,",
+          "ja": "「一緒に計算しよう」と僕が言い"
+        },
+        {
+          "en": "and Maya read out the drink prices",
+          "ja": "マヤが飲み物の金額を読み上げ"
+        },
+        {
+          "en": "while I used the calculator.",
+          "ja": "僕は電卓で計算した"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Everyone said, 'That works for me,'",
+          "ja": "みんなが「それでいいよ」と納得して"
+        },
+        {
+          "en": "and we went back to arguing",
+          "ja": "僕らはまた議論に戻った"
+        },
+        {
+          "en": "about which pizza had been better.",
+          "ja": "どっちのピザがおいしかったかという話に"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps Maya's cautious clarification as a natural speaking unit?",
+      "options": [
+        "I might be missing something, / but doesn't this include the drinks?",
+        "I might / be missing something but doesn't / this include the drinks?",
+        "I might be missing / something but / doesn't this include the drinks?"
+      ],
+      "answer": 0,
+      "explanation": "'I might be missing something' is a complete softening phrase. It signals uncertainty before raising a question."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'Would it make more sense to ...?' suggest here?",
+      "options": [
+        "The speaker insists that the only possible choice is hers.",
+        "The speaker gently proposes a more reasonable way to split the cost.",
+        "The speaker asks whether the receipt is fake."
+      ],
+      "answer": 1,
+      "explanation": "This tentative question invites discussion. The proposal separates shared food from individually ordered drinks."
+    },
+    {
+      "type": "intent",
+      "question": "Why does Maya bring up the drinks before the bill is split?",
+      "options": [
+        "She wants someone else to pay for everything.",
+        "She is trying to avoid paying for the pizza.",
+        "Different drink orders could make an equal split unfair, so she suggests checking the calculation."
+      ],
+      "answer": 2,
+      "explanation": "Maya is not accusing anyone; she flags an overlooked detail and proposes a fair solution."
+    }
+  ],
+  "speak": "Imagine: you and friends shared food but ordered different drinks. Read: notice Maya's gentle tone. Chunk: practise 'I might be missing something', 'Would it make more sense to ...?', and 'Let's work it out' as full units. Understand: the first softens a question, the second proposes an option, and the third invites joint action. Check: answer the three questions. Speak (30 seconds): raise a possible issue with a shared bill, propose a fairer split, and agree on a calculation. Final Read: read all six sentences without Japanese; pause after 'I might be missing something' and keep the proposal friendly.",
+  "review": "New: 'I might be missing something' (見落としているかもしれない), 'Would it make more sense to ...?' (〜するほうが筋が通るかな), 'Let's work it out' (一緒に解決・計算しよう). Reuse Lesson 101/104 'Fair enough' for a cost-sharing concern rather than a plan or boundary; Lesson 101 'That works for me' for a payment method rather than a return arrangement. Compared with Lessons 93–106, this focuses on fair cost-sharing and collaborative arithmetic, not a plan change or declining an invitation. Sources: https://dictionary.cambridge.org/dictionary/english/make-sense ; https://dictionary.cambridge.org/dictionary/english/work-out ."
+}

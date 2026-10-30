@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": 112,
+  "createdAt": "2026-10-31",
+  "title": "The Page That Stole My Morning",
+  "scene": "On a Saturday morning, the speaker is about to leave home when a half-open novel catches their eye. A single paragraph turns into twenty minutes of reading; they reluctantly put the book down and leave with its story still on their mind.",
+  "sceneJa": "土曜の朝、出かけようとしたところで机の上の読みかけの小説が目に入る。一段落だけのつもりが夢中になり、気づけば20分。名残惜しく本を閉じて家を出るが、物語が頭から離れない。",
+  "emotions": [
+    "curious",
+    "absorbed",
+    "surprised",
+    "reluctant",
+    "quietly delighted"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "reading",
+    "weekend",
+    "time-awareness",
+    "got-sidetracked",
+    "lost-track-of-time",
+    "tear-myself-away",
+    "was-about-to",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was about to head out",
+          "ja": "ちょうど出かけようとしていた"
+        },
+        {
+          "en": "when I noticed",
+          "ja": "そのとき目に入った"
+        },
+        {
+          "en": "the half-open novel on my desk.",
+          "ja": "机の上に開きかけの小説が"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I meant to read",
+          "ja": "読むつもりだった"
+        },
+        {
+          "en": "just one paragraph,",
+          "ja": "ほんの一段落だけ"
+        },
+        {
+          "en": "but I got sidetracked by the story.",
+          "ja": "でも物語に気を取られてしまった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The next chapter started with a mystery,",
+          "ja": "次の章は謎めいた展開で始まり"
+        },
+        {
+          "en": "and I completely lost track of time.",
+          "ja": "すっかり時間を忘れてしまった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I checked the clock,",
+          "ja": "時計を確認した頃には"
+        },
+        {
+          "en": "twenty minutes had passed",
+          "ja": "20分が過ぎていて"
+        },
+        {
+          "en": "and my tea was cold.",
+          "ja": "紅茶も冷めていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I had to tear myself away",
+          "ja": "名残惜しいけれど切り上げなければならなかった"
+        },
+        {
+          "en": "from the book",
+          "ja": "その本を読むのを"
+        },
+        {
+          "en": "and put on my shoes.",
+          "ja": "そして靴を履いた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I left a little later than planned,",
+          "ja": "予定より少し遅れて家を出たけれど"
+        },
+        {
+          "en": "still wondering",
+          "ja": "ずっと気になっていた"
+        },
+        {
+          "en": "what would happen on the next page.",
+          "ja": "次のページで何が起こるのか"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the expression 'lost track of time' together?",
+      "options": [
+        "I completely lost track of time. / The next chapter started with a mystery.",
+        "I completely lost / track of / time.",
+        "I completely / lost track of time / when the chapter began."
+      ],
+      "answer": 2,
+      "explanation": "'Lost track of time' means becoming so absorbed that you stop noticing time passing. Keep the expression together as one meaning unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I got sidetracked by the story' mean?",
+      "options": [
+        "The story distracted the speaker from the plan to leave.",
+        "The speaker took a different road to the bookshop.",
+        "The story was too difficult to read."
+      ],
+      "answer": 0,
+      "explanation": "'Get sidetracked' means being drawn away from what you intended to do. Here, reading interrupted the plan to leave."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'I had to tear myself away from the book'?",
+      "options": [
+        "The book was damaged and needed repairing.",
+        "They were reluctant to stop reading, but needed to leave.",
+        "They disliked the book and wanted to get rid of it."
+      ],
+      "answer": 1,
+      "explanation": "'Tear myself away' suggests stopping something enjoyable with difficulty; the speaker is still curious about the next page."
+    }
+  ],
+  "speak": "Imagine: you are about to leave home, but a book, game, or hobby catches your attention. Read: follow the shift from a quick glance to absorption and reluctant departure. Chunk: say 'got sidetracked', 'lost track of time', and 'tear myself away' as complete meaning units. Understand: notice the difference between an interruption, losing time awareness, and stopping reluctantly. Check: answer all three questions. Speak (30 seconds): say what you were about to do, what sidetracked you, how you lost track of time, and why you had to tear yourself away. Final Read: reread the six sentences, pausing lightly after 'By the time I checked the clock' and stressing 'completely' and 'had to'.",
+  "review": "New: 'got sidetracked by ...'（〜に気を取られた）, 'lost track of time'（時間を忘れた）, 'had to tear myself away from ...'（名残惜しいが〜を切り上げた）. Reuse 'I was about to ... when ...' from Lesson 103 and 'By the time ...' from Lesson 109 in a reading scene rather than a plant or laundry problem. Checked the last 14 registered lessons (98–111) for scenario and language function: this is absorption in reading and reluctantly stopping, not a shopping proposal, shared confusion, or everyday substitution. References: https://dictionary.cambridge.org/dictionary/english/sidetrack ; https://dictionary.cambridge.org/dictionary/english/lose-track-of ; https://dictionary.cambridge.org/dictionary/english/tear-yourself-away"
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 111,
+  "createdAt": "2026-10-30",
+  "title": "The Ending Nobody Understood",
+  "scene": "After a small film festival screening, two friends discover that neither understood the mysterious ending. Their shared confusion becomes a gentle joke rather than a reason to pretend.",
+  "sceneJa": "小さな映画祭の上映後、周囲は難解な結末を当然のように語っている。理解したふりをしていた語り手は、友人も同じく戸惑っていると知り、気まずさを笑いに変える。",
+  "emotions": [
+    "self-conscious",
+    "confused",
+    "relieved",
+    "playfully honest",
+    "warm"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "film-festival",
+    "culture",
+    "friendship",
+    "social-awkwardness",
+    "dry-humour",
+    "make-heads-or-tails-of",
+    "too-embarrassed-to-admit",
+    "that-makes-two-of-us",
+    "i-might-be-missing-something",
+    "for-what-its-worth"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "After the film festival screening,",
+          "ja": "映画祭の上映が終わると"
+        },
+        {
+          "en": "everyone around us",
+          "ja": "周りの人たちはみんな"
+        },
+        {
+          "en": "discussed the ending as if it were obvious.",
+          "ja": "結末が当然分かるかのように話していた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I couldn't make heads or tails of",
+          "ja": "何が何だか理解できなかった"
+        },
+        {
+          "en": "the final scene,",
+          "ja": "最後の場面が"
+        },
+        {
+          "en": "but I nodded along anyway.",
+          "ja": "それでも話に合わせてうなずいていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was too embarrassed to admit",
+          "ja": "恥ずかしくて認められなかった"
+        },
+        {
+          "en": "that I was completely lost,",
+          "ja": "自分がまるで理解できていないことを"
+        },
+        {
+          "en": "so I studied the poster instead.",
+          "ja": "だから代わりにポスターをじっと眺めていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then Mina leaned over and whispered,",
+          "ja": "するとミナが身を寄せて小声で言った"
+        },
+        {
+          "en": "\"I might be missing something,",
+          "ja": "「私が何か見落としてるのかもしれないけど"
+        },
+        {
+          "en": "but I didn't understand that ending at all.\"",
+          "ja": "あの結末、全然分からなかった」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"That makes two of us,\" I said,",
+          "ja": "「僕も同じだよ」と答えると"
+        },
+        {
+          "en": "and we both laughed",
+          "ja": "僕らは二人で笑ってしまった"
+        },
+        {
+          "en": "a little too loudly for the quiet lobby.",
+          "ja": "静かなロビーには少し大きすぎる声で"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"For what it's worth,\" she added,",
+          "ja": "「まあ、それはそれとして」と彼女は続けた"
+        },
+        {
+          "en": "\"the music was beautiful,\"",
+          "ja": "「音楽はきれいだったね」"
+        },
+        {
+          "en": "which was the first review we could agree on.",
+          "ja": "それが僕らの初めて一致した感想だった"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the idiom 'make heads or tails of' together?",
+      "options": [
+        "I couldn't make heads or tails of / the final scene, / but I nodded along anyway.",
+        "I couldn't make / heads or tails / of the final scene, but I nodded along anyway.",
+        "I couldn't / make heads / or tails of the final scene, but I nodded along anyway."
+      ],
+      "answer": 0,
+      "explanation": "'Couldn't make heads or tails of' is one negative idiom meaning 'couldn't understand at all.' Keep its words together."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I was too embarrassed to admit that I was completely lost' mean?",
+      "options": [
+        "The speaker had physically lost the way out of the cinema.",
+        "The speaker felt too self-conscious to say they did not understand the film.",
+        "The speaker was ashamed of arriving late to the screening."
+      ],
+      "answer": 1,
+      "explanation": "'Too embarrassed to admit' describes reluctance to acknowledge confusion, not being physically lost."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker answer 'That makes two of us'?",
+      "options": [
+        "To claim that the film had exactly two characters.",
+        "To suggest watching the film twice.",
+        "To share Mina's confusion and make the moment less awkward."
+      ],
+      "answer": 2,
+      "explanation": "Mina has admitted she did not understand the ending. The speaker is in the same uncomfortable situation and feels relieved."
+    }
+  ],
+  "speak": "Imagine: you leave a film or exhibition that everyone else seems to understand. Read: notice the shift from pretending to relief. Chunk: keep 'couldn't make heads or tails of', 'too embarrassed to admit', and 'That makes two of us' together. Understand: distinguish strong confusion from a gentle admission and shared sympathy. Check: answer all three questions. Speak (30 seconds): describe something confusing, say why you hesitated to admit it, and respond when a friend says they were confused too. Final Read: read all six sentences naturally, pausing after 'For what it's worth' and saying 'That makes two of us' with warm relief.",
+  "review": "New: 'couldn't make heads or tails of ...'（まったく理解できなかった）, 'too embarrassed to admit ...'（恥ずかしくて認められなかった）, 'That makes two of us'（私も同じだ）. Reuse Lesson 107 'I might be missing something' and Lesson 108 'For what it's worth' in a film conversation rather than splitting a bill or cheering at a race. Contrast with the last 14 lessons: this is shared uncertainty about art and social pressure to pretend, not shopping, a ride, sport, food, or a household mishap. Sources: https://dictionary.cambridge.org/dictionary/english/not-make-heads-or-tails-of ; https://dictionary.cambridge.org/us/dictionary/english/that-makes-two-of-us"
+}

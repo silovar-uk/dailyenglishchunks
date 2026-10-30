@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 110,
+  "createdAt": "2026-10-30",
+  "title": "The Lift I Could Offer",
+  "scene": "A friend asks for a ride to a hiking trail on Sunday. The speaker cannot drive the entire way but offers a lift to the station, then checks whether the partial help is genuinely useful.",
+  "sceneJa": "日曜のハイキングに行く友人から車で送ってほしいと頼まれる。登山口までは行けないが駅までなら送れるため、相手にとって本当に助けになるか確認する。",
+  "emotions": [
+    "willing",
+    "slightly hesitant",
+    "considerate",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "friends",
+    "hiking",
+    "transport",
+    "partial-commitment",
+    "boundaries",
+    "offer",
+    "as-far-as",
+    "cant-commit-to",
+    "would-that-still-work",
+    "that-works-for-me",
+    "just-to-make-sure"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "Maya asked if I could give her a lift",
+          "ja": "マヤに車で送ってもらえないかと頼まれた"
+        },
+        {
+          "en": "to the trailhead",
+          "ja": "登山口まで"
+        },
+        {
+          "en": "on Sunday morning.",
+          "ja": "日曜の朝に"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'd love to help,",
+          "ja": "力になりたいけれど"
+        },
+        {
+          "en": "but I can't commit to",
+          "ja": "〜までは約束できない"
+        },
+        {
+          "en": "the whole drive.",
+          "ja": "道中すべてを車で送ることは"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I can take you",
+          "ja": "車で送れるよ"
+        },
+        {
+          "en": "as far as the station,",
+          "ja": "駅までなら"
+        },
+        {
+          "en": "if that helps.",
+          "ja": "それでも役に立つなら"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She paused for a second",
+          "ja": "彼女は少し考えて"
+        },
+        {
+          "en": "and asked whether",
+          "ja": "〜かどうか尋ねた"
+        },
+        {
+          "en": "there was a train from there.",
+          "ja": "そこから電車が出ているのか"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I checked the timetable",
+          "ja": "時刻表を確認して"
+        },
+        {
+          "en": "and asked, 'Would that still work for you?'",
+          "ja": "「それでも大丈夫そう？」と聞いた"
+        },
+        {
+          "en": "instead of assuming it would.",
+          "ja": "勝手に問題ないと決めつけずに"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "'That works for me,' she said.",
+          "ja": "「それなら大丈夫」と彼女は答えた"
+        },
+        {
+          "en": "'Just to make sure,",
+          "ja": "「念のため確認だけど"
+        },
+        {
+          "en": "can you drop me off by eight?'",
+          "ja": "8時までに降ろしてもらえる？」"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps 'as far as' together as a distance limit?",
+      "options": [
+        "I can take you / as far as the station, / if that helps.",
+        "I can take / you as / far as the station, if that helps.",
+        "I can take you as / far / as the station, if that helps."
+      ],
+      "answer": 0,
+      "explanation": "'As far as the station' sets the endpoint of the offered ride. Keep 'as far as' together."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I can't commit to the whole drive' mean here?",
+      "options": [
+        "The speaker does not know how to drive.",
+        "The speaker cannot promise to drive all the way to the trailhead.",
+        "The speaker has already agreed to drive the entire route."
+      ],
+      "answer": 1,
+      "explanation": "'Can't commit to' means being unable to make a firm promise; it is not a rejection of every possible way to help."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker ask 'Would that still work for you?'",
+      "options": [
+        "To demand that Maya change her hiking plan.",
+        "To avoid checking the train timetable.",
+        "To make sure the limited offer actually meets Maya's needs."
+      ],
+      "answer": 2,
+      "explanation": "The speaker offers only a partial ride and checks the other person's needs rather than assuming."
+    }
+  ],
+  "speak": "Imagine: a friend asks for help you can only partly provide. Read: notice the shift from hesitation to a clear agreement. Chunk: stress 'can't commit to', 'as far as', and 'still work for you' as meaning units. Understand: state a boundary, offer what is possible, then check usefulness. Check: answer the three questions. Speak (30 seconds): explain what you cannot promise, what you can offer instead, and ask whether that would still work. Final Read: read the six sentences naturally, pausing after 'I'd love to help' and lightly stressing 'still'.",
+  "review": "New: 'I can't commit to ...'（〜までは約束できない）, 'as far as ...'（〜までなら）, 'Would that still work for you?'（それでも都合はつく？）. Reuse 'That works for me' (Lesson 101/104) and 'Just to make sure' (Lesson 104) in a partial-ride offer rather than borrowing or changing shop order. Unlike the last 14 lessons' bill-splitting, shopping order and borrowed camera, this scene tests the useful distinction between declining a full request and offering a smaller commitment. References: https://dictionary.cambridge.org/dictionary/english/far ; https://dictionary.cambridge.org/dictionary/english/commit"
+}

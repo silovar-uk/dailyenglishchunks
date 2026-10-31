@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 115,
+  "createdAt": "2026-11-01",
+  "title": "The Lid That Finally Budged",
+  "scene": "A jam jar refuses to open at breakfast. A rubber band finally helps, and the speaker laughs at the effort-to-reward ratio.",
+  "sceneJa": "日曜の朝、ジャムの瓶のふたがどうしても開かない。布巾でもだめだったが、輪ゴムを巻くとようやく開いた。苦労したわりにトーストは一瞬で食べ終わり、思わず苦笑いする。",
+  "emotions": [
+    "sleepy",
+    "puzzled",
+    "frustrated",
+    "resourceful",
+    "quietly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "breakfast",
+    "jar",
+    "small-frustrations",
+    "problem-solving",
+    "dry-humour",
+    "wouldnt-budge",
+    "getting-nowhere",
+    "did-the-trick",
+    "couldve-sworn",
+    "on-second-thought"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "On Sunday morning,",
+          "ja": "日曜の朝"
+        },
+        {
+          "en": "I reached for a jar of jam",
+          "ja": "ジャムの瓶に手を伸ばした"
+        },
+        {
+          "en": "to go with my toast.",
+          "ja": "トーストにつけようと思って"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I could've sworn",
+          "ja": "確かにそうだったはずなのに"
+        },
+        {
+          "en": "I'd left the lid loose,",
+          "ja": "ふたは緩めに閉めておいたはずなのに"
+        },
+        {
+          "en": "but it wouldn't budge.",
+          "ja": "びくともしなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I tried a dish towel,",
+          "ja": "布巾を使ってみたけれど"
+        },
+        {
+          "en": "but I was getting nowhere",
+          "ja": "一向にうまくいかず"
+        },
+        {
+          "en": "and my toast was getting cold.",
+          "ja": "トーストは冷めていった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On second thought,",
+          "ja": "考え直して"
+        },
+        {
+          "en": "I wrapped a rubber band around the lid",
+          "ja": "ふたに輪ゴムを巻き"
+        },
+        {
+          "en": "and tried again.",
+          "ja": "もう一度試した"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The extra grip helped,",
+          "ja": "滑りにくくなったおかげで"
+        },
+        {
+          "en": "and that did the trick:",
+          "ja": "それがうまくいって"
+        },
+        {
+          "en": "the lid finally came loose.",
+          "ja": "ようやくふたが開いた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I spent five minutes opening the jar",
+          "ja": "瓶を開けるのに5分もかかったのに"
+        },
+        {
+          "en": "and ten seconds eating my toast.",
+          "ja": "トーストを食べるのは10秒だった"
+        },
+        {
+          "en": "Somehow, that felt fair.",
+          "ja": "なぜだか、それでよしと思えた"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps 'did the trick' as one meaning chunk?",
+      "options": [
+        "The extra grip helped / and that did / the trick: the lid finally came loose.",
+        "The extra grip helped / and that did the trick / the lid finally came loose.",
+        "The extra grip / helped and that did / the trick: the lid finally came loose."
+      ],
+      "answer": 1,
+      "explanation": "'Did the trick' is a complete expression meaning that a method worked. Keep it together."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'the lid wouldn't budge' mean?",
+      "options": [
+        "The lid was completely stuck and did not move.",
+        "The lid fell off by itself.",
+        "The lid made a strange sound."
+      ],
+      "answer": 0,
+      "explanation": "'Wouldn't budge' means it refused to move even when the speaker tried."
+    },
+    {
+      "type": "intent",
+      "question": "Why say 'Somehow, that felt fair'?",
+      "options": [
+        "To complain about the price of jam.",
+        "To explain a plan to return the jar.",
+        "To joke about spending far longer opening the jar than eating the toast."
+      ],
+      "answer": 2,
+      "explanation": "The dry humour comes from accepting five minutes of effort for ten seconds of breakfast."
+    }
+  ],
+  "speak": "Imagine: you want breakfast but a container will not open. Read: notice frustration, a practical idea, and a small victory. Chunk: say 'wouldn't budge', 'getting nowhere', and 'did the trick' as complete units. Understand: distinguish something stuck, unsuccessful effort, and a successful fix. Check: answer the three questions. Speak (30 seconds): describe what wouldn't budge, what you tried first, why you were getting nowhere, and what finally did the trick. Final Read: read all six sentences aloud, stress 'wouldn't budge', pause after 'On second thought', and end with gentle dry amusement.",
+  "review": "New: 'wouldn't budge'（びくともしない）, 'I was getting nowhere'（一向に進展しない）, 'that did the trick'（それでうまくいった）. Reuse 'I could've sworn' (Lesson 106) and 'On second thought' (Lesson 109) in a new kitchen setting. Compared Lessons 101–114: unlike recent laundry, books, film, sports, and festivals, this story concerns a stubborn object and an absurdly brief reward. Sources: https://dictionary.cambridge.org/dictionary/english/budge ; https://dictionary.cambridge.org/dictionary/english/do-the-trick ; https://dictionary.cambridge.org/dictionary/english/get-nowhere"
+}

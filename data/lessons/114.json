@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 114,
+  "createdAt": "2026-10-31",
+  "title": "The Ghost Who Asked Us to Queue",
+  "scene": "At a Halloween haunted house, a supposedly terrifying ghost surprises a visitor, then calmly reminds everyone to stand in a single line. The polite interruption turns fear into laughter.",
+  "sceneJa": "ハロウィーンのお化け屋敷で、絶対に怖がらないと言っていた友人レオが、お化けに驚いてカボチャの飾りの後ろに隠れる。ところがお化けは真顔で整列をお願いしてきて、怖さが笑いに変わる。",
+  "emotions": [
+    "confident",
+    "startled",
+    "awkward",
+    "amused",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "halloween",
+    "haunted-house",
+    "friends",
+    "absurd-humour",
+    "fear-to-laughter",
+    "out-of-nowhere",
+    "keep-a-straight-face",
+    "take-the-edge-off",
+    "in-my-defense",
+    "got-carried-away"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At the Halloween haunted house,",
+          "ja": "ハロウィーンのお化け屋敷で"
+        },
+        {
+          "en": "my friend Leo said",
+          "ja": "友人のレオは言った"
+        },
+        {
+          "en": "nothing there could scare him.",
+          "ja": "ここには自分を怖がらせるものなんてない、と"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "A ghost appeared out of nowhere,",
+          "ja": "するとお化けが突然現れて"
+        },
+        {
+          "en": "and Leo jumped",
+          "ja": "レオは飛びのき"
+        },
+        {
+          "en": "behind a plastic pumpkin.",
+          "ja": "プラスチック製のカボチャの飾りの後ろに隠れた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The ghost kept a straight face",
+          "ja": "お化けは真顔を崩さず"
+        },
+        {
+          "en": "and said,",
+          "ja": "こう言った"
+        },
+        {
+          "en": "\"Please stay in a single line.\"",
+          "ja": "「一列にお並びください」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"In my defense,\" Leo whispered,",
+          "ja": "「言い訳させてもらうと」とレオはささやいた"
+        },
+        {
+          "en": "\"I wasn't expecting",
+          "ja": "「まさか予想してなかったんだよ"
+        },
+        {
+          "en": "customer service from a ghost.\"",
+          "ja": "お化けが接客してくるなんて」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I got carried away laughing,",
+          "ja": "僕はつい笑いすぎてしまったが"
+        },
+        {
+          "en": "the ghost pointed at a sign",
+          "ja": "お化けは看板を指さした"
+        },
+        {
+          "en": "that said \"NO RUNNING.\"",
+          "ja": "そこには「走らないでください」と書いてあった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That took the edge off,",
+          "ja": "それで怖さが少し和らぎ"
+        },
+        {
+          "en": "and we finished the tour",
+          "ja": "僕らは最後まで回った"
+        },
+        {
+          "en": "more amused than afraid.",
+          "ja": "怖がるというより笑いながら"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the useful expression 'kept a straight face' together?",
+      "options": [
+        "The ghost kept / a straight / face and said,",
+        "The ghost / kept a straight face / and said,",
+        "The ghost kept a / straight face and / said,"
+      ],
+      "answer": 1,
+      "explanation": "'Keep a straight face' means staying serious, especially when something is funny. Keep the expression as one meaning unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'That took the edge off' mean in this story?",
+      "options": [
+        "The ghost became more frightening.",
+        "The queue disappeared immediately.",
+        "The ghost's polite request made the situation feel less scary."
+      ],
+      "answer": 2,
+      "explanation": "'Take the edge off' means reducing the intensity of something unpleasant. The strange politeness softened their fear."
+    },
+    {
+      "type": "intent",
+      "question": "Why does Leo say 'In my defense'?",
+      "options": [
+        "He is jokingly explaining why he jumped, even though he said he was fearless.",
+        "He is asking the ghost for a refund.",
+        "He wants the other visitors to leave the line."
+      ],
+      "answer": 0,
+      "explanation": "Leo offers a playful excuse for being startled: he expected a scary ghost, not a polite staff member."
+    }
+  ],
+  "speak": "Imagine: you and a friend enter a haunted house, and something unexpected makes you laugh. Read: notice the move from confidence to surprise to relief. Chunk: say 'out of nowhere', 'kept a straight face', and 'took the edge off' as complete units. Understand: distinguish sudden appearance, a serious expression, and reduced tension. Check: answer the three questions. Speak (30 seconds): describe a sudden surprise, explain the funny detail, and say how it took the edge off. Final Read: read all six sentences aloud; pause after 'out of nowhere', use a flat voice for the ghost's polite request, and soften your voice on 'took the edge off'.",
+  "review": "New: 'out of nowhere'（突然・どこからともなく）, 'kept a straight face'（真顔を保った）, 'took the edge off'（緊張・怖さを和らげた）. Reuse 'In my defense' and 'got carried away' from Lesson 108 in a Halloween setting, changing their purpose from mistaken cheering to a mock-serious excuse and uncontrollable laughter. Compared Lessons 100–113: the situation focuses on absurd customer service in a haunted attraction, with tension dissolved by deadpan humour, rather than confusion about art, sports mistakes, a festival plan, or everyday inconvenience. References: https://dictionary.cambridge.org/dictionary/english/from-out-of-nowhere ; https://dictionary.cambridge.org/dictionary/english/straight-face ; https://dictionary.cambridge.org/dictionary/english/take-the-edge-off"
+}

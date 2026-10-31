@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 113,
+  "createdAt": "2026-10-31",
+  "title": "The Festival We Didn't Have to See Together",
+  "scene": "At an outdoor music festival, two friends discover they want to hear different acts. Instead of forcing a compromise, they agree to enjoy separate performances and meet at a clearly identified fountain afterward.",
+  "sceneJa": "野外音楽フェスで、ハナはジャズを聴きたいが、語り手は太鼓の演奏が気になる。無理に同じ演目を選ばず、しばらく別行動をして噴水で合流することに。再会したときには、それぞれ違う話ができた。",
+  "emotions": [
+    "curious",
+    "considerate",
+    "slightly hesitant",
+    "relieved",
+    "connected"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "music-festival",
+    "friends",
+    "different-preferences",
+    "temporary-separation",
+    "meeting-point",
+    "stick-together",
+    "split-up-for-a-bit",
+    "meet-back-at",
+    "that-works-for-me",
+    "just-to-make-sure"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At the street festival,",
+          "ja": "街の音楽フェスで"
+        },
+        {
+          "en": "Hana wanted to hear the jazz band,",
+          "ja": "ハナはジャズバンドを聴きたがっていたが"
+        },
+        {
+          "en": "but I was drawn to the drummers.",
+          "ja": "僕は太鼓の演奏に惹かれていた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"We don't have to stick together the whole time,\"",
+          "ja": "「ずっと一緒に回らなくてもいいよ」"
+        },
+        {
+          "en": "I said,",
+          "ja": "と僕は言った"
+        },
+        {
+          "en": "\"if you'd rather hear the jazz set.\"",
+          "ja": "「ジャズのほうを聴きたいなら」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Why don't we split up for a bit",
+          "ja": "「じゃあ、少し別行動にして"
+        },
+        {
+          "en": "and catch the acts we like?\"",
+          "ja": "それぞれ好きな演奏を観るのはどう？」"
+        },
+        {
+          "en": "she suggested.",
+          "ja": "と彼女が提案した"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"That works for me,\"",
+          "ja": "「それでいいよ」"
+        },
+        {
+          "en": "I said,",
+          "ja": "と僕は答えた"
+        },
+        {
+          "en": "\"as long as we pick a meeting spot.\"",
+          "ja": "「待ち合わせ場所を決めておけばね」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Let's meet back at the fountain",
+          "ja": "「噴水のところでまた合流しよう"
+        },
+        {
+          "en": "after the next set.\"",
+          "ja": "次の演奏が終わったら」"
+        },
+        {
+          "en": "\"Just to make sure, the one by the main gate?\"",
+          "ja": "「念のため確認だけど、正門のそばの噴水？」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Exactly,\" she said,",
+          "ja": "「そう、それ」と彼女は答え"
+        },
+        {
+          "en": "and an hour later",
+          "ja": "一時間後には"
+        },
+        {
+          "en": "we met up with two different stories to tell.",
+          "ja": "それぞれ違う話を持ち寄って再会した"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the useful phrase 'split up for a bit' together?",
+      "options": [
+        "Why don't we split / up for a / bit and catch the acts we like?",
+        "Why don't we / split up for a bit / and catch the acts we like?",
+        "Why don't / we split up / for a bit and catch the acts we like?"
+      ],
+      "answer": 1,
+      "explanation": "'Split up for a bit' is a natural meaning unit for temporarily going separate ways. It doesn't mean ending the friendship."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'We don't have to stick together the whole time' mean here?",
+      "options": [
+        "They can enjoy different acts without staying side by side all day.",
+        "They must stop being friends after the festival.",
+        "They should stand very close to the stage."
+      ],
+      "answer": 0,
+      "explanation": "'Stick together' can mean staying physically together. The speaker removes the pressure to share every activity."
+    },
+    {
+      "type": "intent",
+      "question": "Why does Hana ask 'the one by the main gate?'",
+      "options": [
+        "She wants to change the subject to ticket prices.",
+        "She is asking whether the main gate will be closed.",
+        "She is confirming the exact meeting place so they can find each other."
+      ],
+      "answer": 2,
+      "explanation": "'Just to make sure' introduces a practical confirmation. They are checking which fountain to use."
+    }
+  ],
+  "speak": "Imagine: you and a friend want to watch different performances at a festival. Read: notice that a different preference need not become an argument. Chunk: keep 'don't have to stick together', 'split up for a bit', and 'meet back at' as meaning units. Understand: these express freedom, temporary separation, and a reunion plan. Check: answer the three questions. Speak (30 seconds): explain the two preferences, suggest splitting up, choose a meeting place, and confirm exactly where. Final Read: read all six sentences, pausing after 'for a bit' and stressing 'don't have to' gently rather than forcefully.",
+  "review": "New: 'don't have to stick together the whole time'（ずっと一緒にいる必要はない）, 'split up for a bit'（少し別行動する）, 'meet back at ...'（〜で再び合流する）. Reuse 'That works for me' (Lesson 107) and 'Just to make sure' (Lesson 110) in a music-festival setting. Compared Lessons 99–112: unlike changing a visit order, splitting a bill, or setting the limits of a ride, this lesson practices giving a friend autonomy while preserving connection. Sources: https://dictionary.cambridge.org/dictionary/english/stick-together ; https://dictionary.cambridge.org/dictionary/english/split-up"
+}

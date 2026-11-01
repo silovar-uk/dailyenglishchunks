@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 118,
+  "createdAt": "2026-11-02",
+  "title": "The Bag I Kept Walking Past",
+  "scene": "On a weekday morning, a bag of empty bottles has been sitting by the front door for three days. The narrator finally takes it downstairs before leaving and realizes the errand took less time than all the excuses.",
+  "sceneJa": "平日の朝。玄関脇に置いた空き瓶の袋を、もう3日も見て見ぬふりしている。出かける直前に思い切って階下へ持っていくと、2分で終了。あれだけ先延ばしにしていた自分が少しおかしくなる。",
+  "emotions": [
+    "avoidant",
+    "rushed",
+    "self-aware",
+    "decisive",
+    "lightly amused",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "household",
+    "recycling",
+    "procrastination",
+    "small-errands",
+    "meaning-to",
+    "putting-it-off",
+    "might-as-well",
+    "about-to",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "For the third morning in a row,",
+          "ja": "3日連続の朝、"
+        },
+        {
+          "en": "I stepped around a bag of empty bottles",
+          "ja": "空き瓶の入った袋をよけて通った"
+        },
+        {
+          "en": "by the front door.",
+          "ja": "玄関のそばに置かれた袋を。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'd been meaning to take it downstairs,",
+          "ja": "ずっと階下に持っていこうと思っていたのに、"
+        },
+        {
+          "en": "but I kept putting it off",
+          "ja": "何度も先延ばしにしていた"
+        },
+        {
+          "en": "whenever I was running late.",
+          "ja": "時間に追われるたびに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was about to leave",
+          "ja": "ちょうど出かけようとしていた"
+        },
+        {
+          "en": "when I noticed it again,",
+          "ja": "その袋がまた目に入ったとき、"
+        },
+        {
+          "en": "right where I'd left it.",
+          "ja": "置いた場所から少しも動いていなかった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I thought, \"I might as well do it now,\"",
+          "ja": "「どうせなら今やってしまおう」と思い、"
+        },
+        {
+          "en": "and carried the bag down",
+          "ja": "袋を階下へ運んだ"
+        },
+        {
+          "en": "before I could change my mind.",
+          "ja": "気が変わってしまう前に。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The whole trip took two minutes,",
+          "ja": "往復でたった2分しかかからず、"
+        },
+        {
+          "en": "which made my three days of excuses",
+          "ja": "3日間あれこれ言い訳していたのが"
+        },
+        {
+          "en": "seem a little silly.",
+          "ja": "少しばかばかしく思えた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I got back,",
+          "ja": "戻ってきたころには、"
+        },
+        {
+          "en": "the doorway was clear,",
+          "ja": "玄関の前はすっきりしていて、"
+        },
+        {
+          "en": "and I was still on schedule.",
+          "ja": "出発の予定にもまだ間に合っていた。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which division keeps the expression 'had been meaning to' together?",
+      "options": [
+        "I'd been / meaning to take it downstairs / but I kept putting it off.",
+        "I'd been meaning to take it downstairs / but I kept putting it off / whenever I was running late.",
+        "I'd been meaning / to take it downstairs but / I kept putting it off whenever."
+      ],
+      "answer": 1,
+      "explanation": "'Had been meaning to + verb' expresses a long-standing intention that has not yet been acted on. Keep 'meaning to' with the verb phrase."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I kept putting it off' mean here?",
+      "options": [
+        "I repeatedly delayed doing the errand.",
+        "I moved the bag to a different room every day.",
+        "I completed the errand earlier than planned."
+      ],
+      "answer": 0,
+      "explanation": "'Put something off' means postpone it. 'Kept' shows the delay happened repeatedly."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'I might as well do it now'?",
+      "options": [
+        "They want to ask a neighbor to do the job.",
+        "They believe the task is impossible today.",
+        "They decide to use the present opportunity instead of delaying again."
+      ],
+      "answer": 2,
+      "explanation": "'Might as well' can suggest doing something because there is no good reason to wait or because the opportunity is convenient."
+    }
+  ],
+  "speak": "Imagine → Read → Chunk → Understand → Check → Speak → Final Read. Imagine a tiny household task you have postponed. Read the six sentences for the narrator's shift from avoidance to relief. Chunk: say 'I'd been meaning to', 'kept putting it off', and 'might as well' as complete units. Understand: an old intention, repeated postponement, and a practical decision are three different meanings. Check: answer the three questions. Speak (30 seconds): describe one small task you had been meaning to do, why you kept putting it off, and what finally made you do it. Try 'I was about to ...' for the moment you decided. Final Read: read all six sentences aloud, pausing after the time phrases and stressing 'three days' versus 'two minutes'.",
+  "review": "New: 'I'd been meaning to ...'（前から〜しようと思っていた）, 'I kept putting it off'（先延ばしにし続けていた）, 'I might as well ...'（どうせなら〜してしまおう）. Reuse 'I was about to ...' and 'By the time ...' (Lesson 112) in a different context: a neglected recycling errand rather than getting absorbed in a novel. Compared with Lessons 104–117, this is a mundane procrastination-and-action scene, not a lost item, a failed plan, or a social decision. Reference: https://dictionary.cambridge.org/dictionary/english/put-off ; https://dictionary.cambridge.org/dictionary/english/might-as-well ; https://dictionary.cambridge.org/dictionary/english/mean"
+}

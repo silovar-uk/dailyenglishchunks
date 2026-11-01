@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 117,
+  "createdAt": "2026-11-01",
+  "title": "The Quiz We Lost Beautifully",
+  "scene": "At a neighborhood pub quiz, a confident team discovers the other players know much more. A wildly wrong guess and a last-place finish earn them a bowl of chips, which they accept as a perfectly edible prize.",
+  "sceneJa": "近所のパブのクイズ大会に、少し自信満々で参加した友人たち。周りは次々に正解するのに、自分たちはお菓子の数すら大外れ。最下位の景品はポテトチップス一皿だったが、案外悪くない夜になった。",
+  "emotions": [
+    "confident",
+    "outmatched",
+    "embarrassed",
+    "self-deprecating",
+    "cheerfully resigned"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "pub-quiz",
+    "friends",
+    "light-competition",
+    "losing-gracefully",
+    "dry-humour",
+    "stand-a-chance",
+    "way-off",
+    "ill-take-it",
+    "in-our-defense",
+    "for-what-its-worth"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We signed up for a pub quiz",
+          "ja": "パブのクイズ大会に申し込んだ"
+        },
+        {
+          "en": "thinking we knew a bit of everything,",
+          "ja": "自分たちは何でもそこそこ知っていると思って"
+        },
+        {
+          "en": "which turned out to be optimistic.",
+          "ja": "それはずいぶん楽観的な見込みだった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the second round,",
+          "ja": "2ラウンド目になるころには"
+        },
+        {
+          "en": "the other teams were answering in seconds,",
+          "ja": "ほかのチームは数秒で答えていて"
+        },
+        {
+          "en": "and we didn't stand a chance.",
+          "ja": "僕らに勝ち目はなかった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We guessed there were forty sweets",
+          "ja": "お菓子は40個だと予想した"
+        },
+        {
+          "en": "in the jar on the counter,",
+          "ja": "カウンターの瓶の中に"
+        },
+        {
+          "en": "but we were way off.",
+          "ja": "でも見当違いもいいところだった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When the scores came in,",
+          "ja": "得点が発表されると"
+        },
+        {
+          "en": "we finished dead last,",
+          "ja": "僕らは堂々の最下位で"
+        },
+        {
+          "en": "and I said, \"In our defense, we brought pencils.\"",
+          "ja": "僕は「言い訳すると、鉛筆はちゃんと持ってきた」と言った"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The host gave us a bowl of chips",
+          "ja": "司会者がポテトチップスを一皿くれた"
+        },
+        {
+          "en": "as a consolation prize,",
+          "ja": "残念賞として"
+        },
+        {
+          "en": "and my friend said, \"I'll take it.\"",
+          "ja": "友人は「それなら喜んでもらうよ」と言った"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For what it's worth,",
+          "ja": "まあ、せめてもの話だけど"
+        },
+        {
+          "en": "we were the only team",
+          "ja": "僕らだけだった"
+        },
+        {
+          "en": "with a prize we could eat.",
+          "ja": "食べられる景品をもらえたチームは"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps 'didn't stand a chance' together as one meaning chunk?",
+      "options": [
+        "By the second round / the other teams were answering in seconds / and we didn't stand / a chance.",
+        "By the second round / the other teams were answering in seconds / and we didn't stand a chance.",
+        "By the second round / the other teams were answering / in seconds and we didn't / stand a chance."
+      ],
+      "answer": 1,
+      "explanation": "'Didn't stand a chance' is one useful expression meaning there was no realistic possibility of winning. Do not split 'stand' from 'a chance'."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'we were way off' mean about the sweets guess?",
+      "options": [
+        "Their estimate was nowhere near the correct number.",
+        "They had guessed the exact number.",
+        "They refused to make any guess."
+      ],
+      "answer": 0,
+      "explanation": "'Way off' means far from correct. It describes a badly inaccurate guess, not a small error."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend say 'I'll take it' about the chips?",
+      "options": [
+        "They want to return the prize immediately.",
+        "They think the chips prove they won the quiz.",
+        "They are happy to accept a small consolation prize despite losing."
+      ],
+      "answer": 2,
+      "explanation": "'I'll take it' accepts what's offered. Here the friend treats an edible last-place prize as a funny little victory."
+    }
+  ],
+  "speak": "Imagine: you enter a friendly quiz with friends and feel confident. Read: follow the mood from confidence to embarrassment to cheerful acceptance. Chunk: practise 'didn't stand a chance', 'way off', and 'I'll take it' as whole units. Understand: the first describes low odds, the second a very wrong guess, and the third acceptance of an offer. Check: answer all three questions. Speak (30 seconds): tell a story about a game or contest where you were confident, got something badly wrong, and still found a small upside. Reuse 'In our defense' to make a light excuse. Final Read: read all six sentences aloud, stress 'didn't stand a chance', pause before 'way off', and say 'I'll take it' with a relaxed, amused tone.",
+  "review": "New: 'didn't stand a chance'（勝ち目がなかった）, 'we were way off'（予想が大きく外れた）, 'I'll take it'（それならありがたく受け取る）. Reuse 'In our defense' (Lesson 108) and 'For what it's worth' (Lesson 111) in a new setting of losing a trivia game and finding a small consolation. Reviewed Lessons 103–116: unlike mistaken cheering, film confusion, Halloween surprise, or birthday planning, this story uses self-deprecating acceptance after a friendly competition. Usage sources: https://dictionary.cambridge.org/dictionary/english/stand-a-chance ; https://dictionary.cambridge.org/dictionary/english/off-base ; https://www.oxfordlearnersdictionaries.com/definition/english/take_1"
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": 116,
+  "createdAt": "2026-11-01",
+  "title": "The Quieter Birthday Dinner",
+  "scene": "Four friends are planning Sam's birthday dinner. One friend notices that a noisy restaurant might make conversation difficult, so they check Sam's preference before booking.",
+  "sceneJa": "友人4人でサムの誕生日の食事を計画中。賑やかな店を予約しかけたところ、騒がしい場所ではサムが疲れてしまうことを思い出す。静かな店と早めの時間を提案し、本人に確認してから決める。",
+  "emotions": [
+    "excited",
+    "thoughtful",
+    "slightly apologetic",
+    "considerate",
+    "playfully relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "birthday-dinner",
+    "noise",
+    "inclusion",
+    "consulting-the-person-affected",
+    "factor-in",
+    "be-open-to",
+    "run-it-by",
+    "might-be-missing-something",
+    "that-works-for-me"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We were about to book a table",
+          "ja": "テーブルを予約するところだった"
+        },
+        {
+          "en": "at a busy noodle place",
+          "ja": "賑やかな麺料理の店に"
+        },
+        {
+          "en": "for Sam's birthday dinner.",
+          "ja": "サムの誕生日の食事のために"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then Maya pointed out",
+          "ja": "するとマヤが指摘した"
+        },
+        {
+          "en": "that Sam gets worn out in noisy places,",
+          "ja": "サムは騒がしい場所だと疲れてしまうし"
+        },
+        {
+          "en": "especially when we're trying to catch up.",
+          "ja": "近況をゆっくり話したいときはなおさらだと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"I hadn't factored that in,\"",
+          "ja": "「そこまで考慮してなかった」"
+        },
+        {
+          "en": "I admitted,",
+          "ja": "と僕は認めた"
+        },
+        {
+          "en": "\"and I might be missing something else.\"",
+          "ja": "「ほかにも見落としているかもしれないね」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Would you be open to an earlier dinner",
+          "ja": "「少し早めの夕食にするのはどうかな"
+        },
+        {
+          "en": "somewhere a little quieter?\"",
+          "ja": "もう少し静かな店で」"
+        },
+        {
+          "en": "I asked.",
+          "ja": "と僕は尋ねた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"That could work,\" Maya said,",
+          "ja": "「それならよさそう」とマヤは言い"
+        },
+        {
+          "en": "\"but let's run it by Sam",
+          "ja": "「でもサム本人にも聞いてみよう"
+        },
+        {
+          "en": "before we book anything.\"",
+          "ja": "予約する前にね」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"That works for me,\" Sam texted back.",
+          "ja": "「それでいいよ」とサムから返信が来た"
+        },
+        {
+          "en": "\"I might even hear",
+          "ja": "「今度こそ聞き取れるかも"
+        },
+        {
+          "en": "your terrible jokes this time.\"",
+          "ja": "君たちのひどい冗談がね」"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps 'run it by Sam' together as a meaning chunk?",
+      "options": [
+        "but let's run / it by / Sam before we book anything.",
+        "but let's / run it by Sam / before we book anything.",
+        "but let's run it / by Sam before / we book anything."
+      ],
+      "answer": 1,
+      "explanation": "'Run it by someone' means to check an idea with that person and invite their view. Keep the verb, object, and person together here."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I hadn't factored that in' mean here?",
+      "options": [
+        "I hadn't considered how the noise would affect Sam.",
+        "I had already paid for the reservation.",
+        "I didn't know how to calculate the bill."
+      ],
+      "answer": 0,
+      "explanation": "'Factor something in' means include it when making a plan or decision. The speaker had overlooked Sam's comfort."
+    },
+    {
+      "type": "intent",
+      "question": "Why does Sam mention the others' 'terrible jokes'?",
+      "options": [
+        "He wants everyone to stop joking at dinner.",
+        "He is asking to cancel his birthday dinner.",
+        "He playfully agrees that a quieter place will make conversation easier."
+      ],
+      "answer": 2,
+      "explanation": "Sam accepts the plan and teases his friends. The joke keeps the response warm rather than overly serious."
+    }
+  ],
+  "speak": "Imagine: you and friends are choosing a birthday dinner spot. Read: notice how the group considers the birthday person's needs instead of assuming. Chunk: say 'hadn't factored that in', 'would you be open to', and 'run it by Sam' as units. Understand: notice the overlooked constraint, tentative proposal, and request for the affected person's opinion. Check: answer all three questions. Speak (30 seconds): explain the original restaurant plan, mention why it may not suit a friend, suggest a quieter or earlier option, and say whom you'll check with before booking. Final Read: read all six sentences aloud; gently stress 'hadn't factored that in', lift your voice slightly on the proposal, and finish with a smile on 'terrible jokes'.",
+  "review": "New: 'I hadn't factored that in'（そこまで考慮していなかった）, 'Would you be open to ...?'（〜という案はどうかな）, 'Let's run it by ...'（〜に案を聞いてみよう）. Reuse 'I might be missing something' (Lesson 107) and 'That works for me' (Lessons 107/113) in a new context where the affected person makes the final choice. Compared with Lessons 102–115: this is not a split-bill fairness problem, ride boundary, or separate-activity compromise; it is a check for overlooked accessibility/comfort before a social reservation. Sources: https://www.oxfordlearnersdictionaries.com/definition/english/factor-in ; https://dictionary.cambridge.org/dictionary/english/run-by"
+}

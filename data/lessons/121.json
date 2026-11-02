@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": 121,
+  "createdAt": "2026-11-03",
+  "title": "The Shortcut I Didn't Take",
+  "scene": "Walking to the station on a sunny morning, the narrator chooses the familiar route over a map's shortcut, notices a habit of checking the time, and sees a dog refusing to cross a puddle.",
+  "sceneJa": "駅へ向かう朝、地図アプリが近道を示す。時間に余裕があるので公園沿いの道を選ぶが、つい何度も時刻を確認してしまう。スマホをしまうと、水たまりを断固として避ける犬が目に入る。",
+  "emotions": [
+    "tempted",
+    "unhurried",
+    "self-aware",
+    "curious",
+    "quietly amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "walking",
+    "station",
+    "shortcuts",
+    "time-pressure",
+    "self-awareness",
+    "small-observations",
+    "tempted-to",
+    "time-to-spare",
+    "caught-myself",
+    "on-second-thought",
+    "by-the-time"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "On my way to the station,",
+          "ja": "駅へ向かう途中、"
+        },
+        {
+          "en": "my map suggested a shortcut",
+          "ja": "地図アプリが近道を示した"
+        },
+        {
+          "en": "through a narrow alley.",
+          "ja": "細い路地を通る道だ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was tempted to try it,",
+          "ja": "試してみたくなったが、"
+        },
+        {
+          "en": "the usual street",
+          "ja": "いつもの通りは"
+        },
+        {
+          "en": "was already bright with morning sun.",
+          "ja": "もう朝日で明るくなっていた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On second thought,",
+          "ja": "考え直してみると、"
+        },
+        {
+          "en": "I had ten minutes to spare,",
+          "ja": "10分ほど余裕があったので、"
+        },
+        {
+          "en": "so I took the longer route past the park.",
+          "ja": "公園の横を通る遠回りの道を選んだ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Halfway there,",
+          "ja": "途中で、"
+        },
+        {
+          "en": "I caught myself checking the time",
+          "ja": "また時刻を確認している自分に気づいた"
+        },
+        {
+          "en": "even though I wasn't running late.",
+          "ja": "遅れそうでもないのに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I slipped my phone into my pocket",
+          "ja": "スマホをポケットにしまうと、"
+        },
+        {
+          "en": "and watched a dog",
+          "ja": "犬が目に入った"
+        },
+        {
+          "en": "stubbornly refusing to cross a puddle.",
+          "ja": "水たまりをどうしても渡ろうとしない犬だ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I reached the station,",
+          "ja": "駅に着いたときには、"
+        },
+        {
+          "en": "I was still early,",
+          "ja": "まだ時間に余裕があって、"
+        },
+        {
+          "en": "and I was still smiling about that dog.",
+          "ja": "あの犬のことを思い出して、まだ笑っていた。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the self-observation expression together?",
+      "options": [
+        "I caught / myself checking the time / even though I wasn't running late.",
+        "I caught myself checking the time / even though I wasn't running late.",
+        "I caught myself / checking the time even / though I wasn't running late."
+      ],
+      "answer": 1,
+      "explanation": "'I caught myself + -ing' means noticing yourself doing something automatically. Keep it together as a meaningful unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I had ten minutes to spare' mean?",
+      "options": [
+        "I had ten extra minutes before I needed to arrive.",
+        "I was already ten minutes late.",
+        "I had to wait exactly ten minutes for the map."
+      ],
+      "answer": 0,
+      "explanation": "'Time to spare' means extra time available beyond what is needed."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator put the phone away?",
+      "options": [
+        "To save battery for an urgent call.",
+        "To hide the map from someone.",
+        "To stop unnecessary time-checking and pay attention to the walk."
+      ],
+      "answer": 2,
+      "explanation": "The narrator notices the time-checking habit despite having time to spare, and shifts attention to the surroundings."
+    }
+  ],
+  "speak": "Imagine: you are walking somewhere with more time than usual. Read: follow the choice between the shortcut and the familiar route. Chunk: practice 'I was tempted to ...', 'I had ... to spare', and 'I caught myself ...-ing' as units. Understand: temptation, available time, and noticing an automatic habit are different meanings. Check: answer three questions. Speak (30 seconds): describe a tempting shortcut, how much time you had to spare, and one thing you caught yourself doing. Reuse 'On second thought ...' to change your decision. Final Read: read all six sentences aloud; pause after 'On second thought', stress 'ten minutes to spare', and soften your tone for the dog at the end.",
+  "review": "New: 'I was tempted to ...'（〜したくなった）, 'I had ... to spare'（〜だけ余裕があった）, 'I caught myself ...-ing'（無意識に〜している自分に気づいた）. Reuse 'On second thought' (Lessons 115/120) for a walking-route decision and 'By the time ...' (Lessons 112/118) for arrival without a rush. Unlike Lessons 107–120, this is not a task finished or a mistake fixed, but a small shift of attention. Fictional story. Sources: https://www.oxfordlearnersdictionaries.com/definition/american_english/tempt ; https://dictionary.cambridge.org/us/dictionary/english/spare"
+}

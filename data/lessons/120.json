@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": 120,
+  "createdAt": "2026-11-02",
+  "title": "The Mug That Became a Flowerpot",
+  "scene": "At a pottery workshop, the narrator tries to make a coffee mug but widens the rim until it resembles a tiny flowerpot. A friend's gentle joke gives the failed mug a second purpose.",
+  "sceneJa": "陶芸体験でコーヒーマグを作るつもりが、夢中になって口を広げすぎ、植木鉢のような形に。友人の冗談をきっかけに、失敗作の使い道が見えてくる。",
+  "emotions": [
+    "hopeful",
+    "absorbed",
+    "surprised",
+    "embarrassed",
+    "playfully accepting"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "pottery",
+    "arts-and-crafts",
+    "friends",
+    "gentle-teasing",
+    "unexpected-result",
+    "aiming-for",
+    "came-out-looking-like",
+    "ill-give-you-that",
+    "got-carried-away",
+    "on-second-thought"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At a pottery workshop,",
+          "ja": "陶芸体験で"
+        },
+        {
+          "en": "I told my friend",
+          "ja": "友人に話した"
+        },
+        {
+          "en": "I was aiming for a coffee mug.",
+          "ja": "コーヒーマグを作るつもりだと"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "As the wheel spun,",
+          "ja": "ろくろが回るうちに"
+        },
+        {
+          "en": "I got carried away",
+          "ja": "つい夢中になって"
+        },
+        {
+          "en": "making the rim wider and wider.",
+          "ja": "口の部分をどんどん広げてしまった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When I finally stopped,",
+          "ja": "ようやく手を止めると"
+        },
+        {
+          "en": "it came out looking like",
+          "ja": "できあがった形はまるで"
+        },
+        {
+          "en": "a tiny flowerpot.",
+          "ja": "小さな植木鉢だった"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"You could use it for coins,\"",
+          "ja": "「小銭入れにすればいいじゃん」と"
+        },
+        {
+          "en": "my friend said,",
+          "ja": "友人は言った"
+        },
+        {
+          "en": "with a perfectly serious expression.",
+          "ja": "大真面目な顔で"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"On second thought,",
+          "ja": "「考えてみれば"
+        },
+        {
+          "en": "that's not a bad idea,\"",
+          "ja": "それも悪くないね」と"
+        },
+        {
+          "en": "I said, picturing it on my desk.",
+          "ja": "机に置いた姿を想像しながら答えた"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"It'll hold at least three coins,\" she added,",
+          "ja": "「少なくとも硬貨3枚は入るよ」と友人が続けたので"
+        },
+        {
+          "en": "and I had to admit,",
+          "ja": "僕も認めざるを得なかった"
+        },
+        {
+          "en": "\"I'll give you that.\"",
+          "ja": "「それは確かにそうだね」"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the result expression together?",
+      "options": [
+        "When I finally / stopped it came / out looking like a tiny flowerpot.",
+        "When I finally stopped / it came out looking like / a tiny flowerpot.",
+        "When I finally stopped it / came out looking / like a tiny flowerpot."
+      ],
+      "answer": 1,
+      "explanation": "'It came out looking like ...' describes the unexpected appearance of the finished piece. Keep 'came out looking like' together here."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I was aiming for a coffee mug' mean?",
+      "options": [
+        "The speaker wanted to make a coffee mug.",
+        "The speaker was throwing a mug at a target.",
+        "The speaker had already bought a mug."
+      ],
+      "answer": 0,
+      "explanation": "'Aim for' means try to achieve a result. The intended result was a mug, not the flowerpot-like shape."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'I'll give you that'?",
+      "options": [
+        "They are promising to give the pottery away.",
+        "They think their friend has insulted them seriously.",
+        "They reluctantly but playfully agree that the object could hold a few coins."
+      ],
+      "answer": 2,
+      "explanation": "'I'll give you that' concedes a point. Here the speaker accepts the friend's tiny, funny consolation."
+    }
+  ],
+  "speak": "Imagine: you are at a pottery class and your project looks different from your plan. Read: notice the expectation, accidental change, and gentle joke. Chunk: say 'I was aiming for', 'it came out looking like', and 'I'll give you that' as complete units. Understand: the first describes an intention, the second an outcome, and the third playful agreement. Check: answer the three questions. Speak (30 seconds): describe something you tried to make, what you were aiming for, what it came out looking like, and a friend's kind reaction. Final Read: read the six sentences aloud; stress 'aiming for', pause before 'a tiny flowerpot', and soften your voice on 'I'll give you that'.",
+  "review": "New: 'I was aiming for ...'（〜を目指していた）, 'it came out looking like ...'（できあがると〜のように見えた）, 'I'll give you that'（その点は認める）. Reuse 'I got carried away' (Lesson 114) and 'On second thought' (Lesson 115) in a new hands-on arts context. The narrator does not win or solve a practical problem; they learn to accept a funny unintended result. Fictional story, no factual event claims. Dictionary references: https://dictionary.cambridge.org/dictionary/english/aim ; https://dictionary.cambridge.org/dictionary/english/come-out ; https://dictionary.cambridge.org/dictionary/english/give"
+}

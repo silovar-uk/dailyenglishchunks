@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": 119,
+  "createdAt": "2026-11-02",
+  "title": "The Seat I Didn't Swap",
+  "scene": "On a train, a passenger politely asks to swap seats to sit beside her sister. The narrator needs the aisle seat because their stop is next. Both handle the refusal without awkwardness.",
+  "sceneJa": "午後の列車で、隣に座る姉妹と一緒に座りたい乗客から席の交換を頼まれる。自分は次の駅で降りるため通路側の席を離れたくない。理由を短く伝えると、相手も気持ちよく引き下がる。",
+  "emotions": [
+    "hopeful",
+    "cautious",
+    "respectful",
+    "slightly awkward",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "train",
+    "seat-swap",
+    "polite-request",
+    "clarification",
+    "respectful-refusal",
+    "would-you-mind",
+    "rather-stay",
+    "thought-id-ask",
+    "just-to-make-sure"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "On the afternoon train,",
+          "ja": "午後の列車で、"
+        },
+        {
+          "en": "a passenger leaned over",
+          "ja": "乗客が身を乗り出して"
+        },
+        {
+          "en": "and pointed to the seat beside me.",
+          "ja": "私の隣の席を指さした。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Would you mind swapping seats",
+          "ja": "「席を交換してもらえませんか"
+        },
+        {
+          "en": "so I could sit next to my sister?\"",
+          "ja": "妹の隣に座りたいんです」"
+        },
+        {
+          "en": "she asked.",
+          "ja": "と彼女は尋ねた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Just to make sure,",
+          "ja": "「念のため確認ですが、"
+        },
+        {
+          "en": "do you mean the window seat",
+          "ja": "窓側の席のことですか"
+        },
+        {
+          "en": "two rows back?\" I asked.",
+          "ja": "2列後ろにある？」と私は聞いた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"Yes, that's the one,\"",
+          "ja": "「はい、その席です」と"
+        },
+        {
+          "en": "she said,",
+          "ja": "彼女は答え、"
+        },
+        {
+          "en": "\"but no pressure at all.\"",
+          "ja": "「でも無理にとは言いません」と付け加えた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"I'd rather stay in the aisle seat",
+          "ja": "「通路側の席のままでいたいんです"
+        },
+        {
+          "en": "because I'm getting off",
+          "ja": "降りる予定なので"
+        },
+        {
+          "en": "at the next stop,\" I explained.",
+          "ja": "次の駅で」と私は説明した。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "\"No worries—I thought I'd ask,\"",
+          "ja": "「大丈夫です。聞くだけ聞いてみようと思って」と"
+        },
+        {
+          "en": "she said,",
+          "ja": "彼女は言い、"
+        },
+        {
+          "en": "and we both went back to our books.",
+          "ja": "私たちはそれぞれ読書に戻った。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which grouping keeps the polite request together?",
+      "options": [
+        "Would you / mind swapping / seats so I could sit next to my sister?",
+        "Would you mind swapping seats / so I could sit next to my sister?",
+        "Would you mind / swapping seats so / I could sit next to my sister?"
+      ],
+      "answer": 1,
+      "explanation": "'Would you mind + -ing?' is a polite request. Keep 'Would you mind swapping seats' together as the complete request unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I'd rather stay in the aisle seat' mean here?",
+      "options": [
+        "I prefer not to change seats.",
+        "I have reserved the window seat.",
+        "I will change seats after the next stop."
+      ],
+      "answer": 0,
+      "explanation": "'I'd rather + base verb' expresses a preference. The speaker politely declines because they are leaving soon."
+    },
+    {
+      "type": "intent",
+      "question": "What does the passenger mean by 'No worries—I thought I'd ask'?",
+      "options": [
+        "She is upset and demands an explanation.",
+        "She expects the speaker to change their mind.",
+        "She accepts the refusal and says asking was worth a try."
+      ],
+      "answer": 2,
+      "explanation": "The passenger makes it clear that saying no is acceptable, keeping the interaction comfortable."
+    }
+  ],
+  "speak": "Imagine: you're on a train and someone asks to swap seats. Read: notice that both people stay courteous without agreeing. Chunk: practice 'Would you mind swapping seats?', 'I'd rather stay ...', and 'No worries—I thought I'd ask' as natural units. Understand: a polite request is not an obligation; a preference can be stated with a brief reason. Check: answer the three questions. Speak (30 seconds): role-play both sides. Ask to swap seats, clarify which seat ('Just to make sure ...'), decline politely with a reason, and accept the answer ('No worries ...'). Final Read: read all six sentences aloud, softening 'Would you mind' and 'I'd rather', and ending 'No worries' with a relaxed falling tone.",
+  "review": "New: 'Would you mind swapping seats?'（席を交換していただけませんか）, 'I'd rather stay ...'（できれば〜のままでいたい）, 'No worries—I thought I'd ask'（大丈夫。聞いてみただけです）. Reuse 'Just to make sure ...' (Lessons 110/113) for a seat-location clarification, not a plan. Compared with Lessons 105–118: the other person accepts a clear 'no'; no compromise or alternative is necessary. Usage: https://dictionary.cambridge.org/ja/grammar/british-grammar/mind ; https://www.oxfordlearnersdictionaries.com/us/definition/english/mind_2"
+}

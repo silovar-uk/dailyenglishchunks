@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 124,
+  "createdAt": "2026-11-04",
+  "title": "The Window I Almost Left Open",
+  "scene": "A chilly morning at home, when a small sound interrupts the rush to leave.",
+  "sceneJa": "肌寒い朝、家を出ようとした瞬間に風の音が聞こえる。窓を閉め忘れていたことに気づき、慌てずに確かめる。",
+  "emotions": [
+    "distracted",
+    "relieved",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "home",
+    "small-habits"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was halfway out the door,",
+          "ja": "玄関から出かけかけたとき、"
+        },
+        {
+          "en": "when I heard",
+          "ja": "ふと聞こえた、"
+        },
+        {
+          "en": "something rattling in the kitchen.",
+          "ja": "台所で何かがカタカタ鳴る音が。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It took me a second",
+          "ja": "少し時間がかかった、"
+        },
+        {
+          "en": "to figure out",
+          "ja": "気づくまでに、"
+        },
+        {
+          "en": "I'd left the window open.",
+          "ja": "窓を開けっぱなしにしていたことに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was tempted to ignore it,",
+          "ja": "そのままにしようかと思ったが、"
+        },
+        {
+          "en": "but the wind was picking up,",
+          "ja": "風が強くなってきていたので、"
+        },
+        {
+          "en": "so I went back.",
+          "ja": "戻ることにした。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Sure enough,",
+          "ja": "案の定、"
+        },
+        {
+          "en": "the curtain was blowing",
+          "ja": "カーテンが風にあおられていた、"
+        },
+        {
+          "en": "right across the counter.",
+          "ja": "カウンターの上まで。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I shut the window,",
+          "ja": "窓を閉め、"
+        },
+        {
+          "en": "double-checked the lock,",
+          "ja": "鍵も念のため確かめて、"
+        },
+        {
+          "en": "and headed out again.",
+          "ja": "もう一度出発した。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I reached the stairs,",
+          "ja": "階段に着くころには、"
+        },
+        {
+          "en": "I'd stopped worrying about the window,",
+          "ja": "窓のことは気にならなくなったが、"
+        },
+        {
+          "en": "and started wondering about the stove.",
+          "ja": "今度はコンロが気になり始めた。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the expression together?",
+      "options": [
+        "It took / me a second to / figure out",
+        "It took me a second / to figure out / I'd left the window open.",
+        "It / took me / a second to figure"
+      ],
+      "answer": 1,
+      "explanation": "It took me a second is a natural unit meaning I needed a brief moment."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'double-checked the lock' mean?",
+      "options": [
+        "Locked it twice with two keys.",
+        "Checked again to make sure it was locked.",
+        "Asked someone else to lock it."
+      ],
+      "answer": 1,
+      "explanation": "Double-check means verify again, not necessarily do the action twice."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator mention the stove at the end?",
+      "options": [
+        "To show another small worry replacing the first.",
+        "To explain why the window was open.",
+        "To say they are cooking breakfast."
+      ],
+      "answer": 0,
+      "explanation": "The ending gently jokes about how one worry can turn into another."
+    }
+  ],
+  "speak": "In 30 seconds, describe a small thing you almost forgot before leaving home. Say what made you notice it, what you checked, and how you felt afterward.",
+  "review": "New: It took me a second（気づくまで少し時間がかかった）, Sure enough（案の定）, double-check（念のため再確認する）. Review: I was tempted to（〜したくなった）, By the time（〜するころには）."
+}

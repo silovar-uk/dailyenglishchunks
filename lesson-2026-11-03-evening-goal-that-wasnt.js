@@ -1,0 +1,2 @@
+window.LESSONS=window.LESSONS||[];
+window.LESSONS.push({"schemaVersion":1,"id":123,"createdAt":"2026-11-03","title":"The Goal That Wasn't","sceneJa":"サッカー観戦中、友人が得点を早とちりして喜ぶ。得点は認められず、苦しい言い訳をする。","difficulty":3,"minutes":8,"tags":["evening","stories-and-nuance","football","humor"],"lazy":true,"dataPath":"./data/lessons/123.json"});

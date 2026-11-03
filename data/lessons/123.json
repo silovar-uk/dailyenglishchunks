@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 123,
+  "createdAt": "2026-11-03",
+  "title": "The Goal That Wasn't",
+  "scene": "Friends celebrate a football goal too early and one saves face with a joke.",
+  "sceneJa": "サッカー観戦中、友人が得点を早とちりして喜ぶ。得点は認められず、苦しい言い訳をする。",
+  "emotions": [
+    "excited",
+    "embarrassed",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "football",
+    "humor"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At the stadium,",
+          "ja": "スタジアムで、"
+        },
+        {
+          "en": "my friend cheered",
+          "ja": "友人は歓声を上げた、"
+        },
+        {
+          "en": "before the ball crossed the line.",
+          "ja": "ボールがラインを越える前に。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a split second,",
+          "ja": "ほんの一瞬、"
+        },
+        {
+          "en": "I thought",
+          "ja": "私は思った、"
+        },
+        {
+          "en": "we'd scored.",
+          "ja": "得点したのだと。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then the referee waved it off,",
+          "ja": "ところが審判が得点を認めず、"
+        },
+        {
+          "en": "and the whole stand",
+          "ja": "スタンド全体が"
+        },
+        {
+          "en": "went quiet.",
+          "ja": "静まり返った。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend tried to play it cool,",
+          "ja": "友人は平静を装ったが、"
+        },
+        {
+          "en": "but he was still",
+          "ja": "まだ"
+        },
+        {
+          "en": "holding both arms up.",
+          "ja": "両腕を上げたままだった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I couldn't help laughing,",
+          "ja": "私は思わず笑い、"
+        },
+        {
+          "en": "and he said,",
+          "ja": "友人は言った、"
+        },
+        {
+          "en": "'I was just stretching.'",
+          "ja": "「ストレッチしてただけ」と。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "公平に言えば、"
+        },
+        {
+          "en": "he did need a stretch",
+          "ja": "ストレッチは必要だった、"
+        },
+        {
+          "en": "after standing for ninety minutes.",
+          "ja": "90分間立ちっぱなしだったのだから。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the time phrase together?",
+      "options": [
+        "For / a split second, I thought",
+        "For a split second, / I thought / we'd scored.",
+        "For a / split second I / thought"
+      ],
+      "answer": 1,
+      "explanation": "For a split second means for a very brief moment."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'waved it off' mean?",
+      "options": [
+        "The referee greeted the crowd.",
+        "The referee ruled the goal out.",
+        "The referee ended the match."
+      ],
+      "answer": 1,
+      "explanation": "The referee signaled that the goal did not count."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend say 'I was just stretching'?",
+      "options": [
+        "To request exercise advice.",
+        "To disguise his premature celebration.",
+        "To encourage the crowd to stretch."
+      ],
+      "answer": 1,
+      "explanation": "He is saving face with a joke."
+    }
+  ],
+  "speak": "In 30 seconds, tell a story about celebrating too soon: what you thought, what actually happened, and a funny excuse. Pause after 'For a split second' in your final read.",
+  "review": "New: For a split second（ほんの一瞬）, waved it off（得点を認めなかった）, tried to play it cool（平静を装った）. Review: I couldn't help laughing（思わず笑った）, To be fair（公平に言えば）."
+}

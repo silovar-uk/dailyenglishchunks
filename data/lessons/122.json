@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": 122,
+  "createdAt": "2026-11-03",
+  "title": "The Museum Ticket Mix-Up",
+  "scene": "Two friends at a museum discover that one ticket is for tomorrow. Instead of blaming anyone, they clarify the options and decide whether to change the booking or visit another exhibit.",
+  "sceneJa": "美術館の入口で、友人のチケットが明日の日付だと気づく。責めるのではなく、変更できるかを確認し、今日の予定を一緒に決め直す。",
+  "emotions": [
+    "surprised",
+    "considerate",
+    "practical",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "museum",
+    "tickets",
+    "clarifying-options",
+    "no-blame",
+    "could-we",
+    "rather-than",
+    "works-for-me"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We got to the museum,",
+          "ja": "美術館に着いたが、"
+        },
+        {
+          "en": "but one of our tickets",
+          "ja": "チケットのうち1枚は"
+        },
+        {
+          "en": "was for tomorrow.",
+          "ja": "明日の日付だった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Rather than guessing,",
+          "ja": "推測で決めずに、"
+        },
+        {
+          "en": "I asked the staff",
+          "ja": "スタッフに尋ねた"
+        },
+        {
+          "en": "whether we could change the date.",
+          "ja": "日付を変更できるかどうか。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "They said it was possible,",
+          "ja": "変更は可能だと言われたが、"
+        },
+        {
+          "en": "but we'd have to pay",
+          "ja": "支払う必要があった"
+        },
+        {
+          "en": "a small difference in price.",
+          "ja": "少しの差額を。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Before we decide,",
+          "ja": "決める前に、"
+        },
+        {
+          "en": "can we check",
+          "ja": "確認してもいい？"
+        },
+        {
+          "en": "what else is open nearby?",
+          "ja": "近くでほかに何が開いているか。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend said,",
+          "ja": "友人は言った。"
+        },
+        {
+          "en": "\"I'd rather come back tomorrow",
+          "ja": "「明日また来たいな、"
+        },
+        {
+          "en": "than rush through the exhibits today.\"",
+          "ja": "今日急いで展示を見るより。」"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That works for me,",
+          "ja": "それでいいよ。"
+        },
+        {
+          "en": "so we kept the tickets",
+          "ja": "だからチケットはそのままにして、"
+        },
+        {
+          "en": "and went for coffee instead.",
+          "ja": "代わりにコーヒーを飲みに行った。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the comparison together?",
+      "options": [
+        "Rather / than guessing, I asked the staff.",
+        "Rather than guessing, / I asked the staff / whether we could change the date.",
+        "Rather than / guessing I asked / the staff whether."
+      ],
+      "answer": 1,
+      "explanation": "Rather than + -ing is a useful unit meaning 'instead of doing something'."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'a small difference in price' mean here?",
+      "options": [
+        "A modest extra amount to pay for the change.",
+        "A refund for the entire ticket.",
+        "A discount on tomorrow's coffee."
+      ],
+      "answer": 0,
+      "explanation": "A difference in price is the gap between two prices; here the change costs a little more."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend prefer tomorrow?",
+      "options": [
+        "The museum is permanently closed.",
+        "They want to avoid rushing through the exhibits.",
+        "They dislike the museum staff."
+      ],
+      "answer": 1,
+      "explanation": "The friend would rather return tomorrow than hurry through the visit today."
+    }
+  ],
+  "speak": "Imagine two friends whose tickets show different dates. Read the six sentences. Chunk: Rather than guessing / can we check / I'd rather ... than ... . Understand the price difference and the preference. Check all three questions. Speak for 30 seconds: explain the ticket problem, ask about two options, and agree on a plan without blaming anyone. Final Read: pause after 'Rather than guessing' and stress 'tomorrow' versus 'today'.",
+  "review": "New: Rather than guessing（決めつけずに）, Can we check ...?（〜を確認してもいい？）, I'd rather ... than ...（〜するより…したい）. Reuse 'That works for me' (Lesson 116) and 'Before we decide' to check a condition. Unlike the recent dinner or seat-swap lessons, this focuses on resolving a booking mistake without blame. Fictional scenario."
+}

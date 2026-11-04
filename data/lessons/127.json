@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 127,
+  "createdAt": "2026-11-05",
+  "title": "The Shopping List I Forgot",
+  "scene": "A quick grocery trip goes wrong when the shopping list is left at home.",
+  "sceneJa": "パンを買うためにスーパーへ行ったのに、リストを忘れてチーズばかり選んでしまう。",
+  "emotions": [
+    "distracted",
+    "optimistic",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "shopping",
+    "memory"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was halfway through the supermarket,",
+          "ja": "スーパーを半分ほど回ったところで、"
+        },
+        {
+          "en": "when I realized",
+          "ja": "ふと気づいた、"
+        },
+        {
+          "en": "I'd left my shopping list at home.",
+          "ja": "買い物リストを家に忘れたことに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I could have turned back,",
+          "ja": "引き返すこともできたけど、"
+        },
+        {
+          "en": "but I figured",
+          "ja": "こう考えた、"
+        },
+        {
+          "en": "I'd manage without it.",
+          "ja": "なくても何とかなるだろうと。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I tried to go from memory,",
+          "ja": "記憶を頼りに買おうとしたけど、"
+        },
+        {
+          "en": "and somehow ended up with",
+          "ja": "なぜか買い物かごには"
+        },
+        {
+          "en": "three kinds of cheese and no bread.",
+          "ja": "チーズが3種類、パンはゼロ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was about to check out",
+          "ja": "レジに向かおうとしたとき、"
+        },
+        {
+          "en": "when it dawned on me",
+          "ja": "ようやく思い当たった、"
+        },
+        {
+          "en": "that bread was the whole reason I'd come.",
+          "ja": "そもそもパンを買いに来たのだった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On second thought,",
+          "ja": "考え直して、"
+        },
+        {
+          "en": "I put two cheeses back",
+          "ja": "チーズを2種類棚に戻し、"
+        },
+        {
+          "en": "and headed for the bakery aisle.",
+          "ja": "パン売り場へ向かった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I got home,",
+          "ja": "家に帰るころには、"
+        },
+        {
+          "en": "I'd learned one thing:",
+          "ja": "ひとつ学んでいた。"
+        },
+        {
+          "en": "my memory has expensive taste.",
+          "ja": "私の記憶は高くつく。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which grouping keeps the expression together?",
+      "options": [
+        "it / dawned / on me",
+        "it dawned on me / that bread was the whole reason I'd come",
+        "it dawned / on / me that"
+      ],
+      "answer": 1,
+      "explanation": "It dawned on me means I suddenly realized something."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'go from memory' mean?",
+      "options": [
+        "記憶を頼りに進める",
+        "記憶を消す",
+        "暗記する"
+      ],
+      "answer": 0,
+      "explanation": "You rely on what you remember rather than written notes."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'my memory has expensive taste'?",
+      "options": [
+        "They deliberately wanted fancy food",
+        "They joke about buying unnecessary cheese",
+        "They are angry with the cashier"
+      ],
+      "answer": 1,
+      "explanation": "It is a playful comment on an expensive mistake."
+    }
+  ],
+  "speak": "In 30 seconds, tell a story about forgetting something while shopping. Explain what you tried, when it dawned on you, and how you fixed it.",
+  "review": "New: go from memory（記憶を頼りに）, it dawned on me（ふと気づいた）, end up with（結果的に〜を手にする）. Review: I was about to, On second thought, By the time. Read aloud: pause before the realization; say the final line with dry humor."
+}

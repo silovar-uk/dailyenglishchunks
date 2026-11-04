@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": 125,
+  "createdAt": "2026-11-04",
+  "title": "The Borrowed Book with a Deadline",
+  "scene": "Two friends discuss a borrowed novel that one of them hasn't finished.",
+  "sceneJa": "友人に借りた小説をまだ読み終えていない。返却を延ばしてほしいが、相手にも予定があるので、まず必要な日を確認する。",
+  "emotions": [
+    "slightly embarrassed",
+    "considerate",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "friends",
+    "borrowing",
+    "negotiation"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I hate to ask,",
+          "ja": "頼みにくいんだけど、"
+        },
+        {
+          "en": "but could I hang on to your book",
+          "ja": "君の本をもう少し借りていてもいいかな、"
+        },
+        {
+          "en": "for a couple more days?",
+          "ja": "あと2日ほど。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'm only halfway through,",
+          "ja": "まだ半分しか読めていなくて、"
+        },
+        {
+          "en": "and I'd rather not rush",
+          "ja": "急いで読むよりも、"
+        },
+        {
+          "en": "the ending.",
+          "ja": "結末をじっくり楽しみたいんだ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "No problem in principle,",
+          "ja": "基本的には大丈夫だけど、"
+        },
+        {
+          "en": "but I promised to lend it to my sister",
+          "ja": "妹にも貸す約束をしていて、"
+        },
+        {
+          "en": "this weekend.",
+          "ja": "今週末にね。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "When do you need it back",
+          "ja": "いつまでに返せばいい、"
+        },
+        {
+          "en": "at the latest?",
+          "ja": "遅くとも？"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If you can return it by Friday,",
+          "ja": "金曜日までに返してくれるなら、"
+        },
+        {
+          "en": "that works for me,",
+          "ja": "それで大丈夫だよ、"
+        },
+        {
+          "en": "and she can pick it up Saturday.",
+          "ja": "土曜日に妹が取りに来られるから。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Thanks for being flexible.",
+          "ja": "融通を利かせてくれてありがとう。"
+        },
+        {
+          "en": "I'll drop it off on Friday",
+          "ja": "金曜日に届けるね、"
+        },
+        {
+          "en": "rather than leave it to the last minute.",
+          "ja": "ぎりぎりにならないように。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which split keeps the request as a natural chunk?",
+      "options": [
+        "could I / hang on / to your book",
+        "could I hang on to your book / for a couple more days?",
+        "could / I hang / on to your book"
+      ],
+      "answer": 1,
+      "explanation": "Hang on to something means keep it; the full request works as one meaningful unit."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'at the latest' mean?",
+      "options": [
+        "できれば最初に",
+        "遅くとも",
+        "今すぐに"
+      ],
+      "answer": 1,
+      "explanation": "At the latest sets the final acceptable time."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend ask when the book is needed back?",
+      "options": [
+        "To avoid assuming an extension is possible and agree on a clear deadline.",
+        "To complain that the novel is boring.",
+        "To suggest the sister should buy a copy."
+      ],
+      "answer": 0,
+      "explanation": "The speaker checks the other person's constraint before making a promise."
+    }
+  ],
+  "speak": "In 30 seconds, ask a friend to keep something you borrowed for two more days. Ask when they need it back at the latest, and agree on a specific return day.",
+  "review": "New: I hate to ask（頼みにくいけれど）, hang on to（手元に置いておく）, at the latest（遅くとも）. Review: I'd rather ...（〜の方がいい）, That works for me（それで大丈夫）."
+}

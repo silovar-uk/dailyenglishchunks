@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": 126,
+  "createdAt": "2026-11-04",
+  "title": "The Dessert Nobody Asked For",
+  "scene": "At a movie night, a homemade dessert turns out surprisingly salty, and the friends rescue the evening with dry humor.",
+  "sceneJa": "映画鑑賞会に持参した手作りデザートがなぜか塩辛い。友人の真顔の冗談に救われ、アイスクリームで仕切り直す。",
+  "emotions": [
+    "proud",
+    "embarrassed",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "friends",
+    "food",
+    "dry-humor"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I brought a homemade dessert",
+          "ja": "手作りのデザートを持っていった"
+        },
+        {
+          "en": "to our movie night,",
+          "ja": "映画鑑賞会に、"
+        },
+        {
+          "en": "feeling rather proud of myself.",
+          "ja": "ちょっと得意げな気分で。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The first bite was fine,",
+          "ja": "最初の一口は問題なかったけど、"
+        },
+        {
+          "en": "but the second one",
+          "ja": "二口目で"
+        },
+        {
+          "en": "tasted oddly salty.",
+          "ja": "妙に塩辛く感じた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It turns out",
+          "ja": "どうやら"
+        },
+        {
+          "en": "I'd mixed up the sugar and salt jars",
+          "ja": "砂糖と塩の容器を取り違えていたらしい、"
+        },
+        {
+          "en": "while I was baking.",
+          "ja": "焼いているときに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend kept a straight face",
+          "ja": "友人は真顔を保って"
+        },
+        {
+          "en": "and said,",
+          "ja": "こう言った、"
+        },
+        {
+          "en": "“Well, that's one way to cut back on dessert.”",
+          "ja": "「まあ、デザートを減らす方法としてはアリだね」。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I couldn't help laughing,",
+          "ja": "思わず笑ってしまい、"
+        },
+        {
+          "en": "and we ordered ice cream instead,",
+          "ja": "代わりにアイスクリームを注文した、"
+        },
+        {
+          "en": "which was probably for the best.",
+          "ja": "結果的にはそれでよかったと思う。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For what it's worth,",
+          "ja": "一応言っておくと、"
+        },
+        {
+          "en": "nobody asked for the recipe,",
+          "ja": "誰もレシピを聞いてこなかった、"
+        },
+        {
+          "en": "and I can't say I blame them.",
+          "ja": "それも無理はない。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which is the most natural chunk boundary?",
+      "options": [
+        "It / turns / out I'd mixed up",
+        "It turns out / I'd mixed up the sugar and salt jars",
+        "It turns / out I'd / mixed up"
+      ],
+      "answer": 1,
+      "explanation": "It turns out introduces a surprising discovery; mixed up stays together as the verb phrase."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'kept a straight face' mean?",
+      "options": [
+        "真顔を保った",
+        "顔を背けた",
+        "大声で笑った"
+      ],
+      "answer": 0,
+      "explanation": "To keep a straight face is to avoid showing amusement, often while joking."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend say 'that's one way to cut back on dessert'?",
+      "options": [
+        "To request another slice",
+        "To gently joke about the salty dessert",
+        "To praise the recipe as healthy"
+      ],
+      "answer": 1,
+      "explanation": "The remark uses dry humor to ease an awkward moment."
+    }
+  ],
+  "speak": "In 30 seconds, describe a food mistake: what you intended to make, what went wrong, and how someone made the situation funny. Use 'It turns out' and 'for the best'.",
+  "review": "New: It turns out（実は〜と分かった）, keep a straight face（真顔を保つ）, for the best（結果的によかった）. Review: I couldn't help laughing（思わず笑った）, For what it's worth（一応言っておくと）. Read aloud: pause after 'It turns out' and deliver the joke with a flat tone."
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": 129,
+  "createdAt": "2026-11-05",
+  "title": "The Audio Guide That Spoiled the Surprise",
+  "scene": "At a small exhibition, a friend presses play on an audio guide at the wrong exhibit and confidently describes a painting that isn't there.",
+  "sceneJa": "小さな展覧会で友人が別の展示の音声ガイドを再生。目の前にない絵を自信満々に解説してしまう。",
+  "emotions": [
+    "amused",
+    "puzzled",
+    "playful"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "art",
+    "dry-humor"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We were looking at a sculpture",
+          "ja": "私たちは彫刻を見ていた"
+        },
+        {
+          "en": "when my friend pressed play",
+          "ja": "そのとき友人が再生ボタンを押した"
+        },
+        {
+          "en": "on the audio guide.",
+          "ja": "音声ガイドの。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The narrator went on about",
+          "ja": "ナレーターは延々と語り始めた"
+        },
+        {
+          "en": "the painting's dramatic colors,",
+          "ja": "絵画の劇的な色彩について、"
+        },
+        {
+          "en": "which was odd,",
+          "ja": "それが妙だったのは、"
+        },
+        {
+          "en": "because we were staring at a chair.",
+          "ja": "私たちが椅子を見つめていたからだ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a moment,",
+          "ja": "しばらくの間、"
+        },
+        {
+          "en": "he played along",
+          "ja": "友人は話を合わせて"
+        },
+        {
+          "en": "and nodded thoughtfully.",
+          "ja": "考え深そうにうなずいた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was about to correct him,",
+          "ja": "訂正しようとしたところ、"
+        },
+        {
+          "en": "but he whispered,",
+          "ja": "友人がささやいた。"
+        },
+        {
+          "en": "\"The brushwork is incredibly three-dimensional.\"",
+          "ja": "「筆づかいが驚くほど立体的だね」。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It dawned on me",
+          "ja": "そこでようやく気づいた。"
+        },
+        {
+          "en": "that he knew perfectly well",
+          "ja": "友人はちゃんと分かっていて"
+        },
+        {
+          "en": "we had the wrong track.",
+          "ja": "別の音声を流していたのだ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "公平に言えば、"
+        },
+        {
+          "en": "the chair did have",
+          "ja": "その椅子には確かに"
+        },
+        {
+          "en": "a certain artistic flair.",
+          "ja": "ちょっとした芸術的な味わいがあった。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which grouping keeps the expression intact?",
+      "options": [
+        "went / on about the painting",
+        "went on about / the painting's dramatic colors",
+        "went on / about the / painting"
+      ],
+      "answer": 1,
+      "explanation": "Go on about something means to talk at length, often more than necessary."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'played along' mean here?",
+      "options": [
+        "音声をもう一度再生した",
+        "相手の冗談に合わせて振る舞った",
+        "展示を見ずに先へ進んだ"
+      ],
+      "answer": 1,
+      "explanation": "Play along means to cooperate with a pretense or joke."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the friend praise the brushwork of a chair?",
+      "options": [
+        "He genuinely believes it is a painting.",
+        "He is joking about the mismatched audio guide.",
+        "He wants to complain to the museum."
+      ],
+      "answer": 1,
+      "explanation": "His deliberately absurd remark shows he is in on the joke."
+    }
+  ],
+  "speak": "In 30 seconds, tell a story about someone confidently describing the wrong thing. Use 'went on about', 'played along', and finish with a dry joke.",
+  "review": "New: go on about ...（〜について長々と語る）, play along（話を合わせる）, artistic flair（芸術的な味わい）. Review: I was about to ...（〜するところだった）, It dawned on me（ふと気づいた）, To be fair（公平に言えば）. Read aloud: pause after 'which was odd'; deliver the final line with a straight face."
+}

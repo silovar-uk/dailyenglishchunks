@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": 130,
+  "createdAt": "2026-11-06",
+  "title": "Five Minutes Before the Alarm",
+  "scene": "You wake up just before your alarm, reach for your phone, then decide to stay in bed and listen to the rain for a moment.",
+  "sceneJa": "目覚ましの5分前に目が覚める。スマホに手を伸ばしかけたが、雨音を聞きながら静かに過ごすことにする。",
+  "emotions": [
+    "sleepy",
+    "restless",
+    "calm"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "rest",
+    "habits"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I woke up",
+          "ja": "目が覚めた"
+        },
+        {
+          "en": "five minutes before my alarm",
+          "ja": "目覚ましの5分前に"
+        },
+        {
+          "en": "and reached for my phone.",
+          "ja": "スマホに手を伸ばした。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Out of habit,",
+          "ja": "いつもの癖で、"
+        },
+        {
+          "en": "I almost checked my messages",
+          "ja": "メッセージを確認しかけた"
+        },
+        {
+          "en": "before I was fully awake.",
+          "ja": "まだ完全に目が覚める前に。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then I thought better of it",
+          "ja": "でも考え直して"
+        },
+        {
+          "en": "and put the phone face down.",
+          "ja": "スマホを伏せて置いた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "There was no point in rushing",
+          "ja": "急ぐ必要はなかった"
+        },
+        {
+          "en": "when I still had a few minutes to spare.",
+          "ja": "まだ数分の余裕があったのだから。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I lay there listening to the rain",
+          "ja": "横になったまま雨音を聞いていた"
+        },
+        {
+          "en": "until the alarm finally went off.",
+          "ja": "やがて目覚ましが鳴るまで。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For once,",
+          "ja": "珍しく、"
+        },
+        {
+          "en": "the day didn't start with a screen.",
+          "ja": "画面を見ずに一日が始まった。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which is the natural meaning chunk?",
+      "options": [
+        "thought / better of it",
+        "thought better of it",
+        "thought better / of it"
+      ],
+      "answer": 1,
+      "explanation": "Think better of it means to decide not to do something after reconsidering."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'out of habit' mean?",
+      "options": [
+        "いつもの癖で",
+        "慌てて",
+        "念のため"
+      ],
+      "answer": 0,
+      "explanation": "Out of habit describes an automatic action you do routinely."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker put the phone down?",
+      "options": [
+        "The battery has died.",
+        "They decide not to check messages immediately.",
+        "They need to call someone."
+      ],
+      "answer": 1,
+      "explanation": "The speaker chooses a quieter start instead of automatically checking messages."
+    }
+  ],
+  "speak": "In 30 seconds, describe a morning habit you almost followed but reconsidered. Use 'out of habit', 'thought better of it', and 'a few minutes to spare'.",
+  "review": "New: out of habit（いつもの癖で）, think better of it（考え直してやめる）, there is no point in ...-ing（〜しても意味がない）. Review: I almost ...（〜しかけた）, a few minutes to spare（数分の余裕）. Read aloud: pause after 'Out of habit'; soften your voice in the final line."
+}

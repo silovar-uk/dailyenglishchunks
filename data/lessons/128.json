@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": 128,
+  "createdAt": "2026-11-05",
+  "title": "The Table by the Window",
+  "scene": "Two friends choose a café table, balancing a quiet corner against a view.",
+  "sceneJa": "友人とカフェに入り、窓際の席と静かな奥の席のどちらに座るか相談する。",
+  "emotions": [
+    "considerate",
+    "curious",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "cafe",
+    "preferences"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We could sit by the window,",
+          "ja": "窓際に座ってもいいし、"
+        },
+        {
+          "en": "but it looks a bit noisy over there.",
+          "ja": "あちらは少し騒がしそう。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Do you have a preference,",
+          "ja": "どちらがいい？"
+        },
+        {
+          "en": "or are you happy either way?",
+          "ja": "それともどちらでも大丈夫？"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'm easy either way,",
+          "ja": "私はどちらでもいいけど、"
+        },
+        {
+          "en": "as long as we can hear each other.",
+          "ja": "お互いの声が聞こえるならね。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "In that case,",
+          "ja": "それなら、"
+        },
+        {
+          "en": "how about the table at the back?",
+          "ja": "奥のテーブルはどう？"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That works for me,",
+          "ja": "それでいいよ。"
+        },
+        {
+          "en": "though we might want to check",
+          "ja": "ただ、確認した方がいいかも、"
+        },
+        {
+          "en": "whether it's reserved.",
+          "ja": "予約席かどうか。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため、"
+        },
+        {
+          "en": "I'll ask the staff first,",
+          "ja": "先に店員さんに聞いてみるね。"
+        },
+        {
+          "en": "then we can settle in.",
+          "ja": "それから落ち着こう。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which is the natural meaning chunk?",
+      "options": [
+        "as long / as we can / hear",
+        "as long as / we can hear each other",
+        "as / long as we / can hear"
+      ],
+      "answer": 1,
+      "explanation": "As long as introduces the condition: provided that we can hear each other."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'I'm easy either way' mean here?",
+      "options": [
+        "どちらでも構わない",
+        "席を決められないほど疲れている",
+        "窓際しか嫌だ"
+      ],
+      "answer": 0,
+      "explanation": "It informally means either option is fine with me."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker ask the staff?",
+      "options": [
+        "To complain about the noise",
+        "To confirm the back table is available",
+        "To order a second drink"
+      ],
+      "answer": 1,
+      "explanation": "They want to avoid taking a reserved table."
+    }
+  ],
+  "speak": "In 30 seconds, suggest two places to sit, ask your friend's preference, state one condition using 'as long as', and agree on a table.",
+  "review": "New: Do you have a preference?（希望はある？）, I'm easy either way（どちらでもいい）, as long as ...（〜である限り）. Review: That works for me, Just to make sure. Read aloud: soften your voice when offering a choice; pause after In that case."
+}

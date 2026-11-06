@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": 132,
+  "createdAt": "2026-11-06",
+  "title": "The Karaoke Song Nobody Knew",
+  "scene": "At karaoke, a friend chooses a song everyone claims to know, but nobody remembers the chorus. They improvise and laugh at their own confidence.",
+  "sceneJa": "カラオケで全員が知っているはずの曲を選んだのに、サビを誰も覚えていない。即興でごまかす友人たち。",
+  "emotions": [
+    "confident",
+    "embarrassed",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "friends",
+    "music",
+    "humor"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "My friend queued up an old song,",
+          "ja": "友人が昔の曲を予約し、"
+        },
+        {
+          "en": "and we all swore",
+          "ja": "私たちは全員、"
+        },
+        {
+          "en": "we knew it by heart.",
+          "ja": "歌詞を全部覚えていると言い張った。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The first verse went smoothly,",
+          "ja": "最初の一番は順調だったが、"
+        },
+        {
+          "en": "but when the chorus came around,",
+          "ja": "サビが回ってくると、"
+        },
+        {
+          "en": "we suddenly went quiet.",
+          "ja": "突然みんな黙ってしまった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a split second,",
+          "ja": "ほんの一瞬、"
+        },
+        {
+          "en": "we stared at the screen",
+          "ja": "画面を見つめ、"
+        },
+        {
+          "en": "as if the lyrics might rescue us.",
+          "ja": "歌詞が助けてくれるかのようだった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then my friend made up a line",
+          "ja": "そこで友人が即興で一節を作り、"
+        },
+        {
+          "en": "on the spot,",
+          "ja": "その場で、"
+        },
+        {
+          "en": "and the rest of us played along.",
+          "ja": "残りのみんなも話を合わせた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the end,",
+          "ja": "終わるころには、"
+        },
+        {
+          "en": "we were laughing so hard",
+          "ja": "笑いすぎて、"
+        },
+        {
+          "en": "we could barely finish the song.",
+          "ja": "曲を最後まで歌うのもやっとだった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "公平に言えば、"
+        },
+        {
+          "en": "our version was memorable,",
+          "ja": "私たち版は印象に残った。"
+        },
+        {
+          "en": "just not for the right reasons.",
+          "ja": "ただし、いい意味ではなかった。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which is a natural chunk meaning 'その場で即興で'?",
+      "options": [
+        "on the spot",
+        "on / the spot",
+        "on the / spot"
+      ],
+      "answer": 0,
+      "explanation": "On the spot is a natural fixed phrase meaning immediately, without preparation."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'know it by heart' mean?",
+      "options": [
+        "心から好きだ",
+        "暗記している",
+        "初めて聞く"
+      ],
+      "answer": 1,
+      "explanation": "Know something by heart means remember it completely."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker say 'just not for the right reasons'?",
+      "options": [
+        "They performed perfectly.",
+        "They are joking that their version was memorable because it was bad.",
+        "They dislike the original song."
+      ],
+      "answer": 1,
+      "explanation": "It is dry humor: memorable, but because the performance went wrong."
+    }
+  ],
+  "speak": "In 30 seconds, tell a story about a song or game everyone claimed to know but got wrong. Use 'know it by heart', 'on the spot', and 'played along'. End with a dry joke.",
+  "review": "New: know it by heart（暗記している）, on the spot（その場で即興で）, just not for the right reasons（ただし、いい意味ではない）. Review: for a split second（ほんの一瞬）, play along（話を合わせる）, to be fair（公平に言えば）. Read aloud: build confidence in sentence one, pause before the chorus fails, and lower your voice for the final punchline."
+}

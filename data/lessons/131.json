@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": 131,
+  "createdAt": "2026-11-06",
+  "title": "The Parcel at the Wrong Door",
+  "scene": "A neighbor's parcel arrives at your door. You ask whether they want you to hold it or leave it with the building manager, without assuming.",
+  "sceneJa": "隣人の荷物が誤配された。勝手に置き場所を決めず、本人の希望を確認する。",
+  "emotions": [
+    "considerate",
+    "uncertain",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "neighbors",
+    "permission"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "A parcel for my neighbor",
+          "ja": "隣人宛ての荷物が"
+        },
+        {
+          "en": "turned up at my door",
+          "ja": "うちの玄関に届いた"
+        },
+        {
+          "en": "while I was making lunch.",
+          "ja": "昼食を作っているときに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Rather than leave it outside,",
+          "ja": "外に置いておくのではなく、"
+        },
+        {
+          "en": "I sent a quick message",
+          "ja": "短いメッセージを送った"
+        },
+        {
+          "en": "to see what worked best for them.",
+          "ja": "相手にとって何がよいか確かめるために。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Would you prefer",
+          "ja": "どちらがよいですか、"
+        },
+        {
+          "en": "that I hold on to it,",
+          "ja": "私が預かっておくか、"
+        },
+        {
+          "en": "or leave it with the building manager?",
+          "ja": "管理人に預けるか。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "They said they could pick it up tonight,",
+          "ja": "今夜取りに行けると言ってくれた、"
+        },
+        {
+          "en": "if that wasn't too much trouble.",
+          "ja": "もし迷惑でなければ、と。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "No trouble at all,",
+          "ja": "全然大丈夫、"
+        },
+        {
+          "en": "I replied,",
+          "ja": "と私は返し、"
+        },
+        {
+          "en": "just let me know when you're on your way.",
+          "ja": "向かうときに知らせてください、と伝えた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We sorted it out",
+          "ja": "大げさにせず解決して、"
+        },
+        {
+          "en": "without making a fuss,",
+          "ja": "騒ぎ立てることもなく、"
+        },
+        {
+          "en": "and I went back to my lunch.",
+          "ja": "私は昼食に戻った。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which phrase is one natural meaning chunk?",
+      "options": [
+        "if that wasn't / too much trouble",
+        "if that wasn't too much trouble",
+        "if that / wasn't too much trouble"
+      ],
+      "answer": 1,
+      "explanation": "If that wasn't too much trouble is a polite way to check whether a request is inconvenient."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'hold on to it' mean here?",
+      "options": [
+        "荷物を捨てる",
+        "荷物を預かっておく",
+        "荷物を開封する"
+      ],
+      "answer": 1,
+      "explanation": "Hold on to it means keep the parcel temporarily."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker offer two options?",
+      "options": [
+        "To let the neighbor choose what is convenient",
+        "To avoid speaking to the neighbor",
+        "To make the neighbor pay a fee"
+      ],
+      "answer": 0,
+      "explanation": "The speaker checks the neighbor's preference instead of assuming."
+    }
+  ],
+  "speak": "In 30 seconds, explain that a neighbor's parcel arrived at your door. Ask 'Would you prefer ... or ...?', offer to hold on to it, and say 'just let me know ...' to arrange pickup.",
+  "review": "New: Would you prefer ... or ...?（〜と〜のどちらがよいですか）, hold on to it（預かっておく）, if that's not too much trouble（迷惑でなければ）. Review: Rather than ...（〜するより）, That works for me（それで大丈夫）. Read aloud: pause after 'Would you prefer' and stress the two alternatives."
+}

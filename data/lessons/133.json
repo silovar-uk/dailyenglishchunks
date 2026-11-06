@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 133,
+  "createdAt": "2026-11-07",
+  "title": "The Bus Stop on the Other Side",
+  "scene": "On a chilly morning, the narrator notices a bus stop across the street and nearly rushes over, then checks the route sign and decides to stay put.",
+  "sceneJa": "寒い朝、道路の向こうのバス停を見て移動しかけるが、路線表示を確かめて今いる場所にとどまる。",
+  "emotions": [
+    "impatient",
+    "uncertain",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "transport",
+    "small-decisions"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I was running a little late,",
+          "ja": "少し遅れ気味で、"
+        },
+        {
+          "en": "and the bus stop across the road",
+          "ja": "道路の向こうのバス停のほうが"
+        },
+        {
+          "en": "looked more promising.",
+          "ja": "よさそうに見えた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was tempted to cross over,",
+          "ja": "向こうへ渡りたくなったが、"
+        },
+        {
+          "en": "but something about the route number",
+          "ja": "路線番号がどうにも"
+        },
+        {
+          "en": "didn't add up.",
+          "ja": "つじつまが合わなかった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Rather than rush over,",
+          "ja": "慌てて渡る代わりに、"
+        },
+        {
+          "en": "I took a closer look",
+          "ja": "すぐそばの表示を"
+        },
+        {
+          "en": "at the sign beside me.",
+          "ja": "よく見てみた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Sure enough,",
+          "ja": "案の定、"
+        },
+        {
+          "en": "the stop across the road",
+          "ja": "向こうのバス停は"
+        },
+        {
+          "en": "was for buses heading the other way.",
+          "ja": "反対方向のバス用だった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I stayed put",
+          "ja": "その場にとどまり、"
+        },
+        {
+          "en": "and watched a bus pull up",
+          "ja": "ちょうど立っていた場所に"
+        },
+        {
+          "en": "right where I was standing.",
+          "ja": "バスが到着するのを見た。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For once,",
+          "ja": "珍しく、"
+        },
+        {
+          "en": "doing nothing for ten seconds",
+          "ja": "10秒間動かなかったおかげで"
+        },
+        {
+          "en": "saved me a ten-minute detour.",
+          "ja": "10分の遠回りをせずに済んだ。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "Which is the natural chunk for 「その場にとどまる」?",
+      "options": [
+        "stay put",
+        "stay / put",
+        "stay put on"
+      ],
+      "answer": 0,
+      "explanation": "Stay put is a fixed expression meaning remain where you are."
+    },
+    {
+      "type": "meaning",
+      "question": "What does 'didn't add up' mean here?",
+      "options": [
+        "計算が速かった",
+        "つじつまが合わなかった",
+        "運賃が上がった"
+      ],
+      "answer": 1,
+      "explanation": "Something doesn't add up means it seems inconsistent or suspicious."
+    },
+    {
+      "type": "intent",
+      "question": "Why does the narrator say 'For once'?",
+      "options": [
+        "To show this is not their usual experience",
+        "To announce the first bus",
+        "To complain about the driver"
+      ],
+      "answer": 0,
+      "explanation": "For once suggests an unusual, slightly self-mocking success."
+    }
+  ],
+  "speak": "In 30 seconds, describe a time you nearly went the wrong way. Use 'didn't add up', 'took a closer look', and 'stayed put'. Explain what you noticed and how it ended.",
+  "review": "New: didn't add up（つじつまが合わなかった）, take a closer look（よく見る）, stay put（その場にとどまる）. Review: I was tempted to（〜したくなった）, sure enough（案の定）. Read aloud: pause after 'didn't add up'; emphasize 'stayed put'; deliver the last line with a dry smile."
+}

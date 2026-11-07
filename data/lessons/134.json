@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": 134,
+  "createdAt": "2026-11-07",
+  "title": "The Umbrella Nobody Wanted to Carry",
+  "scene": "Two friends are heading to a street market. The forecast suggests rain, but neither wants to carry an umbrella. They agree on a simple backup plan.",
+  "sceneJa": "友人と屋外マーケットへ。雨予報だが傘を持ちたくない二人が、無理のない代替案を決める。",
+  "emotions": [
+    "hopeful",
+    "practical",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "weekend",
+    "contingency"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "The forecast says it might rain,",
+          "ja": "予報では雨が降るかもしれないけど、"
+        },
+        {
+          "en": "but neither of us",
+          "ja": "二人とも"
+        },
+        {
+          "en": "wants to carry an umbrella all afternoon.",
+          "ja": "午後ずっと傘を持ち歩きたくない。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "How about we check the sky",
+          "ja": "空模様を確認して"
+        },
+        {
+          "en": "before we leave the station?",
+          "ja": "駅を出る前に決めない？"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'd rather travel light,",
+          "ja": "できれば身軽に行きたいけど、"
+        },
+        {
+          "en": "but I don't want to get soaked either.",
+          "ja": "びしょ濡れにもなりたくないな。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Let's play it by ear,",
+          "ja": "状況を見て決めよう。"
+        },
+        {
+          "en": "and if it starts pouring,",
+          "ja": "もし土砂降りになったら、"
+        },
+        {
+          "en": "we can duck into a café.",
+          "ja": "カフェに駆け込めばいい。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "That sounds like a plan,",
+          "ja": "それでいこう。"
+        },
+        {
+          "en": "as long as we don't spend",
+          "ja": "ただし午後を丸ごと"
+        },
+        {
+          "en": "the whole afternoon waiting for perfect weather.",
+          "ja": "完璧な天気待ちで終わらせないならね。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We stepped outside,",
+          "ja": "外へ出たら、"
+        },
+        {
+          "en": "felt the first drop,",
+          "ja": "最初の雨粒が落ちてきて、"
+        },
+        {
+          "en": "and immediately reconsidered our confidence.",
+          "ja": "さっそく自信が揺らいだ。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「状況を見て決める」の自然なまとまりは？",
+      "options": [
+        "play it by ear",
+        "play / it / by / ear",
+        "play by an ear"
+      ],
+      "answer": 0,
+      "explanation": "Play it by ear は予定を固定せず状況に応じて決める慣用句。"
+    },
+    {
+      "type": "meaning",
+      "question": "duck into a café の意味は？",
+      "options": [
+        "カフェを避ける",
+        "カフェにさっと入る",
+        "カフェで鴨料理を頼む"
+      ],
+      "answer": 1,
+      "explanation": "Duck into は雨などを避けて素早く中に入ること。"
+    },
+    {
+      "type": "intent",
+      "question": "as long as we don't spend the whole afternoon ... は何を伝える？",
+      "options": [
+        "提案への条件付きの賛成",
+        "相手への怒り",
+        "マーケットの中止決定"
+      ],
+      "answer": 0,
+      "explanation": "賛成しつつ、天候待ちで時間を浪費しない条件を添えている。"
+    }
+  ],
+  "speak": "In 30 seconds, suggest a flexible plan for an outdoor activity when rain is possible. Use 'How about we ...?', 'play it by ear', and 'duck into ...'. Agree on when to decide and what to do if it rains.",
+  "review": "New: play it by ear（状況を見て決める）, duck into（さっと入る）, How about we ...?（〜しない？）. Review: I'd rather（できれば〜したい）, as long as（〜なら）. Read aloud: link 'play it by ear' smoothly; pause before 'if it starts pouring'; smile at the final twist."
+}

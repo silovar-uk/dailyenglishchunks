@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": 135,
+  "createdAt": "2026-11-07",
+  "title": "The Chess Move That Looked Brilliant",
+  "scene": "At a casual chess night, a friend proudly announces a clever move. Two seconds later, everyone notices the queen is hanging. The player turns the blunder into a joke.",
+  "sceneJa": "友人との気軽なチェス会。自信満々に指した一手が、実はクイーンをただで取られる悪手だった。本人は失敗を笑いに変える。",
+  "emotions": [
+    "confident",
+    "embarrassed",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "friends",
+    "board-games",
+    "humor"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "I thought I'd pulled off",
+          "ja": "見事に決めたと思った"
+        },
+        {
+          "en": "a brilliant move,",
+          "ja": "すごい一手を、"
+        },
+        {
+          "en": "until my friend raised an eyebrow.",
+          "ja": "友人が眉を上げるまでは。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a split second,",
+          "ja": "ほんの一瞬、"
+        },
+        {
+          "en": "I was convinced",
+          "ja": "確信していた、"
+        },
+        {
+          "en": "I'd outsmarted everyone.",
+          "ja": "全員の裏をかいたと。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then it hit me:",
+          "ja": "そこでハッと気づいた。"
+        },
+        {
+          "en": "I'd left my queen",
+          "ja": "自分のクイーンを"
+        },
+        {
+          "en": "completely unprotected.",
+          "ja": "完全に無防備にしていた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend tried to keep a straight face,",
+          "ja": "友人は真顔を保とうとしたけど、"
+        },
+        {
+          "en": "but the silence",
+          "ja": "その沈黙が"
+        },
+        {
+          "en": "gave the game away.",
+          "ja": "すべてを物語っていた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I decided to own the mistake",
+          "ja": "失敗を潔く認めて"
+        },
+        {
+          "en": "and called it",
+          "ja": "こう名づけた。"
+        },
+        {
+          "en": "an experimental donation.",
+          "ja": "『実験的な寄付』と。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "公平に言えば、"
+        },
+        {
+          "en": "the move did surprise everyone—",
+          "ja": "その一手は確かに全員を驚かせた。"
+        },
+        {
+          "en": "just not in the way I'd hoped.",
+          "ja": "ただし望んだ形ではなかった。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「（難しいことを）見事にやってのける」のまとまりは？",
+      "options": [
+        "pull off",
+        "pull / off / the",
+        "pull away off"
+      ],
+      "answer": 0,
+      "explanation": "Pull off a move は難しい一手を成功させること。"
+    },
+    {
+      "type": "meaning",
+      "question": "Then it hit me の意味は？",
+      "options": [
+        "何かが私にぶつかった",
+        "そのとき突然気づいた",
+        "そのとき勝利した"
+      ],
+      "answer": 1,
+      "explanation": "It hit me は事実に突然気づく感覚を表す。"
+    },
+    {
+      "type": "intent",
+      "question": "an experimental donation と呼んだ意図は？",
+      "options": [
+        "寄付を募るため",
+        "負けを認めず相手を責めるため",
+        "自分の失敗を冗談にするため"
+      ],
+      "answer": 2,
+      "explanation": "クイーンを失った失敗を『寄付』に見立てた自虐的ユーモア。"
+    }
+  ],
+  "speak": "In 30 seconds, tell a story about a game or hobby mistake. Use 'pull off', 'it hit me', and 'own the mistake'. End with a light, self-deprecating joke.",
+  "review": "New: pull off（やってのける）, it hit me（突然気づいた）, own the mistake（失敗を潔く認める）. Review: for a split second（ほんの一瞬）, keep a straight face（真顔を保つ）, to be fair（公平に言えば）. Read aloud: pause after 'Then it hit me'; emphasize 'just not' in the punchline."
+}

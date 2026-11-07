@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": 136,
+  "createdAt": "2026-11-08",
+  "title": "The Book I Kept Meaning to Return",
+  "scene": "On a quiet Sunday morning, someone spots an overdue library book under a pile of magazines and decides to return it before doing anything else.",
+  "sceneJa": "静かな日曜の朝。雑誌の下から返却期限を過ぎた図書館の本を見つける。後回しにせず、先に返しに行くことにする。",
+  "emotions": [
+    "distracted",
+    "sheepish",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "home",
+    "library",
+    "habits"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "While clearing the table,",
+          "ja": "テーブルを片づけていると、"
+        },
+        {
+          "en": "I came across",
+          "ja": "偶然見つけた、"
+        },
+        {
+          "en": "a library book under a stack of magazines.",
+          "ja": "雑誌の山の下にあった図書館の本を。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I'd been meaning to return it",
+          "ja": "ずっと返そうと思っていたのに、"
+        },
+        {
+          "en": "for over a week,",
+          "ja": "もう一週間以上も、"
+        },
+        {
+          "en": "but it kept slipping my mind.",
+          "ja": "つい忘れてしまっていた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I was tempted to",
+          "ja": "〜したくなった、"
+        },
+        {
+          "en": "leave it until tomorrow,",
+          "ja": "明日までそのままにしておこうと、"
+        },
+        {
+          "en": "since I had other things to do.",
+          "ja": "ほかにも用事があったから。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "On second thought,",
+          "ja": "考え直して、"
+        },
+        {
+          "en": "I put the book by the door",
+          "ja": "本を玄関に置いた、"
+        },
+        {
+          "en": "so I wouldn't forget it again.",
+          "ja": "もう忘れないように。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I might as well",
+          "ja": "どうせなら、"
+        },
+        {
+          "en": "drop it off now",
+          "ja": "今返しに行こう、"
+        },
+        {
+          "en": "and get it off my mind.",
+          "ja": "そうすれば気がかりが一つ減る。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "By the time I got home,",
+          "ja": "家に戻るころには、"
+        },
+        {
+          "en": "the morning felt a little lighter,",
+          "ja": "朝の気分が少し軽くなっていた、"
+        },
+        {
+          "en": "even though nothing dramatic had happened.",
+          "ja": "大した出来事は何もなかったけれど。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「ずっと〜しようと思っていた」に当たる自然なまとまりは？",
+      "options": [
+        "have been meaning to",
+        "have / been / mean / to",
+        "have been meant at"
+      ],
+      "answer": 0,
+      "explanation": "have been meaning to + 動詞で、以前からしようと思っていたがまだできていないことを表す。"
+    },
+    {
+      "type": "meaning",
+      "question": "it kept slipping my mind の意味は？",
+      "options": [
+        "考えがまとまらなかった",
+        "何度もつい忘れてしまった",
+        "本を落とし続けた"
+      ],
+      "answer": 1,
+      "explanation": "slip someone's mind はうっかり忘れること。kept が繰り返しを表す。"
+    },
+    {
+      "type": "intent",
+      "question": "I might as well drop it off now と言う理由は？",
+      "options": [
+        "図書館が閉まると確信したから",
+        "新しい本を買いたいから",
+        "気がかりを今片づけるほうがよいと思ったから"
+      ],
+      "answer": 2,
+      "explanation": "might as well は状況を踏まえて「どうせなら〜しよう」と決めるときに使う。"
+    }
+  ],
+  "speak": "In 30 seconds, describe a small errand you kept putting off. Say what you had been meaning to do, why it kept slipping your mind, and why you might as well do it today.",
+  "review": "New: have been meaning to（ずっと〜しようと思っていた）, slip my mind（うっかり忘れる）, might as well（どうせなら〜する）. Review: I was tempted to（〜したくなった）, on second thought（考え直して）. Read aloud: link 'meaning to'; pause after 'On second thought'; stress 'now'."
+}

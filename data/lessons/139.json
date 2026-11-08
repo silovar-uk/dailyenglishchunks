@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": 139,
+  "createdAt": "2026-11-09",
+  "title": "The Receipt I Almost Threw Away",
+  "scene": "After buying a small household item, I nearly toss the receipt, then remember I might need to exchange it if it does not fit.",
+  "sceneJa": "日用品を買った帰り、レシートを捨てかける。サイズが合わなかった場合を考えて、しばらく取っておくことにする。",
+  "emotions": [
+    "distracted",
+    "cautious",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "morning",
+    "life-and-inner-voice",
+    "shopping",
+    "small-decisions"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "On my way home,",
+          "ja": "帰り道に"
+        },
+        {
+          "en": "I was about to throw away the receipt",
+          "ja": "レシートを捨てようとした"
+        },
+        {
+          "en": "when I remembered the shelf might not fit.",
+          "ja": "棚のサイズが合わないかもしれないと思い出した。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I had picked it up",
+          "ja": "それを買ったのは"
+        },
+        {
+          "en": "without checking the measurements twice,",
+          "ja": "寸法を二度確認せずに"
+        },
+        {
+          "en": "which wasn't my smartest move.",
+          "ja": "あまり賢い判断ではなかった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Rather than take my chances,",
+          "ja": "運任せにするより"
+        },
+        {
+          "en": "I folded the receipt",
+          "ja": "レシートを折って"
+        },
+        {
+          "en": "and tucked it into my wallet.",
+          "ja": "財布にしまった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I figured",
+          "ja": "こう考えた"
+        },
+        {
+          "en": "I'd hang on to it",
+          "ja": "しばらく取っておこうと"
+        },
+        {
+          "en": "until I'd tried the shelf at home.",
+          "ja": "家で棚を試すまでは。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Sure enough,",
+          "ja": "案の定"
+        },
+        {
+          "en": "the shelf was a little too wide,",
+          "ja": "棚は少し幅が広すぎた"
+        },
+        {
+          "en": "so keeping the receipt paid off.",
+          "ja": "だからレシートを取っておいて正解だった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "It wasn't a big deal,",
+          "ja": "大したことではないけれど"
+        },
+        {
+          "en": "but I was glad",
+          "ja": "よかったと思った"
+        },
+        {
+          "en": "I hadn't acted on autopilot.",
+          "ja": "何も考えずに行動しなくて。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「しばらく取っておく」に当たる自然なまとまりは？",
+      "options": [
+        "hang on to it",
+        "hang out of it",
+        "hang over it"
+      ],
+      "answer": 0,
+      "explanation": "hang on to something は物を手放さず保管すること。"
+    },
+    {
+      "type": "meaning",
+      "question": "take my chances はこの場面でどういう意味？",
+      "options": [
+        "寸法を測り直す",
+        "うまくいくことに賭ける",
+        "返品を申し込む"
+      ],
+      "answer": 1,
+      "explanation": "take one's chances は結果が不確かでも運に任せてやってみること。"
+    },
+    {
+      "type": "intent",
+      "question": "最後の I hadn't acted on autopilot で話者が伝えたいことは？",
+      "options": [
+        "機械に任せた",
+        "無意識に捨てず、考え直せてよかった",
+        "買い物を後悔しているだけ"
+      ],
+      "answer": 1,
+      "explanation": "on autopilot は意識せず習慣的に動く比喩。"
+    }
+  ],
+  "speak": "In 30 seconds, describe something small you almost threw away or forgot to keep. Use 'I was about to ...', 'hang on to it', and 'paid off'. Explain what made you reconsider.",
+  "review": "New: take my chances（運に任せる）, hang on to it（取っておく）, pay off（よい結果につながる）. Review: I was about to ...（〜しようとした）, Sure enough（案の定）. Read aloud: pause after 'Rather than take my chances'; stress 'paid off'."
+}

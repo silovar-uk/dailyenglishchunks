@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": 138,
+  "createdAt": "2026-11-08",
+  "title": "The Soup That Wasn't Supposed to Be Spicy",
+  "scene": "At a friend's dinner, the cook insists the soup is mild. Everyone tries to be polite until someone reaches for a third glass of water.",
+  "sceneJa": "友人の夕食会。作った本人はスープを辛くないと言うが、全員が水を飲み続ける。気まずさを笑いに変える。",
+  "emotions": [
+    "polite",
+    "surprised",
+    "amused"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "food",
+    "friends",
+    "understatement"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "My friend assured us",
+          "ja": "友人は私たちに言い切った"
+        },
+        {
+          "en": "the soup was mild,",
+          "ja": "そのスープは辛くないと"
+        },
+        {
+          "en": "so we all took a generous spoonful.",
+          "ja": "だから全員たっぷり一口飲んだ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "For a split second,",
+          "ja": "ほんの一瞬"
+        },
+        {
+          "en": "nobody said a word,",
+          "ja": "誰も何も言わず"
+        },
+        {
+          "en": "and then we all reached for our water.",
+          "ja": "それから全員が水に手を伸ばした。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I tried to keep a straight face,",
+          "ja": "私は真顔を保とうとしたが"
+        },
+        {
+          "en": "but my eyes were watering",
+          "ja": "目に涙が浮かんでいた"
+        },
+        {
+          "en": "before I could say anything.",
+          "ja": "何か言えるよりも先に。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend caught on",
+          "ja": "友人も察した"
+        },
+        {
+          "en": "when someone quietly asked",
+          "ja": "誰かがそっと尋ねたとき"
+        },
+        {
+          "en": "if there was any more bread.",
+          "ja": "パンのおかわりがあるかと。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "公平に言えば"
+        },
+        {
+          "en": "the flavor was fantastic,",
+          "ja": "味はすばらしかった"
+        },
+        {
+          "en": "once I could feel my tongue again.",
+          "ja": "舌の感覚が戻ってからは。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We agreed to call it",
+          "ja": "私たちはそれを呼ぶことにした"
+        },
+        {
+          "en": "a bold choice,",
+          "ja": "大胆な選択と"
+        },
+        {
+          "en": "which was our polite way of saying it was fiery.",
+          "ja": "つまり辛すぎるという遠回しな言い方だった。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「相手が状況を察した」を自然に表すまとまりは？",
+      "options": [
+        "caught on",
+        "caught at",
+        "caught over"
+      ],
+      "answer": 0,
+      "explanation": "catch on は事情や意図を理解すること。過去形は caught on。"
+    },
+    {
+      "type": "meaning",
+      "question": "a bold choice はこの場面ではどんな含み？",
+      "options": [
+        "辛さを直接褒める決まり文句",
+        "辛すぎることをやんわり冗談にする",
+        "料理を食べないと宣言する"
+      ],
+      "answer": 1,
+      "explanation": "文脈上は遠回しな評価。表現自体が必ず皮肉になるわけではない。"
+    },
+    {
+      "type": "intent",
+      "question": "To be fair と言う意図は？",
+      "options": [
+        "相手を責める",
+        "辛さだけでなく味のよさも認める",
+        "話題を完全に変える"
+      ],
+      "answer": 1,
+      "explanation": "To be fair は一面的な評価を補う前置き。"
+    }
+  ],
+  "speak": "In 30 seconds, tell a funny story about a meal that surprised everyone. Use 'caught on', 'a bold choice', and 'To be fair'. End with a gentle joke.",
+  "review": "New: assure someone (that) ...（〜だと請け合う）, catch on（察する）, a bold choice（大胆な選択・文脈によって婉曲な皮肉）. Review: for a split second（ほんの一瞬）, keep a straight face（真顔を保つ）, to be fair（公平に言えば）. Read aloud: pause after 'For a split second'; soften 'a bold choice' for dry humor."
+}

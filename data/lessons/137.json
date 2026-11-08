@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": 137,
+  "createdAt": "2026-11-08",
+  "title": "A Small Favor, Clearly Arranged",
+  "scene": "A neighbor asks for help watering plants in a community garden; the speaker agrees while clarifying the time and scope.",
+  "sceneJa": "共同菜園で近所の人から水やりを頼まれる。引き受けながら、時間帯と対象を確認する。",
+  "emotions": [
+    "helpful",
+    "uncertain",
+    "reassured"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "neighbors",
+    "clarifying",
+    "small-favors"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "At the community garden,",
+          "ja": "地域の共同菜園で、"
+        },
+        {
+          "en": "my neighbor asked",
+          "ja": "近所の人が尋ねた、"
+        },
+        {
+          "en": "if I could water her plants on Tuesday.",
+          "ja": "火曜日に植物に水をやってもらえるかと。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I said I'd be happy to help,",
+          "ja": "喜んで手伝うと答えたが、"
+        },
+        {
+          "en": "but I wasn't sure",
+          "ja": "ただ確信がなかった、"
+        },
+        {
+          "en": "what time I could get there.",
+          "ja": "何時に行けるかについて。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Could we narrow it down",
+          "ja": "もう少し絞れるかな、"
+        },
+        {
+          "en": "to a two-hour window,",
+          "ja": "2時間ほどの時間帯に、"
+        },
+        {
+          "en": "so I know when to stop by?",
+          "ja": "いつ立ち寄ればいいか分かるように。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "She said anytime after four would work,",
+          "ja": "彼女は4時以降ならいつでも大丈夫だと言った、"
+        },
+        {
+          "en": "and I offered to",
+          "ja": "そこで私は申し出た、"
+        },
+        {
+          "en": "send her a quick message before I went.",
+          "ja": "行く前に短いメッセージを送ると。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Just to make sure,",
+          "ja": "念のため確認すると、"
+        },
+        {
+          "en": "I only need to water the pots,",
+          "ja": "水をやるのは鉢植えだけで、"
+        },
+        {
+          "en": "not the vegetable beds, right?",
+          "ja": "野菜の畝ではないんだよね？"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Exactly, she said,",
+          "ja": "そのとおり、と彼女は言った、"
+        },
+        {
+          "en": "and we left it at that.",
+          "ja": "それで話はまとまった。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「時間帯をもう少し絞る」に最も自然なまとまりは？",
+      "options": [
+        "narrow it down to a two-hour window",
+        "narrow / it / down / two hours to",
+        "make it narrow under two hours"
+      ],
+      "answer": 0,
+      "explanation": "narrow it down to ... は候補や範囲を絞ること。時間の幅を具体的に確認する場面で使える。"
+    },
+    {
+      "type": "meaning",
+      "question": "stop by の意味は？",
+      "options": [
+        "立ち寄る",
+        "作業を中止する",
+        "その場に立ち尽くす"
+      ],
+      "answer": 0,
+      "explanation": "stop by は短時間立ち寄ること。stop working とは違う。"
+    },
+    {
+      "type": "intent",
+      "question": "Just to make sure, I only need to water the pots ... と言った意図は？",
+      "options": [
+        "依頼を断るため",
+        "作業の対象を取り違えないため",
+        "水やりを増やしてもらうため"
+      ],
+      "answer": 1,
+      "explanation": "Just to make sure は認識をそろえるための確認の前置き。"
+    }
+  ],
+  "speak": "In 30 seconds, agree to a small favor but clarify the time and what exactly needs doing. Use 'narrow it down', 'stop by', and 'Just to make sure'.",
+  "review": "New: narrow it down to（〜に絞る）, stop by（立ち寄る）, leave it at that（そこで話を終える）. Review: I'd be happy to（喜んで〜する）, Just to make sure（念のため確認すると）. Read aloud: pause after 'Just to make sure'; stress 'only' and 'not' to show the boundary."
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": 140,
+  "createdAt": "2026-11-09",
+  "title": "The Seat Swap at the Cinema",
+  "scene": "Two friends discover their cinema seats are separated. One suggests asking a stranger to swap, but the other prefers not to pressure anyone.",
+  "sceneJa": "映画館で友人と席が離れていると判明。席の交換を頼む案が出るが、相手に無理をさせないよう相談する。",
+  "emotions": [
+    "surprised",
+    "considerate",
+    "relieved"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "midday",
+    "people-and-decisions",
+    "cinema",
+    "polite-requests"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "When we checked our tickets,",
+          "ja": "チケットを確認すると"
+        },
+        {
+          "en": "we realized",
+          "ja": "気づいた"
+        },
+        {
+          "en": "our seats were in different rows.",
+          "ja": "席が別々の列だったことに。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "We could ask someone to switch,",
+          "ja": "誰かに席を替わってもらえないか聞くこともできるけど"
+        },
+        {
+          "en": "but I don't want to put them on the spot.",
+          "ja": "相手を困らせたくないな。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Fair point.",
+          "ja": "確かにそうだね。"
+        },
+        {
+          "en": "How about we check with the staff first?",
+          "ja": "まずスタッフに確認してみない？"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "If there are two seats together,",
+          "ja": "隣り合う席が2つあれば"
+        },
+        {
+          "en": "great;",
+          "ja": "それでいいし"
+        },
+        {
+          "en": "otherwise, we can stick with what we've got.",
+          "ja": "なければ今の席のままでいいよ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "The staff found us two seats at the back,",
+          "ja": "スタッフが後方に2席見つけてくれて"
+        },
+        {
+          "en": "so we didn't have to bother anyone.",
+          "ja": "誰にも迷惑をかけずに済んだ。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "まあ正直なところ"
+        },
+        {
+          "en": "I was more worried about blocking the aisle",
+          "ja": "通路をふさいでしまうほうが心配だった"
+        },
+        {
+          "en": "than sitting apart.",
+          "ja": "離れて座ることよりも。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「相手をその場で困らせる」に当たる表現は？",
+      "options": [
+        "put them on the spot",
+        "put them in a row",
+        "put them at the back"
+      ],
+      "answer": 0,
+      "explanation": "put someone on the spot は突然の要求や質問で答えにくい立場に置くこと。"
+    },
+    {
+      "type": "meaning",
+      "question": "stick with what we've got の意味は？",
+      "options": [
+        "持ち物を預ける",
+        "今ある選択肢のままにする",
+        "席を交換する"
+      ],
+      "answer": 1,
+      "explanation": "stick with は選択を変えずに続けること。"
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker suggest checking with the staff first?",
+      "options": [
+        "To avoid pressuring another customer",
+        "To get a refund",
+        "To leave before the film"
+      ],
+      "answer": 0,
+      "explanation": "相手に無理なお願いをせずに解決できる方法を探している。"
+    }
+  ],
+  "speak": "In 30 seconds, tell a friend you have seats apart at a concert or cinema. Suggest checking with staff first, explain why you don't want to put anyone on the spot, and say what you'll do if no seats are available.",
+  "review": "New: put someone on the spot（相手を困らせる）, Fair point（確かにそうだね）, stick with what we've got（今のままにする）. Review: How about we ...?（〜しない？）, To be fair（正直なところ）. Read aloud: soften 'Fair point'; pause before 'otherwise'."
+}

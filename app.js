@@ -206,8 +206,8 @@
           <p class="lead">英語を前から、意味のまとまりとして受け取る。最新の練習から、そのまま始める。</p>
           <nav class="language-hub" aria-label="学習する言語を選ぶ">
             <span class="language-choice is-current" aria-current="page"><span class="lang-flag">EN</span>English</span>
-            <a class="language-choice" href="./korean/" aria-label="韓国語を学ぶ"><span class="lang-flag">한</span>한국어</a>
-            <a class="language-choice is-new" href="./cantonese/" aria-label="香港広東語を学ぶ"><span class="lang-flag">粵</span>広東語 <span class="language-new-tag">NEW</span></a>
+            <a class="language-choice is-new" href="./cantonese/starter.html" aria-label="広東語をゼロから学ぶ"><span class="lang-flag">粵</span>広東語 <span class="language-new-tag">START</span></a>
+            <a class="language-choice" href="./korean/" aria-label="韓国語の過去の教材を見る"><span class="lang-flag">한</span>韓国語（旧）</a>
           </nav>
         </div>
 

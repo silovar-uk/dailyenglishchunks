@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": 141,
+  "createdAt": "2026-11-09",
+  "title": "The Museum Gift Shop Masterpiece",
+  "scene": "After an art exhibition, two friends discover a souvenir mug with a hilariously distorted version of a famous-looking painting. They debate whether the mistake is intentional.",
+  "sceneJa": "美術展の帰り、友人と土産物店で絵柄が妙にゆがんだマグカップを発見。デザインなのか印刷ミスなのか、真顔で議論する。",
+  "emotions": [
+    "amused",
+    "puzzled",
+    "playful"
+  ],
+  "difficulty": 3,
+  "minutes": 8,
+  "tags": [
+    "evening",
+    "stories-and-nuance",
+    "art",
+    "dry-humor"
+  ],
+  "sentences": [
+    {
+      "chunks": [
+        {
+          "en": "We stopped by the gift shop",
+          "ja": "帰りに土産物店へ立ち寄ると"
+        },
+        {
+          "en": "and spotted a mug",
+          "ja": "マグカップを見つけた"
+        },
+        {
+          "en": "with a strangely stretched portrait on it.",
+          "ja": "そこには妙に引き伸ばされた肖像画が描かれていた。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "At first glance,",
+          "ja": "一見すると"
+        },
+        {
+          "en": "it looked like a printing mistake,",
+          "ja": "印刷ミスに見えたけど"
+        },
+        {
+          "en": "but my friend insisted it was intentional.",
+          "ja": "友人はわざとだと言い張った。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "I gave it the benefit of the doubt",
+          "ja": "ひとまず好意的に解釈して"
+        },
+        {
+          "en": "and said the artist might be making a point.",
+          "ja": "作家には何か伝えたいことがあるのかも、と言った。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "Then I noticed",
+          "ja": "そこで気づいた"
+        },
+        {
+          "en": "the same portrait on a postcard",
+          "ja": "同じ肖像画がポストカードにもあって"
+        },
+        {
+          "en": "looked perfectly normal.",
+          "ja": "そちらはまったく普通だった。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "My friend tried to keep a straight face,",
+          "ja": "友人は真顔を保とうとしたが"
+        },
+        {
+          "en": "but burst out laughing",
+          "ja": "吹き出してしまった"
+        },
+        {
+          "en": "when I called the mug a limited edition.",
+          "ja": "私がマグカップを限定版と呼んだ瞬間に。"
+        }
+      ]
+    },
+    {
+      "chunks": [
+        {
+          "en": "To be fair,",
+          "ja": "とはいえ"
+        },
+        {
+          "en": "we did buy it,",
+          "ja": "結局それを買った"
+        },
+        {
+          "en": "so perhaps the mistake was a selling point after all.",
+          "ja": "だからそのミスは案外、売りになっていたのかもしれない。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "chunk",
+      "question": "「ひとまず好意的に解釈する」の意味のまとまりは？",
+      "options": [
+        "give it the benefit of the doubt",
+        "make a point",
+        "at first glance"
+      ],
+      "answer": 0,
+      "explanation": "give someone/something the benefit of the doubt は、疑わしくても悪く決めつけないこと。"
+    },
+    {
+      "type": "meaning",
+      "question": "burst out laughing の意味は？",
+      "options": [
+        "笑いをこらえる",
+        "突然笑い出す",
+        "笑いながら謝る"
+      ],
+      "answer": 1,
+      "explanation": "burst out laughing は、急に笑い出すこと。"
+    },
+    {
+      "type": "intent",
+      "question": "Why does the speaker call the mug a limited edition?",
+      "options": [
+        "To jokingly reframe a printing error as something special",
+        "Because the museum confirmed it was rare",
+        "To complain about the price"
+      ],
+      "answer": 0,
+      "explanation": "印刷ミスらしいものを『限定版』と呼ぶ、軽い皮肉とユーモア。"
+    }
+  ],
+  "speak": "In 30 seconds, tell a friend about a funny design mistake you noticed in a shop. Say what it looked like at first glance, give it the benefit of the doubt, and end with a playful remark.",
+  "review": "New: at first glance（一見すると）, give it the benefit of the doubt（好意的に解釈する）, burst out laughing（突然笑い出す）. Review: keep a straight face（真顔を保つ）, To be fair（とはいえ）. Read aloud: pause after 'At first glance'; stress 'perfectly normal' and 'limited edition'."
+}

@@ -72,6 +72,61 @@ button:focus-visible,a:focus-visible{outline:3px solid #294f40;outline-offset:2p
 .course-picker.hidden{display:none}.course-picker select{min-width:145px}
 
 .trivia-panel{margin-top:12px;padding:13px;background:#f4f3e6;border:1px solid #b9c7a7;border-radius:14px}.trivia-panel h2{font-size:14px;margin:0 0 5px}.trivia-panel .trivia-meta{font-size:10px;color:#60715b}.trivia-panel .trivia-question{font-size:14px;font-weight:700;margin:8px 0}.trivia-choices{display:grid;gap:6px}.trivia-choices button{text-align:left;font-size:12px;padding:8px 10px;min-height:38px}.trivia-choices button.correct{border-color:#396c46;background:#d9ebd5}.trivia-choices button.wrong{border-color:#a05c53;background:#f6e0d9}.trivia-answer{font-size:12px;line-height:1.6;margin:9px 0}.trivia-source{font-size:11px;color:#315c43}.trivia-actions{display:flex;gap:8px;margin-top:9px}.trivia-actions button{font-size:11px;min-height:34px;padding:6px 9px}
+
+/* Neon Hong Kong visual layer — preserve gameplay, DOM ids, and history. */
+:root{--night:#080e21;--night-panel:#101b32;--night-raised:#182744;--neon-pink:#ff7fc5;--neon-cyan:#83ecf2;--neon-amber:#ffca79;--neon-text:#f6f8ff}
+body{color:var(--neon-text);background:radial-gradient(ellipse at 12% 8%,#41234b 0%,transparent 35%),radial-gradient(ellipse at 88% 38%,#123d54 0%,transparent 38%),linear-gradient(165deg,#10172e 0%,#070c1a 65%,#121426 100%);background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background:repeating-linear-gradient(90deg,transparent 0 48px,#b7b7d4 49px 50px),linear-gradient(0deg,transparent 60%,#2b6680 100%);mask-image:linear-gradient(to top,#000,transparent 70%)}
+main{position:relative;z-index:1}
+header a,.compact-links a{color:#b4dce6}
+h1{color:#fff3fa;text-shadow:0 0 8px #ff60b780,0 0 24px #ff60b740;letter-spacing:.13em}
+.device-version{color:var(--neon-cyan)}
+.compact-links p,.foot,.muted{color:#c2cbe1}
+.course-picker{color:#d5def1}.course-picker select{background:#16223a;border-color:#5e7a99;color:#f4f7ff}
+.tabs button{background:#152139;border-color:#4b6483;color:#e6efff}
+.tabs button[aria-pressed=true]{background:#392045;border-color:#e779b5;color:#fff;box-shadow:inset 0 0 12px #ff80bd33,0 0 10px #ff80bd33}
+.stats{color:#aebfda}.stats b{color:var(--neon-cyan);text-shadow:0 0 9px #4de0ee66}
+.panel{background:linear-gradient(145deg,#202943,#10182e);border:2px solid #4d6683;box-shadow:inset 0 1px #a3c2e633,0 4px 0 #070c1a,0 12px 28px #0008,0 0 26px #e26ca51a}
+.topline{color:#b5c8e3}.progress{background:#293e5b}.progress>div{background:linear-gradient(90deg,var(--neon-cyan),var(--neon-pink));box-shadow:0 0 10px #83ecf2aa}
+.lcd{background:linear-gradient(155deg,#152840,#101b32 75%);border-color:#456783;color:#f5f8ff;box-shadow:inset 0 0 20px #050a16,0 0 0 1px #83ecf244,0 0 15px #48d9ee2b}
+.lcd:before{content:"霓虹漢字  •  NEON HANZI";color:#a9e8ef;opacity:.8}
+.glyph{color:#fff;text-shadow:none;font-weight:700}
+.subtitle,.extra-bar .reading,.sound-message{color:#c3e8f0}
+.extra-bar button{background:#1c3c50;border-color:#6db5c7;color:#e6faff}
+.slot{background:#111c32;border-color:#6186a3;color:#eff9ff}
+.slot.filled{background:#1d3854;border-color:#83ecf2;color:#fff;box-shadow:0 0 9px #83ecf255}
+.keyboard button{background:#1c2944;border:1px solid #55738f;color:#f2f8ff;box-shadow:0 2px 0 #050b19}
+.keyboard small{color:#a8dbe4}
+.keyboard button:active{background:#2e4968;box-shadow:0 0 10px #83ecf277}
+.actions button{background:#1a2a46;border-color:#65819e;color:#eef6ff}
+.actions button.primary,#next.primary{background:#712e63;border-color:#f18abf;color:#fff;box-shadow:0 0 12px #ff7fc544}
+.lcd.answered .result-tabs button{background:#1a3450;border-color:#527e9c;color:#d4effa}
+.lcd.answered .result-tabs button[aria-pressed=true]{background:#62315d;border-color:#e88bbf;color:#fff}
+.lcd.answered>#feedback,.lcd.answered>#compounds{color:#f1f7ff}
+.lcd .vpart{background:#192e49;border-color:#668ca8}
+.lcd .vpart.first,.lcd .vpart.last{border-top-color:#f98abf}
+.lcd .vpart .code,.lcd .vpart .shape{color:#f2f9ff}
+.lcd .vlabel,.lcd .vnote,.lcd .source,.lcd .learning-label{color:#c6d5ed}
+.lcd .source a{color:#9ceaf2}
+.lcd .compound{background:#1c3550;border-color:#5d7d9d}
+.lcd .compound .translation,.lcd .compound .roman{color:#d3e0f1}
+.lcd .compound .play{background:#234963;border-color:#73b8c9;color:#fff}
+.trivia-panel{background:linear-gradient(150deg,#1c203b,#131a30);border:1px solid #9e588e;box-shadow:0 0 16px #ff7fc522, inset 0 0 12px #ff7fc50d}
+.trivia-panel h2{color:#ffb3d9;text-shadow:0 0 10px #ff7fc544}
+.trivia-panel .trivia-meta{color:#9eeaf1}
+.trivia-panel .trivia-question{color:#fff}
+.trivia-choices button{background:#1b2b45;border-color:#627fa1;color:#f4f8ff}
+.trivia-choices button.correct{background:#1d513d;border-color:#8fe5b4;color:#fff}
+.trivia-choices button.wrong{background:#572b45;border-color:#f8a1ae;color:#fff}
+.trivia-answer{color:#ecf5ff}
+.trivia-source{color:#9ceaf2}
+.trivia-actions button{background:#302543;border-color:#a866a2;color:#f7e8ff}
+.help details{border-color:#3e5069}.help summary{color:#e7edff}.help p{color:#c4d1e5}
+.foot{color:#bac7d9}.foot a{color:#9ceaf2}
+#typeInput{background:#13213a;border-color:#5e86a6;color:#fff}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #9ceaf2;outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){.panel:has(.lcd.answered){animation:neonPulse .38s ease-out}@keyframes neonPulse{0%{box-shadow:0 0 0 #ff7fc500}50%{box-shadow:0 0 24px #ff7fc566}100%{box-shadow:inset 0 1px #a3c2e633,0 4px 0 #070c1a,0 12px 28px #0008,0 0 26px #e26ca51a}}}
+@media(prefers-reduced-motion:reduce){.panel,.trivia-panel{animation:none!important}}
 </style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
 <h1>▣ QUICK LAB <span class="device-version">POCKET / 01</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">フレーズ練習 →</a></div>

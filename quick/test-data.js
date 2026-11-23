@@ -34,6 +34,12 @@ assert.match(html, /function inCourse\(x\)/, "course filtering function exists")
 assert.match(html, /function rootPeers\(q\)/, "root comparison function exists");
 assert.match(html, /quick-lab-v1/, "existing history key retained");
 assert.match(html,/Neon Rendering System v1/,"neon rendering system exists");
+assert.match(html,/function cantoneseVoices\(\)/,"Cantonese voice discovery exists");
+assert.match(html,/voiceschanged/,"asynchronous speech voice loading handled");
+assert.match(html,/function audioHelp\(\)/,"audio fallback instructions exist");
+assert.match(html,/utterance\.onerror/,"audio playback errors surfaced");
+assert.match(html,/utterance\.lang="zh-HK"/,"Cantonese language retained");
+
 for(const token of ["--light-core","--light-halo","--light-ambient","--sign-glow","--focus-ring"])assert.ok(html.includes(token),"neon rendering token: "+token);
 assert.match(html,/id="glyph" lang="zh-HK"/,"Hong Kong glyph language tag exists");
 assert.match(html,/prefers-contrast:more/,"high contrast adaptation exists");

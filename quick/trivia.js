@@ -1,5 +1,5 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
-// sourceReview distinguishes targeted source checks from URLs still needing claim-level verification.
+// sourceReview tracks targeted citation checks; pending does not mean verified.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
@@ -397,15 +397,15 @@ window.QUICK_TRIVIA = [
     "category": "香港実践・交通",
     "han": "出",
     "skill": "場面判断・交通",
-    "objective": "MTRの出口表示「出口」を理解できる",
-    "question": "MTR駅で「出口 Exit A」と表示されている。向かう先は？",
+    "objective": "MTRの出口番号を暗記するのではなく案内図で目的地を確認できる",
+    "question": "MTRで「出口 A2」と「出口 B1」の案内を見た。地上で目的地に近い出口を選ぶには？",
     "options": [
-      "A出口",
-      "A線の乗り換えホーム",
-      "A方面行きの列車"
+      "駅の出口案内図で目的地の施設名を確認する",
+      "アルファベットが早いA2を必ず選ぶ",
+      "番号が小さいB1を必ず選ぶ"
     ],
     "answer": 0,
-    "detail": "出口（ceot1 hau2）は出口。MTRでは出口がアルファベットで区別される。駅構内の案内表示を確認して進む。",
+    "detail": "MTRの出口はアルファベットや番号で区別される。最寄り出口は路線名や記号の大小だけでは決まらないため、駅の出口案内図で施設名・通り名を確認する。",
     "source": "https://www.mtr.com.hk/en/customer/services/system_map.html",
     "sourceReview": "pending-specific-reference"
   },
@@ -449,14 +449,14 @@ window.QUICK_TRIVIA = [
     "han": "港",
     "skill": "香港の歴史",
     "objective": "共同声明と基本法の役割を区別できる",
-    "question": "香港の返還に関して「中英共同声明」と「香港基本法」の関係として適切なのは？",
+    "question": "1984年の中英共同声明と香港基本法の法的な位置づけの違いは？",
     "options": [
-      "共同声明は中英間の国際的合意、基本法は香港特別行政区の制度を定める法律",
-      "共同声明は香港の鉄道規則、基本法は英国議会の選挙法",
-      "両方とも香港の映画産業だけを対象とする条例"
+      "共同声明は中英間の合意、基本法は中国の全国人民代表大会が制定した法律",
+      "共同声明も基本法も香港の立法会が制定した条例",
+      "共同声明は中国の国内法、基本法は英国と中国の条約"
     ],
     "answer": 0,
-    "detail": "中英共同声明は英国と中国の合意文書。香港基本法は香港特別行政区の制度を定める法律。両者の法的位置づけは同一ではない。",
+    "detail": "中英共同声明は中国と英国の間の国際的合意。香港基本法は中国の全国人民代表大会が制定した香港特別行政区の基本的な法律。政治的評価と法的な文書の種類は区別する。",
     "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
     "sourceReview": "pending-specific-reference"
   },
@@ -500,14 +500,14 @@ window.QUICK_TRIVIA = [
     "han": "影",
     "skill": "言語文化",
     "objective": "映画資料の保存と上映の両方が文化継承に必要な理由を考えられる",
-    "question": "過去の香港映画を次世代に残すうえで、資料館が行う活動として最も包括的なのは？",
+    "question": "香港電影資料館の「収集・保存」と「公開」の関係として適切なのは？",
     "options": [
-      "フィルムなどを保存し、調査・展示・上映にも活用する",
-      "作品名の人気投票だけを毎年実施する",
-      "公開作品をすべて新作映画に限定する"
+      "保存は資料を後世へ残し、公開は上映・展示・研究利用などを通じてアクセスを可能にする",
+      "保存は上映権の取得だけを意味し、公開はフィルム修復だけを意味する",
+      "保存は興行収入の集計、公開は撮影許可の発行を意味する"
     ],
     "answer": 0,
-    "detail": "映画資料館は資料の保存だけでなく、調査や公開を通じて映画史を伝える。映画文化を残すには保存とアクセスの双方が重要。",
+    "detail": "映画資料の保存と公開は異なる機能。資料の収集・保存・修復と、上映・展示・研究への提供を組み合わせることで映画文化を継承する。",
     "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html",
     "sourceReview": "pending-specific-reference"
   }

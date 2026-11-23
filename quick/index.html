@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#343b32"><title>Quick Lab | 速成入力</title>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080e21"><title>Quick Lab | 速成入力</title>
 <style>
 .visual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}.visual.one{grid-template-columns:1fr}.vpart{padding:12px 8px;border:1px solid #d5deed;border-radius:12px;text-align:center;background:#fff}.vpart.first{border-top:4px solid #2c63b7}.vpart.last{border-top:4px solid #ad7132}.vpart .shape{font-size:23px;line-height:1.5;min-height:38px;font-family:"PingFang TC","Noto Serif CJK TC",serif}.vpart .code{font-size:15px;font-weight:700}.vlabel{font-size:11px;color:#68768d}.vnote{font-size:12px;color:#536176}.source{font-size:11px;margin-top:10px}.source a{color:#315c9a}.keyboard button{touch-action:manipulation}.glyph{font-size:88px;margin:10px 0 0}.subtitle{margin-bottom:10px}.keyboard{gap:5px;margin-top:10px}.keyboard button{min-height:47px}.keyboard small{font-size:13px}.actions{margin:12px 0}button{touch-action:manipulation}
 
@@ -171,6 +171,13 @@ const TRIVIA=window.QUICK_TRIVIA||[];
 const KEY="quick-lab-v1",ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const $=id=>document.getElementById(id);
 let saved;try{saved=JSON.parse(localStorage.getItem(KEY))||{}}catch{saved={}};let stats=saved.stats||{},queue=[],pos=0,typed="",done=false,helped=false,review=false,course="starter",scene="all";
+// Course preferences live separately so the legacy quick-lab-v1 progress format stays intact.
+const PREF_KEY="quick-lab-ui-v1";
+const VALID_COURSES=new Set(["starter","basic100","daily150","scene200","roots250","all"]);
+const VALID_SCENES=new Set(["all","food","shopping","travel"]);
+try{const p=JSON.parse(localStorage.getItem(PREF_KEY)||"{}");if(VALID_COURSES.has(p.course))course=p.course;if(VALID_SCENES.has(p.scene))scene=p.scene;if(typeof p.review==="boolean")review=p.review}catch{}
+$("course").value=course;$("scenePicker").classList.toggle("hidden",!["scene200","all"].includes(course));$("scene").value=scene;
+function savePrefs(){try{localStorage.setItem(PREF_KEY,JSON.stringify({course,scene,review}))}catch{}}
 const today=()=>{let d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")};
 function persist(){try{localStorage.setItem(KEY,JSON.stringify({stats}))}catch{}}
 function due(item){let s=stats[item.han];return !!(s&&s.due&&s.due<=today())}
@@ -266,9 +273,9 @@ $("keyboard").innerHTML=Object.entries(ROOTS).map(([k,v])=>'<button type="button
 $("keyboard").addEventListener("click",e=>{let b=e.target.closest("[data-key]");if(b)append(b.dataset.key)});
 $("backspace").onclick=erase;$("check").onclick=check;$("next").onclick=next;
 $("hint").onclick=()=>{let q=current();if(!q)return;helped=true;$("hintBox").textContent=q.code.length===1?"ヒント：この漢字そのものが基本字根です。":"先頭の字根： "+q.code[0]+"（"+ROOTS[q.code[0]]+"）。末尾はどれ？";$("hintBox").classList.remove("hidden")};
-$("course").onchange=()=>{course=$("course").value;$("scenePicker").classList.toggle("hidden",!["scene200","all"].includes(course));scene="all";$("scene").value="all";build()};
-$("scene").onchange=()=>{scene=$("scene").value;build()};
-$("modeAll").onclick=()=>{review=false;build()};$("modeReview").onclick=()=>{review=true;build()};
+$("course").onchange=()=>{course=$("course").value;$("scenePicker").classList.toggle("hidden",!["scene200","all"].includes(course));scene="all";$("scene").value="all";savePrefs();build()};
+$("scene").onchange=()=>{scene=$("scene").value;savePrefs();build()};
+$("modeAll").onclick=()=>{review=false;savePrefs();build()};$("modeReview").onclick=()=>{review=true;savePrefs();build()};
 $("reset").onclick=()=>{if(confirm("Quick Labの学習記録を消去しますか？")){stats={};persist();build()}};
 $("typeInput").addEventListener("input",e=>{if(!done){typed=e.target.value.toUpperCase().replace(/[^A-Z]/g,"").slice(0,current()?.code.length||2);slots()}});
 document.addEventListener("keydown",e=>{if(e.target===$("typeInput")){if(e.key==="Enter"){e.preventDefault();done?next():check()}return}if(e.altKey||e.metaKey||e.ctrlKey||e.target.closest("button"))return;if(e.key==="Enter"){done?next():check()}else if(e.key==="Backspace")erase();else if(/^[a-z]$/i.test(e.key))append(e.key.toUpperCase())});

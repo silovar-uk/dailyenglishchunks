@@ -149,6 +149,10 @@ assert.equal(element("glyph").textContent,"早","starter course still starts wit
 vm.runInContext('append("A");append("J");check()', context);
 assert.equal(element("status").textContent, "正解", "two-key answer works");
 assert.equal(element("lcd").classList.contains("answered"),true,"answer shows feedback mode");
+assert.match(element("answerBrief").textContent,/正解.*早.*AJ/,"answer summary is immediately readable");
+assert.equal(element("feedback").classList.contains("hidden"),true,"long root explanation stays collapsed by default");
+assert.equal(element("next").classList.contains("hidden"),false,"next action is immediately available");
+assert.match(html,/id="answerBrief"/,"compact answer summary exists");
 assert.match(element("feedback").innerHTML, /日 ＋ 十/, "visual breakdown appears");
 assert.ok(element("compounds").children.length>=2,"compounds shown after answer");
 

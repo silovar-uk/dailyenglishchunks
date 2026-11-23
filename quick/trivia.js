@@ -1460,5 +1460,100 @@ window.QUICK_TRIVIA = [
     "detail": "香港の18区は、香港島4区・九龍5区・新界9区に分けられる。大きな3地域と18区を混同しないことが地理理解の基本。",
     "source": "https://www.gov.hk/en/about/abouthk/factsheets/docs/district_admin.pdf",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-051-sar",
+    "category": "香港の歴史と制度",
+    "han": "區",
+    "topic": "香港史・政治制度",
+    "difficulty": 1,
+    "skill": "特別行政区の位置づけ",
+    "objective": "香港が中国の特別行政区であることを基本法に基づいて理解する",
+    "question": "香港基本法第1条・第12条から読み取れる香港の位置づけは？",
+    "options": [
+      "中国の特別行政区であり、中央人民政府の直轄下にある",
+      "中国から独立した主権国家である",
+      "英国の海外領土として現在も統治される"
+    ],
+    "answer": 0,
+    "detail": "基本法第1条は香港特別行政区を中華人民共和国の不可分の一部とし、第12条は高度の自治を享有する地方行政区域で中央人民政府の直轄下にあると定める。",
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-052-external-affairs",
+    "category": "香港の歴史と制度",
+    "han": "防",
+    "topic": "香港史・政治制度",
+    "difficulty": 2,
+    "skill": "中央と香港の権限分担",
+    "objective": "基本法第13条・第14条の外交・防衛の権限を区別できる",
+    "question": "香港基本法で、外交と防衛の責任を負うのは原則として誰？",
+    "options": [
+      "中央人民政府",
+      "香港立法会のみ",
+      "香港の各区議会"
+    ],
+    "answer": 0,
+    "detail": "基本法第13条は香港に関係する外交事務を中央人民政府が管理すると規定。第14条は香港の防衛を中央人民政府が担当すると規定する。一方、香港は基本法に基づく自治権を持つ。",
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-053-chief-executive",
+    "category": "香港の歴史と制度",
+    "han": "長",
+    "topic": "香港史・政治制度",
+    "difficulty": 2,
+    "skill": "行政長官の責任関係",
+    "objective": "基本法第43条の行政長官の位置づけを理解する",
+    "question": "香港基本法第43条に照らして、行政長官の説明として正しいのは？",
+    "options": [
+      "香港特別行政区の首長で、中央人民政府と香港特別行政区の双方に責任を負う",
+      "香港立法会が毎年交代で選ぶ議長だけを指す",
+      "中国の外交政策を単独で決定する職位である"
+    ],
+    "answer": 0,
+    "detail": "第43条では行政長官を香港特別行政区の首長と定め、基本法に従って中央人民政府および香港特別行政区に対して責任を負うと規定する。選出方法とは別の論点。",
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-054-legislative-council",
+    "category": "香港の歴史と制度",
+    "han": "法",
+    "topic": "香港史・政治制度",
+    "difficulty": 2,
+    "skill": "行政と立法の区別",
+    "objective": "立法会の制度上の役割を基本法第66条から説明できる",
+    "question": "香港の「立法會（Legislative Council）」は、基本法上どのような機関？",
+    "options": [
+      "香港特別行政区の立法機関",
+      "香港の最高裁判所",
+      "香港を防衛する軍事機関"
+    ],
+    "answer": 0,
+    "detail": "基本法第66条は立法会を香港特別行政区の立法機関と規定する。行政長官の役割や裁判所の役割とは区別して理解する。",
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-055-common-law",
+    "category": "香港の歴史と制度",
+    "han": "律",
+    "topic": "香港史・政治制度",
+    "difficulty": 3,
+    "skill": "制度の継続と例外",
+    "objective": "基本法第8条の既存法継続の原則と条件を理解する",
+    "question": "1997年以降の香港の法律制度について、基本法第8条に最も近い説明は？",
+    "options": [
+      "普通法など従来の法律は、基本法に抵触する場合や立法機関が改正する場合などを除き維持される",
+      "英国時代の法律はすべて無条件に廃止された",
+      "英国時代の法律は基本法より常に優先する"
+    ],
+    "answer": 0,
+    "detail": "基本法第8条は、普通法・衡平法・条例・附属立法・慣習法など香港で従来施行されていた法律を、基本法に抵触する場合や香港特別行政区の立法機関による改正を除いて維持すると規定する。制度の継続は無条件ではない。",
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+    "sourceReview": "pending-specific-reference"
   }
 ];

@@ -311,7 +311,8 @@ function showTrivia(item,label){
  if(!item)return;
  activeTrivia=item;triviaSolved=false;
  $("triviaTitle").textContent="✦ "+label;
- $("triviaMeta").textContent=item.category+" · "+(item.han||"香港");
+ // Do not reveal the target character before the user answers: it can be the answer itself.
+ $("triviaMeta").textContent=item.category;
  $("triviaQuestion").textContent=item.question;
  $("triviaAnswer").textContent="";$("triviaAnswer").classList.add("hidden");
  $("triviaSource").classList.add("hidden");$("triviaSource").removeAttribute("href");

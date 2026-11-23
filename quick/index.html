@@ -73,33 +73,43 @@ button:focus-visible,a:focus-visible{outline:3px solid #294f40;outline-offset:2p
 
 .trivia-panel{margin-top:12px;padding:13px;background:#f4f3e6;border:1px solid #b9c7a7;border-radius:14px}.trivia-panel h2{font-size:14px;margin:0 0 5px}.trivia-panel .trivia-meta{font-size:10px;color:#60715b}.trivia-panel .trivia-question{font-size:14px;font-weight:700;margin:8px 0}.trivia-choices{display:grid;gap:6px}.trivia-choices button{text-align:left;font-size:12px;padding:8px 10px;min-height:38px}.trivia-choices button.correct{border-color:#396c46;background:#d9ebd5}.trivia-choices button.wrong{border-color:#a05c53;background:#f6e0d9}.trivia-answer{font-size:12px;line-height:1.6;margin:9px 0}.trivia-source{font-size:11px;color:#315c43}.trivia-actions{display:flex;gap:8px;margin-top:9px}.trivia-actions button{font-size:11px;min-height:34px;padding:6px 9px}
 
-/* Neon Hong Kong visual layer — preserve gameplay, DOM ids, and history. */
-:root{--night:#080e21;--night-panel:#101b32;--night-raised:#182744;--neon-pink:#ff7fc5;--neon-cyan:#83ecf2;--neon-amber:#ffca79;--neon-text:#f6f8ff}
-body{color:var(--neon-text);background:radial-gradient(ellipse at 12% 8%,#41234b 0%,transparent 35%),radial-gradient(ellipse at 88% 38%,#123d54 0%,transparent 38%),linear-gradient(165deg,#10172e 0%,#070c1a 65%,#121426 100%);background-attachment:fixed}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background:repeating-linear-gradient(90deg,transparent 0 48px,#b7b7d4 49px 50px),linear-gradient(0deg,transparent 60%,#2b6680 100%);mask-image:linear-gradient(to top,#000,transparent 70%)}
+/* Neon Rendering System v1: semantic tokens, crisp light core and restrained ambient glow. */
+:root{
+ --night:#070c19;--night-panel:#101b32;--night-raised:#182744;
+ --neon-pink:#ff7fc5;--neon-cyan:#83ecf2;--neon-amber:#ffca79;--neon-text:#f6f8ff;
+ --city-ink:#070c19;--city-surface:#111a2c;--city-elevated:#1b2941;
+ --light-core:#fff6fc;--light-halo:#ff68b9;--light-ambient:#c64296;
+ --line-muted:#49617e;--text-secondary:#bdcde2;
+ --sign-radius:9px;--control-radius:11px;
+ --sign-glow:0 0 1px #fff9,0 0 7px #ff68b94d,0 0 23px #c6429629;
+ --focus-ring:3px solid #83ecf2;
+}
+body{color:var(--neon-text);background:radial-gradient(ellipse at 16% 3%,#51224680,transparent 35%),radial-gradient(ellipse at 90% 36%,#12617a40,transparent 42%),linear-gradient(165deg,#11182e,var(--city-ink) 68%,#151329);min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.14;background:repeating-linear-gradient(90deg,transparent 0 47px,#99a8c8 48px 49px),linear-gradient(to top,#22516c,transparent 65%);mask-image:linear-gradient(to top,#000,transparent 72%)}
 main{position:relative;z-index:1}
 header a,.compact-links a{color:#b4dce6}
-h1{color:#fff3fa;text-shadow:0 0 8px #ff60b780,0 0 24px #ff60b740;letter-spacing:.13em}
+h1{color:#fff3fa;text-shadow:0 0 2px #fff6,0 0 12px #ff60b78c,0 0 27px #ff60b74a;letter-spacing:.1em}
 .device-version{color:var(--neon-cyan)}
-.compact-links p,.foot,.muted{color:#c2cbe1}
+.compact-links p,.foot,.muted{color:var(--text-secondary)}
 .course-picker{color:#d5def1}.course-picker select{background:#16223a;border-color:#5e7a99;color:#f4f7ff}
 .tabs button{background:#152139;border-color:#4b6483;color:#e6efff}
-.tabs button[aria-pressed=true]{background:#392045;border-color:#e779b5;color:#fff;box-shadow:inset 0 0 12px #ff80bd33,0 0 10px #ff80bd33}
-.stats{color:#aebfda}.stats b{color:var(--neon-cyan);text-shadow:0 0 9px #4de0ee66}
-.panel{background:linear-gradient(145deg,#202943,#10182e);border:2px solid #4d6683;box-shadow:inset 0 1px #a3c2e633,0 4px 0 #070c1a,0 12px 28px #0008,0 0 26px #e26ca51a}
-.topline{color:#b5c8e3}.progress{background:#293e5b}.progress>div{background:linear-gradient(90deg,var(--neon-cyan),var(--neon-pink));box-shadow:0 0 10px #83ecf2aa}
-.lcd{background:linear-gradient(155deg,#152840,#101b32 75%);border-color:#456783;color:#f5f8ff;box-shadow:inset 0 0 20px #050a16,0 0 0 1px #83ecf244,0 0 15px #48d9ee2b}
-.lcd:before{content:"霓虹漢字  •  NEON HANZI";color:#a9e8ef;opacity:.8}
-.glyph{color:#fff;text-shadow:none;font-weight:700}
+.tabs button[aria-pressed=true]{background:#392045;border-color:#e779b5;color:#fff;box-shadow:inset 0 0 10px #ff80bd24,0 0 9px #ff80bd25}
+.stats{color:#b9c9e0}.stats b{color:var(--neon-cyan);text-shadow:0 0 9px #4de0ee66}
+.panel{position:relative;isolation:isolate;background:linear-gradient(150deg,#202842,#10182e);border:1px solid #61728f;border-radius:16px;box-shadow:inset 0 1px #c3d9ff24,0 8px 28px #0008,0 0 30px #e26ca516}
+.topline{color:#c3d2e6}.progress{background:#293e5b}.progress>div{background:linear-gradient(90deg,var(--neon-cyan),var(--neon-pink));box-shadow:0 0 10px #83ecf288}
+.lcd{position:relative;isolation:isolate;background:linear-gradient(155deg,#182840,#0d172b 75%);border:1px solid #57728e;color:#f5f8ff;border-radius:var(--sign-radius);box-shadow:inset 0 0 23px #050a16,0 0 0 1px #83ecf21e,0 0 18px #48d9ee19}
+.lcd:before{content:"霓虹漢字  •  NEON HANZI";color:#b7f3f5;opacity:.9;letter-spacing:.08em}
+.lcd-main{isolation:isolate}
+.glyph{color:var(--light-core);text-shadow:0 0 1px #fff,0 0 5px #ff9cda,0 0 17px #ff68b984;font-weight:700;font-family:"PingFang HK","Noto Sans CJK HK","PingFang TC","Noto Sans CJK TC",sans-serif}
 .subtitle,.extra-bar .reading,.sound-message{color:#c3e8f0}
 .extra-bar button{background:#1c3c50;border-color:#6db5c7;color:#e6faff}
-.slot{background:#111c32;border-color:#6186a3;color:#eff9ff}
-.slot.filled{background:#1d3854;border-color:#83ecf2;color:#fff;box-shadow:0 0 9px #83ecf255}
-.keyboard button{background:#1c2944;border:1px solid #55738f;color:#f2f8ff;box-shadow:0 2px 0 #050b19}
-.keyboard small{color:#a8dbe4}
-.keyboard button:active{background:#2e4968;box-shadow:0 0 10px #83ecf277}
+.slot{background:#111c32;border-color:#6186a3;color:#eff9ff;border-radius:var(--control-radius)}
+.slot.filled{background:#1d3854;border-color:var(--neon-cyan);color:#fff;box-shadow:0 0 9px #83ecf244}
+.keyboard button{background:linear-gradient(180deg,#263751,#19253d);border:1px solid #64809d;color:#f2f8ff;border-radius:var(--control-radius);box-shadow:inset 0 1px #fff1,0 2px 0 #050b19;transition:background-color .14s ease,border-color .14s ease,transform .14s ease}
+.keyboard small{color:#b8dfe8}
+.keyboard button:active{background:#30526e;border-color:#9af5f6;transform:translateY(1px);box-shadow:0 0 12px #83ecf244}
 .actions button{background:#1a2a46;border-color:#65819e;color:#eef6ff}
-.actions button.primary,#next.primary{background:#712e63;border-color:#f18abf;color:#fff;box-shadow:0 0 12px #ff7fc544}
+.actions button.primary,#next.primary{background:linear-gradient(125deg,#87366f,#642854);border-color:#ff9ed3;color:#fff;box-shadow:inset 0 1px #fff3,0 0 14px #ff7fc53a}
 .lcd.answered .result-tabs button{background:#1a3450;border-color:#527e9c;color:#d4effa}
 .lcd.answered .result-tabs button[aria-pressed=true]{background:#62315d;border-color:#e88bbf;color:#fff}
 .lcd.answered>#feedback,.lcd.answered>#compounds{color:#f1f7ff}
@@ -111,22 +121,23 @@ h1{color:#fff3fa;text-shadow:0 0 8px #ff60b780,0 0 24px #ff60b740;letter-spacing
 .lcd .compound{background:#1c3550;border-color:#5d7d9d}
 .lcd .compound .translation,.lcd .compound .roman{color:#d3e0f1}
 .lcd .compound .play{background:#234963;border-color:#73b8c9;color:#fff}
-.trivia-panel{background:linear-gradient(150deg,#1c203b,#131a30);border:1px solid #9e588e;box-shadow:0 0 16px #ff7fc522, inset 0 0 12px #ff7fc50d}
+.trivia-panel{background:linear-gradient(150deg,#1c203b,#131a30);border:1px solid #9e588e;box-shadow:0 0 16px #ff7fc522,inset 0 0 12px #ff7fc50d}
 .trivia-panel h2{color:#ffb3d9;text-shadow:0 0 10px #ff7fc544}
-.trivia-panel .trivia-meta{color:#9eeaf1}
-.trivia-panel .trivia-question{color:#fff}
+.trivia-panel .trivia-meta{color:#9eeaf1}.trivia-panel .trivia-question{color:#fff}
 .trivia-choices button{background:#1b2b45;border-color:#627fa1;color:#f4f8ff}
 .trivia-choices button.correct{background:#1d513d;border-color:#8fe5b4;color:#fff}
 .trivia-choices button.wrong{background:#572b45;border-color:#f8a1ae;color:#fff}
-.trivia-answer{color:#ecf5ff}
-.trivia-source{color:#9ceaf2}
+.trivia-answer{color:#ecf5ff}.trivia-source{color:#9ceaf2}
 .trivia-actions button{background:#302543;border-color:#a866a2;color:#f7e8ff}
 .help details{border-color:#3e5069}.help summary{color:#e7edff}.help p{color:#c4d1e5}
 .foot{color:#bac7d9}.foot a{color:#9ceaf2}
 #typeInput{background:#13213a;border-color:#5e86a6;color:#fff}
-button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #9ceaf2;outline-offset:2px}
-@media(prefers-reduced-motion:no-preference){.panel:has(.lcd.answered){animation:neonPulse .38s ease-out}@keyframes neonPulse{0%{box-shadow:0 0 0 #ff7fc500}50%{box-shadow:0 0 24px #ff7fc566}100%{box-shadow:inset 0 1px #a3c2e633,0 4px 0 #070c1a,0 12px 28px #0008,0 0 26px #e26ca51a}}}
-@media(prefers-reduced-motion:reduce){.panel,.trivia-panel{animation:none!important}}
+button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,input:focus-visible{outline:var(--focus-ring);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){
+ .panel:has(.lcd.answered){animation:neonPulse .28s ease-out}
+ @keyframes neonPulse{0%{box-shadow:0 8px 28px #0008,0 0 0 #ff7fc500}55%{box-shadow:0 8px 28px #0008,0 0 27px #ff7fc55a}100%{box-shadow:0 8px 28px #0008,0 0 30px #e26ca516}}
+}
+@media(prefers-reduced-motion:reduce){.panel,.trivia-panel{animation:none!important}.keyboard button{transition:none!important}}
 
 /* UX phase 1: the sign is the lesson; city discoveries are optional. */
 .route-drawer{border:1px solid #425c7b;border-radius:10px;background:#111d33;margin:5px 0 8px;color:#d9eaf7}
@@ -147,6 +158,12 @@ button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #9ce
 .trivia-drawer .trivia-panel{margin:0;border:0;border-top:1px solid #77486e;border-radius:0 0 12px 12px;box-shadow:none}
 .route-drawer>summary:focus-visible,.trivia-drawer>summary:focus-visible{outline:3px solid #9ceaf2;outline-offset:2px}
 
+/* Neon sign optics: crisp type above a separate ambient-light layer. */
+.lcd:not(.answered) .glyph{position:relative;isolation:isolate;min-width:124px;padding:12px 25px;border:1.5px solid #ffb4db;border-radius:var(--sign-radius);background:linear-gradient(145deg,#321c3b,#141d37 70%);box-shadow:inset 0 0 0 4px #ff7fc50d,inset 0 0 18px #ff7fc51a,0 0 2px #ffe0f3,0 0 10px #ff7fc56b,0 0 26px #ff7fc52b;text-shadow:0 0 1px #fff,0 0 5px #ffacd9,0 0 15px #ff68b9a3}
+.lcd:not(.answered) .glyph:after{content:"";position:absolute;inset:-11px -15px;z-index:-1;pointer-events:none;border-radius:20px;background:radial-gradient(ellipse,#f34ca824,transparent 68%)}
+@media(max-width:390px){.lcd:not(.answered) .glyph{min-width:108px;padding:8px 17px}}
+@media(prefers-contrast:more){.glyph{text-shadow:none!important}.lcd:not(.answered) .glyph{border-width:3px}.keyboard button{border-width:2px}}
+
 /* UX phase 2: answer first, optional detail second, next action always visible. */
 .answer-brief{margin:8px 9px 3px;padding:9px 11px;background:#1b3948;border:1px solid #7bd9df;border-radius:8px;color:#f4ffff;font-size:13px;font-weight:700;line-height:1.5;flex:0 0 auto}
 .lcd.answered{display:flex;flex-direction:column}
@@ -163,7 +180,7 @@ button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #9ce
 </div></details>
 <div class="stats" aria-label="学習記録"><span>PLAY <b id="attempts">0</b></span><span>HIT <b id="accuracy">—</b></span><span>REVIEW <b id="due">0</b></span></div>
 <section class="panel" aria-label="速成クイズ"><div class="topline"><span id="counter">1 / 10</span><span id="status" role="status" aria-live="polite">1〜2キーで答える</span></div><div class="progress" role="progressbar" aria-label="単字クイズの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack"><div id="bar"></div></div>
-<div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div class="glyph" id="glyph">早</div><p class="subtitle" id="meaning">早い</p><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
+<div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div class="glyph" id="glyph" lang="zh-HK">早</div><p class="subtitle" id="meaning">早い</p><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
 </div><div id="answerBrief" class="answer-brief hidden" role="status" aria-live="polite"></div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="false">字根を詳しく</button><button id="tabWords" type="button" aria-pressed="false">ことば</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0">·</div><div class="slot" id="slot1">·</div></div>
 <div class="desktop"><label for="typeInput" class="muted">キーボードから入力（Enterで判定）</label><input id="typeInput" type="text" maxlength="2" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin"></div>
 <div class="mobile"><p class="muted" style="text-align:center">ROOT KEYS · 字根を選ぶ</p><div class="keyboard" id="keyboard"></div></div>
@@ -244,7 +261,7 @@ const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
 const peers=["all","roots250"].includes(course)?rootPeers(q):[];const compare=peers.length?'<p class="vnote"><strong>似た字根を比較</strong>：'+peers.map(x=>x.han+" "+x.code).join(" ／ ")+'</p>':"";
 $("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");$("answerBrief").textContent=(good?"✓ 正解":"↻ 正解は "+q.code)+" · "+q.han+" / "+q.code+" · "+q.meaning;$("answerBrief").classList.remove("hidden");setResultTab("brief");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
-function next(){if(pos>=queue.length){if(review)review=false;build();return}pos++;render()}
+function next(){if(pos>=queue.length){if(review){review=false;savePrefs()}build();return}pos++;render()}
 
 function setResultTab(tab){
  const words=tab==="words",roots=tab==="roots";

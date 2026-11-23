@@ -206,6 +206,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered .result-tabs button{min-height:30px}
 .lcd.answered>#feedback,.lcd.answered>#compounds{min-height:0;overflow-y:auto}
 @media(max-width:370px){.lcd.answered .answer-brief .mistake-roots{font-size:10px}.lcd.answered .answer-brief .mistake-panel{padding:4px 2px}}
+.trivia-answer{white-space:pre-line}
 /* Answer state: trade the unused keyboard for a readable explanation workspace. */
 .result-workspace{margin:8px 0 0;padding:11px;border:1px solid #668d98;border-radius:12px;background:#14263c;color:#f4f8ff;min-width:0;overflow:hidden}
 .result-workspace-heading{font-size:11px;font-weight:800;color:#8be7ec;letter-spacing:.06em;margin-bottom:7px}
@@ -331,7 +332,7 @@ function answerTrivia(choice){
  const t=activeTrivia;
  const buttons=$("triviaChoices").children;
  for(let i=0;i<buttons.length;i++){const original=Number(buttons[i].dataset.original);buttons[i].disabled=true;if(original===t.answer)buttons[i].classList.add("correct");else if(original===choice)buttons[i].classList.add("wrong")}
- $("triviaAnswer").textContent=(choice===t.answer?"✓ 正解！ ":"正解は「"+t.options[t.answer]+"」。 ")+t.detail;
+ $("triviaAnswer").textContent=(choice===t.answer?"✓ 正解！ ":"正解は「"+t.options[t.answer]+"」。 ")+t.detail+(t.objective?"\n\n【今回確認した知識】"+t.objective:"");
  $("triviaAnswer").classList.remove("hidden");
  $("triviaSource").href=t.source;$("triviaSource").classList.remove("hidden");
 }

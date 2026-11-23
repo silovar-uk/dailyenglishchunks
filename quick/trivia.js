@@ -1,5 +1,5 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
-// Questions target specific knowledge rather than literal character-meaning giveaways.
+// Questions target specific knowledge; pronunciation objectives are not claims of audio proficiency.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
@@ -21,33 +21,33 @@ window.QUICK_TRIVIA = [
     "id": "poly-up",
     "category": "多音字",
     "han": "上",
-    "question": "「上車」の上の声調は？",
+    "question": "「上車」と「上面」の「上」の読み分けとして正しいのは？",
     "options": [
-      "第6声 soeng6",
-      "第5声 soeng5",
-      "第2声 soeng2"
+      "上車 soeng5／上面 soeng6",
+      "上車 soeng6／上面 soeng5",
+      "両方 soeng2"
     ],
-    "answer": 1,
-    "detail": "「上車」は soeng5 ce1。一方「上面」は soeng6 min6。",
+    "answer": 0,
+    "detail": "上車（soeng5 ce1）は乗車する、上面（soeng6 min6）は上側。語によって「上」の声調が変わる。",
     "source": "https://jyutping.org/en/",
     "skill": "声調・発音",
-    "objective": "上車と上面で「上」の声調が変わることを区別できる"
+    "objective": "同じ漢字「上」の声調を語の中で区別できる"
   },
   {
     "id": "poly-meet",
     "category": "多音字",
     "han": "會",
-    "question": "「開會」の會の声調は？",
+    "question": "「開會」と「我會去」の「會」の読み分けは？",
     "options": [
-      "第5声 wui5",
-      "第6声 wui6",
-      "第2声 wui2"
+      "開會 wui2／我會去 wui5",
+      "開會 wui5／我會去 wui2",
+      "どちらも wui6"
     ],
-    "answer": 2,
-    "detail": "「開會」は hoi1 wui2。助動詞としての「會」は wui5 などで使う。",
+    "answer": 0,
+    "detail": "開會（hoi1 wui2）は会議をする。我會去（ngo5 wui5 heoi3）の會は「〜するだろう／できる」などの助動詞として使われる。",
     "source": "https://jyutping.org/en/",
     "skill": "声調・発音",
-    "objective": "開會の會の声調を、助動詞の會と区別できる"
+    "objective": "「會」の名詞的用法と助動詞的用法で声調を区別できる"
   },
   {
     "id": "homophone-1",
@@ -256,5 +256,69 @@ window.QUICK_TRIVIA = [
     "source": "https://github.com/rime/rime-cangjie",
     "skill": "入力技術",
     "objective": "速成で倉頡コードの先頭と末尾を使うことを説明できる"
+  },
+  {
+    "id": "spoken-hai",
+    "category": "口語・使い分け",
+    "han": "喺",
+    "skill": "語彙・文脈",
+    "objective": "係（hai6）と喺（hai2）の使い分けを理解できる",
+    "question": "「我___香港」（私は香港にいる）。空欄に自然なのは？",
+    "options": [
+      "喺 hai2",
+      "係 hai6",
+      "嘅 ge3"
+    ],
+    "answer": 0,
+    "detail": "喺（hai2）は場所を表す「〜にいる／ある」、係（hai6）は「〜である」。我喺香港（ngo5 hai2 hoeng1 gong2）。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "spoken-mou",
+    "category": "口語・使い分け",
+    "han": "冇",
+    "skill": "語彙・文脈",
+    "objective": "冇（mou5）と唔（m4）の否定の違いを区別できる",
+    "question": "「我___錢」（お金を持っていない）。空欄に入るのは？",
+    "options": [
+      "冇 mou5",
+      "唔 m4",
+      "咗 zo2"
+    ],
+    "answer": 0,
+    "detail": "冇（mou5）は「ない／持っていない」。唔（m4）は動詞や形容詞などを否定する。冇錢（mou5 cin2）＝お金がない。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "spoken-aspect",
+    "category": "口語・使い分け",
+    "han": "咗",
+    "skill": "語彙・文脈",
+    "objective": "咗（zo2）と緊（gan2）が表す動作の違いを理解できる",
+    "question": "「我食___飯」（ご飯を食べた）。動作の完了を表すのは？",
+    "options": [
+      "咗 zo2",
+      "緊 gan2",
+      "嘅 ge3"
+    ],
+    "answer": 0,
+    "detail": "食咗飯（sik6 zo2 faan6）は食事をした。食緊飯（sik6 gan2 faan6）は食事中。咗は完了、緊は進行を表す。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "spoken-thanks",
+    "category": "口語・使い分け",
+    "han": "該",
+    "skill": "語彙・文脈",
+    "objective": "唔該と多謝を場面に応じて使い分けられる",
+    "question": "香港の飲食店で店員に注文を取ってもらった。自然なお礼は？",
+    "options": [
+      "唔該 m4 goi1",
+      "多謝 do1 ze6",
+      "早晨 zou2 san4"
+    ],
+    "answer": 0,
+    "detail": "唔該（m4 goi1）はサービスや手助けへのお礼・依頼に広く使う。多謝（do1 ze6）は贈り物などへの感謝に使うことが多い。絶対的な二分法ではなく場面により重なる。",
+    "source": "https://jyutping.org/en/"
   }
 ];

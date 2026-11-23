@@ -84,4 +84,48 @@ assert.equal(element("status").textContent, "正解", "single-key answer works")
 assert.ok(!element("meaning").textContent.includes("undefined"), "missing Jyutping must be omitted");
 assert.ok(saved.has("quick-lab-v1"), "progress is saved locally");
 
+
+// Phase 3 phrase mode checks
+const phraseHtml = fs.readFileSync(path.join(base, "phrases.html"), "utf8");
+const phraseInline = phraseHtml.match(/<script>([\s\S]*?)<\/script>\s*<\/body>/);
+assert.ok(phraseInline, "phrase app inline JS");
+new vm.Script(phraseInline[1], {filename:"quick/phrases.html:inline"});
+assert.match(phraseHtml, /<script src="\.\/data\.js"><\/script>/, "phrase dataset loaded");
+for (const phrase of ["早晨", "我愛你", "你好", "多謝"]) {
+  assert.ok(phraseHtml.includes('text:"'+phrase+'"'), "phrase present: "+phrase);
+  for (const glyph of [...phrase]) assert.ok(data.some(x=>x.han===glyph), "phrase glyph in corpus: "+glyph);
+}
+const home = fs.readFileSync(path.join(base, "..", "index.html"), "utf8");
+assert.match(home, /href="\.\/quick\/"/, "home has Quick Lab entry");
+assert.match(html, /href="\.\/phrases\.html"/, "Quick Lab has phrase entry");
+const phraseNodes = new Map();
+function phraseEl(id) {
+  if(!phraseNodes.has(id)) {
+    const classes = new Set();
+    phraseNodes.set(id,{
+      id, textContent:"",innerHTML:"",value:"",disabled:false,style:{},
+      classList:{add(n){classes.add(n)},remove(n){classes.delete(n)},toggle(n,on){if(on)classes.add(n);else classes.delete(n)},contains(n){return classes.has(n)}},
+      addEventListener(name,fn){this["on"+name]=fn}
+    });
+  }
+  return phraseNodes.get(id);
+}
+const phraseContext=vm.createContext({
+  window:{QUICK_DATA:data},
+  document:{getElementById:phraseEl,addEventListener(){}},
+  console,Date
+});
+vm.runInContext(phraseInline[1],phraseContext,{filename:"quick/phrases.html:runtime"});
+assert.equal(phraseEl("meaning").textContent,"おはよう");
+vm.runInContext('append("A");append("J");check()',phraseContext);
+assert.equal(phraseEl("status").textContent,"正解","first phrase glyph accepted");
+vm.runInContext('next();append("A");append("V");check()',phraseContext);
+assert.equal(phraseEl("status").textContent,"正解","second phrase glyph accepted");
+vm.runInContext("next()",phraseContext);
+assert.match(phraseEl("feedback").textContent,/フレーズ完成/,"phrase completion");
+vm.runInContext('phraseIndex=1;pos=0;render()',phraseContext);
+assert.equal(phraseEl("meaning").textContent,"あなたが好きです／愛しています");
+vm.runInContext('append("H");append("I");check();next();append("B");append("E");check();next();append("O");append("F");check();next()',phraseContext);
+assert.match(phraseEl("feedback").textContent,/フレーズ完成/,"I love you completed");
+
 console.log("Quick Lab checks passed:", data.length, "characters;", data.filter(x=>x.code.length===1).length, "one-key roots");

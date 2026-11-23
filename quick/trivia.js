@@ -1650,5 +1650,100 @@ window.QUICK_TRIVIA = [
     "detail": "飲茶は茶と點心を楽しむ食事の文化的な呼び方。下午茶は午後の軽食・ティータイムを指す。どちらもお茶に関係するが、実際のメニューや時間帯は店舗により異なる。",
     "source": "https://words.hk/zidin/%E9%A3%B2%E8%8C%B6",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-061-bruce-lee",
+    "category": "映画・音楽・スポーツ",
+    "han": "龍",
+    "topic": "香港エンタメ・スポーツ",
+    "difficulty": 1,
+    "skill": "香港映画の人物とジャンル",
+    "objective": "李小龍が香港映画の武術アクションの象徴的俳優であると理解する",
+    "question": "香港映画の「李小龍（Bruce Lee）」について、最も適切な説明は？",
+    "options": [
+      "武術アクション映画で国際的に知られた俳優",
+      "広東語ポップスだけで知られる作曲家",
+      "香港の競馬場の設計者"
+    ],
+    "answer": 0,
+    "detail": "李小龍（lei5 siu2 lung4）はブルース・リー。武術と映画を結びつけ、香港映画の国際的な認知に大きな影響を与えた人物。香港生まれではなく、米国サンフランシスコ生まれである点も混同しない。",
+    "source": "https://www.heritagemuseum.gov.hk/en/web/hm/exhibitions/data/brucelee.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-062-cantopop",
+    "category": "映画・音楽・スポーツ",
+    "han": "歌",
+    "topic": "香港エンタメ・スポーツ",
+    "difficulty": 2,
+    "skill": "音楽ジャンルと言語",
+    "objective": "Cantopopが広東語を主な歌唱言語とする香港のポップスを指すと理解する",
+    "question": "「Cantopop（粵語流行曲）」を説明するなら？",
+    "options": [
+      "広東語を主な歌唱言語とするポップミュージック",
+      "必ず英語だけで歌われる香港の伝統歌劇",
+      "香港の映画館でしか演奏できない器楽曲"
+    ],
+    "answer": 0,
+    "detail": "CantopopはCantonese popの略で、広東語によるポップ音楽を指す。香港のテレビ・映画・レコード産業と結びついて発展してきた。",
+    "source": "https://www.heritagemuseum.gov.hk/en/web/hm/exhibitions/data/cantopop.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-063-hung-hom",
+    "category": "映画・音楽・スポーツ",
+    "han": "館",
+    "topic": "香港エンタメ・スポーツ",
+    "difficulty": 2,
+    "skill": "ライブ会場と地名",
+    "objective": "紅館が香港體育館の通称でコンサート会場でもあると理解する",
+    "question": "香港の歌手が「紅館で演唱會を開く」と発表。紅館とは？",
+    "options": [
+      "紅磡にある香港體育館の通称で、大型コンサートにも使われる",
+      "中環にある香港立法会の議場",
+      "大嶼山の国際空港の別名"
+    ],
+    "answer": 0,
+    "detail": "紅館（hung4 gun2）は紅磡（Hung Hom）の香港體育館（Hong Kong Coliseum）の通称。スポーツだけでなくコンサートにも使われる。演唱會（jin2 coeng3 wui2）はコンサート。",
+    "source": "https://www.lcsd.gov.hk/en/hkc/index.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-064-horse-racing",
+    "category": "映画・音楽・スポーツ",
+    "han": "馬",
+    "topic": "香港エンタメ・スポーツ",
+    "difficulty": 2,
+    "skill": "競馬と都市地理",
+    "objective": "香港の主要競馬場が跑馬地と沙田の2か所であると理解する",
+    "question": "香港ジョッキークラブの競馬場として知られる組み合わせは？",
+    "options": [
+      "跑馬地（Happy Valley）と沙田（Sha Tin）",
+      "中環（Central）と尖沙咀（Tsim Sha Tsui）",
+      "赤鱲角（Chek Lap Kok）と長洲（Cheung Chau）"
+    ],
+    "answer": 0,
+    "detail": "香港ジョッキークラブは跑馬地（Happy Valley）競馬場と沙田（Sha Tin）競馬場で競馬を開催する。前者は香港島、後者は新界に位置する。",
+    "source": "https://racing.hkjc.com/racing/english/index.aspx",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-065-sevens",
+    "category": "映画・音楽・スポーツ",
+    "han": "欖",
+    "topic": "香港エンタメ・スポーツ",
+    "difficulty": 3,
+    "skill": "競技形式とイベントの区別",
+    "objective": "香港セブンズの7人制ラグビーと通常の15人制を区別できる",
+    "question": "「香港國際七人欖球賽（Hong Kong Sevens）」の「七人」は何を意味する？",
+    "options": [
+      "7人制ラグビーの大会で、15人制とは異なる競技形式",
+      "各チームが7試合ずつ必ず戦う大会",
+      "香港の7つの区だけが参加できる大会"
+    ],
+    "answer": 0,
+    "detail": "香港セブンズは7人制ラグビーの国際大会。7人制は通常の15人制ラグビーと異なる形式で、試合時間や人数にも違いがある。『七人』は出場チーム数や開催地区数ではない。",
+    "source": "https://hksevens.com/",
+    "sourceReview": "pending-specific-reference"
   }
 ];

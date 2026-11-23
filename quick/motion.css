@@ -1,0 +1,46 @@
+/* Quick Lab: Phase 1 tactile feedback. Purely decorative; never controls grading. */
+:root {
+  --quick-tap-duration: 100ms;
+  --quick-slot-duration: 170ms;
+  --quick-motion-ease: cubic-bezier(.2,.8,.2,1);
+}
+
+#keyboard button {
+  transform-origin: center center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Immediate response while the pointer is down; JS also mirrors it for keyboard input. */
+#keyboard button:active {
+  transform: translateY(2px) scale(.975);
+}
+
+.slots .slot {
+  position: relative;
+  isolation: isolate;
+}
+
+.slots .slot-value {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+  transform-origin: center center;
+}
+
+.slots .slot-halo {
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #83f4e7;
+  border-radius: inherit;
+  box-shadow: 0 0 11px #72efe68a;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Respect system motion preferences even when JavaScript is unavailable. */
+@media (prefers-reduced-motion: reduce) {
+  #keyboard button:active {
+    transform: none;
+  }
+}

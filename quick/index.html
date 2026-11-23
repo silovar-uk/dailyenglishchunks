@@ -206,6 +206,27 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered .result-tabs button{min-height:30px}
 .lcd.answered>#feedback,.lcd.answered>#compounds{min-height:0;overflow-y:auto}
 @media(max-width:370px){.lcd.answered .answer-brief .mistake-roots{font-size:10px}.lcd.answered .answer-brief .mistake-panel{padding:4px 2px}}
+/* Answer state: trade the unused keyboard for a readable explanation workspace. */
+.result-workspace{margin:8px 0 0;padding:11px;border:1px solid #668d98;border-radius:12px;background:#14263c;color:#f4f8ff;min-width:0;overflow:hidden}
+.result-workspace-heading{font-size:11px;font-weight:800;color:#8be7ec;letter-spacing:.06em;margin-bottom:7px}
+.result-workspace .result-tabs{display:flex;gap:7px;padding:0 0 9px}
+.result-workspace .result-tabs button{flex:1;min-height:40px;border:1px solid #6e93a4;background:#233e53;color:#eefaff;border-radius:8px;font-weight:700}
+.result-workspace .result-tabs button[aria-pressed=true]{background:#d4eee7;color:#173b40;border-color:#8ee3d2}
+.result-workspace .feedback{background:#f2f6ed;color:#233e2d;border-radius:9px;margin:0;padding:12px;font-size:13px;line-height:1.55;max-height:min(46dvh,390px);overflow-y:auto;overscroll-behavior:contain}
+.result-workspace .feedback .visual{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.result-workspace .feedback .visual.one{grid-template-columns:1fr}
+.result-workspace .feedback .vpart{padding:10px 7px}
+.result-workspace .feedback .vpart .shape{font-size:clamp(24px,7vw,38px);line-height:1.35;overflow-wrap:anywhere}
+.result-workspace .feedback .vpart .code{font-size:15px}
+.result-workspace .feedback .vlabel,.result-workspace .feedback .vnote{font-size:11px}
+.result-workspace .compound{color:#263c35}
+.result-workspace .compound .translation{color:#435b57}
+.result-workspace .compound .roman{color:#4b6262}
+.lcd.answered.result-compact{height:auto;min-height:0;max-height:220px;overflow:hidden}
+.lcd.answered.result-compact .answer-brief{max-height:204px;overflow-y:auto;margin:6px 8px;padding:7px 9px}
+.lcd.answered.result-compact .mistake-glyph{font-size:23px}
+.lcd.answered.result-compact .mistake-note{display:none}
+@media(min-width:700px){.result-workspace{margin-top:12px}.result-workspace .feedback{max-height:420px}}
 #next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
 </style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
@@ -217,8 +238,8 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 <div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div class="glyph" id="glyph" lang="zh-HK">早</div><p class="subtitle" id="meaning">早い</p><div class="phrase-context hidden" id="phraseContext" aria-label="この漢字を使う表現"></div><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
 </div><div id="answerBrief" class="answer-brief hidden" role="status" aria-live="polite"></div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="false">字根を詳しく</button><button id="tabWords" type="button" aria-pressed="false">ことば</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0">·</div><div class="slot" id="slot1">·</div></div>
 <div class="desktop"><label for="typeInput" class="muted">キーボードから入力（Enterで判定）</label><input id="typeInput" type="text" maxlength="2" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin"></div>
-<div class="mobile"><p class="muted" style="text-align:center">ROOT KEYS · 字根を選ぶ</p><div class="keyboard" id="keyboard"></div></div>
-<div class="actions"><button id="backspace" type="button" aria-label="1文字消す">⌫ 消す</button><button id="hint" type="button">ヒント</button><button class="primary" id="check" type="button" disabled>答える</button></div>
+<div class="mobile" id="inputKeyboard"><p class="muted" style="text-align:center">ROOT KEYS · 字根を選ぶ</p><div class="keyboard" id="keyboard"></div></div><section id="resultWorkspace" class="result-workspace hidden" aria-label="回答後の字根・ことば解説"><div class="result-workspace-heading">✦ 回答の解説</div></section>
+<div class="actions" id="inputActions"><button id="backspace" type="button" aria-label="1文字消す">⌫ 消す</button><button id="hint" type="button">ヒント</button><button class="primary" id="check" type="button" disabled>答える</button></div>
 <button id="next" type="button" class="primary hidden" style="width:100%;margin-top:14px">次の漢字 →</button>
 </section>
 <details id="triviaDrawer" class="trivia-drawer"><summary>✦ 路地裏の発見 <span>豆知識を開く（任意）</span></summary><section id="triviaPanel" class="trivia-panel" aria-label="香港の豆知識"><h2 id="triviaTitle">✦ 今日の香港豆知識</h2><p class="trivia-meta" id="triviaMeta"></p><p class="trivia-question" id="triviaQuestion"></p><div class="trivia-choices" id="triviaChoices" role="group" aria-label="豆知識の3択"></div><div id="triviaAnswer" class="trivia-answer hidden" role="status"></div><a id="triviaSource" class="trivia-source hidden" target="_blank" rel="noopener noreferrer">出典を確認する</a><div class="trivia-actions"><button id="triviaDaily" type="button">今日の雑学</button><button id="triviaShuffle" type="button">別の雑学 ↻</button></div></section></details>
@@ -275,7 +296,7 @@ function build(){
 function current(){return queue[pos]}
 function totals(){let all=Object.values(stats),attempts=all.reduce((n,s)=>n+(s.attempts||0),0),wins=all.reduce((n,s)=>n+(s.wins||0),0);$("attempts").textContent=attempts;$("accuracy").textContent=attempts?Math.round(wins/attempts*100)+"%":"—";$("due").textContent=DATA.filter(inCourse).filter(due).length}
 function slots(){let length=current()?.code.length||2;for(let i=0;i<2;i++){let el=$("slot"+i);el.textContent=typed[i]||"·";el.classList.toggle("filled",!!typed[i]);el.classList.toggle("hidden",i>=length)}$("check").disabled=typed.length!==length||done;$("backspace").disabled=done||!typed.length;$("typeInput").value=typed}
-function render(){$("lcd").classList.remove("answered");$("answerBrief").classList.add("hidden");totals();let q=current();$("modeAll").setAttribute("aria-pressed",String(!review));$("modeReview").setAttribute("aria-pressed",String(review));if(!q){$("phraseContext").classList.add("hidden");$("glyph").textContent="✓";$("meaning").textContent=review?"復習待ちの漢字はありません":"今日の問題は終了！";$("counter").textContent="完了";$("bar").style.width="100%";$("progressTrack").setAttribute("aria-valuenow","100");$("status").textContent="おつかれさま";$("check").disabled=true;$("hint").disabled=true;$("backspace").disabled=true;$("next").textContent=review?"通常学習に戻る":"次の10問";$("next").classList.remove("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("feedback").classList.add("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("reading").textContent="";$("playChar").disabled=true;return}
+function render(){setResultMode(false);$("lcd").classList.remove("answered");$("answerBrief").classList.add("hidden");totals();let q=current();$("modeAll").setAttribute("aria-pressed",String(!review));$("modeReview").setAttribute("aria-pressed",String(review));if(!q){$("phraseContext").classList.add("hidden");$("glyph").textContent="✓";$("meaning").textContent=review?"復習待ちの漢字はありません":"今日の問題は終了！";$("counter").textContent="完了";$("bar").style.width="100%";$("progressTrack").setAttribute("aria-valuenow","100");$("status").textContent="おつかれさま";$("check").disabled=true;$("hint").disabled=true;$("backspace").disabled=true;$("next").textContent=review?"通常学習に戻る":"次の10問";$("next").classList.remove("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("feedback").classList.add("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("reading").textContent="";$("playChar").disabled=true;return}
 typed="";done=false;helped=false;const context=$("phraseContext");const phrase=course==="phrase"?phraseFor(q):null;context.replaceChildren();context.classList.toggle("hidden",!phrase);if(phrase){const word=document.createElement("b");word.textContent=phrase[0];const desc=document.createElement("small");desc.textContent=phrase[2]+" · "+phrase[1];context.append(word,desc)}$("glyph").textContent=q.han;$("meaning").textContent=q.meaning;$("reading").textContent=EXTRAS[q.han]?.jyut||"";$("playChar").disabled=!EXTRAS[q.han]?.jyut;$("soundMessage").textContent="";$("counter").textContent=(pos+1)+" / "+queue.length;$("bar").style.width=(pos/queue.length*100)+"%";$("progressTrack").setAttribute("aria-valuenow",String(Math.round(pos/queue.length*100)));$("status").textContent=q.code.length+"キーで答える";$("feedback").classList.add("hidden");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("next").classList.add("hidden");$("hint").disabled=false;slots()}
 function append(letter){if(done||!current()||typed.length>=current().code.length)return;typed+=letter;slots()}
 function erase(){if(!done){typed=typed.slice(0,-1);slots()}}
@@ -338,9 +359,19 @@ function check(){let q=current();if(!q||done||typed.length!==q.code.length)retur
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の字根</span><div class="shape">'+q.lastShape+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
 const peers=["all","roots250"].includes(course)?rootPeers(q):[];const compare=peers.length?'<p class="vnote"><strong>似た字根を比較</strong>：'+peers.map(x=>x.han+" "+x.code).join(" ／ ")+'</p>':"";
-$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");if(good){$("answerBrief").textContent="✓ 正解 · "+q.han+" / "+q.code+" · "+q.meaning;}else{$("answerBrief").innerHTML=mistakeSummary(q,typed);}$("answerBrief").classList.remove("hidden");setResultTab("brief");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
+$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");if(good){$("answerBrief").textContent="✓ 正解 · "+q.han+" / "+q.code+" · "+q.meaning;}else{$("answerBrief").innerHTML=mistakeSummary(q,typed);}$("answerBrief").classList.remove("hidden");setResultMode(true);setResultTab("roots");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
 function next(){if(pos>=queue.length){if(review){review=false;savePrefs()}build();return}pos++;render()}
 
+// Reuse the space formerly occupied by the on-screen keyboard after answering.
+const resultWorkspace=$("resultWorkspace");
+for(const id of ["resultTabs","feedback","compounds"])resultWorkspace.appendChild($(id));
+function setResultMode(answered){
+ $("inputKeyboard").classList.toggle("hidden",answered);
+ $("inputActions").classList.toggle("hidden",answered);
+ resultWorkspace.classList.toggle("hidden",!answered);
+ $("lcd").classList.toggle("result-compact",answered);
+ if(answered)resultWorkspace.scrollTop=0;
+}
 function setResultTab(tab){
  const words=tab==="words",roots=tab==="roots";
  $("tabRoots").setAttribute("aria-pressed",String(roots));

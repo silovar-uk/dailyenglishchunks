@@ -1,4 +1,5 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
+// Each item declares the specific knowledge being assessed; objectives appear only after answering.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
@@ -12,7 +13,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "「聽日」は香港口語で明日。聽講の聽（teng1）と聽日の聽（ting1）では読みも異なる。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "skill": "語彙・文脈",
+    "objective": "聽日を「明日」と理解し、聽講と区別できる"
   },
   {
     "id": "poly-up",
@@ -26,7 +29,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 1,
     "detail": "「上車」は soeng5 ce1。一方「上面」は soeng6 min6。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "skill": "声調・発音",
+    "objective": "上車と上面で「上」の声調が変わることを区別できる"
   },
   {
     "id": "poly-meet",
@@ -40,7 +45,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 2,
     "detail": "「開會」は hoi1 wui2。助動詞としての「會」は wui5 などで使う。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "skill": "声調・発音",
+    "objective": "開會の會の声調を、助動詞の會と区別できる"
   },
   {
     "id": "homophone-1",
@@ -54,7 +61,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 1,
     "detail": "事は si6、詩は si1、時は si4。声調の違いも意味を分ける。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "skill": "声調・発音",
+    "objective": "si1・si4・si6を声調で区別できる"
   },
   {
     "id": "homophone-2",
@@ -68,7 +77,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "市は si5、詩は si1、時は si4。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "skill": "声調・発音",
+    "objective": "si1・si4・si5を声調で区別できる"
   },
   {
     "id": "music",
@@ -82,7 +93,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "Cantopopは広東語の歌を中心とするが、歌詞には書面語も使われる。歌詞の表現がそのまま日常会話で自然とは限らない。",
-    "source": "https://www.hkmusic.org/"
+    "source": "https://www.hkmusic.org/",
+    "skill": "言語文化",
+    "objective": "歌詞の書面語と日常口語を区別する必要性を説明できる"
   },
   {
     "id": "football",
@@ -96,7 +109,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "球員は選手、球迷はファン・サポーターを指す。字面が似ていても役割は異なる。",
-    "source": "https://www.hkfa.com/en/"
+    "source": "https://www.hkfa.com/en/",
+    "skill": "語彙・文脈",
+    "objective": "球員と球迷の役割を区別できる"
   },
   {
     "id": "team",
@@ -110,7 +125,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "球隊は競技チームを指し、球會はクラブや団体を指す語として使われる。文脈によって対象は重なる。",
-    "source": "https://www.hkfa.com/en/"
+    "source": "https://www.hkfa.com/en/",
+    "skill": "語彙・文脈",
+    "objective": "球隊と球會の指す範囲の違いを理解できる"
   },
   {
     "id": "mtr",
@@ -124,7 +141,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "MTRはMass Transit Railwayの略。香港の鉄道網を指す。",
-    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html"
+    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html",
+    "skill": "香港の生活知識",
+    "objective": "MTRの英語正式名称を識別できる"
   },
   {
     "id": "tram",
@@ -138,7 +157,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "香港トラムは香港島北岸を中心に走る路面電車。二階建て車両が特徴。",
-    "source": "https://www.hktramways.com/en/"
+    "source": "https://www.hktramways.com/en/",
+    "skill": "香港の生活知識",
+    "objective": "香港トラムの運行地域を識別できる"
   },
   {
     "id": "film",
@@ -152,7 +173,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "香港電影資料館（Hong Kong Film Archive）は映画資料の収集・保存・公開を担う。",
-    "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html"
+    "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html",
+    "skill": "香港の生活知識",
+    "objective": "映画資料を保存・公開する機関を識別できる"
   },
   {
     "id": "food",
@@ -166,7 +189,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "香港式奶茶は濃い紅茶にエバミルクなどを合わせるスタイルで知られる。単なる牛乳入り紅茶より作り方に特徴がある。",
-    "source": "https://www.discoverhongkong.com/eng/explore/dining.html"
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
+    "skill": "香港の生活知識",
+    "objective": "香港式奶茶の特徴を説明できる"
   },
   {
     "id": "cafe",
@@ -180,7 +205,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "茶餐廳は香港の大衆的な飲食店の一形態。飲み物と食事を提供する。",
-    "source": "https://www.discoverhongkong.com/eng/explore/dining.html"
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
+    "skill": "香港の生活知識",
+    "objective": "茶餐廳の提供形態を理解できる"
   },
   {
     "id": "signs",
@@ -194,7 +221,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "旺角は九龍に位置する繁華街。地名を知っているかが問われ、漢字の字面だけでは答えにくい。",
-    "source": "https://www.discoverhongkong.com/eng/explore/neighbourhoods.html"
+    "source": "https://www.discoverhongkong.com/eng/explore/neighbourhoods.html",
+    "skill": "香港の生活知識",
+    "objective": "旺角の地理的位置を識別できる"
   },
   {
     "id": "history",
@@ -208,7 +237,9 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 1,
     "detail": "1997年7月1日に香港の主権が英国から中国へ移った。",
-    "source": "https://www.historymuseum.gov.hk/en/web/mh/index.html"
+    "source": "https://www.historymuseum.gov.hk/en/web/mh/index.html",
+    "skill": "香港の歴史",
+    "objective": "1997年の香港返還という基本年表を理解できる"
   },
   {
     "id": "input",
@@ -222,6 +253,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "速成は倉頡コードの先頭と末尾を使う入力方式。IMEの候補選択は別途必要。",
-    "source": "https://github.com/rime/rime-cangjie"
+    "source": "https://github.com/rime/rime-cangjie",
+    "skill": "入力技術",
+    "objective": "速成で倉頡コードの先頭と末尾を使うことを説明できる"
   }
 ];

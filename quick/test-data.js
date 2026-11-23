@@ -97,7 +97,7 @@ function element(id) {
 const saved = new Map();
 const context = vm.createContext({
   window: { QUICK_DATA: data, QUICK_EXTRAS: extras, QUICK_TRIVIA: trivia },
-  document: { getElementById: element, createElement(tag){return {tagName:tag,children:[],className:"",textContent:"",type:"",setAttribute(){},append(...els){this.children.push(...els)}}},addEventListener() {} },
+  document: { getElementById: element, createElement(tag){const classes=new Set();return {tagName:tag,children:[],className:"",textContent:"",type:"",disabled:false,classList:{add(n){classes.add(n)},contains(n){return classes.has(n)}},setAttribute(){},append(...els){this.children.push(...els)}}},addEventListener() {} },
   localStorage: {
     getItem(k) { return saved.get(k) || null; },
     setItem(k, v) { saved.set(k, v); }

@@ -281,47 +281,33 @@ function cantoneseVoices(){
  try{voiceCache=window.speechSynthesis.getVoices()||[];}catch{return []}
  return voiceCache.filter(v=>/^zh[-_]HK$/i.test(v.lang)||/cantonese|粵語|粤语|廣東話|广东话/i.test(v.name||""));
 }
-function audioHelp(){
- const msg=$("soundMessage");
- msg.replaceChildren();
- const note=document.createElement("span");
- note.textContent="香港広東語の音声が見つかりません。端末の広東語音声を追加し、このページを再読み込みしてください。";
- const help=document.createElement("a");
- help.href="https://support.apple.com/ja-jp/guide/iphone/iph96b214f0/ios";
- help.target="_blank";help.rel="noopener noreferrer";
- help.textContent=" iPhoneの読み上げ設定を確認";
- msg.append(note,help);
-}
 function speak(text){
  const msg=$("soundMessage");
  if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined"){
   msg.textContent="このブラウザは音声読み上げに対応していません。";return;
  }
  const synth=window.speechSynthesis;
- msg.textContent="広東語の音声を確認中…";
- let attempts=0;
- const tryPlay=()=>{
-  const voices=cantoneseVoices();
-  if(!voices.length){
-   if(++attempts<5){setTimeout(tryPlay,300);return}
-   audioHelp();return;
-  }
-  const voice=voices.find(v=>/^zh[-_]HK$/i.test(v.lang))||voices[0];
-  try{
-   synth.cancel();
-   const utterance=new SpeechSynthesisUtterance(text);
-   utterance.lang="zh-HK";utterance.voice=voice;utterance.rate=.85;
-   utterance.onstart=()=>{msg.textContent="▶ 広東語を再生中";};
-   utterance.onend=()=>{msg.textContent="";};
-   utterance.onerror=e=>{msg.textContent="音声の再生に失敗しました（"+(e.error||"不明なエラー")+"）。音量・消音設定を確認し、再度お試しください。";};
-   // Keep a reference until the utterance finishes (mobile Safari).
-   window.quickLabUtterance=utterance;
-   utterance.onend=()=>{msg.textContent="";window.quickLabUtterance=null;};
-   synth.speak(utterance);
-   if(synth.paused)synth.resume();
-  }catch(e){msg.textContent="音声を開始できませんでした。ページを再読み込みして再試行してください。";}
- };
- tryPlay();
+ // iOS Safari may omit installed voices from getVoices(). Never gate playback on that list.
+ const voices=cantoneseVoices();
+ const voice=voices.find(v=>/^zh[-_]HK$/i.test(v.lang))||voices[0]||null;
+ try{
+  synth.cancel();
+  const utterance=new SpeechSynthesisUtterance(text);
+  utterance.lang="zh-HK";
+  if(voice)utterance.voice=voice;
+  utterance.rate=.85;
+  window.quickLabUtterance=utterance;
+  msg.textContent="▶ 香港広東語の再生を試しています…";
+  utterance.onstart=()=>{msg.textContent=voice?"▶ 広東語を再生中":"▶ 再生中（広東語の声か確認してください）";};
+  utterance.onend=()=>{msg.textContent=voice?"":"再生が終わりました。広東語以外の発音だった場合、このSafariでは広東語音声が利用できていない可能性があります。";window.quickLabUtterance=null;};
+  utterance.onerror=e=>{msg.textContent="音声を再生できませんでした（"+(e.error||"不明")+"）。Safariから広東語音声を使えない可能性があります。";window.quickLabUtterance=null;};
+  // Keep speech initiation inside the original tap gesture for iOS Safari.
+  synth.speak(utterance);
+  if(synth.paused)synth.resume();
+ }catch(e){
+  msg.textContent="音声を開始できませんでした。Safariでページを再読み込みしてください。";
+  window.quickLabUtterance=null;
+ }
 }
 if("speechSynthesis" in window){
  cantoneseVoices();

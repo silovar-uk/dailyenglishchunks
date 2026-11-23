@@ -74,42 +74,42 @@ window.QUICK_TRIVIA = [
     "id": "music",
     "category": "Cantopop",
     "han": "歌",
-    "question": "Cantopop の「Canto」が指すのは？",
+    "question": "香港のCantopopが、広東語の会話練習と必ずしも一致しない理由は？",
     "options": [
-      "広東語",
-      "北京語",
-      "英語"
+      "歌詞には書き言葉の表現も多く使われるから",
+      "Cantopopでは広東語の声調が存在しないから",
+      "Cantopopはすべて英語で歌われるから"
     ],
     "answer": 0,
-    "detail": "Cantopopは広東語ポップ音楽の呼称。歌詞を読むと香港口語と書き言葉の違いも見つかる。",
+    "detail": "Cantopopは広東語の歌を中心とするが、歌詞には書面語も使われる。歌詞の表現がそのまま日常会話で自然とは限らない。",
     "source": "https://www.hkmusic.org/"
   },
   {
     "id": "football",
     "category": "スポーツ・サッカー",
     "han": "球",
-    "question": "「足球」の意味は？",
+    "question": "香港で「球員」と「球迷」を使い分けるとき、正しい組み合わせは？",
     "options": [
-      "ラグビー",
-      "サッカー",
-      "アメリカンフットボール"
+      "球員＝選手／球迷＝ファン",
+      "球員＝審判／球迷＝選手",
+      "球員＝ファン／球迷＝監督"
     ],
-    "answer": 1,
-    "detail": "足球（zuk1 kau4）はサッカー。香港にもサッカー協会と国内リーグがある。",
+    "answer": 0,
+    "detail": "球員は選手、球迷はファン・サポーターを指す。字面が似ていても役割は異なる。",
     "source": "https://www.hkfa.com/en/"
   },
   {
     "id": "team",
     "category": "スポーツ・サッカー",
     "han": "隊",
-    "question": "「球隊」は何を指す？",
+    "question": "「球隊」と「球會」の違いとして、より適切なのは？",
     "options": [
-      "クラブの運営会社",
-      "大会の運営組織",
-      "競技チーム"
+      "球隊は競技チーム、球會はクラブ・団体を指し得る",
+      "球隊は審判団、球會は競技チームを指す",
+      "球隊は試合会場、球會はリーグの順位を指す"
     ],
-    "answer": 2,
-    "detail": "球隊（kau4 deoi6）は球技のチーム。球員は選手。",
+    "answer": 0,
+    "detail": "球隊は競技チームを指し、球會はクラブや団体を指す語として使われる。文脈によって対象は重なる。",
     "source": "https://www.hkfa.com/en/"
   },
   {
@@ -130,14 +130,14 @@ window.QUICK_TRIVIA = [
     "id": "tram",
     "category": "交通・MTR",
     "han": "車",
-    "question": "香港島の路面電車で有名な車両の特徴は？",
+    "question": "香港島のトラムの運行について、正しいのは？",
     "options": [
-      "二階建て",
-      "地下専用",
-      "一両すべて寝台"
+      "主に香港島北岸を東西に走る",
+      "九龍半島だけを環状運行する",
+      "香港国際空港と中環を直通する"
     ],
     "answer": 0,
-    "detail": "香港トラムは二階建て車両で知られる。MTRとは異なる交通機関。",
+    "detail": "香港トラムは香港島北岸を中心に走る路面電車。二階建て車両が特徴。",
     "source": "https://www.hktramways.com/en/"
   },
   {
@@ -158,14 +158,14 @@ window.QUICK_TRIVIA = [
     "id": "food",
     "category": "茶餐廳・食文化",
     "han": "茶",
-    "question": "「奶茶」は何？",
+    "question": "香港式奶茶の作り方の特徴として適切なのは？",
     "options": [
-      "牛乳を加えた紅茶",
-      "練乳を使ったコーヒー",
-      "豆乳を使った紅茶"
+      "濃く抽出した紅茶にエバミルクなどを合わせる",
+      "抹茶に炭酸水を合わせる",
+      "紅茶を必ず冷水だけで抽出する"
     ],
     "answer": 0,
-    "detail": "奶茶（naai5 caa4）はミルクティー。香港の飲食文化でおなじみ。",
+    "detail": "香港式奶茶は濃い紅茶にエバミルクなどを合わせるスタイルで知られる。単なる牛乳入り紅茶より作り方に特徴がある。",
     "source": "https://www.discoverhongkong.com/eng/explore/dining.html"
   },
   {
@@ -186,14 +186,14 @@ window.QUICK_TRIVIA = [
     "id": "signs",
     "category": "地名・街の看板",
     "han": "街",
-    "question": "香港の「旺角」は何の名前？",
+    "question": "旺角（Mong Kok）は香港のどの地域に位置する？",
     "options": [
-      "九龍の地区名",
-      "香港島の地下鉄駅名のみ",
-      "新界の自然保護区名"
+      "九龍",
+      "香港島",
+      "ランタオ島"
     ],
     "answer": 0,
-    "detail": "旺角（Mong Kok）は九龍の地区名。街の看板から繁体字を学べる。",
+    "detail": "旺角は九龍に位置する繁華街。地名を知っているかが問われ、漢字の字面だけでは答えにくい。",
     "source": "https://www.discoverhongkong.com/eng/explore/neighbourhoods.html"
   },
   {

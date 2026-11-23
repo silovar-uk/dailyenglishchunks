@@ -1,0 +1,220 @@
+/* Quick Lab UI polish: actual character spotlight + unobtrusive Hong Kong trivia lantern.
+   Loaded after the existing themes; effects are visual only. */
+
+/* The learner's Hanzi is the centerpiece. The code-key names below it are references
+   to Cangjie root families, not literal extracted brushstrokes from the glyph. */
+.panel .result-workspace .feedback .root-focus {
+  display: grid;
+  grid-template-columns: minmax(80px, 102px) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 1px 13px;
+  margin: 9px 0 11px;
+  padding: 10px 12px;
+  border: 1px solid #7794af;
+  border-radius: 11px;
+  background: linear-gradient(140deg,#301f46,#1b2849 58%,#123848);
+  box-shadow: inset 0 1px #fff2,0 0 15px #83ecf216;
+}
+.panel .result-workspace .feedback .root-focus-label {
+  grid-column: 2;
+  color: #ffb7e1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.panel .result-workspace .feedback .root-focus-glyph {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  justify-self: center;
+  color: #fff8fe;
+  font-family: "PingFang HK","Noto Sans CJK HK","PingFang TC",sans-serif;
+  font-size: clamp(70px,16vw,92px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-shadow: 0 0 1px #fff,0 0 10px #ff98d3a3,0 0 20px #ff7fc55c;
+}
+.panel .result-workspace .feedback .root-focus-desc {
+  grid-column: 2;
+  align-self: start;
+  color: #d0e6ef;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.panel .result-workspace .feedback .visual.root-visual {
+  gap: 10px;
+}
+/* Even when data entries contain phrases such as "first brushstrokes", only
+   the representative root character is rendered as the large shape. */
+.panel .result-workspace .feedback .visual .vpart {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 4px;
+  padding: 12px 8px;
+  min-width: 0;
+  border-radius: 10px;
+}
+.panel .result-workspace .feedback .visual .vpart .vlabel {
+  color: #b4d7e9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .045em;
+}
+.panel .result-workspace .feedback .visual .vpart .shape {
+  display: block;
+  width: 100%;
+  margin: 0;
+  min-height: 0;
+  color: #fff7fc;
+  font-family: "PingFang HK","Noto Sans CJK HK","PingFang TC",sans-serif;
+  font-size: clamp(43px,12vw,61px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-shadow: 0 0 10px #83ecf22c;
+}
+.panel .result-workspace .feedback .visual .vpart .code {
+  color: #d7f6ff;
+  font-size: 13px;
+  letter-spacing: .04em;
+  font-weight: 800;
+}
+.panel .result-workspace .feedback p.root-shape-note {
+  color: #b9cee2;
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 5px 0 9px;
+  font-weight: 400;
+}
+
+.trivia-drawer {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(115deg,#1c203a,#171c32);
+  border: 1px solid #98628f;
+  box-shadow: inset 0 1px #ffc7e41a,0 0 14px #ff7fc51b;
+}
+.trivia-drawer>summary {
+  display: grid;
+  grid-template-columns: 42px minmax(0,1fr) auto 14px;
+  align-items: center;
+  gap: 9px;
+  min-height: 61px;
+  padding: 8px 12px;
+  color: #fff1fa;
+  cursor: pointer;
+}
+.trivia-drawer>summary .trivia-lantern {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 42px;
+  border: 1px solid #d779ac;
+  border-radius: 11px;
+  background: linear-gradient(150deg,#542c58,#322448);
+  font-size: 24px;
+  line-height: 1;
+  filter: none;
+  box-shadow: inset 0 1px #ffe4f13b,0 0 10px #ff83bd38;
+}
+.trivia-drawer>summary .trivia-lantern:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #83ecf2;
+  box-shadow: 0 0 7px #83ecf2a6;
+}
+.trivia-drawer>summary .trivia-trigger-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+.trivia-drawer>summary .trivia-trigger-copy strong {
+  color: #ffc8e9;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+.trivia-drawer>summary .trivia-trigger-copy small {
+  color: #baccde;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.trivia-drawer>summary .trivia-twinkle {
+  color: #9beef1;
+  font-size: 11px;
+  text-shadow: 0 0 8px #83ecf281;
+}
+.trivia-drawer>summary .trivia-count {
+  padding: 5px 7px;
+  border-radius: 999px;
+  border: 1px solid #677996;
+  color: #bff4f4;
+  background: #182d43;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+  letter-spacing: .015em;
+}
+.trivia-drawer>summary .trivia-chevron {
+  color: #ffa8d6;
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 180ms ease;
+  transform-origin: center;
+}
+.trivia-drawer[open]>summary .trivia-chevron {
+  transform: rotate(180deg);
+}
+.trivia-drawer[open]>summary {
+  border-bottom: 1px solid #7b4c75;
+  background: linear-gradient(90deg,#3f2349,#18243b 85%);
+}
+.trivia-drawer>summary:hover .trivia-lantern {
+  border-color: #ffc2e4;
+  box-shadow: inset 0 1px #ffe4f13b,0 0 15px #ff83bd66;
+}
+.trivia-drawer>summary:focus-visible {
+  outline: 3px solid #91f1ef;
+  outline-offset: 3px;
+}
+
+@media(max-width:390px) {
+  .trivia-drawer>summary {grid-template-columns:39px minmax(0,1fr) 12px;gap:8px;padding:8px 10px;}
+  .trivia-drawer>summary .trivia-lantern {width:37px;height:39px;font-size:23px;}
+  .trivia-drawer>summary .trivia-count {display:none;}
+  .trivia-drawer>summary .trivia-trigger-copy small {font-size:9px;}
+  .panel .result-workspace .feedback .root-focus {grid-template-columns:74px minmax(0,1fr);padding:8px;gap:0 9px;}
+  .panel .result-workspace .feedback .root-focus-glyph {font-size:68px;}
+}
+@media (prefers-reduced-motion: no-preference) {
+  .trivia-drawer:not([open])>summary .trivia-lantern {
+    animation: trivia-lantern-hello 540ms ease-out 1 both;
+  }
+  @keyframes trivia-lantern-hello {
+    0% {opacity:.68;transform:scale(.92);}
+    70% {opacity:1;transform:scale(1.045);}
+    100% {opacity:1;transform:scale(1);}
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trivia-drawer>summary .trivia-chevron {transition:none;}
+  .trivia-drawer>summary .trivia-lantern {animation:none;}
+}
+@media (prefers-contrast: more) {
+  .trivia-drawer {border-width:2px;box-shadow:none;}
+  .trivia-drawer>summary .trivia-lantern {border-width:2px;}
+  .panel .result-workspace .feedback .root-focus-glyph {text-shadow:none;}
+  .panel .result-workspace .feedback .visual .vpart .shape {text-shadow:none;}
+}

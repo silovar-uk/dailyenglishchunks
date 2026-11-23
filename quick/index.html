@@ -164,6 +164,8 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 @media(max-width:390px){.lcd:not(.answered) .glyph{min-width:108px;padding:8px 17px}}
 @media(prefers-contrast:more){.glyph{text-shadow:none!important}.lcd:not(.answered) .glyph{border-width:3px}.keyboard button{border-width:2px}}
 
+/* Voice playback diagnostics remain readable against the neon sign. */
+.sound-message a{color:var(--neon-cyan);text-decoration:underline;text-underline-offset:3px}
 /* UX phase 2: answer first, optional detail second, next action always visible. */
 .answer-brief{margin:8px 9px 3px;padding:9px 11px;background:#1b3948;border:1px solid #7bd9df;border-radius:8px;color:#f4ffff;font-size:13px;font-weight:700;line-height:1.5;flex:0 0 auto}
 .lcd.answered{display:flex;flex-direction:column}
@@ -272,13 +274,60 @@ function setResultTab(tab){
  if(roots||words)$(roots?"feedback":"compounds").scrollTop=0;
 }
 $("tabRoots").onclick=()=>setResultTab($("tabRoots").getAttribute("aria-pressed")==="true"?"brief":"roots");$("tabWords").onclick=()=>setResultTab($("tabWords").getAttribute("aria-pressed")==="true"?"brief":"words");
+/* Cantonese audio: voice discovery is asynchronous on Safari and other browsers. */
+let voiceCache=[];
+function cantoneseVoices(){
+ if(!("speechSynthesis" in window))return [];
+ try{voiceCache=window.speechSynthesis.getVoices()||[];}catch{return []}
+ return voiceCache.filter(v=>/^zh[-_]HK$/i.test(v.lang)||/cantonese|粵語|粤语|廣東話|广东话/i.test(v.name||""));
+}
+function audioHelp(){
+ const msg=$("soundMessage");
+ msg.replaceChildren();
+ const note=document.createElement("span");
+ note.textContent="香港広東語の音声が見つかりません。端末の広東語音声を追加し、このページを再読み込みしてください。";
+ const help=document.createElement("a");
+ help.href="https://support.apple.com/ja-jp/guide/iphone/iph96b214f0/ios";
+ help.target="_blank";help.rel="noopener noreferrer";
+ help.textContent=" iPhoneの読み上げ設定を確認";
+ msg.append(note,help);
+}
 function speak(text){
  const msg=$("soundMessage");
- if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined"){msg.textContent="この端末では音声読み上げを利用できません。";return}
- const voices=window.speechSynthesis.getVoices();
- const voice=voices.find(v=>/^zh[-_]HK$/i.test(v.lang));
- if(!voice){msg.textContent="香港広東語の音声がありません。端末の広東語音声を追加してください。";return}
- try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="zh-HK";u.voice=voice;u.rate=.85;u.onerror=()=>{msg.textContent="音声を再生できませんでした。"};msg.textContent="";window.speechSynthesis.speak(u)}catch{msg.textContent="音声を再生できませんでした。"}
+ if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined"){
+  msg.textContent="このブラウザは音声読み上げに対応していません。";return;
+ }
+ const synth=window.speechSynthesis;
+ msg.textContent="広東語の音声を確認中…";
+ let attempts=0;
+ const tryPlay=()=>{
+  const voices=cantoneseVoices();
+  if(!voices.length){
+   if(++attempts<5){setTimeout(tryPlay,300);return}
+   audioHelp();return;
+  }
+  const voice=voices.find(v=>/^zh[-_]HK$/i.test(v.lang))||voices[0];
+  try{
+   synth.cancel();
+   const utterance=new SpeechSynthesisUtterance(text);
+   utterance.lang="zh-HK";utterance.voice=voice;utterance.rate=.85;
+   utterance.onstart=()=>{msg.textContent="▶ 広東語を再生中";};
+   utterance.onend=()=>{msg.textContent="";};
+   utterance.onerror=e=>{msg.textContent="音声の再生に失敗しました（"+(e.error||"不明なエラー")+"）。音量・消音設定を確認し、再度お試しください。";};
+   // Keep a reference until the utterance finishes (mobile Safari).
+   window.quickLabUtterance=utterance;
+   utterance.onend=()=>{msg.textContent="";window.quickLabUtterance=null;};
+   synth.speak(utterance);
+   if(synth.paused)synth.resume();
+  }catch(e){msg.textContent="音声を開始できませんでした。ページを再読み込みして再試行してください。";}
+ };
+ tryPlay();
+}
+if("speechSynthesis" in window){
+ cantoneseVoices();
+ if(typeof window.speechSynthesis.addEventListener==="function"){
+  window.speechSynthesis.addEventListener("voiceschanged",cantoneseVoices);
+ }
 }
 function showCompounds(q){
  const words=EXTRAS[q.han]?.words||[];

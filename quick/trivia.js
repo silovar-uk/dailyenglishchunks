@@ -700,5 +700,100 @@ window.QUICK_TRIVIA = [
     "detail": "佢唔喺屋企（keoi5 m4 hai2 uk1 kei2）は「その人は家にいない」。佢冇屋企（keoi5 mou5 uk1 kei2）は「その人には家がない」。場所の所在と所有・存在の違いが鍵。",
     "source": "https://words.hk/zidin/%E5%96%BA",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-011-experience",
+    "category": "時制・アスペクト",
+    "han": "過",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 1,
+    "skill": "経験相の理解",
+    "objective": "過が過去の経験を表すことを、咗の成立・完了と区別できる",
+    "question": "「我去過香港」の「過」が伝えるのは？",
+    "options": [
+      "香港に行った経験がある",
+      "今まさに香港へ向かっている",
+      "明日必ず香港へ行く"
+    ],
+    "answer": 0,
+    "detail": "我去過香港（ngo5 heoi3 gwo3 hoeng1 gong2）は「香港へ行ったことがある」。過は経験を表す。咗が表す動作の成立・完了とは焦点が異なる。",
+    "source": "https://words.hk/zidin/%E9%81%8E",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-012-continuation",
+    "category": "時制・アスペクト",
+    "han": "住",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 2,
+    "skill": "持続相と進行相の比較",
+    "objective": "攞住と攞緊の違いを文脈で判断できる",
+    "question": "友人が傘を手に持った状態を保っている。「攞住把遮」の「住」に近いのは？",
+    "options": [
+      "持っている状態が続いている",
+      "傘を持った経験がある",
+      "明日傘を買う予定だ"
+    ],
+    "answer": 0,
+    "detail": "攞住把遮（lo2 zyu6 baa2 ze1）は「傘を持った状態でいる」。住は結果として成立した状態の持続を表すことがある。緊の進行と常に同じ意味ではない。",
+    "source": "https://words.hk/zidin/%E4%BD%8F",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-013-future",
+    "category": "時制・アスペクト",
+    "han": "聽",
+    "topic": "日常会話・口語",
+    "difficulty": 2,
+    "skill": "時間表現の理解",
+    "objective": "未来の出来事が必ずしも動詞の活用で表されるわけではないと理解する",
+    "question": "「我聽日去香港」が明日の予定を表す主な手掛かりは？",
+    "options": [
+      "聽日という時間表現",
+      "去という動詞の過去形",
+      "香港という地名の声調"
+    ],
+    "answer": 0,
+    "detail": "我聽日去香港（ngo5 ting1 jat6 heoi3 hoeng1 gong2）は「私は明日香港へ行く」。聽日が未来の時間を示す。広東語の動詞「去」は英語のような時制活用をしない。",
+    "source": "https://words.hk/zidin/%E8%81%BD%E6%97%A5",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-014-negative",
+    "category": "時制・アスペクト",
+    "han": "未",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 2,
+    "skill": "未実現と一般否定の区別",
+    "objective": "未と唔を使い分け、まだしていない状態を理解できる",
+    "question": "友人に「もう食べた？」と聞かれた。「まだ食べていない」と答えるなら？",
+    "options": [
+      "未食（mei6 sik6）",
+      "唔食（m4 sik6）",
+      "食緊（sik6 gan2）"
+    ],
+    "answer": 0,
+    "detail": "未食（mei6 sik6）は「まだ食べていない」。唔食は「食べない」、食緊は「食べている最中」。未は期待される行為がまだ実現していないことを表す。",
+    "source": "https://words.hk/zidin/%E6%9C%AA",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-015-contrast",
+    "category": "時制・アスペクト",
+    "han": "睇",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 3,
+    "skill": "経験と完了の統合判断",
+    "objective": "経験の過と出来事の成立を示す咗を、質問の意図に応じて選べる",
+    "question": "「この映画を見たことがある？」と経験を尋ねたい。「見終わった？」との違いを最もよく示す組み合わせは？",
+    "options": [
+      "経験：睇過／見終わったか：睇完未？",
+      "経験：睇緊／見終わったか：睇過",
+      "経験：未睇／見終わったか：睇緊"
+    ],
+    "answer": 0,
+    "detail": "睇過（tai2 gwo3）は見た経験がある。睇完未？（tai2 jyun4 mei6）は見終わったかどうかを尋ねる。経験相の過と、動作の終点を示す完は別の観点。",
+    "source": "https://words.hk/zidin/%E7%9D%87",
+    "sourceReview": "pending-specific-reference"
   }
 ];

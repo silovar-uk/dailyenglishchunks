@@ -32,10 +32,10 @@ h1{font-size:17px;letter-spacing:.11em;color:#354539;margin:6px 0 1px;font-weigh
 .subtitle{margin:0;font-size:12px;color:#344e36;line-height:1.2}
 .extra-bar{min-height:27px}.extra-bar .reading{color:#344e36;font-size:12px}.extra-bar button{min-height:27px;border:1px solid #60785d;background:#cad7b8;color:#304c34;padding:2px 9px;font-size:11px}
 .sound-message{font-size:10px;color:#344e36;min-height:0;max-width:100%}
-.lcd.answered .lcd-main{display:none}
+.lcd.answered{display:block;overflow-y:auto;overscroll-behavior:contain}.lcd.answered .lcd-main{display:none}
 .lcd>.feedback{margin:0;padding:15px 9px 8px;border-radius:0;background:transparent;color:#263f2b;font-size:11px;line-height:1.3;overflow-y:auto;overscroll-behavior:contain;flex:0 0 auto}
-.lcd.answered>#feedback{flex:1;min-height:0}
-.lcd.answered>#compounds{display:none!important}
+.lcd.answered>#feedback{min-height:0;overflow:visible}
+.lcd.answered>#compounds{display:block;margin-top:0;padding-top:5px;border-top:1px dashed #73866b}
 .lcd .visual{margin:5px 0;gap:5px}.lcd .vpart{background:#d2dec2;border:1px solid #81977a;border-radius:5px;padding:4px}.lcd .vpart.first,.lcd .vpart.last{border-top:2px solid #456246}
 .lcd .vpart .shape{font-size:16px;min-height:20px}.lcd .vpart .code{font-size:12px}.lcd .vlabel,.lcd .vnote,.lcd .source{font-size:9px;color:#435b42}.lcd .source a{color:#294e35}
 .slots{margin:7px 0 5px;gap:7px}.slot{height:37px;min-height:37px;width:48px;border:2px solid #7c9076;border-radius:7px;background:#e9eddf;color:#344e36;font-size:21px}.slot.filled{background:#cad8b8;border-color:#456749}
@@ -90,7 +90,7 @@ function addDays(n){let d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+
 function check(){let q=current();if(!q||done||typed.length!==q.code.length)return;done=true;let good=typed===q.code;let s=stats[q.han]||{attempts:0,wins:0,level:0};s.attempts++;if(good)s.wins++;else{if(typed[0]!==q.code[0])s.firstErrors=(s.firstErrors||0)+1;if(q.code.length>1&&typed[1]!==q.code[1])s.lastErrors=(s.lastErrors||0)+1;}s.level=good&&!helped?Math.min((s.level||0)+1,5):0;s.due=addDays(good&&!helped?[0,1,3,7,14,30][s.level]:0);stats[q.han]=s;persist();$("status").textContent=good?"正解":"復習しよう";const p1='<div class="vpart first"><span class="vlabel">'+(q.code.length===1?'字根':'先頭の字根')+'</span><div class="shape">'+q.firstShape+'</div><div class="code">'+q.code[0]+' · '+ROOTS[q.code[0]]+'</div></div>';
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の字根</span><div class="shape">'+q.lastShape+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
-$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals()}
+$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");$("lcd").scrollTop=0;showCompounds(q);$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals()}
 function next(){if(pos>=queue.length){if(review)review=false;build();return}pos++;render()}
 
 function speak(text){

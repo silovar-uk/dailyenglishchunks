@@ -7,9 +7,17 @@ const base = __dirname;
 const html = fs.readFileSync(path.join(base, "index.html"), "utf8");
 const dataCode = fs.readFileSync(path.join(base, "data.js"), "utf8");
 const extrasCode = fs.readFileSync(path.join(base, "extras.js"), "utf8");
+const triviaCode = fs.readFileSync(path.join(base, "trivia.js"), "utf8");
 const sandbox = { window: {} };
 vm.runInNewContext(dataCode, sandbox, { filename: "quick/data.js" });
 vm.runInNewContext(extrasCode, sandbox, {filename:"quick/extras.js"});
+vm.runInNewContext(triviaCode,sandbox,{filename:"quick/trivia.js"});
+const trivia=sandbox.window.QUICK_TRIVIA;
+const categories=new Set(trivia.map(x=>x.category));
+assert.ok(trivia.length>=13,"at least 13 trivia cards");
+for(const category of ["同音異義語","多音字","Cantopop","スポーツ・サッカー","交通・MTR","香港映画・ドラマ","茶餐廳・食文化","地名・街の看板","香港の歴史"])assert.ok(categories.has(category),"trivia category "+category);
+for(const t of trivia){assert.equal(t.options.length,3,"three choices: "+t.id);assert.ok(Number.isInteger(t.answer)&&t.answer>=0&&t.answer<3,"answer index: "+t.id);assert.match(t.source,/^https:\\/\\//,"source URL: "+t.id);assert.ok(t.detail&&t.question&&t.id,"complete trivia: "+t.id)}
+assert.equal(new Set(trivia.map(t=>t.id)).size,trivia.length,"unique trivia ids");
 const extras=sandbox.window.QUICK_EXTRAS;
 const data = sandbox.window.QUICK_DATA;
 for(const item of data){assert.ok(extras[item.han]?.jyut,"Jyutping for "+item.han);assert.ok(extras[item.han].words?.length>=1,"Compounds for "+item.han)}
@@ -52,6 +60,8 @@ for (const [han, code] of Object.entries(expected)) {
   assert.equal(data.find(item => item.han === han)?.code, code, "known sample: " + han);
 }
 assert.match(html, /<script src="\.\/extras\.js"><\/script>/, "extras loaded");
+assert.match(html, /<script src="\.\/trivia\.js"><\/script>/, "trivia loaded");
+for(const id of ["triviaPanel","triviaQuestion","triviaChoices","triviaAnswer","triviaSource","triviaDaily","triviaShuffle"])assert.ok(html.includes('id="'+id+'"'),"trivia UI: "+id);
 assert.match(html, /<script src="\.\/data\.js"><\/script>/, "dataset must be loaded before application script");
 const inline = html.match(/<script>([\s\S]*?)<\/script>\s*<\/body>/);
 assert.ok(inline, "inline app script must exist");
@@ -78,14 +88,15 @@ function element(id) {
         contains(name) { return classes.has(name); }
       },
       addEventListener(name, fn) { this.handlers[name] = fn; },
-      setAttribute(name, value) { this.attributes[name] = value; }
+      setAttribute(name, value) { this.attributes[name] = value; },
+      removeAttribute(name){delete this.attributes[name];}
     });
   }
   return nodes.get(id);
 }
 const saved = new Map();
 const context = vm.createContext({
-  window: { QUICK_DATA: data, QUICK_EXTRAS: extras },
+  window: { QUICK_DATA: data, QUICK_EXTRAS: extras, QUICK_TRIVIA: trivia },
   document: { getElementById: element, createElement(tag){return {tagName:tag,children:[],className:"",textContent:"",type:"",setAttribute(){},append(...els){this.children.push(...els)}}},addEventListener() {} },
   localStorage: {
     getItem(k) { return saved.get(k) || null; },
@@ -95,6 +106,13 @@ const context = vm.createContext({
 });
 vm.runInContext(inline[1], context, { filename: "quick/index.html:runtime" });
 assert.equal(element("glyph").textContent, "早", "initial question appears");
+assert.equal(element("triviaChoices").children.length,3,"daily trivia has three choices");
+vm.runInContext("answerTrivia(activeTrivia.answer)",context);
+assert.equal(element("triviaAnswer").classList.contains("hidden"),false,"trivia answer revealed");
+assert.equal(element("triviaSource").classList.contains("hidden"),false,"source shown after trivia answer");
+assert.ok(element("triviaSource").href.startsWith("https://"),"trivia source is clickable");
+element("triviaShuffle").onclick();
+assert.equal(element("triviaChoices").children.length,3,"shuffle renders new trivia");
 for(const [tier,count] of [["starter",54],["basic100",100],["daily150",150],["scene200",200],["roots250",250],["all",300]]){const n=vm.runInContext(`course="${tier}";scene="all";DATA.filter(inCourse).length`,context);assert.equal(n,count,`exact pool size for ${tier}`)}
 vm.runInContext('course="starter";build()',context);
 assert.equal(element("course").value,"","mock selector initial state");

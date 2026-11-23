@@ -1,0 +1,34 @@
+# Quick Lab — 学習データとUX仕様
+
+## 何を覚えるか
+- 速成は倉頡の先頭・末尾の字根コードを使う。**1キーで入力する基本字根もある**。
+- 倉頡で「女（V）」と呼ぶキーには補助字形も属する。漢字「女」が見える必要はない。
+- 例：**晨**＝倉頡 **AMMV** → 速成 **AV**。「日」はAで「辰」の末尾はV。
+- 文字の部首・漢字の意味・字根の符号は同じものではない。
+
+## 第5代を基準にした問題データ
+- `data.js`：初期54漢字、10文字は1キー。各文字に倉頡原碼・速成碼・日本語の意味・可視化用の字形説明・典拠URLを保存。
+- 原典：Rime `cangjie5.base.dict.yaml`。速成は倉頡碼の首尾を利用（Rime Quickの実装）。
+- 出典のコード表には複数候補を持つ漢字がある。現教材ではそのうちの1コードを採用している。
+- 第3代と第5代では一部コードが異なるため、Windows等のIMEと一致しないケースがあり得る。最終的なOS一致検証は未実施。
+- 分解画面で「字形のヒント」と記した箇所は説明用の簡略表現。すべての筆画を厳密に切り出した画像ではない。
+
+## UX
+- 1回10問。初学者を優先し、間違えた問題を適宜再出題。
+- スマホは画面内の字根キーボード、PCは物理キーボードに対応。
+- 回答後、最初/最後の字根・コード・解説をインライン表示。
+- 先頭・末尾のどちらを間違えたか個別にカウント。
+- 正解の連続回数に応じて翌日・3日後・7日後・14日後・30日後に復習予定を設定。誤答とヒント使用時は当日復習。
+- `localStorage` に学習履歴保存。データはサーバーへ送信しない。
+
+## テスト
+- `node quick/test-data.js`：54文字のコードの整合性、重複、解説、画面のJS構文と基本操作を検査。
+- GitHub Actions `quick-lab-check.yml` で自動実行する。
+- **未実施**：iPhoneの実機テスト、実際のIMEを使った候補選択テスト、字根の筆画アニメーション。
+
+## 参考資料
+- [Rime Quick](https://github.com/rime/rime-quick)
+- [Rime倉頡第5代コード表](https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml)
+- [晨の分解とコード](https://www.xn--0vqu8au0tro7d.com/list/char/%E6%99%A8)
+- [Microsoft Traditional Chinese IME](https://learn.microsoft.com/en-us/globalization/input/traditional-chinese-ime)
+- [Unicode：倉頡の世代差](https://www.unicode.org/L2/L2025/25216-kcangjie.pdf)

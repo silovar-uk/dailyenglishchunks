@@ -56,3 +56,10 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
+
+## Quick Lab — 速成輸入法
+- `/quick/`: 54-character Quick/Sucheng quiz with one- or two-key codes, radical explanation, review and local progress.
+- `/quick/phrases.html`: practice `早晨`, `我愛你`, `你好`, `多謝` character by character.
+- Code baseline: Rime Cangjie 5. See `quick/LEARNING.md` for attribution and limitations.
+- Validate: `node quick/test-data.js`. The GitHub Actions `Quick Lab checks` workflow runs this automatically.
+- The English lesson flow is independent of Quick Lab; the site footer provides a direct link.

@@ -1,21 +1,21 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
-// Each item declares the specific knowledge being assessed; objectives appear only after answering.
+// Questions target specific knowledge rather than literal character-meaning giveaways.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
     "category": "多音字",
     "han": "聽",
-    "question": "「聽日」は何を意味する？",
+    "question": "香港の友人から「聽日見」と届いた。約束する日はいつ？",
     "options": [
-      "明日",
-      "今日",
-      "昨日"
+      "翌日",
+      "当日",
+      "翌週"
     ],
     "answer": 0,
-    "detail": "「聽日」は香港口語で明日。聽講の聽（teng1）と聽日の聽（ting1）では読みも異なる。",
+    "detail": "「聽日」（ting1 jat6）は香港口語で「明日」。聽日見＝また明日。日本語の「聴く」からは意味を推測しにくい。",
     "source": "https://jyutping.org/en/",
     "skill": "語彙・文脈",
-    "objective": "聽日を「明日」と理解し、聽講と区別できる"
+    "objective": "聽日を日常の約束の文脈で理解できる"
   },
   {
     "id": "poly-up",
@@ -85,49 +85,49 @@ window.QUICK_TRIVIA = [
     "id": "music",
     "category": "Cantopop",
     "han": "歌",
-    "question": "香港のCantopopが、広東語の会話練習と必ずしも一致しない理由は？",
+    "question": "香港の歌詞に「我愛你」が出てきた。日常の口語表現として注意すべきことは？",
     "options": [
-      "歌詞には書き言葉の表現も多く使われるから",
-      "Cantopopでは広東語の声調が存在しないから",
-      "Cantopopはすべて英語で歌われるから"
+      "歌詞の書面語が、そのまま自然な日常会話とは限らない",
+      "歌詞にある漢字は広東語では発音しない",
+      "歌詞の広東語は声調を持たない言語になる"
     ],
     "answer": 0,
-    "detail": "Cantopopは広東語の歌を中心とするが、歌詞には書面語も使われる。歌詞の表現がそのまま日常会話で自然とは限らない。",
+    "detail": "広東語の歌詞には書面語が多く使われ、口語と表現が異なる場合がある。歌で覚えた表現は実際の会話での自然さを別途確認するとよい。",
     "source": "https://www.hkmusic.org/",
     "skill": "言語文化",
-    "objective": "歌詞の書面語と日常口語を区別する必要性を説明できる"
+    "objective": "歌詞の書面語と口語の違いを意識できる"
   },
   {
     "id": "football",
     "category": "スポーツ・サッカー",
     "han": "球",
-    "question": "香港で「球員」と「球迷」を使い分けるとき、正しい組み合わせは？",
+    "question": "香港の試合会場で「球迷入場」と案内された。入場するのは誰？",
     "options": [
-      "球員＝選手／球迷＝ファン",
-      "球員＝審判／球迷＝選手",
-      "球員＝ファン／球迷＝監督"
+      "観客・サポーター",
+      "登録選手",
+      "審判団"
     ],
     "answer": 0,
-    "detail": "球員は選手、球迷はファン・サポーターを指す。字面が似ていても役割は異なる。",
+    "detail": "球迷（kau4 mai4）はファン・サポーター。球員（kau4 jyun4）は選手。香港の案内表示では対象者の違いが重要。",
     "source": "https://www.hkfa.com/en/",
     "skill": "語彙・文脈",
-    "objective": "球員と球迷の役割を区別できる"
+    "objective": "球迷と球員を現地の案内文で読み分けられる"
   },
   {
     "id": "team",
     "category": "スポーツ・サッカー",
     "han": "隊",
-    "question": "「球隊」と「球會」の違いとして、より適切なのは？",
+    "question": "「球會宣布簽入新球員」というニュースで「球會」は何を指す？",
     "options": [
-      "球隊は競技チーム、球會はクラブ・団体を指し得る",
-      "球隊は審判団、球會は競技チームを指す",
-      "球隊は試合会場、球會はリーグの順位を指す"
+      "選手を獲得するクラブ",
+      "試合を裁く審判団",
+      "観客席のサポーター"
     ],
     "answer": 0,
-    "detail": "球隊は競技チームを指し、球會はクラブや団体を指す語として使われる。文脈によって対象は重なる。",
+    "detail": "球會はクラブを指し、球員は選手。「簽入新球員」は新しい選手を獲得するという文脈。",
     "source": "https://www.hkfa.com/en/",
     "skill": "語彙・文脈",
-    "objective": "球隊と球會の指す範囲の違いを理解できる"
+    "objective": "球會と球員をスポーツニュースの文脈で理解できる"
   },
   {
     "id": "mtr",
@@ -181,33 +181,33 @@ window.QUICK_TRIVIA = [
     "id": "food",
     "category": "茶餐廳・食文化",
     "han": "茶",
-    "question": "香港式奶茶の作り方の特徴として適切なのは？",
+    "question": "香港の茶餐廳で「絲襪奶茶」の「絲襪」が指すのは？",
     "options": [
-      "濃く抽出した紅茶にエバミルクなどを合わせる",
-      "抹茶に炭酸水を合わせる",
-      "紅茶を必ず冷水だけで抽出する"
+      "茶こしの見た目をストッキングになぞらえた呼び名",
+      "飲み物にストッキングを浸す調理法",
+      "ミルクを入れない紅茶の総称"
     ],
     "answer": 0,
-    "detail": "香港式奶茶は濃い紅茶にエバミルクなどを合わせるスタイルで知られる。単なる牛乳入り紅茶より作り方に特徴がある。",
+    "detail": "絲襪奶茶は香港式ミルクティーの呼び名。茶こしの袋の見た目がストッキングに似ることに由来する。実際に衣類を使うという意味ではない。",
     "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
     "skill": "香港の生活知識",
-    "objective": "香港式奶茶の特徴を説明できる"
+    "objective": "香港式奶茶の名称の由来と実際の調理法を区別できる"
   },
   {
     "id": "cafe",
     "category": "茶餐廳・食文化",
     "han": "餐",
-    "question": "「茶餐廳」はどんな店？",
+    "question": "香港の茶餐廳で「凍檸茶」を注文すると、一般に何が出てくる？",
     "options": [
-      "軽食から食事まで扱う大衆食堂",
-      "茶葉の販売を中心とする専門店",
-      "飲茶のコース料理だけを提供する高級店"
+      "冷たいレモンティー",
+      "温かいミルクティー",
+      "冷たいレモン入りコーヒー"
     ],
     "answer": 0,
-    "detail": "茶餐廳は香港の大衆的な飲食店の一形態。飲み物と食事を提供する。",
+    "detail": "凍檸茶（dung3 ning4 caa4）は冷たいレモンティー。凍は冷たい、檸はレモン、茶はお茶を表す。注文表現として役立つ。",
     "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
     "skill": "香港の生活知識",
-    "objective": "茶餐廳の提供形態を理解できる"
+    "objective": "茶餐廳での注文表現「凍檸茶」を理解できる"
   },
   {
     "id": "signs",

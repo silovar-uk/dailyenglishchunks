@@ -185,6 +185,23 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered .result-tabs button{min-height:32px}
 .lcd.answered>#feedback,.lcd.answered>#compounds{flex:1;min-height:0;overflow-y:auto}
 .lcd.answered:not(:has(#feedback:not(.hidden),#compounds:not(.hidden))) .answer-brief{margin-top:auto;margin-bottom:auto}
+/* Result screen: keep the complete comparison inside the LCD frame on mobile. */
+.lcd.answered{height:clamp(230px,34dvh,310px);min-height:0;overflow:hidden}
+.lcd.answered .answer-brief{min-height:0;max-height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;box-sizing:border-box;margin:6px 7px 3px;padding:8px 9px;flex:0 1 auto}
+.lcd.answered .answer-brief:has(.mistake-grid){margin:5px 7px 2px;padding:7px 8px}
+.lcd.answered .answer-brief .mistake-heading{font-size:10px;margin:0 0 3px}
+.lcd.answered .answer-brief .mistake-glyph{font-size:25px;line-height:1.05;margin:0 0 5px}
+.lcd.answered .answer-brief .mistake-grid{gap:5px}
+.lcd.answered .answer-brief .mistake-panel{padding:5px 3px}
+.lcd.answered .answer-brief .mistake-title{font-size:9px;margin-bottom:1px}
+.lcd.answered .answer-brief .mistake-code{font-size:18px;line-height:1.2}
+.lcd.answered .answer-brief .mistake-roots{font-size:11px;line-height:1.35;overflow-wrap:anywhere}
+.lcd.answered .answer-brief .mistake-detail{font-size:10px;line-height:1.4;margin-top:5px;overflow-wrap:anywhere}
+.lcd.answered .answer-brief .mistake-note{font-size:9px;line-height:1.25;margin-top:3px}
+.lcd.answered .result-tabs{flex:0 0 auto;padding:3px 7px 5px}
+.lcd.answered .result-tabs button{min-height:30px}
+.lcd.answered>#feedback,.lcd.answered>#compounds{min-height:0;overflow-y:auto}
+@media(max-width:370px){.lcd.answered .answer-brief .mistake-roots{font-size:10px}.lcd.answered .answer-brief .mistake-panel{padding:4px 2px}}
 #next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
 </style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
@@ -284,7 +301,7 @@ function mistakeSummary(q,input){
  '<div class="mistake-grid"><div class="mistake-panel"><span class="mistake-title">あなたの入力</span><span class="mistake-code">'+esc(input)+'</span><span class="mistake-roots">'+esc(display(input))+'</span></div>'+
  '<div class="mistake-panel correct-panel"><span class="mistake-title">正しい入力</span><span class="mistake-code">'+esc(q.code)+'</span><span class="mistake-roots">'+esc(display(q.code))+'</span></div></div>'+
  '<div class="mistake-detail">'+differences.join(' ／ ')+'</div>'+
- '<div class="mistake-note">字根名はキーの代表名です。実際の漢字のどこを見誤ったかは、この入力だけでは断定できません。「字根を詳しく」で形の説明を確認できます。</div>';
+ '<div class="mistake-note">※ 字根名はキーの代表名。字形の詳細は下のタブへ。</div>';
 }
 function check(){let q=current();if(!q||done||typed.length!==q.code.length)return;done=true;let good=typed===q.code;let s=stats[q.han]||{attempts:0,wins:0,level:0};s.attempts++;if(good)s.wins++;else{if(typed[0]!==q.code[0])s.firstErrors=(s.firstErrors||0)+1;if(q.code.length>1&&typed[1]!==q.code[1])s.lastErrors=(s.lastErrors||0)+1;}s.level=good&&!helped?Math.min((s.level||0)+1,5):0;s.due=addDays(good&&!helped?[0,1,3,7,14,30][s.level]:0);stats[q.han]=s;persist();$("status").textContent=good?"正解":"復習しよう";const p1='<div class="vpart first"><span class="vlabel">'+(q.code.length===1?'字根':'先頭の字根')+'</span><div class="shape">'+q.firstShape+'</div><div class="code">'+q.code[0]+' · '+ROOTS[q.code[0]]+'</div></div>';
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の字根</span><div class="shape">'+q.lastShape+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';

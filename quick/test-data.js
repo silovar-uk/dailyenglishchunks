@@ -13,7 +13,11 @@ vm.runInNewContext(extrasCode, sandbox, {filename:"quick/extras.js"});
 const extras=sandbox.window.QUICK_EXTRAS;
 const data = sandbox.window.QUICK_DATA;
 for(const item of data){assert.ok(extras[item.han]?.jyut,"Jyutping for "+item.han);assert.ok(extras[item.han].words?.length>=1,"Compounds for "+item.han)}
-assert.ok(Array.isArray(data) && data.length >= 50, "at least 50 verified items");
+assert.ok(Array.isArray(data) && data.length === 100, "exactly 100 verified items");
+assert.equal(data.filter(x=>x.group==="basic100").length,46,"46 new characters");
+assert.equal(data.filter(x=>x.group!=="basic100").length,54,"54 original characters");
+assert.match(html, /id="course"/, "course selector exists");
+assert.match(html, /quick-lab-v1/, "existing history key retained");
 assert.equal(data.length, new Set(data.map(x => x.han)).size, "unique glyphs");
 const rootKeys = new Set("ABCDEFGHIJKLMNOPQRSTUVWY");
 for (const item of data) {
@@ -73,6 +77,11 @@ const context = vm.createContext({
 });
 vm.runInContext(inline[1], context, { filename: "quick/index.html:runtime" });
 assert.equal(element("glyph").textContent, "早", "initial question appears");
+assert.equal(element("course").value,"","mock selector initial state");
+vm.runInContext('course="all";build()',context);
+assert.equal(element("counter").textContent,"1 / 10","100-character course renders");
+vm.runInContext('course="starter";build()',context);
+assert.equal(element("glyph").textContent,"早","starter course still starts with original characters");
 vm.runInContext('append("A");append("J");check()', context);
 assert.equal(element("status").textContent, "正解", "two-key answer works");
 assert.match(element("feedback").innerHTML, /日 ＋ 十/, "visual breakdown appears");

@@ -64,6 +64,11 @@ for (const [han, code] of Object.entries(expected)) {
 }
 assert.match(html, /<script src="\.\/extras\.js"><\/script>/, "extras loaded");
 assert.match(html, /<script src="\.\/trivia\.js"><\/script>/, "trivia loaded");
+assert.match(html, /<details class="route-drawer" id="routeDrawer">/,"route selection is collapsible");
+assert.match(html, /<details id="triviaDrawer" class="trivia-drawer">/,"trivia is an optional disclosure");
+assert.match(html, /class="signboard-caption"/,"learning glyph has Hong Kong signboard context");
+assert.match(html, /\.lcd:not\(\.answered\) \.glyph/,"signboard style only affects question state");
+assert.match(html, /\.trivia-drawer>summary:focus-visible/,"optional trivia is keyboard accessible");
 for(const id of ["triviaPanel","triviaQuestion","triviaChoices","triviaAnswer","triviaSource","triviaDaily","triviaShuffle"])assert.ok(html.includes('id="'+id+'"'),"trivia UI: "+id);
 assert.match(html, /<script src="\.\/data\.js"><\/script>/, "dataset must be loaded before application script");
 const inline = html.match(/<script>([\s\S]*?)<\/script>\s*<\/body>/);

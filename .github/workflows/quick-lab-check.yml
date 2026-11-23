@@ -1,0 +1,24 @@
+name: Quick Lab checks
+on:
+  push:
+    paths:
+      - 'quick/**'
+      - '.github/workflows/quick-lab-check.yml'
+  pull_request:
+    paths:
+      - 'quick/**'
+      - '.github/workflows/quick-lab-check.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax-check dataset
+        run: node --check quick/data.js
+      - name: Syntax-check regression tests
+        run: node --check quick/test-data.js
+      - name: Validate teaching codes and page scripts
+        run: node quick/test-data.js

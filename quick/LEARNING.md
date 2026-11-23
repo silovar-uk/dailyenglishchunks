@@ -32,3 +32,10 @@
 - [晨の分解とコード](https://www.xn--0vqu8au0tro7d.com/list/char/%E6%99%A8)
 - [Microsoft Traditional Chinese IME](https://learn.microsoft.com/en-us/globalization/input/traditional-chinese-ime)
 - [Unicode：倉頡の世代差](https://www.unicode.org/L2/L2025/25216-kcangjie.pdf)
+
+## 携帯ゲーム機型UX（Phase 4A–4C）
+- 画面の高さを固定し、問題表示と回答解説を同じ液晶領域で切り替える。
+- 回答後は「字根／ことば」タブを表示。熟語も液晶内部のみスクロール。
+- 解答・復習・保存データは変更せず、`quick-lab-v1` を維持。
+- 発音は端末の香港広東語音声がある場合のみ再生する。
+- 実機の小画面・VoiceOver確認は別途必要。

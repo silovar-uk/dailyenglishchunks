@@ -1555,5 +1555,100 @@ window.QUICK_TRIVIA = [
     "detail": "基本法第8条は、普通法・衡平法・条例・附属立法・慣習法など香港で従来施行されていた法律を、基本法に抵触する場合や香港特別行政区の立法機関による改正を除いて維持すると規定する。制度の継続は無条件ではない。",
     "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-056-pineapple-bun",
+    "category": "食文化と生活習慣",
+    "han": "包",
+    "topic": "香港食文化・生活",
+    "difficulty": 1,
+    "skill": "食べ物の名前と実物",
+    "objective": "菠蘿包が必ずしもパイナップル入りではないことを理解する",
+    "question": "香港の「菠蘿包（パイナップルパン）」について、正しい説明は？",
+    "options": [
+      "名前は表面の見た目に由来し、通常パイナップル果肉は入っていない",
+      "必ずパイナップル果肉が中心に入っている",
+      "パイナップルの葉で包んで蒸す点心である"
+    ],
+    "answer": 0,
+    "detail": "菠蘿包（bo1 lo4 baau1）は、表面のひび割れた甘い生地がパイナップルの皮を思わせる香港のパン。一般的な菠蘿包にパイナップル果肉は使われない。",
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-057-yumcha",
+    "category": "食文化と生活習慣",
+    "han": "茶",
+    "topic": "香港食文化・生活",
+    "difficulty": 2,
+    "skill": "食習慣の理解",
+    "objective": "飲茶が飲み物だけでなく点心を囲む食事習慣を指すと理解する",
+    "question": "香港で家族に「飲茶に行こう」と誘われた。一般的に想定されるのは？",
+    "options": [
+      "お茶とともに點心などを楽しむ食事",
+      "茶葉を買うだけの買い物",
+      "必ず一人でお茶だけを飲む行為"
+    ],
+    "answer": 0,
+    "detail": "飲茶（jam2 caa4）は字義上はお茶を飲むことだが、香港では茶とともに點心（dim2 sam1）を食べる食習慣としても使われる。店や時間帯によって提供内容は異なる。",
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-058-afternoon-tea",
+    "category": "食文化と生活習慣",
+    "han": "午",
+    "topic": "香港食文化・生活",
+    "difficulty": 2,
+    "skill": "時間帯とメニューの理解",
+    "objective": "下午茶が昼食と夕食の間の軽食時間帯を指すと理解する",
+    "question": "茶餐廳のメニューに「下午茶餐」とある。最も自然な解釈は？",
+    "options": [
+      "午後の軽食・ティータイム向けセット",
+      "朝食限定セット",
+      "深夜0時以降だけのセット"
+    ],
+    "answer": 0,
+    "detail": "下午茶（haa6 ng5 caa4）は午後のお茶・軽食の時間帯。茶餐廳では午後向けのセットメニューを指す場合がある。具体的な提供時間は店舗ごとに確認する。",
+    "source": "https://words.hk/zidin/%E4%B8%8B%E5%8D%88%E8%8C%B6",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-059-egg-tart",
+    "category": "食文化と生活習慣",
+    "han": "撻",
+    "topic": "香港食文化・生活",
+    "difficulty": 2,
+    "skill": "食べ物の識別",
+    "objective": "蛋撻の基本的な構成を説明できる",
+    "question": "香港のベーカリーで「蛋撻（エッグタルト）」を選ぶ。どんな食べ物？",
+    "options": [
+      "タルト生地に卵のカスタードを入れて焼いた菓子",
+      "卵を包んだ塩味の蒸し餃子",
+      "卵入りの冷たい麺料理"
+    ],
+    "answer": 0,
+    "detail": "蛋撻（daan6 taat1）は卵を使ったカスタード入りの焼き菓子。生地にはパイ状やクッキー状などの違いがある。",
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-060-tea-not-only-tea",
+    "category": "食文化と生活習慣",
+    "han": "點",
+    "topic": "香港食文化・生活",
+    "difficulty": 3,
+    "skill": "字義と文化的意味の区別",
+    "objective": "飲茶と下午茶の共通点・相違点を食事場面から判断できる",
+    "question": "友人が「飲茶」と「下午茶」を別々に提案した。最も適切な理解は？",
+    "options": [
+      "飲茶は点心を囲む食事習慣、下午茶は午後の軽食時間帯を指すことが多い",
+      "どちらも必ず同じ料理・同じ時間帯を指す",
+      "飲茶は必ず夜だけ、下午茶は必ず朝だけ"
+    ],
+    "answer": 0,
+    "detail": "飲茶は茶と點心を楽しむ食事の文化的な呼び方。下午茶は午後の軽食・ティータイムを指す。どちらもお茶に関係するが、実際のメニューや時間帯は店舗により異なる。",
+    "source": "https://words.hk/zidin/%E9%A3%B2%E8%8C%B6",
+    "sourceReview": "pending-specific-reference"
   }
 ];

@@ -1365,5 +1365,100 @@ window.QUICK_TRIVIA = [
     "detail": "下次（haa6 ci3）は次回、再約（zoi3 joek3）はまた約束すること。下次再約啦は『また今度会おう』という意向を示すが、具体的な日時の確約ではない。",
     "source": "https://words.hk/zidin/%E7%B4%84",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-046-harbour",
+    "category": "香港の地理と街",
+    "han": "港",
+    "topic": "香港地理・街",
+    "difficulty": 1,
+    "skill": "地理的位置関係",
+    "objective": "維多利亞港が香港島と九龍を隔てる水域だと理解できる",
+    "question": "尖沙咀から中環の高層ビル群を眺めるとき、間に広がる水域は？",
+    "options": [
+      "維多利亞港",
+      "城門河",
+      "吐露港"
+    ],
+    "answer": 0,
+    "detail": "維多利亞港（wai4 do1 lei6 aa3 gong2、ビクトリア・ハーバー）は九龍半島と香港島の間にある港。尖沙咀は九龍側、中環は香港島側に位置する。",
+    "source": "https://www.discoverhongkong.com/eng/explore/attractions/victoria-harbour.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-047-island",
+    "category": "香港の地理と街",
+    "han": "嶼",
+    "topic": "香港地理・街",
+    "difficulty": 2,
+    "skill": "島と地域区分",
+    "objective": "大嶼山が香港島とは別の島であると理解できる",
+    "question": "香港ディズニーランドのある「大嶼山」について、正しい説明は？",
+    "options": [
+      "香港島とは別の島で、ランタオ島とも呼ばれる",
+      "香港島の別名である",
+      "九龍半島の南端にある地区である"
+    ],
+    "answer": 0,
+    "detail": "大嶼山（daai6 jyu4 saan1）はランタオ島。香港島とは別の島で、香港ディズニーランドや香港国際空港のある地域を含む。",
+    "source": "https://www.discoverhongkong.com/eng/explore/neighbourhoods/lantau-island.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-048-central",
+    "category": "香港の地理と街",
+    "han": "環",
+    "topic": "香港地理・街",
+    "difficulty": 2,
+    "skill": "街の機能と場所",
+    "objective": "中環が香港島のビジネス中心地の一つだと理解できる",
+    "question": "「中環 Central」を香港の街の特徴から説明するなら？",
+    "options": [
+      "香港島側の金融・ビジネスの中心地の一つ",
+      "新界北部の国境検問所",
+      "ランタオ島の空港ターミナル"
+    ],
+    "answer": 0,
+    "detail": "中環（zung1 waan4）は香港島北岸の中心業務地区の一つ。金融機関やオフィスが集まる。地名は英語で Central と表記される。",
+    "source": "https://www.discoverhongkong.com/eng/explore/neighbourhoods/central.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-049-new-territories",
+    "category": "香港の地理と街",
+    "han": "界",
+    "topic": "香港地理・街",
+    "difficulty": 2,
+    "skill": "地域分類",
+    "objective": "沙田が九龍でも香港島でもなく新界に位置すると理解できる",
+    "question": "沙田（Sha Tin）は香港の大きな地域区分ではどこにある？",
+    "options": [
+      "新界",
+      "香港島",
+      "九龍"
+    ],
+    "answer": 0,
+    "detail": "沙田（saa1 tin4）は新界に位置する地区。九龍からMTRでアクセスできても、地理上は九龍には含まれない。",
+    "source": "https://www.districtcouncils.gov.hk/st/english/welcome/welcome.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-050-18-districts",
+    "category": "香港の地理と街",
+    "han": "區",
+    "topic": "香港地理・街",
+    "difficulty": 3,
+    "skill": "地理分類と行政区分の区別",
+    "objective": "香港島・九龍・新界の大区分と18行政区を混同しない",
+    "question": "香港を「香港島・九龍・新界」の3つに分ける説明と「18区」の関係で正しいのは？",
+    "options": [
+      "3つは大まかな地域区分で、18区は別の細かな行政区分",
+      "香港には行政区が3つしかなく、18区は駅の数",
+      "18区はすべて香港島に集中している"
+    ],
+    "answer": 0,
+    "detail": "香港の18区は、香港島4区・九龍5区・新界9区に分けられる。大きな3地域と18区を混同しないことが地理理解の基本。",
+    "source": "https://www.gov.hk/en/about/abouthk/factsheets/docs/district_admin.pdf",
+    "sourceReview": "pending-specific-reference"
   }
 ];

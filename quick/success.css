@@ -1,0 +1,202 @@
+/* Neon Arcade / Success v1: clarity before celebration.
+   Kept separate from legacy styles so the original game remains reversible. */
+
+/* The same glyph remains on its original sign after a correct answer. */
+.panel .lcd.answered.is-correct.result-compact {
+  display: flex;
+  height: clamp(208px, 30dvh, 254px);
+  max-height: none;
+  min-height: 208px;
+  overflow: hidden;
+  border-color: #8ce9df;
+  box-shadow: inset 0 0 22px #050b20,0 0 0 1px #83ecf228,0 0 19px #71e8e83d;
+}
+.panel .lcd.answered.is-correct .lcd-main {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 0;
+  height: 100%;
+  padding: 19px 9px 8px;
+  gap: 3px;
+  justify-content: center;
+}
+.panel .lcd.answered.is-correct .answer-brief { display: none !important; }
+.panel .lcd.answered.is-correct .signboard-caption { top: 7px; }
+.panel .lcd.answered.is-correct .glyph {
+  display: block;
+  position: relative;
+  flex: 0 0 auto;
+  font-size: clamp(58px, 11dvh, 82px);
+  line-height: 1.03;
+  margin: 0;
+  padding: 5px 18px;
+  border: 1px solid #ffb4db;
+  border-radius: 9px;
+  color: #fff7fc;
+  background: linear-gradient(145deg,#321c3b,#141d37 70%);
+  box-shadow: 0 0 15px #ff7fc55c,inset 0 0 15px #ff7fc51b;
+  text-shadow: 0 0 2px #fff,0 0 9px #ffacd9,0 0 20px #ff68b9ba;
+}
+.panel .lcd.answered.is-correct .glyph:after { display: none; }
+.panel .lcd.answered.is-correct .subtitle {
+  margin: 0;
+  color: #d9edf5;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.panel .lcd.answered.is-correct .phrase-context { display: none; }
+.panel .lcd.answered.is-correct .extra-bar { min-height: 27px; }
+.panel .lcd.answered.is-correct .extra-bar button { min-height: 30px; }
+.panel .lcd.answered.is-correct .sound-message {
+  margin: 0;
+  max-height: 28px;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.panel .lcd.answered.is-correct .success-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #bdfaf4;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: .025em;
+}
+.panel .lcd.answered.is-correct .success-status .success-led {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  flex: none;
+  border-radius: 50%;
+  background: #a4fae7;
+  color: #14363b;
+  font-size: 12px;
+  box-shadow: 0 0 12px #83ecf284;
+}
+.panel .lcd.answered.is-correct .success-roots {
+  max-width: 100%;
+  margin: 2px 0 0;
+  padding: 5px 10px;
+  border: 1px solid #4d8595;
+  border-radius: 7px;
+  color: #ebfafd;
+  background: #18364b;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 800;
+  text-align: center;
+}
+.panel .lcd.answered.is-correct .success-roots small {
+  display: block;
+  color: #b0d7e4;
+  font-weight: 500;
+  font-size: 9px;
+  margin-top: 1px;
+}
+.panel .lcd.answered.is-correct .success-surprise {
+  padding: 3px 9px;
+  border: 1px solid #ed98cd;
+  background: #45284e;
+  color: #ffe8f8;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 11px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* The explanatory answer screen still works for mistakes. No victory animation there. */
+.panel .lcd.answered.is-wrong { border-color: #ae8597; }
+
+/* Answered code slots are already represented by the result panel. Remove duplication. */
+.panel:has(.lcd.answered) > .slots,
+.panel:has(.lcd.answered) > .desktop { display: none; }
+
+/* The next action comes BEFORE optional learning details and stays reachable on scroll. */
+.panel #next:not(.hidden) {
+  display: block;
+  position: sticky;
+  bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+  z-index: 7;
+  margin: 8px 0 8px !important;
+  min-height: 48px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 11px;
+  color: #fff8ff;
+  background: linear-gradient(120deg,#8e396f,#5b2757);
+  border: 1px solid #ffb2dc;
+  box-shadow: inset 0 1px #ffffff38,0 4px 12px #080a18ba,0 0 17px #f47ec13b;
+  touch-action: manipulation;
+}
+.panel #next:not(.hidden):focus-visible { outline: 3px solid #91eff1; outline-offset: 3px; }
+
+/* Detailed explanation is available, but neither channel opens automatically. */
+.panel .result-workspace { margin: 6px 0 3px; }
+.panel .result-workspace .result-workspace-heading { font-size: 10px; color: #9cdae7; }
+.panel .result-workspace .result-tabs {
+  gap: 8px;
+  padding: 4px 0 0;
+}
+.panel .result-workspace .result-tabs button {
+  min-height: 44px;
+  font-size: 12px;
+  border-color: #6593a8;
+  text-align: center;
+}
+.panel .result-workspace .result-tabs button:before {
+  content: "+ ";
+  color: #b3f3f0;
+}
+.panel .result-workspace .result-tabs button[aria-pressed="true"]:before { content: "− "; }
+.panel:has(.lcd.is-correct) .result-workspace .result-audio-bar { display: none; }
+.panel .result-workspace .result-audio-message:not(:empty) { margin-top: 7px; }
+
+/* A completion panel, after the last answer: meaningful feedback, no fake prizes. */
+.panel .lcd.is-complete .glyph {
+  color: #fff9ff;
+  text-shadow: 0 0 12px #ff87d299,0 0 23px #ff87d266;
+}
+.panel .lcd.is-complete .batch-summary {
+  padding: 6px 10px;
+  border: 1px solid #83e8e6;
+  border-radius: 8px;
+  background: #16384b;
+  color: #d5ffff;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* No modal, no flash, no animation gate. Safari can paint the final result immediately. */
+@media (prefers-reduced-motion: no-preference) {
+  .panel:has(.lcd.answered.is-correct) { animation: none; }
+}
+@media (max-width: 390px) {
+  .panel .lcd.answered.is-correct.result-compact {
+    height: clamp(208px,30dvh,238px);
+    min-height: 208px;
+  }
+  .panel .lcd.answered.is-correct .glyph { font-size: 60px; padding: 4px 14px; }
+  .panel .lcd.answered.is-correct .success-roots { padding: 4px 7px; font-size: 11px; }
+}
+@media (max-height: 690px) and (max-width: 699px) {
+  .panel .lcd.answered.is-correct.result-compact { height: 202px; min-height: 202px; }
+  .panel .lcd.answered.is-correct .glyph { font-size: 55px; padding: 3px 12px; }
+  .panel .lcd.answered.is-correct .lcd-main { gap: 2px; }
+}
+@media (min-width: 700px) {
+  .panel #next:not(.hidden) { position: static; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel #next:not(.hidden) { transition: none; }
+}
+@media (prefers-contrast: more) {
+  .panel .lcd.answered.is-correct.result-compact { border-width: 2px; box-shadow: none; }
+  .panel .lcd.answered.is-correct .glyph { text-shadow: none; border-width: 2px; }
+}

@@ -1175,5 +1175,100 @@ window.QUICK_TRIVIA = [
     "detail": "MTRの推定所要時間は原則として出発駅ホームから到着駅ホームまでの目安。待ち時間・車内時間・乗換時間等を考慮する場合があり、駅の出入口までの徒歩時間には別途余裕を持つ。",
     "source": "https://www.mtr.com.hk/en/customer/main/jp_cust_notice.html",
     "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-036-quantity",
+    "category": "買い物と金額",
+    "han": "件",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 1,
+    "skill": "量詞・数量",
+    "objective": "兩件が商品2点を意味すると理解できる",
+    "question": "服の店で「我買兩件裇衫」と言った。何を買う？",
+    "options": [
+      "シャツを2枚",
+      "シャツを1枚",
+      "シャツを20枚"
+    ],
+    "answer": 0,
+    "detail": "兩（loeng5）は2、件（gin6）は服などを数える量詞、裇衫（seot1 saam1）はシャツ。粵典「件」に兩件裇衫の用例がある。",
+    "source": "https://words.hk/zidin/%E4%BB%B6",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-037-eight-discount",
+    "category": "買い物と金額",
+    "han": "折",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "割引率の理解",
+    "objective": "八折を定価の80％と解釈できる",
+    "question": "HK$150の商品に「八折」の表示。割引後の価格は？",
+    "options": [
+      "HK$120",
+      "HK$30",
+      "HK$135"
+    ],
+    "answer": 0,
+    "detail": "八折（baat3 zit3）は元値の80％、つまり20％引き。150×0.8＝120香港ドル。日本語の「8割引」（80％引き）と混同しない。",
+    "source": "https://words.hk/zidin/%E6%8A%98",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-038-change",
+    "category": "買い物と金額",
+    "han": "找",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "現金支払いの文脈",
+    "objective": "找と找續がお釣りを渡す行為に関係すると理解できる",
+    "question": "HK$42の買い物でHK$50札を出した。店員が「找返八蚊」と言ったら？",
+    "options": [
+      "8香港ドルのお釣りを返す",
+      "追加で8香港ドル請求する",
+      "8個の商品を渡す"
+    ],
+    "answer": 0,
+    "detail": "找（zaau2）は支払額を超えた差額をお釣りとして返すこと。50−42＝8香港ドル。粵典「找」には「找返」「兩蚊未找」の用例がある。",
+    "source": "https://words.hk/zidin/%E6%89%BE",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-039-octopus",
+    "category": "買い物と金額",
+    "han": "達",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "支払い手段の判断",
+    "objective": "八達通は交通専用ではなく加盟小売店でも使えると理解する",
+    "question": "香港の店で「八達通」マークを見つけた。正しい理解は？",
+    "options": [
+      "対応する店舗なら八達通で支払える",
+      "八達通はMTRだけで使え、店では使えない",
+      "八達通は現金払いの領収書を意味する"
+    ],
+    "answer": 0,
+    "detail": "八達通（baat3 daat6 tung1）は電子決済システム。交通だけでなく、加盟小売店・飲食店などでも利用できる。店舗ごとの対応状況は表示で確認する。",
+    "source": "https://www.octopus.com.hk/en/consumer/customer-service/faq/get-your-octopus/about-octopus.html",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-040-discount-condition",
+    "category": "買い物と金額",
+    "han": "折",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 3,
+    "skill": "割引条件の読解",
+    "objective": "買兩件有冇折が2点購入時の割引有無を尋ねる表現だと理解する",
+    "question": "服を2枚選んだ客が「買兩件有冇折啊？」と尋ねた。何を確認している？",
+    "options": [
+      "2点買うと割引があるか",
+      "2点買うと必ず半額になるか",
+      "2点買うと返品できなくなるか"
+    ],
+    "answer": 0,
+    "detail": "買兩件有冇折啊？（maai5 loeng5 gin6 jau5 mou5 zit3 aa3）は「2点買ったら割引はありますか？」。割引の有無を聞いており、割引率までは指定していない。粵典「折」に同じ用例がある。",
+    "source": "https://words.hk/zidin/%E6%8A%98",
+    "sourceReview": "specific-reference-checked"
   }
 ];

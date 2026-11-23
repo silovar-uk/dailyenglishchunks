@@ -1080,5 +1080,100 @@ window.QUICK_TRIVIA = [
     "detail": "打包（daa2 baau1）は包む・持ち帰り用にまとめること、拎走（ling1 zau2）は持って行くこと。最初から外賣で注文するのとは場面が違う。",
     "source": "https://words.hk/zidin/%E9%A4%B8%E9%A0%AD%E9%A4%B8%E5%B0%BE",
     "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-031-interchange",
+    "category": "交通と道案内",
+    "han": "轉",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 1,
+    "skill": "乗換案内の理解",
+    "objective": "轉車站の意味を乗換行動に結びつけられる",
+    "question": "MTRの案内に「轉車站：金鐘」とある。金鐘で必要な行動は？",
+    "options": [
+      "別の路線・列車へ乗り換える",
+      "駅の外へ必ず出て徒歩で向かう",
+      "金鐘が終点なので旅を中止する"
+    ],
+    "answer": 0,
+    "detail": "轉車站（zyun2 ce1 zaam6）は乗換駅。MTRの経路案内は乗換駅を表示する。実際の乗換方法は駅構内の表示に従う。",
+    "source": "https://www.mtr.com.hk/en/customer/services/train_service_index.html",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-032-direction",
+    "category": "交通と道案内",
+    "han": "往",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "方面表示の読解",
+    "objective": "往と終点駅名の組合せから列車の進行方向を判断できる",
+    "question": "ホームに「往荃灣」と「往中環」の表示がある。「往荃灣」は何を示す？",
+    "options": [
+      "荃灣方面に向かう列車",
+      "荃灣駅から到着した列車だけ",
+      "荃灣駅で必ず下車する義務"
+    ],
+    "answer": 0,
+    "detail": "往（wong5）は「〜へ向かう」。MTRでは行先・方面を示す表示に用いられる。途中駅へ行く場合も、目的地がどちらの方面かを路線図で確認する。",
+    "source": "https://www.mtr.com.hk/archive/corporate/en/press_release/PR-25-030-E.pdf",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-033-lasttrain",
+    "category": "交通と道案内",
+    "han": "尾",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "終電時刻の解釈",
+    "objective": "尾班車の時刻がホーム発車予定時刻であり入場締切と同じではないと理解する",
+    "question": "MTRの「尾班車 00:30」を見た。公式案内に沿う行動は？",
+    "options": [
+      "少なくとも発車5分前までに駅に入り、案内を確認する",
+      "00:30に改札を通れば必ず乗れる",
+      "00:30は駅の窓口が開く時刻を意味する"
+    ],
+    "answer": 0,
+    "detail": "尾班車（mei5 baan1 ce1）は最終列車。MTR公式は表示時刻をホーム発車予定時刻とし、少なくとも5分前までの入駅を案内。運行変更や駅閉鎖にも注意。",
+    "source": "https://www.mtr.com.hk/alert/last_train_m.html",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-034-platform",
+    "category": "交通と道案内",
+    "han": "月",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "乗車ホームの判断",
+    "objective": "月台番号を列車の方面・到着情報と照合する必要を理解できる",
+    "question": "MTRアプリに「往荃灣／月台1／2分鐘」とある。まず向かうべき場所は？",
+    "options": [
+      "荃灣方面の1番ホーム",
+      "必ず1番出口",
+      "荃灣駅の改札外"
+    ],
+    "answer": 0,
+    "detail": "月台（jyut6 toi4）はプラットホーム。MTR MobileのNext Trainは方面・ホーム番号・到着までの時間を示す。月台1は出口1ではない。",
+    "source": "https://www.mtr.com.hk/mtrmobile/en/transport/next-train/",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-035-route-time",
+    "category": "交通と道案内",
+    "han": "程",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 3,
+    "skill": "経路案内の批判的読解",
+    "objective": "推定所要時間に含まれる範囲と駅外移動の時間を区別できる",
+    "question": "MTRの経路検索に「預計車程 20分鐘」と表示された。目的地への到着時刻を考えるとき最も適切なのは？",
+    "options": [
+      "駅の入口や出口からの徒歩時間も別途見込む",
+      "20分には目的地の建物内の移動まで必ず含まれる",
+      "乗換時間は一切含まれないと決めつける"
+    ],
+    "answer": 0,
+    "detail": "MTRの推定所要時間は原則として出発駅ホームから到着駅ホームまでの目安。待ち時間・車内時間・乗換時間等を考慮する場合があり、駅の出入口までの徒歩時間には別途余裕を持つ。",
+    "source": "https://www.mtr.com.hk/en/customer/main/jp_cust_notice.html",
+    "sourceReview": "specific-reference-checked"
   }
 ];

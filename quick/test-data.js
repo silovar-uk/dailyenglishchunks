@@ -84,6 +84,8 @@ const context = vm.createContext({
 });
 vm.runInContext(inline[1], context, { filename: "quick/index.html:runtime" });
 assert.equal(element("glyph").textContent, "早", "initial question appears");
+for(const [tier,count] of [["starter",54],["basic100",100],["daily150",150],["scene200",200],["roots250",250],["all",300]]){const n=vm.runInContext(`course="${tier}";scene="all";DATA.filter(inCourse).length`,context);assert.equal(n,count,`exact pool size for ${tier}`)}
+vm.runInContext('course="starter";build()',context);
 assert.equal(element("course").value,"","mock selector initial state");
 vm.runInContext('course="all";build()',context);
 assert.equal(element("counter").textContent,"1 / 10","300-character course renders");

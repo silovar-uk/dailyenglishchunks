@@ -146,6 +146,16 @@ button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #9ce
 .trivia-drawer>summary span{font-size:10px;color:#b9c9de;font-weight:400}
 .trivia-drawer .trivia-panel{margin:0;border:0;border-top:1px solid #77486e;border-radius:0 0 12px 12px;box-shadow:none}
 .route-drawer>summary:focus-visible,.trivia-drawer>summary:focus-visible{outline:3px solid #9ceaf2;outline-offset:2px}
+
+/* UX phase 2: answer first, optional detail second, next action always visible. */
+.answer-brief{margin:8px 9px 3px;padding:9px 11px;background:#1b3948;border:1px solid #7bd9df;border-radius:8px;color:#f4ffff;font-size:13px;font-weight:700;line-height:1.5;flex:0 0 auto}
+.lcd.answered{display:flex;flex-direction:column}
+.lcd.answered .answer-brief{display:block}
+.lcd.answered .result-tabs{padding:4px 9px 7px}
+.lcd.answered .result-tabs button{min-height:32px}
+.lcd.answered>#feedback,.lcd.answered>#compounds{flex:1;min-height:0;overflow-y:auto}
+.lcd.answered:not(:has(#feedback:not(.hidden),#compounds:not(.hidden))) .answer-brief{margin-top:auto;margin-bottom:auto}
+#next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
 </style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
 <h1>霓虹漢字 <span class="device-version">NEON HANZI / QUICK LAB</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">フレーズ練習 →</a></div>
@@ -154,7 +164,7 @@ button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #9ce
 <div class="stats" aria-label="学習記録"><span>PLAY <b id="attempts">0</b></span><span>HIT <b id="accuracy">—</b></span><span>REVIEW <b id="due">0</b></span></div>
 <section class="panel" aria-label="速成クイズ"><div class="topline"><span id="counter">1 / 10</span><span id="status" role="status" aria-live="polite">1〜2キーで答える</span></div><div class="progress" role="progressbar" aria-label="単字クイズの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack"><div id="bar"></div></div>
 <div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div class="glyph" id="glyph">早</div><p class="subtitle" id="meaning">早い</p><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
-</div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="true">字根</button><button id="tabWords" type="button" aria-pressed="false">ことば</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0">·</div><div class="slot" id="slot1">·</div></div>
+</div><div id="answerBrief" class="answer-brief hidden" role="status" aria-live="polite"></div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="false">字根を詳しく</button><button id="tabWords" type="button" aria-pressed="false">ことば</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0">·</div><div class="slot" id="slot1">·</div></div>
 <div class="desktop"><label for="typeInput" class="muted">キーボードから入力（Enterで判定）</label><input id="typeInput" type="text" maxlength="2" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin"></div>
 <div class="mobile"><p class="muted" style="text-align:center">ROOT KEYS · 字根を選ぶ</p><div class="keyboard" id="keyboard"></div></div>
 <div class="actions"><button id="backspace" type="button" aria-label="1文字消す">⌫ 消す</button><button id="hint" type="button">ヒント</button><button class="primary" id="check" type="button" disabled>答える</button></div>
@@ -187,7 +197,7 @@ function build(){const pool=DATA.filter(x=>inCourse(x));const dueList=pool.filte
 function current(){return queue[pos]}
 function totals(){let all=Object.values(stats),attempts=all.reduce((n,s)=>n+(s.attempts||0),0),wins=all.reduce((n,s)=>n+(s.wins||0),0);$("attempts").textContent=attempts;$("accuracy").textContent=attempts?Math.round(wins/attempts*100)+"%":"—";$("due").textContent=DATA.filter(inCourse).filter(due).length}
 function slots(){let length=current()?.code.length||2;for(let i=0;i<2;i++){let el=$("slot"+i);el.textContent=typed[i]||"·";el.classList.toggle("filled",!!typed[i]);el.classList.toggle("hidden",i>=length)}$("check").disabled=typed.length!==length||done;$("backspace").disabled=done||!typed.length;$("typeInput").value=typed}
-function render(){$("lcd").classList.remove("answered");totals();let q=current();$("modeAll").setAttribute("aria-pressed",String(!review));$("modeReview").setAttribute("aria-pressed",String(review));if(!q){$("glyph").textContent="✓";$("meaning").textContent=review?"復習待ちの漢字はありません":"今日の問題は終了！";$("counter").textContent="完了";$("bar").style.width="100%";$("progressTrack").setAttribute("aria-valuenow","100");$("status").textContent="おつかれさま";$("check").disabled=true;$("hint").disabled=true;$("backspace").disabled=true;$("next").textContent=review?"通常学習に戻る":"次の10問";$("next").classList.remove("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("feedback").classList.add("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("reading").textContent="";$("playChar").disabled=true;return}
+function render(){$("lcd").classList.remove("answered");$("answerBrief").classList.add("hidden");totals();let q=current();$("modeAll").setAttribute("aria-pressed",String(!review));$("modeReview").setAttribute("aria-pressed",String(review));if(!q){$("glyph").textContent="✓";$("meaning").textContent=review?"復習待ちの漢字はありません":"今日の問題は終了！";$("counter").textContent="完了";$("bar").style.width="100%";$("progressTrack").setAttribute("aria-valuenow","100");$("status").textContent="おつかれさま";$("check").disabled=true;$("hint").disabled=true;$("backspace").disabled=true;$("next").textContent=review?"通常学習に戻る":"次の10問";$("next").classList.remove("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("feedback").classList.add("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("reading").textContent="";$("playChar").disabled=true;return}
 typed="";done=false;helped=false;$("glyph").textContent=q.han;$("meaning").textContent=q.meaning;$("reading").textContent=EXTRAS[q.han]?.jyut||"";$("playChar").disabled=!EXTRAS[q.han]?.jyut;$("soundMessage").textContent="";$("counter").textContent=(pos+1)+" / "+queue.length;$("bar").style.width=(pos/queue.length*100)+"%";$("progressTrack").setAttribute("aria-valuenow",String(Math.round(pos/queue.length*100)));$("status").textContent=q.code.length+"キーで答える";$("feedback").classList.add("hidden");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("next").classList.add("hidden");$("hint").disabled=false;slots()}
 function append(letter){if(done||!current()||typed.length>=current().code.length)return;typed+=letter;slots()}
 function erase(){if(!done){typed=typed.slice(0,-1);slots()}}
@@ -233,16 +243,18 @@ function check(){let q=current();if(!q||done||typed.length!==q.code.length)retur
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の字根</span><div class="shape">'+q.lastShape+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
 const peers=["all","roots250"].includes(course)?rootPeers(q):[];const compare=peers.length?'<p class="vnote"><strong>似た字根を比較</strong>：'+peers.map(x=>x.han+" "+x.code).join(" ／ ")+'</p>':"";
-$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");setResultTab("roots");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
+$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");$("answerBrief").textContent=(good?"✓ 正解":"↻ 正解は "+q.code)+" · "+q.han+" / "+q.code+" · "+q.meaning;$("answerBrief").classList.remove("hidden");setResultTab("brief");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
 function next(){if(pos>=queue.length){if(review)review=false;build();return}pos++;render()}
 
 function setResultTab(tab){
- const words=tab==="words";
- $("tabRoots").setAttribute("aria-pressed",String(!words));$("tabWords").setAttribute("aria-pressed",String(words));
- $("feedback").classList.toggle("hidden",words);$("compounds").classList.toggle("hidden",!words||!current()||!(EXTRAS[current().han]?.words||[]).length);
- $(words?"compounds":"feedback").scrollTop=0;
+ const words=tab==="words",roots=tab==="roots";
+ $("tabRoots").setAttribute("aria-pressed",String(roots));
+ $("tabWords").setAttribute("aria-pressed",String(words));
+ $("feedback").classList.toggle("hidden",!roots);
+ $("compounds").classList.toggle("hidden",!words||!current()||!(EXTRAS[current().han]?.words||[]).length);
+ if(roots||words)$(roots?"feedback":"compounds").scrollTop=0;
 }
-$("tabRoots").onclick=()=>setResultTab("roots");$("tabWords").onclick=()=>setResultTab("words");
+$("tabRoots").onclick=()=>setResultTab($("tabRoots").getAttribute("aria-pressed")==="true"?"brief":"roots");$("tabWords").onclick=()=>setResultTab($("tabWords").getAttribute("aria-pressed")==="true"?"brief":"words");
 function speak(text){
  const msg=$("soundMessage");
  if(!("speechSynthesis" in window)||typeof SpeechSynthesisUtterance==="undefined"){msg.textContent="この端末では音声読み上げを利用できません。";return}

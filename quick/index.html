@@ -70,6 +70,8 @@ button:focus-visible,a:focus-visible{outline:3px solid #294f40;outline-offset:2p
 @media(prefers-reduced-motion:reduce){.keyboard button,.actions button,#next{transition:none}}
 .course-picker{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 2px;font-size:11px;font-weight:700;color:#4a5e48}.course-picker select{min-height:32px;border:1px solid #9ba995;background:#e7eddf;color:#2d482f;border-radius:8px;padding:4px 8px;font-size:12px;max-width:65%}.course-picker select:focus-visible{outline:3px solid #294f40;outline-offset:2px}
 .course-picker.hidden{display:none}.course-picker select{min-width:145px}
+
+.trivia-panel{margin-top:12px;padding:13px;background:#f4f3e6;border:1px solid #b9c7a7;border-radius:14px}.trivia-panel h2{font-size:14px;margin:0 0 5px}.trivia-panel .trivia-meta{font-size:10px;color:#60715b}.trivia-panel .trivia-question{font-size:14px;font-weight:700;margin:8px 0}.trivia-choices{display:grid;gap:6px}.trivia-choices button{text-align:left;font-size:12px;padding:8px 10px;min-height:38px}.trivia-choices button.correct{border-color:#396c46;background:#d9ebd5}.trivia-choices button.wrong{border-color:#a05c53;background:#f6e0d9}.trivia-answer{font-size:12px;line-height:1.6;margin:9px 0}.trivia-source{font-size:11px;color:#315c43}.trivia-actions{display:flex;gap:8px;margin-top:9px}.trivia-actions button{font-size:11px;min-height:34px;padding:6px 9px}
 </style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
 <h1>▣ QUICK LAB <span class="device-version">POCKET / 01</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">フレーズ練習 →</a></div>
@@ -83,12 +85,14 @@ button:focus-visible,a:focus-visible{outline:3px solid #294f40;outline-offset:2p
 <div class="actions"><button id="backspace" type="button" aria-label="1文字消す">⌫ 消す</button><button id="hint" type="button">ヒント</button><button class="primary" id="check" type="button" disabled>答える</button></div>
 <button id="next" type="button" class="primary hidden" style="width:100%;margin-top:14px">次の漢字 →</button>
 </section>
+<section id="triviaPanel" class="trivia-panel" aria-label="香港の豆知識"><h2 id="triviaTitle">✦ 今日の香港豆知識</h2><p class="trivia-meta" id="triviaMeta"></p><p class="trivia-question" id="triviaQuestion"></p><div class="trivia-choices" id="triviaChoices" role="group" aria-label="豆知識の3択"></div><div id="triviaAnswer" class="trivia-answer hidden" role="status"></div><a id="triviaSource" class="trivia-source hidden" target="_blank" rel="noopener noreferrer">出典を確認する</a><div class="trivia-actions"><button id="triviaDaily" type="button">今日の雑学</button><button id="triviaShuffle" type="button">別の雑学 ↻</button></div></section>
 <div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
 <p class="foot">倉頡第5代を基準にした学習用コード。IMEごとの候補順は異なります。学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。<a href="./LEARNING.md">字根の学習メモ</a></p>
-</main><script src="./data.js"></script><script src="./extras.js"></script><script>
+</main><script src="./data.js"></script><script src="./extras.js"></script><script src="./trivia.js"></script><script>
 "use strict";
 const DATA=window.QUICK_DATA||[];
 const EXTRAS=window.QUICK_EXTRAS||{};
+const TRIVIA=window.QUICK_TRIVIA||[];
 const KEY="quick-lab-v1",ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const $=id=>document.getElementById(id);
 let saved;try{saved=JSON.parse(localStorage.getItem(KEY))||{}}catch{saved={}};let stats=saved.stats||{},queue=[],pos=0,typed="",done=false,helped=false,review=false,course="starter",scene="all";
@@ -107,11 +111,47 @@ function append(letter){if(done||!current()||typed.length>=current().code.length
 function erase(){if(!done){typed=typed.slice(0,-1);slots()}}
 function addDays(n){let d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+n);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")}
 function rootPeers(q){return DATA.filter(x=>x.han!==q.han&&(x.code[0]===q.code[0]||x.code.at(-1)===q.code.at(-1))).sort((a,b)=>Number(b.code===q.code)-Number(a.code===q.code)).slice(0,3)}
+
+// Trivia is independent of Quick Lab progress and never modifies the existing history key.
+let activeTrivia=null,triviaSolved=false;
+function dailyTrivia(){const date=today();let hash=0;for(const ch of date)hash=(hash*31+ch.charCodeAt(0))>>>0;return TRIVIA[hash%TRIVIA.length]}
+function relatedTrivia(q){const relevant=TRIVIA.filter(t=>t.han===q.han);return relevant.length?relevant[0]:null}
+function showTrivia(item,label){
+ if(!item)return;
+ activeTrivia=item;triviaSolved=false;
+ $("triviaTitle").textContent="✦ "+label;
+ $("triviaMeta").textContent=item.category+" · "+(item.han||"香港");
+ $("triviaQuestion").textContent=item.question;
+ $("triviaAnswer").textContent="";$("triviaAnswer").classList.add("hidden");
+ $("triviaSource").classList.add("hidden");$("triviaSource").removeAttribute("href");
+ const wrap=$("triviaChoices");wrap.replaceChildren();
+ item.options.forEach((option,i)=>{
+  const button=document.createElement("button");button.type="button";button.textContent=(i+1)+". "+option;
+  button.onclick=()=>answerTrivia(i);wrap.append(button);
+ });
+}
+function answerTrivia(choice){
+ if(!activeTrivia||triviaSolved)return;
+ triviaSolved=true;
+ const t=activeTrivia;
+ const buttons=$("triviaChoices").children;
+ for(let i=0;i<buttons.length;i++){buttons[i].disabled=true;if(i===t.answer)buttons[i].classList.add("correct");else if(i===choice)buttons[i].classList.add("wrong")}
+ $("triviaAnswer").textContent=(choice===t.answer?"✓ 正解！ ":"正解は「"+t.options[t.answer]+"」。 ")+t.detail;
+ $("triviaAnswer").classList.remove("hidden");
+ $("triviaSource").href=t.source;$("triviaSource").classList.remove("hidden");
+}
+$("triviaDaily").onclick=()=>showTrivia(dailyTrivia(),"今日の香港豆知識");
+$("triviaShuffle").onclick=()=>{
+ if(!TRIVIA.length)return;
+ const other=TRIVIA.filter(x=>x.id!==activeTrivia?.id);
+ showTrivia(other[Math.floor(Math.random()*other.length)]||TRIVIA[0],"ランダム香港雑学");
+};
+
 function check(){let q=current();if(!q||done||typed.length!==q.code.length)return;done=true;let good=typed===q.code;let s=stats[q.han]||{attempts:0,wins:0,level:0};s.attempts++;if(good)s.wins++;else{if(typed[0]!==q.code[0])s.firstErrors=(s.firstErrors||0)+1;if(q.code.length>1&&typed[1]!==q.code[1])s.lastErrors=(s.lastErrors||0)+1;}s.level=good&&!helped?Math.min((s.level||0)+1,5):0;s.due=addDays(good&&!helped?[0,1,3,7,14,30][s.level]:0);stats[q.han]=s;persist();$("status").textContent=good?"正解":"復習しよう";const p1='<div class="vpart first"><span class="vlabel">'+(q.code.length===1?'字根':'先頭の字根')+'</span><div class="shape">'+q.firstShape+'</div><div class="code">'+q.code[0]+' · '+ROOTS[q.code[0]]+'</div></div>';
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の字根</span><div class="shape">'+q.lastShape+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
 const peers=["all","roots250"].includes(course)?rootPeers(q):[];const compare=peers.length?'<p class="vnote"><strong>似た字根を比較</strong>：'+peers.map(x=>x.han+" "+x.code).join(" ／ ")+'</p>':"";
-$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");setResultTab("roots");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals()}
+$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");setResultTab("roots");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
 function next(){if(pos>=queue.length){if(review)review=false;build();return}pos++;render()}
 
 function setResultTab(tab){
@@ -157,5 +197,5 @@ $("modeAll").onclick=()=>{review=false;build()};$("modeReview").onclick=()=>{rev
 $("reset").onclick=()=>{if(confirm("Quick Labの学習記録を消去しますか？")){stats={};persist();build()}};
 $("typeInput").addEventListener("input",e=>{if(!done){typed=e.target.value.toUpperCase().replace(/[^A-Z]/g,"").slice(0,current()?.code.length||2);slots()}});
 document.addEventListener("keydown",e=>{if(e.target===$("typeInput")){if(e.key==="Enter"){e.preventDefault();done?next():check()}return}if(e.altKey||e.metaKey||e.ctrlKey||e.target.closest("button"))return;if(e.key==="Enter"){done?next():check()}else if(e.key==="Backspace")erase();else if(/^[a-z]$/i.test(e.key))append(e.key.toUpperCase())});
-build();
+build();showTrivia(dailyTrivia(),"今日の香港豆知識");
 </script></body></html>

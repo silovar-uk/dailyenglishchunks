@@ -299,5 +299,9 @@ window.QUICK_EXTRAS = {
 "賽":{jyut:"coi3",words:[["比賽","bei2 coi3","試合"],["賽","coi3","競争"]]},
 "運":{jyut:"wan6",words:[["運動","wan6 dung6","スポーツ"],["運","wan6","運ぶ"]]},
 "員":{jyut:"jyun4",words:[["球員","kau4 jyun4","選手"],["員","jyun4","人員"]]},
-"教":{jyut:"gaau3",words:[["教練","gaau3 lin6","コーチ"],["教","gaau3","教える"]]}
+"教":{jyut:"gaau3",words:[["教練","gaau3 lin6","コーチ"],["教","gaau3","教える"]]},
+"辛":{"jyut":"san1","words":[["辛苦","san1 fu2","苦労する・大変"],["辛苦晒","san1 fu2 saai3","お疲れさま・ご苦労さま（労い・感謝）"]],"readingNote":"辛苦晒は san1 fu2 saai3。労いの語尾は『晒』と書きます。"},
+"苦":{"jyut":"fu2","words":[["辛苦","san1 fu2","大変・つらい"],["辛苦晒","san1 fu2 saai3","お疲れさま・ご苦労さま"]]},
+"晒":{"jyut":"saai3","words":[["辛苦晒","san1 fu2 saai3","お疲れさま・ご苦労さま"],["唔該晒","m4 goi1 saai3","どうもありがとう"]],"readingNote":"『晒』（saai3）は『すっかり・全部』などの意味。『哂』（can2）とは別字。"},
+"哂":{"jyut":"can2","words":[["哂笑","can2 siu3","あざ笑う"],["辛苦晒","san1 fu2 saai3","労いの正しい表記（※ 哂ではなく晒）"]],"readingNote":"誤字注意：『哂』は can2（あざ笑う）。『辛苦晒』の末字は『晒』（saai3）。"}
 };

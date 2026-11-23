@@ -3600,5 +3600,53 @@ window.QUICK_DATA = [
   "lastShape": "大（末尾字根）",
   "explain": "倉頡 JDOK → 速成 JK。字根名は分類名であり、字形の一部分をそのまま切り出したものではありません。",
   "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
+},
+{
+  "han": "辛",
+  "code": "YJ",
+  "cangjie": "YTJ",
+  "meaning": "つらい・苦労する／辛苦の辛",
+  "group": "work300",
+  "shape": "辛（倉頡字根）",
+  "firstShape": "卜（先頭字根）",
+  "lastShape": "十（末尾字根）",
+  "explain": "辛苦の『辛』。倉頡 YTJ → 速成 YJ。代表字根は卜（Y）と十（J）。",
+  "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
+},
+{
+  "han": "苦",
+  "code": "TR",
+  "cangjie": "TJR",
+  "meaning": "苦しい・大変／辛苦の苦",
+  "group": "work300",
+  "shape": "苦（倉頡字根）",
+  "firstShape": "廿（先頭字根）",
+  "lastShape": "口（末尾字根）",
+  "explain": "辛苦の『苦』。倉頡 TJR → 速成 TR。代表字根は廿（T）と口（R）。",
+  "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
+},
+{
+  "han": "晒",
+  "code": "AW",
+  "cangjie": "AMCW",
+  "meaning": "全部・すっかり／労いの『辛苦晒』に使う",
+  "group": "work300",
+  "shape": "晒（倉頡字根）",
+  "firstShape": "日（先頭字根）",
+  "lastShape": "田（末尾字根）",
+  "explain": "倉頡 AMCW → 速成 AW。広東語の『辛苦晒』は san1 fu2 saai3。『哂』（can2、あざ笑う）と書き分ける。",
+  "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
+},
+{
+  "han": "哂",
+  "code": "RW",
+  "cangjie": "RMCW",
+  "meaning": "あざ笑う（can2）。『晒』（saai3）とは別字",
+  "group": "work300",
+  "shape": "哂（倉頡字根）",
+  "firstShape": "口（先頭字根）",
+  "lastShape": "田（末尾字根）",
+  "explain": "倉頡 RMCW → 速成 RW。『哂笑』の哂は can2（嘲笑する）。労いの『辛苦晒』には『晒』を使う。",
+  "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
 }
 ];

@@ -44,3 +44,91 @@
     transform: none;
   }
 }
+
+/* A compact street-corner shuffle control, in the same neon vocabulary as the sign. */
+.panel .topline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
+.panel .topline #counter {
+  flex: none;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.panel .topline #status {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+  font-size: 10px;
+  line-height: 1.3;
+}
+.panel .topline .shuffle-question {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 5px 10px;
+  border: 1px solid #e69dcc;
+  border-radius: 9px;
+  background: linear-gradient(140deg,#442445,#292344 70%,#1b3450);
+  color: #fff4fc;
+  box-shadow: inset 0 1px 0 #ffffff24,0 2px 0 #0b1024,0 0 10px #e675bf20;
+  white-space: nowrap;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.panel .topline .shuffle-question:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 1px 0 #ffffff20,0 1px 0 #0b1024,0 0 13px #83ecf24a;
+}
+.shuffle-question .shuffle-die {
+  display: inline-grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  flex: none;
+  color: #ffcaea;
+  background: #692e6d;
+  border: 1px solid #f9add7;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1;
+  box-shadow: 0 0 7px #ff7fc550;
+  pointer-events: none;
+}
+.shuffle-question .shuffle-copy {
+  display: grid;
+  gap: 1px;
+  text-align: left;
+  line-height: 1.1;
+  pointer-events: none;
+}
+.shuffle-question .shuffle-title {
+  color: #fff9ff;
+  font-size: 12px;
+  font-weight: 800;
+}
+.shuffle-question .shuffle-subtitle {
+  color: #aee9ec;
+  font-size: 8px;
+  letter-spacing: .07em;
+  font-weight: 700;
+}
+.panel .topline .shuffle-question:disabled {
+  opacity: .48;
+  cursor: not-allowed;
+}
+@media (max-width: 390px) {
+  .panel .topline {gap: 5px;}
+  .panel .topline #status {font-size: 9px;}
+  .panel .topline .shuffle-question {gap: 5px;padding: 5px 7px;}
+  .shuffle-question .shuffle-subtitle {display: none;}
+  .shuffle-question .shuffle-title {font-size: 11px;}
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel .topline .shuffle-question:active {transform: none;}
+}

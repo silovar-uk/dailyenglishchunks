@@ -187,8 +187,15 @@
 }
 @media (max-height: 690px) and (max-width: 699px) {
   .panel .lcd.answered.is-correct.result-compact { height: 202px; min-height: 202px; }
-  .panel .lcd.answered.is-correct .glyph { font-size: 55px; padding: 3px 12px; }
-  .panel .lcd.answered.is-correct .lcd-main { gap: 2px; }
+  .panel .lcd.answered.is-correct .lcd-main { gap: 2px; padding: 16px 7px 4px; }
+  .panel .lcd.answered.is-correct .glyph { font-size: 49px; padding: 2px 11px; }
+  .panel .lcd.answered.is-correct .success-status { font-size: 11px; }
+  .panel .lcd.answered.is-correct .success-status .success-led { width: 15px; height: 15px; }
+  .panel .lcd.answered.is-correct .success-roots { padding: 3px 7px; font-size: 11px; }
+  .panel .lcd.answered.is-correct .success-roots small { font-size: 8px; }
+  .panel .lcd.answered.is-correct .success-surprise { padding: 2px 6px; font-size: 10px; }
+  .panel .lcd.answered.is-correct .extra-bar { min-height: 24px; }
+  .panel .lcd.answered.is-correct .extra-bar button { min-height: 26px; }
 }
 @media (min-width: 700px) {
   .panel #next:not(.hidden) { position: static; }

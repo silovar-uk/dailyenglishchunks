@@ -66,6 +66,21 @@
     ], { duration: 190, easing: "ease-out" });
   }
 
+  function shuffleSign() {
+    // The character is already changed. Animate only the reveal, never delay input.
+    const glyph = document.getElementById("glyph");
+    play("shuffle-sign", glyph, [
+      { opacity: .55, transform: "translateY(-3px) scale(.965)" },
+      { opacity: 1, transform: "translateY(0) scale(1)" }
+    ], { duration: 190, easing: "cubic-bezier(.2,.8,.2,1)" });
+    const icon = document.querySelector("#shuffleQuestion .shuffle-die");
+    play("shuffle-icon", icon, [
+      { transform: "rotate(-20deg) scale(.86)" },
+      { transform: "rotate(14deg) scale(1.09)", offset: .55 },
+      { transform: "rotate(0) scale(1)" }
+    ], { duration: 240, easing: "ease-out" });
+  }
+
   function clearSlot(index) {
     if (index !== 0 && index !== 1) return;
     const slot = document.getElementById("slot" + index);
@@ -93,6 +108,7 @@
     tapKey,
     fillSlot,
     clearSlot,
+    shuffleSign,
     cancelAll,
     setEnabled(value) {
       enabled = !!value;

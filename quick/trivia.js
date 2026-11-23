@@ -890,5 +890,100 @@ window.QUICK_TRIVIA = [
     "detail": "我賣咖啡（ngo5 maai6 gaa3 fe1）はコーヒーを売る、我買咖啡（ngo5 maai5 gaa3 fe1）はコーヒーを買う。話し手の立場と声調が意味を支える。",
     "source": "https://jyutping.org/en/",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-021-syllable",
+    "category": "発音の紛らわしさ",
+    "han": "食",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 1,
+    "skill": "粤拼の音節分解",
+    "objective": "粤拼の声母・韻母・声調を正しく分解できる",
+    "question": "「食 sik6」の粤拼を、声母・韻母・声調に分けると？",
+    "options": [
+      "s／ik／6",
+      "si／k／6",
+      "s／i／k6"
+    ],
+    "answer": 0,
+    "detail": "sik6 は声母 s、韻母 ik、声調6。末尾の k は韻母に含まれる閉鎖音。数字6は音の末尾に付く子音ではなく声調番号。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-022-aspiration",
+    "category": "発音の紛らわしさ",
+    "han": "巴",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 2,
+    "skill": "有気音・無気音の区別",
+    "objective": "粤拼の b と p の対立が英語の有声・無声とは異なることを理解する",
+    "question": "粤拼の「b」と「p」の主な発音上の違いは？",
+    "options": [
+      "pは息を強く出す有気音、bは無気音",
+      "bは必ず声帯を震わせる有声音、pは鼻音",
+      "どちらも同じ発音で綴りだけ違う"
+    ],
+    "answer": 0,
+    "detail": "粤拼の b は無気の両唇破裂音、p は有気の両唇破裂音。英語の b/p と同じ感覚で「声帯の振動の有無」とだけ捉えると誤解しやすい。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-023-finalstop",
+    "category": "発音の紛らわしさ",
+    "han": "十",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 2,
+    "skill": "入声音節の認識",
+    "objective": "入声音節の末尾に現れる p・t・k を識別できる",
+    "question": "粤拼で、入声音節に特有の末尾の子音の組み合わせは？",
+    "options": [
+      "-p・-t・-k",
+      "-m・-n・-ng",
+      "-s・-f・-h"
+    ],
+    "answer": 0,
+    "detail": "広東語の入声音節は、末尾が -p・-t・-k の閉鎖音で終わる。-m・-n・-ng は鼻音の韻尾。粤拼では入声も通常1〜6の声調番号で記す。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-024-vowellength",
+    "category": "発音の紛らわしさ",
+    "han": "三",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 2,
+    "skill": "韻母の対比",
+    "objective": "aaとaの表記上の違いを具体的な単語で認識できる",
+    "question": "「三 saam1」と「心 sam1」はどこが違う？",
+    "options": [
+      "三は aa、心は a という異なる母音を含む",
+      "声調が1と6で違う",
+      "最初の子音が s と z で違う"
+    ],
+    "answer": 0,
+    "detail": "三（saam1）と心（sam1）はどちらも声母 s・声調1・末尾 m。粤拼では aa と a を区別し、母音の長さ・質に違いがある。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-025-finalcontrast",
+    "category": "発音の紛らわしさ",
+    "han": "六",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 3,
+    "skill": "韻尾と声調の統合",
+    "objective": "末尾の子音と声調番号を別々の要素として読み取れる",
+    "question": "「六 luk6」と「綠 luk6」は同じ粤拼。一方「鹿 luk6」も同じ。ここから確実に言えることは？",
+    "options": [
+      "粤拼が同じでも漢字・意味が異なる語がある",
+      "末尾のkは第6声を表す記号である",
+      "同じ粤拼の語は必ず同じ意味になる"
+    ],
+    "answer": 0,
+    "detail": "六・綠・鹿はいずれも luk6 と表記される。k は韻尾の閉鎖音、6 は声調。発音だけでは区別できない同音語は文脈で判断する。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   }
 ];

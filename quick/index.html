@@ -32,6 +32,10 @@ h1{font-size:17px;letter-spacing:.11em;color:#354539;margin:6px 0 1px;font-weigh
 .subtitle{margin:0;font-size:12px;color:#344e36;line-height:1.2}
 .extra-bar{min-height:27px}.extra-bar .reading{color:#344e36;font-size:12px}.extra-bar button{min-height:27px;border:1px solid #60785d;background:#cad7b8;color:#304c34;padding:2px 9px;font-size:11px}
 .sound-message{font-size:10px;color:#344e36;min-height:0;max-width:100%}
+.phrase-context{max-width:100%;text-align:center;font-size:12px;line-height:1.4;color:#294d38;padding:3px 8px;border:1px solid #8ba27f;border-radius:6px;background:#dce9cc}
+.phrase-context b{font-size:17px;margin-right:5px}
+.phrase-context small{display:block;font-size:10px;color:#425f47}
+
 .lcd.answered{display:block;overflow-y:auto;overscroll-behavior:contain}.lcd.answered .lcd-main{display:none}
 .lcd>.feedback{margin:0;padding:15px 9px 8px;border-radius:0;background:transparent;color:#263f2b;font-size:11px;line-height:1.3;overflow-y:auto;overscroll-behavior:contain;flex:0 0 auto}
 .lcd.answered>#feedback{min-height:0;overflow:visible}
@@ -206,11 +210,11 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 </style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
 <h1>霓虹漢字 <span class="device-version">NEON HANZI / QUICK LAB</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">フレーズ練習 →</a></div>
-<details class="route-drawer" id="routeDrawer"><summary>🚉 路線・コースを変更 <span class="route-hint">いつでも切替</span></summary><div class="route-controls"><div class="course-picker"><label for="course">出題コース</label><select id="course" aria-label="出題コース"><option value="starter">入門54字</option><option value="basic100">基本100字</option><option value="daily150">香港日常150字</option><option value="scene200">生活場面200字</option><option value="roots250">字根比較250字</option><option value="all">総合300字</option></select></div><div id="scenePicker" class="course-picker hidden"><label for="scene">学習する場面</label><select id="scene" aria-label="学習する場面"><option value="all">すべて</option><option value="food">食事・カフェ</option><option value="shopping">買い物</option><option value="travel">移動・外出</option></select></div><div class="tabs" role="group" aria-label="学習モード"><button id="modeAll" aria-pressed="true">今日の10問</button><button id="modeReview" aria-pressed="false">苦手を復習</button></div>
+<details class="route-drawer" id="routeDrawer"><summary>🚉 路線・コースを変更 <span class="route-hint">いつでも切替</span></summary><div class="route-controls"><div class="course-picker"><label for="course">出題コース</label><select id="course" aria-label="出題コース"><option value="hk">★ 香港で使う漢字</option><option value="phrase">挨拶・日常表現</option><option value="rare">日本では見慣れない字</option><option value="starter">入門54字</option><option value="basic100">基本100字</option><option value="daily150">香港日常150字</option><option value="scene200">生活場面200字</option><option value="roots250">字根比較250字</option><option value="all">総合300字</option></select></div><div id="scenePicker" class="course-picker hidden"><label for="scene">学習する場面</label><select id="scene" aria-label="学習する場面"><option value="all">すべて</option><option value="food">食事・カフェ</option><option value="shopping">買い物</option><option value="travel">移動・外出</option></select></div><div class="tabs" role="group" aria-label="学習モード"><button id="modeAll" aria-pressed="true">今日の10問</button><button id="modeReview" aria-pressed="false">苦手を復習</button></div>
 </div></details>
 <div class="stats" aria-label="学習記録"><span>PLAY <b id="attempts">0</b></span><span>HIT <b id="accuracy">—</b></span><span>REVIEW <b id="due">0</b></span></div>
 <section class="panel" aria-label="速成クイズ"><div class="topline"><span id="counter">1 / 10</span><span id="status" role="status" aria-live="polite">1〜2キーで答える</span></div><div class="progress" role="progressbar" aria-label="単字クイズの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack"><div id="bar"></div></div>
-<div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div class="glyph" id="glyph" lang="zh-HK">早</div><p class="subtitle" id="meaning">早い</p><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
+<div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div class="glyph" id="glyph" lang="zh-HK">早</div><p class="subtitle" id="meaning">早い</p><div class="phrase-context hidden" id="phraseContext" aria-label="この漢字を使う表現"></div><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
 </div><div id="answerBrief" class="answer-brief hidden" role="status" aria-live="polite"></div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="false">字根を詳しく</button><button id="tabWords" type="button" aria-pressed="false">ことば</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0">·</div><div class="slot" id="slot1">·</div></div>
 <div class="desktop"><label for="typeInput" class="muted">キーボードから入力（Enterで判定）</label><input id="typeInput" type="text" maxlength="2" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin"></div>
 <div class="mobile"><p class="muted" style="text-align:center">ROOT KEYS · 字根を選ぶ</p><div class="keyboard" id="keyboard"></div></div>
@@ -227,10 +231,10 @@ const EXTRAS=window.QUICK_EXTRAS||{};
 const TRIVIA=window.QUICK_TRIVIA||[];
 const KEY="quick-lab-v1",ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const $=id=>document.getElementById(id);
-let saved;try{saved=JSON.parse(localStorage.getItem(KEY))||{}}catch{saved={}};let stats=saved.stats||{},queue=[],pos=0,typed="",done=false,helped=false,review=false,course="starter",scene="all";
+let saved;try{saved=JSON.parse(localStorage.getItem(KEY))||{}}catch{saved={}};let stats=saved.stats||{},queue=[],pos=0,typed="",done=false,helped=false,review=false,course="hk",scene="all";
 // Course preferences live separately so the legacy quick-lab-v1 progress format stays intact.
 const PREF_KEY="quick-lab-ui-v1";
-const VALID_COURSES=new Set(["starter","basic100","daily150","scene200","roots250","all"]);
+const VALID_COURSES=new Set(["hk","phrase","rare","starter","basic100","daily150","scene200","roots250","all"]);
 const VALID_SCENES=new Set(["all","food","shopping","travel"]);
 try{const p=JSON.parse(localStorage.getItem(PREF_KEY)||"{}");if(VALID_COURSES.has(p.course))course=p.course;if(VALID_SCENES.has(p.scene))scene=p.scene;if(typeof p.review==="boolean")review=p.review}catch{}
 $("course").value=course;$("scenePicker").classList.toggle("hidden",!["scene200","all"].includes(course));$("scene").value=scene;
@@ -239,13 +243,40 @@ const today=()=>{let d=new Date();return [d.getFullYear(),String(d.getMonth()+1)
 function persist(){try{localStorage.setItem(KEY,JSON.stringify({stats}))}catch{}}
 function due(item){let s=stats[item.han];return !!(s&&s.due&&s.due<=today())}
 const SCENES={food:new Set("餐廳菜肉魚雞牛豬蛋麵米粥包甜糖鹽辣凍熱冰杯碗筷叉刀店單埋位坐飽餓味湯果蘋蕉橙檸汁奶豆酒啤瓶"),shopping:new Set("店單埋位市場超商價錢買賣少"),travel:new Set("搭車返行街巴士地鐵落站到遲夜飛路")};
-function inCourse(x){const tier=course==="all"||(course==="starter"?!["basic100","daily150","scene200","roots250","work300"].includes(x.group):course==="basic100"?!["daily150","scene200","roots250","work300"].includes(x.group):course==="daily150"?!["scene200","roots250","work300"].includes(x.group):course==="scene200"?!["roots250","work300"].includes(x.group):x.group!=="work300");return tier&&(!["all","scene200"].includes(course)||scene==="all"||SCENES[scene].has(x.han))}
-function build(){const pool=DATA.filter(x=>inCourse(x));const dueList=pool.filter(due);const others=pool.filter(x=>!due(x)).sort((a,b)=>(stats[a.han]?.attempts||0)-(stats[b.han]?.attempts||0));queue=(review?dueList:[...dueList,...others]).slice(0,10);pos=0;render()}
+// Fixed, curriculum-based priority. No personal scoring or adaptive ranking.
+const HK_COMMON=new Set("我你好早晨唔該多謝請問係佢有冇嘅咗啲嘢咩咁喺呢嗰嚟睇搵識緊啱食飲買去返搭車錢幾邊度想要可唔得會同都仲講聽知做開心");
+const HK_RARE=new Set("唔該冇嘅咗啲嘢咩咁喺嗰嚟睇搵緊啱佢係邊噉咗咁哋乜嘥嘢");
+const GREETINGS=["唔該","多謝","你好","早晨","請問","唔好","唔係","有冇","我嘅","喺度","食咗","做嘢","好食","開心","我愛你","你哋","佢哋","幾錢"];
+const PHRASE_CHARS=new Set(GREETINGS.join(""));
+let batchIndex=0;
+function phraseFor(q){
+ const words=EXTRAS[q.han]?.words||[];
+ return words.find(w=>GREETINGS.includes(w[0])&&w[0].includes(q.han))||words.find(w=>w[0].includes(q.han))||null;
+}
+function inCourse(x){
+ if(course==="hk")return HK_COMMON.has(x.han)||HK_RARE.has(x.han);
+ if(course==="phrase")return PHRASE_CHARS.has(x.han)&&!!phraseFor(x);
+ if(course==="rare")return HK_RARE.has(x.han);
+ const tier=course==="all"||(course==="starter"?!["basic100","daily150","scene200","roots250","work300"].includes(x.group):course==="basic100"?!["daily150","scene200","roots250","work300"].includes(x.group):course==="daily150"?!["scene200","roots250","work300"].includes(x.group):course==="scene200"?!["roots250","work300"].includes(x.group):x.group!=="work300");
+ return tier&&(!["all","scene200"].includes(course)||scene==="all"||SCENES[scene].has(x.han));
+}
+function build(){
+ const pool=DATA.filter(inCourse);
+ const dueList=pool.filter(due);
+ // Rotate through the fixed curriculum; no user-specific performance ranking.
+ const order=pool.filter(x=>!due(x));
+ const priority=x=>course==="rare"?(HK_RARE.has(x.han)?0:1):course==="phrase"?(GREETINGS.some(w=>w.includes(x.han))?0:1):HK_RARE.has(x.han)?0:HK_COMMON.has(x.han)?1:2;
+ order.sort((a,b)=>priority(a)-priority(b)||a.han.localeCompare(b.han,"zh-Hant"));
+ const rotated=order.length?order.slice((batchIndex*10)%order.length).concat(order.slice(0,(batchIndex*10)%order.length)):[];
+ // Due reviews are offered first, while the remaining slots cover fresh curriculum characters.
+ const selected=review?dueList:[...dueList,...rotated.filter(x=>!dueList.includes(x))];
+ queue=selected.slice(0,10);pos=0;batchIndex++;render();
+}
 function current(){return queue[pos]}
 function totals(){let all=Object.values(stats),attempts=all.reduce((n,s)=>n+(s.attempts||0),0),wins=all.reduce((n,s)=>n+(s.wins||0),0);$("attempts").textContent=attempts;$("accuracy").textContent=attempts?Math.round(wins/attempts*100)+"%":"—";$("due").textContent=DATA.filter(inCourse).filter(due).length}
 function slots(){let length=current()?.code.length||2;for(let i=0;i<2;i++){let el=$("slot"+i);el.textContent=typed[i]||"·";el.classList.toggle("filled",!!typed[i]);el.classList.toggle("hidden",i>=length)}$("check").disabled=typed.length!==length||done;$("backspace").disabled=done||!typed.length;$("typeInput").value=typed}
-function render(){$("lcd").classList.remove("answered");$("answerBrief").classList.add("hidden");totals();let q=current();$("modeAll").setAttribute("aria-pressed",String(!review));$("modeReview").setAttribute("aria-pressed",String(review));if(!q){$("glyph").textContent="✓";$("meaning").textContent=review?"復習待ちの漢字はありません":"今日の問題は終了！";$("counter").textContent="完了";$("bar").style.width="100%";$("progressTrack").setAttribute("aria-valuenow","100");$("status").textContent="おつかれさま";$("check").disabled=true;$("hint").disabled=true;$("backspace").disabled=true;$("next").textContent=review?"通常学習に戻る":"次の10問";$("next").classList.remove("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("feedback").classList.add("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("reading").textContent="";$("playChar").disabled=true;return}
-typed="";done=false;helped=false;$("glyph").textContent=q.han;$("meaning").textContent=q.meaning;$("reading").textContent=EXTRAS[q.han]?.jyut||"";$("playChar").disabled=!EXTRAS[q.han]?.jyut;$("soundMessage").textContent="";$("counter").textContent=(pos+1)+" / "+queue.length;$("bar").style.width=(pos/queue.length*100)+"%";$("progressTrack").setAttribute("aria-valuenow",String(Math.round(pos/queue.length*100)));$("status").textContent=q.code.length+"キーで答える";$("feedback").classList.add("hidden");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("next").classList.add("hidden");$("hint").disabled=false;slots()}
+function render(){$("lcd").classList.remove("answered");$("answerBrief").classList.add("hidden");totals();let q=current();$("modeAll").setAttribute("aria-pressed",String(!review));$("modeReview").setAttribute("aria-pressed",String(review));if(!q){$("phraseContext").classList.add("hidden");$("glyph").textContent="✓";$("meaning").textContent=review?"復習待ちの漢字はありません":"今日の問題は終了！";$("counter").textContent="完了";$("bar").style.width="100%";$("progressTrack").setAttribute("aria-valuenow","100");$("status").textContent="おつかれさま";$("check").disabled=true;$("hint").disabled=true;$("backspace").disabled=true;$("next").textContent=review?"通常学習に戻る":"次の10問";$("next").classList.remove("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("feedback").classList.add("hidden");$("lcd").classList.remove("answered");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("reading").textContent="";$("playChar").disabled=true;return}
+typed="";done=false;helped=false;const context=$("phraseContext");const phrase=course==="phrase"?phraseFor(q):null;context.replaceChildren();context.classList.toggle("hidden",!phrase);if(phrase){const word=document.createElement("b");word.textContent=phrase[0];const desc=document.createElement("small");desc.textContent=phrase[2]+" · "+phrase[1];context.append(word,desc)}$("glyph").textContent=q.han;$("meaning").textContent=q.meaning;$("reading").textContent=EXTRAS[q.han]?.jyut||"";$("playChar").disabled=!EXTRAS[q.han]?.jyut;$("soundMessage").textContent="";$("counter").textContent=(pos+1)+" / "+queue.length;$("bar").style.width=(pos/queue.length*100)+"%";$("progressTrack").setAttribute("aria-valuenow",String(Math.round(pos/queue.length*100)));$("status").textContent=q.code.length+"キーで答える";$("feedback").classList.add("hidden");$("resultTabs").classList.add("hidden");$("compounds").classList.add("hidden");$("hintBox").classList.add("hidden");$("next").classList.add("hidden");$("hint").disabled=false;slots()}
 function append(letter){if(done||!current()||typed.length>=current().code.length)return;typed+=letter;slots()}
 function erase(){if(!done){typed=typed.slice(0,-1);slots()}}
 function addDays(n){let d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+n);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")}

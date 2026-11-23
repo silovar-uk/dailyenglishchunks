@@ -105,6 +105,7 @@ vm.runInContext('course="starter";build()',context);
 assert.equal(element("glyph").textContent,"早","starter course still starts with original characters");
 vm.runInContext('append("A");append("J");check()', context);
 assert.equal(element("status").textContent, "正解", "two-key answer works");
+assert.equal(element("lcd").classList.contains("answered"),true,"answer shows feedback mode");
 assert.match(element("feedback").innerHTML, /日 ＋ 十/, "visual breakdown appears");
 assert.ok(element("compounds").children.length>=2,"compounds shown after answer");
 
@@ -114,6 +115,7 @@ vm.runInContext('setResultTab("words")', context);
 assert.equal(element("tabWords").attributes["aria-pressed"], "true", "words tab selected");
 assert.equal(element("compounds").classList.contains("hidden"), false, "vocabulary is visible");
 assert.equal(element("feedback").classList.contains("hidden"), true, "root explanation hidden");
+assert.equal(element("compounds").scrollTop,0,"words pane scroll resets");
 vm.runInContext('setResultTab("roots")', context);
 assert.equal(element("feedback").classList.contains("hidden"), false, "root explanation restored");
 assert.equal(element("compounds").classList.contains("hidden"), true, "vocabulary hidden");
@@ -121,6 +123,8 @@ assert.equal(element("compounds").classList.contains("hidden"), true, "vocabular
 assert.equal(element("reading").textContent,"zou2","Cantonese reading appears");
 vm.runInContext("next()", context);
 assert.equal(element("glyph").textContent, "晨", "next question advances");
+assert.equal(element("lcd").classList.contains("answered"),false,"next question must restore glyph display");
+assert.equal(element("resultTabs").classList.contains("hidden"),true,"next question hides answer tabs");
 element("hint").onclick();
 assert.ok(!element("hintBox").textContent.includes("undefined"), "hint must never show undefined");
 vm.runInContext('append("A");append("M");check()', context);
@@ -130,6 +134,8 @@ assert.equal(element("glyph").textContent, "日");
 assert.equal(element("slot1").classList.contains("hidden"), true, "single-key character uses one slot");
 vm.runInContext('append("A");check()', context);
 assert.equal(element("status").textContent, "正解", "single-key answer works");
+vm.runInContext("next()",context);
+assert.equal(element("lcd").classList.contains("answered"),false,"single-key next restores question display");
 assert.ok(!element("meaning").textContent.includes("undefined"), "missing Jyutping must be omitted");
 assert.ok(saved.has("quick-lab-v1"), "progress is saved locally");
 

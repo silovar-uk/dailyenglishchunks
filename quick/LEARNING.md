@@ -1,21 +1,34 @@
-# Quick Lab — Phase 2: 字根の見方
-## 学習の原則
-倉頡の字根キーは、漢字の部首と一致しません。Vは「女」のほか、補助字形を含む分類です。
-「晨」= 倉頡 AMMV → 速成 AV。上の「日」がA、下の「辰」の最後の字形がVです。
-ただし、形を見ただけで全ての曲線をVと判断してはいけません。字形分解と取碼規則が必要です。
+# Quick Lab — 学習データとUX仕様
 
-## データ管理
-現在の6字はMVP用。第3代系のコードを基準に、教材を拡張する前に各文字のコードと補助字形を照合します。
-現状の説明文は学習上の略記であり、正式な全字根分解表ではありません。
+## 何を覚えるか
+- 速成は倉頡の先頭・末尾の字根コードを使う。**1キーで入力する基本字根もある**。
+- 倉頡で「女（V）」と呼ぶキーには補助字形も属する。漢字「女」が見える必要はない。
+- 例：**晨**＝倉頡 **AMMV** → 速成 **AV**。「日」はAで「辰」の末尾はV。
+- 文字の部首・漢字の意味・字根の符号は同じものではない。
 
-## Phase 2 UX検証項目
-- iPhone: 2タップ入力、画面キーボードが開かない、結果が画面外に押し出されない
-- PC: キーボード入力、Enterで判定・次へ、Backspaceで削除
-- 復習: 間違い・ヒント使用時は再学習対象、正答時は復習間隔が延長
-- 記録: リロード後も残り、リセットで削除
-- アクセシビリティ: フォーカス、色以外の正誤表示、スクリーンリーダー向け結果通知
+## 第5代を基準にした問題データ
+- `data.js`：初期54漢字、10文字は1キー。各文字に倉頡原碼・速成碼・日本語の意味・可視化用の字形説明・典拠URLを保存。
+- 原典：Rime `cangjie5.base.dict.yaml`。速成は倉頡碼の首尾を利用（Rime Quickの実装）。
+- 出典のコード表には複数候補を持つ漢字がある。現教材ではそのうちの1コードを採用している。
+- 第3代と第5代では一部コードが異なるため、Windows等のIMEと一致しないケースがあり得る。最終的なOS一致検証は未実施。
+- 分解画面で「字形のヒント」と記した箇所は説明用の簡略表現。すべての筆画を厳密に切り出した画像ではない。
 
-## 参照
-- Microsoft Traditional Chinese IME: https://learn.microsoft.com/en-us/globalization/input/traditional-chinese-ime
-- Rime Quick dictionary: https://github.com/rime/rime-quick
-- Unicode Cangjie generation discussion: https://www.unicode.org/L2/L2025/25216-kcangjie.pdf
+## UX
+- 1回10問。初学者を優先し、間違えた問題を適宜再出題。
+- スマホは画面内の字根キーボード、PCは物理キーボードに対応。
+- 回答後、最初/最後の字根・コード・解説をインライン表示。
+- 先頭・末尾のどちらを間違えたか個別にカウント。
+- 正解の連続回数に応じて翌日・3日後・7日後・14日後・30日後に復習予定を設定。誤答とヒント使用時は当日復習。
+- `localStorage` に学習履歴保存。データはサーバーへ送信しない。
+
+## テスト
+- `node quick/test-data.js`：54文字のコードの整合性、重複、解説、画面のJS構文と基本操作を検査。
+- GitHub Actions `quick-lab-check.yml` で自動実行する。
+- **未実施**：iPhoneの実機テスト、実際のIMEを使った候補選択テスト、字根の筆画アニメーション。
+
+## 参考資料
+- [Rime Quick](https://github.com/rime/rime-quick)
+- [Rime倉頡第5代コード表](https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml)
+- [晨の分解とコード](https://www.xn--0vqu8au0tro7d.com/list/char/%E6%99%A8)
+- [Microsoft Traditional Chinese IME](https://learn.microsoft.com/en-us/globalization/input/traditional-chinese-ime)
+- [Unicode：倉頡の世代差](https://www.unicode.org/L2/L2025/25216-kcangjie.pdf)

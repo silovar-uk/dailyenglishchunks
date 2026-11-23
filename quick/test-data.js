@@ -26,6 +26,15 @@ assert.match(html, /function inCourse\(x\)/, "course filtering function exists")
 assert.match(html, /function rootPeers\(q\)/, "root comparison function exists");
 assert.match(html, /quick-lab-v1/, "existing history key retained");
 assert.equal(data.length, new Set(data.map(x => x.han)).size, "unique glyphs");
+assert.equal(Object.keys(extras).length,300,"300 reading records");
+for(const x of data){
+  assert.match(extras[x.han].jyut,/^[a-z]+[1-6]$/,"valid Jyutping for "+x.han);
+  for(const word of extras[x.han].words){
+    assert.equal(word.length,3,"complete word tuple for "+x.han);
+    assert.ok(word.every(Boolean),"nonempty word tuple for "+x.han);
+    assert.ok(word[0].includes(x.han),"example must contain target character "+x.han+" / "+word[0]);
+  }
+}
 const rootKeys = new Set("ABCDEFGHIJKLMNOPQRSTUVWY");
 for (const item of data) {
   assert.equal(Array.from(item.han).length, 1, "one Hanzi per item: " + item.han);

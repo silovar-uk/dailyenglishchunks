@@ -77,6 +77,17 @@ vm.runInContext('append("A");append("J");check()', context);
 assert.equal(element("status").textContent, "正解", "two-key answer works");
 assert.match(element("feedback").innerHTML, /日 ＋ 十/, "visual breakdown appears");
 assert.ok(element("compounds").children.length>=2,"compounds shown after answer");
+
+assert.match(html, /id="tabRoots"/, "roots tab exists");
+assert.match(html, /id="tabWords"/, "words tab exists");
+vm.runInContext('setResultTab("words")', context);
+assert.equal(element("tabWords").attributes["aria-pressed"], "true", "words tab selected");
+assert.equal(element("compounds").classList.contains("hidden"), false, "vocabulary is visible");
+assert.equal(element("feedback").classList.contains("hidden"), true, "root explanation hidden");
+vm.runInContext('setResultTab("roots")', context);
+assert.equal(element("feedback").classList.contains("hidden"), false, "root explanation restored");
+assert.equal(element("compounds").classList.contains("hidden"), true, "vocabulary hidden");
+
 assert.equal(element("reading").textContent,"zou2","Cantonese reading appears");
 vm.runInContext("next()", context);
 assert.equal(element("glyph").textContent, "晨", "next question advances");

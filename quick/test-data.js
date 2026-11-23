@@ -6,9 +6,13 @@ const path = require("node:path");
 const base = __dirname;
 const html = fs.readFileSync(path.join(base, "index.html"), "utf8");
 const dataCode = fs.readFileSync(path.join(base, "data.js"), "utf8");
+const extrasCode = fs.readFileSync(path.join(base, "extras.js"), "utf8");
 const sandbox = { window: {} };
 vm.runInNewContext(dataCode, sandbox, { filename: "quick/data.js" });
+vm.runInNewContext(extrasCode, sandbox, {filename:"quick/extras.js"});
+const extras=sandbox.window.QUICK_EXTRAS;
 const data = sandbox.window.QUICK_DATA;
+for(const item of data){assert.ok(extras[item.han]?.jyut,"Jyutping for "+item.han);assert.ok(extras[item.han].words?.length>=1,"Compounds for "+item.han)}
 assert.ok(Array.isArray(data) && data.length >= 50, "at least 50 verified items");
 assert.equal(data.length, new Set(data.map(x => x.han)).size, "unique glyphs");
 const rootKeys = new Set("ABCDEFGHIJKLMNOPQRSTUVWY");
@@ -25,6 +29,7 @@ const expected = {早:"AJ", 晨:"AV", 我:"HI", 你:"OF", 好:"VD", 明:"AB", �
 for (const [han, code] of Object.entries(expected)) {
   assert.equal(data.find(item => item.han === han)?.code, code, "known sample: " + han);
 }
+assert.match(html, /<script src="\.\/extras\.js"><\/script>/, "extras loaded");
 assert.match(html, /<script src="\.\/data\.js"><\/script>/, "dataset must be loaded before application script");
 const inline = html.match(/<script>([\s\S]*?)<\/script>\s*<\/body>/);
 assert.ok(inline, "inline app script must exist");
@@ -40,7 +45,8 @@ function element(id) {
     const classes = new Set();
     nodes.set(id, {
       id, textContent: "", innerHTML: "", value: "", disabled: false,
-      style: {}, attributes: {}, handlers: {},
+      style: {}, attributes: {}, handlers: {}, children:[],
+      replaceChildren(){this.children=[]},append(...els){this.children.push(...els)},
       classList: {
         add(name) { classes.add(name); },
         remove(name) { classes.delete(name); },
@@ -57,8 +63,8 @@ function element(id) {
 }
 const saved = new Map();
 const context = vm.createContext({
-  window: { QUICK_DATA: data },
-  document: { getElementById: element, addEventListener() {} },
+  window: { QUICK_DATA: data, QUICK_EXTRAS: extras },
+  document: { getElementById: element, createElement(tag){return {tagName:tag,children:[],className:"",textContent:"",type:"",setAttribute(){},append(...els){this.children.push(...els)}}},addEventListener() {} },
   localStorage: {
     getItem(k) { return saved.get(k) || null; },
     setItem(k, v) { saved.set(k, v); }
@@ -70,6 +76,8 @@ assert.equal(element("glyph").textContent, "早", "initial question appears");
 vm.runInContext('append("A");append("J");check()', context);
 assert.equal(element("status").textContent, "正解", "two-key answer works");
 assert.match(element("feedback").innerHTML, /日 ＋ 十/, "visual breakdown appears");
+assert.ok(element("compounds").children.length>=2,"compounds shown after answer");
+assert.equal(element("reading").textContent,"zou2","Cantonese reading appears");
 vm.runInContext("next()", context);
 assert.equal(element("glyph").textContent, "晨", "next question advances");
 element("hint").onclick();

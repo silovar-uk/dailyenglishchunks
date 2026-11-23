@@ -27,6 +27,8 @@ assert.match(html, /function rootPeers\(q\)/, "root comparison function exists")
 assert.match(html, /quick-lab-v1/, "existing history key retained");
 assert.equal(data.length, new Set(data.map(x => x.han)).size, "unique glyphs");
 assert.equal(Object.keys(extras).length,300,"300 reading records");
+for(const han of ["聽","上","會","畫"]){assert.ok(extras[han].readingNote,"pronunciation explanation for "+han);assert.ok(extras[han].words.some(w=>w[1].split(" ").some(s=>s!==extras[han].jyut)),"context-dependent example for "+han)}
+assert.match(html,/readingNote/,"pronunciation note renderer exists");
 for(const x of data){
   assert.match(extras[x.han].jyut,/^[a-z]+[1-6]$/,"valid Jyutping for "+x.han);
   for(const word of extras[x.han].words){

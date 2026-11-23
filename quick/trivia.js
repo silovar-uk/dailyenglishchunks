@@ -1,5 +1,5 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
-// Scenario-based questions target decisions a learner may face in Hong Kong.
+// Cultural questions emphasize relationships and explanations, not only isolated facts.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
@@ -133,17 +133,17 @@ window.QUICK_TRIVIA = [
     "id": "mtr",
     "category": "交通・MTR",
     "han": "鐵",
-    "question": "香港のMTRの正式な英語名は？",
+    "question": "香港のMTRと香港トラムを比較した説明として適切なのは？",
     "options": [
-      "Mass Transit Railway",
-      "Metropolitan Transport Rail",
-      "Mass Transit Route"
+      "MTRは都市鉄道網、トラムは主に香港島北岸を走る路面電車",
+      "MTRは香港島だけ、トラムは空港への専用高速鉄道",
+      "MTRとトラムは名称が違うだけの同一交通機関"
     ],
     "answer": 0,
-    "detail": "MTRはMass Transit Railwayの略。香港の鉄道網を指す。",
+    "detail": "MTRは香港の都市鉄道網を担い、香港トラムは香港島の路面電車。都市の移動手段は用途や地域で使い分けられる。",
     "source": "https://www.mtr.com.hk/en/customer/services/system_map.html",
     "skill": "香港の生活知識",
-    "objective": "MTRの英語正式名称を識別できる"
+    "objective": "香港の交通機関を運行範囲と役割で比較できる"
   },
   {
     "id": "tram",
@@ -165,17 +165,17 @@ window.QUICK_TRIVIA = [
     "id": "film",
     "category": "香港映画・ドラマ",
     "han": "影",
-    "question": "香港映画の歴史資料を公開する公的機関は？",
+    "question": "香港電影資料館の役割を、一般の映画館と区別すると？",
     "options": [
-      "香港電影資料館",
-      "香港文化博物館",
-      "香港藝術館"
+      "映画資料の収集・保存・研究・公開",
+      "公開中の新作映画の興行収入だけを集計",
+      "映画の撮影許可を一元的に発行"
     ],
     "answer": 0,
-    "detail": "香港電影資料館（Hong Kong Film Archive）は映画資料の収集・保存・公開を担う。",
+    "detail": "香港電影資料館は映画文化の記録を収集・保存し、上映や展示などで公開する。商業上映を主とする映画館とは役割が異なる。",
     "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html",
     "skill": "香港の生活知識",
-    "objective": "映画資料を保存・公開する機関を識別できる"
+    "objective": "文化資料の保存機関と商業映画館の機能の違いを理解できる"
   },
   {
     "id": "food",
@@ -229,17 +229,17 @@ window.QUICK_TRIVIA = [
     "id": "history",
     "category": "香港の歴史",
     "han": "港",
-    "question": "香港が英国から中国へ返還された年は？",
+    "question": "1984年の中英共同声明と1997年の香港返還の関係として正しいのは？",
     "options": [
-      "1984年",
-      "1997年",
-      "2008年"
+      "1984年に返還方針を定め、1997年に主権移譲が行われた",
+      "1984年に返還が完了し、1997年に共同声明が署名された",
+      "1984年に香港が独立し、1997年に英国領へ戻った"
     ],
-    "answer": 1,
-    "detail": "1997年7月1日に香港の主権が英国から中国へ移った。",
-    "source": "https://www.historymuseum.gov.hk/en/web/mh/index.html",
+    "answer": 0,
+    "detail": "中英共同声明は1984年に署名され、香港の主権移譲は1997年7月1日に行われた。合意の時点と実施の時点は異なる。",
+    "source": "https://www.cmab.gov.hk/en/issues/jd2.htm",
     "skill": "香港の歴史",
-    "objective": "1997年の香港返還という基本年表を理解できる"
+    "objective": "香港返還の合意と実施を時系列で区別できる"
   },
   {
     "id": "input",
@@ -416,5 +416,69 @@ window.QUICK_TRIVIA = [
     "answer": 0,
     "detail": "地鐵站喺邊度？（dei6 tit3 zaam6 hai2 bin1 dou6）＝地下鉄の駅はどこ？「喺邊度」で場所を尋ねる。",
     "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "culture-declaration",
+    "category": "香港の歴史",
+    "han": "港",
+    "skill": "香港の歴史",
+    "objective": "共同声明と基本法の役割を区別できる",
+    "question": "香港の返還に関して「中英共同声明」と「香港基本法」の関係として適切なのは？",
+    "options": [
+      "共同声明は中英間の国際的合意、基本法は香港特別行政区の制度を定める法律",
+      "共同声明は香港の鉄道規則、基本法は英国議会の選挙法",
+      "両方とも香港の映画産業だけを対象とする条例"
+    ],
+    "answer": 0,
+    "detail": "中英共同声明は英国と中国の合意文書。香港基本法は香港特別行政区の制度を定める法律。両者の法的位置づけは同一ではない。",
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html"
+  },
+  {
+    "id": "culture-tram",
+    "category": "香港の交通史",
+    "han": "車",
+    "skill": "香港の生活知識",
+    "objective": "トラムとMTRの歴史的な登場順を理解できる",
+    "question": "香港のトラムとMTRでは、営業開始が早いのはどちら？",
+    "options": [
+      "香港トラム（1904年）",
+      "MTR（1979年）",
+      "両方1979年"
+    ],
+    "answer": 0,
+    "detail": "香港トラムは1904年に開業。MTRの最初の営業区間は1979年に開業した。都市交通の発展段階が異なる。",
+    "source": "https://www.hktramways.com/en/"
+  },
+  {
+    "id": "culture-cha",
+    "category": "香港の食文化",
+    "han": "餐",
+    "skill": "香港の生活知識",
+    "objective": "茶餐廳を伝統的な飲茶店と区別できる",
+    "question": "茶餐廳が香港の食文化で独特なのは、どんなメニュー構成？",
+    "options": [
+      "香港式の飲み物と西洋風・中華風の軽食や食事が共存する",
+      "点心のコース料理だけを予約制で提供する",
+      "茶葉の販売だけを行い食事は扱わない"
+    ],
+    "answer": 0,
+    "detail": "茶餐廳は香港式ミルクティーなどの飲み物と、多様な軽食・食事を扱う大衆的な飲食店。飲茶を中心とする店とは異なる。",
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html"
+  },
+  {
+    "id": "culture-archive",
+    "category": "香港映画・ドラマ",
+    "han": "影",
+    "skill": "言語文化",
+    "objective": "映画資料の保存と上映の両方が文化継承に必要な理由を考えられる",
+    "question": "過去の香港映画を次世代に残すうえで、資料館が行う活動として最も包括的なのは？",
+    "options": [
+      "フィルムなどを保存し、調査・展示・上映にも活用する",
+      "作品名の人気投票だけを毎年実施する",
+      "公開作品をすべて新作映画に限定する"
+    ],
+    "answer": 0,
+    "detail": "映画資料館は資料の保存だけでなく、調査や公開を通じて映画史を伝える。映画文化を残すには保存とアクセスの双方が重要。",
+    "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html"
   }
 ];

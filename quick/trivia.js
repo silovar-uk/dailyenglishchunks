@@ -1745,5 +1745,100 @@ window.QUICK_TRIVIA = [
     "detail": "香港セブンズは7人制ラグビーの国際大会。7人制は通常の15人制ラグビーと異なる形式で、試合時間や人数にも違いがある。『七人』は出場チーム数や開催地区数ではない。",
     "source": "https://hksevens.com/",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-066-traditional",
+    "category": "繁体字・入力・総合応用",
+    "han": "學",
+    "topic": "繁体字・速成・総合",
+    "difficulty": 1,
+    "skill": "繁体字と日本語字体の区別",
+    "objective": "香港で使われる繁体字の學を日本語の学と対応づけられる",
+    "question": "香港の学校の看板で「學校」と書かれていた。日本語の「学校」に対応するのは？",
+    "options": [
+      "學校",
+      "学校",
+      "校學"
+    ],
+    "answer": 0,
+    "detail": "學校（hok6 haau6）は学校。香港の繁体字では「學」を使う。日本語の新字体・中国語の簡体字の「学」と字体が異なる。",
+    "source": "https://www.edb.gov.hk/en/index.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-067-quick-input",
+    "category": "繁体字・入力・総合応用",
+    "han": "速",
+    "topic": "繁体字・速成・総合",
+    "difficulty": 2,
+    "skill": "速成入力の原理",
+    "objective": "速成入力が倉頡コードの先頭と末尾を利用することを理解する",
+    "question": "倉頡入力と比べた「速成輸入法（Quick）」の特徴として正しいのは？",
+    "options": [
+      "原則として倉頡コードの最初と最後の字根を使って候補を選ぶ",
+      "必ず広東語の発音だけで入力する",
+      "日本語のローマ字をそのまま入力する"
+    ],
+    "answer": 0,
+    "detail": "速成（suk1 sing4）は倉頡の字形分解をもとに、原則として最初と最後の字根のコードで候補を呼び出す方式。複数候補から目的の字を選ぶ必要がある。既存の『速成は倉頡コードのどこを使うか』問題と関連するため、実際の候補選択に注目する。",
+    "source": "https://en.wikipedia.org/wiki/Simplified_Cangjie",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-068-candidate",
+    "category": "繁体字・入力・総合応用",
+    "han": "選",
+    "topic": "繁体字・速成・総合",
+    "difficulty": 2,
+    "skill": "候補選択と同コード",
+    "objective": "速成で同じ入力コードに複数の文字が出る理由を理解する",
+    "question": "速成入力で同じキーの組み合わせから複数の漢字候補が出た。最も適切な操作は？",
+    "options": [
+      "候補一覧から目的の漢字を選ぶ",
+      "すべて同じ意味の漢字なのでどれでもよい",
+      "必ず最初の候補が正しいので選択不要"
+    ],
+    "answer": 0,
+    "detail": "速成は倉頡の情報を短縮するため、同じ入力コードに複数の字が対応することがある。文脈や字形を確認し、候補から選択する。",
+    "source": "https://en.wikipedia.org/wiki/Simplified_Cangjie",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-069-sign-reading",
+    "category": "繁体字・入力・総合応用",
+    "han": "請",
+    "topic": "繁体字・速成・総合",
+    "difficulty": 2,
+    "skill": "公共表示の読解",
+    "objective": "請勿吸煙という繁体字の禁止表示を理解する",
+    "question": "香港の建物に「請勿吸煙」と表示されている。何を求めている？",
+    "options": [
+      "禁煙に協力すること",
+      "ここで喫煙すること",
+      "飲食物を持ち込むこと"
+    ],
+    "answer": 0,
+    "detail": "請（cing2）は丁寧な依頼、勿（mat6）は『〜するな』、吸煙（kap1 jin1）は喫煙。請勿吸煙は『喫煙しないでください』。",
+    "source": "https://www.tco.gov.hk/english/legislation/legislation.html",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-070-integrated",
+    "category": "繁体字・入力・総合応用",
+    "han": "票",
+    "topic": "繁体字・速成・総合",
+    "difficulty": 3,
+    "skill": "移動・数量・支払いの総合読解",
+    "objective": "目的地・人数・支払額を分けて広東語の依頼を理解する",
+    "question": "切符売り場で「唔該，兩張去中環嘅飛，一共幾多錢？」と言った。尋ねているのは？",
+    "options": [
+      "中環行きの切符2枚の合計金額",
+      "中環からの帰りの切符1枚の時刻",
+      "中環で使える八達通の残高"
+    ],
+    "answer": 0,
+    "detail": "唔該（m4 goi1）は呼びかけ、兩張（loeng5 zoeng1）は2枚、去中環嘅飛は中環行きの切符、一共幾多錢（jat1 gung6 gei2 do1 cin2）は合計いくらか。実際の交通機関では券売機や八達通など購入方法が異なるため、これは語句の総合読解問題。",
+    "source": "https://words.hk/zidin/%E4%B8%80%E5%85%B1",
+    "sourceReview": "pending-specific-reference"
   }
 ];

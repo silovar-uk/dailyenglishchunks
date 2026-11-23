@@ -229,7 +229,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered.result-compact .mistake-note{display:none}
 @media(min-width:700px){.result-workspace{margin-top:12px}.result-workspace .feedback{max-height:420px}}
 #next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
-</style><link rel="stylesheet" href="./motion.css"><link rel="stylesheet" href="./result-theme.css"></head><body><main>
+</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css"></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語のフレーズ入力練習へ">フレーズ練習 →</a></header>
 <h1>霓虹漢字 <span class="device-version">NEON HANZI / QUICK LAB</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">フレーズ練習 →</a></div>
 <details class="route-drawer" id="routeDrawer"><summary>🚉 路線・コースを変更 <span class="route-hint">いつでも切替</span></summary><div class="route-controls"><div class="course-picker"><label for="course">出題コース</label><select id="course" aria-label="出題コース"><option value="hk">★ 香港で使う漢字</option><option value="phrase">挨拶・日常表現</option><option value="rare">日本では見慣れない字</option><option value="starter">入門54字</option><option value="basic100">基本100字</option><option value="daily150">香港日常150字</option><option value="scene200">生活場面200字</option><option value="roots250">字根比較250字</option><option value="all">総合300字</option></select></div><div id="scenePicker" class="course-picker hidden"><label for="scene">学習する場面</label><select id="scene" aria-label="学習する場面"><option value="all">すべて</option><option value="food">食事・カフェ</option><option value="shopping">買い物</option><option value="travel">移動・外出</option></select></div><div class="tabs" role="group" aria-label="学習モード"><button id="modeAll" aria-pressed="true">今日の10問</button><button id="modeReview" aria-pressed="false">苦手を復習</button></div>
@@ -246,7 +246,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 <details id="triviaDrawer" class="trivia-drawer"><summary>✦ 路地裏の発見 <span>豆知識を開く（任意）</span></summary><section id="triviaPanel" class="trivia-panel" aria-label="香港の豆知識"><h2 id="triviaTitle">✦ 今日の香港豆知識</h2><p class="trivia-meta" id="triviaMeta"></p><p class="trivia-question" id="triviaQuestion"></p><div class="trivia-choices" id="triviaChoices" role="group" aria-label="豆知識の3択"></div><div id="triviaAnswer" class="trivia-answer hidden" role="status"></div><a id="triviaSource" class="trivia-source hidden" target="_blank" rel="noopener noreferrer">出典を確認する</a><div class="trivia-actions"><button id="triviaDaily" type="button">今日の雑学</button><button id="triviaShuffle" type="button">別の雑学 ↻</button></div></section></details>
 <div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
 <p class="foot">倉頡第5代を基準にした学習用コード。IMEごとの候補順は異なります。学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。<a href="./LEARNING.md">字根の学習メモ</a></p>
-</main><script src="./data.js"></script><script src="./extras.js"></script><script src="./trivia.js"></script><script src="./question-shuffle.js"></script><script src="./motion.js"></script><script>
+</main><script src="./data.js"></script><script src="./extras.js"></script><script src="./trivia.js"></script><script src="./question-shuffle.js?v=neon-shuffle-01"></script><script src="./motion.js?v=neon-shuffle-01"></script><script>
 "use strict";
 const DATA=window.QUICK_DATA||[];
 const EXTRAS=window.QUICK_EXTRAS||{};
@@ -318,7 +318,7 @@ function shuffleQuestion(){
   // Drops unfinished input and hints, but does not modify any learning history.
   render();
   $("status").textContent="✦ 街角チェンジ · "+current().code.length+"キー";
-  window.QuickMotion?.shuffleSign();
+  window.QuickMotion?.shuffleSign?.();
 }
 function updateShuffleButton(q){
   const button=$("shuffleQuestion");

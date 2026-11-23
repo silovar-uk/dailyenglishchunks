@@ -105,7 +105,8 @@ function phraseEl(id) {
     phraseNodes.set(id,{
       id, textContent:"",innerHTML:"",value:"",disabled:false,style:{},
       classList:{add(n){classes.add(n)},remove(n){classes.delete(n)},toggle(n,on){if(on)classes.add(n);else classes.delete(n)},contains(n){return classes.has(n)}},
-      addEventListener(name,fn){this["on"+name]=fn}
+      addEventListener(name,fn){this["on"+name]=fn},
+      setAttribute(name,value){this[name]=value}
     });
   }
   return phraseNodes.get(id);

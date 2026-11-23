@@ -17,7 +17,7 @@
 <button id="next" class="primary hidden" style="width:100%;margin-top:14px">次の漢字 →</button>
 </section>
 <div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
-<p class="foot">学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。</p>
+<p class="foot">学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。<a href="./LEARNING.md">字根の学習メモ</a></p>
 </main><script>
 "use strict";
 const DATA=[
@@ -31,9 +31,9 @@ const DATA=[
 const KEY="quick-lab-v1",ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const $=id=>document.getElementById(id);
 let saved;try{saved=JSON.parse(localStorage.getItem(KEY))||{}}catch{saved={}};let stats=saved.stats||{},queue=[],pos=0,typed="",done=false,helped=false,review=false;
-const today=()=>new Date().toLocaleDateString("en-CA");
+const today=()=>{let d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")};
 function persist(){try{localStorage.setItem(KEY,JSON.stringify({stats}))}catch{}}
-function due(item){let s=stats[item.han];return s&&s.due&&s.due<=today()}
+function due(item){let s=stats[item.han];return !!(s&&s.due&&s.due<=today())}
 function build(){queue=review?DATA.filter(x=>due(x)):DATA.slice();pos=0;render()}
 function current(){return queue[pos]}
 function totals(){let all=Object.values(stats),attempts=all.reduce((n,s)=>n+(s.attempts||0),0),wins=all.reduce((n,s)=>n+(s.wins||0),0);$("attempts").textContent=attempts;$("accuracy").textContent=attempts?Math.round(wins/attempts*100)+"%":"—";$("due").textContent=DATA.filter(due).length}
@@ -42,7 +42,7 @@ function render(){totals();let q=current();$("modeAll").setAttribute("aria-press
 typed="";done=false;helped=false;$("glyph").textContent=q.han;$("meaning").textContent=q.meaning+" · "+q.jyut;$("counter").textContent=(pos+1)+" / "+queue.length;$("bar").style.width=(pos/queue.length*100)+"%";$("status").textContent="英字2文字で答える";$("feedback").classList.add("hidden");$("hintBox").classList.add("hidden");$("next").classList.add("hidden");$("hint").disabled=false;slots()}
 function append(letter){if(done||!current()||typed.length>=2)return;typed+=letter;slots()}
 function erase(){if(!done){typed=typed.slice(0,-1);slots()}}
-function addDays(n){let d=new Date();d.setDate(d.getDate()+n);return d.toLocaleDateString("en-CA")}
+function addDays(n){let d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+n);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-")}
 function check(){let q=current();if(!q||done||typed.length!==2)return;done=true;let good=typed===q.code;let s=stats[q.han]||{attempts:0,wins:0,level:0};s.attempts++;if(good)s.wins++;s.level=good&&!helped?Math.min((s.level||0)+1,5):0;s.due=addDays(good&&!helped?[0,1,3,7,14,30][s.level]:0);stats[q.han]=s;persist();$("status").textContent=good?"正解":"復習しよう";$("feedback").innerHTML="<strong>"+(good?"✓ 正解":"正解："+q.code)+"</strong><p>先頭 "+q.first+" ／ 末尾 "+q.last+"</p><p>"+q.explain+"</p>";$("feedback").classList.remove("hidden");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals()}
 function next(){if(pos>=queue.length){build();return}pos++;render()}
 $("keyboard").innerHTML=Object.entries(ROOTS).map(([k,v])=>'<button type="button" data-key="'+k+'" aria-label="'+k+' '+v+'">'+k+'<small>'+v+'</small></button>').join("");

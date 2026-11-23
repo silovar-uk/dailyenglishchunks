@@ -33,6 +33,9 @@ assert.match(html, /id="scene"/, "scene selector exists");
 assert.match(html, /function inCourse\(x\)/, "course filtering function exists");
 assert.match(html, /function rootPeers\(q\)/, "root comparison function exists");
 assert.match(html, /quick-lab-v1/, "existing history key retained");
+assert.match(html,/Neon Hong Kong visual layer/,"neon theme exists");
+for(const token of ["--neon-pink","--neon-cyan","--night-panel","prefers-reduced-motion:reduce",".trivia-panel",".lcd",".keyboard button"])assert.ok(html.includes(token),"neon UI component: "+token);
+assert.match(html,/\.glyph\{color:#fff;text-shadow:none/,"learning glyph remains sharp and readable");
 assert.equal(data.length, new Set(data.map(x => x.han)).size, "unique glyphs");
 assert.equal(Object.keys(extras).length,300,"300 reading records");
 for(const han of ["聽","上","會","畫"]){assert.ok(extras[han].readingNote,"pronunciation explanation for "+han);assert.ok(extras[han].words.some(w=>w[1].split(" ").some(s=>s!==extras[han].jyut)),"context-dependent example for "+han)}

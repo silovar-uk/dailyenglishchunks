@@ -1,0 +1,156 @@
+/* Quick Lab / Neon Arcade: answer surfaces share the main signboard palette.
+   Kept separate from legacy CSS to avoid another cascade of theme overrides. */
+:root {
+  --answer-bg: #101b32;
+  --answer-panel: #172a43;
+  --answer-raised: #213954;
+  --answer-line: #638ba4;
+  --answer-text: #f2f8ff;
+  --answer-muted: #bbd4e6;
+  --answer-cyan: var(--neon-cyan, #83ecf2);
+  --answer-pink: var(--neon-pink, #ff7fc5);
+  --answer-amber: var(--neon-amber, #ffca79);
+}
+
+.panel .lcd.answered .answer-brief {
+  color: var(--answer-text);
+  background: linear-gradient(145deg,#1b2745,#142a43 85%);
+  border: 1px solid #678fa8;
+  border-radius: 10px;
+}
+
+.panel .lcd.answered .answer-brief.result--correct {
+  border-color: #83ecf2;
+  background: linear-gradient(125deg,#1d2447 0%,#133149 75%,#12283e);
+  box-shadow: inset 0 0 0 1px #83ecf21a,0 0 15px #70deed2e;
+}
+
+.panel .lcd.answered .answer-brief.result--wrong {
+  border-color: #b18aa0;
+  background: linear-gradient(145deg,#2b2545,#19263e 78%);
+  box-shadow: inset 0 1px #ffd7ee16;
+}
+
+.result-receipt { display:grid;gap:7px;min-width:0; }
+.result-brow { display:flex;justify-content:space-between;align-items:center;gap:8px;min-width:0; }
+.result-status { display:inline-flex;align-items:center;gap:6px;color:#bffbff;font-size:12px;letter-spacing:.05em;font-weight:900; }
+.result-status-dot { display:inline-grid;place-items:center;width:18px;height:18px;border:1px solid #b3fbf6;border-radius:50%;color:#112d3b;background:#a4f6ed;font-size:11px;box-shadow:0 0 10px #79e5e982; }
+.result-mini { color:#ffd4ed;font-size:9px;font-weight:900;letter-spacing:.14em;white-space:nowrap; }
+.result-hero { display:grid;grid-template-columns:68px minmax(0,1fr);gap:10px;align-items:center;min-width:0; }
+.result-han { display:grid;place-items:center;min-height:66px;font-family:"PingFang HK","Noto Sans CJK HK","PingFang TC",sans-serif;font-size:45px;line-height:1.15;color:#fff6fc;border:1px solid #f5a3d2;border-radius:8px;background:linear-gradient(145deg,#3b2049,#212747);text-shadow:0 0 2px #fff,0 0 9px #ff7ac9a3;box-shadow:inset 0 0 9px #ff7fc51e,0 0 11px #f07dc43d; }
+.result-value { display:grid;gap:3px;min-width:0; }
+.result-label { color:var(--answer-muted);font-size:10px;letter-spacing:.04em;font-weight:600; }
+.result-code { color:#edfdff;font-size:clamp(23px,7vw,32px);line-height:1.1;letter-spacing:.12em;font-weight:900;overflow-wrap:anywhere; }
+.result-meaning { color:#dfdaed;font-size:12px;line-height:1.35;font-weight:500;overflow-wrap:anywhere; }
+.result-note { color:#b2dce3;font-size:10px;font-weight:500;line-height:1.45; }
+.result--wrong .mistake-heading { color:#ffd2ad; }
+.result--wrong .mistake-panel { background:#16283d;border-color:#9b778c; }
+.result--wrong .mistake-panel:not(.correct-panel) .mistake-code { color:#ffd0d5; }
+.result--wrong .mistake-panel.correct-panel { border-color:#83ecf2;background:#16374a;box-shadow:inset 0 0 0 1px #83ecf216; }
+.result--wrong .mistake-panel.correct-panel .mistake-code { color:#b6f6f7; }
+.result--wrong .mistake-panel .mistake-roots { color:#ffdaae; }
+.result--wrong .mistake-detail b { color:#fff0c6; }
+.result--wrong .mistake-glyph { text-shadow:0 0 7px #ff84c658; }
+
+.panel .result-workspace {
+  position:relative;
+  isolation:isolate;
+  background:linear-gradient(155deg,#192743 0%,#0f1c32 92%);
+  border:1px solid #537b98;
+  box-shadow:inset 0 1px #d8eeff1c,0 0 14px #70dce41a;
+}
+.panel .result-workspace:before {
+  content:"";position:absolute;top:0;left:10px;right:10px;height:2px;
+  background:linear-gradient(90deg,transparent,#83ecf2a8 45%,#ff7fc57d 70%,transparent);
+  pointer-events:none;
+}
+.panel .result-workspace-heading {color:#9aeef0;letter-spacing:.06em;}
+.panel .result-workspace .result-tabs button {
+  background:#1c304b;border:1px solid #658ba7;color:#e5f8ff;
+}
+.panel .result-workspace .result-tabs button[aria-pressed=true] {
+  background:#3a254f;border-color:#ff9dd6;color:#fff;
+  box-shadow:inset 0 0 9px #ff7fc521,0 0 9px #ff7fc52b;
+}
+.panel .result-workspace .result-tabs button:focus-visible,
+.panel .result-workspace .compound .play:focus-visible {
+  outline:3px solid #99f2f4;outline-offset:2px;
+}
+
+/* Correct answer breakdown, lexical examples and citations are all night-mode cards. */
+.panel .result-workspace .feedback {
+  color:var(--answer-text);
+  background:linear-gradient(160deg,#182b45,#121e35);
+  border:1px solid #496c8a;
+}
+.panel .result-workspace .feedback strong {color:#e8faff;}
+.panel .result-workspace .feedback p {color:#dbe9f8;}
+.panel .result-workspace .feedback .visual .vpart {
+  background:linear-gradient(155deg,#25304b,#1c304b);
+  border:1px solid #6384a1;
+  border-top:2px solid var(--answer-pink);
+  border-radius:9px;
+}
+.panel .result-workspace .feedback .visual .vpart.last {
+  border-top-color:var(--answer-cyan);
+}
+.panel .result-workspace .feedback .visual .vpart .shape,
+.panel .result-workspace .feedback .visual .vpart .code {
+  color:#f5faff;
+}
+.panel .result-workspace .feedback .visual .vpart .shape {
+  text-shadow:0 0 8px #ff7fc533;
+}
+.panel .result-workspace .feedback .visual .vpart .code {
+  font-weight:800;
+}
+.panel .result-workspace .feedback .vlabel,
+.panel .result-workspace .feedback .vnote,
+.panel .result-workspace .feedback .learning-label {
+  color:#b9d5ea;
+}
+.panel .result-workspace .feedback .source a {color:#9cf5f5;text-underline-offset:3px;}
+.panel .result-workspace .compound {
+  background:#1c304b;border-color:#5b809d;border-radius:9px;color:#f4faff;
+}
+.panel .result-workspace .compound .word {color:#fff4fd;}
+.panel .result-workspace .compound .translation,
+.panel .result-workspace .compound .roman {color:#d0e2f3;}
+.panel .result-workspace .compound .play {
+  background:#25435f;border:1px solid #8bd4df;color:#f3fcff;
+}
+
+/* Only compositor-friendly properties move; decorative layers never intercept touch. */
+@media (prefers-reduced-motion: no-preference) {
+  .panel .lcd.answered .answer-brief.result--correct .result-status-dot {
+    animation: result-dot-ignite 250ms ease-out both;
+  }
+  .panel .lcd.answered .answer-brief.result--correct .result-han {
+    animation: result-han-on 270ms cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes result-dot-ignite {
+    0% {opacity:.4;transform:scale(.78)}
+    65% {opacity:1;transform:scale(1.14)}
+    100% {opacity:1;transform:scale(1)}
+  }
+  @keyframes result-han-on {
+    0% {opacity:.65;transform:scale(.96)}
+    75% {opacity:1;transform:scale(1.035)}
+    100% {opacity:1;transform:scale(1)}
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel .lcd.answered .answer-brief .result-status-dot,
+  .panel .lcd.answered .answer-brief .result-han {animation:none;transition:none;}
+}
+@media (prefers-contrast: more) {
+  .panel .lcd.answered .answer-brief.result--correct,
+  .panel .result-workspace .feedback {border-width:2px;box-shadow:none;}
+  .panel .result-workspace .feedback .visual .vpart {border-width:2px;}
+  .result-han {text-shadow:none;}
+}
+@media (max-width:360px) {
+  .result-hero {grid-template-columns:56px minmax(0,1fr);gap:8px;}
+  .result-han {min-height:56px;font-size:38px;}
+  .result-mini {font-size:8px;}
+}

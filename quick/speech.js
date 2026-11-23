@@ -27,9 +27,13 @@
 
   function stop() {
     serial += 1; // Ignore late events raised by previously canceled utterances.
+    // Avoid an unnecessary cancel() just before the first iOS Safari play().
+    const hadSpeech = !!current || !!synth?.speaking || !!synth?.pending;
     current = null;
     global.quickLabUtterance = null;
-    try { synth?.cancel(); } catch {}
+    if (hadSpeech) {
+      try { synth?.cancel(); } catch {}
+    }
   }
 
   function play(text, notify = () => {}) {

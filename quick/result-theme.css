@@ -154,3 +154,107 @@
   .result-han {min-height:56px;font-size:38px;}
   .result-mini {font-size:8px;}
 }
+
+/* Speech replay stays visible in the result workspace on both correct and wrong answers. */
+.panel .result-workspace .result-audio-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  padding: 2px 0 9px;
+  min-width: 0;
+}
+.panel .result-workspace .result-play-char {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid #8cdce9;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#21455b,#18304e);
+  color: #f3feff;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: inset 0 1px #ffffff1c,0 0 10px #70dce526;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.panel .result-workspace .result-reading {
+  color: #bde4f0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .025em;
+  overflow-wrap: anywhere;
+}
+.panel .result-workspace .result-audio-message {
+  color: #bedbe9;
+  font-size: 11px;
+  line-height: 1.45;
+  min-height: 0;
+  margin: 0;
+}
+.panel .result-workspace .result-audio-message:not(:empty) {
+  margin: 0 0 9px;
+  padding: 7px 9px;
+  border-radius: 7px;
+  background: #182f49;
+  border: 1px solid #4d728c;
+}
+.panel .result-workspace .compound {
+  gap: 7px;
+  min-width: 0;
+}
+.panel .result-workspace .compound .translation {
+  min-width: 0;
+}
+.panel .result-workspace .compound .play {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  flex: 0 0 auto;
+  min-width: 58px;
+  min-height: 44px;
+  padding: 6px 8px;
+  border: 1px solid #82d6df;
+  border-radius: 9px;
+  background: #24445d;
+  color: #f4ffff;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.panel .result-workspace .result-play-char:active,
+.panel .result-workspace .compound .play:active {
+  transform: translateY(1px);
+  background: #30556b;
+}
+.panel .result-workspace .result-play-char.is-speaking,
+.panel .result-workspace .compound .play.is-speaking,
+#playChar.is-speaking {
+  border-color: #9bf6e9;
+  color: #fff;
+  background: #275c60;
+  box-shadow: inset 0 0 0 1px #b1fce425,0 0 12px #79ebdf60;
+}
+.panel .result-workspace button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+@media (max-width: 370px) {
+  .panel .result-workspace .result-audio-bar { gap: 7px; }
+  .panel .result-workspace .result-play-char { padding: 8px 9px; font-size: 12px; }
+  .panel .result-workspace .result-reading { font-size: 11px; }
+  .panel .result-workspace .compound .play { min-width: 52px; padding: 6px 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel .result-workspace .result-play-char:active,
+  .panel .result-workspace .compound .play:active {
+    transform: none;
+  }
+}

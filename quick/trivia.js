@@ -605,5 +605,100 @@ window.QUICK_TRIVIA = [
     "detail": "定（ding6）は選択疑問の「それとも」。奶茶要熱定凍？はミルクティーを温かくするか冷たくするかの二択。これは自由回答型の「點樣？」とは構造が違う。",
     "source": "https://words.hk/zidin/%E5%AE%9A",
     "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-006-notgo",
+    "category": "否定と存在",
+    "han": "唔",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 1,
+    "skill": "否定・行動",
+    "objective": "唔を用いて今後の行動を否定できる",
+    "question": "友人から「聽日去唔去？」（明日行く？）と聞かれた。「行かない」と答えるなら？",
+    "options": [
+      "唔去",
+      "冇人",
+      "唔係"
+    ],
+    "answer": 0,
+    "detail": "唔去（m4 heoi3）は「行かない」。唔は動詞の前で否定に使う。冇人は「誰もいない」、唔係は「〜ではない」。",
+    "source": "https://words.hk/zidin/%E5%94%94",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-007-notidentity",
+    "category": "否定と存在",
+    "han": "係",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 2,
+    "skill": "否定・属性",
+    "objective": "人物の属性を否定するとき唔係を使える",
+    "question": "「佢係醫生？」（あの人は医者？）に「医者ではない」と答えるなら？",
+    "options": [
+      "佢唔係醫生",
+      "佢冇醫生",
+      "佢唔喺醫生"
+    ],
+    "answer": 0,
+    "detail": "佢唔係醫生（keoi5 m4 hai6 ji1 sang1）は「彼／彼女は医者ではない」。係（〜である）の否定は唔係。喺（場所にいる）と混同しない。",
+    "source": "https://words.hk/zidin/%E4%BF%82",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-008-havequestion",
+    "category": "否定と存在",
+    "han": "有",
+    "topic": "日常会話・口語",
+    "difficulty": 2,
+    "skill": "存在・疑問",
+    "objective": "有冇で所有の有無を尋ねられる",
+    "question": "友人に「傘、持ってる？」と尋ねたい。自然な質問は？",
+    "options": [
+      "你有冇遮？",
+      "你係唔係遮？",
+      "你喺唔喺遮？"
+    ],
+    "answer": 0,
+    "detail": "你有冇遮？（nei5 jau5 mou5 ze1）は「傘を持っている？」。有冇は「ある／ない」を問う形。遮は香港口語で傘。",
+    "source": "https://words.hk/zidin/%E6%9C%89%E5%86%87",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-009-nobody",
+    "category": "否定と存在",
+    "han": "人",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 2,
+    "skill": "存在・文脈",
+    "objective": "冇人と唔係人を文脈から区別できる",
+    "question": "待ち合わせ場所に着いたが、誰もいない。「ここには誰もいない」に合うのは？",
+    "options": [
+      "呢度冇人",
+      "呢度唔係人",
+      "呢度唔人"
+    ],
+    "answer": 0,
+    "detail": "呢度冇人（ni1 dou6 mou5 jan4）は「ここには誰もいない」。冇は存在の否定。唔係人は「人間ではない」という別の意味になる。",
+    "source": "https://words.hk/zidin/%E5%86%87",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-010-location",
+    "category": "否定と存在",
+    "han": "屋",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 3,
+    "skill": "存在と所在の区別",
+    "objective": "「家にいない」と「家を持っていない」を区別できる",
+    "question": "「佢唔喺屋企」と「佢冇屋企」の違いは？",
+    "options": [
+      "前者は家にいない、後者は家がない",
+      "前者は家がない、後者は家にいない",
+      "どちらも家にいるという意味"
+    ],
+    "answer": 0,
+    "detail": "佢唔喺屋企（keoi5 m4 hai2 uk1 kei2）は「その人は家にいない」。佢冇屋企（keoi5 mou5 uk1 kei2）は「その人には家がない」。場所の所在と所有・存在の違いが鍵。",
+    "source": "https://words.hk/zidin/%E5%96%BA",
+    "sourceReview": "pending-specific-reference"
   }
 ];

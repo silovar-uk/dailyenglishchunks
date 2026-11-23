@@ -795,5 +795,100 @@ window.QUICK_TRIVIA = [
     "detail": "睇過（tai2 gwo3）は見た経験がある。睇完未？（tai2 jyun4 mei6）は見終わったかどうかを尋ねる。経験相の過と、動作の終点を示す完は別の観点。",
     "source": "https://words.hk/zidin/%E7%9D%87",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-016-buy-sell",
+    "category": "声調と意味",
+    "han": "買",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 1,
+    "skill": "声調と語義の対応",
+    "objective": "買 maai5 と賣 maai6 の声調と意味を区別できる",
+    "question": "「買 maai5」と「賣 maai6」の関係として正しいのは？",
+    "options": [
+      "5声は買う、6声は売る",
+      "5声は売る、6声は買う",
+      "どちらも借りる"
+    ],
+    "answer": 0,
+    "detail": "買（maai5）は買う、賣（maai6）は売る。音節 maai が同じでも、声調5と6で意味が変わる。実際の聞き分けには音声練習も必要。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-017-mother-horse",
+    "category": "声調と意味",
+    "han": "馬",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 2,
+    "skill": "声調の識別",
+    "objective": "maa1 と maa5 の違いを漢字と結びつけられる",
+    "question": "「媽 maa1（お母さん）」に対して「馬（馬）」の粤拼は？",
+    "options": [
+      "maa5",
+      "maa1",
+      "maa3"
+    ],
+    "answer": 0,
+    "detail": "媽は maa1、馬は maa5。声母 m と韻母 aa は共通だが、声調が違う。漢字の意味を知るだけでなく声調番号も確認する。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-018-cold-east",
+    "category": "声調と意味",
+    "han": "凍",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 2,
+    "skill": "同音節の声調比較",
+    "objective": "dung1 と dung3 を区別し、凍檸茶の凍の声調を理解できる",
+    "question": "「東 dung1（東）」と「凍 dung3（冷たい）」を比較すると、凍檸茶の「凍」は？",
+    "options": [
+      "dung3",
+      "dung1",
+      "dung6"
+    ],
+    "answer": 0,
+    "detail": "東は dung1、凍は dung3。凍檸茶（dung3 ning4 caa4）の凍は第3声。既存の飲食語彙を声調知識につなげる問題。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-019-high-tell",
+    "category": "声調と意味",
+    "han": "告",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 2,
+    "skill": "音節と声調の組合せ",
+    "objective": "gou1 と gou3 の意味の違いを認識できる",
+    "question": "「高 gou1」と「告 gou3」について、正しい説明は？",
+    "options": [
+      "音節 gou は同じだが声調が違う",
+      "声調は同じで母音だけが違う",
+      "どちらも第6声である"
+    ],
+    "answer": 0,
+    "detail": "高（gou1）は高い、告（gou3）は告げる・訴えるなどの意味を持つ。両者は声母・韻母が共通し、声調が異なる。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-020-tone-context",
+    "category": "声調と意味",
+    "han": "賣",
+    "topic": "発音・声調・粤拼",
+    "difficulty": 3,
+    "skill": "声調と場面の統合",
+    "objective": "maai5 と maai6 の違いを店での行為の理解に応用できる",
+    "question": "店員が「我賣咖啡」と言った。客が「我買咖啡」と言う場合、同じ maai でも何が違う？",
+    "options": [
+      "店員は賣 maai6（売る）、客は買 maai5（買う）",
+      "店員は買 maai5、客は賣 maai6",
+      "どちらも同じ声調で、意味は文脈だけで決まる"
+    ],
+    "answer": 0,
+    "detail": "我賣咖啡（ngo5 maai6 gaa3 fe1）はコーヒーを売る、我買咖啡（ngo5 maai5 gaa3 fe1）はコーヒーを買う。話し手の立場と声調が意味を支える。",
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   }
 ];

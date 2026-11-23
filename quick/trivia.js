@@ -510,5 +510,100 @@ window.QUICK_TRIVIA = [
     "detail": "映画資料の保存と公開は異なる機能。資料の収集・保存・修復と、上映・展示・研究への提供を組み合わせることで映画文化を継承する。",
     "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-001-why",
+    "category": "疑問文・質問への返答",
+    "han": "解",
+    "topic": "日常会話・口語",
+    "difficulty": 1,
+    "skill": "疑問詞の識別",
+    "objective": "點解（なぜ）を、方法を問う點樣と区別できる",
+    "question": "友人が「你點解唔嚟？」と聞いた。最も直接的に求められている情報は？",
+    "options": [
+      "来なかった理由",
+      "来るまでの移動方法",
+      "来られる日時"
+    ],
+    "answer": 0,
+    "detail": "點解（dim2 gaai2）は「なぜ」。理由を聞く質問。點樣（dim2 joeng2）は方法・状態、幾時（gei2 si4）は時を問う。",
+    "source": "https://words.hk/zidin/%E9%BB%9E%E8%A7%A3",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-002-when",
+    "category": "疑問文・質問への返答",
+    "han": "時",
+    "topic": "日常会話・口語",
+    "difficulty": 2,
+    "skill": "文脈・返答",
+    "objective": "幾時という質問に対し日時を答えるべきだと判断できる",
+    "question": "友人が「你幾時得閒？」と聞いた。質問に直接答える返事は？",
+    "options": [
+      "星期六得閒（週末の土曜なら空いている）",
+      "因為我好忙（忙しいから）",
+      "我搭地鐵去（地下鉄で行く）"
+    ],
+    "answer": 0,
+    "detail": "幾時（gei2 si4）は「いつ」。ここでは空いている時を聞かれている。理由や移動手段では答えにならない。",
+    "source": "https://words.hk/zidin/%E5%B9%BE%E6%99%82",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-003-how",
+    "category": "疑問文・質問への返答",
+    "han": "樣",
+    "topic": "日常会話・口語",
+    "difficulty": 2,
+    "skill": "疑問詞の使い分け",
+    "objective": "点樣を方法の質問として理解し、點解と区別できる",
+    "question": "説明を聞いても操作方法が分からない。「どうやるの？」に近いのは？",
+    "options": [
+      "點樣做？",
+      "點解做？",
+      "幾時做？"
+    ],
+    "answer": 0,
+    "detail": "點樣做？（dim2 joeng2 zou6）は「どうやる？」。點解做？は「なぜやる？」、幾時做？は「いつやる？」。",
+    "source": "https://words.hk/zidin/%E9%BB%9E%E6%A8%A3",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-004-who",
+    "category": "疑問文・質問への返答",
+    "han": "邊",
+    "topic": "日常会話・口語",
+    "difficulty": 2,
+    "skill": "文脈・返答",
+    "objective": "邊個が人物を尋ねる文脈を読み取れる",
+    "question": "友人が「你打俾邊個？」と聞いた。適切な返答は？",
+    "options": [
+      "我打俾阿明（阿明に電話した）",
+      "我尋日打（昨日かけた）",
+      "我喺屋企打（家でかけた）"
+    ],
+    "answer": 0,
+    "detail": "邊個（bin1 go3）は「誰／どれ」。この文では電話の相手を尋ねる。時間や場所の返答とは区別する。",
+    "source": "https://words.hk/zidin/%E9%82%8A",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-005-or",
+    "category": "疑問文・質問への返答",
+    "han": "定",
+    "topic": "文法・語彙の使い分け",
+    "difficulty": 3,
+    "skill": "質問構造の比較",
+    "objective": "選択疑問の定と、疑問詞で情報を尋ねる質問の違いを理解できる",
+    "question": "「奶茶要熱定凍？」に対して、相手が求めている返答は？",
+    "options": [
+      "熱か凍のどちらかを選ぶ",
+      "温度がそうなった理由を説明する",
+      "飲み物の値段を答える"
+    ],
+    "answer": 0,
+    "detail": "定（ding6）は選択疑問の「それとも」。奶茶要熱定凍？はミルクティーを温かくするか冷たくするかの二択。これは自由回答型の「點樣？」とは構造が違う。",
+    "source": "https://words.hk/zidin/%E5%AE%9A",
+    "sourceReview": "specific-reference-checked"
   }
 ];

@@ -80,9 +80,9 @@ window.QUICK_DATA = [
     "meaning": "日・太陽",
     "group": "roots",
     "shape": "日",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 A の先頭 A と末尾 A を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "日",
+    "lastShape": "",
+    "explain": "この文字は基本字根「日」に相当し、Aの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -92,9 +92,9 @@ window.QUICK_DATA = [
     "meaning": "月",
     "group": "roots",
     "shape": "月",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 B の先頭 B と末尾 B を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "月",
+    "lastShape": "",
+    "explain": "この文字は基本字根「月」に相当し、Bの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -104,9 +104,9 @@ window.QUICK_DATA = [
     "meaning": "水",
     "group": "roots",
     "shape": "水",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 E の先頭 E と末尾 E を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "水",
+    "lastShape": "",
+    "explain": "この文字は基本字根「水」に相当し、Eの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -116,9 +116,9 @@ window.QUICK_DATA = [
     "meaning": "火",
     "group": "roots",
     "shape": "火",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 F の先頭 F と末尾 F を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "火",
+    "lastShape": "",
+    "explain": "この文字は基本字根「火」に相当し、Fの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -128,9 +128,9 @@ window.QUICK_DATA = [
     "meaning": "木",
     "group": "roots",
     "shape": "木",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 D の先頭 D と末尾 D を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "木",
+    "lastShape": "",
+    "explain": "この文字は基本字根「木」に相当し、Dの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -140,9 +140,9 @@ window.QUICK_DATA = [
     "meaning": "金",
     "group": "roots",
     "shape": "金",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 C の先頭 C と末尾 C を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "金",
+    "lastShape": "",
+    "explain": "この文字は基本字根「金」に相当し、Cの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -152,9 +152,9 @@ window.QUICK_DATA = [
     "meaning": "人",
     "group": "roots",
     "shape": "人",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 O の先頭 O と末尾 O を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "人",
+    "lastShape": "",
+    "explain": "この文字は基本字根「人」に相当し、Oの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -164,9 +164,9 @@ window.QUICK_DATA = [
     "meaning": "口",
     "group": "roots",
     "shape": "口",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 R の先頭 R と末尾 R を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口",
+    "lastShape": "",
+    "explain": "この文字は基本字根「口」に相当し、Rの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -176,9 +176,9 @@ window.QUICK_DATA = [
     "meaning": "心",
     "group": "roots",
     "shape": "心",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 P の先頭 P と末尾 P を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "心",
+    "lastShape": "",
+    "explain": "この文字は基本字根「心」に相当し、Pの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -188,9 +188,9 @@ window.QUICK_DATA = [
     "meaning": "女性",
     "group": "roots",
     "shape": "女",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 V の先頭 V と末尾 V を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "女",
+    "lastShape": "",
+    "explain": "この文字は基本字根「女」に相当し、Vの1キーで入力します。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {

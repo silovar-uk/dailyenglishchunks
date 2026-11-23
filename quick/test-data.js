@@ -65,6 +65,10 @@ for (const [han, code] of Object.entries(expected)) {
 assert.match(html, /<script src="\.\/extras\.js"><\/script>/, "extras loaded");
 assert.match(html, /<script src="\.\/trivia\.js"><\/script>/, "trivia loaded");
 assert.match(html, /<details class="route-drawer" id="routeDrawer">/,"route selection is collapsible");
+assert.match(html,/const PREF_KEY="quick-lab-ui-v1"/,"separate UI preference storage");
+assert.match(html,/VALID_COURSES\.has\(p\.course\)/,"saved course is validated");
+assert.match(html,/function savePrefs\(\)/,"course and mode preferences are persisted");
+assert.match(html,/<meta name="theme-color" content="#080e21">/,"browser chrome matches neon theme");
 assert.match(html, /<details id="triviaDrawer" class="trivia-drawer">/,"trivia is an optional disclosure");
 assert.match(html, /class="signboard-caption"/,"learning glyph has Hong Kong signboard context");
 assert.match(html, /\.lcd:not\(\.answered\) \.glyph/,"signboard style only affects question state");

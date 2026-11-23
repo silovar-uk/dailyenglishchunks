@@ -306,11 +306,25 @@ function rootPeers(q){return DATA.filter(x=>x.han!==q.han&&(x.code[0]===q.code[0
 
 // Trivia is independent of Quick Lab progress and never modifies the existing history key.
 let activeTrivia=null,triviaSolved=false;
+let triviaDeck=[];
+function nextTrivia(){
+ if(!TRIVIA.length)return null;
+ if(!triviaDeck.length){
+  triviaDeck=TRIVIA.map(t=>t.id);
+  for(let i=triviaDeck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[triviaDeck[i],triviaDeck[j]]=[triviaDeck[j],triviaDeck[i]]}
+ }
+ if(triviaDeck.length>1&&triviaDeck[triviaDeck.length-1]===activeTrivia?.id){
+  const i=triviaDeck.findIndex(id=>id!==activeTrivia.id);
+  if(i>=0)[triviaDeck[i],triviaDeck[triviaDeck.length-1]]=[triviaDeck[triviaDeck.length-1],triviaDeck[i]];
+ }
+ return TRIVIA.find(t=>t.id===triviaDeck.pop())||TRIVIA[0];
+}
 function dailyTrivia(){const date=today();let hash=0;for(const ch of date)hash=(hash*31+ch.charCodeAt(0))>>>0;return TRIVIA[hash%TRIVIA.length]}
 function relatedTrivia(q){const relevant=TRIVIA.filter(t=>t.han===q.han);return relevant.length?relevant[0]:null}
 function showTrivia(item,label){
  if(!item)return;
  activeTrivia=item;triviaSolved=false;
+ $("triviaShuffle").textContent="別の雑学 ↻";
  $("triviaTitle").textContent="✦ "+label;
  // Do not reveal the target character before the user answers: it can be the answer itself.
  $("triviaMeta").textContent=item.category;
@@ -335,12 +349,12 @@ function answerTrivia(choice){
  $("triviaAnswer").textContent=(choice===t.answer?"✓ 正解！ ":"正解は「"+t.options[t.answer]+"」。 ")+t.detail+(t.objective?"\n\n【今回確認した知識】"+t.objective:"");
  $("triviaAnswer").classList.remove("hidden");
  $("triviaSource").href=t.source;$("triviaSource").classList.remove("hidden");
+ $("triviaShuffle").textContent="次の雑学 →";
 }
 $("triviaDaily").onclick=()=>showTrivia(dailyTrivia(),"今日の香港豆知識");
 $("triviaShuffle").onclick=()=>{
- if(!TRIVIA.length)return;
- const other=TRIVIA.filter(x=>x.id!==activeTrivia?.id);
- showTrivia(other[Math.floor(Math.random()*other.length)]||TRIVIA[0],"ランダム香港雑学");
+ const item=nextTrivia();
+ if(item)showTrivia(item,"ランダム香港雑学");
 };
 
 function mistakeSummary(q,input){

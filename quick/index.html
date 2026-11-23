@@ -143,7 +143,7 @@ function showCompounds(q){
   const play=document.createElement("button");play.className="play";play.type="button";play.textContent="▶";play.setAttribute("aria-label",word+"を広東語で読み上げ");play.onclick=()=>speak(word);
   line.append(name,desc,play);list.append(line);
  }
- wrap.append(list);wrap.classList.remove("hidden");
+ wrap.append(list);const note=EXTRAS[q.han]?.readingNote;if(note){const tip=document.createElement("p");tip.className="vnote";tip.textContent="読み分けのコツ： "+note;wrap.append(tip)}wrap.classList.remove("hidden");
 }
 $("playChar").onclick=()=>{let q=current();if(q)speak(q.han)};
 

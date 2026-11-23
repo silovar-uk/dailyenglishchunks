@@ -1,5 +1,5 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
-// Cultural questions emphasize relationships and explanations, not only isolated facts.
+// sourceReview distinguishes targeted source checks from URLs still needing claim-level verification.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
@@ -15,7 +15,8 @@ window.QUICK_TRIVIA = [
     "detail": "「聽日」（ting1 jat6）は香港口語で「明日」。聽日見＝また明日。日本語の「聴く」からは意味を推測しにくい。",
     "source": "https://jyutping.org/en/",
     "skill": "語彙・文脈",
-    "objective": "聽日を日常の約束の文脈で理解できる"
+    "objective": "聽日を日常の約束の文脈で理解できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "poly-up",
@@ -31,7 +32,8 @@ window.QUICK_TRIVIA = [
     "detail": "上車（soeng5 ce1）は乗車する、上面（soeng6 min6）は上側。語によって「上」の声調が変わる。",
     "source": "https://jyutping.org/en/",
     "skill": "声調・発音",
-    "objective": "同じ漢字「上」の声調を語の中で区別できる"
+    "objective": "同じ漢字「上」の声調を語の中で区別できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "poly-meet",
@@ -44,10 +46,11 @@ window.QUICK_TRIVIA = [
       "どちらも wui6"
     ],
     "answer": 0,
-    "detail": "開會（hoi1 wui2）は会議をする。我會去（ngo5 wui5 heoi3）の會は「〜するだろう／できる」などの助動詞として使われる。",
-    "source": "https://jyutping.org/en/",
+    "detail": "開會（hoi1 wui2）は会議をする。會が助動詞として使われるときは wui5。辞書で用法ごとの読みを確認できる。",
+    "source": "https://words.hk/zidin/%E9%96%8B%E6%9C%83",
     "skill": "声調・発音",
-    "objective": "「會」の名詞的用法と助動詞的用法で声調を区別できる"
+    "objective": "「會」の名詞的用法と助動詞的用法で声調を区別できる",
+    "sourceReview": "specific-reference-checked"
   },
   {
     "id": "homophone-1",
@@ -63,7 +66,8 @@ window.QUICK_TRIVIA = [
     "detail": "事は si6、詩は si1、時は si4。声調の違いも意味を分ける。",
     "source": "https://jyutping.org/en/",
     "skill": "声調・発音",
-    "objective": "si1・si4・si6を声調で区別できる"
+    "objective": "si1・si4・si6を声調で区別できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "homophone-2",
@@ -79,7 +83,8 @@ window.QUICK_TRIVIA = [
     "detail": "市は si5、詩は si1、時は si4。",
     "source": "https://jyutping.org/en/",
     "skill": "声調・発音",
-    "objective": "si1・si4・si5を声調で区別できる"
+    "objective": "si1・si4・si5を声調で区別できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "music",
@@ -95,7 +100,8 @@ window.QUICK_TRIVIA = [
     "detail": "広東語の歌詞には書面語が多く使われ、口語と表現が異なる場合がある。歌で覚えた表現は実際の会話での自然さを別途確認するとよい。",
     "source": "https://www.hkmusic.org/",
     "skill": "言語文化",
-    "objective": "歌詞の書面語と口語の違いを意識できる"
+    "objective": "歌詞の書面語と口語の違いを意識できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "football",
@@ -111,7 +117,8 @@ window.QUICK_TRIVIA = [
     "detail": "球迷（kau4 mai4）はファン・サポーター。球員（kau4 jyun4）は選手。香港の案内表示では対象者の違いが重要。",
     "source": "https://www.hkfa.com/en/",
     "skill": "語彙・文脈",
-    "objective": "球迷と球員を現地の案内文で読み分けられる"
+    "objective": "球迷と球員を現地の案内文で読み分けられる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "team",
@@ -127,7 +134,8 @@ window.QUICK_TRIVIA = [
     "detail": "球會はクラブを指し、球員は選手。「簽入新球員」は新しい選手を獲得するという文脈。",
     "source": "https://www.hkfa.com/en/",
     "skill": "語彙・文脈",
-    "objective": "球會と球員をスポーツニュースの文脈で理解できる"
+    "objective": "球會と球員をスポーツニュースの文脈で理解できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "mtr",
@@ -143,7 +151,8 @@ window.QUICK_TRIVIA = [
     "detail": "MTRは香港の都市鉄道網を担い、香港トラムは香港島の路面電車。都市の移動手段は用途や地域で使い分けられる。",
     "source": "https://www.mtr.com.hk/en/customer/services/system_map.html",
     "skill": "香港の生活知識",
-    "objective": "香港の交通機関を運行範囲と役割で比較できる"
+    "objective": "香港の交通機関を運行範囲と役割で比較できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "tram",
@@ -157,9 +166,10 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "香港トラムは香港島北岸を中心に走る路面電車。二階建て車両が特徴。",
-    "source": "https://www.hktramways.com/en/",
+    "source": "https://www.hktramways.com/en/our-story/",
     "skill": "香港の生活知識",
-    "objective": "香港トラムの運行地域を識別できる"
+    "objective": "香港トラムの運行地域を識別できる",
+    "sourceReview": "specific-reference-checked"
   },
   {
     "id": "film",
@@ -175,7 +185,8 @@ window.QUICK_TRIVIA = [
     "detail": "香港電影資料館は映画文化の記録を収集・保存し、上映や展示などで公開する。商業上映を主とする映画館とは役割が異なる。",
     "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html",
     "skill": "香港の生活知識",
-    "objective": "文化資料の保存機関と商業映画館の機能の違いを理解できる"
+    "objective": "文化資料の保存機関と商業映画館の機能の違いを理解できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "food",
@@ -191,7 +202,8 @@ window.QUICK_TRIVIA = [
     "detail": "絲襪奶茶は香港式ミルクティーの呼び名。茶こしの袋の見た目がストッキングに似ることに由来する。実際に衣類を使うという意味ではない。",
     "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
     "skill": "香港の生活知識",
-    "objective": "香港式奶茶の名称の由来と実際の調理法を区別できる"
+    "objective": "香港式奶茶の名称の由来と実際の調理法を区別できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "cafe",
@@ -207,7 +219,8 @@ window.QUICK_TRIVIA = [
     "detail": "凍檸茶（dung3 ning4 caa4）は冷たいレモンティー。凍は冷たい、檸はレモン、茶はお茶を表す。注文表現として役立つ。",
     "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
     "skill": "香港の生活知識",
-    "objective": "茶餐廳での注文表現「凍檸茶」を理解できる"
+    "objective": "茶餐廳での注文表現「凍檸茶」を理解できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "signs",
@@ -223,7 +236,8 @@ window.QUICK_TRIVIA = [
     "detail": "旺角は九龍に位置する繁華街。地名を知っているかが問われ、漢字の字面だけでは答えにくい。",
     "source": "https://www.discoverhongkong.com/eng/explore/neighbourhoods.html",
     "skill": "香港の生活知識",
-    "objective": "旺角の地理的位置を識別できる"
+    "objective": "旺角の地理的位置を識別できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "history",
@@ -239,7 +253,8 @@ window.QUICK_TRIVIA = [
     "detail": "中英共同声明は1984年に署名され、香港の主権移譲は1997年7月1日に行われた。合意の時点と実施の時点は異なる。",
     "source": "https://www.cmab.gov.hk/en/issues/jd2.htm",
     "skill": "香港の歴史",
-    "objective": "香港返還の合意と実施を時系列で区別できる"
+    "objective": "香港返還の合意と実施を時系列で区別できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "input",
@@ -255,7 +270,8 @@ window.QUICK_TRIVIA = [
     "detail": "速成は倉頡コードの先頭と末尾を使う入力方式。IMEの候補選択は別途必要。",
     "source": "https://github.com/rime/rime-cangjie",
     "skill": "入力技術",
-    "objective": "速成で倉頡コードの先頭と末尾を使うことを説明できる"
+    "objective": "速成で倉頡コードの先頭と末尾を使うことを説明できる",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "spoken-hai",
@@ -271,7 +287,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "喺（hai2）は場所を表す「〜にいる／ある」、係（hai6）は「〜である」。我喺香港（ngo5 hai2 hoeng1 gong2）。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "spoken-mou",
@@ -287,7 +304,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "冇（mou5）は「ない／持っていない」。唔（m4）は動詞や形容詞などを否定する。冇錢（mou5 cin2）＝お金がない。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "spoken-aspect",
@@ -303,7 +321,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "食咗飯（sik6 zo2 faan6）は食事をした。食緊飯（sik6 gan2 faan6）は食事中。咗は完了、緊は進行を表す。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "spoken-thanks",
@@ -319,7 +338,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "唔該（m4 goi1）はサービスや手助けへのお礼・依頼に広く使う。多謝（do1 ze6）は贈り物などへの感謝に使うことが多い。絶対的な二分法ではなく場面により重なる。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "life-price",
@@ -334,8 +354,9 @@ window.QUICK_TRIVIA = [
       "呢個幾點？"
     ],
     "answer": 0,
-    "detail": "呢個幾錢？（ni1 go3 gei2 cin2）＝これ、いくら？「喺邊」はどこ、「幾點」は何時。",
-    "source": "https://jyutping.org/en/"
+    "detail": "呢個幾錢？（ni1 go3 gei2 cin2）＝これ、いくら？「呢個」は nei1 go3 と発音する場合もある。喺邊は場所、幾點は時刻を尋ねる。",
+    "source": "https://cantowords.com/dictionary/%E5%91%A2%E5%80%8B",
+    "sourceReview": "specific-reference-checked"
   },
   {
     "id": "life-takeaway",
@@ -351,7 +372,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "外賣（ngoi6 maai6）は持ち帰り、堂食（tong4 sik6）は店内飲食。「定」は二者択一を表す。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "life-noice",
@@ -367,7 +389,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "走冰（zau2 bing1）は氷抜き、加冰（gaa1 bing1）は氷を追加、少甜（siu2 tim4）は甘さ控えめ。店によって注文可能な調整は異なる。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "life-exit",
@@ -383,7 +406,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "出口（ceot1 hau2）は出口。MTRでは出口がアルファベットで区別される。駅構内の案内表示を確認して進む。",
-    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html"
+    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "life-nextstop",
@@ -399,7 +423,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "下一站（haa6 jat1 zaam6）は次の駅。中環（zung1 waan4）はCentral。降りる駅かどうか判断する手掛かりになる。",
-    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html"
+    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "life-direction",
@@ -415,7 +440,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "地鐵站喺邊度？（dei6 tit3 zaam6 hai2 bin1 dou6）＝地下鉄の駅はどこ？「喺邊度」で場所を尋ねる。",
-    "source": "https://jyutping.org/en/"
+    "source": "https://jyutping.org/en/",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "culture-declaration",
@@ -431,7 +457,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "中英共同声明は英国と中国の合意文書。香港基本法は香港特別行政区の制度を定める法律。両者の法的位置づけは同一ではない。",
-    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html"
+    "source": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "culture-tram",
@@ -446,8 +473,9 @@ window.QUICK_TRIVIA = [
       "両方1979年"
     ],
     "answer": 0,
-    "detail": "香港トラムは1904年に開業。MTRの最初の営業区間は1979年に開業した。都市交通の発展段階が異なる。",
-    "source": "https://www.hktramways.com/en/"
+    "detail": "香港トラムは1904年に営業を開始した。当初の車両は単層で、二階建て車両は後年導入された。MTRの初営業は1979年。開業年と現在の車両の特徴は分けて理解する。",
+    "source": "https://www.hktramways.com/en/our-story/",
+    "sourceReview": "specific-reference-checked"
   },
   {
     "id": "culture-cha",
@@ -463,7 +491,8 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "茶餐廳は香港式ミルクティーなどの飲み物と、多様な軽食・食事を扱う大衆的な飲食店。飲茶を中心とする店とは異なる。",
-    "source": "https://www.discoverhongkong.com/eng/explore/dining.html"
+    "source": "https://www.discoverhongkong.com/eng/explore/dining.html",
+    "sourceReview": "pending-specific-reference"
   },
   {
     "id": "culture-archive",
@@ -479,6 +508,7 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "映画資料館は資料の保存だけでなく、調査や公開を通じて映画史を伝える。映画文化を残すには保存とアクセスの双方が重要。",
-    "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html"
+    "source": "https://www.filmarchive.gov.hk/en/web/hkfa/home.html",
+    "sourceReview": "pending-specific-reference"
   }
 ];

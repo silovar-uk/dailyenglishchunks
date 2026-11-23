@@ -1270,5 +1270,100 @@ window.QUICK_TRIVIA = [
     "detail": "買兩件有冇折啊？（maai5 loeng5 gin6 jau5 mou5 zit3 aa3）は「2点買ったら割引はありますか？」。割引の有無を聞いており、割引率までは指定していない。粵典「折」に同じ用例がある。",
     "source": "https://words.hk/zidin/%E6%8A%98",
     "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-041-no-worries",
+    "category": "人間関係と会話",
+    "han": "緊",
+    "topic": "人間関係・会話",
+    "difficulty": 1,
+    "skill": "謝罪への応答",
+    "objective": "唔緊要を軽い謝罪に対する自然な返答として選べる",
+    "question": "友人が少し遅刻して「對唔住」と謝った。『大丈夫、気にしないで』と返すなら？",
+    "options": [
+      "唔緊要",
+      "唔得閒",
+      "唔知道"
+    ],
+    "answer": 0,
+    "detail": "唔緊要（m4 gan2 jiu3）は『大丈夫、気にしないで』。對唔住（deoi3 m4 zyu6）は謝罪の表現。謝罪への返答として場面に合う。",
+    "source": "https://words.hk/zidin/%E5%94%94%E7%B7%8A%E8%A6%81",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-042-busy",
+    "category": "人間関係と会話",
+    "han": "閒",
+    "topic": "人間関係・会話",
+    "difficulty": 2,
+    "skill": "誘いへの返答",
+    "objective": "唔得閒を都合がつかない返答として理解できる",
+    "question": "友人から『今晚一齊食飯？』（今夜一緒にご飯どう？）と誘われたが予定がある。自然な返答は？",
+    "options": [
+      "今晚唔得閒",
+      "今晚好得閒",
+      "今晚食咗飯"
+    ],
+    "answer": 0,
+    "detail": "今晚唔得閒（gam1 maan5 m4 dak1 haan4）は『今夜は時間がない／都合がつかない』。好得閒は暇がある、食咗飯はご飯を食べたという意味で誘いへの断りとは異なる。",
+    "source": "https://words.hk/zidin/%E5%BE%97%E9%96%92",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-043-agree",
+    "category": "人間関係と会話",
+    "han": "同",
+    "topic": "人間関係・会話",
+    "difficulty": 2,
+    "skill": "意見への同意",
+    "objective": "同意と唔同意の対比を文脈から判断できる",
+    "question": "友人が旅行の計画を提案した。『その意見に賛成』と伝えたい。最も直接的なのは？",
+    "options": [
+      "我同意",
+      "我唔同意",
+      "我唔記得"
+    ],
+    "answer": 0,
+    "detail": "我同意（ngo5 tung4 ji3）は『私は賛成です』。唔同意は反対、唔記得は覚えていない。会話の返答では相手の提案への立場を明確にする。",
+    "source": "https://words.hk/zidin/%E5%90%8C%E6%84%8F",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-044-repeat",
+    "category": "人間関係と会話",
+    "han": "講",
+    "topic": "人間関係・会話",
+    "difficulty": 2,
+    "skill": "聞き返し",
+    "objective": "聽唔清楚と再講一次を組み合わせて聞き返せる",
+    "question": "相手の声が小さくて聞き取れなかった。もう一度言ってもらうなら？",
+    "options": [
+      "唔好意思，可唔可以再講一次？",
+      "唔好意思，我已經明白晒",
+      "唔好意思，唔使講"
+    ],
+    "answer": 0,
+    "detail": "唔好意思（m4 hou2 ji3 si1）は『すみません』、可唔可以（ho2 m4 ho2 ji5）は『〜できますか』、再講一次（zoi3 gong2 jat1 ci3）は『もう一度言う』。丁寧に聞き返す表現。",
+    "source": "https://words.hk/zidin/%E5%86%8D",
+    "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-045-next-time",
+    "category": "人間関係と会話",
+    "han": "次",
+    "topic": "人間関係・会話",
+    "difficulty": 3,
+    "skill": "別れ際の表現と意図",
+    "objective": "下次再約が次の約束の可能性を示す表現だと理解できる",
+    "question": "友人との食事が終わり『下次再約啦』と言われた。最も自然な解釈は？",
+    "options": [
+      "また今度予定を合わせようという意味で、日時はまだ確定していない",
+      "次の食事は明日の同じ時間に確定した",
+      "もう二度と会いたくないという意味"
+    ],
+    "answer": 0,
+    "detail": "下次（haa6 ci3）は次回、再約（zoi3 joek3）はまた約束すること。下次再約啦は『また今度会おう』という意向を示すが、具体的な日時の確約ではない。",
+    "source": "https://words.hk/zidin/%E7%B4%84",
+    "sourceReview": "pending-specific-reference"
   }
 ];

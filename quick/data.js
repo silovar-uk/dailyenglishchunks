@@ -272,9 +272,9 @@ window.QUICK_DATA = [
     "meaning": "愛する",
     "group": "daily",
     "shape": "愛",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 BBPE の先頭 B と末尾 E を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "月（字根）",
+    "lastShape": "水（字根）",
+    "explain": "倉頡 BBPE → 速成 BE。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -344,9 +344,9 @@ window.QUICK_DATA = [
     "meaning": "感謝",
     "group": "daily",
     "shape": "謝",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 YRHHI の先頭 Y と末尾 I を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "卜（字根）",
+    "lastShape": "戈（字根）",
+    "explain": "倉頡 YRHHI → 速成 YI。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -356,9 +356,9 @@ window.QUICK_DATA = [
     "meaning": "どうぞ・請う",
     "group": "daily",
     "shape": "請",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 YRQMB の先頭 Y と末尾 B を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "卜（字根）",
+    "lastShape": "月（字根）",
+    "explain": "倉頡 YRQMB → 速成 YB。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -380,9 +380,9 @@ window.QUICK_DATA = [
     "meaning": "食べる",
     "group": "daily",
     "shape": "食",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 OIAV の先頭 O と末尾 V を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "人（字根）",
+    "lastShape": "女（字根）",
+    "explain": "倉頡 OIAV → 速成 OV。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -392,9 +392,9 @@ window.QUICK_DATA = [
     "meaning": "飲む",
     "group": "daily",
     "shape": "飲",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 OINO の先頭 O と末尾 O を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "人（字根）",
+    "lastShape": "人（字根）",
+    "explain": "倉頡 OINO → 速成 OO。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -464,9 +464,9 @@ window.QUICK_DATA = [
     "meaning": "する",
     "group": "daily",
     "shape": "做",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 OJRK の先頭 O と末尾 K を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "人（字根）",
+    "lastShape": "大（字根）",
+    "explain": "倉頡 OJRK → 速成 OK。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -476,9 +476,9 @@ window.QUICK_DATA = [
     "meaning": "会う・できる",
     "group": "daily",
     "shape": "會",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 OMWA の先頭 O と末尾 A を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "人（字根）",
+    "lastShape": "日（字根）",
+    "explain": "倉頡 OMWA → 速成 OA。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -524,9 +524,9 @@ window.QUICK_DATA = [
     "meaning": "再び",
     "group": "daily",
     "shape": "再",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 MGB の先頭 M と末尾 B を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "一（字根）",
+    "lastShape": "月（字根）",
+    "explain": "倉頡 MGB → 速成 MB。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -536,9 +536,9 @@ window.QUICK_DATA = [
     "meaning": "思う・〜したい",
     "group": "daily",
     "shape": "想",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 DUP の先頭 D と末尾 P を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "木（字根）",
+    "lastShape": "心（字根）",
+    "explain": "倉頡 DUP → 速成 DP。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -548,9 +548,9 @@ window.QUICK_DATA = [
     "meaning": "呼ぶ",
     "group": "daily",
     "shape": "叫",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 RVL の先頭 R と末尾 L を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口（字根）",
+    "lastShape": "中（字根）",
+    "explain": "倉頡 RVL → 速成 RL。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -560,9 +560,9 @@ window.QUICK_DATA = [
     "meaning": "何（広東語）",
     "group": "daily",
     "shape": "咩",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 RTQ の先頭 R と末尾 Q を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口（字根）",
+    "lastShape": "手（字根）",
+    "explain": "倉頡 RTQ → 速成 RQ。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -572,9 +572,9 @@ window.QUICK_DATA = [
     "meaning": "どう・点",
     "group": "daily",
     "shape": "點",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 WFYR の先頭 W と末尾 R を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "田（字根）",
+    "lastShape": "口（字根）",
+    "explain": "倉頡 WFYR → 速成 WR。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -584,9 +584,9 @@ window.QUICK_DATA = [
     "meaning": "様子・〜のよう",
     "group": "daily",
     "shape": "樣",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 DTGE の先頭 D と末尾 E を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "木（字根）",
+    "lastShape": "水（字根）",
+    "explain": "倉頡 DTGE → 速成 DE。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -596,9 +596,9 @@ window.QUICK_DATA = [
     "meaning": "この・〜呢",
     "group": "daily",
     "shape": "呢",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 RSP の先頭 R と末尾 P を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口（字根）",
+    "lastShape": "心（字根）",
+    "explain": "倉頡 RSP → 速成 RP。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -608,9 +608,9 @@ window.QUICK_DATA = [
     "meaning": "少し・複数のニュアンス",
     "group": "daily",
     "shape": "啲",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 RHAI の先頭 R と末尾 I を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口（字根）",
+    "lastShape": "戈（字根）",
+    "explain": "倉頡 RHAI → 速成 RI。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -620,9 +620,9 @@ window.QUICK_DATA = [
     "meaning": "〜した（完了）",
     "group": "daily",
     "shape": "咗",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 RKM の先頭 R と末尾 M を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口（字根）",
+    "lastShape": "一（字根）",
+    "explain": "倉頡 RKM → 速成 RM。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -632,9 +632,9 @@ window.QUICK_DATA = [
     "meaning": "もの",
     "group": "daily",
     "shape": "嘢",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 RWGN の先頭 R と末尾 N を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "口（字根）",
+    "lastShape": "弓（字根）",
+    "explain": "倉頡 RWGN → 速成 RN。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   },
   {
@@ -644,9 +644,9 @@ window.QUICK_DATA = [
     "meaning": "開く",
     "group": "daily",
     "shape": "開",
-    "firstShape": "先頭の字形",
-    "lastShape": "最後の字形",
-    "explain": "倉頡 ANMT の先頭 A と末尾 T を使用。字根は意味上の部首とは異なる場合があります。",
+    "firstShape": "日（字根）",
+    "lastShape": "廿（字根）",
+    "explain": "倉頡 ANMT → 速成 AT。画面の字根名は代表形であり、実際の筆画をそのまま切り出したものではありません。",
     "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
   }
 ];

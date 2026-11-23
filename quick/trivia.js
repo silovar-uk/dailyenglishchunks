@@ -90,9 +90,9 @@ window.QUICK_TRIVIA = [
     "han": "球",
     "question": "「足球」の意味は？",
     "options": [
-      "バスケットボール",
+      "ラグビー",
       "サッカー",
-      "バレーボール"
+      "アメリカンフットボール"
     ],
     "answer": 1,
     "detail": "足球（zuk1 kau4）はサッカー。香港にもサッカー協会と国内リーグがある。",
@@ -104,9 +104,9 @@ window.QUICK_TRIVIA = [
     "han": "隊",
     "question": "「球隊」は何を指す？",
     "options": [
-      "スタジアム",
-      "審判",
-      "チーム"
+      "クラブの運営会社",
+      "大会の運営組織",
+      "競技チーム"
     ],
     "answer": 2,
     "detail": "球隊（kau4 deoi6）は球技のチーム。球員は選手。",
@@ -119,8 +119,8 @@ window.QUICK_TRIVIA = [
     "question": "香港のMTRの正式な英語名は？",
     "options": [
       "Mass Transit Railway",
-      "Metro Tram Route",
-      "Main Transport Road"
+      "Metropolitan Transport Rail",
+      "Mass Transit Route"
     ],
     "answer": 0,
     "detail": "MTRはMass Transit Railwayの略。香港の鉄道網を指す。",
@@ -147,8 +147,8 @@ window.QUICK_TRIVIA = [
     "question": "香港映画の歴史資料を公開する公的機関は？",
     "options": [
       "香港電影資料館",
-      "香港天文台",
-      "香港郵政"
+      "香港文化博物館",
+      "香港藝術館"
     ],
     "answer": 0,
     "detail": "香港電影資料館（Hong Kong Film Archive）は映画資料の収集・保存・公開を担う。",
@@ -160,9 +160,9 @@ window.QUICK_TRIVIA = [
     "han": "茶",
     "question": "「奶茶」は何？",
     "options": [
-      "ミルクティー",
-      "緑茶だけ",
-      "豆乳"
+      "牛乳を加えた紅茶",
+      "練乳を使ったコーヒー",
+      "豆乳を使った紅茶"
     ],
     "answer": 0,
     "detail": "奶茶（naai5 caa4）はミルクティー。香港の飲食文化でおなじみ。",
@@ -174,9 +174,9 @@ window.QUICK_TRIVIA = [
     "han": "餐",
     "question": "「茶餐廳」はどんな店？",
     "options": [
-      "カジュアルな飲食店",
-      "図書館",
-      "駅の改札"
+      "軽食から食事まで扱う大衆食堂",
+      "茶葉の販売を中心とする専門店",
+      "飲茶のコース料理だけを提供する高級店"
     ],
     "answer": 0,
     "detail": "茶餐廳は香港の大衆的な飲食店の一形態。飲み物と食事を提供する。",
@@ -188,9 +188,9 @@ window.QUICK_TRIVIA = [
     "han": "街",
     "question": "香港の「旺角」は何の名前？",
     "options": [
-      "地区名",
-      "通貨名",
-      "料理名"
+      "九龍の地区名",
+      "香港島の地下鉄駅名のみ",
+      "新界の自然保護区名"
     ],
     "answer": 0,
     "detail": "旺角（Mong Kok）は九龍の地区名。街の看板から繁体字を学べる。",

@@ -985,5 +985,100 @@ window.QUICK_TRIVIA = [
     "detail": "六・綠・鹿はいずれも luk6 と表記される。k は韻尾の閉鎖音、6 は声調。発音だけでは区別できない同音語は文脈で判断する。",
     "source": "https://jyutping.org/en/",
     "sourceReview": "pending-specific-reference"
+  },
+  {
+    "id": "q100-026-menu",
+    "category": "飲食店での判断",
+    "han": "牌",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 1,
+    "skill": "注文前の依頼",
+    "objective": "餐牌をメニューとして認識し、注文前に依頼できる",
+    "question": "茶餐廳で料理を決める前に「唔該，俾個餐牌我睇吓」と言った。何を頼んだ？",
+    "options": [
+      "メニューを見せてほしい",
+      "会計を済ませたい",
+      "持ち帰り容器がほしい"
+    ],
+    "answer": 0,
+    "detail": "餐牌（caan1 paai2）はメニュー。「唔該俾個餐牌我睇吓」は、メニューを見せてもらう依頼。粵典の用例に基づく。",
+    "source": "https://words.hk/zidin/%E9%A4%90%E7%89%8C",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-027-less-sweet",
+    "category": "飲食店での判断",
+    "han": "甜",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "味の調整",
+    "objective": "少甜と走甜の違いを注文時に判断できる",
+    "question": "凍檸茶を「甘さ控えめ」にしたい。「砂糖なし」にはしたくない。どちらを選ぶ？",
+    "options": [
+      "少甜",
+      "走甜",
+      "加一"
+    ],
+    "answer": 0,
+    "detail": "少甜は砂糖を少なめにすること、走甜は砂糖を入れないこと。凍檸茶の注文での使い分けが粵典「檸檬茶」に記載されている。",
+    "source": "https://words.hk/zidin/%E6%AA%B8%E6%AA%AC%E8%8C%B6",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-028-bill",
+    "category": "飲食店での判断",
+    "han": "單",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "会計時の表現",
+    "objective": "埋單を食後の会計依頼として理解できる",
+    "question": "食事を終えて「唔該，埋單」と店員に伝えた。何を頼んだ？",
+    "options": [
+      "お会計をお願いした",
+      "メニューを追加で頼んだ",
+      "料理を温め直してもらった"
+    ],
+    "answer": 0,
+    "detail": "埋單（maai4 daan1）は食事代を精算すること。「唔該，埋單」は会計をお願いする表現。",
+    "source": "https://words.hk/zidin/%E5%9F%8B%E5%96%AE",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-029-service",
+    "category": "飲食店での判断",
+    "han": "一",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 3,
+    "skill": "料金表示の解釈",
+    "objective": "加一を10％サービス料として理解し、表示金額との違いを計算できる",
+    "question": "料理代がHK$200で「加一」の店。ほかの料金がない場合、支払額はいくら？",
+    "options": [
+      "HK$220",
+      "HK$201",
+      "HK$210"
+    ],
+    "answer": 0,
+    "detail": "加一（gaa1 jat1）は10％のサービス料。HK$200×1.10＝HK$220。実際の店では別料金や端数処理がある場合もあるため、ここでは問題文の条件で計算する。",
+    "source": "https://words.hk/zidin/%E5%8A%A0%E4%B8%80",
+    "sourceReview": "specific-reference-checked"
+  },
+  {
+    "id": "q100-030-leftovers",
+    "category": "飲食店での判断",
+    "han": "包",
+    "topic": "飲食・買い物・交通",
+    "difficulty": 2,
+    "skill": "食後の持ち帰り判断",
+    "objective": "打包が食べ残しを包んで持ち帰る行為にも使われると理解できる",
+    "question": "店内で食べた料理が残り、友人が「打包拎走啦」と言った。どうする提案？",
+    "options": [
+      "残った料理を包んで持ち帰る",
+      "追加の料理を注文する",
+      "残った料理をその場で全部食べる"
+    ],
+    "answer": 0,
+    "detail": "打包（daa2 baau1）は包む・持ち帰り用にまとめること、拎走（ling1 zau2）は持って行くこと。最初から外賣で注文するのとは場面が違う。",
+    "source": "https://words.hk/zidin/%E9%A4%B8%E9%A0%AD%E9%A4%B8%E5%B0%BE",
+    "sourceReview": "specific-reference-checked"
   }
 ];

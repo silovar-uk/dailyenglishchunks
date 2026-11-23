@@ -1,5 +1,5 @@
 // Quick Lab trivia: sourced, editorially curated three-choice cards.
-// Questions target specific knowledge; pronunciation objectives are not claims of audio proficiency.
+// Scenario-based questions target decisions a learner may face in Hong Kong.
 window.QUICK_TRIVIA = [
   {
     "id": "poly-hear",
@@ -319,6 +319,102 @@ window.QUICK_TRIVIA = [
     ],
     "answer": 0,
     "detail": "唔該（m4 goi1）はサービスや手助けへのお礼・依頼に広く使う。多謝（do1 ze6）は贈り物などへの感謝に使うことが多い。絶対的な二分法ではなく場面により重なる。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "life-price",
+    "category": "香港実践・買い物",
+    "han": "錢",
+    "skill": "場面判断・買い物",
+    "objective": "買い物で値段を尋ねる自然な広東語を選べる",
+    "question": "旺角の店で値札がない商品を見つけた。値段を聞くなら？",
+    "options": [
+      "呢個幾錢？",
+      "呢個喺邊？",
+      "呢個幾點？"
+    ],
+    "answer": 0,
+    "detail": "呢個幾錢？（ni1 go3 gei2 cin2）＝これ、いくら？「喺邊」はどこ、「幾點」は何時。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "life-takeaway",
+    "category": "香港実践・飲食店",
+    "han": "拎",
+    "skill": "場面判断・飲食店",
+    "objective": "持ち帰りと店内飲食を広東語で区別できる",
+    "question": "茶餐廳で「外賣定堂食？」と聞かれた。何を選ぶ質問？",
+    "options": [
+      "持ち帰りか店内飲食か",
+      "現金かカードか",
+      "辛い味か甘い味か"
+    ],
+    "answer": 0,
+    "detail": "外賣（ngoi6 maai6）は持ち帰り、堂食（tong4 sik6）は店内飲食。「定」は二者択一を表す。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "life-noice",
+    "category": "香港実践・飲食店",
+    "han": "冰",
+    "skill": "場面判断・飲食店",
+    "objective": "飲み物を氷なしで注文する表現を選べる",
+    "question": "飲み物を冷たいまま、氷なしで頼みたい。注文時に足すのは？",
+    "options": [
+      "走冰",
+      "加冰",
+      "少甜"
+    ],
+    "answer": 0,
+    "detail": "走冰（zau2 bing1）は氷抜き、加冰（gaa1 bing1）は氷を追加、少甜（siu2 tim4）は甘さ控えめ。店によって注文可能な調整は異なる。",
+    "source": "https://jyutping.org/en/"
+  },
+  {
+    "id": "life-exit",
+    "category": "香港実践・交通",
+    "han": "出",
+    "skill": "場面判断・交通",
+    "objective": "MTRの出口表示「出口」を理解できる",
+    "question": "MTR駅で「出口 Exit A」と表示されている。向かう先は？",
+    "options": [
+      "A出口",
+      "A線の乗り換えホーム",
+      "A方面行きの列車"
+    ],
+    "answer": 0,
+    "detail": "出口（ceot1 hau2）は出口。MTRでは出口がアルファベットで区別される。駅構内の案内表示を確認して進む。",
+    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html"
+  },
+  {
+    "id": "life-nextstop",
+    "category": "香港実践・交通",
+    "han": "站",
+    "skill": "場面判断・交通",
+    "objective": "車内アナウンスの「下一站」を理解できる",
+    "question": "電車内で「下一站，中環」と聞こえた。どういう意味？",
+    "options": [
+      "次の駅は中環",
+      "中環が終点とは限らないが、今いる駅は中環",
+      "中環行きの列車が運休"
+    ],
+    "answer": 0,
+    "detail": "下一站（haa6 jat1 zaam6）は次の駅。中環（zung1 waan4）はCentral。降りる駅かどうか判断する手掛かりになる。",
+    "source": "https://www.mtr.com.hk/en/customer/services/system_map.html"
+  },
+  {
+    "id": "life-direction",
+    "category": "香港実践・道案内",
+    "han": "邊",
+    "skill": "場面判断・道案内",
+    "objective": "目的地の場所を尋ねる表現を使い分けられる",
+    "question": "道に迷い、MTR駅の場所を聞きたい。最も直接的な質問は？",
+    "options": [
+      "地鐵站喺邊度？",
+      "地鐵站幾錢？",
+      "地鐵站幾點？"
+    ],
+    "answer": 0,
+    "detail": "地鐵站喺邊度？（dei6 tit3 zaam6 hai2 bin1 dou6）＝地下鉄の駅はどこ？「喺邊度」で場所を尋ねる。",
     "source": "https://jyutping.org/en/"
   }
 ];

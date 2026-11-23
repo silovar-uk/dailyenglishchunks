@@ -137,4 +137,13 @@ assert.equal(phraseEl("meaning").textContent,"あなたが好きです／愛し�
 vm.runInContext('append("H");append("I");check();next();append("B");append("E");check();next();append("O");append("F");check();next()',phraseContext);
 assert.match(phraseEl("feedback").textContent,/フレーズ完成/,"I love you completed");
 
+
+assert.match(html, /class="lcd" id="lcd"/, "fixed handheld LCD exists");
+assert.match(html, /\.lcd\{height:clamp\(/, "responsive LCD height");
+assert.match(html, /\.lcd\.answered\{display:block;overflow-y:auto/, "answered LCD scrolls internally");
+assert.match(html, /\.lcd\.answered>#compounds\{display:block/, "compound learning remains available");
+assert.match(html, /id="keyboard"/, "root keyboard preserved");
+assert.match(html, /quick-lab-v1/, "existing progress key preserved");
+assert.match(html, /prefers-reduced-motion/, "reduced motion supported");
+
 console.log("Quick Lab checks passed:", data.length, "characters;", data.filter(x=>x.code.length===1).length, "one-key roots");

@@ -11,7 +11,7 @@
 "use strict";
 const $=id=>document.getElementById(id);
 const dict=new Map((window.QUICK_DATA||[]).map(x=>[x.han,x]));
-const PHRASES=[{text:"早晨",meaning:"おはよう"},{text:"我愛你",meaning:"あなたが好きです／愛しています"},{text:"你好",meaning:"こんにちは"},{text:"我係你",meaning:"私はあなたの…（文の練習用・未完の表現）"}];
+const PHRASES=[{text:"早晨",meaning:"おはよう"},{text:"我愛你",meaning:"あなたが好きです／愛しています"},{text:"你好",meaning:"こんにちは"},{text:"多謝",meaning:"ありがとう"}];
 const ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 let phraseIndex=0,pos=0,typed="",done=false,helped=false,misses=0;
 function active(){return dict.get([...PHRASES[phraseIndex].text][pos])}

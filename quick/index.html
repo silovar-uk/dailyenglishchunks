@@ -317,9 +317,12 @@ function showTrivia(item,label){
  $("triviaAnswer").textContent="";$("triviaAnswer").classList.add("hidden");
  $("triviaSource").classList.add("hidden");$("triviaSource").removeAttribute("href");
  const wrap=$("triviaChoices");wrap.replaceChildren();
- item.options.forEach((option,i)=>{
+ const offset=TRIVIA.findIndex(t=>t.id===item.id)%3;
+ const displayed=[0,1,2].map(i=>(i+offset)%3);
+ displayed.forEach((original,i)=>{
+  const option=item.options[original];
   const button=document.createElement("button");button.type="button";button.textContent=(i+1)+". "+option;
-  button.onclick=()=>answerTrivia(i);wrap.append(button);
+  button.dataset.original=String(original);button.onclick=()=>answerTrivia(original);wrap.append(button);
  });
 }
 function answerTrivia(choice){
@@ -327,7 +330,7 @@ function answerTrivia(choice){
  triviaSolved=true;
  const t=activeTrivia;
  const buttons=$("triviaChoices").children;
- for(let i=0;i<buttons.length;i++){buttons[i].disabled=true;if(i===t.answer)buttons[i].classList.add("correct");else if(i===choice)buttons[i].classList.add("wrong")}
+ for(let i=0;i<buttons.length;i++){const original=Number(buttons[i].dataset.original);buttons[i].disabled=true;if(original===t.answer)buttons[i].classList.add("correct");else if(original===choice)buttons[i].classList.add("wrong")}
  $("triviaAnswer").textContent=(choice===t.answer?"✓ 正解！ ":"正解は「"+t.options[t.answer]+"」。 ")+t.detail;
  $("triviaAnswer").classList.remove("hidden");
  $("triviaSource").href=t.source;$("triviaSource").classList.remove("hidden");

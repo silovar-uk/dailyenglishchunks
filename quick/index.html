@@ -168,6 +168,17 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .sound-message a{color:var(--neon-cyan);text-decoration:underline;text-underline-offset:3px}
 /* UX phase 2: answer first, optional detail second, next action always visible. */
 .answer-brief{margin:8px 9px 3px;padding:9px 11px;background:#1b3948;border:1px solid #7bd9df;border-radius:8px;color:#f4ffff;font-size:13px;font-weight:700;line-height:1.5;flex:0 0 auto}
+.answer-brief .mistake-heading{font-size:12px;letter-spacing:.03em;margin-bottom:6px;color:#bceff2}
+.answer-brief .mistake-glyph{font-family:"PingFang TC","Noto Sans CJK TC",sans-serif;font-size:30px;line-height:1.2;color:#fff8fd;margin:2px 0 7px}
+.answer-brief .mistake-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.answer-brief .mistake-panel{min-width:0;border:1px solid #627d92;border-radius:7px;padding:8px 5px;background:#102d3d;text-align:center}
+.answer-brief .mistake-panel.correct-panel{border-color:#78e6bf}
+.answer-brief .mistake-panel .mistake-title{display:block;font-size:10px;color:#d4e5f0;margin-bottom:3px}
+.answer-brief .mistake-panel .mistake-code{display:block;font-size:21px;letter-spacing:.1em;color:#fff}
+.answer-brief .mistake-panel .mistake-roots{display:block;font-size:14px;line-height:1.5;color:#ffdcaa;font-family:"PingFang TC","Noto Sans CJK TC",sans-serif}
+.answer-brief .mistake-detail{font-size:12px;line-height:1.55;margin-top:8px;color:#f5faff;font-weight:500}
+.answer-brief .mistake-detail b{color:#ffe6a4}
+.answer-brief .mistake-note{font-size:10px;line-height:1.45;color:#b7cdd8;margin-top:5px;font-weight:400}
 .lcd.answered{display:flex;flex-direction:column}
 .lcd.answered .answer-brief{display:block}
 .lcd.answered .result-tabs{padding:4px 9px 7px}
@@ -258,11 +269,28 @@ $("triviaShuffle").onclick=()=>{
  showTrivia(other[Math.floor(Math.random()*other.length)]||TRIVIA[0],"ランダム香港雑学");
 };
 
+function mistakeSummary(q,input){
+ const esc=t=>String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+ const root=c=>ROOTS[c]||"不明";
+ const chunks=q.code.split("");
+ const display=code=>code.split("").map(c=>root(c)+"（"+c+"）").join(" ＋ ");
+ const differences=chunks.map((correct,i)=>{
+  const actual=input[i]||"—";
+  if(actual===correct)return (i===0?"先頭":"末尾")+"は一致";
+  return (i===0?"先頭":"末尾")+"：<b>"+esc(root(actual))+"（"+esc(actual)+"）→ "+esc(root(correct))+"（"+esc(correct)+"）</b>";
+ });
+ return '<div class="mistake-heading">✦ 入力の違いを確認</div>'+
+ '<div class="mistake-glyph" lang="zh-HK">'+esc(q.han)+'</div>'+
+ '<div class="mistake-grid"><div class="mistake-panel"><span class="mistake-title">あなたの入力</span><span class="mistake-code">'+esc(input)+'</span><span class="mistake-roots">'+esc(display(input))+'</span></div>'+
+ '<div class="mistake-panel correct-panel"><span class="mistake-title">正しい入力</span><span class="mistake-code">'+esc(q.code)+'</span><span class="mistake-roots">'+esc(display(q.code))+'</span></div></div>'+
+ '<div class="mistake-detail">'+differences.join(' ／ ')+'</div>'+
+ '<div class="mistake-note">字根名はキーの代表名です。実際の漢字のどこを見誤ったかは、この入力だけでは断定できません。「字根を詳しく」で形の説明を確認できます。</div>';
+}
 function check(){let q=current();if(!q||done||typed.length!==q.code.length)return;done=true;let good=typed===q.code;let s=stats[q.han]||{attempts:0,wins:0,level:0};s.attempts++;if(good)s.wins++;else{if(typed[0]!==q.code[0])s.firstErrors=(s.firstErrors||0)+1;if(q.code.length>1&&typed[1]!==q.code[1])s.lastErrors=(s.lastErrors||0)+1;}s.level=good&&!helped?Math.min((s.level||0)+1,5):0;s.due=addDays(good&&!helped?[0,1,3,7,14,30][s.level]:0);stats[q.han]=s;persist();$("status").textContent=good?"正解":"復習しよう";const p1='<div class="vpart first"><span class="vlabel">'+(q.code.length===1?'字根':'先頭の字根')+'</span><div class="shape">'+q.firstShape+'</div><div class="code">'+q.code[0]+' · '+ROOTS[q.code[0]]+'</div></div>';
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">末尾の字根</span><div class="shape">'+q.lastShape+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
 const peers=["all","roots250"].includes(course)?rootPeers(q):[];const compare=peers.length?'<p class="vnote"><strong>似た字根を比較</strong>：'+peers.map(x=>x.han+" "+x.code).join(" ／ ")+'</p>':"";
-$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");$("answerBrief").textContent=(good?"✓ 正解":"↻ 正解は "+q.code)+" · "+q.han+" / "+q.code+" · "+q.meaning;$("answerBrief").classList.remove("hidden");setResultTab("brief");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
+$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");showCompounds(q);$("resultTabs").classList.remove("hidden");if(good){$("answerBrief").textContent="✓ 正解 · "+q.han+" / "+q.code+" · "+q.meaning;}else{$("answerBrief").innerHTML=mistakeSummary(q,typed);}$("answerBrief").classList.remove("hidden");setResultTab("brief");$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
 function next(){if(pos>=queue.length){if(review){review=false;savePrefs()}build();return}pos++;render()}
 
 function setResultTab(tab){

@@ -403,9 +403,14 @@ function mount(host,q,side="last"){
   if(r){
    info.append(el("div","qa-location",r[offset]),el("p","qa-explain",r[offset+2]));
   }else{
+   // No human-reviewed stroke extraction: tell the learner which code position
+   // they are viewing, and provide the reference dictionary instead of
+   // pretending a verified colored overlay exists.
+   const positionLabel=value==="first"?"字首":value==="last"?"字末":"基本字根";
+   info.append(el("div","qa-location",positionLabel+"のコード位置を確認 · "+roots[k]+" "+k));
    const shape=position===0?q.firstShape:q.lastShape;
    if(shape)info.append(el("p","qa-explain","字形の手掛かり　"+shape));
-   info.append(el("p","qa-caption","この漢字の詳しい字形解説は準備中です。"));
+   info.append(el("p","qa-caption","この位置の筆画の分解は未校閲です。辞典の図と下の出典リンクで確認できます。"));
   }
 
   boundaryNote.textContent=hasStrokePart(part)?"この位置の筆画は照合済み":"赤色が選択中の字根です（HKCards 分解図）。";

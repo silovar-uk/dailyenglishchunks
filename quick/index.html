@@ -281,7 +281,7 @@ function inCourse(x){
  if(course==="hk")return HK_COMMON.has(x.han)||HK_RARE.has(x.han);
  if(course==="phrase")return PHRASE_CHARS.has(x.han)&&!!phraseFor(x);
  if(course==="rare")return HK_RARE.has(x.han);
- const tier=course==="all"||(course==="starter"?!["basic100","daily150","scene200","roots250","work300","core319"].includes(x.group):course==="basic100"?!["daily150","scene200","roots250","work300","core319"].includes(x.group):course==="daily150"?!["scene200","roots250","work300","core319"].includes(x.group):course==="scene200"?!["roots250","work300","core319"].includes(x.group):x.group!=="work300","core319");
+ const tier=course==="all"||(course==="starter"?!["basic100","daily150","scene200","roots250","work300","core319"].includes(x.group):course==="basic100"?!["daily150","scene200","roots250","work300","core319"].includes(x.group):course==="daily150"?!["scene200","roots250","work300","core319"].includes(x.group):course==="scene200"?!["roots250","work300","core319"].includes(x.group):!["work300","core319"].includes(x.group));
  return tier&&(!["all","scene200"].includes(course)||scene==="all"||SCENES[scene].has(x.han));
 }
 function build(){

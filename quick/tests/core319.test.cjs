@@ -81,7 +81,7 @@ test("all 15 original phrase drills survive the 55-item shared catalog",()=>{
     assert.ok(byChar.has(char),p.text+": "+char+" cannot be typed");
   for(const name of phraseNames)
     assert.ok(phrases.some(p=>p.text===name&&p.note),name);
-  assert.match(phrasePage,/new URLSearchParams\\(window\\.location\\.search\\)/);
+  assert.ok(phrasePage.includes("new URLSearchParams(window.location.search)"));
 });
 
 test("data loads are cache-busted and speech/learning records are unchanged",()=>{

@@ -95,8 +95,8 @@ assert.match(html, /<script src="\.\/extras\.js\?v=[^"]+"/, "quiz reading data i
 vm.runInContext(read("lexicon/core.js"), context, { filename: "lexicon/core.js" });
 const phrases = context.window.QUICK_LEXICON_CORE;
 assert.ok(Array.isArray(phrases), "shared phrase catalog exists");
-assert.equal(phrases.length, 55, "55 complete phrase drills");
-assert.equal(new Set(phrases.map(p => p.text)).size, 55, "unique phrase forms");
+assert.equal(phrases.length, 105, "105 complete phrase drills");
+assert.equal(new Set(phrases.map(p => p.text)).size, 105, "unique phrase forms");
 for (const phrase of phrases) {
   assert.ok(phrase.text && phrase.meaning && phrase.category, "complete phrase record");
   assert.match(phrase.jyutping, /^[a-z]+[1-6](?: [a-z]+[1-6])*$/,

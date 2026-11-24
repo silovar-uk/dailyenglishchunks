@@ -77,8 +77,8 @@ test("old staged courses exclude freq4; all course includes it",()=>{
   assert.ok(additions.every(row=>common.includes(row.han)),"HK practical course includes additions");
 });
 
-test("the original 55-phrase catalog, speech and progress key remain intact",()=>{
-  assert.equal(lexicon.length,55);
+test("the original 55 phrases remain within the 105-phrase catalog",()=>{
+  assert.equal(lexicon.length,105);
   assert.ok(lexicon.every(x=>[...x.text].every(c=>inputSet.has(c))));
   assert.match(index,/const KEY="quick-lab-v1"/);
   assert.match(index,/id="playAnsweredChar"/);

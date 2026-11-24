@@ -15,8 +15,8 @@ const byChar=new Map(DATA.map(row=>[row.han,row]));
 const upstream={辛:"YTJ",苦:"TJR",晒:"AMCW",哂:"RMCW"};
 
 test("four distinct characters are present without duplicates",()=>{
-  assert.equal(DATA.length,304);
-  assert.equal(new Set(DATA.map(x=>x.han)).size,304);
+  assert.equal(DATA.length,319);
+  assert.equal(new Set(DATA.map(x=>x.han)).size,319);
   for(const char of Object.keys(upstream))assert.ok(byChar.has(char),char);
 });
 
@@ -56,7 +56,7 @@ test("main Hong Kong and everyday-phrase courses expose the new characters",()=>
   for(const char of [..."辛苦晒"])assert.ok(common.includes(char),char);
   assert.ok(rare.includes("哂"));
   assert.match(index,/const GREETINGS=\[[^;]+?"辛苦晒"\]/);
-  assert.match(index,/総合304字/);
+  assert.match(index,/総合319字/);
 });
 
 test("data URLs are versioned and text-to-speech controls remain intact",()=>{

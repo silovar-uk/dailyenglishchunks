@@ -40,6 +40,7 @@
       { opacity: 1, transform: "scale(1)" }
     ], { duration: 420, easing: "cubic-bezier(.2,.8,.2,1)" });
     burst(glyph, roots, combo);
+    victory(glyph, combo);
     animate("status", status, [
       { opacity: .7, transform: "translateY(3px)" },
       { opacity: 1, transform: "translateY(0)" }
@@ -54,6 +55,29 @@
         { opacity: 1, transform: "translateY(0) scale(1)" }
       ], { duration: 400, easing: "cubic-bezier(.2,.8,.2,1)" });
     }
+  }
+
+  function victory(glyph, combo) {
+    if (!glyph?.isConnected || reduced?.matches || document.hidden || !glyph.animate) return;
+    const layer=document.createElement("div");
+    layer.setAttribute("aria-hidden","true");
+    layer.style.cssText="position:fixed;inset:0;z-index:2147483000;pointer-events:none;overflow:hidden;display:grid;place-items:center";
+    document.body.appendChild(layer); particles.add(layer);
+    const card=document.createElement("div");
+    card.style.cssText="position:relative;text-align:center;color:#fff;font-weight:900;text-shadow:0 3px 0 #164c50,0 0 18px #00eac8;background:#123d49ee;border:3px solid #9affeb;border-radius:24px;padding:18px 38px;box-shadow:0 0 36px #00eac899";
+    const han=document.createElement("div");han.textContent=glyph.textContent;han.style.cssText="font-size:clamp(80px,24vw,150px);line-height:1.1";
+    const title=document.createElement("div");title.textContent=[3,5,10].includes(combo)?combo+" COMBO!":"正解！";title.style.cssText="font-size:32px;letter-spacing:.12em;color:#ffec99";
+    card.append(han,title);layer.append(card);
+    animate("victory-card",card,[{transform:"scale(.25) rotate(-12deg)",opacity:0},{transform:"scale(1.2) rotate(4deg)",opacity:1,offset:.23},{transform:"scale(1) rotate(0)",opacity:1,offset:.38},{transform:"scale(1)",opacity:1,offset:.72},{transform:"translateY(-70px) scale(.85)",opacity:0}],{duration:1050,easing:"linear"});
+    for(let i=0;i<28;i++){
+      const p=document.createElement("div"),a=i*Math.PI*2/28,r=130+(i%5)*35;
+      p.style.cssText="position:absolute;left:50%;top:50%;width:10px;height:18px;border-radius:3px;background:"+["#ffe16b","#59ffe0","#ff79b9","#fff"][i%4];
+      layer.append(p);
+      animate("victory-confetti-"+i,p,[{transform:"translate(0,0) scale(.2)",opacity:0},{opacity:1,offset:.18},{transform:"translate("+Math.cos(a)*r+"px,"+Math.sin(a)*r+"px) rotate("+((i%2?1:-1)*360)+"deg)",opacity:0}],{duration:950,delay:60,easing:"ease-out"});
+    }
+    const a=layer.animate([{opacity:1},{opacity:1}],{duration:1100});
+    running.set("victory-cleanup",a);
+    a.onfinish=()=>{layer.remove();particles.delete(layer);if(running.get("victory-cleanup")===a)running.delete("victory-cleanup");};
   }
 
   function burst(glyph, roots, combo) {

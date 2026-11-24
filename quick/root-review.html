@@ -1,0 +1,160 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>字根の校正室 | Quick Lab</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#112229;color:#edf2ee;font:16px/1.6 system-ui,sans-serif}main{max-width:1020px;margin:auto;padding:20px}a{color:#a2ece0}h1{margin:.4em 0}section{background:#20343d;padding:16px;border-radius:12px}article{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:12px}svg{width:min(100%,190px);display:block;margin:auto}button,select,input{font:inherit;min-height:44px}button,select{border-radius:7px;padding:4px 10px;background:#eef3ed;color:#172b31}label{display:block;margin:8px 0}small{display:block}details{margin:14px 0}pre{white-space:pre-wrap}path{cursor:pointer}path:focus-visible{stroke:white;stroke-width:8}</style>
+<main><a href="./">← Quick Lab</a><h1>字根の校正室</h1><label>表示する位置 <select id="side"><option value="1">字末</option><option value="0">字首</option></select></label><p>金色が選択中の字根。図の画や部品をタップすると選択を変更できます。変更はこのページを開いている間だけ保持します。</p><article id="cards"></article>
+<template id="card"><section><h2></h2><svg viewBox="0 0 1024 1024" role="group"><g transform="translate(0 900) scale(1 -1)"></g></svg><p class="hint"></p><label hidden>縦画の境界 <input type="range" min="485" max="555" value="522"></label><button type="button">この字を初期状態に戻す</button><p><a target="_blank" rel="noopener">字典の分解図と見比べる ↗</a></p></section></template>
+<details><summary>字形の出典・利用条件</summary><p>果・粥の筆画は <a href="https://github.com/skishore/makemeahanzi">Make Me a Hanzi</a>（<a href="./ARPHICPL.TXT">Arphic Public License</a>）。喎の輪郭は Noto Sans CJK HK から抽出。</p><pre>Copyright: 2010-2012, Google Corporation
+ GPL-3+
+
+License: SIL-1.1
+ -----------------------------------------------------------
+ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+ -----------------------------------------------------------
+ .
+ PREAMBLE
+ .
+ The goals of the Open Font License (OFL) are to stimulate worldwide
+ development of collaborative font projects, to support the font
+ creation efforts of academic and linguistic communities, and to provide
+ a free and open framework in which fonts may be shared and improved in
+ partnership with others.
+ .
+ The OFL allows the licensed fonts to be used, studied, modified and
+ redistributed freely as long as they are not sold by themselves. The
+ fonts, including any derivative works, can be bundled, embedded,
+ redistributed and/or sold with any software provided that any reserved
+ names are not used by derivative works. The fonts and derivatives,
+ however, cannot be released under any other type of license. The
+ requirement for fonts to remain under this license does not apply to
+ any document created using the fonts or their derivatives.
+ .
+ DEFINITIONS
+ .
+ &quot;Font Software&quot; refers to the set of files released by the Copyright
+ Holder(s) under this license and clearly marked as such. This may
+ include source files, build scripts and documentation.
+ .
+ &quot;Reserved Font Name&quot; refers to any names specified as such after the
+ copyright statement(s).
+ .
+ &quot;Original Version&quot; refers to the collection of Font Software components
+ as distributed by the Copyright Holder(s).
+ .
+ &quot;Modified Version&quot; refers to any derivative made by adding to,
+ deleting, or substituting -- in part or in whole -- any of the
+ components of the Original Version, by changing formats or by porting
+ the Font Software to a new environment.
+ .
+ &quot;Author&quot; refers to any designer, engineer, programmer, technical writer
+ or other person who contributed to the Font Software.
+ .
+ PERMISSION &amp; CONDITIONS
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of the Font Software, to use, study, copy, merge, embed, modify,
+ redistribute, and sell modified and unmodified copies of the Font
+ Software, subject to the following conditions:
+ .
+ 1) Neither the Font Software nor any of its individual components, in
+ Original or Modified Versions, may be sold by itself.
+ .
+ 2) Original or Modified Versions of the Font Software may be bundled,
+ redistributed and/or sold with any software, provided that each copy
+ contains the above copyright notice and this license. These can be
+ included either as stand-alone text files, human-readable headers or
+ in the appropriate machine-readable metadata fields within text or
+ binary files as long as those fields can be easily viewed by the user.
+ .
+ 3) No Modified Version of the Font Software may use the Reserved Font
+ Name(s) unless explicit written permission is granted by the
+ corresponding Copyright Holder. This restriction only applies to the
+ primary font name as presented to the users.
+ .
+ 4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+ Software shall not be used to promote, endorse or advertise any
+ Modified Version, except to acknowledge the contribution(s) of the
+ Copyright Holder(s) and the Author(s) or with their explicit written
+ permission.
+ .
+ 5) The Font Software, modified or unmodified, in part or in whole, must
+ be distributed entirely under this license, and must not be distributed
+ under any other license. The requirement for fonts to remain under this
+ license does not apply to any document created using the Font Software.
+ .
+ TERMINATION
+ .
+ This license becomes null and void if any of the above conditions are
+ not met.
+ .
+ DISCLAIMER
+ .
+ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+ OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+ COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+ OTHER DEALINGS IN THE FONT SOFTWARE.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in &quot;/usr/share/common-licenses/GPL-3&quot;.
+</pre></details></main>
+<script>
+const outlines= {"粥": ["M 316 541 Q 332 629 357 656 Q 376 680 355 691 Q 337 701 313 715 Q 298 724 257 698 Q 203 677 180 671 Q 170 670 171 665 Q 172 661 185 654 Q 195 650 274 667 Q 287 671 290 665 Q 297 659 290 625 Q 283 588 272 545 C 265 516 310 512 316 541 Z", "M 202 488 Q 206 488 213 490 Q 247 502 325 517 Q 334 518 334 527 Q 334 533 316 541 L 272 545 Q 268 545 265 543 Q 219 524 183 514 C 154 506 172 485 202 488 Z", "M 226 345 Q 244 348 252 339 Q 262 326 261 291 Q 260 224 246 176 Q 234 139 223 126 Q 216 116 192 123 Q 170 127 151 130 Q 136 134 139 125 Q 142 113 155 102 Q 183 75 200 50 Q 216 31 235 44 Q 289 95 295 141 Q 295 144 296 146 Q 318 320 325 330 Q 334 346 324 356 Q 311 371 283 382 Q 261 391 247 383 Q 234 379 188 360 Q 181 357 178 359 Q 174 363 199 470 Q 202 480 202 488 C 205 502 205 502 183 514 Q 174 520 161 526 Q 149 535 141 528 Q 132 522 142 510 Q 161 479 151 429 Q 138 363 111 337 Q 101 324 105 313 Q 112 301 122 295 Q 132 288 148 303 Q 178 340 226 345 Z", "M 368 539 Q 395 485 418 471 Q 428 467 436 474 Q 443 481 444 494 Q 444 527 384 564 Q 374 571 366 570 Q 362 570 361 561 Q 360 552 368 539 Z", "M 584 606 Q 571 575 542 527 Q 538 520 543 515 Q 550 515 555 520 Q 615 577 645 599 Q 658 605 654 613 Q 647 625 630 637 Q 612 650 594 648 Q 584 647 586 631 Q 590 621 584 606 Z", "M 510 421 Q 517 424 601 444 Q 610 444 616 455 Q 616 464 596 470 Q 572 485 510 459 L 474 446 Q 437 436 341 411 Q 319 407 337 394 Q 368 376 388 384 Q 418 396 457 406 L 510 421 Z", "M 509 315 Q 509 364 510 421 L 510 459 Q 510 678 527 742 Q 534 755 532 767 Q 526 776 477 805 Q 456 820 438 806 Q 434 802 440 788 Q 471 742 472 697 Q 473 630 476 552 Q 475 500 474 446 L 472 334 Q 472 213 449 132 Q 440 95 463 43 Q 469 28 476 25 Q 482 19 488 26 Q 495 30 504 49 Q 511 71 511 98 Q 510 126 509 290 L 509 315 Z", "M 457 406 Q 424 310 322 163 Q 318 154 328 154 Q 332 153 341 161 Q 426 240 472 334 C 520 430 467 434 457 406 Z", "M 509 290 Q 584 223 595 222 L 597 222 Q 606 222 609 233 Q 613 243 606 267 Q 602 283 576 296 Q 521 318 509 315 C 483 313 487 310 509 290 Z", "M 808 558 Q 833 657 872 690 Q 888 708 873 725 Q 857 737 806 758 Q 788 765 730 736 Q 700 726 670 717 Q 655 714 658 706 Q 661 699 678 695 Q 702 688 732 701 Q 780 710 783 707 Q 793 697 790 675 Q 775 608 757 555 C 748 527 800 529 808 558 Z", "M 706 507 Q 709 507 713 508 Q 747 518 824 529 Q 833 530 833 538 Q 833 545 808 558 C 792 566 786 564 757 555 Q 717 542 686 533 C 657 525 676 504 706 507 Z", "M 788 386 Q 807 387 815 379 Q 827 366 823 326 Q 805 143 758 94 Q 751 85 727 93 Q 696 106 672 116 Q 656 123 658 112 Q 659 99 672 85 Q 706 48 724 12 Q 740 -13 765 1 Q 796 26 822 59 Q 844 80 851 133 Q 864 205 879 316 Q 880 341 895 366 Q 905 384 895 393 Q 882 411 851 425 Q 827 435 812 427 Q 787 420 701 395 Q 688 392 683 397 Q 679 400 682 410 Q 706 495 706 507 C 708 518 708 518 686 533 Q 679 540 663 548 Q 651 558 642 551 Q 632 545 642 531 Q 658 503 647 457 Q 634 399 609 376 Q 596 361 601 349 Q 608 336 619 328 Q 629 321 648 336 Q 675 361 705 370 Q 760 388 788 386 Z"], "果": ["M 275 763 Q 271 764 266 764 Q 253 768 249 762 Q 242 755 252 737 Q 289 664 312 541 Q 316 504 338 480 Q 357 456 363 474 Q 366 484 367 496 L 366 521 Q 365 537 361 555 Q 334 684 329 722 C 325 752 305 759 275 763 Z", "M 597 528 Q 618 494 636 485 Q 648 476 664 499 Q 680 524 716 668 Q 726 702 753 729 Q 768 742 755 757 Q 739 776 693 806 Q 674 815 599 800 Q 572 799 419 775 Q 314 760 275 763 C 245 764 300 714 329 722 Q 381 737 459 746 L 498 751 Q 633 772 650 754 Q 663 738 660 721 Q 630 565 610 551 C 596 529 596 529 597 528 Z", "M 517 631 Q 550 637 579 641 Q 601 645 593 657 Q 583 670 559 675 Q 543 678 517 671 L 468 658 Q 416 645 371 632 Q 355 628 374 615 Q 384 608 405 611 Q 438 618 469 622 L 517 631 Z", "M 517 517 Q 559 524 597 528 C 627 531 636 537 610 551 Q 577 572 517 549 L 469 540 Q 414 530 366 521 C 337 515 337 495 367 496 Q 374 496 384 497 Q 429 504 470 510 L 517 517 Z", "M 524 382 Q 581 388 825 388 Q 846 388 850 396 Q 856 408 840 422 Q 786 461 750 454 Q 660 438 517 417 L 469 411 Q 322 395 157 378 Q 136 377 151 359 Q 164 346 183 339 Q 204 333 220 338 Q 314 362 422 372 L 524 382 Z", "M 517 417 Q 517 466 517 517 L 517 549 Q 518 583 518 616 Q 517 623 517 631 L 517 671 Q 517 714 520 722 Q 523 734 514 741 Q 508 745 498 751 C 474 769 451 775 459 746 Q 466 733 467 709 Q 467 684 468 658 L 469 622 Q 469 582 469 540 L 470 510 Q 470 461 469 411 L 468 341 Q 468 164 457 42 Q 454 0 479 -33 Q 492 -48 501 -30 Q 528 22 521 67 Q 518 113 517 345 L 517 417 Z", "M 422 372 Q 416 353 398 327 Q 344 249 283 196 Q 232 150 127 80 Q 108 67 125 66 Q 137 63 178 80 Q 236 99 288 138 Q 399 225 454 319 Q 461 332 468 341 C 496 382 446 433 422 372 Z", "M 517 345 Q 704 104 751 86 Q 823 68 938 82 Q 959 83 961 88 Q 964 95 947 103 Q 755 191 732 206 Q 648 260 527 380 Q 524 381 524 382 C 502 402 486 385 517 345 Z"], "喎": ["M75 749V124H141V212H331V749Z M141 681H264V282H141Z", "M454 799V440H372V-80H441V375H870V4C870 -8 866 -12 852 -13C838 -14 792 -14 740 -12C749 -31 759 -59 762 -79C832 -79 877 -78 906 -67C933 -56 941 -35 941 4V440H870V799Z M612 645V440H521V733H799V645Z M799 440H672V585H799Z", "M525 309V14H584V63H791V309Z M584 250H730V121H584Z"]};
+const models={
+ 果:{keys:["田 W","木 D"],selected:[[1,2,3,4,9],[5,6,7,8]],hints:["田の中を通る縦画は、田の底まで。","木の縦画は、田の底から下。"]},
+ 粥:{keys:["弓 N","弓 N"],selected:[[1,2,3],[10,11,12]],hints:["米の左にある弓。","米の右にある弓。"]},
+ 喎:{keys:["口 R","口 R"],selected:[[1],[3]],hints:["左側の大きな口。","右側の咼の内側にある小さな口。"]}
+};
+const ns="http://www.w3.org/2000/svg";
+function svgNode(tag,attrs){
+ const node=document.createElementNS(ns,tag);
+ for(const [key,value] of Object.entries(attrs))node.setAttribute(key,value);
+ return node;
+}
+function mount(char,model){
+ const card=document.querySelector("#card").content.firstElementChild.cloneNode(true);
+ document.querySelector("#cards").append(card);
+ const svg=card.querySelector("svg"), group=svg.querySelector("g"),slider=card.querySelector("input");
+ const reset=()=>model.selected.map(list=>new Set(list));
+ let selections=reset();
+ card.querySelector("a").href="https://www.hkcards.com/cj/cj-char-"+encodeURIComponent(char)+".html";
+ slider.parentElement.hidden=char!=="果";
+ function draw(){
+  const side=Number(document.querySelector("#side").value), position=side?"字末":"字首";
+  card.querySelector("h2").textContent=char+"　"+position+" · "+model.keys[side];
+  card.querySelector(".hint").textContent=model.hints[side];
+  svg.setAttribute("aria-label",char+"の"+position+"を校正");group.replaceChildren();
+  function part(index,d,clip){
+   const selected=selections[side],path=svgNode("path",{d,fill:selected.has(index)?"#ffce69":"#89999e",role:"button",tabindex:0,"aria-label":char==="果"&&(index===6||index===9)?(index===6?"縦画の下":"縦画の上"):(char==="喎"?"部品":"画")+index,"aria-pressed":selected.has(index)});
+   if(clip)path.setAttribute("clip-path","url(#"+clip+")");
+   function toggle(){if(selected.has(index))selected.delete(index);else selected.add(index);path.setAttribute("fill",selected.has(index)?"#ffce69":"#89999e");path.setAttribute("aria-pressed",selected.has(index))}
+   path.onclick=toggle;path.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle()}};
+   group.append(path);
+  }
+  outlines[char].forEach((d,i)=>{
+   if(char==="果"&&i===5){
+    const y=Number(slider.value);
+    for(const [id,top,height,num] of [["upper",y,1024-y,9],["lower",-124,y+124,6]]){
+     const clip=svgNode("clipPath",{id});clip.append(svgNode("rect",{x:0,y:top,width:1024,height}));group.append(clip);part(num,d,id);
+    }
+   }else part(i+1,d);
+  });
+ }
+ card.querySelector("button").onclick=()=>{selections=reset();slider.value=522;draw()};
+ slider.oninput=draw;document.querySelector("#side").addEventListener("change",draw);draw();
+}
+for(const [char,model] of Object.entries(models))mount(char,model);
+</script></html>

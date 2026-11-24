@@ -108,7 +108,7 @@ test("the quiz retains speech controls and the learning record key",()=>{
 
 test("new additions have 26 genuinely new unique related expressions",()=>{
   const initialWords=new Set();
-  for(const x of data.filter(character=>character.group!=="core319")){
+  for(const x of data.filter(character=>!["core319","freq4"].includes(character.group))){
     for(const word of extras[x.han].words)initialWords.add(word[0]);
   }
   const additions=new Set();

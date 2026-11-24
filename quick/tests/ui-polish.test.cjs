@@ -17,6 +17,8 @@ function anatomyHarness(){
   const document={createElementNS(ns,tag){return this.createElement(tag)},createElement(tag){
     return {
       tag,children:[],attrs:{},dataset:{},
+      get textContent(){return this.text},
+      set textContent(value){this.text=value;this.children=[]},
       append(...items){this.children.push(...items)},
       replaceChildren(...items){this.children=items},
       setAttribute(name,value){this.attrs[name]=value},
@@ -78,6 +80,36 @@ test("verified strokes follow the selected position, even when both roots use th
   host.querySelector(".qa-options").children[0].onclick();
   assert.match(reference(),/#s7ca5-first$/);
   assert.ok(svg.includes('id="s7ca5-first"'));
+});
+
+test("every root position offers a verified overlay or a position explanation and reference",()=>{
+  const {host,mount,data}=anatomyHarness();
+  const sheets=["stroke-parts.svg","stroke-parts-extra.svg"];
+  const symbols=new Map(sheets.map(name=>[
+    name,new Set(Array.from(read(name).matchAll(/<symbol id="([^"]+)"/g),([,id])=>id))
+  ]));
+  let positions=0;
+  let overlays=0;
+  for(const question of data){
+    mount(host,question);
+    const options=host.querySelector(".qa-options").children;
+    for(const button of options){
+      button.onclick();
+      positions++;
+      const glyph=host.querySelector(".qa-glyph");
+      const href=glyph.children[0]?.children[0]?.attrs.href;
+      if(href){
+        const [,sheet,id]=href.match(/^\.\/([^?]+)\?v=\d+#(.+)$/);
+        assert.ok(symbols.get(sheet)?.has(id),href);
+        overlays++;
+      }else{
+        assert.ok(host.querySelector(".qa-detail").children.some(node=>node.className==="qa-location"&&node.textContent),question.han);
+        assert.match(host.querySelector(".qa-source").href,/^https:\/\/www\.hkcards\.com\/cj\/cj-char-/);
+      }
+    }
+  }
+  assert.equal(positions,633);
+  assert.equal(overlays,[...symbols.values()].reduce((sum,ids)=>sum+ids.size,0));
 });
 
 test("every character shows its selected root key, with a single control for one-key answers",()=>{

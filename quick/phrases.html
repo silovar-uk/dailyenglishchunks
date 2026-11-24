@@ -7,7 +7,7 @@
   <div class="catalog-filter-row">
     <label for="phraseCategory">場面</label>
     <select id="phraseCategory" aria-label="場面で絞り込み"></select>
-    <span id="filterCount" role="status" aria-live="polite">55表現</span>
+    <span id="filterCount" role="status" aria-live="polite">105表現</span>
   </div>
   <label for="choose">練習する表現を選択</label>
   <select id="choose" aria-label="練習する表現"></select>
@@ -20,12 +20,12 @@
 <div class="mobile"><p class="muted" style="text-align:center">字根キーをタップ</p><div id="keyboard" class="keyboard"></div></div>
 <div class="actions"><button id="erase">⌫ 消す</button><button id="hint">ヒント</button><button id="check" class="primary" disabled>答える</button></div><div class="feedback hidden" id="feedback" role="status" aria-live="polite"></div><button id="next" class="primary hidden" style="width:100%">次の文字 →</button></section>
 <p class="muted">倉頡第5代を基準にした学習用コード。実際のIMEでの候補選択は含みません。<a href="https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml">出典：Rime 倉頡第5代コード表</a></p>
-</main><script src="./data.js?v=frequency150-v1"></script><script src="./lexicon/core.js?v=lexicon55-01"></script><script src="./lexicon/search.js?v=lexicon55-01"></script><script src="./speech.js?v=speech-replay-01"></script><script>
+</main><script src="./data.js?v=frequency150-v1"></script><script src="./lexicon/core.js?v=lexicon105-01"></script><script src="./lexicon/search.js?v=lexicon105-01"></script><script src="./speech.js?v=speech-replay-01"></script><script>
 "use strict";
 const $=id=>document.getElementById(id);
 const dict=new Map((window.QUICK_DATA||[]).map(x=>[x.han,x]));
 const PHRASES=window.QUICK_LEXICON_CORE||[];
-if(PHRASES.length!==55)throw Error("Practical phrase catalog unavailable");
+if(PHRASES.length!==105)throw Error("Practical phrase catalog unavailable");
 const ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const phraseParam=new URLSearchParams(window.location.search).get("phrase");
 let phraseIndex=Math.max(0,PHRASES.findIndex(p=>p.text===phraseParam)),pos=0,typed="",done=false,helped=false,misses=0;
@@ -40,7 +40,7 @@ function next(){if(pos>=[...PHRASES[phraseIndex].text].length){pos=0;misses=0;re
 const sceneFilter=$("phraseCategory");
 for(const [id,label] of Object.entries(window.QuickLexiconSearch.categories)){
   const option=document.createElement("option");
-  option.value=id;option.textContent=label;
+  option.value=id;option.textContent=label+"（"+(id==="all"?PHRASES.length:PHRASES.filter(p=>p.category===id).length)+"）";
   sceneFilter.append(option);
 }
 function refreshPhraseOptions(){

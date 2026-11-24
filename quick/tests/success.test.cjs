@@ -111,7 +111,7 @@ test("completion provides real attempts and hits, without changing long-term his
 test("all data remain present; motion and responsive settings are supported", () => {
   const context = vm.createContext({window:{}});
   vm.runInContext(data,context);
-  assert.equal(context.window.QUICK_DATA.length,304);
+  assert.equal(context.window.QUICK_DATA.length,319);
   assert.equal((trivia.match(/"id":\s*"/g)||[]).length,100);
   assert.match(successCSS, /prefers-reduced-motion: reduce/);
   assert.match(successCSS, /prefers-contrast: more/);

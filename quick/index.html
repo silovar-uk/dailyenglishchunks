@@ -554,14 +554,14 @@ function playVictory(han,combo=0,test=false){
  card.append(glyph,label);layer.append(card);
  for(let i=0;i<24;i++){const p=document.createElement("i"),a=i*Math.PI/12,r=110+i%5*30;p.className="qfx-particle";p.style.background=["#ffe16b","#59ffe0","#ff79b9","#fff"][i%4];p.style.setProperty("--dx",Math.cos(a)*r+"px");p.style.setProperty("--dy",Math.sin(a)*r+"px");layer.append(p)}
  document.body.append(layer);quickFxTimer=setTimeout(clearVictory,1250);
- const diagnostic=document.getElementById("quickFxStatus");if(diagnostic)diagnostic.textContent="FX v5 / 演出実行済み / "+(matchMedia("(prefers-reduced-motion: reduce)").matches?"視差軽減ON":"視差軽減OFF");
+ const diagnostic=document.getElementById("quickFxStatus");if(diagnostic)diagnostic.textContent="FX v6 / 演出実行済み / "+(matchMedia("(prefers-reduced-motion: reduce)").matches?"視差軽減ON":"視差軽減OFF");
 }
-function quickFxPreference(){try{return localStorage.getItem("quick-fx-preference")||"system"}catch{return "system"}}
+function quickFxPreference(){try{return localStorage.getItem("quick-fx-preference")||"full"}catch{return "full"}}
 function setupVictoryDiagnostic(){
  const box=document.createElement("div");box.style.cssText="margin:12px auto;text-align:center;font-size:12px;color:inherit";
  const b=document.createElement("button");b.type="button";b.textContent="正解演出をテスト";b.onclick=()=>playVictory("好",0,false);
  const select=document.createElement("select");select.setAttribute("aria-label","正解演出設定");for(const [value,label] of [["system","端末設定に従う"],["full","フル演出"]]){const o=document.createElement("option");o.value=value;o.textContent=label;select.append(o)}select.value=quickFxPreference();select.onchange=()=>{try{localStorage.setItem("quick-fx-preference",select.value)}catch{}playVictory("好",0,false)};
- const status=document.createElement("div");status.id="quickFxStatus";status.textContent="FX v5 / CSS / "+(matchMedia("(prefers-reduced-motion: reduce)").matches?"視差軽減ON":"視差軽減OFF");
+ const status=document.createElement("div");status.id="quickFxStatus";status.textContent="FX v6 / CSS / "+(matchMedia("(prefers-reduced-motion: reduce)").matches?"視差軽減ON":"視差軽減OFF");
  box.append(b,select,status);document.querySelector("main").append(box);
 }
 document.addEventListener("visibilitychange",()=>{if(document.hidden)clearVictory()});

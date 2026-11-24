@@ -3828,5 +3828,17 @@ window.QUICK_DATA = [
   "lastShape": "心（末尾字根）",
   "explain": "『意思』（ji3 si1）は「意味」。倉頡WP→速成WP。",
   "source": "https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml"
+},
+{
+  "han": "勁",
+  "code": "MS",
+  "cangjie": "MMKS",
+  "meaning": "すごい・強い・能力が高い",
+  "group": "core319",
+  "shape": "巠 ＋ 力",
+  "firstShape": "一（巠の先頭）",
+  "lastShape": "力の末尾（尸）",
+  "explain": "左の巠の先頭は一（M）。右の力は倉頡KS（大尸）なので末尾は尸（S）。倉頡MMKS→速成MS。『好勁呀』は「めっちゃすごい！」。",
+  "source": "https://www.hkcards.com/cj/cj-char-%E5%8B%81.html"
 }
 ];

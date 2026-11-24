@@ -87,13 +87,13 @@ test("Hong Kong and phrase courses expose the intended characters without expand
   assert.ok(courseOptions.find(x=>x.value==="all").textContent.endsWith("（"+quizData.length+"字）"));
 });
 
-test("all 15 original phrase drills survive the 55-item shared catalog",()=>{
+test("all 15 original phrase drills survive the 105-item shared catalog",()=>{
   const lexiconSource=read("lexicon/core.js");
   const context=vm.createContext({window:{}});
   vm.runInContext(lexiconSource,context);
   const phrases=context.window.QUICK_LEXICON_CORE;
-  assert.equal(phrases.length,55);
-  assert.equal(new Set(phrases.map(p=>p.text)).size,55);
+  assert.equal(phrases.length,105);
+  assert.equal(new Set(phrases.map(p=>p.text)).size,105);
   for(const p of phrases)for(const char of [...p.text])
     assert.ok(byChar.has(char),p.text+": "+char+" cannot be typed");
   for(const name of phraseNames)

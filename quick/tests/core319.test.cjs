@@ -71,7 +71,7 @@ test("Hong Kong and phrase courses expose new characters without changing prior 
 });
 
 test("all 15 original phrase drills survive the 55-item shared catalog",()=>{
-  const lexiconSource=fs.readFileSync(path.join(base,"lexicon/core.js"),"utf8");
+  const lexiconSource=read("lexicon/core.js");
   const context=vm.createContext({window:{}});
   vm.runInContext(lexiconSource,context);
   const phrases=context.window.QUICK_LEXICON_CORE;

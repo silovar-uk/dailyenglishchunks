@@ -91,3 +91,32 @@
 - [粵典：幾](https://words.hk/zidin/%E5%B9%BE)
 - [粵典：錢](https://words.hk/zidin/%E9%8C%A2)
 - [Rime 倉頡第5代](https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml)
+
+## 頻出語拡充 第5回（実用105表現・2026-11-25）
+
+### 最新仕様と目的
+- 単字教材371字、フレーズ練習105件。既存55件を先頭に維持し、語句ID `hk-001`〜`hk-055`・読み・表記を変更しない。
+- 150候補を香港向けの表記で整理した149語句について、単字の入力に必要な文字は149/149揃う。しかし前回のフレーズ練習で選べたのは33語句のみ。今回は**既存の関連語データに読みと意味がある50語句**を新たに接続し、83/149語句が独立したフレーズ練習で選択可能になった。
+- この「83/149」は**固定監査候補のうちフレーズ教材に登録済みの比率**。香港の発話コーパス全体に対する語彙カバレッジ率ではない。
+- 実装例：等陣 / 講多次 / 冇問題 / 太貴 / 平啲 / 食咗飯未 / 廁所 / 醫院 / 救命。50件すべて2文字以上で、構成字が既存371字に収録済み。
+- 50件の `origin` は `existing-extra-audited`、`source` は `quick/extras.js`、`reviewStatus` は `from-existing-dictionary-not-native-reviewed`。母語話者によるすべての用法・声調の最終校閲は未実施。
+
+### UX・技術
+- `lexicon/core.js` が105件の単一の正本。検索・フレーズ入力は同じ表記・粤拼を参照し、学習進捗（`quick-lab-v1`）を変更しない。
+- 従来の漢字・日本語・粤拼検索（声調数字あり/なし）と発音再生、`?phrase=...` の直接リンクを維持。
+- `lexicon/search.js` に8番目の分類「困ったとき・体調（`help`）」を追加。廁所 / 唔舒服 / 醫院 / 救命 の4件を収録。
+- 分類選択欄には各カテゴリの収録件数を表示。大量追加時に「どの場面に何があるか」を見つけやすくした。
+- メイン画面の入口表示を105件へ更新。検索画面の初期件数を動的に計算し、辞書をさらに拡張しても固定件数チェックで画面が停止しない設計へ。
+- `index.html` の字根解剖室では、新規追加字の字形筆画が未校閲の場合に、**字首・字末のコード位置と辞典の図への参照**を表示。根拠のない筆画オーバーレイは生成しない。
+- 字根の位置数を固定値で検証していた回帰テストは、教材の収録状況に応じて動的に計算する方式へ変更。
+
+### 品質ゲート
+- `quick/tests/lexicon105.test.cjs` で、旧55件のID保持 / 新50件の出典・粤拼整合性 / 全105件の速成入力可能性 / 83/149候補の練習接続 / 検索 / 緊急カテゴリを検証する。
+- `quick/tests/lexicon-ui.test.cjs` で、105件を1件ずつ最後まで入力する模擬UIテストを実施。
+- `quick/test-data.js` のCI入口は105件を期待し、既存の回帰テストを実行する。
+- GitHub Pages反映、iPhone Safari、音声合成の実機品質、GitHub Actions実行結果は別途確認が必要。
+
+### 出典・調査の境界
+- [Cifu](https://github.com/gwinterstein/Cifu)・[PyCantonese](https://docs.pycantonese.org/v4.3.0/_modules/pycantonese/stop_words.html)を参考にした150候補は**厳密な順位付き頻出150語ではない**。
+- [Rime 倉頡第5代](https://github.com/rime/rime-cangjie/blob/master/cangjie5.base.dict.yaml)
+- [Rime 広東語粤拼](https://github.com/rime/rime-cantonese/blob/main/jyut6ping3.chars.dict.yaml)

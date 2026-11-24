@@ -229,7 +229,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered.result-compact .mistake-note{display:none}
 @media(min-width:700px){.result-workspace{margin-top:12px}.result-workspace .feedback{max-height:420px}}
 #next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
-</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css?v=speech-replay-01"><link rel="stylesheet" href="./ui-polish.css?v=han-focus-lantern-01"><link rel="stylesheet" href="./success.css?v=neon-success-01"><style id="quick-anatomy-css">
+#quickAnatomy .qa-glyph svg{display:block;width:6rem;height:6rem;margin:auto;background:#192a31;border-radius:.65rem}</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css?v=speech-replay-01"><link rel="stylesheet" href="./ui-polish.css?v=han-focus-lantern-01"><link rel="stylesheet" href="./success.css?v=neon-success-01"><style id="quick-anatomy-css">
 .result-workspace #feedback:has(#quickAnatomy){max-height:none;overflow:visible;padding:0;background:transparent}
 #quickAnatomy{margin:0;padding:12px;border:1px solid #3a6474;border-radius:14px;background:#102630;color:#e6f4f5;line-height:1.55;text-align:left;max-width:100%;box-sizing:border-box}
 #quickAnatomy .qa-heading{margin:0;color:#baf4e7;font-size:17px}
@@ -298,6 +298,7 @@ for(const [han,cangjie,meaning,jyut,words] of [["於","YSOY","〜について・
 const guan=window.QUICK_EXTRAS["關"]??={jyut:"gwaan1",words:[]};
 if(!guan.words.some(w=>w[0]==="關於"))guan.words.push(["關於","gwaan1 jyu1","〜について"]);
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!=null)n.textContent=value;return n};
+const strokeParts=new Set("4f60-first 4f60-last 660e-first 660e-last 55ce-first 55ce-last 597d-first 597d-last 554f-first 554f-last 65e5-basic 6728-basic 706b-basic 6c34-basic 4eba-basic 53e3-basic 65e9-first 65e9-last 54c1-first 54c1-last 5496-first 5496-last 4fc2-first 4fc2-last 670b-first 670b-last 591a-first 591a-last 6c41-first 6c41-last 59d0-first 59d0-last 6cb3-first 6cb3-last 5abd-first 5abd-last 59b9-first 59b9-last 4f4f-first 4f4f-last 4ec0-first 4ec0-last 6253-first 6253-last 4e2d-basic 6211-last 6708-basic 91d1-basic 5fc3-basic 5973-basic 5929-last 672c-last 9999-last 8a71-first 8a71-last 5514-first 5514-last 6709-last 8b1d-first 8b1d-last 8acb-first 8acb-last 98df-first 98f2-last 8336-first 8336-last 98ef-last 6703-last 60f3-first 60f3-last 53eb-first 54a9-first 5462-first 5622-first 958b-first 958b-last 53ef-last 4ee5-last 9593-first 9593-last 5728-last 77e5-first 77e5-last 9053-first 8981-last 807d-last 5927-basic 4e0b-last 53f3-last 5916-last 5605-first 4ef2-last 54aa-first 5566-first 5566-last 56c9-first 554a-first 5440-first 5561-first 540c-last 884c-first 884c-last 8b1b-first 9b5a-last 7c73-last 7ca5-last 71b1-last 51b0-last 55ae-first 5750-last 5473-first 5564-first 9752-last 9592-last 95dc-first 95dc-last 99ac-last 559d-first 767d-last 53f8-last 8a08-last 544a-last 7387-last 54e1-first 8f9b-last 54c2-first 4e00-basic 5587-first 5982-last 610f-last 601d-last 70cf-last".split(" "));
 function mount(host,q,side="last"){
  host.replaceChildren();
  if(!q)return;
@@ -341,6 +342,19 @@ function mount(host,q,side="last"){
  }
  function select(value){
   activeSide=value;
+  const part=q.han.codePointAt(0).toString(16)+"-"+value;
+  glyph.textContent=q.han;
+  if(strokeParts.has(part)){
+   const ns="http://www.w3.org/2000/svg";
+   const svg=document.createElementNS(ns,"svg");
+   svg.setAttribute("viewBox","0 0 1024 1024");
+   svg.setAttribute("role","img");
+   svg.setAttribute("aria-label",q.han+"の"+label[value]+"（"+roots[q.code[index[value]]]+"）を金色で表示");
+   const use=document.createElementNS(ns,"use");
+   use.setAttribute("href","./stroke-parts.svg?v=1#s"+part);
+   svg.append(use);
+   glyph.replaceChildren(svg);
+  }
   buttons.forEach((button,i)=>button.setAttribute("aria-pressed",String(sides[i]===value)));
   const position=index[value];
   const k=q.code[position];
@@ -387,6 +401,11 @@ function mount(host,q,side="last"){
  link.target="_blank";
  link.rel="noopener noreferrer";
  host.append(link);
+ if(sides.some(value=>strokeParts.has(q.han.codePointAt(0).toString(16)+"-"+value))){
+  const credit=el("a","qa-source","筆画の出典・利用条件");
+  credit.href="./ARPHICPL.TXT";
+  host.append(credit);
+ }
  if(state==="rule-reviewed"){
   const guide=el("a","qa-source","字根・輔助字形の共通規則を確認 ↗");
   guide.href="https://www.hkcards.com/b1/qk-radical0";

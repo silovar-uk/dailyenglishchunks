@@ -14,7 +14,7 @@ const trivia = fs.readFileSync(path.join(base, "trivia.js"), "utf8");
 const inline = html.slice(html.indexOf('<script src="./speech.js?v=speech-replay-01"></script><script>')+
   '<script src="./speech.js?v=speech-replay-01"></script><script>'.length,html.lastIndexOf("</script>"));
 function anatomyHarness(){
-  const document={createElement(tag){
+  const document={createElementNS(ns,tag){return this.createElement(tag)},createElement(tag){
     return {
       tag,children:[],attrs:{},dataset:{},
       append(...items){this.children.push(...items)},

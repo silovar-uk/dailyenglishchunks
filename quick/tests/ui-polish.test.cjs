@@ -9,48 +9,75 @@ const path = require("node:path");
 const base = path.join(__dirname, "..");
 const html = fs.readFileSync(path.join(base, "index.html"), "utf8");
 const css = fs.readFileSync(path.join(base, "ui-polish.css"), "utf8");
-const data = fs.readFileSync(path.join(base, "data.js"), "utf8");
+const read = name => fs.readFileSync(path.join(base, name), "utf8");
 const trivia = fs.readFileSync(path.join(base, "trivia.js"), "utf8");
 const inline = html.slice(html.indexOf('<script src="./speech.js?v=speech-replay-01"></script><script>')+
   '<script src="./speech.js?v=speech-replay-01"></script><script>'.length,html.lastIndexOf("</script>"));
-const context = vm.createContext({ window: {} });
-vm.runInContext(data,context);
-const DATA=context.window.QUICK_DATA;
-const rootsMatch=inline.match(/ROOTS=(\{[^;]+\});/);
-if(!rootsMatch)throw Error("ROOTS definition missing");
-const ROOTS=vm.runInNewContext("("+rootsMatch[1]+")");
-const start=inline.indexOf("const p1=",inline.indexOf("function check(){"));
-const end=inline.indexOf("let diagnosis=",start);
-if(start<0||end<0)throw Error("root card templates not found");
-const renderRoots=new Function("q","ROOTS",inline.slice(start,end)+"return {p1,p2};");
+function anatomyHarness(){
+  const document={createElement(tag){
+    return {
+      tag,children:[],attrs:{},dataset:{},
+      append(...items){this.children.push(...items)},
+      replaceChildren(...items){this.children=items},
+      setAttribute(name,value){this.attrs[name]=value},
+      querySelector(selector){return this.children.find(node=>"."+node.className===selector)},
+      focus(){}
+    };
+  }};
+  const context=vm.createContext({window:{},document});
+  vm.runInContext(read("data.js"),context);
+  vm.runInContext(read("extras.js"),context);
+  const script=inline.split("</script><script>")[0];
+  vm.runInContext(script,context);
+  const host=document.createElement("section");
+  const {QuickAnatomy,QUICK_DATA}=context.window;
+  const get=char=>QUICK_DATA.find(q=>q.han===char);
+  return {host,mount:QuickAnatomy.mount,get,data:QUICK_DATA};
+}
 
-test("the current glyph is emphasized and injected only as safe text",()=>{
-  assert.match(html,/class="root-focus-glyph" lang="zh-HK"/);
-  assert.match(inline,/querySelector\("\.root-focus-glyph"\)\.textContent=q\.han/);
-  assert.match(css,/\.root-focus-glyph\s*\{/);
-  assert.match(css,/font-size:\s*clamp\(70px,16vw,92px\)/);
+test("the anatomy room is the single answer explanation",()=>{
+  assert.match(inline,/\$\("feedback"\)\.replaceChildren\(anatomy\)/);
+  assert.doesNotMatch(inline,/class="visual root-visual"|正しい入力|同じ先頭または末尾/);
+  assert.match(inline,/字根キーの代表字形と、実際に取る筆画は異なる場合があります/);
 });
 
-test("all 319 characters render root representative glyphs, not descriptive placeholders",()=>{
-  assert.equal(DATA.length,319);
-  for(const q of DATA){
-    const {p1,p2}=renderRoots(q,ROOTS);
-    assert.ok(ROOTS[q.code[0]],"Unknown initial root for "+q.han);
-    assert.match(p1,new RegExp('<div class="shape" lang="zh-HK">'+ROOTS[q.code[0]]+'</div>'));
-    assert.doesNotMatch(p1,/先頭の筆画|最後の筆画|の末尾|の終端/);
-    if(q.code.length>1){
-      assert.ok(ROOTS[q.code[1]],"Unknown last root for "+q.han);
-      assert.match(p2,new RegExp('<div class="shape" lang="zh-HK">'+ROOTS[q.code[1]]+'</div>'));
-      assert.doesNotMatch(p2,/先頭の筆画|最後の筆画|の末尾|の終端/);
-    }else{
-      assert.equal(p2,"");
-    }
+test("the selected position controls both the root explanation and the comparison examples",()=>{
+  const {host,mount,get}=anatomyHarness();
+  const question=get("早");
+  host.dataset.origin=question.han;
+  mount(host,question);
+  const options=host.querySelector(".qa-options").children;
+  const peers=()=>host.querySelector(".qa-related").children.filter(node=>node.tag==="button");
+  const detail=()=>host.querySelector(".qa-detail");
+  assert.equal(detail().dataset.side,"last");
+  assert.equal(options[1].attrs["aria-pressed"],"true");
+  assert.ok(peers().length);
+  assert.ok(peers().every(node=>node.textContent.endsWith("J")));
+  options[0].onclick();
+  assert.equal(detail().dataset.side,"first");
+  assert.equal(options[0].attrs["aria-pressed"],"true");
+  assert.ok(peers().length);
+  assert.ok(peers().every(node=>node.textContent.split(" ")[1].startsWith("A")));
+  assert.ok(peers().some(node=>!node.textContent.endsWith("J")));
+  peers()[0].onclick();
+  assert.notEqual(host.querySelector(".qa-glyph").textContent,question.han);
+  assert.equal(detail().dataset.side,"first");
+  host.querySelector(".qa-back").onclick();
+  assert.equal(host.querySelector(".qa-glyph").textContent,question.han);
+  assert.equal(detail().dataset.side,"first");
+});
+
+test("every character shows its selected root key, with a single control for one-key answers",()=>{
+  const {host,mount,data}=anatomyHarness();
+  for(const question of data){
+    mount(host,question);
+    const options=host.querySelector(".qa-options").children;
+    assert.equal(options.length,question.code.length,question.han);
+    const detail=host.querySelector(".qa-detail");
+    assert.equal(detail.dataset.side,question.code.length===1?"basic":"last",question.han);
+    assert.equal(detail.children[0].children.at(-1).textContent,question.code.at(-1),question.han);
+    if(question.code.length===1)assert.equal(host.querySelector(".qa-related").children.length,0);
   }
-});
-
-test("root imagery explicitly distinguishes representative keys from actual strokes",()=>{
-  assert.match(html,/字根はキーの代表字形。元の漢字の筆画そのものを切り出した表示ではありません/);
-  assert.match(html,/class="visual root-visual/);
 });
 
 test("Hong Kong trivia has a visible decorative lantern and native keyboard toggle",()=>{

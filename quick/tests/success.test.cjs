@@ -37,7 +37,7 @@ function harness(reduced = false) {
 
 test("new answer layout keeps the original glyph and places Next before optional details", () => {
   assert.match(html, /id="successStatus"/);
-  assert.match(html, /id="successRootsText"/);
+  assert.doesNotMatch(html, /id="successRootsText"/);
   assert.match(html, /id="successSurprise"/);
   assert.match(html, /id="batchSummary"/);
   assert.ok(html.indexOf('id="next"') < html.indexOf('id="resultWorkspace"'));
@@ -49,12 +49,12 @@ test("new answer layout keeps the original glyph and places Next before optional
   assert.match(html, /src="\.\/success\.js\?v=neon-success-01"/);
 });
 
-test("correct answers keep the same glyph visible; mistakes retain comparison", () => {
+test("correct answers keep the same glyph visible; mistakes retain input diagnostics", () => {
   assert.match(successCSS, /\.lcd\.answered\.is-correct \.lcd-main\s*\{\s*display:\s*flex/);
   assert.match(successCSS, /\.lcd\.answered\.is-correct \.answer-brief \{ display: none !important;/);
-  assert.match(inline, /if\(good\)\{showSuccessState\(q\)/);
+  assert.match(inline, /if\(good\)\{showSuccessState\(\)/);
   assert.match(inline, /else\{\$\("lcd"\)\.classList\.add\("is-wrong"\)/);
-  assert.match(inline, /setResultTab\("brief"\)/);
+  assert.match(inline, /setResultTab\("roots"\)/);
 });
 
 test("the score and storage keys are unchanged, and a result is graded only once", () => {

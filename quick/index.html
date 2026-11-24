@@ -320,7 +320,6 @@ return {mount,quick,entries};
 "use strict";
 const DATA=window.QUICK_DATA||[];
 const EXTRAS=window.QUICK_EXTRAS||{};
-document.querySelector('#course option[value="all"]').textContent="すべて（"+new Set(DATA.map(x=>x.han)).size+"字）";
 const TRIVIA=window.QUICK_TRIVIA||[];
 const KEY="quick-lab-v1",ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const $=id=>document.getElementById(id);
@@ -348,16 +347,29 @@ function phraseFor(q){
  const words=EXTRAS[q.han]?.words||[];
  return words.find(w=>GREETINGS.includes(w[0])&&w[0].includes(q.han))||words.find(w=>w[0].includes(q.han))||null;
 }
-function inCourse(x){
- if(course==="anatomy")return window.QuickAnatomy?.entries.has(x.han)===true;
- if(course==="hk")return HK_COMMON.has(x.han)||HK_RARE.has(x.han);
- if(course==="phrase")return PHRASE_CHARS.has(x.han)&&!!phraseFor(x);
- if(course==="rare")return HK_RARE.has(x.han);
- const tier=course==="all"||(course==="starter"?!["basic100","daily150","scene200","roots250","work300","core319"].includes(x.group):course==="basic100"?!["daily150","scene200","roots250","work300","core319"].includes(x.group):course==="daily150"?!["scene200","roots250","work300","core319"].includes(x.group):course==="scene200"?!["roots250","work300","core319"].includes(x.group):!["work300","core319"].includes(x.group));
- return tier&&(!["all","scene200"].includes(course)||scene==="all"||SCENES[scene].has(x.han));
+function inCourse(x,courseId=course,sceneId=scene){
+ if(courseId==="anatomy")return window.QuickAnatomy?.entries.has(x.han)===true;
+ if(courseId==="hk")return HK_COMMON.has(x.han)||HK_RARE.has(x.han);
+ if(courseId==="phrase")return PHRASE_CHARS.has(x.han)&&!!phraseFor(x);
+ if(courseId==="rare")return HK_RARE.has(x.han);
+ const tier=courseId==="all"||(courseId==="starter"?!["basic100","daily150","scene200","roots250","work300","core319"].includes(x.group):courseId==="basic100"?!["daily150","scene200","roots250","work300","core319"].includes(x.group):courseId==="daily150"?!["scene200","roots250","work300","core319"].includes(x.group):courseId==="scene200"?!["roots250","work300","core319"].includes(x.group):!["work300","core319"].includes(x.group));
+ return tier&&(!["all","scene200"].includes(courseId)||sceneId==="all"||SCENES[sceneId].has(x.han));
+}
+function updateCourseCounts(){
+ const labels={hk:"★ 香港で使う漢字",phrase:"挨拶・日常表現",rare:"日本では見慣れない字",starter:"入門",basic100:"基本",daily150:"香港日常",scene200:"生活場面",roots250:"字根比較",anatomy:"字根の解剖室",all:"すべて"};
+ for(const option of $("course").options){
+  const count=new Set(DATA.filter(x=>inCourse(x,option.value,"all")).map(x=>x.han)).size;
+  option.textContent=labels[option.value]+"（"+count+"字）";
+ }
+ for(const option of $("scene").options){
+  const label=option.dataset.baseLabel||(option.dataset.baseLabel=option.textContent);
+  const count=new Set(DATA.filter(x=>inCourse(x,course,option.value)).map(x=>x.han)).size;
+  option.textContent=label+"（"+count+"字）";
+ }
 }
 function build(){window.QuickSuccess?.resetStreak?.();
- const pool=DATA.filter(inCourse);
+ updateCourseCounts();
+ const pool=DATA.filter(x=>inCourse(x));
  const dueList=pool.filter(due);
  // Rotate through the fixed curriculum; no user-specific performance ranking.
  const order=pool.filter(x=>!due(x));
@@ -401,7 +413,7 @@ function updateShuffleButton(q){
   const earlier=new Set(queue.slice(0,pos).map(item=>item.han));
   button.disabled=!DATA.some(x=>inCourse(x)&&(!review||due(x))&&x.han!==q.han&&!earlier.has(x.han));
 }
-function totals(){let all=Object.values(stats),attempts=all.reduce((n,s)=>n+(s.attempts||0),0),wins=all.reduce((n,s)=>n+(s.wins||0),0);$("attempts").textContent=attempts;$("accuracy").textContent=attempts?Math.round(wins/attempts*100)+"%":"—";$("due").textContent=DATA.filter(inCourse).filter(due).length}
+function totals(){let all=Object.values(stats),attempts=all.reduce((n,s)=>n+(s.attempts||0),0),wins=all.reduce((n,s)=>n+(s.wins||0),0);$("attempts").textContent=attempts;$("accuracy").textContent=attempts?Math.round(wins/attempts*100)+"%":"—";$("due").textContent=DATA.filter(x=>inCourse(x)).filter(due).length}
 function slots(animateChange=true){
   const length=current()?.code.length||2;
   for(let i=0;i<2;i++){

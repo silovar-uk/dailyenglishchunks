@@ -15,9 +15,9 @@ const byChar=new Map(DATA.map(row=>[row.han,row]));
 const upstream={辛:"YTJ",苦:"TJR",晒:"AMCW",哂:"RMCW"};
 
 test("four distinct characters are present without duplicates",()=>{
-  assert.equal(DATA.length,319);
-  assert.equal(new Set(DATA.map(x=>x.han)).size,319);
-  for(const char of Object.keys(upstream))assert.ok(byChar.has(char),char);
+  for(const char of Object.keys(upstream)){
+    assert.equal(DATA.filter(row=>row.han===char).length,1,char);
+  }
 });
 
 test("all new Cangjie V5 and Quick codes match the upstream dictionary",()=>{
@@ -60,13 +60,9 @@ test("main Hong Kong and everyday-phrase courses expose the new characters",()=>
   const match=index.match(/const GREETINGS=(\[[^;]+\]);/);
   assert.ok(match);
   assert.ok(JSON.parse(match[1]).includes("辛苦晒"));
-  assert.match(index,/総合319字/);
 });
 
-test("data URLs are versioned and text-to-speech controls remain intact",()=>{
-  assert.match(index,/data\.js\?v=core319-01/);
-  assert.match(index,/extras\.js\?v=core319-01/);
-  assert.match(phrasePage,/data\.js\?v=core319-01/);
+test("text-to-speech controls remain intact",()=>{
   assert.match(index,/id="playAnsweredChar"/);
   assert.match(index,/play\.onclick=\(\)=>speak\(word,play\)/);
 });

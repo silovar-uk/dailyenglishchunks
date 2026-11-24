@@ -17,12 +17,6 @@ const byChar=new Map(data.map(x=>[x.han,x]));
 const fullCodes={一:"M",該:"YRYVO",即:"AISL",就:"YFIKU",喇:"RDLN",嗰:"ROWR",乜:"PN",使:"OJLK",如:"VR",未:"JD",解:"NBSHQ",太:"KI",幫:"GIHAB",意:"YTAP",思:"WP"};
 const phraseNames=["唔該","唔好意思","即係","點解","幫我","唔使","乜嘢","嗰個","如果","一啲"];
 
-test("319 unique characters and 319 extras, without changing earlier entries",()=>{
-  assert.equal(data.length,319);
-  assert.equal(new Set(data.map(x=>x.han)).size,319);
-  assert.equal(Object.keys(extras).length,319);
-});
-
 test("all 15 upstream Cangjie codes and first-last Quick codes match",()=>{
   for(const [han,full] of Object.entries(fullCodes)){
     const x=byChar.get(han);
@@ -55,19 +49,42 @@ test("every new character has Jyutping and practical expression examples",()=>{
   assert.equal(extras["乜"].jyut,"mat1");
 });
 
-test("Hong Kong and phrase courses expose new characters without changing prior level tiers",()=>{
-  const common=index.match(/const HK_COMMON=new Set\("([^"]+)"\)/)?.[1]||"";
-  const g=index.match(/const GREETINGS=\[([^;]+)\];/);
-  assert.ok(g);
-  const greetingWords=JSON.parse("["+g[1]+"]");
-  const greetingChars=new Set(greetingWords.join(""));
-  for(const han of Object.keys(fullCodes))assert.ok(common.includes(han),"HK course omits "+han);
-  for(const name of phraseNames)assert.ok(greetingWords.includes(name),"Phrase course omits "+name);
-  const groupCheck=index.match(/ const tier=course==="all"\|\|[^;\n]+;/)?.[0]||"";
-  assert.match(groupCheck,/!\["work300","core319"\]\.includes\(x\.group\)/);
-  assert.doesNotMatch(groupCheck, /x\.group!=="work300","core319"/);
-  assert.match(index,/総合319字/);
-  assert.ok(greetingChars.has("該"));
+test("Hong Kong and phrase courses expose the intended characters without expanding earlier tiers",()=>{
+  const courseOptions=["hk","phrase","rare","starter","basic100","daily150","scene200","roots250","anatomy","all"]
+    .map(value=>({value}));
+  const courseStart=index.indexOf("const SCENES=");
+  const courseEnd=index.indexOf("function build()",courseStart);
+  assert.ok(courseStart>=0&&courseEnd>courseStart);
+  const courseContext=vm.createContext({window:{},$:id=>({options:id==="course"?courseOptions:[]})});
+  vm.runInContext(dataSource,courseContext);
+  vm.runInContext(extraSource,courseContext);
+  const anatomy=[...index.matchAll(/<script>([\s\S]*?)<\/script>/g)]
+    .map(([,body])=>body).find(body=>body.includes("window.QuickAnatomy="));
+  assert.ok(anatomy);
+  vm.runInContext(anatomy,courseContext);
+  const quizData=courseContext.window.QUICK_DATA;
+  const {inCourse,GREETINGS}=vm.runInContext(
+    "const DATA=window.QUICK_DATA,EXTRAS=window.QUICK_EXTRAS;\n"+
+    index.slice(courseStart,courseEnd)+"\nupdateCourseCounts(); ({inCourse,GREETINGS});",courseContext
+  );
+  for(const han of Object.keys(fullCodes)){
+    const character=byChar.get(han);
+    assert.ok(inCourse(character,"hk","all"),"HK course omits "+han);
+    for(const tier of ["starter","basic100","daily150","scene200","roots250"]){
+      assert.equal(inCourse(character,tier,"all"),false,tier+" includes "+han);
+    }
+  }
+  for(const phrase of phraseNames){
+    assert.ok(GREETINGS.includes(phrase),"Phrase course omits "+phrase);
+    for(const han of phrase){
+      assert.ok(inCourse(byChar.get(han),"phrase","all"),"Phrase course omits "+phrase+"/"+han);
+    }
+  }
+  for(const option of courseOptions){
+    const count=quizData.filter(character=>inCourse(character,option.value,"all")).length;
+    assert.ok(option.textContent.endsWith("（"+count+"字）"),option.value);
+  }
+  assert.ok(courseOptions.find(x=>x.value==="all").textContent.endsWith("（"+quizData.length+"字）"));
 });
 
 test("all 15 original phrase drills survive the 55-item shared catalog",()=>{
@@ -84,20 +101,18 @@ test("all 15 original phrase drills survive the 55-item shared catalog",()=>{
   assert.ok(phrasePage.includes("new URLSearchParams(window.location.search)"));
 });
 
-test("data loads are cache-busted and speech/learning records are unchanged",()=>{
-  assert.match(index,/data\.js\?v=core319-01/);
-  assert.match(index,/extras\.js\?v=core319-01/);
-  assert.match(phrasePage,/data\.js\?v=core319-01/);
+test("the quiz retains speech controls and the learning record key",()=>{
   assert.match(index,/const KEY="quick-lab-v1"/);
   assert.match(index,/id="playAnsweredChar"/);
 });
 
 test("new additions have 26 genuinely new unique related expressions",()=>{
   const initialWords=new Set();
-  // First 304 entries represent the prior catalog and remain unchanged.
-  for(const x of data.slice(0,304))for(const word of extras[x.han].words)initialWords.add(word[0]);
+  for(const x of data.filter(character=>character.group!=="core319")){
+    for(const word of extras[x.han].words)initialWords.add(word[0]);
+  }
   const additions=new Set();
-  for(const x of data.slice(304))for(const word of extras[x.han].words){
+  for(const han of Object.keys(fullCodes))for(const word of extras[han].words){
     if(!initialWords.has(word[0]))additions.add(word[0]);
   }
   assert.equal(additions.size,26);

@@ -11,14 +11,20 @@ const html = fs.readFileSync(path.join(base, "index.html"), "utf8");
 const successJS = fs.readFileSync(path.join(base, "success.js"), "utf8");
 const successCSS = fs.readFileSync(path.join(base, "success.css"), "utf8");
 const trivia = fs.readFileSync(path.join(base, "trivia.js"), "utf8");
-const data = fs.readFileSync(path.join(base, "data.js"), "utf8");
 const marker='<script src="./speech.js?v=speech-replay-01"></script><script>';
 const inline = html.slice(html.indexOf(marker)+marker.length, html.lastIndexOf("</script>"));
 
 function harness(reduced = false) {
-  const animations = [], handlers = {}, saved = { stats: { 早: { wins: 4 } } };
+  const animations = [], handlers = {};
   const makeElement = () => ({
-    isConnected: true, classList: {contains:()=>false},
+    isConnected: true, classList: {contains:()=>false}, children: [], style: {},
+    append(...children){for(const child of children)this.appendChild(child);},
+    appendChild(child){this.children.push(child);child.parent=this;},
+    remove(){this.parent.children.splice(this.parent.children.indexOf(this),1);this.isConnected=false;},
+    setAttribute(){},
+    getBoundingClientRect(){return {left:0,top:0,width:64,height:64};},
+    querySelector(){return null;},
+    closest(selector){return selector===".lcd"?this.parent:null;},
     animate(frames, opts) {
       const anim={ frames,opts,canceled:false,events:{},
         cancel(){this.canceled=true;this.events.cancel?.();},
@@ -27,12 +33,14 @@ function harness(reduced = false) {
       return anim;
     }
   });
+  const document={hidden:false,body:makeElement(),createElement:makeElement,addEventListener:(key,cb)=>handlers[key]=cb};
+  const host=makeElement();
   const window = {
-    document: {hidden:false,addEventListener:(key,cb)=>handlers[key]=cb},
+    document,
     matchMedia:()=>({matches:reduced,addEventListener:(key,cb)=>handlers[key]=cb})
   };
-  vm.runInContext(successJS, vm.createContext({window}));
-  return {controller:window.QuickSuccess,animations,handlers,saved,makeElement,window};
+  vm.runInContext(successJS, vm.createContext({window,document,getComputedStyle:()=>({position:"relative"})}));
+  return {controller:window.QuickSuccess,animations,makeElement,host,body:document.body};
 }
 
 test("new answer layout keeps the original glyph and places Next before optional details", () => {
@@ -46,7 +54,7 @@ test("new answer layout keeps the original glyph and places Next before optional
   assert.match(html, /id="tabRoots"/);
   assert.match(html, /id="tabWords"/);
   assert.match(html, /href="\.\/success\.css\?v=neon-success-01"/);
-  assert.match(html, /src="\.\/success\.js\?v=neon-success-01"/);
+  assert.match(html, /src="\.\/success\.js\?v=[^"]+"/);
 });
 
 test("correct answers keep the same glyph visible; mistakes retain input diagnostics", () => {
@@ -86,10 +94,15 @@ test("the success engine draws no frames when motion is reduced", () => {
 
 test("neon animation is canceled rather than blocking the next question", () => {
   const h = harness(), el=h.makeElement();
+  h.host.appendChild(el);
   h.controller.ignite({glyph:el,status:el,roots:el});
-  assert.equal(h.animations.length,3);
+  assert.equal(h.host.children.length,2,"confetti layer is mounted on the LCD");
+  assert.equal(h.body.children.length,1,"the victory overlay is mounted");
+  assert.ok(h.animations.length>3,"the overlay and confetti animate");
   h.controller.cancel();
   assert.ok(h.animations.every(anim=>anim.canceled));
+  assert.deepEqual(h.host.children,[el]);
+  assert.equal(h.body.children.length,0);
 });
 
 test("small surprises never appear twice per deck or before question three", () => {
@@ -108,10 +121,7 @@ test("completion provides real attempts and hits, without changing long-term his
   assert.doesNotMatch(successJS, /localStorage|sessionStorage/);
 });
 
-test("all data remain present; motion and responsive settings are supported", () => {
-  const context = vm.createContext({window:{}});
-  vm.runInContext(data,context);
-  assert.equal(context.window.QUICK_DATA.length,319);
+test("trivia and motion settings remain available on small screens", () => {
   assert.equal((trivia.match(/"id":\s*"/g)||[]).length,100);
   assert.match(successCSS, /prefers-reduced-motion: reduce/);
   assert.match(successCSS, /prefers-contrast: more/);

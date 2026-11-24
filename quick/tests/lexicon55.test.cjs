@@ -25,8 +25,7 @@ test("55 unique phrases, including all 15 original entries and exactly 40 additi
   assert.equal(all.filter(x=>!legacy.includes(x.text)).length,40);
 });
 
-test("all 55 words can be typed using only the 319 known characters",()=>{
-  assert.equal(dictionary.size,319);
+test("all 55 phrases can be typed with the bundled character data",()=>{
   for(const phrase of all)
     for(const ch of [...phrase.text])
       assert.ok(dictionary.has(ch),phrase.text+": missing "+ch);

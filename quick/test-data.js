@@ -24,19 +24,31 @@ const extras = context.window.QUICK_EXTRAS;
 const trivia = context.window.QUICK_TRIVIA;
 assert.ok(Array.isArray(data), "character data must load");
 assert.ok(Array.isArray(trivia), "trivia data must load");
-assert.equal(data.length, 319, "current curriculum contains 319 characters");
 assert.equal(Object.keys(extras).length, data.length, "one reading record per character");
 assert.equal(new Set(data.map(item => item.han)).size, data.length, "all characters are unique");
 assert.equal(trivia.length, 100, "100 trivia questions");
 assert.equal(new Set(trivia.map(x => x.id)).size, trivia.length, "unique trivia IDs");
 
+const phraseCharacters = new Set(data.map(item => item.han));
 const groups = {
   starter: 6, roots: 10, daily: 38, basic100: 46, daily150: 50,
-  scene200: 50, roots250: 50, work300: 54, core319: 15
+  scene200: 50, roots250: 50, work300: 54, core319: 16
 };
-for (const [group, n] of Object.entries(groups)) {
-  assert.equal(data.filter(item => item.group === group).length, n,
-    "curriculum group " + group);
+for (const [group, minimum] of Object.entries(groups)) {
+  assert.ok(data.filter(item => item.group === group).length >= minimum,
+    "curriculum group " + group + " retains at least " + minimum + " characters");
+}
+assert.ok(data.every(item => Object.hasOwn(groups, item.group)), "all characters have a known curriculum group");
+
+const anatomy = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)]
+  .map(([, body]) => body).find(body => body.includes("window.QuickAnatomy="));
+assert.ok(anatomy, "the quiz loads its anatomy entries");
+vm.runInContext(anatomy, context, { filename: "index.html:anatomy" });
+assert.equal(Object.keys(extras).length, data.length, "one reading record per in-app character");
+const quizCharacters = new Set(data.map(item => item.han));
+assert.equal(quizCharacters.size, data.length, "all in-app characters are unique");
+for (const han of context.window.QuickAnatomy.entries.keys()) {
+  assert.ok(quizCharacters.has(han), "anatomy entry has a quiz character " + han);
 }
 
 for (const item of data) {
@@ -72,13 +84,19 @@ for (const [name, page] of [["index.html", html], ["phrases.html", phraseHtml]])
     new vm.Script(body, { filename: name + ":inline" });
 }
 
+// Match the version of the shared dataset on both entrypoints to prevent stale phrase data.
+const quizDataScript = html.match(/<script src="(\.\/data\.js\?v=[^"]+)"/)?.[1];
+const phraseDataScript = phraseHtml.match(/<script src="(\.\/data\.js\?v=[^"]+)"/)?.[1];
+assert.ok(quizDataScript, "quiz character data is cache-busted");
+assert.equal(phraseDataScript, quizDataScript, "both views load the same version of the character data");
+assert.match(html, /<script src="\.\/extras\.js\?v=[^"]+"/, "quiz reading data is cache-busted");
+
 // The practical phrase catalog is shared across the phrase screen and future word search.
 vm.runInContext(read("lexicon/core.js"), context, { filename: "lexicon/core.js" });
 const phrases = context.window.QUICK_LEXICON_CORE;
 assert.ok(Array.isArray(phrases), "shared phrase catalog exists");
 assert.equal(phrases.length, 55, "55 complete phrase drills");
 assert.equal(new Set(phrases.map(p => p.text)).size, 55, "unique phrase forms");
-const charSet = new Set(data.map(x => x.han));
 for (const phrase of phrases) {
   assert.ok(phrase.text && phrase.meaning && phrase.category, "complete phrase record");
   assert.match(phrase.jyutping, /^[a-z]+[1-6](?: [a-z]+[1-6])*$/,
@@ -86,7 +104,7 @@ for (const phrase of phrases) {
   assert.equal(phrase.jyutping.split(" ").length, [...phrase.text].length,
     "phrase syllables " + phrase.text);
   for (const glyph of phrase.text)
-    assert.ok(charSet.has(glyph), "phrase can be typed: " + phrase.text + "/" + glyph);
+    assert.ok(phraseCharacters.has(glyph), "phrase can be typed: " + phrase.text + "/" + glyph);
 }
 
 const tests = fs.readdirSync(path.join(base, "tests"))

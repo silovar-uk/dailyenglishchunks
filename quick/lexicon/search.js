@@ -10,6 +10,7 @@
     food: "食事",
     shopping: "買い物",
     travel: "移動・時間",
+    help: "困ったとき・体調",
     daily: "日常"
   });
 

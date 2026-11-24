@@ -31,8 +31,8 @@ test("the current glyph is emphasized and injected only as safe text",()=>{
   assert.match(css,/font-size:\s*clamp\(70px,16vw,92px\)/);
 });
 
-test("all 304 characters render root representative glyphs, not descriptive placeholders",()=>{
-  assert.equal(DATA.length,304);
+test("all 319 characters render root representative glyphs, not descriptive placeholders",()=>{
+  assert.equal(DATA.length,319);
   for(const q of DATA){
     const {p1,p2}=renderRoots(q,ROOTS);
     assert.ok(ROOTS[q.code[0]],"Unknown initial root for "+q.han);

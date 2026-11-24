@@ -18,21 +18,22 @@ const all=window.QUICK_LEXICON_CORE,searcher=window.QuickLexiconSearch;
 const dictionary=new Set(window.QUICK_DATA.map(x=>x.han));
 const legacy=["早晨","我愛你","你好","多謝","辛苦晒","唔該","唔好意思","即係","點解","幫我","唔使","乜嘢","嗰個","如果","一啲"];
 
-test("55 unique phrases, including all 15 original entries and exactly 40 additions",()=>{
-  assert.equal(all.length,55);
-  assert.equal(new Set(all.map(x=>x.text)).size,55);
+test("105 unique phrases, retaining all original 55 drills",()=>{
+  assert.equal(all.length,105);
+  assert.equal(new Set(all.map(x=>x.text)).size,105);
   for(const item of legacy)assert.ok(all.some(x=>x.text===item),"lost prior phrase "+item);
-  assert.equal(all.filter(x=>!legacy.includes(x.text)).length,40);
+  assert.equal(all.filter(x=>!legacy.includes(x.text)).length,90);
+  assert.equal(all.filter(x=>x.origin==="existing-extra-audited").length,50);
 });
 
-test("all 55 phrases can be typed with the bundled character data",()=>{
+test("all 105 phrases can be typed with the bundled character data",()=>{
   for(const phrase of all)
     for(const ch of [...phrase.text])
       assert.ok(dictionary.has(ch),phrase.text+": missing "+ch);
 });
 
 test("all readings have one Jyutping syllable per Hanzi and a usage category",()=>{
-  const valid=new Set(["greeting","conversation","request","food","shopping","travel","daily"]);
+  const valid=new Set(["greeting","conversation","request","food","shopping","travel","daily","help"]);
   for(const phrase of all){
     assert.match(phrase.jyutping,/^[a-z]+[1-6](?: [a-z]+[1-6])*$/);
     assert.equal(phrase.jyutping.split(" ").length,[...phrase.text].length);
@@ -59,7 +60,7 @@ test("search finds Hanzi, Japanese translations, and tone-number Jyutping",()=>{
 
 test("category filters avoid cross-scene leakage",()=>{
   const food=searcher.filter(all,{category:"food"});
-  assert.equal(food.length,9);
+  assert.equal(food.length,10);
   assert.ok(food.every(x=>x.category==="food"));
   assert.equal(searcher.filter(all,{category:"unknown"}).length,0);
   assert.ok(searcher.filter(all,{category:"request",query:"幫"}).some(x=>x.text==="幫我"));
@@ -73,8 +74,8 @@ test("search does not reorder or mutate the original catalog",()=>{
 });
 
 test("phrase UI loads lexicon and search before app, with speech controls",()=>{
-  const core=page.indexOf('src="./lexicon/core.js?v=lexicon55-01"');
-  const query=page.indexOf('src="./lexicon/search.js?v=lexicon55-01"');
+  const core=page.indexOf('src="./lexicon/core.js?v=lexicon105-01"');
+  const query=page.indexOf('src="./lexicon/search.js?v=lexicon105-01"');
   const inline=page.indexOf('const PHRASES=window.QUICK_LEXICON_CORE');
   assert.ok(core>=0&&query>core&&inline>query);
   assert.match(page,/id="phraseSearch"/);

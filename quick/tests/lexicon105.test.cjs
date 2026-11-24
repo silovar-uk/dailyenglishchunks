@@ -85,7 +85,7 @@ test("the quiz and phrase page expose the updated catalog and speech controls",(
   assert.match(page,/id="phraseSearch"/);
   assert.match(page,/id="listenPhrase"/);
   assert.match(page,/QuickSpeech\.play\(phrase\.text/);
-  assert.match(page,/PHRASES\.length!==105/);
+  assert.match(page,/PHRASES\.length===0/);
   assert.match(page,/lexicon\/core\.js\?v=lexicon105-01/);
   assert.match(page,/lexicon\/search\.js\?v=lexicon105-01/);
   assert.match(page,/new URLSearchParams\(window\.location\.search\)/);

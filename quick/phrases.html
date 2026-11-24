@@ -25,7 +25,7 @@
 const $=id=>document.getElementById(id);
 const dict=new Map((window.QUICK_DATA||[]).map(x=>[x.han,x]));
 const PHRASES=window.QUICK_LEXICON_CORE||[];
-if(PHRASES.length!==105)throw Error("Practical phrase catalog unavailable");
+if(!Array.isArray(PHRASES)||PHRASES.length===0)throw Error("Practical phrase catalog unavailable");
 const ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const phraseParam=new URLSearchParams(window.location.search).get("phrase");
 let phraseIndex=Math.max(0,PHRASES.findIndex(p=>p.text===phraseParam)),pos=0,typed="",done=false,helped=false,misses=0;

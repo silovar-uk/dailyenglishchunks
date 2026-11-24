@@ -72,16 +72,21 @@ for (const [name, page] of [["index.html", html], ["phrases.html", phraseHtml]])
     new vm.Script(body, { filename: name + ":inline" });
 }
 
-const phraseSource = phraseHtml.match(/const PHRASES=(\[[^\n]+\]);/);
-assert.ok(phraseSource, "phrase catalog exists");
-const phrases = vm.runInNewContext(phraseSource[1]);
-assert.equal(phrases.length, 15, "15 complete phrase drills");
+// The practical phrase catalog is shared across the phrase screen and future word search.
+vm.runInContext(read("lexicon/core.js"), context, { filename: "lexicon/core.js" });
+const phrases = context.window.QUICK_LEXICON_CORE;
+assert.ok(Array.isArray(phrases), "shared phrase catalog exists");
+assert.equal(phrases.length, 55, "55 complete phrase drills");
+assert.equal(new Set(phrases.map(p => p.text)).size, 55, "unique phrase forms");
 const charSet = new Set(data.map(x => x.han));
 for (const phrase of phrases) {
-  assert.ok(phrase.text && phrase.meaning, "phrase has meaning");
-  for (const glyph of phrase.text) {
+  assert.ok(phrase.text && phrase.meaning && phrase.category, "complete phrase record");
+  assert.match(phrase.jyutping, /^[a-z]+[1-6](?: [a-z]+[1-6])*$/,
+    "valid Jyutping " + phrase.text);
+  assert.equal(phrase.jyutping.split(" ").length, [...phrase.text].length,
+    "phrase syllables " + phrase.text);
+  for (const glyph of phrase.text)
     assert.ok(charSet.has(glyph), "phrase can be typed: " + phrase.text + "/" + glyph);
-  }
 }
 
 const tests = fs.readdirSync(path.join(base, "tests"))

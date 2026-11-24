@@ -246,7 +246,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 <details id="triviaDrawer" class="trivia-drawer"><summary><span class="trivia-lantern" aria-hidden="true">🏮</span><span class="trivia-trigger-copy"><strong>路地裏の発見 <span class="trivia-twinkle" aria-hidden="true">✦</span></strong><small>香港の小さな寄り道、のぞいてみる？</small></span><span id="triviaCount" class="trivia-count"></span><span class="trivia-chevron" aria-hidden="true">⌄</span></summary><section id="triviaPanel" class="trivia-panel" aria-label="香港の豆知識"><h2 id="triviaTitle">✦ 今日の香港豆知識</h2><p class="trivia-meta" id="triviaMeta"></p><p class="trivia-question" id="triviaQuestion"></p><div class="trivia-choices" id="triviaChoices" role="group" aria-label="豆知識の3択"></div><div id="triviaAnswer" class="trivia-answer hidden" role="status"></div><a id="triviaSource" class="trivia-source hidden" target="_blank" rel="noopener noreferrer">出典を確認する</a><div class="trivia-actions"><button id="triviaDaily" type="button">今日の雑学</button><button id="triviaShuffle" type="button">別の雑学 ↻</button></div></section></details>
 <div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
 <p class="foot">倉頡第5代を基準にした学習用コード。IMEごとの候補順は異なります。学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。<a href="./LEARNING.md">字根の学習メモ</a></p>
-</main><script src="./data.js?v=core319-01"></script><script src="./extras.js?v=core319-01"></script><script src="./trivia.js"></script><script src="./question-shuffle.js?v=neon-shuffle-01"></script><script src="./motion.js?v=neon-shuffle-01"></script><script src="./success.js?v=neon-success-01"></script><script src="./speech.js?v=speech-replay-01"></script><script>
+</main><script src="./data.js?v=core319-02"></script><script src="./extras.js?v=core319-02"></script><script src="./trivia.js"></script><script src="./question-shuffle.js?v=neon-shuffle-01"></script><script src="./motion.js?v=neon-shuffle-01"></script><script src="./success.js?v=neon-success-01"></script><script src="./speech.js?v=speech-replay-01"></script><script>
 "use strict";
 const DATA=window.QUICK_DATA||[];
 const EXTRAS=window.QUICK_EXTRAS||{};
@@ -266,7 +266,7 @@ function persist(){try{localStorage.setItem(KEY,JSON.stringify({stats}))}catch{}
 function due(item){let s=stats[item.han];return !!(s&&s.due&&s.due<=today())}
 const SCENES={food:new Set("餐廳菜肉魚雞牛豬蛋麵米粥包甜糖鹽辣凍熱冰杯碗筷叉刀店單埋位坐飽餓味湯果蘋蕉橙檸汁奶豆酒啤瓶"),shopping:new Set("店單埋位市場超商價錢買賣少"),travel:new Set("搭車返行街巴士地鐵落站到遲夜飛路")};
 // Fixed, curriculum-based priority. No personal scoring or adaptive ranking.
-const HK_COMMON=new Set("我你好早晨唔該多謝請問係佢有冇嘅咗啲嘢咩咁喺呢嗰嚟睇搵識緊啱食飲買去返搭車錢幾邊度想要可得會同都仲講聽知做開心辛苦晒一即就喇乜使如未解太幫意思");
+const HK_COMMON=new Set("我你好早晨唔該多謝請問係佢有冇嘅咗啲嘢咩咁喺呢嗰嚟睇搵識緊啱食飲買去返搭車錢幾邊度想要可得會同都仲講聽知做開心辛苦晒一即就喇乜使如未解太幫意思勁");
 const HK_RARE=new Set("唔該冇嘅咗啲嘢咩咁喺嗰嚟睇搵緊啱佢係邊噉哋乜嘥哂喇");
 const GREETINGS=["唔該","多謝","你好","早晨","請問","唔好","唔係","有冇","我嘅","喺度","食咗","做嘢","好食","開心","我愛你","你哋","佢哋","幾錢","辛苦晒","唔好意思","即係","點解","幫我","唔使","乜嘢","嗰個","如果","一啲"];
 const PHRASE_CHARS=new Set(GREETINGS.join(""));

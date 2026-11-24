@@ -112,7 +112,7 @@ test("every root position offers a verified overlay or a position explanation an
       }
     }
   }
-  assert.equal(positions,633);
+  assert.equal(positions,data.reduce((count,q)=>count+q.code.length,0));
   assert.equal(overlays,[...symbols.values()].reduce((sum,ids)=>sum+ids.size,0));
 });
 

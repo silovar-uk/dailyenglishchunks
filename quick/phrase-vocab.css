@@ -1,0 +1,198 @@
+/* Quick Lab · Practical phrases / Neon's quiet study counter.
+   No animation gates, no layout shifts when checking an answer. */
+:root {
+  color-scheme: dark;
+  font-family: system-ui,-apple-system,"PingFang HK","PingFang TC",sans-serif;
+  color: #edf8ff;
+  background: #0b1327;
+}
+body {
+  min-height: 100dvh;
+  color: #edf8ff;
+  background:
+    radial-gradient(ellipse 440px 330px at 10% -5%,#3722477a,transparent),
+    radial-gradient(ellipse 450px 400px at 95% 10%,#1342557d,transparent),
+    #0b1327;
+}
+main { max-width: 630px; padding: 16px 16px max(48px,env(safe-area-inset-bottom)); }
+header { gap: 12px; }
+header a {
+  color:#8debea;
+  text-decoration-color:#8debea66;
+  font-weight:700;
+}
+h1 { color:#fff7fc; font-size:clamp(24px,6vw,29px); }
+.muted { color:#bfd0e2; }
+.catalog-finder {
+  display:grid;
+  gap:8px;
+  margin-top:18px;
+  padding:16px;
+  border:1px solid #6a739a;
+  border-radius:15px;
+  background:linear-gradient(155deg,#1d2944,#121e34);
+  box-shadow:inset 0 1px #ffffff14,0 0 14px #dd84d01c;
+}
+.catalog-finder label {
+  display:block;
+  color:#c9e6f3;
+  font-size:12px;
+  font-weight:800;
+}
+.catalog-finder #phraseSearch,
+.catalog-finder select {
+  display:block;
+  min-width:0;
+  width:100%;
+  min-height:48px;
+  margin:0;
+  padding:10px 12px;
+  border:1px solid #7690a9;
+  border-radius:10px;
+  background:#101d34;
+  color:#fff7ff;
+  font-size:16px;
+  line-height:1.3;
+  appearance:auto;
+}
+.catalog-finder #phraseSearch::placeholder { color:#a4bfd0; }
+.catalog-finder .catalog-filter-row {
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:9px;
+}
+.catalog-finder .catalog-filter-row select {
+  min-height:44px;
+  font-size:13px;
+}
+.catalog-finder #filterCount {
+  min-width:88px;
+  color:#acf1ee;
+  font-size:11px;
+  font-weight:700;
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+.panel {
+  color:#ebf6ff;
+  background:linear-gradient(170deg,#1b2944,#101b30);
+  border:1px solid #587995;
+  border-radius:17px;
+  box-shadow:inset 0 1px #ffffff1e,0 0 16px #78d6e817;
+}
+.panel .muted { color:#c2d7e5; }
+.phrase {
+  padding:8px 0 2px;
+  gap:5px;
+}
+.phrase .char {
+  font-family:"PingFang HK","PingFang TC","Noto Sans CJK HK",sans-serif;
+  font-size:clamp(33px,8vw,47px);
+  border-radius:8px;
+  padding:4px 6px;
+  color:#f4efff;
+  line-height:1.3;
+}
+.phrase .char.active {
+  background:linear-gradient(160deg,#4a2753,#242849);
+  border-color:#ff9ccc;
+  color:#fff8ff;
+  box-shadow:inset 0 0 8px #f1a0c424,0 0 10px #ff7ec33b;
+}
+.phrase .char.done { color:#8ef4e5; }
+.progress { background:#20314d; }
+.progress > div { background:linear-gradient(90deg,#83e9e5,#ff9dcc); }
+button, select, #typing {
+  background:#1d304a;
+  color:#eaf9ff;
+  border:1px solid #7494ab;
+}
+button.primary {
+  color:#fff9ff;
+  background:linear-gradient(125deg,#863869,#622b6e);
+  border:1px solid #fface0;
+  font-weight:800;
+}
+button:active { background:#2d475f; }
+button.primary:active { background:#72305c; }
+button:focus-visible,
+select:focus-visible,
+a:focus-visible,
+#phraseSearch:focus-visible,
+#typing:focus-visible {
+  outline:3px solid #8ff4ec;
+  outline-offset:3px;
+}
+.keyboard button {
+  background:#1b314b;
+  border-color:#577b98;
+}
+.keyboard button small { color:#bfd6e3; }
+.slots .slot {
+  color:#f1fcff;
+  border-color:#79aabd;
+  background:#101d33;
+}
+.feedback {
+  color:#f4f9ff;
+  background:#203450;
+  border:1px solid #668aa6;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+.feedback strong { color:#baf8f1; }
+#typing {
+  width:100%;
+  background:#101e34;
+  border-color:#7597ac;
+  font-size:22px;
+}
+.phrase-audio {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:9px;
+  margin:10px 0;
+}
+.phrase-audio button {
+  min-height:44px;
+  padding:9px 13px;
+  background:#234659;
+  border-color:#91e7ea;
+  color:#efffff;
+  font-size:13px;
+  font-weight:800;
+}
+#phraseReading {
+  font-size:13px;
+  font-weight:700;
+  line-height:1.5;
+  color:#bde8f0;
+  overflow-wrap:anywhere;
+  text-align:center;
+}
+.audio-status { margin:0; color:#c4dce9; font-size:11px; text-align:center; }
+.audio-status:empty { display:none; }
+.audio-status:not(:empty) {
+  background:#162e47;
+  padding:7px 9px;
+  border-radius:8px;
+}
+@media (max-width:390px){
+  main { padding:12px 12px max(42px,env(safe-area-inset-bottom)); }
+  .panel { padding:13px; }
+  .catalog-finder { padding:13px; }
+  .catalog-finder .catalog-filter-row { grid-template-columns:auto minmax(0,1fr); }
+  .catalog-finder #filterCount { grid-column:2; text-align:left; min-width:0; }
+  .keyboard { gap:4px; }
+  .keyboard button { min-height:45px; font-size:13px; }
+}
+@media (prefers-reduced-motion:reduce){
+  button, .char, .progress > div { animation:none!important;transition:none!important; }
+}
+@media (prefers-contrast:more){
+  .panel,.catalog-finder { border-width:2px;box-shadow:none; }
+  .phrase .char.active { box-shadow:none;border-width:3px; }
+}

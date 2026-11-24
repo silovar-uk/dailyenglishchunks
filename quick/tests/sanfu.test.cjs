@@ -55,14 +55,16 @@ test("main Hong Kong and everyday-phrase courses expose the new characters",()=>
   const rare=index.match(/const HK_RARE=new Set\("([^"]+)"\)/)?.[1]||"";
   for(const char of [..."辛苦晒"])assert.ok(common.includes(char),char);
   assert.ok(rare.includes("哂"));
-  assert.match(index,/const GREETINGS=\[[^;]+?"辛苦晒"\]/);
+  const match=index.match(/const GREETINGS=(\[[^;]+\]);/);
+  assert.ok(match);
+  assert.ok(JSON.parse(match[1]).includes("辛苦晒"));
   assert.match(index,/総合319字/);
 });
 
 test("data URLs are versioned and text-to-speech controls remain intact",()=>{
-  assert.match(index,/data\.js\?v=sanfu-01/);
-  assert.match(index,/extras\.js\?v=sanfu-01/);
-  assert.match(phrasePage,/data\.js\?v=sanfu-01/);
+  assert.match(index,/data\.js\?v=core319-01/);
+  assert.match(index,/extras\.js\?v=core319-01/);
+  assert.match(phrasePage,/data\.js\?v=core319-01/);
   assert.match(index,/id="playAnsweredChar"/);
   assert.match(index,/play\.onclick=\(\)=>speak\(word,play\)/);
 });

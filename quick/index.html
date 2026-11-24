@@ -229,15 +229,41 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered.result-compact .mistake-note{display:none}
 @media(min-width:700px){.result-workspace{margin-top:12px}.result-workspace .feedback{max-height:420px}}
 #next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
-</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css?v=speech-replay-01"><link rel="stylesheet" href="./ui-polish.css?v=han-focus-lantern-01"><link rel="stylesheet" href="./success.css?v=neon-success-01"></head><body><main>
+</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css?v=speech-replay-01"><link rel="stylesheet" href="./ui-polish.css?v=han-focus-lantern-01"><link rel="stylesheet" href="./success.css?v=neon-success-01"><style id="quick-anatomy-css">
+#quickAnatomy{margin:12px 0;padding:14px;border:1px solid #3a6474;border-radius:14px;background:#102630;color:#e6f4f5;line-height:1.55;text-align:left;max-width:100%;box-sizing:border-box}
+#quickAnatomy .qa-heading{margin:0;color:#baf4e7;font-size:17px}
+#quickAnatomy .qa-caption{font-size:12px;color:#bed2d7;margin:6px 0}
+#quickAnatomy .qa-glyph{text-align:center;font-size:72px;line-height:1.2;font-family:"PingFang HK","Noto Sans CJK TC",sans-serif}
+#quickAnatomy .qa-structure{text-align:center;font-size:13px;color:#d9e9ed;overflow-wrap:anywhere;margin:4px}
+#quickAnatomy .qa-code,#quickAnatomy .qa-options,#quickAnatomy .qa-chain,#quickAnatomy .qa-related{display:flex;gap:6px;flex-wrap:wrap;align-items:center;justify-content:center}
+#quickAnatomy .qa-code span{padding:4px 11px;border:1px solid #54717a;border-radius:8px;font-weight:bold}
+#quickAnatomy .qa-first{color:#91f6cd;background:#16453d;border:1px solid #519983}
+#quickAnatomy .qa-last{color:#b1d8ff;background:#193a55;border:1px solid #648eb5}
+#quickAnatomy .qa-mid{color:#b4c9cd;background:#263b45}
+#quickAnatomy button{font:inherit;font-size:13px;min-height:44px;padding:8px 10px;border-radius:9px;cursor:pointer}
+#quickAnatomy .qa-options button{flex:1 1 110px}
+#quickAnatomy button[aria-pressed=true]{outline:2px solid currentColor;outline-offset:1px}
+#quickAnatomy button:focus-visible,#quickAnatomy a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+#quickAnatomy .qa-detail{padding:12px;margin:12px 0;background:#172f3a;border:1px solid #52727d;border-radius:10px}
+#quickAnatomy .qa-detail[data-side=first]{border-color:#519983}
+#quickAnatomy .qa-detail[data-side=last]{border-color:#648eb5}
+#quickAnatomy .qa-chain{font-size:20px;font-weight:bold}
+#quickAnatomy .qa-form{font-size:18px;color:#c7f8e6}
+#quickAnatomy .qa-location{font-weight:bold;margin-top:6px}
+#quickAnatomy .qa-explain{margin:4px 0;font-size:14px}
+#quickAnatomy .qa-related p{flex-basis:100%}
+#quickAnatomy .qa-peer,#quickAnatomy .qa-back{background:#1e3b48;color:#e1f5fa;border:1px solid #58747e}
+#quickAnatomy .qa-source{display:block;color:#9fe5ff;margin-top:10px;text-decoration:underline;font-size:13px}
+#quickAnatomy .qa-back{margin-top:8px}
+</style></head><body><main>
 <header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語の実用55表現の入力練習へ">実用55表現 →</a></header>
 <h1>霓虹漢字 <span class="device-version">NEON HANZI / QUICK LAB</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">実用55表現 →</a></div>
-<details class="route-drawer" id="routeDrawer"><summary>🚉 路線・コースを変更 <span class="route-hint">いつでも切替</span></summary><div class="route-controls"><div class="course-picker"><label for="course">出題コース</label><select id="course" aria-label="出題コース"><option value="hk">★ 香港で使う漢字</option><option value="phrase">挨拶・日常表現</option><option value="rare">日本では見慣れない字</option><option value="starter">入門54字</option><option value="basic100">基本100字</option><option value="daily150">香港日常150字</option><option value="scene200">生活場面200字</option><option value="roots250">字根比較250字</option><option value="all">総合319字</option></select></div><div id="scenePicker" class="course-picker hidden"><label for="scene">学習する場面</label><select id="scene" aria-label="学習する場面"><option value="all">すべて</option><option value="food">食事・カフェ</option><option value="shopping">買い物</option><option value="travel">移動・外出</option></select></div><div class="tabs" role="group" aria-label="学習モード"><button id="modeAll" aria-pressed="true">今日の10問</button><button id="modeReview" aria-pressed="false">苦手を復習</button></div>
+<details class="route-drawer" id="routeDrawer"><summary>🚉 路線・コースを変更 <span class="route-hint">いつでも切替</span></summary><div class="route-controls"><div class="course-picker"><label for="course">出題コース</label><select id="course" aria-label="出題コース"><option value="hk">★ 香港で使う漢字</option><option value="phrase">挨拶・日常表現</option><option value="rare">日本では見慣れない字</option><option value="starter">入門54字</option><option value="basic100">基本100字</option><option value="daily150">香港日常150字</option><option value="scene200">生活場面200字</option><option value="roots250">字根比較250字</option><option value="anatomy">字根の解剖室・30字</option><option value="all">総合</option></select></div><div id="scenePicker" class="course-picker hidden"><label for="scene">学習する場面</label><select id="scene" aria-label="学習する場面"><option value="all">すべて</option><option value="food">食事・カフェ</option><option value="shopping">買い物</option><option value="travel">移動・外出</option></select></div><div class="tabs" role="group" aria-label="学習モード"><button id="modeAll" aria-pressed="true">今日の10問</button><button id="modeReview" aria-pressed="false">苦手を復習</button></div>
 </div></details>
 <div class="stats" aria-label="学習記録"><span>PLAY <b id="attempts">0</b></span><span>HIT <b id="accuracy">—</b></span><span>REVIEW <b id="due">0</b></span></div>
 <section class="panel" aria-label="速成クイズ"><div class="topline"><span id="counter">1 / 10</span><span id="status" role="status" aria-live="polite">1〜2キーで答える</span><button id="shuffleQuestion" class="shuffle-question" type="button" aria-label="今のコースから別の漢字をランダムに表示。回答記録は変更しません" title="採点せずに別の漢字へ。コース・復習条件はそのまま"><span class="shuffle-die" aria-hidden="true">✦</span><span class="shuffle-copy"><span class="shuffle-title">ランダム</span><span class="shuffle-subtitle" aria-hidden="true">別の漢字 ↻</span></span></button></div><div class="progress" role="progressbar" aria-label="単字クイズの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack"><div id="bar"></div></div>
 <div class="lcd" id="lcd" aria-label="学習画面"><div class="lcd-main"><div class="signboard-caption">香港夜行 <span>街角の一文字</span></div><div id="successStatus" class="success-status hidden" aria-hidden="true"><span class="success-led">✓</span> 正解！看板が点灯した</div><div class="glyph" id="glyph" lang="zh-HK">早</div><p class="subtitle" id="meaning">早い</p><div id="successRoots" class="success-roots hidden"><span id="successRootsText"></span><small>字根キーの代表形</small></div><div id="successSurprise" class="success-surprise hidden">✦ 好嘢！ · すごい！</div><div id="batchSummary" class="batch-summary hidden" aria-label="今回の学習結果"></div><div class="phrase-context hidden" id="phraseContext" aria-label="この漢字を使う表現"></div><div class="extra-bar"><span class="reading" id="reading"></span><button id="playChar" type="button" aria-label="広東語の発音を聞く">▶ 発音</button></div><div class="sound-message" id="soundMessage" role="status" aria-live="polite"></div>
-</div><div id="answerBrief" class="answer-brief hidden" aria-label="字根の回答結果"></div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="false">字根を詳しく</button><button id="tabWords" type="button" aria-pressed="false">一緒に覚える表現</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0"><span class="slot-value">·</span><span class="slot-halo" aria-hidden="true"></span></div><div class="slot" id="slot1"><span class="slot-value">·</span><span class="slot-halo" aria-hidden="true"></span></div></div>
+</div><div id="answerBrief" class="answer-brief hidden" aria-label="字根の回答結果"></div><div id="hintBox" class="feedback hidden" aria-live="polite"></div><div id="resultTabs" class="result-tabs hidden" role="group" aria-label="解説の種類"><button id="tabRoots" type="button" aria-pressed="false">なぜこの字根？</button><button id="tabWords" type="button" aria-pressed="false">一緒に覚える表現</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div id="compounds" class="feedback hidden" aria-label="関連する熟語・表現"></div></div><div class="slots" aria-label="入力したコード" role="group"><div class="slot" id="slot0"><span class="slot-value">·</span><span class="slot-halo" aria-hidden="true"></span></div><div class="slot" id="slot1"><span class="slot-value">·</span><span class="slot-halo" aria-hidden="true"></span></div></div>
 <div class="desktop"><label for="typeInput" class="muted">キーボードから入力（Enterで判定）</label><input id="typeInput" type="text" maxlength="2" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin"></div>
 <div class="mobile" id="inputKeyboard"><p class="muted" style="text-align:center">ROOT KEYS · 字根を選ぶ</p><div class="keyboard" id="keyboard"></div></div><button id="next" type="button" class="primary hidden" style="width:100%;margin-top:14px">次の漢字 →</button><section id="resultWorkspace" class="result-workspace hidden" aria-label="回答後の字根・ことば解説"><div id="resultWorkspaceHeading" class="result-workspace-heading">✦ NEON LAB / 字根のひみつ</div><div class="result-audio-bar"><button id="playAnsweredChar" class="result-play-char" type="button" aria-label="回答した漢字の広東語発音を聞く"><span aria-hidden="true">▶</span> 漢字を聞く</button><span id="answeredReading" class="result-reading" aria-label="漢字の粤拼"></span></div><div id="resultSoundMessage" class="result-audio-message" role="status" aria-live="polite"></div></section>
 <div class="actions" id="inputActions"><button id="backspace" type="button" aria-label="1文字消す">⌫ 消す</button><button id="hint" type="button">ヒント</button><button class="primary" id="check" type="button" disabled>答える</button></div>
@@ -247,16 +273,61 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 <div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
 <p class="foot">倉頡第5代を基準にした学習用コード。IMEごとの候補順は異なります。学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。<a href="./LEARNING.md">字根の学習メモ</a></p>
 </main><script src="./data.js?v=core319-02"></script><script src="./extras.js?v=core319-02"></script><script src="./trivia.js"></script><script src="./question-shuffle.js?v=neon-shuffle-01"></script><script src="./motion.js?v=neon-shuffle-01"></script><script src="./success.js?v=neon-success-02"></script><script src="./speech.js?v=speech-replay-01"></script><script>
+/* Phase 1: curated shape hints; no unverified stroke overlays. */
+window.QuickAnatomy=(()=>{
+"use strict";
+const rows=[["早","上下","日｜十","上の日","日","日そのものを取る。","下の十","十","十そのものを取る。"],["明","左右","日｜月","左の日","日","日そのものを取る。","右の月","月","月そのものを取る。"],["你","左右","亻｜尔","左の亻","亻","にんべんは人の輔助字形。","尔の下","小","小の形は火の輔助字形。"],["好","左右","女｜子","左の女","女","女そのものを取る。","子の下部","子の末尾","子はND。末尾は木の輔助字形。"],["天","上下","一｜大","上の横線","一","独立した横線を一として取る。","下の大","大","残る大の形を取る。"],["本","一体","木＋一","木の形","木","木の形を先に取る。","根元の横線","一","木の根元に加わる横線。"],["香","上下","禾｜日","禾の上部","丿","左払いは竹の輔助字形。","下の日","日","日そのものを取る。"],["港","左右","氵｜巷","左の氵","氵","さんずいは水の輔助字形。","巷の下部","巳","巳の形は山に分類される。"],["東","一体","木＋田","木の形","木","木の形を先に取る。","中央の囲み","田","残る田の形を取る。"],["話","左右","言｜舌","言の上部","点・横線","言の先頭は卜の輔助字形。","舌の下","口","舌の下部の口を取る。"],["唔","左右","口｜吾","左の口","口","口そのものを取る。","吾の下","口","吾の下部にも口がある。"],["問","内外","門｜口","門の先頭","門の左側","門はAN。外側を先に取る。","内側の口","口","囲みの内側が最後になる。"],["食","上下","食","上の人形","人","上部の人形を取る。","下部の末尾","食の下部","倉頡OIAVの末尾V。女の輔助字形に分類される。"],["飯","左右","飠｜反","飠の上部","人形","食偏の先頭は人。","反の下","又","又は水の輔助字形。"],["想","上下","相｜心","相の左側","木","上の相を先に読み、先頭の木を取る。","下の心","心","心そのものを取る。"],["叫","左右","口｜丩","左の口","口","口そのものを取る。","丩の縦画","縦画","右側の末尾は縦画系の中。"],["開","内外","門｜内側","門の先頭","門の左側","門はAN。外側が先。","内側の下部","廿系の形","内側の末尾は廿の輔助字形。"],["間","内外","門｜日","門の先頭","門の左側","門はAN。外側が先。","内側の日","日","内側の日が末尾。"],["說","左右","言｜兌","言の上部","点・横線","言の先頭は卜の輔助字形。","兌の下部","儿","儿は山の輔助字形。"],["關","内外","門｜内側","外側の門の先頭","門の左側","門はAN。外側を先に処理する。","門の内側の下部","廿系の形","内側の末尾Tを取る。右下の門の筆画ではない。"],["嗎","左右","口｜馬","左の口","口","口そのものを取る。","馬の下","灬","四点は火の輔助字形。"],["馬","一体","馬","上部の形","馬の上部","倉頡SQSFの先頭は尸。詳しい形は分解図で確認。","下の四点","灬","四点は火の輔助字形。"],["喝","左右","口｜曷","左の口","口","口そのものを取る。","曷の下部","曷の末尾","末尾Vは女の輔助字形。詳細は分解図で確認。"],["河","左右","氵｜可","左の氵","氵","さんずいは水の輔助字形。","可の口","口","可はMNR。末尾の口を取る。"],["海","左右","氵｜每","左の氵","氵","さんずいは水の輔助字形。","每の末尾","每の点","末尾Yは卜の輔助字形。"],["打","左右","扌｜丁","左の扌","扌","てへんは手の輔助字形。","丁の鉤","縦鉤","丁の末尾Nは弓の輔助字形。"],["於","左右","方｜右側","方の上部","点・横線","方の先頭は卜の輔助字形。","右下の二点","二点","右下の点の形も卜に分類される。"],["烏","一体","烏","最上部の左払い","丿","左払いは竹の輔助字形。","下の四点","灬","四点は火の輔助字形。"],["鴉","左右","牙｜鳥","牙の上部","一","牙の最初の横線を取る。","鳥の下","灬","四点は火の輔助字形。"],["日","基本字根","日","日全体","日","基本字根そのもの。Aの1キーで入力する。","","",""]];
+const roots={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",X:"難",Y:"卜"};
+const quick=c=>c.length===1?c:c[0]+c.slice(-1);
+const source=han=>"https://www.hkcards.com/cj/cj-char-"+encodeURIComponent(han)+".html";
+const entries=new Map(rows.map(r=>[r[0],r]));
+for(const [han,cangjie,meaning,jyut,words] of [["於","YSOY","〜について・〜において","jyu1",[["關於","gwaan1 jyu1","〜について"]]],["烏","HRYF","カラス・黒い","wu1",[["烏鴉","wu1 aa1","カラス"]]],["鴉","MHHAF","カラス","aa1",[["烏鴉","wu1 aa1","カラス"]]]]){
+ const r=entries.get(han);
+ if(!window.QUICK_DATA.some(x=>x.han===han))window.QUICK_DATA.push({han,cangjie,code:quick(cangjie),meaning,group:"core319",shape:r[2],firstShape:r[4],lastShape:r[7],explain:r[5]+" "+r[8],source:source(han)});
+ window.QUICK_EXTRAS[han]??={jyut,words};
+}
+const guan=window.QUICK_EXTRAS["關"]??={jyut:"gwaan1",words:[]};
+if(!guan.words.some(w=>w[0]==="關於"))guan.words.push(["關於","gwaan1 jyu1","〜について"]);
+const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!=null)n.textContent=value;return n};
+function mount(host,q){
+ host.replaceChildren();
+ if(!q)return;
+ const r=entries.get(q.han);
+ host.append(el("h3","qa-heading","字根の解剖室"),el("p","qa-caption","漢字の形から、なぜそのキーになるのかを理解しよう。"));
+ const glyph=el("div","qa-glyph",q.han);glyph.lang="zh-HK";host.append(glyph);
+ if(r)host.append(el("p","qa-structure",r[1]+"構造 · "+r[2]));
+ const code=el("div","qa-code");code.setAttribute("aria-label","倉頡コード "+q.cangjie);
+ for(const [i,k] of Array.from(q.cangjie).entries())code.append(el("span",i===0?"qa-first":i===q.cangjie.length-1?"qa-last":"qa-mid",k));
+ host.append(code,el("p","qa-caption",q.code.length===1?"基本字根の1キー → "+q.code:"倉頡の先頭・末尾を取る → 速成 "+q.code));
+ if(r){
+ const options=el("div","qa-options"),info=el("div","qa-detail"),buttons=[];
+ info.setAttribute("aria-live","polite");
+ const select=i=>{buttons.forEach((b,j)=>b.setAttribute("aria-pressed",String(i===j)));const offset=i===0?3:6,k=q.code[i];const chain=el("div","qa-chain");const form=el("span","qa-form",r[offset+1]);form.lang="zh-HK";chain.append(form,el("span","","→"),el("span","",roots[k]),el("span","","→"),el("strong","",k));info.replaceChildren(chain,el("div","qa-location",(i===0?"① ":"② ")+r[offset]),el("p","qa-explain",r[offset+2]));info.dataset.side=i===0?"first":"last";};
+ for(let i=0;i<q.code.length;i++){const k=q.code[i],b=el("button",i===0?"qa-first":"qa-last",(q.code.length===1?"基本字根":i===0?"① 先頭":"② 末尾")+" · "+roots[k]+" "+k);b.type="button";b.onclick=()=>select(i);buttons.push(b);options.append(b)}
+ host.append(options,info);select(0);
+ const related=window.QUICK_DATA.filter(x=>x.han!==q.han&&entries.has(x.han)&&(x.code[0]===q.code[0]||x.code.slice(-1)===q.code.slice(-1))).slice(0,4);
+ if(related.length){const group=el("div","qa-related");group.append(el("p","qa-caption","同じ先頭または末尾の字根を持つ漢字"));for(const x of related){const b=el("button","qa-peer",x.han+" "+x.code);b.type="button";b.onclick=()=>mount(host,x);group.append(b)}host.append(group)}
+ }else{
+ host.append(el("p","qa-detail","先頭："+q.firstShape+(q.code.length>1?" ／ 末尾："+q.lastShape:"")),el("p","qa-caption","この漢字の詳細な字形対応は準備中。未確認の筆画位置は表示しません。"));
+ }
+ const link=el("a","qa-source","辞典で正式な分解図を確認 ↗");link.href=source(q.han);link.target="_blank";link.rel="noopener noreferrer";host.append(link);
+ host.append(el("p","qa-caption","字形は学習用の手掛かり。倉頡第5代が基準。筆順・部首・取碼順序は同一ではありません。"));
+ if(host.dataset.origin&&host.dataset.origin!==q.han){const back=el("button","qa-back","回答した漢字に戻る");back.type="button";back.onclick=()=>{const x=window.QUICK_DATA.find(v=>v.han===host.dataset.origin);if(x)mount(host,x)};host.append(back)}
+}
+return {mount,quick,entries};
+})();
+</script><script>
 "use strict";
 const DATA=window.QUICK_DATA||[];
 const EXTRAS=window.QUICK_EXTRAS||{};
+document.querySelector('#course option[value="all"]').textContent="総合"+new Set(DATA.map(x=>x.han)).size+"字";
 const TRIVIA=window.QUICK_TRIVIA||[];
 const KEY="quick-lab-v1",ROOTS={A:"日",B:"月",C:"金",D:"木",E:"水",F:"火",G:"土",H:"竹",I:"戈",J:"十",K:"大",L:"中",M:"一",N:"弓",O:"人",P:"心",Q:"手",R:"口",S:"尸",T:"廿",U:"山",V:"女",W:"田",Y:"卜"};
 const $=id=>document.getElementById(id);
 let saved;try{saved=JSON.parse(localStorage.getItem(KEY))||{}}catch{saved={}};let stats=saved.stats||{},queue=[],pos=0,typed="",done=false,helped=false,review=false,course="hk",scene="all";
 // Course preferences live separately so the legacy quick-lab-v1 progress format stays intact.
 const PREF_KEY="quick-lab-ui-v1";
-const VALID_COURSES=new Set(["hk","phrase","rare","starter","basic100","daily150","scene200","roots250","all"]);
+const VALID_COURSES=new Set(["hk","phrase","rare","starter","basic100","daily150","scene200","roots250","anatomy","all"]);
 const VALID_SCENES=new Set(["all","food","shopping","travel"]);
 try{const p=JSON.parse(localStorage.getItem(PREF_KEY)||"{}");if(VALID_COURSES.has(p.course))course=p.course;if(VALID_SCENES.has(p.scene))scene=p.scene;if(typeof p.review==="boolean")review=p.review}catch{}
 $("course").value=course;$("scenePicker").classList.toggle("hidden",!["scene200","all"].includes(course));$("scene").value=scene;
@@ -278,6 +349,7 @@ function phraseFor(q){
  return words.find(w=>GREETINGS.includes(w[0])&&w[0].includes(q.han))||words.find(w=>w[0].includes(q.han))||null;
 }
 function inCourse(x){
+ if(course==="anatomy")return window.QuickAnatomy?.entries.has(x.han)===true;
  if(course==="hk")return HK_COMMON.has(x.han)||HK_RARE.has(x.han);
  if(course==="phrase")return PHRASE_CHARS.has(x.han)&&!!phraseFor(x);
  if(course==="rare")return HK_RARE.has(x.han);
@@ -448,7 +520,7 @@ function check(){let q=current();if(!q||done||typed.length!==q.code.length)retur
 const p2=q.code.length>1?'<div class="vpart last"><span class="vlabel">LAST / 末尾</span><div class="shape" lang="zh-HK">'+ROOTS[q.code[1]]+'</div><div class="code">'+q.code[1]+' · '+ROOTS[q.code[1]]+'</div></div>':'';
 let diagnosis=good?"":'<p class="vnote">今回の確認：'+(typed[0]===q.code[0]?'先頭は正解':'先頭の字根を復習')+(q.code.length===2?' ／ '+(typed[1]===q.code[1]?'末尾は正解':'末尾の字根を復習'):'')+'</p>';
 const peers=["all","roots250"].includes(course)?rootPeers(q):[];const compare=peers.length?'<p class="vnote"><strong>似た字根を比較</strong>：'+peers.map(x=>x.han+" "+x.code).join(" ／ ")+'</p>':"";
-$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="root-focus"><span class="root-focus-label">✦ 字形を確認</span><span class="root-focus-glyph" lang="zh-HK"></span><span class="root-focus-desc">この漢字を、字根キーで読む</span></div><div class="visual root-visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p class="root-shape-note">※ 大きな字根はキーの代表字形。元の漢字の筆画そのものを切り出した表示ではありません。</p><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").querySelector(".root-focus-glyph").textContent=q.han;$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");$("playAnsweredChar").disabled=false;$("answeredReading").textContent=EXTRAS[q.han]?.jyut||"";$("resultSoundMessage").textContent="";showCompounds(q);$("resultTabs").classList.remove("hidden");$("answerBrief").classList.toggle("result--correct",good);$("answerBrief").classList.toggle("result--wrong",!good);if(good){showSuccessState(q);$("answerBrief").classList.add("hidden")}else{$("lcd").classList.add("is-wrong");$("answerBrief").innerHTML=mistakeSummary(q,typed);$("answerBrief").classList.remove("hidden")}setResultMode(true);setResultTab("brief");$("resultWorkspaceHeading").textContent=good?"✦ もっと学ぶ / OPTIONAL":"✦ 字根を確認 / もう一度";$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();if(good)window.QuickSuccess?.ignite?.({glyph:$("glyph"),status:$("successStatus"),roots:$("successRoots"),surprise:$("successSurprise"),combo});if(shouldFocusNext)$("next").focus({preventScroll:true});const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
+$("feedback").innerHTML='<strong>'+(good?'✓ 正解':'正解：'+q.code)+'</strong><p class="vnote">'+q.shape+' ｜ 倉頡 '+q.cangjie+'</p><div class="root-focus"><span class="root-focus-label">✦ 字形を確認</span><span class="root-focus-glyph" lang="zh-HK"></span><span class="root-focus-desc">この漢字を、字根キーで読む</span></div><div class="visual root-visual '+(q.code.length===1?'one':'')+'">'+p1+p2+'</div><p class="root-shape-note">※ 大きな字根はキーの代表字形。元の漢字の筆画そのものを切り出した表示ではありません。</p><p>'+q.explain+'</p>'+compare+diagnosis+'<div class="source"><a href="'+q.source+'" target="_blank" rel="noopener noreferrer">コード表の出典を見る</a></div>';$("feedback").querySelector(".root-focus-glyph").textContent=q.han;const anatomy=document.createElement("section");anatomy.id="quickAnatomy";anatomy.dataset.origin=q.han;$("feedback").prepend(anatomy);window.QuickAnatomy?.mount(anatomy,q);$("feedback").classList.remove("hidden");$("lcd").classList.add("answered");$("playAnsweredChar").disabled=false;$("answeredReading").textContent=EXTRAS[q.han]?.jyut||"";$("resultSoundMessage").textContent="";showCompounds(q);$("resultTabs").classList.remove("hidden");$("answerBrief").classList.toggle("result--correct",good);$("answerBrief").classList.toggle("result--wrong",!good);if(good){showSuccessState(q);$("answerBrief").classList.add("hidden")}else{$("lcd").classList.add("is-wrong");$("answerBrief").innerHTML=mistakeSummary(q,typed);$("answerBrief").classList.remove("hidden")}setResultMode(true);setResultTab("brief");$("resultWorkspaceHeading").textContent=good?"✦ もっと学ぶ / OPTIONAL":"✦ 字根を確認 / もう一度";$("hintBox").classList.add("hidden");$("next").classList.remove("hidden");$("next").textContent=pos===queue.length-1?"結果を見る":"次の漢字 →";$("hint").disabled=true;slots();totals();if(good)window.QuickSuccess?.ignite?.({glyph:$("glyph"),status:$("successStatus"),roots:$("successRoots"),surprise:$("successSurprise"),combo});if(shouldFocusNext)$("next").focus({preventScroll:true});const fact=relatedTrivia(q);if(fact)showTrivia(fact,"この漢字の豆知識")}
 function next(){if(pos>=queue.length){if(review){review=false;savePrefs()}build();return}pos++;render()}
 
 // Reuse the space formerly occupied by the on-screen keyboard after answering.
@@ -535,6 +607,6 @@ $("scene").onchange=()=>{scene=$("scene").value;savePrefs();build()};
 $("modeAll").onclick=()=>{review=false;savePrefs();build()};$("modeReview").onclick=()=>{review=true;savePrefs();build()};
 $("reset").onclick=()=>{if(confirm("Quick Labの学習記録を消去しますか？")){stats={};persist();build()}};
 $("typeInput").addEventListener("input",e=>{if(!done){typed=e.target.value.toUpperCase().replace(/[^A-Z]/g,"").slice(0,current()?.code.length||2);slots()}});
-document.addEventListener("keydown",e=>{if(e.target===$("typeInput")){if(e.key==="Enter"){e.preventDefault();done?next():check()}return}if(e.altKey||e.metaKey||e.ctrlKey||e.target.closest("button"))return;if(e.key==="Enter"){done?next():check()}else if(e.key==="Backspace")erase();else if(/^[a-z]$/i.test(e.key))append(e.key.toUpperCase())});
+document.addEventListener("keydown",e=>{if(e.isComposing||e.target.closest("#quickAnatomy"))return;if(e.target===$("typeInput")){if(e.key==="Enter"){e.preventDefault();done?next():check()}return}if(e.altKey||e.metaKey||e.ctrlKey||e.target.closest("button"))return;if(e.key==="Enter"){done?next():check()}else if(e.key==="Backspace")erase();else if(/^[a-z]$/i.test(e.key))append(e.key.toUpperCase())});
 $("triviaCount").textContent=TRIVIA.length+"の豆知識";build();showTrivia(dailyTrivia(),"今日の香港豆知識");
 </script></body></html>

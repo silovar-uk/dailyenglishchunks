@@ -67,6 +67,19 @@ test("the selected position controls both the root explanation and the compariso
   assert.equal(detail().dataset.side,"first");
 });
 
+test("verified strokes follow the selected position, even when both roots use the same key",()=>{
+  const {host,mount,get}=anatomyHarness();
+  mount(host,get("粥"));
+  const glyph=host.querySelector(".qa-glyph");
+  const reference=()=>glyph.children[0].children[0].attrs.href;
+  const svg=read("stroke-parts.svg");
+  assert.match(reference(),/#s7ca5-last$/);
+  assert.ok(svg.includes('id="s7ca5-last"'));
+  host.querySelector(".qa-options").children[0].onclick();
+  assert.match(reference(),/#s7ca5-first$/);
+  assert.ok(svg.includes('id="s7ca5-first"'));
+});
+
 test("every character shows its selected root key, with a single control for one-key answers",()=>{
   const {host,mount,data}=anatomyHarness();
   for(const question of data){

@@ -298,7 +298,7 @@ for(const [han,cangjie,meaning,jyut,words] of [["於","YSOY","〜について・
 const guan=window.QUICK_EXTRAS["關"]??={jyut:"gwaan1",words:[]};
 if(!guan.words.some(w=>w[0]==="關於"))guan.words.push(["關於","gwaan1 jyu1","〜について"]);
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!=null)n.textContent=value;return n};
-const strokeParts=new Set("4f60-first 4f60-last 660e-first 660e-last 55ce-first 55ce-last 597d-first 597d-last 554f-first 554f-last 65e5-basic 6728-basic 706b-basic 6c34-basic 4eba-basic 53e3-basic 65e9-first 65e9-last 54c1-first 54c1-last 5496-first 5496-last 4fc2-first 4fc2-last 670b-first 670b-last 591a-first 591a-last 6c41-first 6c41-last 59d0-first 59d0-last 6cb3-first 6cb3-last 5abd-first 5abd-last 59b9-first 59b9-last 4f4f-first 4f4f-last 4ec0-first 4ec0-last 6253-first 6253-last 4e2d-basic 6211-last 6708-basic 91d1-basic 5fc3-basic 5973-basic 5929-last 672c-last 9999-last 8a71-first 8a71-last 5514-first 5514-last 6709-last 8b1d-first 8b1d-last 8acb-first 8acb-last 98df-first 98f2-last 8336-first 8336-last 98ef-last 6703-last 60f3-first 60f3-last 53eb-first 54a9-first 5462-first 5622-first 958b-first 958b-last 53ef-last 4ee5-last 9593-first 9593-last 5728-last 77e5-first 77e5-last 9053-first 8981-last 807d-last 5927-basic 4e0b-last 53f3-last 5916-last 5605-first 4ef2-last 54aa-first 5566-first 5566-last 56c9-first 554a-first 5440-first 5561-first 540c-last 884c-first 884c-last 8b1b-first 9b5a-last 7c73-last 7ca5-last 71b1-last 51b0-last 55ae-first 5750-last 5473-first 5564-first 9752-last 9592-last 95dc-first 95dc-last 99ac-last 559d-first 767d-last 53f8-last 8a08-last 544a-last 7387-last 54e1-first 8f9b-last 54c2-first 4e00-basic 5587-first 5982-last 610f-last 601d-last 70cf-last".split(" "));
+const strokeParts=new Set("4f60-first 4f60-last 660e-first 660e-last 55ce-first 55ce-last 597d-first 597d-last 554f-first 554f-last 65e5-basic 6728-basic 706b-basic 6c34-basic 4eba-basic 53e3-basic 65e9-first 65e9-last 54c1-first 54c1-last 5496-first 5496-last 4fc2-first 4fc2-last 670b-first 670b-last 591a-first 591a-last 6c41-first 6c41-last 59d0-first 59d0-last 6cb3-first 6cb3-last 5abd-first 5abd-last 59b9-first 59b9-last 4f4f-first 4f4f-last 4ec0-first 4ec0-last 6253-first 6253-last 4e2d-basic 6211-last 6708-basic 91d1-basic 5fc3-basic 5973-basic 5929-last 672c-last 9999-last 8a71-first 8a71-last 5514-first 5514-last 6709-last 8b1d-first 8b1d-last 8acb-first 8acb-last 98df-first 98f2-last 8336-first 8336-last 98ef-last 6703-last 60f3-first 60f3-last 53eb-first 54a9-first 5462-first 5622-first 958b-first 958b-last 53ef-last 4ee5-last 9593-first 9593-last 5728-last 77e5-first 77e5-last 9053-first 8981-last 807d-last 5927-basic 4e0b-last 53f3-last 5916-last 5605-first 4ef2-last 54aa-first 5566-first 5566-last 56c9-first 554a-first 5440-first 5561-first 540c-last 884c-first 884c-last 8b1b-first 9b5a-last 7c73-last 7ca5-last 71b1-last 51b0-last 55ae-first 5750-last 5473-first 5564-first 9752-last 9592-last 95dc-first 95dc-last 99ac-last 559d-first 767d-last 53f8-last 8a08-last 544a-last 7387-last 54e1-first 8f9b-last 54c2-first 4e00-basic 5587-first 5982-last 610f-last 601d-last 70cf-last 5929-first 518d-first 4e0d-first 4e0b-first 5de5-first 8c46-first 591c-first 5e02-first 5546-first 7387-first 4eca-first 4f01-first 505a-first 500b-first 4ef2-first 4f4d-first 50f9-first 4f55-first 50b3-first 4f7f-first 53bb-first 5730-first 57cb-first 5834-first 584a-first 592a-first 5976-first 5982-first 5c4b-first 7ca5-first 642d-first 62b1-first 62cd-first 6392-first 64da-first 63a8-first 6668-first 665a-first 662f-first 6642-first 6674-first 6652-first 672c-first 6771-first 6821-first 6a23-first 4f86-first 676f-first 6a59-first 6ab8-first 6885-first 76f8-first 68df-first 6790-first 6a19-first 6e2f-first 6c92-first 6e6f-first 9152-first 6e05-first 6e34-first 6d77-first 6ce1-first 6e58-first 6f64-first 6d3b-first 70ae-first 7565-first 601d-first 843d-first 83dc-first 860b-first 8549-first 82e6-first 9019-first 908a-first 8fd4-first 9072-first 904b-first".split(" "));
 function mount(host,q,side="last"){
  host.replaceChildren();
  if(!q)return;
@@ -340,6 +340,7 @@ function mount(host,q,side="last"){
   mount(host,character,activeSide);
   host.querySelector(".qa-heading").focus();
  }
+ const boundaryNote=el("p","qa-caption");
  function select(value){
   activeSide=value;
   const part=q.han.codePointAt(0).toString(16)+"-"+value;
@@ -351,7 +352,7 @@ function mount(host,q,side="last"){
    svg.setAttribute("role","img");
    svg.setAttribute("aria-label",q.han+"の"+label[value]+"（"+roots[q.code[index[value]]]+"）を金色で表示");
    const use=document.createElementNS(ns,"use");
-   use.setAttribute("href","./stroke-parts.svg?v=1#s"+part);
+   use.setAttribute("href","./stroke-parts.svg?v=2#s"+part);
    svg.append(use);
    glyph.replaceChildren(svg);
   }
@@ -378,6 +379,8 @@ function mount(host,q,side="last"){
    info.append(el("p","qa-caption","この漢字の詳しい字形解説は準備中です。"));
   }
 
+  boundaryNote.textContent=strokeParts.has(part)?"この位置の筆画は照合済み":note[state];
+  boundaryNote.hidden=!boundaryNote.textContent;
   related.replaceChildren();
   if(single)return;
   const peers=window.QUICK_DATA
@@ -394,7 +397,6 @@ function mount(host,q,side="last"){
  }
  options.append(...buttons);
  host.append(options,info,related);
- select(single?"basic":side==="first"?"first":"last");
 
  const link=el("a","qa-source","辞典で正式な分解図を確認 ↗");
  link.href=source(q.han);
@@ -418,7 +420,8 @@ function mount(host,q,side="last"){
   "rule-reviewed":"字根規則照合済み（筆画境界は未照合）",
   curated:"個別解説（筆画境界は未照合）"
  };
- if(r&&note[state])host.append(el("p","qa-caption",note[state]));
+ if(r)host.append(boundaryNote);
+ select(single?"basic":side==="first"?"first":"last");
  host.append(el("p","qa-caption","字形は学習用の手掛かり。倉頡第5代が基準。字根キーの代表字形と、実際に取る筆画は異なる場合があります。"));
  if(host.dataset.origin&&host.dataset.origin!==q.han){
   const back=el("button","qa-back","回答した漢字に戻る");

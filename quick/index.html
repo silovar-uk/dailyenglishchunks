@@ -229,7 +229,13 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 .lcd.answered.result-compact .mistake-note{display:none}
 @media(min-width:700px){.result-workspace{margin-top:12px}.result-workspace .feedback{max-height:420px}}
 #next:not(.hidden){min-height:45px;font-weight:800;font-size:14px;box-shadow:0 0 12px #ff7fc52b}
-#quickAnatomy .qa-glyph svg{display:block;width:6rem;height:6rem;margin:auto;background:#192a31;border-radius:.65rem}</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css?v=speech-replay-01"><link rel="stylesheet" href="./ui-polish.css?v=han-focus-lantern-01"><link rel="stylesheet" href="./success.css?v=neon-success-01"><style id="quick-anatomy-css">
+#quickAnatomy .qa-glyph svg{display:block;width:6rem;height:6rem;margin:auto;background:#192a31;border-radius:.65rem}.qa-dictionary-frame{display:block;position:relative;width:6rem;height:6.2rem;overflow:hidden;margin:auto;background:white;border-radius:.65rem}
+.qa-dictionary-frame img{position:absolute;top:0;left:0;width:500%;max-width:none;height:auto}
+.qa-dictionary-frame img[data-frame="1"]{left:-100%}
+.qa-dictionary-frame img[data-frame="2"]{left:-200%}
+.qa-dictionary-frame img[data-frame="3"]{left:-300%}
+.qa-dictionary-frame img[data-frame="4"]{left:-400%}
+</style><link rel="stylesheet" href="./motion.css?v=neon-shuffle-01"><link rel="stylesheet" href="./result-theme.css?v=speech-replay-01"><link rel="stylesheet" href="./ui-polish.css?v=han-focus-lantern-01"><link rel="stylesheet" href="./success.css?v=neon-success-01"><style id="quick-anatomy-css">
 .result-workspace #feedback:has(#quickAnatomy){max-height:none;overflow:visible;padding:0;background:transparent}
 #quickAnatomy{margin:0;padding:12px;border:1px solid #3a6474;border-radius:14px;background:#102630;color:#e6f4f5;line-height:1.55;text-align:left;max-width:100%;box-sizing:border-box}
 #quickAnatomy .qa-heading{margin:0;color:#baf4e7;font-size:17px}
@@ -300,8 +306,9 @@ if(!guan.words.some(w=>w[0]==="關於"))guan.words.push(["關於","gwaan1 jyu1",
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!=null)n.textContent=value;return n};
 const strokeParts=new Set("4f60-first 4f60-last 660e-first 660e-last 55ce-first 55ce-last 597d-first 597d-last 554f-first 554f-last 65e5-basic 6728-basic 706b-basic 6c34-basic 4eba-basic 53e3-basic 65e9-first 65e9-last 54c1-first 54c1-last 5496-first 5496-last 4fc2-first 4fc2-last 670b-first 670b-last 591a-first 591a-last 6c41-first 6c41-last 59d0-first 59d0-last 6cb3-first 6cb3-last 5abd-first 5abd-last 59b9-first 59b9-last 4f4f-first 4f4f-last 4ec0-first 4ec0-last 6253-first 6253-last 4e2d-basic 6211-last 6708-basic 91d1-basic 5fc3-basic 5973-basic 5929-last 672c-last 9999-last 8a71-first 8a71-last 5514-first 5514-last 6709-last 8b1d-first 8b1d-last 8acb-first 8acb-last 98df-first 98f2-last 8336-first 8336-last 98ef-last 6703-last 60f3-first 60f3-last 53eb-first 54a9-first 5462-first 5622-first 958b-first 958b-last 53ef-last 4ee5-last 9593-first 9593-last 5728-last 77e5-first 77e5-last 9053-first 8981-last 807d-last 5927-basic 4e0b-last 53f3-last 5916-last 5605-first 4ef2-last 54aa-first 5566-first 5566-last 56c9-first 554a-first 5440-first 5561-first 540c-last 884c-first 884c-last 8b1b-first 9b5a-last 7c73-last 7ca5-last 71b1-last 51b0-last 55ae-first 5750-last 5473-first 5564-first 9752-last 9592-last 95dc-first 95dc-last 99ac-last 559d-first 767d-last 53f8-last 8a08-last 544a-last 7387-last 54e1-first 8f9b-last 54c2-first 4e00-basic 5587-first 5982-last 610f-last 601d-last 70cf-last 5929-first 518d-first 4e0d-first 4e0b-first 5de5-first 8c46-first 591c-first 5e02-first 5546-first 7387-first 4eca-first 4f01-first 505a-first 500b-first 4ef2-first 4f4d-first 50f9-first 4f55-first 50b3-first 4f7f-first 53bb-first 5730-first 57cb-first 5834-first 584a-first 592a-first 5976-first 5982-first 5c4b-first 7ca5-first 642d-first 62b1-first 62cd-first 6392-first 64da-first 63a8-first 6668-first 665a-first 662f-first 6642-first 6674-first 6652-first 672c-first 6771-first 6821-first 6a23-first 4f86-first 676f-first 6a59-first 6ab8-first 6885-first 76f8-first 68df-first 6790-first 6a19-first 6e2f-first 6c92-first 6e6f-first 9152-first 6e05-first 6e34-first 6d77-first 6ce1-first 6e58-first 6f64-first 6d3b-first 70ae-first 7565-first 601d-first 843d-first 83dc-first 860b-first 8549-first 82e6-first 9019-first 908a-first 8fd4-first 9072-first 904b-first".split(" "));
 const extraStrokeParts=new Set("4e0a-first 4e0a-last 6f64-last 6652-last 9152-last 7b77-first 7406-last 5283-last 5750-first 54e1-last 8cb7-last 8089-last 9ede-first 9ede-last 7bb1-first 8077-last 5de5-last 6094-first 860b-last 7cd6-last 5feb-last 5feb-first 7761-first 7761-last 5229-last 5229-first 8c6c-first 8c6c-last 89e3-last 6162-last 89e3-first 9810-first 5f8c-last 6162-first 9810-last 5f8c-first 70ae-last 540c-first 96e8-last 5e7e-first 96e8-first 5e7e-last 6578-last 8cea-first 8cea-last 8549-last 96f2-last 96f2-first 6a19-last 9435-first 52c1-last 6e2f-last 52c1-first 756b-last 8ce3-last 7d50-first 8b80-last 6ab8-last 54c2-last 611b-last 7ad9-last 9322-first 7ad9-first 7b56-first 52d5-last 60c5-last 50f9-last 83dc-last 5230-first 5230-last 52d5-first 60c5-first 5587-last 6bd4-last 8cfd-last 6790-last 6bd4-first 98a8-first 775b-last 98fd-last 8981-first 98a8-last 505a-last 9d09-last 5c4b-last 5622-last 90fd-last 770b-first 5ba3-last 7238-last 9999-first 8dd1-last 775b-first 96aa-last 7ba1-first 5200-last 5ea6-last 6e05-last 6ce1-last 78bc-first 5c0f-first 8ca8-last 5c0f-last 6559-last 5f1f-first 5f1f-last 9053-last 89aa-last 8b58-last 51b0-first 58eb-first 58eb-last 8cc7-first 6642-last 5c31-last 90a3-last 53cb-last 6821-last 5831-last 7897-last 6c92-last 5462-last 6548-last 591c-last 8d85-first 9805-last 5976-last 8001-last 6536-first 8a72-last 6771-last 7b97-first 5305-last 554a-last 8aaa-last 8996-last 7d66-first 800c-last 592a-last 7b54-first 4f01-last 6210-first 53c9-first 898b-first 516c-first".split(" "));
+const calibratedParts=new Set(["679c-first","679c-last","558e-first","558e-last"]);
 function hasStrokePart(part){
- return strokeParts.has(part)||extraStrokeParts.has(part);
+ return strokeParts.has(part)||extraStrokeParts.has(part)||calibratedParts.has(part);
 }
 function mount(host,q,side="last"){
  host.replaceChildren();
@@ -356,10 +363,27 @@ function mount(host,q,side="last"){
    svg.setAttribute("role","img");
    svg.setAttribute("aria-label",q.han+"の"+label[value]+"（"+roots[q.code[index[value]]]+"）を金色で表示");
    const use=document.createElementNS(ns,"use");
-   const sheet=extraStrokeParts.has(part)?"./stroke-parts-extra.svg?v=1":"./stroke-parts.svg?v=2";
+   const sheet=calibratedParts.has(part)?"./stroke-parts-calibrated.svg?v=1":extraStrokeParts.has(part)?"./stroke-parts-extra.svg?v=1":"./stroke-parts.svg?v=2";
    use.setAttribute("href",sheet+"#s"+part);
    svg.append(use);
    glyph.replaceChildren(svg);
+  }else{
+   // HKCards uses five equal-width frames. 塊 has three frames in its dictionary entry.
+   const count=q.han==="塊"?3:q.cangjie.length;
+   const frame=value==="last"?count-1:0;
+   const crop=el("span","qa-dictionary-frame");
+   const image=el("img");
+   image.alt=q.han+"の"+label[value]+"（"+roots[q.code[index[value]]]+"）を赤色で表示";
+   image.setAttribute("data-frame",String(frame));
+   image.referrerPolicy="no-referrer";
+   image.onerror=()=>{
+    if(!glyph.contains(crop))return;
+    glyph.textContent=q.han;
+    boundaryNote.textContent="図を読み込めませんでした。位置説明と下の字典リンクで確認できます。";
+   };
+   crop.append(image);
+   glyph.replaceChildren(crop);
+   image.src="https://www.hkcards.com/img/cj/"+encodeURIComponent(q.han)+".png";
   }
   buttons.forEach((button,i)=>button.setAttribute("aria-pressed",String(sides[i]===value)));
   const position=index[value];
@@ -384,7 +408,7 @@ function mount(host,q,side="last"){
    info.append(el("p","qa-caption","この漢字の詳しい字形解説は準備中です。"));
   }
 
-  boundaryNote.textContent=hasStrokePart(part)?"この位置の筆画は照合済み":"色分け準備中。上の位置説明と辞典の分解図で確認できます。";
+  boundaryNote.textContent=hasStrokePart(part)?"この位置の筆画は照合済み":"赤色が選択中の字根です（HKCards 分解図）。";
   boundaryNote.hidden=!boundaryNote.textContent;
   related.replaceChildren();
   if(single)return;
@@ -410,7 +434,7 @@ function mount(host,q,side="last"){
  host.append(link);
  if(sides.some(value=>hasStrokePart(q.han.codePointAt(0).toString(16)+"-"+value))){
   const credit=el("a","qa-source","筆画の出典・利用条件");
-  credit.href="./ARPHICPL.TXT";
+  credit.href=q.han==="喎"?"./root-review.html":"./ARPHICPL.TXT";
   host.append(credit);
  }
  if(state==="rule-reviewed"){

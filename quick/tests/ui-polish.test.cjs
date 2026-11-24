@@ -84,7 +84,7 @@ test("verified strokes follow the selected position, even when both roots use th
 
 test("every root position offers a verified overlay or a position explanation and reference",()=>{
   const {host,mount,data}=anatomyHarness();
-  const sheets=["stroke-parts.svg","stroke-parts-extra.svg"];
+  const sheets=["stroke-parts.svg","stroke-parts-extra.svg","stroke-parts-calibrated.svg"];
   const symbols=new Map(sheets.map(name=>[
     name,new Set(Array.from(read(name).matchAll(/<symbol id="([^"]+)"/g),([,id])=>id))
   ]));
@@ -103,6 +103,10 @@ test("every root position offers a verified overlay or a position explanation an
         assert.ok(symbols.get(sheet)?.has(id),href);
         overlays++;
       }else{
+        const image=glyph.children[0].children[0];
+        assert.equal(image.src,"https://www.hkcards.com/img/cj/"+encodeURIComponent(question.han)+".png");
+        const last=host.querySelector(".qa-detail").dataset.side==="last";
+        assert.equal(Number(image.attrs["data-frame"]),last?(question.han==="塊"?2:question.cangjie.length-1):0);
         assert.ok(host.querySelector(".qa-detail").children.some(node=>node.className==="qa-location"&&node.textContent),question.han);
         assert.match(host.querySelector(".qa-source").href,/^https:\/\/www\.hkcards\.com\/cj\/cj-char-/);
       }

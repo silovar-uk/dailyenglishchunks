@@ -67,19 +67,19 @@ test("direct link selects an existing phrase and exposes its reading",()=>{
   const h=harness();
   assert.equal(h.phrases[h.api.getState().phraseIndex].text,"唔該");
   assert.equal(h.node("phraseReading").textContent,"m4 goi1");
-  assert.equal(h.node("filterCount").textContent,"55 / 55表現");
+  assert.equal(h.node("filterCount").textContent,"105 / 105表現");
 });
 
 test("search and scene filtering leave the active exercise unchanged",()=>{
   const h=harness();
   h.node("phraseSearch").value="ゆっくり";
   h.node("phraseSearch").listeners.input();
-  assert.equal(h.node("filterCount").textContent,"1 / 55表現");
+  assert.equal(h.node("filterCount").textContent,"1 / 105表現");
   assert.ok(h.node("choose").children.some(x=>x.textContent.includes("慢啲講")));
   assert.equal(h.phrases[h.api.getState().phraseIndex].text,"唔該");
   h.node("phraseCategory").value="food";
   h.node("phraseCategory").listeners.change();
-  assert.equal(h.node("filterCount").textContent,"0 / 55表現");
+  assert.equal(h.node("filterCount").textContent,"0 / 105表現");
   assert.equal(h.phrases[h.api.getState().phraseIndex].text,"唔該");
 });
 
@@ -103,7 +103,7 @@ test("explicit selection changes the active phrase and speech reads that phrase"
   assert.ok(h.stopped.length>=1);
 });
 
-test("all 55 phrases can be correctly entered character-by-character to completion",()=>{
+test("all 105 phrases can be correctly entered character-by-character to completion",()=>{
   const h=harness("");
   for(let i=0;i<h.phrases.length;i++){
     h.api.choosePhrase(i);

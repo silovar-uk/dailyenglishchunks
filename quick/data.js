@@ -3651,7 +3651,7 @@ window.QUICK_DATA = [
 },
 {
   "han": "一",
-  "code": "MM",
+  "code": "M",
   "cangjie": "M",
   "meaning": "一・数字の1",
   "group": "core319",

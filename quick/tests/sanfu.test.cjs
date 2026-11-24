@@ -44,9 +44,11 @@ test("related vocabulary includes canonical phrase and Cantonese readings",()=>{
 });
 
 test("the phrase is selectable and its characters can all be typed",()=>{
-  assert.match(phrasePage,/\{text:"辛苦晒",meaning:/);
+  const catalog={window:{}};
+  vm.runInContext(fs.readFileSync(path.join(__dirname,"../lexicon/core.js"),"utf8"),vm.createContext(catalog));
+  assert.ok(catalog.window.QUICK_LEXICON_CORE.some(x=>x.text==="辛苦晒"&&x.meaning));
   assert.match(phrasePage,/new URLSearchParams\(window\.location\.search\)\.get\("phrase"\)/);
-  assert.match(phrasePage,/『辛苦哂』ではなく『辛苦晒』/);
+  assert.ok(catalog.window.QUICK_LEXICON_CORE.some(x=>x.text==="辛苦晒"&&x.note.includes("辛苦哂")));
   for(const c of [..."辛苦晒"])assert.ok(byChar.has(c),c);
 });
 

@@ -32,7 +32,7 @@ assert.equal(new Set(trivia.map(x => x.id)).size, trivia.length, "unique trivia 
 const phraseCharacters = new Set(data.map(item => item.han));
 const groups = {
   starter: 6, roots: 10, daily: 38, basic100: 46, daily150: 50,
-  scene200: 50, roots250: 50, work300: 54, core319: 16
+  scene200: 50, roots250: 50, work300: 54, core319: 16, freq4: 51
 };
 for (const [group, minimum] of Object.entries(groups)) {
   assert.ok(data.filter(item => item.group === group).length >= minimum,

@@ -70,16 +70,18 @@ test("Hong Kong and phrase courses expose new characters without changing prior 
   assert.ok(greetingChars.has("該"));
 });
 
-test("all 15 phrase drills are present and every character has an input code",()=>{
-  const text=phrasePage.match(/const PHRASES=\[[^\n]+\];/)?.[0];
-  assert.ok(text);
-  const phrases=vm.runInNewContext(text.replace(/^const PHRASES=/,"").slice(0,-1));
-  assert.equal(phrases.length,15);
-  assert.equal(new Set(phrases.map(p=>p.text)).size,15);
+test("all 15 original phrase drills survive the 55-item shared catalog",()=>{
+  const lexiconSource=fs.readFileSync(path.join(base,"lexicon/core.js"),"utf8");
+  const context=vm.createContext({window:{}});
+  vm.runInContext(lexiconSource,context);
+  const phrases=context.window.QUICK_LEXICON_CORE;
+  assert.equal(phrases.length,55);
+  assert.equal(new Set(phrases.map(p=>p.text)).size,55);
   for(const p of phrases)for(const char of [...p.text])
     assert.ok(byChar.has(char),p.text+": "+char+" cannot be typed");
-  for(const name of phraseNames)assert.ok(phrases.some(p=>p.text===name&&p.note),name);
-  assert.match(phrasePage,/new URLSearchParams\(window\.location\.search\)/);
+  for(const name of phraseNames)
+    assert.ok(phrases.some(p=>p.text===name&&p.note),name);
+  assert.match(phrasePage,/new URLSearchParams\\(window\\.location\\.search\\)/);
 });
 
 test("data loads are cache-busted and speech/learning records are unchanged",()=>{

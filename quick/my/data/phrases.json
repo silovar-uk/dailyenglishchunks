@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "phrases": [
+    {
+      "id": "my-000001",
+      "text": "好勁呀",
+      "jyutping": "hou2 ging6 aa3",
+      "meaning": "めっちゃすごい！",
+      "category": "リアクション",
+      "note": "相手の能力や成果を褒める。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00"
+    },
+    {
+      "id": "my-000002",
+      "text": "加油",
+      "jyutping": "gaa1 jau4",
+      "meaning": "頑張って！",
+      "category": "応援",
+      "note": "応援・励まし。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00"
+    },
+    {
+      "id": "my-000003",
+      "text": "多謝",
+      "jyutping": "do1 ze6",
+      "meaning": "ありがとう",
+      "category": "感謝",
+      "note": "贈り物や褒め言葉などへの感謝。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00"
+    },
+    {
+      "id": "my-000004",
+      "text": "遲啲聽吓",
+      "jyutping": "ci4 di1 teng1 haa5",
+      "meaning": "あとでちょっと聞いてみる",
+      "category": "日常",
+      "note": "「聽下」とも書く。ここでの吓は haa5。読み上げ用には聽下を使用。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00",
+      "speechText": "遲啲聽下",
+      "variants": [
+        "遲啲聽下"
+      ]
+    },
+    {
+      "id": "my-000005",
+      "text": "好歌",
+      "jyutping": "hou2 go1",
+      "meaning": "いい曲",
+      "category": "音楽",
+      "note": "良い歌・曲。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00"
+    },
+    {
+      "id": "my-000006",
+      "text": "係",
+      "jyutping": "hai6",
+      "meaning": "そう・〜である",
+      "category": "基本",
+      "note": "口語の肯定・コピュラ。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00"
+    },
+    {
+      "id": "my-000007",
+      "text": "今日特別凍",
+      "jyutping": "gam1 jat6 dak6 bit6 dung3",
+      "meaning": "今日は特に寒い",
+      "category": "天気",
+      "note": "今日＝今日、特別＝特に、凍＝寒い。",
+      "addedAt": "2026-11-26T00:16:58+09:00",
+      "updatedAt": "2026-11-26T00:16:58+09:00"
+    }
+  ],
+  "supplement": {
+    "加": {
+      "cangjie": "KSR",
+      "source": "https://www.hkcards.com/cj/cj-char-%E5%8A%A0.html"
+    },
+    "油": {
+      "cangjie": "ELW",
+      "source": "https://www.hkcards.com/cj/cj-char-%E6%B2%B9.html"
+    },
+    "吓": {
+      "cangjie": "RMY",
+      "source": "https://ja.wiktionary.org/wiki/%E5%90%93"
+    },
+    "歌": {
+      "cangjie": "MRNO",
+      "source": "https://jyut.net/query?q=%E6%AD%8C"
+    },
+    "特": {
+      "cangjie": "HQGDI",
+      "source": "https://dict.tw/dict/%E7%89%B9"
+    },
+    "別": {
+      "cangjie": "RSLN",
+      "source": "https://www.hkcards.com/cj/cj-char-%E5%88%A5.html"
+    }
+  }
+}

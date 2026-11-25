@@ -74,6 +74,29 @@
       "note": "今日＝今日、特別＝特に、凍＝寒い。",
       "addedAt": "2026-11-26T00:16:58+09:00",
       "updatedAt": "2026-11-26T00:16:58+09:00"
+    },
+    {
+      "id": "my-000008",
+      "text": "哈囉",
+      "jyutping": "haa1 lo2",
+      "meaning": "やあ！・ハロー",
+      "category": "挨拶",
+      "note": "英語 hello 由来のカジュアルな挨拶。囉は lo4 から第2声に変調する読みを採用。lo4 と表記する資料もある。",
+      "addedAt": "2026-11-26T01:55:00+09:00",
+      "updatedAt": "2026-11-26T01:55:00+09:00"
+    },
+    {
+      "id": "my-000009",
+      "text": "拜拜",
+      "jyutping": "baai1 baai3",
+      "meaning": "バイバイ・またね",
+      "category": "挨拶",
+      "note": "英語 bye-bye 由来。別れ際や電話を切るときに使う。",
+      "addedAt": "2026-11-26T01:55:00+09:00",
+      "updatedAt": "2026-11-26T01:55:00+09:00",
+      "variants": [
+        "掰掰"
+      ]
     }
   ],
   "supplement": {
@@ -100,6 +123,14 @@
     "別": {
       "cangjie": "RSLN",
       "source": "https://www.hkcards.com/cj/cj-char-%E5%88%A5.html"
+    },
+    "哈": {
+      "cangjie": "ROMR",
+      "source": "https://www.hkcards.com/cj/cj-char-%E5%93%88.html"
+    },
+    "拜": {
+      "cangjie": "HQMQJ",
+      "source": "https://www.hkcards.com/cj/cj-char-%E6%8B%9C.html"
     }
   }
 }

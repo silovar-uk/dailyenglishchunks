@@ -118,6 +118,26 @@
       "speechText": "尋日做到好夜，唔敢講幾點",
       "addedAt": "2026-11-26T09:21:22+09:00",
       "updatedAt": "2026-11-26T09:21:22+09:00"
+    },
+    {
+      "id": "my-000012",
+      "text": "小心身體呀",
+      "jyutping": "siu2 sam1 san1 tai2 aa3",
+      "meaning": "体に気をつけてね！",
+      "category": "気遣い",
+      "note": "小心＝気をつける、身體＝身体・健康。Take care of yourself!",
+      "addedAt": "2026-11-26T19:15:00+09:00",
+      "updatedAt": "2026-11-26T19:15:00+09:00"
+    },
+    {
+      "id": "my-000013",
+      "text": "你好溫柔呀",
+      "jyutping": "nei5 hou2 wan1 jau4 aa3",
+      "meaning": "なんて優しいんだ！・本当に優しいね！",
+      "category": "リアクション",
+      "note": "溫柔＝穏やかで優しい。You're so sweet! 気遣いへの感謝なら「你好貼心呀」も自然。",
+      "addedAt": "2026-11-26T19:15:00+09:00",
+      "updatedAt": "2026-11-26T19:15:00+09:00"
     }
   ],
   "supplement": {
@@ -164,6 +184,22 @@
     "敢": {
       "cangjie": "MJOK",
       "source": "https://www.hkcards.com/cj/cj-char-%E6%95%A2.html"
+    },
+    "身": {
+      "cangjie": "HXH",
+      "source": "https://www.hkcards.com/cj/cj-char-%E8%BA%AB.html"
+    },
+    "體": {
+      "cangjie": "BBTWT",
+      "source": "https://www.hkcards.com/cj/cj-char-%E9%AB%94.html"
+    },
+    "溫": {
+      "cangjie": "EWOT",
+      "source": "https://www.hkcards.com/cj/cj-char-%E6%BA%AB.html"
+    },
+    "柔": {
+      "cangjie": "NHD",
+      "source": "https://www.hkcards.com/cj/cj-char-%E6%9F%94.html"
     }
   }
 }

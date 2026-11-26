@@ -97,6 +97,16 @@
       "variants": [
         "掰掰"
       ]
+    },
+    {
+      "id": "my-000010",
+      "text": "幾點放工呀",
+      "jyutping": "gei2 dim2 fong3 gung1 aa3",
+      "meaning": "何時に仕事終わるの？",
+      "category": "日常",
+      "note": "幾點＝何時、放工＝退勤する、呀＝問いかけを柔らかくする文末助詞。What time do you get off work? メッセージでは「幾點放工呀？😱」とも。",
+      "addedAt": "2026-11-26T09:17:00+09:00",
+      "updatedAt": "2026-11-26T09:17:00+09:00"
     }
   ],
   "supplement": {
@@ -131,6 +141,10 @@
     "拜": {
       "cangjie": "HQMQJ",
       "source": "https://www.hkcards.com/cj/cj-char-%E6%8B%9C.html"
+    },
+    "放": {
+      "cangjie": "YSOK",
+      "source": "https://www.hkcards.com/cj/cj-char-%E6%94%BE.html"
     }
   }
 }

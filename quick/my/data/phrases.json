@@ -107,6 +107,17 @@
       "note": "幾點＝何時、放工＝退勤する、呀＝問いかけを柔らかくする文末助詞。What time do you get off work? メッセージでは「幾點放工呀？😱」とも。",
       "addedAt": "2026-11-26T09:17:00+09:00",
       "updatedAt": "2026-11-26T09:17:00+09:00"
+    },
+    {
+      "id": "my-000011",
+      "text": "尋日做到好夜唔敢講幾點",
+      "jyutping": "cam4 jat6 zou6 dou3 hou2 je6 m4 gam2 gong2 gei2 dim2",
+      "meaning": "昨日はかなり遅くまで働いてた。何時かは言えない（笑）",
+      "category": "日常",
+      "note": "尋日＝昨日、做到好夜＝かなり遅くまで働く、唔敢講＝言う勇気がない・言えない。メッセージでは「尋日做到好夜，唔敢講幾點😂」と書く。I worked so late yesterday that I don't dare say what time.",
+      "speechText": "尋日做到好夜，唔敢講幾點",
+      "addedAt": "2026-11-26T09:21:22+09:00",
+      "updatedAt": "2026-11-26T09:21:22+09:00"
     }
   ],
   "supplement": {
@@ -145,6 +156,14 @@
     "放": {
       "cangjie": "YSOK",
       "source": "https://www.hkcards.com/cj/cj-char-%E6%94%BE.html"
+    },
+    "尋": {
+      "cangjie": "SMMRI",
+      "source": "https://www.xn--0vqu8au0tro7d.com/list/char/%E5%B0%8B"
+    },
+    "敢": {
+      "cangjie": "MJOK",
+      "source": "https://www.hkcards.com/cj/cj-char-%E6%95%A2.html"
     }
   }
 }

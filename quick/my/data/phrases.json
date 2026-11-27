@@ -148,6 +148,19 @@
       "note": "聽日＝明日、見＝会う。翌日会う予定の相手への別れの挨拶。聽日では聽を ting1 と読む。See you tomorrow!",
       "addedAt": "2026-11-26T20:40:00+09:00",
       "updatedAt": "2026-11-26T20:40:00+09:00"
+    },
+    {
+      "id": "my-000015",
+      "text": "歡迎你嚟日本",
+      "jyutping": "fun1 jing4 nei5 lai4 jat6 bun2",
+      "meaning": "日本へようこそ！",
+      "category": "挨拶",
+      "note": "歡迎＝歓迎する、你＝あなた、嚟＝来る。香港の口語で親しみのある歓迎の挨拶。短く「歡迎嚟日本」とも言える。Welcome to Japan!",
+      "addedAt": "2026-11-27T11:19:00+09:00",
+      "updatedAt": "2026-11-27T11:19:00+09:00",
+      "variants": [
+        "歡迎嚟日本"
+      ]
     }
   ],
   "supplement": {
@@ -210,6 +223,14 @@
     "柔": {
       "cangjie": "NHD",
       "source": "https://www.hkcards.com/cj/cj-char-%E6%9F%94.html"
+    },
+    "歡": {
+      "cangjie": "TGNO",
+      "source": "https://www.xn--0vqu8au0tro7d.com/list/char/%E6%AD%A1"
+    },
+    "迎": {
+      "cangjie": "YHVL",
+      "source": "https://jyut.net/query?q=%E8%BF%8E"
     }
   }
 }

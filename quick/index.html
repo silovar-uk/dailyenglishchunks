@@ -270,9 +270,27 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 @keyframes qfx-fly{0%{transform:translate(0,0) scale(.2);opacity:0}18%{opacity:1}100%{transform:translate(var(--dx),var(--dy)) rotate(360deg);opacity:0}}
 @media(prefers-reduced-motion:reduce){#quickFxOverlay:not(.qfx-test) .qfx-card{animation:none}#quickFxOverlay:not(.qfx-test) .qfx-particle{display:none}}
 @media(hover:hover) and (pointer:fine){#inputKeyboard .keyboard button:hover:not(:active){border-color:#9af5f6;background:#30526e;box-shadow:0 0 10px #83ecf233}}
+/* Learning-mode navigation: compact, labeled and touch-friendly. */
+#quickLearningNav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:6px 0 4px}
+#quickLearningNav .learning-mode{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:44px;min-width:0;padding:5px 6px;border:1px solid #425c7b;border-radius:9px;background:#15233b;color:#e1edf9;text-align:center;text-decoration:none;line-height:1.25}
+#quickLearningNav strong{font-size:12px;font-weight:800}
+#quickLearningNav small{font-size:10px;color:#bdd0e0;white-space:nowrap}
+#quickLearningNav .current{border-color:#83ecf2;background:#19394a;box-shadow:inset 0 0 0 1px #83ecf244}
+#quickLearningNav .current strong{color:#a4f7f8}
+#quickLearningNav .practical{border-color:#5d9289}
+#quickLearningNav .practical strong{color:#a5efda}
+#quickLearningNav a:focus-visible{outline:3px solid #a4f7f8;outline-offset:2px}
+#quickLearningNav a:active{background:#29445b}
+#quickFxPreference{font:inherit;max-width:100%;min-height:44px;margin:5px 0;padding:6px 10px;background:#18273c;border:1px solid #647e99;border-radius:8px;color:#f0f6ff}
+#quickFxPreference:focus-visible{outline:3px solid #83ecf2;outline-offset:2px}
 </style></head><body><main>
-<header><a href="../">← Daily English Chunks</a><a href="./phrases.html" aria-label="広東語の実用105表現の入力練習へ">実用105表現 →</a><a href="./my/">我的廣東話 →</a></header>
-<h1>霓虹漢字 <span class="device-version">NEON HANZI / QUICK LAB</span></h1><div class="compact-links"><p class="muted">漢字を見て、1〜2キーで答える。</p><a href="./phrases.html">実用105表現 →</a> <a href="./my/" aria-label="自分が学んだ広東語の表現ライブラリへ">我的廣東話 →</a></div>
+<header><a href="../">← Daily English Chunks</a></header>
+<h1>霓虹漢字 <span class="device-version">NEON HANZI / QUICK LAB</span></h1>
+<nav id="quickLearningNav" aria-label="広東語の学習モード">
+  <span class="learning-mode current" aria-current="page"><strong>基礎編</strong><small>単字・字根</small></span>
+  <a class="learning-mode" href="./phrases.html" aria-label="練習編：実用105表現の速成入力"><strong>練習編</strong><small>フレーズ入力 ↗</small></a>
+  <a class="learning-mode practical" href="./my/" aria-label="実用編：我的廣東話、自分が学んだ表現"><strong>実用編</strong><small lang="yue-Hant">我的廣東話 ↗</small></a>
+</nav>
 <details class="route-drawer" id="routeDrawer"><summary>🚉 路線・コースを変更 <span class="route-hint">いつでも切替</span></summary><div class="route-controls"><div class="course-picker"><label for="course">出題コース</label><select id="course" aria-label="出題コース"><option value="hk">★ 香港で使う漢字</option><option value="phrase">挨拶・日常表現</option><option value="rare">日本では見慣れない字</option><option value="starter">入門54字</option><option value="basic100">基本100字</option><option value="daily150">香港日常150字</option><option value="scene200">生活場面200字</option><option value="roots250">字根比較250字</option><option value="anatomy">字根の解剖室・全323字</option><option value="all" selected>すべて</option></select></div><div id="scenePicker" class="course-picker hidden"><label for="scene">学習する場面</label><select id="scene" aria-label="学習する場面"><option value="all">すべて</option><option value="food">食事・カフェ</option><option value="shopping">買い物</option><option value="travel">移動・外出</option></select></div><div class="tabs" role="group" aria-label="学習モード"><button id="modeAll" aria-pressed="true">今日の10問</button><button id="modeReview" aria-pressed="false">苦手を復習</button></div>
 </div></details>
 <div class="stats" aria-label="学習記録"><span>PLAY <b id="attempts">0</b></span><span>HIT <b id="accuracy">—</b></span><span>REVIEW <b id="due">0</b></span></div>
@@ -285,7 +303,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,
 
 </section>
 <details id="triviaDrawer" class="trivia-drawer"><summary><span class="trivia-lantern" aria-hidden="true">🏮</span><span class="trivia-trigger-copy"><strong>路地裏の発見 <span class="trivia-twinkle" aria-hidden="true">✦</span></strong><small>香港の小さな寄り道、のぞいてみる？</small></span><span id="triviaCount" class="trivia-count"></span><span class="trivia-chevron" aria-hidden="true">⌄</span></summary><section id="triviaPanel" class="trivia-panel" aria-label="香港の豆知識"><h2 id="triviaTitle">✦ 今日の香港豆知識</h2><p class="trivia-meta" id="triviaMeta"></p><p class="trivia-question" id="triviaQuestion"></p><div class="trivia-choices" id="triviaChoices" role="group" aria-label="豆知識の3択"></div><div id="triviaAnswer" class="trivia-answer hidden" role="status"></div><a id="triviaSource" class="trivia-source hidden" target="_blank" rel="noopener noreferrer">出典を確認する</a><div class="trivia-actions"><button id="triviaDaily" type="button">今日の雑学</button><button id="triviaShuffle" type="button">別の雑学 ↻</button></div></section></details>
-<div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
+<div class="help"><details><summary>使い方と注意点</summary><p class="muted">速成は倉頡の先頭・末尾コードを入力する方式。ここでは字根コードの想起を練習します。実際のIMEでの候補選択は別途練習してください。字形やコードはIMEの世代・辞書によって差が生じる場合があります。問題は検証済みの少数例から段階的に増やします。</p></details><details><summary>正解演出の設定</summary><label for="quickFxPreference" class="muted">正解時のアニメーション</label><div><select id="quickFxPreference" aria-label="正解演出設定"><option value="full">フル演出</option><option value="system">端末設定に従う</option></select></div><p class="muted">次の正解時から適用されます。</p></details><details><summary>記録をリセット</summary><p class="muted">この端末に保存されたQuick Labの記録のみ消去します。</p><button id="reset">学習記録を消去</button></details></div>
 <p class="foot">倉頡第5代を基準にした学習用コード。IMEごとの候補順は異なります。学習記録はこのブラウザにのみ保存されます。サーバーには送信しません。<a href="./LEARNING.md">字根の学習メモ</a></p>
 </main><script src="./data.js?v=frequency150-v1"></script><script src="./extras.js?v=frequency150-v1"></script><script src="./trivia.js"></script><script src="./question-shuffle.js?v=neon-shuffle-01"></script><script src="./motion.js?v=neon-shuffle-01"></script><script src="./success.js?v=arcade-victory-03"></script><script src="./speech.js?v=speech-replay-01"></script><script>
 /* Phase 1: curated shape hints; no unverified stroke overlays. */
@@ -685,18 +703,14 @@ function playVictory(han,combo=0,test=false){
  card.append(glyph,label);layer.append(card);
  for(let i=0;i<24;i++){const p=document.createElement("i"),a=i*Math.PI/12,r=110+i%5*30;p.className="qfx-particle";p.style.background=["#ffe16b","#59ffe0","#ff79b9","#fff"][i%4];p.style.setProperty("--dx",Math.cos(a)*r+"px");p.style.setProperty("--dy",Math.sin(a)*r+"px");layer.append(p)}
  document.body.append(layer);quickFxTimer=setTimeout(clearVictory,1250);
- const diagnostic=document.getElementById("quickFxStatus");if(diagnostic)diagnostic.textContent="FX v6 / 演出実行済み / "+(matchMedia("(prefers-reduced-motion: reduce)").matches?"視差軽減ON":"視差軽減OFF");
 }
 function quickFxPreference(){try{return localStorage.getItem("quick-fx-preference")||"full"}catch{return "full"}}
-function setupVictoryDiagnostic(){
- const box=document.createElement("div");box.style.cssText="margin:12px auto;text-align:center;font-size:12px;color:inherit";
- const b=document.createElement("button");b.type="button";b.textContent="正解演出をテスト";b.onclick=()=>playVictory("好",0,false);
- const select=document.createElement("select");select.setAttribute("aria-label","正解演出設定");for(const [value,label] of [["system","端末設定に従う"],["full","フル演出"]]){const o=document.createElement("option");o.value=value;o.textContent=label;select.append(o)}select.value=quickFxPreference();select.onchange=()=>{try{localStorage.setItem("quick-fx-preference",select.value)}catch{}playVictory("好",0,false)};
- const status=document.createElement("div");status.id="quickFxStatus";status.textContent="FX v6 / CSS / "+(matchMedia("(prefers-reduced-motion: reduce)").matches?"視差軽減ON":"視差軽減OFF");
- box.append(b,select,status);document.querySelector("main").append(box);
+function setupVictoryPreference(){
+ const select=document.getElementById("quickFxPreference");if(!select)return;
+ select.value=quickFxPreference();select.onchange=()=>{try{localStorage.setItem("quick-fx-preference",select.value)}catch{}};
 }
 document.addEventListener("visibilitychange",()=>{if(document.hidden)clearVictory()});
-document.addEventListener("DOMContentLoaded",setupVictoryDiagnostic,{once:true});
+document.addEventListener("DOMContentLoaded",setupVictoryPreference,{once:true});
 function check(){let q=current();if(!q||done||typed.length!==q.code.length)return;const shouldFocusNext=document.activeElement===$("check");window.QuickMotion?.cancelAll();done=true;updateShuffleButton(current());let good=typed===q.code;const combo=window.QuickSuccess?.recordAnswer?.(good)??0;batchAnswered++;if(good)batchCorrect++;let s=stats[q.han]||{attempts:0,wins:0,level:0};s.attempts++;if(good)s.wins++;else{if(typed[0]!==q.code[0])s.firstErrors=(s.firstErrors||0)+1;if(q.code.length>1&&typed[1]!==q.code[1])s.lastErrors=(s.lastErrors||0)+1;}s.level=good&&!helped?Math.min((s.level||0)+1,5):0;s.due=addDays(good&&!helped?[0,1,3,7,14,30][s.level]:0);stats[q.han]=s;persist();$("status").textContent=good?"正解":"復習しよう";
  const anatomy=document.createElement("section");
  anatomy.id="quickAnatomy";

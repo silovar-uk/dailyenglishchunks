@@ -161,6 +161,16 @@
       "variants": [
         "歡迎嚟日本"
       ]
+    },
+    {
+      "id": "my-000016",
+      "text": "媽媽到咗日本喇",
+      "jyutping": "maa4 maa1 dou3 zo2 jat6 bun2 laa3",
+      "meaning": "お母さんが日本に到着したよ！",
+      "category": "日常",
+      "note": "媽媽＝お母さん、到咗＝到着した、喇＝状況の変化を伝える文末助詞。到咗＋場所＋喇で到着を報告できる。Mom has arrived in Japan!",
+      "addedAt": "2026-11-27T11:21:25+09:00",
+      "updatedAt": "2026-11-27T11:21:25+09:00"
     }
   ],
   "supplement": {
